@@ -100,3 +100,18 @@ I have not established why these identifiers were unmatched. I will retain them 
 
 Query: `sql/07_full_window_outcome_matching.sql`
 Results: `results/07_full_window_outcome_matching_2026-07-01_to_2026-10-24.csv`
+
+## 25 October 2026 — Unmatched Outcome Investigation
+
+I examined the 4,014,401 outcomes that did not match receipt_details within the lookup window.
+
+All unmatched outcomes were dated 1 July–22 August 2026. None occurred from 23 August to 24 October.
+
+The unmatched records comprised 3,841,814 SUCCESS_VALUE, 144,068 SUCCESS_RECEIPT_ID and 28,519 FAILURE outcomes. Their total reconciled to query 07.
+
+None of their identifiers matched transaction hashes recorded from 30 June to 25 October. The results therefore do not support classifying them as transaction-processing outcomes on that basis.
+
+The cause remains unresolved. I will account for this matching limitation when choosing the observation period and defining receipt-based metrics.
+
+Query: `sql/08_inspect_unmatched_outcomes.sql`
+Results: `results/08_unmatched_outcomes_2026-07-01_to_2026-10-24.csv`
