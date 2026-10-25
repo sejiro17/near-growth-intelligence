@@ -200,3 +200,18 @@ Amounts are approximate because the source cost fields use floating-point storag
 
 Query: `sql/13_weekly_execution_costs.sql`
 Results: `results/13_weekly_execution_costs_2026-08-24_to_2026-10-18.csv`
+
+## 25 October 2026 — Combined Weekly Growth and Costs
+
+I combined the weekly activity, signing-account and receipt execution-cost exports into one table covering eight complete weeks.
+
+All source values were preserved. Week boundaries, overlapping transaction totals and signing-account-days reconciled across the inputs. Growth indices and weekly cost changes calculated correctly.
+
+With the first week indexed to 100, the final week recorded 103.69 for transactions, 92.62 for weekly active signing accounts and 182.73 for recorded receipt execution costs.
+
+Activity and recorded execution costs therefore changed at different rates during the observation period. These comparisons do not establish the causes of the differences or demonstrate economic value accruing to token holders.
+
+Transactions are grouped by submission date, while receipt costs are grouped by execution date. The indices compare weekly trends rather than matching transaction submissions to their complete execution costs.
+
+Script: `analysis/02_weekly_execution_costs.py`
+Results: `results/14_weekly_growth_and_costs_2026-08-24_to_2026-10-18.csv`
