@@ -147,3 +147,22 @@ These results describe signing-account identifiers, not verified individuals. Ac
 
 Query: `sql/10_weekly_signing_activity.sql`
 Results: `results/10_weekly_signing_activity_2026-08-24_to_2026-10-18.csv`
+
+## 25 October 2026 — Weekly Account Returns
+
+I measured subsequent weekly activity among signing accounts active in each of the eight starting weeks.
+
+All cohort sizes reconciled to the weekly signing-activity results. The export contained 30 eligible cohort-follow-up combinations, with correct percentages and no incomplete follow-up weeks. Every starting-week count matched its cohort size.
+
+Next-week active shares ranged from 18.14% to 77.96% across the seven cohorts with an observed following week.
+
+Of the 457,768 signing accounts active during 28 September–4 October, 83,037 (18.14%) were active the following week and 77,133 (16.85%) were active two weeks later.
+
+Four-week active shares ranged from 47.70% to 51.65% across the four cohorts with complete four-week follow-up.
+
+Each cohort includes all signing accounts active in its starting week, not necessarily newly acquired users. Accounts may belong to multiple cohorts. Each follow-up measures activity during that particular week; it does not require continuous participation or measure cumulative returns.
+
+Account identifiers are not verified individuals, and the causes of the observed differences remain unverified.
+
+Query: `sql/11_weekly_account_returns.sql`
+Results: `results/11_weekly_account_returns_2026-08-24_to_2026-10-18.csv`
