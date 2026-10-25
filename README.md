@@ -12,7 +12,7 @@ Research setup and data validation. I have not drawn any investment conclusions.
 
 I will examine activity trends, repeat account participation, concentration and recorded execution costs.
 
-I will choose the observation period after checking data coverage and query costs.
+The primary analysis covers 24 August–18 October 2026: eight complete weeks in UTC. Records through 24 October provide additional follow-up.
 
 ## Data and Tools
 

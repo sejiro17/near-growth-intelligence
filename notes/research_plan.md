@@ -40,3 +40,17 @@ I will treat accounts as identifiers rather than verified individuals. I will la
 I will distinguish recorded execution costs from revenue and token-holder returns. I will not attribute activity patterns to campaigns, bots or other causes without supporting evidence.
 
 I will separate observed evidence from assumptions and explain what the findings support about NEAR's long-term prospects.
+
+## Observation Period
+
+I will use 24 August–18 October 2026 as the primary analysis period. This covers eight complete Monday–Sunday weeks in UTC.
+
+The period falls within the interval where all inspected execution-outcome identifiers matched exactly one ACTION receipt. Transaction validation also found unique hashes, no missing key identifiers or timestamps, and activity in every UTC hour.
+
+I will retain 19–24 October as additional follow-up data and exclude that partial week from full-week growth comparisons.
+
+I selected the period based on matching coverage and calendar alignment. These checks do not establish complete ingestion.
+
+For cohort comparisons, I will use equal follow-up periods and omit observations that have not had enough time to mature. First observed will mean first seen within the available observation window, not first-ever use.
+
+The earlier validation results remain documented, including unresolved receipt matching for outcomes dated 1 July–22 August.
