@@ -1,0 +1,4 @@
+table_name,earliest_nonempty_date,latest_nonempty_date,nonempty_days,nonempty_days_in_candidate_window,expected_days_in_candidate_window
+execution_outcomes,2020-07-23,2026-10-25,2275,116,116
+receipt_actions,2020-07-23,2026-10-25,2275,116,116
+transactions,2020-07-23,2026-10-25,2275,116,116
