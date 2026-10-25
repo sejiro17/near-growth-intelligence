@@ -215,3 +215,20 @@ Transactions are grouped by submission date, while receipt costs are grouped by 
 
 Script: `analysis/02_weekly_execution_costs.py`
 Results: `results/14_weekly_growth_and_costs_2026-08-24_to_2026-10-18.csv`
+
+## 25 October 2026 — Receiver Activity by Subsequent Account Participation
+
+I divided signing accounts active during 28 September–4 October into two groups according to whether they were active during 5–11 October. I then ranked each group's transaction receivers during the starting week.
+
+The groups reconciled to 457,768 signing accounts and 6,590,352 starting-week transactions. Receiver rankings, transaction shares and account-interaction percentages reconciled to the exported counts.
+
+The 83,037 accounts active the following week represented 18.14% of the cohort and generated 5,788,805 starting-week transactions (87.84%). The remaining 374,731 accounts generated 801,547 transactions (12.16%).
+
+Among accounts active the following week, v2.ref-finance.near received the most starting-week transactions: 1,139,455. Among accounts absent the following week, wallet.kaiching ranked first with 134,826 transactions from two signing accounts. This receiver therefore does not explain the group's large account count.
+
+The export contains only the twenty busiest receivers per group, and account-interaction counts can overlap across receivers. These associations do not establish what caused the spike or identify genuine users, automated activity or campaigns.
+
+Absence in the following week does not establish permanent departure. Signing-account identifiers are not verified individuals.
+
+Query: `sql/15_spike_cohort_receivers.sql`
+Results: `results/15_spike_cohort_receivers_2026-09-28_to_2026-10-11.csv`
