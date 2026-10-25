@@ -34,6 +34,8 @@ This distinction matters when interpreting the spike. A large account count and 
 
 Absence in the following week does not establish permanent departure. Signing-account identifiers are not verified individuals.
 
+Further checks found that 309,280 accounts absent the following week had successfully executed receipts containing self-deletion actions during the starting week. They represented 82.53% of the absent group. Account deletion is therefore important context for interpreting the low return share; the result should not be presented as ordinary user churn. The reasons for deletion and any later recreation remain unverified.
+
 ### Transactions were concentrated
 
 The ten busiest signing accounts contributed between 48.17% and 67.76% of weekly transactions.

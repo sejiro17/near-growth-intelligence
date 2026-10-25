@@ -298,6 +298,15 @@ with returns_tab:
             width="stretch",
         )
 
+    st.info(
+        "Account deletion changes how these returns should be read. "
+        "During 28 September–4 October, 309,280 accounts absent the "
+        "following week had successful receipt executions containing "
+        "self-deletion actions. They represented 82.53% of the absent "
+        "group. This absence should not be interpreted as ordinary "
+        "user churn. Reasons for deletion and later account recreation "
+        "remain unverified."
+    )
     st.subheader("The spike: account counts versus transaction activity")
     st.write(
         "Among accounts active during 28 September–4 October, "
