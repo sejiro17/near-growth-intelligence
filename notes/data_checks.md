@@ -251,3 +251,22 @@ Transactions and signing accounts can appear under multiple action types. Their 
 
 Query: `sql/16_spike_cohort_actions.sql`
 Results: `results/16_spike_cohort_actions_2026-09-28_to_2026-10-11.csv`
+
+## 25 October 2026 — Spike Account Deletion Outcomes
+
+I checked the initial receipt execution outcomes for transactions containing DELETE_ACCOUNT actions during 28 September–4 October, allowing outcomes through 11 October.
+
+All 309,642 deletion transactions reconciled to the previous action results. Each matched exactly one execution outcome. In every case, the transaction signer equalled the receiver, and the execution account matched that receiver.
+
+Among accounts absent the following week, 309,587 deletion transactions from 309,280 distinct signing accounts had SUCCESS_VALUE outcomes. These accounts represented 82.53% of the absent group and 67.56% of the full starting-week cohort.
+
+A further 14 deletion transactions from 11 accounts in the absent group failed. Account counts can overlap between successful and failed outcome groups.
+
+Among accounts active the following week, 41 self-deletion transactions from nine accounts had SUCCESS_VALUE outcomes. Subsequent activity under those identifiers does not establish continuity of ownership; account recreation or other lifecycle activity has not been investigated.
+
+The results establish successful receipt executions containing self-deletion actions. They do not establish why the accounts were deleted, who controlled them or whether the identifiers were later recreated.
+
+The large absent-account count should not be interpreted as ordinary user churn without accounting for this deletion activity.
+
+Query: `sql/17_spike_account_deletion_checks.sql`
+Results: `results/17_spike_account_deletion_checks_2026-09-28_to_2026-10-11.csv`
