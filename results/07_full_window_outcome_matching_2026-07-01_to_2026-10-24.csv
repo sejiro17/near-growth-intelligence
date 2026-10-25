@@ -1,0 +1,3 @@
+receipt_match,distinct_outcome_identifiers,outcome_rows,repeated_outcome_identifiers,rows_above_unique_identifier_count,identifiers_on_multiple_dates,identifiers_with_multiple_statuses
+ACTION_RECEIPT_MATCH,482361311,482361311,0,0,0,0
+NO_RECEIPT_MATCH_IN_LOOKUP_WINDOW,4014401,4014401,0,0,0,0

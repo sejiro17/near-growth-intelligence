@@ -87,3 +87,16 @@ This establishes the execution units for the inspected day only. It also shows t
 
 Query: `sql/06_inspect_execution_units.sql`
 Results: `results/06_execution_units_2026-10-15.csv`
+
+## 25 October 2026 — Full-Window Outcome Matching
+
+I checked execution-outcome identifier uniqueness across 1 July–24 October 2026 and matched identifiers against receipt_details records dated 30 June–25 October.
+
+All 486,375,712 outcome identifiers were unique across the selected window, with no identifiers repeated across dates or statuses.
+
+Of these, 482,361,311 matched exactly one ACTION receipt. The remaining 4,014,401 outcomes (0.83%) had no receipt match within the lookup window. The total reconciled to query 05.
+
+I have not established why these identifiers were unmatched. I will retain them for investigation before calculating receipt-level rates or interpreting aggregate execution costs.
+
+Query: `sql/07_full_window_outcome_matching.sql`
+Results: `results/07_full_window_outcome_matching_2026-07-01_to_2026-10-24.csv`
