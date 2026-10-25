@@ -183,3 +183,20 @@ The export contains only each week's twenty busiest receivers. A receiver's abse
 
 Query: `sql/12_weekly_receiver_activity.sql`
 Results: `results/12_weekly_receiver_activity_2026-08-24_to_2026-10-18.csv`
+
+## 25 October 2026 — Weekly Receipt Execution Costs
+
+I aggregated execution outcomes by execution date across the eight complete weeks from 24 August to 18 October.
+
+Weekly outcome counts and status breakdowns reconciled to the validated daily results, totalling 280,743,473 receipt execution outcomes. Every week contained seven observed dates, with zero unexpected statuses or invalid gas and token-cost values.
+
+Recorded execution costs totalled approximately 65,878.09 NEAR, including 4,218.49 NEAR associated with failed receipts. Reported failure shares, cost shares and average costs reconciled to the exported figures.
+
+Weekly recorded execution costs peaked at approximately 11,950.25 NEAR during 5–11 October. The final week recorded approximately 10,544.79 NEAR, compared with 5,770.56 NEAR in the first week.
+
+These figures describe receipt executions occurring during each week. They do not trace the complete execution chain of transactions submitted that week or include transaction receipt-conversion costs. They do not establish protocol revenue, permanent token burning or value accruing to token holders.
+
+Amounts are approximate because the source cost fields use floating-point storage.
+
+Query: `sql/13_weekly_execution_costs.sql`
+Results: `results/13_weekly_execution_costs_2026-08-24_to_2026-10-18.csv`
