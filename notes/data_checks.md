@@ -166,3 +166,20 @@ Account identifiers are not verified individuals, and the causes of the observed
 
 Query: `sql/11_weekly_account_returns.sql`
 Results: `results/11_weekly_account_returns_2026-08-24_to_2026-10-18.csv`
+
+## 25 October 2026 — Weekly Receiver Activity
+
+I ranked transaction receivers by transaction count within each of the eight complete weeks from 24 August to 18 October.
+
+The export contained 20 receivers per week, giving 160 rows. Weekly transaction totals reconciled to the previous baseline. Receiver rankings, transaction shares and top-10 and top-20 concentration totals reconciled to the exported counts.
+
+The ten busiest receivers accounted for 60.85%–70.22% of weekly transactions. The twenty busiest accounted for 70.48%–80.81%.
+
+game.hot.tg ranked first in the first two weeks. v2.ref-finance.near ranked first in the remaining six weeks.
+
+These are original transaction destinations, not necessarily downstream execution destinations or verified applications. Signing-account counts can overlap across receivers and must not be summed as weekly unique accounts.
+
+The export contains only each week's twenty busiest receivers. A receiver's absence from another week's ranking does not establish zero activity.
+
+Query: `sql/12_weekly_receiver_activity.sql`
+Results: `results/12_weekly_receiver_activity_2026-08-24_to_2026-10-18.csv`
