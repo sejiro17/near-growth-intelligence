@@ -29,3 +29,18 @@ This check establishes nonempty daily coverage. It does not establish record uni
 
 Query: `sql/02_daily_partition_counts.sql`
 Results: `results/02_daily_partition_counts_2026-07-01_to_2026-10-24.csv`
+
+## 25 October 2026 — Daily Transaction Validation
+
+I checked transaction records from 1 July to 24 October 2026 across all 116 expected dates.
+
+The results contain 86,547,133 transaction rows. Each day's row count matched its distinct transaction-hash count, with no duplicate hashes within a day. Daily counts also matched the previously exported partition metadata.
+
+I found no missing transaction hashes, signing accounts, receiving accounts or timestamps. All timestamps matched their block dates, and every day contained activity in all 24 UTC hours.
+
+Daily active signing accounts ranged from 42,517 to 177,196. These are account identifiers, not verified individuals.
+
+These checks support further analysis but do not establish complete ingestion or transaction-hash uniqueness across different days. The counts include all recorded transaction statuses.
+
+Query: `sql/03_daily_transaction_checks.sql`
+Results: `results/03_daily_transaction_checks_2026-07-01_to_2026-10-24.csv`
