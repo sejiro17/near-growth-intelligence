@@ -8,15 +8,17 @@ I built this project to examine what sits behind headline activity figures: how 
 
 ## Project Status
 
-Analysis in progress. The interactive dashboard runs locally and includes activity trends, weekly account returns, concentration and receipt execution costs.
+The core analysis and interactive dashboard are implemented. The dashboard is hosted on Streamlit Community Cloud with private access during development. The GitHub repository also remains private.
 
-The primary analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC. The weekly return analysis uses complete follow-up weeks within this period.
+The analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC. Weekly account returns use complete follow-up weeks within this period.
 
-My initial interpretation is documented in the [growth quality and investment assessment](notes/investment_thesis.md).
+The hosted dashboard has been checked across all four views, including the receiver selector and CSV download.
 
-The findings provide evidence about the selected period. They do not establish long-term adoption or a complete investment thesis.
+My findings and interpretation are documented in the [investment assessment](notes/investment_thesis.md). A separate [economic mechanisms note](notes/economic_mechanisms.md) connects the research to official NEAR documentation while distinguishing those mechanisms from what this project measures.
 
-## Initial Findings
+Final review and presentation preparation remain in progress.
+
+## Key Findings
 
 ### Transaction growth and account participation diverged
 
@@ -50,7 +52,7 @@ The ten busiest signing accounts contributed 48.17%–67.76% of weekly transacti
 
 The ten busiest original transaction receivers accounted for 60.85%–70.22%.
 
-Accounts were ranked separately each week. Receiver accounts have not yet been systematically mapped to verified applications.
+Accounts were ranked separately each week. Receiver accounts have not been systematically mapped to verified applications.
 
 ### Recorded execution costs increased faster than transactions
 
@@ -60,15 +62,17 @@ The final week recorded approximately 10,544.79 NEAR, an increase of 82.73% from
 
 These amounts describe receipt executions occurring during each week. They exclude transaction receipt-conversion costs and do not establish protocol revenue, permanent token burning or investment returns.
 
-## Initial Interpretation
+## Investment Interpretation
 
 The evidence shows continued transaction activity, concentrated usage and an account spike whose composition matters more than its headline size.
 
-The low following-week return share requires particular care because most absent accounts had successfully executed receipts containing self-deletion actions.
+The low following-week return share requires particular care because most absent accounts had successful receipt executions containing self-deletion actions.
 
-My current assessment is that headline transaction and account growth alone provide an incomplete basis for a long-term investment argument. A stronger case requires evidence of persistent participation associated with identifiable uses, alongside a supported explanation of how activity connects to NEAR's economics.
+My assessment is that headline transaction and account growth alone provide an incomplete basis for a long-term investment argument. A stronger case requires evidence of persistent participation associated with identifiable uses, alongside a supported explanation of how activity connects to NEAR's economics.
 
-The [investment assessment](notes/investment_thesis.md) separates measured findings, interpretation and remaining questions.
+The increase in recorded execution costs provides evidence about spending on receipt execution. It does not establish how much value accrued to token holders.
+
+The [investment assessment](notes/investment_thesis.md) separates measured findings, interpretation and remaining questions. The [economic mechanisms note](notes/economic_mechanisms.md) discusses execution fees, contract rewards, storage requirements, staking and other documented mechanisms without treating them as measured investment returns.
 
 ## Dashboard
 
@@ -79,13 +83,13 @@ The dashboard contains four views:
 - **Concentration:** Signing-account transaction shares and a weekly explorer of the twenty busiest transaction receivers.
 - **Execution costs:** Recorded receipt execution costs and failed receipts' shares of outcomes and costs.
 
-The dashboard uses saved CSV exports. Opening it does not run BigQuery queries or refresh the source data.
+[Hosted dashboard](https://near-growth-intelligence.streamlit.app) — access is currently restricted to authorised viewers.
 
-It currently runs locally and has not been deployed as a public service.
+The dashboard uses saved CSV exports. Opening it does not run BigQuery queries or refresh the source data.
 
 ## Run Locally
 
-Use Python 3.12. The dashboard has been checked locally with Python 3.12.10.
+Use Python 3.12.
 
 From the repository root:
 
@@ -93,17 +97,6 @@ From the repository root:
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python -m streamlit run dashboard/app.py
-```
-
-Open the local URL printed in the terminal.
-
-To stop the dashboard, press Ctrl + C in the terminal running Streamlit.
-
-For later sessions, activate the existing environment and start the dashboard:
-
-```bash
-source .venv/bin/activate
 python -m streamlit run dashboard/app.py
 ```
 
@@ -155,6 +148,14 @@ Source cost fields use floating-point storage, so amounts are approximate.
 
 Growth indices set the first week to 100. They compare changes across metrics with different units; they do not match individual transactions to their complete execution costs.
 
+### Economic interpretation
+
+Economic mechanisms are documented separately using official sources.
+
+These sources provide context for interpreting network activity. They do not establish that every mechanism or parameter applied unchanged throughout the observation period.
+
+The analysis does not calculate net issuance, permanent token burning, staking returns or total value accruing to NEAR holders.
+
 ## Validation and Coverage
 
 The research includes checks for:
@@ -170,7 +171,9 @@ Earlier exploratory checks found unmatched execution outcomes during 1 July–22
 
 The spike action analysis found 474 transactions without matching transaction-action records in its selected lookup window. This remains a documented coverage limitation.
 
-All 309,642 selected deletion transactions matched exactly one initial receipt outcome. Every selected deletion transaction targeted its signing account, and the execution account matched the receiver.
+All 309,642 selected deletion transactions matched exactly one initial receipt outcome. Every selected deletion transaction targeted its signing account, and the execution account matched the receiver. Matching an outcome does not by itself establish success; successful and failed outcomes were examined separately.
+
+Local checks found no broken package requirements or Python compilation errors. Local Markdown link targets were checked, and the hosted dashboard's four views, receiver selector and CSV download were tested.
 
 Detailed checks and findings are recorded in [notes/data_checks.md](notes/data_checks.md).
 
@@ -188,6 +191,7 @@ Detailed checks and findings are recorded in [notes/data_checks.md](notes/data_c
 - Delegated payload contents were not expanded in the transaction-action comparison.
 - Observed changes do not establish their causes.
 - Recorded execution costs alone do not establish economic value accruing to NEAR holders.
+- Current economic documentation does not independently verify historical parameters.
 
 ## Reproduce the Derived Tables
 
@@ -202,15 +206,26 @@ These scripts use saved exports and do not require another BigQuery scan.
 
 SQL queries are stored in `sql/`. Running them requires BigQuery access and may incur query charges.
 
+## Research Notes
+
+- [Research plan](notes/research_plan.md)
+- [Data checks and findings](notes/data_checks.md)
+- [Growth quality and investment assessment](notes/investment_thesis.md)
+- [NEAR economic mechanisms and measurement boundaries](notes/economic_mechanisms.md)
+
 ## Remaining Work
 
-- Document NEAR's economic mechanisms using official sources and distinguish them from measured execution costs.
-- Verify relevant account and application roles where reliable evidence is available.
-- Review unresolved coverage limitations and their implications.
-- Complete the investment assessment and dashboard documentation.
-- Prepare a hosted dashboard and project demonstration.
+- Complete the final consistency review across the report, dashboard and supporting results.
+- Prepare the project demonstration and submission materials.
+- Review access settings when the project is ready for submission.
 
-The research plan is documented in [notes/research_plan.md](notes/research_plan.md).
+## Future Research
+
+- Extend the observation period to assess persistence across more market conditions.
+- Verify account and application roles where reliable evidence is available.
+- Investigate deletion motives, later account recreation and ownership continuity.
+- Investigate unresolved coverage gaps.
+- Reconcile execution activity with a broader measurement of NEAR's economics.
 
 ## Tools
 
@@ -225,4 +240,4 @@ The research plan is documented in [notes/research_plan.md](notes/research_plan.
 - `analysis/`: Python scripts for derived tables.
 - `results/`: Exported query results and derived tables.
 - `dashboard/`: Interactive Streamlit dashboard.
-- `notes/`: Research plan, data checks and investment assessment.
+- `notes/`: Research plan, data checks, investment assessment and economic mechanisms.
