@@ -26,6 +26,9 @@ def load_csv(filename, date_columns):
     for column in date_columns:
         frame[column] = pd.to_datetime(frame[column])
 
+    if frame.empty:
+        raise ValueError(f"{filename} is empty.")
+
     return frame
 
 
@@ -45,8 +48,62 @@ try:
         ["week_start", "week_end"],
     )
 
-    if weekly.empty or returns.empty or receivers.empty:
-        raise ValueError("One or more research exports are empty.")
+    spike = load_csv(
+        "15_spike_cohort_receivers_2026-09-28_to_2026-10-11.csv",
+        ["cohort_week", "followup_week"],
+    )
+
+    group_summary = spike[
+        ["return_group", "group_accounts", "group_transactions"]
+    ].drop_duplicates()
+
+    expected_groups = {
+        "ACTIVE_FOLLOWING_WEEK",
+        "NOT_ACTIVE_FOLLOWING_WEEK",
+    }
+
+    if (
+        len(group_summary) != 2
+        or set(group_summary["return_group"]) != expected_groups
+    ):
+        raise ValueError("The spike cohort group totals are inconsistent.")
+
+    starting_week = pd.Timestamp("2026-09-28")
+    following_week = pd.Timestamp("2026-10-05")
+
+    if (
+        not spike["cohort_week"].eq(starting_week).all()
+        or not spike["followup_week"].eq(following_week).all()
+    ):
+        raise ValueError("The spike cohort dates are inconsistent.")
+
+    starting = weekly.loc[
+        weekly["week_start"] == starting_week
+    ]
+
+    followup = returns.loc[
+        (returns["cohort_week"] == starting_week)
+        & (returns["week_offset"] == 1)
+    ]
+
+    if len(starting) != 1 or len(followup) != 1:
+        raise ValueError("Unable to reconcile the spike cohort.")
+
+    if (
+        group_summary["group_accounts"].sum()
+        != starting.iloc[0]["weekly_active_signing_accounts"]
+        or group_summary["group_transactions"].sum()
+        != starting.iloc[0]["transactions"]
+    ):
+        raise ValueError("The spike cohort totals do not reconcile.")
+
+    returned_accounts = group_summary.loc[
+        group_summary["return_group"] == "ACTIVE_FOLLOWING_WEEK",
+        "group_accounts",
+    ].iloc[0]
+
+    if returned_accounts != followup.iloc[0]["active_cohort_accounts"]:
+        raise ValueError("The spike return count does not reconcile.")
 
 except (OSError, ValueError, KeyError) as error:
     st.error(f"Unable to load the research results: {error}")
@@ -241,6 +298,105 @@ with returns_tab:
             width="stretch",
         )
 
+    st.subheader("The spike: account counts versus transaction activity")
+    st.write(
+        "Among accounts active during 28 September–4 October, "
+        "how much starting-week activity came from accounts "
+        "that participated again during 5–11 October?"
+    )
+
+    group_labels = {
+        "ACTIVE_FOLLOWING_WEEK": "Active the following week",
+        "NOT_ACTIVE_FOLLOWING_WEEK": "Absent the following week",
+    }
+
+    group_summary = group_summary.copy()
+    group_summary["Participation"] = (
+        group_summary["return_group"].map(group_labels)
+    )
+
+    account_total = group_summary["group_accounts"].sum()
+    transaction_total = group_summary["group_transactions"].sum()
+
+    group_summary["Share of accounts (%)"] = (
+        100 * group_summary["group_accounts"] / account_total
+    )
+    group_summary["Share of starting-week transactions (%)"] = (
+        100 * group_summary["group_transactions"] / transaction_total
+    )
+
+    returned = group_summary.loc[
+        group_summary["return_group"] == "ACTIVE_FOLLOWING_WEEK"
+    ].iloc[0]
+
+    left, right = st.columns(2)
+
+    left.metric(
+        "Accounts active the following week",
+        f"{returned['Share of accounts (%)']:.2f}%",
+    )
+    right.metric(
+        "Their share of starting-week transactions",
+        f"{returned['Share of starting-week transactions (%)']:.2f}%",
+    )
+
+    comparison = group_summary.melt(
+        id_vars="Participation",
+        value_vars=[
+            "Share of accounts (%)",
+            "Share of starting-week transactions (%)",
+        ],
+        var_name="Measure",
+        value_name="Share (%)",
+    )
+
+    fig = px.bar(
+        comparison,
+        x="Measure",
+        y="Share (%)",
+        color="Participation",
+        barmode="stack",
+        text_auto=".2f",
+        range_y=[0, 100],
+        color_discrete_map={
+            "Active the following week": COLORS[0],
+            "Absent the following week": COLORS[1],
+        },
+        category_orders={
+            "Participation": [
+                "Active the following week",
+                "Absent the following week",
+            ]
+        },
+    )
+    fig.update_layout(
+        xaxis_title=None,
+        legend_title_text="",
+    )
+    st.plotly_chart(fig, width="stretch")
+
+    st.caption(
+        "The two groups cover the same starting-week cohort. "
+        "Account shares and transaction shares have different "
+        "denominators. Absence the following week does not establish "
+        "permanent departure, and accounts are not verified people."
+    )
+
+    with st.expander("Inspect spike cohort group totals"):
+        st.dataframe(
+            group_summary[
+                [
+                    "Participation",
+                    "group_accounts",
+                    "group_transactions",
+                    "Share of accounts (%)",
+                    "Share of starting-week transactions (%)",
+                ]
+            ],
+            hide_index=True,
+            width="stretch",
+        )
+
 
 with concentration_tab:
     st.subheader("How broadly was activity distributed?")
@@ -281,6 +437,10 @@ with concentration_tab:
     selected = receivers[
         receivers["week_start"] == selected_week
     ].sort_values("receiver_rank")
+
+    if selected.empty:
+        st.error("No receiver results are available for this week.")
+        st.stop()
 
     receiver_summary = selected.iloc[0]
     left, right = st.columns(2)
