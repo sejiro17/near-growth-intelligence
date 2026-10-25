@@ -130,3 +130,20 @@ Signing-account-days count an identifier once per active day. They are not weekl
 
 Script: `analysis/01_weekly_activity_baseline.py`
 Results: `results/09_weekly_activity_baseline_2026-08-24_to_2026-10-18.csv`
+
+## 25 October 2026 — Weekly Signing Activity and Concentration
+
+I counted distinct transaction-signing accounts within each of the eight complete weeks from 24 August to 18 October.
+
+Weekly transaction totals and signing-account-days reconciled to the previous baseline, covering 44,284,794 transactions. All reported averages, concentration shares and weekly account changes reconciled to the exported counts.
+
+Weekly active signing accounts peaked at 457,768 during 28 September–4 October, an increase of 198.16% from the preceding week. Of these accounts, 376,771 (82.31%) were active on only one day within that week.
+
+Weekly active signing accounts fell to 129,446 in the final week, down 66.33% from the preceding week and 7.38% below the first week.
+
+The ten busiest signing accounts contributed between 48.17% and 67.76% of weekly transactions. Rankings were calculated separately for each week; these are not necessarily the same accounts throughout.
+
+These results describe signing-account identifiers, not verified individuals. Activity within a week does not establish return activity across weeks, and the causes of the observed changes remain unverified.
+
+Query: `sql/10_weekly_signing_activity.sql`
+Results: `results/10_weekly_signing_activity_2026-08-24_to_2026-10-18.csv`
