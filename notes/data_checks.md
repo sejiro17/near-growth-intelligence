@@ -232,3 +232,22 @@ Absence in the following week does not establish permanent departure. Signing-ac
 
 Query: `sql/15_spike_cohort_receivers.sql`
 Results: `results/15_spike_cohort_receivers_2026-09-28_to_2026-10-11.csv`
+
+## 25 October 2026 — Spike Cohort Transaction Actions
+
+I compared submitted transaction action types during 28 September–4 October between accounts active and absent during the following week.
+
+Group account and transaction totals reconciled to the previous cohort results. Reported percentages calculated correctly. Matched records had zero missing action indices and zero duplicate indices within each transaction-action-kind group.
+
+Among accounts absent the following week, 309,286 (82.54%) submitted transactions containing DELETE_ACCOUNT actions. These accounted for 309,601 transactions.
+
+Among accounts active the following week, 80,191 (96.57%) submitted transactions containing FUNCTION_CALL actions. DELEGATE_ACTION appeared in 1,945,506 transactions from 28 signing accounts.
+
+There were 474 transactions without matching action records in the selected lookup window: seven from returning accounts and 467 from accounts absent the following week. The reason remains unresolved.
+
+These results describe submitted actions, not confirmed execution outcomes. DELETE_ACCOUNT actions do not by themselves establish successful deletion or that the deleted account was the signing account.
+
+Transactions and signing accounts can appear under multiple action types. Their counts must not be summed across action kinds as distinct totals. Delegated payload contents were not expanded.
+
+Query: `sql/16_spike_cohort_actions.sql`
+Results: `results/16_spike_cohort_actions_2026-09-28_to_2026-10-11.csv`
