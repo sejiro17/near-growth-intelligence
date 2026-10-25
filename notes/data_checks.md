@@ -115,3 +115,18 @@ The cause remains unresolved. I will account for this matching limitation when c
 
 Query: `sql/08_inspect_unmatched_outcomes.sql`
 Results: `results/08_unmatched_outcomes_2026-07-01_to_2026-10-24.csv`
+
+## 25 October 2026 — Weekly Activity Baseline
+
+I summarised the validated daily transaction results into eight complete Monday–Sunday weeks from 24 August to 18 October 2026.
+
+The weekly totals reconcile to 44,284,794 transactions across 56 dates. All weekly averages and week-to-week percentage changes reconciled to the daily source.
+
+Weekly transactions peaked at 6,590,352 during 28 September–4 October. In the final week, transactions declined 23.31% and average daily active signing accounts declined 39.50% from the preceding week.
+
+Compared with the first week, the final week recorded 3.69% more transactions but 29.87% fewer average daily active signing accounts. I have not established the causes of these differences.
+
+Signing-account-days count an identifier once per active day. They are not weekly distinct accounts, and account identifiers are not verified individuals.
+
+Script: `analysis/01_weekly_activity_baseline.py`
+Results: `results/09_weekly_activity_baseline_2026-08-24_to_2026-10-18.csv`
