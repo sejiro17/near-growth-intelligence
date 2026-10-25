@@ -34,7 +34,7 @@ Activity continued throughout the observation period. However, the increase was 
 
 Evidence: results 09 and 14.
 
-### The account spike was heavily affected by deletion activity
+### Self-deletion activity was widespread within the spike cohort
 
 Weekly active signing accounts increased 198.16% to 457,768 during 28 September–4 October. Only 83,037 (18.14%) were active the following week.
 
