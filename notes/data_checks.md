@@ -44,3 +44,16 @@ These checks support further analysis but do not establish complete ingestion or
 
 Query: `sql/03_daily_transaction_checks.sql`
 Results: `results/03_daily_transaction_checks_2026-07-01_to_2026-10-24.csv`
+
+## 25 October 2026 — Transaction Status and Hash Uniqueness
+
+I inspected transaction statuses and checked transaction-hash uniqueness across the full candidate window of 1 July–24 October 2026.
+
+All 86,547,133 transaction rows had status SUCCESS_RECEIPT_ID, with no missing statuses. Daily status totals matched the transaction counts from query 03.
+
+The full-window distinct transaction-hash count also equalled 86,547,133, establishing that hashes were unique across the selected records.
+
+I will not interpret SUCCESS_RECEIPT_ID as proof of successful downstream execution. Execution outcomes require separate analysis.
+
+Query: `sql/04_transaction_status_checks.sql`
+Results: `results/04_transaction_status_checks_2026-07-01_to_2026-10-24.csv`
