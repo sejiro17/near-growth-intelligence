@@ -92,6 +92,14 @@ The account spike is not sufficient evidence of adoption. Equally, the low follo
 
 My current position is that headline activity growth provides an incomplete basis for a long-term investment argument. A stronger case requires persistent participation associated with identifiable uses, alongside a supported explanation of how that activity creates demand for NEAR or affects its economics.
 
+## Connection to NEAR's Economics
+
+Official documentation describes demand for NEAR through execution fees, storage requirements and staking. Product revenues and governance-controlled uses of those revenues provide additional mechanisms to investigate.
+
+My execution-cost results measure only part of this picture. They do not establish net issuance, permanent token burning, changes in staked balances or realised buyback expenditure.
+
+I reviewed these mechanisms and their measurement boundaries in [economic_mechanisms.md](economic_mechanisms.md). Historical parameters and economic flows would need separate verification before building a supply or valuation model.
+
 ## What Would Strengthen or Weaken This Assessment?
 
 Evidence that would strengthen the case includes:
