@@ -57,3 +57,18 @@ I will not interpret SUCCESS_RECEIPT_ID as proof of successful downstream execut
 
 Query: `sql/04_transaction_status_checks.sql`
 Results: `results/04_transaction_status_checks_2026-07-01_to_2026-10-24.csv`
+
+## 25 October 2026 — Execution-Outcome Validation
+
+I inspected execution-outcome records from 1 July to 24 October 2026.
+
+The results contain 486,375,712 outcome rows across 116 days: 437,621,841 with status SUCCESS_VALUE, 36,472,564 with SUCCESS_RECEIPT_ID and 12,281,307 with FAILURE. Daily totals matched the partition counts from query 02.
+
+I found no missing receipt identifiers, executor accounts or timestamps, and no timestamp-date mismatches. Gas and token-cost fields contained no missing, negative or nonfinite values.
+
+Within each date-and-status group, row counts matched distinct receipt-identifier counts. This does not establish identifier uniqueness across groups.
+
+Before calculating receipt-level failure rates or network execution costs, I will verify the execution units represented and check for duplication across groups.
+
+Query: `sql/05_daily_execution_outcome_checks.sql`
+Results: `results/05_daily_execution_outcome_checks_2026-07-01_to_2026-10-24.csv`
