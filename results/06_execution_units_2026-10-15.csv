@@ -1,0 +1,4 @@
+identifier_match,status,outcome_rows,distinct_outcome_identifiers,outcomes_with_multiple_transaction_rows,outcomes_with_multiple_receipt_rows
+ACTION_RECEIPT_MATCH,FAILURE,132614,132614,0,0
+ACTION_RECEIPT_MATCH,SUCCESS_RECEIPT_ID,340772,340772,0,0
+ACTION_RECEIPT_MATCH,SUCCESS_VALUE,13861809,13861809,0,0

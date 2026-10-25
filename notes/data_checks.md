@@ -72,3 +72,18 @@ Before calculating receipt-level failure rates or network execution costs, I wil
 
 Query: `sql/05_daily_execution_outcome_checks.sql`
 Results: `results/05_daily_execution_outcome_checks_2026-07-01_to_2026-10-24.csv`
+
+## 25 October 2026 — Execution Units on 15 October
+
+I matched execution-outcome identifiers dated 15 October against transaction hashes and receipt identifiers recorded from 14–16 October.
+
+All 14,335,195 outcome rows matched exactly one ACTION receipt. None matched a transaction hash, a DATA receipt or both identifier types, and none remained unmatched within the lookup window.
+
+The status counts reconciled exactly to query 05: 132,614 FAILURE, 340,772 SUCCESS_RECEIPT_ID and 13,861,809 SUCCESS_VALUE.
+
+Within each resulting group, outcome counts matched distinct identifier counts. No outcome matched multiple lookup rows.
+
+This establishes the execution units for the inspected day only. It also shows that SUCCESS_RECEIPT_ID is present among ACTION receipt outcomes and cannot by itself identify transaction-processing records.
+
+Query: `sql/06_inspect_execution_units.sql`
+Results: `results/06_execution_units_2026-10-15.csv`
