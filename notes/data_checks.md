@@ -270,3 +270,20 @@ The large absent-account count should not be interpreted as ordinary user churn 
 
 Query: `sql/17_spike_account_deletion_checks.sql`
 Results: `results/17_spike_account_deletion_checks_2026-09-28_to_2026-10-11.csv`
+
+## 26 October 2026 — Leading Signing Accounts
+
+I identified each week's twenty busiest signing accounts during 24 August–18 October, then tracked the combined set across all eight weeks.
+
+The export contains 408 account-week rows covering 51 distinct signing accounts. Weekly transaction totals, active signing-account counts and top-ten transaction counts reconcile with result 10. Account histories, rank flags and reported transaction shares passed the checks performed.
+
+sweat-relayer.near ranked first every week and submitted 13,704,363 transactions, representing 30.95% of the period's total. Its weekly transactions declined from 1,954,610 to 1,301,312 between the first and final weeks, a decrease of 33.42%.
+
+Five accounts appeared in the top ten every week: sweat-relayer.near, intents.near, closemeat6237.near, omni-relayer.bridge.near and meteor-relayer.near.
+
+Transactions outside each week's top ten increased from 1,539,788 to 2,063,276, or 34.00%, between the first and final weeks. These groups change membership, so this comparison does not track a fixed set of accounts or establish independent user demand.
+
+Account roles and ownership remain unverified. Weekly totals and full-period account summaries repeat across rows and must not be summed without deduplication.
+
+Query: `sql/18_weekly_leading_signing_accounts.sql`
+Results: `results/18_weekly_leading_signing_accounts_2026-08-24_to_2026-10-18.csv`
