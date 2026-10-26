@@ -6,18 +6,6 @@ Is NEAR's activity growth persistent and broadly distributed, and what does that
 
 I built this project to examine what sits behind headline activity figures: how many accounts participate, whether they return, how concentrated transactions are, and how recorded execution costs change alongside activity.
 
-## Project Status
-
-The core analysis and interactive dashboard are implemented. The dashboard is hosted on Streamlit Community Cloud with private access during development. The GitHub repository also remains private.
-
-The analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC. Weekly account returns use complete follow-up weeks within this period.
-
-The hosted dashboard has been checked across all four views, including the receiver selector and CSV download.
-
-My findings and interpretation are documented in the [investment assessment](notes/investment_thesis.md). A separate [economic mechanisms note](notes/economic_mechanisms.md) connects the research to official NEAR documentation while distinguishing those mechanisms from what this project measures.
-
-Final review and presentation preparation remain in progress.
-
 ## Key Findings
 
 ### Transaction growth and account participation diverged
@@ -28,13 +16,15 @@ Compared with the first week, the final week recorded 3.69% more transactions bu
 
 Weekly active signing accounts peaked at 457,768 during 28 September–4 October, an increase of 198.16% from the preceding week. Of these accounts, 82.31% were active on only one day within that week.
 
-### Accounts active again generated most transactions during the spike
+### Accounts active again generated most starting-week transactions
 
 Of the accounts active during 28 September–4 October, 83,037 (18.14%) were active again during 5–11 October.
 
 These accounts generated 5,788,805 transactions during the starting week: 87.84% of that week's total.
 
 The remaining 81.86% of accounts generated 12.16% of transactions. Account counts and transaction counts therefore describe different aspects of the spike.
+
+These shares describe starting-week activity. They do not measure how much transaction activity those accounts maintained the following week.
 
 ### Successful self-deletions change the interpretation of account returns
 
@@ -44,7 +34,7 @@ They represented 82.53% of the absent group and 67.56% of the full starting-week
 
 This finding is important context for the low return share. The absence of these identifiers should not be presented as ordinary user churn.
 
-The reasons for deletion, account ownership and any later recreation remain unverified. The results do not establish that deletion explains every part of the increase from the preceding week.
+The reasons for deletion, account ownership and any later recreation remain unverified. The results do not establish how much deletion activity explains the increase from the preceding week.
 
 ### Transactions were concentrated
 
@@ -53,6 +43,8 @@ The ten busiest signing accounts contributed 48.17%–67.76% of weekly transacti
 The ten busiest original transaction receivers accounted for 60.85%–70.22%.
 
 Accounts were ranked separately each week. Receiver accounts have not been systematically mapped to verified applications.
+
+Concentration at the account level does not establish equivalent concentration in applications, ownership or end users.
 
 ### Recorded execution costs increased faster than transactions
 
@@ -64,19 +56,23 @@ These amounts describe receipt executions occurring during each week. They exclu
 
 ## Investment Interpretation
 
-The evidence shows continued transaction activity, concentrated usage and an account spike whose composition matters more than its headline size.
+NEAR maintained substantial transaction activity during the selected eight weeks. However, the results do not demonstrate that participation was broadening or establish how much economic value accrued to NEAR holders.
 
-The low following-week return share requires particular care because most absent accounts had successful receipt executions containing self-deletion actions.
+My assessment is conditional: an investment argument based on adoption growth needs stronger evidence of persistent application demand and a measurable connection between that demand and NEAR's economics.
 
-My assessment is that headline transaction and account growth alone provide an incomplete basis for a long-term investment argument. A stronger case requires evidence of persistent participation associated with identifiable uses, alongside a supported explanation of how activity connects to NEAR's economics.
+Transaction activity ended above its starting level, while weekly active signing accounts ended below theirs. Successful self-deletion activity was widespread among accounts absent after the participation spike, making a straightforward user-churn interpretation inappropriate.
 
-The increase in recorded execution costs provides evidence about spending on receipt execution. It does not establish how much value accrued to token holders.
+Transaction concentration makes the roles of major participants important to the assessment. Higher recorded execution costs establish increased spending on receipt execution, but do not quantify token-holder returns.
 
-The [investment assessment](notes/investment_thesis.md) separates measured findings, interpretation and remaining questions. The [economic mechanisms note](notes/economic_mechanisms.md) discusses execution fees, contract rewards, storage requirements, staking and other documented mechanisms without treating them as measured investment returns.
+These findings support further due diligence. They are insufficient on their own to justify an investment based on claims of broad, sustained adoption.
+
+The [investment assessment](notes/investment_thesis.md) explains the evidence, decision implications and conditions that would strengthen or weaken this position. The [economic mechanisms note](notes/economic_mechanisms.md) distinguishes documented mechanisms from the economic flows measured in this project.
 
 ## Dashboard
 
-The dashboard contains four views:
+The dashboard presents the investment assessment, its supporting evidence and the conditions that would change it.
+
+Four views allow readers to explore the underlying results:
 
 - **Growth:** Weekly account participation and indexed comparisons of transactions, active signing accounts and recorded receipt execution costs.
 - **Account returns:** Weekly activity-cohort returns, the spike cohort's account shares versus transaction shares, and self-deletion context.
@@ -101,6 +97,8 @@ python -m streamlit run dashboard/app.py
 ```
 
 ## Data and Methodology
+
+The analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC. Weekly account returns use complete follow-up weeks within this period.
 
 Source dataset:
 
@@ -140,6 +138,8 @@ Deletion checks link transactions containing DELETE_ACCOUNT actions to their ini
 
 Successful self-deletion does not establish the reason for deletion, permanent loss of the identifier or continuity of ownership if it later reappears.
 
+Excluding accounts with deletion activity would not, by itself, produce a verified user-retention measure.
+
 ### Execution costs
 
 Recorded token costs are converted from yoctoNEAR to NEAR by dividing by 10^24.
@@ -171,9 +171,7 @@ Earlier exploratory checks found unmatched execution outcomes during 1 July–22
 
 The spike action analysis found 474 transactions without matching transaction-action records in its selected lookup window. This remains a documented coverage limitation.
 
-All 309,642 selected deletion transactions matched exactly one initial receipt outcome. Every selected deletion transaction targeted its signing account, and the execution account matched the receiver. Matching an outcome does not by itself establish success; successful and failed outcomes were examined separately.
-
-Local checks found no broken package requirements or Python compilation errors. Local Markdown link targets were checked, and the hosted dashboard's four views, receiver selector and CSV download were tested.
+All 309,642 selected deletion transactions matched exactly one initial receipt outcome. Every selected deletion transaction targeted its signing account, and the execution account matched the receiver. Successful and failed outcomes were examined separately.
 
 Detailed checks and findings are recorded in [notes/data_checks.md](notes/data_checks.md).
 
@@ -212,12 +210,6 @@ SQL queries are stored in `sql/`. Running them requires BigQuery access and may 
 - [Data checks and findings](notes/data_checks.md)
 - [Growth quality and investment assessment](notes/investment_thesis.md)
 - [NEAR economic mechanisms and measurement boundaries](notes/economic_mechanisms.md)
-
-## Remaining Work
-
-- Complete the final consistency review across the report, dashboard and supporting results.
-- Prepare the project demonstration and submission materials.
-- Review access settings when the project is ready for submission.
 
 ## Future Research
 
