@@ -503,3 +503,22 @@ All amounts derived from floating-point balance and supply fields are approximat
 Queries: `sql/29_inspect_account_change_reasons.sql`, `sql/30_inspect_validator_balance_changes.sql`, `sql/31_inspect_negative_validator_changes.sql`, `sql/32_daily_validator_balance_changes.sql`, `sql/33_daily_block_supply_movements.sql`
 
 Results: `results/29_account_change_reasons_2026-08-24.csv`, `results/30_validator_balance_changes_2026-08-24.csv`, `results/31_negative_validator_changes_2026-08-24.csv`, `results/32_daily_validator_balance_changes_2026-08-24_to_2026-10-18.csv`, `results/33_daily_block_supply_movements_2026-08-24_to_2026-10-18.csv`
+
+## 27 October 2026 — Weekly Economic Comparison
+
+I combined the saved weekly activity and execution-cost results with daily supply movements and validator-update balance changes. No additional BigQuery scan was required.
+
+All eight complete weeks reconciled to results 14, 28, 32 and 33. Weekly supply changes used the previous Sunday's closing supply as the opening baseline and reconciled to the full-period endpoint difference.
+
+Between the first and final weeks, transactions increased 3.69%, receipt execution outcomes increased 66.85%, and recorded receipt execution costs increased 82.73%. Average recorded cost per receipt increased 9.52%.
+
+The comparison shows that receipt volume and average recorded cost per receipt both increased between the endpoints. Transaction submissions alone therefore provide an incomplete description of the execution-cost increase. These results do not establish the underlying causes or match individual transactions to complete execution chains.
+
+Observed total supply increased approximately 4,935,983.98 NEAR during the period. Measured validator-update net balance changes totalled 4,919,384.47 NEAR, leaving an unresolved difference of 16,599.51 NEAR.
+
+Recorded execution costs, observed supply movements and validator-update balance changes remain separate measurements. Their comparison does not establish complete gross issuance, permanent burning, protocol revenue or holder returns.
+
+Decimal arithmetic preserves the precision of exported values during aggregation; it does not restore precision lost in the floating-point source fields.
+
+Script: `analysis/06_weekly_economic_comparison.py`
+Results: `results/34_weekly_economic_comparison_2026-08-24_to_2026-10-18.csv`
