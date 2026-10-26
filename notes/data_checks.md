@@ -424,3 +424,18 @@ The sample is intended for diagnostic inspection, not for estimating the prevale
 
 Query: `sql/25_inspect_growth_account_failures.sql`
 Results: `results/25_growth_account_failure_sample_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Detailed Errors for Sampled Failures
+
+I retrieved execution details for all 18 sampled failed receipts and checked the returned transaction hashes, signing accounts, receipt identifiers, executors and failure statuses against result 25.
+
+Seventeen receipts reported E68: slippage error. One reported E22: not enough tokens in deposit. All sampled failures executed on v2.ref-finance.near.
+
+These findings establish at least two reported error causes within the sample. They do not estimate the distribution of causes across all 715,518 failures or establish retries, automation or operator intent.
+
+The original archival endpoint returned five validated responses before rejecting subsequent requests with HTTP 429 and a deprecation message. The remaining 13 lookups succeeded through FastNear's archival endpoint. Earlier failed attempts are preserved in the completed JSON.
+
+The empty BigQuery log arrays did not imply an absence of diagnostic information: the RPC receipt statuses contained execution errors.
+
+Script: `analysis/05_fetch_failure_details.py`
+Results: `results/26_growth_account_failure_details_2026-08-24_to_2026-10-18.json`
