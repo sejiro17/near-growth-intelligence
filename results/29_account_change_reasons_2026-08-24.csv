@@ -1,0 +1,5 @@
+update_reason,change_records,affected_accounts,distinct_block_heights,records_without_account,records_with_transaction_hash,records_with_receipt_id,first_timestamp_utc,last_timestamp_utc
+receipt_processing,4379520,143857,141800,0,0,4379520,2026-08-24 00:00:00.148296 UTC,2026-08-24 23:59:59.935299 UTC
+action_receipt_gas_reward,1808288,957,141732,0,0,1808288,2026-08-24 00:00:00.148296 UTC,2026-08-24 23:59:59.935299 UTC
+transaction_processing,805717,81373,138436,0,805717,0,2026-08-24 00:00:00.148296 UTC,2026-08-24 23:59:59.935299 UTC
+validator_accounts_update,1860,465,4,0,0,0,2026-08-24 01:21:27.313867 UTC,2026-08-24 23:17:26.216025 UTC

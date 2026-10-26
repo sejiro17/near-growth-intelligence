@@ -456,3 +456,22 @@ Costs cover initial receipts only, grouped by transaction submission week. They 
 
 Query: `sql/27_growth_account_execution_costs.sql`
 Results: `results/27_growth_account_execution_costs_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Daily Total Supply Checks
+
+I examined daily block records from 23 August through 18 October. The closing block on 23 August provides the baseline immediately before the primary eight-week observation period.
+
+All 57 dates contained records. Within each day, block counts matched distinct block heights and hashes. No missing heights, hashes or timestamps, timestamp-date mismatches, or missing or invalid supply values were found.
+
+Each day's highest recorded block also had its latest timestamp. All closing observations were within one second of the following UTC midnight. These checks do not independently establish that every produced block was indexed.
+
+Observed closing total supply increased from approximately 1,304,386,568.87 NEAR on 23 August to 1,309,322,552.85 NEAR on 18 October.
+
+The net increase was approximately 4,935,983.98 NEAR, or 0.3784%. All 56 daily changes were positive and reconciled to the endpoint difference.
+
+These figures measure observed net supply movement. They do not separately quantify gross issuance, permanent burning or the causes of supply changes. Total supply is not circulating supply, and changes in staking or storage commitments should not automatically be interpreted as changes in total supply.
+
+Supply fields use floating-point storage, so converted amounts are approximate. The endpoints are the last recorded blocks of their respective dates.
+
+Query: `sql/28_daily_supply_checks.sql`
+Results: `results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv`
