@@ -130,6 +130,18 @@ These accounts were selected for investigation because of their growth contribut
 
 Evidence: results 22–24.
 
+### Failed initial receipts also contributed execution costs
+
+For tinykoala595.near, recorded initial-receipt execution costs totalled approximately 243.3451 NEAR. Failed receipts accounted for 211.1629 NEAR, or 86.78% of those costs, compared with 91.90% of its transactions.
+
+For wx-cruce.near, recorded initial-receipt costs totalled approximately 115.0938 NEAR. Failed receipts contributed 1.0978 NEAR, or 0.95% of costs, compared with 1.56% of transactions.
+
+These findings show that execution spending can include failed activity. Higher recorded costs therefore need to be examined alongside execution outcomes before they support an argument about successful application demand.
+
+The amounts cover initial receipts only, grouped by transaction submission week. They exclude transaction receipt-conversion costs and downstream receipts. They do not measure protocol revenue, permanent token burning or value accruing to holders. Source cost fields use floating-point storage, so amounts are approximate.
+
+Evidence: result 27.
+
 ### The diagnostic sample identified reported contract errors
 
 I inspected three selected failed receipts per active week for tinykoala595.near, covering eighteen receipts across six weeks. All eighteen returned validated failures executing on v2.ref-finance.near.
