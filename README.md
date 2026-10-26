@@ -4,47 +4,69 @@
 
 Is NEAR's activity growth persistent and broadly distributed, and what does that imply for its long-term investment case?
 
-I built this project to examine what sits behind headline activity figures: how many accounts participate, whether they return, how concentrated transactions are, and how recorded execution costs change alongside activity.
+I built this project to look beyond headline activity figures: who contributes to growth, whether accounts return, how concentrated transactions are, and whether additional submissions translate into successful execution.
+
+The analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC.
 
 ## Key Findings
 
 ### Transaction growth and account participation diverged
 
-The eight-week period contained 44,284,794 transactions.
+The period contained 44,284,794 transactions.
 
 Compared with the first week, the final week recorded 3.69% more transactions but 7.38% fewer weekly active signing accounts.
 
-Weekly active signing accounts peaked at 457,768 during 28 September–4 October, an increase of 198.16% from the preceding week. Of these accounts, 82.31% were active on only one day within that week.
+Weekly active signing accounts peaked at 457,768 during 28 September–4 October, an increase of 198.16% from the preceding week. Of these accounts, 82.31% were active on only one day that week.
 
-### Accounts active again generated most starting-week transactions
+### Growth extended beyond the original leading accounts
 
-Of the accounts active during 28 September–4 October, 83,037 (18.14%) were active again during 5–11 October.
+I followed the same ten busiest signing accounts from the first week across all eight weeks.
 
-These accounts generated 5,788,805 transactions during the starting week: 87.84% of that week's total.
+Their combined weekly transactions declined 19.83%, from 3,195,028 to 2,561,335. Transactions from all other signing accounts increased 52.50%, from 1,539,788 to 2,348,197.
 
-The remaining 81.86% of accounts generated 12.16% of transactions. Account counts and transaction counts therefore describe different aspects of the spike.
+The increase outside the original leaders was 808,409 transactions, offsetting their decline of 633,693 and leaving a network-wide net increase of 174,716.
 
-These shares describe starting-week activity. They do not measure how much transaction activity those accounts maintained the following week.
+Accounts never appearing in any week's top-twenty signing-account ranking contributed 43.80% of the outside group's net increase. Other tracked accounts contributed 56.20%.
 
-### Successful self-deletions change the interpretation of account returns
+This establishes growth outside the original leaders. It does not establish more independent users or successful application demand.
 
-Further checks found that 309,280 accounts absent the following week had successful receipt executions containing self-deletion actions during the starting week.
+### Selected growth included substantial failed execution activity
 
-They represented 82.53% of the absent group and 67.56% of the full starting-week cohort.
+Two growth-contributing accounts, tinykoala595.near and wx-cruce.near, accounted for 18.43% and 17.04% of the outside group's net transaction increase.
 
-This finding is important context for the low return share. The absence of these identifiers should not be presented as ordinary user churn.
+Across the observation period, tinykoala595.near signed 778,588 transactions. Matching each transaction to its initial receipt showed 715,518 failures: 91.90%.
 
-The reasons for deletion, account ownership and any later recreation remain unverified. The results do not establish how much deletion activity explains the increase from the preceding week.
+Separately, action records showed that 778,338 of its transactions contained swap calls targeting v2.ref-finance.near. The summaries do not cross-tabulate every action against every outcome, so they do not establish that all failures were swap failures.
+
+For wx-cruce.near, 1.56% of initial receipts failed and 96.54% returned SUCCESS_RECEIPT_ID. That status does not establish successful downstream execution.
+
+These accounts were selected for investigation. Their outcome shares are not network-wide failure rates.
+
+### Sampled failures contained specific contract errors
+
+I retrieved detailed execution responses for eighteen sampled failed receipts from tinykoala595.near.
+
+All eighteen executed on v2.ref-finance.near. Seventeen reported E68: slippage error, and one reported E22: not enough tokens in deposit.
+
+The sample identifies reported errors in those receipts. It does not estimate error frequencies across all failures, establish retries or identify automation.
+
+### Account lifecycle events change how returns should be interpreted
+
+Of the accounts active during 28 September–4 October, 83,037, or 18.14%, were active again during 5–11 October.
+
+These returning identifiers generated 87.84% of starting-week transactions. The remaining 81.86% of accounts generated 12.16%.
+
+Further checks found that 309,280 accounts absent the following week had successful receipt executions containing self-deletion actions during the starting week. They represented 82.53% of the absent group.
+
+The low return share should therefore not be presented as ordinary user churn. Deletion motives, ownership and later recreation remain unverified.
 
 ### Transactions were concentrated
 
-The ten busiest signing accounts contributed 48.17%–67.76% of weekly transactions.
+The ten busiest signing accounts contributed 48.17%–67.76% of weekly transactions. The ten busiest original transaction receivers accounted for 60.85%–70.22%.
 
-The ten busiest original transaction receivers accounted for 60.85%–70.22%.
+Action checks also found different activity patterns among leading accounts, including delegated actions and direct contract calls.
 
-Accounts were ranked separately each week. Receiver accounts have not been systematically mapped to verified applications.
-
-Concentration at the account level does not establish equivalent concentration in applications, ownership or end users.
+Account-level concentration does not establish equivalent concentration in ownership, applications or end users.
 
 ### Recorded execution costs increased faster than transactions
 
@@ -52,36 +74,33 @@ Across 280,743,473 receipt execution outcomes, recorded execution costs totalled
 
 The final week recorded approximately 10,544.79 NEAR, an increase of 82.73% from the first week.
 
-These amounts describe receipt executions occurring during each week. They exclude transaction receipt-conversion costs and do not establish protocol revenue, permanent token burning or investment returns.
+These amounts exclude transaction receipt-conversion costs. They do not establish protocol revenue, permanent token burning or investment returns.
 
 ## Investment Interpretation
 
-NEAR maintained substantial transaction activity during the selected eight weeks. However, the results do not demonstrate that participation was broadening or establish how much economic value accrued to NEAR holders.
+The evidence supports a more specific assessment than headline growth alone.
 
-My assessment is conditional: an investment argument based on adoption growth needs stronger evidence of persistent application demand and a measurable connection between that demand and NEAR's economics.
+Activity continued, and transactions outside the original leading accounts increased. However, the selected-account checks show that additional submissions can include substantial failed execution activity. The participation spike also included widespread self-deletion activity.
 
-Transaction activity ended above its starting level, while weekly active signing accounts ended below theirs. Successful self-deletion activity was widespread among accounts absent after the participation spike, making a straightforward user-churn interpretation inappropriate.
+My assessment remains conditional: an investment argument based on adoption growth needs stronger evidence of persistent application demand and a measurable connection between that demand and NEAR's economics.
 
-Transaction concentration makes the roles of major participants important to the assessment. Higher recorded execution costs establish increased spending on receipt execution, but do not quantify token-holder returns.
+The findings do not establish that growth outside the original leaders lacked useful demand. They show why account roles, lifecycle events and execution outcomes need to be examined before transaction growth is treated as evidence of broad adoption.
 
-These findings support further due diligence. They are insufficient on their own to justify an investment based on claims of broad, sustained adoption.
-
-The [investment assessment](notes/investment_thesis.md) explains the evidence, decision implications and conditions that would strengthen or weaken this position. The [economic mechanisms note](notes/economic_mechanisms.md) distinguishes documented mechanisms from the economic flows measured in this project.
+The [investment assessment](notes/investment_thesis.md) explains the evidence and conditions that would strengthen or weaken this position. The [economic mechanisms note](notes/economic_mechanisms.md) distinguishes documented mechanisms from measured economic flows.
 
 ## Dashboard
 
-The dashboard presents the investment assessment, its supporting evidence and the conditions that would change it.
-
-Four views allow readers to explore the underlying results:
+Five views allow readers to explore the evidence:
 
 - **Growth:** Weekly account participation and indexed comparisons of transactions, active signing accounts and recorded receipt execution costs.
+- **Growth drivers:** A fixed-account comparison, contributions to transaction growth, account activity, selected initial receipt outcomes and sampled execution errors.
 - **Account returns:** Weekly activity-cohort returns, the spike cohort's account shares versus transaction shares, and self-deletion context.
-- **Concentration:** Signing-account transaction shares and a weekly explorer of the twenty busiest transaction receivers.
+- **Concentration:** Signing-account transaction shares and a weekly explorer of the twenty busiest original transaction receivers.
 - **Execution costs:** Recorded receipt execution costs and failed receipts' shares of outcomes and costs.
 
 [Hosted dashboard](https://near-growth-intelligence.streamlit.app) — access is currently restricted to authorised viewers.
 
-The dashboard uses saved CSV exports. Opening it does not run BigQuery queries or refresh the source data.
+The dashboard uses saved CSV and JSON exports. Opening it does not run BigQuery queries, make RPC requests or refresh the source data.
 
 ## Run Locally
 
@@ -96,98 +115,105 @@ python -m pip install -r requirements.txt
 python -m streamlit run dashboard/app.py
 ```
 
-## Data and Methodology
+Open the local URL printed in the terminal. Press Ctrl + C in that terminal to stop the dashboard.
 
-The analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC. Weekly account returns use complete follow-up weeks within this period.
+## Data and Methodology
 
 Source dataset:
 
 `bigquery-public-data.crypto_near_mainnet_us`
 
-### Activity measures
+### Activity and account returns
 
 Transactions are grouped by submission date. Receipt execution outcomes and their costs are grouped by execution date.
 
 Weekly active signing accounts count each transaction-signing identifier once within a week. Signing-account-days count an identifier once per active day and are not weekly unique accounts.
 
-Signing accounts may represent people, automated services, relayers or other participants. They are not verified individuals.
+Each activity cohort contains all signing accounts active in its starting week. Follow-up percentages measure participation during a particular subsequent week, rather than continuous participation or cumulative returns.
 
-### Account returns
+Cohorts overlap and do not necessarily represent newly acquired users. Incomplete follow-up weeks are excluded.
 
-Each activity cohort contains all signing accounts active in its starting week.
+### Concentration and growth contributions
 
-Follow-up percentages measure participation during a particular subsequent week. They do not require continuous participation or measure cumulative returns.
+Weekly rankings are calculated separately for each week.
 
-Cohorts can overlap and do not necessarily represent newly acquired users. Incomplete follow-up weeks are excluded.
+The tracked-account series follows the 51 identifiers appearing in at least one week's top-twenty signing-account ranking. It includes all eight weeks for each identifier.
 
-### Concentration
+The fixed-account comparison selects the first week's top ten signing accounts and holds membership constant. Contributions compare transaction counts in the first and final weeks.
 
-Rankings are calculated separately for each week.
+The untracked group combines all accounts outside the tracked set. It is not a classification of ordinary users or independent demand.
 
-Receiver-level signing-account counts can overlap and must not be summed as network-wide unique accounts.
+Receiver exports contain each week's twenty busiest original transaction destinations. Absence from a ranking does not establish zero activity. Receiver-level signing-account counts can overlap.
 
-Receiver exports contain each week's twenty busiest original transaction destinations. Absence from a ranking does not establish zero activity.
+### Actions and execution outcomes
 
-### Spike investigation
+Action comparisons describe recorded transaction actions and methods. Counts can overlap across action categories, and delegated payload contents have not been expanded.
 
-The spike analysis follows accounts active during 28 September–4 October and groups them by whether they were active during 5–11 October.
+For the two selected growth accounts, transactions are linked to their initial receipt outcomes using converted receipt identifiers. The outcome lookup includes records through 19 October.
 
-Receiver and action comparisons describe their starting-week transactions.
+An initial receipt outcome does not establish the result of the complete execution chain. SUCCESS_RECEIPT_ID is not treated as proof of downstream success.
+
+### Diagnostic sample
+
+The failure sample contains three selected receipts per active week for tinykoala595.near: eighteen receipts across six weeks.
+
+RPC responses were checked against transaction hashes, signing accounts, receipt identifiers, executors and failure statuses. Raw responses and earlier unsuccessful retrieval attempts are preserved.
+
+The sample is diagnostic and does not estimate population error frequencies.
+
+### Account deletion
+
+The spike analysis follows accounts active during 28 September–4 October and groups them by participation during 5–11 October.
 
 Deletion checks link transactions containing DELETE_ACCOUNT actions to their initial receipt outcomes, allowing outcomes through 11 October. They check whether the signer equals the receiver and whether execution occurred on that receiver.
 
-Successful self-deletion does not establish the reason for deletion, permanent loss of the identifier or continuity of ownership if it later reappears.
+Successful self-deletion does not establish its cause, permanent loss of the identifier or continuity of ownership if it later reappears.
 
-Excluding accounts with deletion activity would not, by itself, produce a verified user-retention measure.
+Excluding these accounts would not, by itself, produce a verified user-retention measure.
 
-### Execution costs
+### Execution costs and economic interpretation
 
-Recorded token costs are converted from yoctoNEAR to NEAR by dividing by 10^24.
-
-Source cost fields use floating-point storage, so amounts are approximate.
+Recorded token costs are converted from yoctoNEAR to NEAR by dividing by 10^24. Source cost fields use floating-point storage, so amounts are approximate.
 
 Growth indices set the first week to 100. They compare changes across metrics with different units; they do not match individual transactions to their complete execution costs.
 
-### Economic interpretation
-
-Economic mechanisms are documented separately using official sources.
-
-These sources provide context for interpreting network activity. They do not establish that every mechanism or parameter applied unchanged throughout the observation period.
+Economic mechanisms are documented separately using official sources. Current documentation does not independently establish that every parameter applied unchanged throughout the observation period.
 
 The analysis does not calculate net issuance, permanent token burning, staking returns or total value accruing to NEAR holders.
 
 ## Validation and Coverage
 
-The research includes checks for:
+Checks include:
 
 - Historical partition coverage and daily record counts.
 - Transaction-hash uniqueness, account fields and timestamp coverage.
 - Execution-outcome identifiers, statuses and cost-field validity.
 - Execution-outcome matching to receipt records.
-- Reconciliation of weekly exports and derived calculations.
+- Reconciliation of weekly exports, fixed-account groups and growth contributions.
 - Spike cohort totals and deletion receipt outcomes.
+- Selected growth-account action coverage and initial receipt matching.
+- Diagnostic RPC response identities and failure statuses.
 
-Earlier exploratory checks found unmatched execution outcomes during 1 July–22 August. Their cause remains unresolved. The primary period was selected within the later interval where all checked outcomes matched exactly one ACTION receipt, using complete calendar weeks.
+Earlier exploratory checks found unmatched execution outcomes during 1 July–22 August. Their cause remains unresolved. The primary period uses complete calendar weeks within the later interval where all checked outcomes matched exactly one ACTION receipt.
 
 The spike action analysis found 474 transactions without matching transaction-action records in its selected lookup window. This remains a documented coverage limitation.
 
-All 309,642 selected deletion transactions matched exactly one initial receipt outcome. Every selected deletion transaction targeted its signing account, and the execution account matched the receiver. Successful and failed outcomes were examined separately.
+All 309,642 selected deletion transactions matched exactly one initial receipt outcome. Successful and failed outcomes were examined separately.
+
+For the two selected growth accounts, all 1,191,869 transactions matched exactly one initial receipt outcome, with the executor matching the original receiver.
 
 Detailed checks and findings are recorded in [notes/data_checks.md](notes/data_checks.md).
 
 ## Limitations
 
 - Eight weeks cannot establish long-term adoption.
-- Signing accounts are not verified people.
-- Activity cohorts are not necessarily newly acquired users.
-- Account deletion complicates interpretation of participation and return figures.
-- Account ownership, deletion motives and later recreation remain unverified.
-- Transaction receivers are not automatically applications or downstream execution destinations.
-- Transaction submissions, actions and receipt executions measure different units.
-- Receipt outcomes do not establish the final result of every transaction's execution chain.
-- Submitted actions do not by themselves establish successful execution.
-- Delegated payload contents were not expanded in the transaction-action comparison.
-- Observed changes do not establish their causes.
+- Signing identifiers are not verified people; ownership and account roles remain incompletely understood.
+- Account lifecycle events complicate participation and return measures.
+- Transaction receivers are not automatically applications or downstream destinations.
+- Transactions, actions and receipt executions measure different units.
+- Submitted actions and initial receipt outcomes do not establish completed execution chains or economic activity.
+- The selected growth accounts and diagnostic sample do not represent the whole network.
+- Growth contributions describe changes in transaction counts, not their causes.
 - Recorded execution costs alone do not establish economic value accruing to NEAR holders.
 - Current economic documentation does not independently verify historical parameters.
 
@@ -198,9 +224,19 @@ After activating the project environment, run:
 ```bash
 python analysis/01_weekly_activity_baseline.py
 python analysis/02_weekly_execution_costs.py
+python analysis/03_fixed_account_growth.py
+python analysis/04_account_growth_contributions.py
 ```
 
 These scripts use saved exports and do not require another BigQuery scan.
+
+To validate saved diagnostic responses or resume incomplete RPC lookups:
+
+```bash
+python analysis/05_fetch_failure_details.py
+```
+
+If all eighteen saved responses validate, the script makes no RPC requests and leaves the results unchanged. Incomplete lookups require network access.
 
 SQL queries are stored in `sql/`. Running them requires BigQuery access and may incur query charges.
 
@@ -213,23 +249,26 @@ SQL queries are stored in `sql/`. Running them requires BigQuery access and may 
 
 ## Future Research
 
-- Extend the observation period to assess persistence across more market conditions.
-- Verify account and application roles where reliable evidence is available.
-- Investigate deletion motives, later account recreation and ownership continuity.
-- Investigate unresolved coverage gaps.
+- Extend the observation period and compare additional cohorts.
+- Verify account roles and expand delegated actions where practical.
+- Examine execution outcomes across a broader set of growth-contributing accounts.
+- Investigate downstream execution before classifying completed application activity.
+- Investigate deletion motives, recreation and ownership continuity.
+- Resolve documented coverage gaps.
 - Reconcile execution activity with a broader measurement of NEAR's economics.
 
 ## Tools
 
 - SQL and Google BigQuery
 - Python, pandas, Plotly and Streamlit
+- Public NEAR archival RPC
 - VS Code
 - Git and GitHub
 
 ## Repository Structure
 
 - `sql/`: Extraction, validation and analytical queries.
-- `analysis/`: Python scripts for derived tables.
-- `results/`: Exported query results and derived tables.
+- `analysis/`: Derived-table and diagnostic retrieval scripts.
+- `results/`: Exported query results, derived tables and RPC evidence.
 - `dashboard/`: Interactive Streamlit dashboard.
 - `notes/`: Research plan, data checks, investment assessment and economic mechanisms.
