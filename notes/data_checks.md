@@ -411,3 +411,16 @@ The analysis does not establish failure causes, retries, operator motives, compl
 
 Query: `sql/24_growth_account_outcomes.sql`
 Results: `results/24_growth_account_outcomes_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Sampled Failure Logs
+
+I selected three failed initial receipts per active week for tinykoala595.near, using a deterministic transaction-hash ordering.
+
+The sample contains 18 distinct receipts across six weeks. Each receipt had one matched FAILURE outcome, and every executor matched the original receiver.
+
+All 18 exported log arrays were empty. The sample therefore provides no diagnostic error messages and does not establish a common failure cause, retries or operator intent.
+
+The sample is intended for diagnostic inspection, not for estimating the prevalence of particular error causes. Further investigation requires execution details from another source.
+
+Query: `sql/25_inspect_growth_account_failures.sql`
+Results: `results/25_growth_account_failure_sample_2026-08-24_to_2026-10-18.csv`
