@@ -182,6 +182,64 @@ c.metric(
     delta_color="off",
 )
 
+st.subheader("Investment assessment")
+st.info(
+    "Network activity continued, but this eight-week window does not "
+    "demonstrate broader, persistent participation or quantify economic "
+    "value accruing to NEAR holders. An adoption-led investment case "
+    "therefore remains conditional on stronger evidence of durable "
+    "application demand and measurable token value capture."
+)
+st.caption(
+    "This assessment concerns the evidence examined; it is not a finding "
+    "that NEAR has no investment merit."
+)
+
+with st.expander("What supports the assessment, and what would change it?"):
+    st.markdown(
+        "**Participation:** Final-week transactions were "
+        f"{change('transactions'):+.2f}% versus the first week, while "
+        "weekly active signing accounts were "
+        f"{change('weekly_active_signing_accounts'):+.2f}%. "
+        "Transaction growth alone does not establish broader adoption. "
+        "Longer-term participation associated with verified account roles "
+        "would strengthen the assessment."
+    )
+    st.markdown(
+        "**Account lifecycle:** Successful receipt executions containing "
+        "self-deletion actions appeared among 82.53% of accounts absent "
+        "after the spike week. The low return share is not a verified "
+        "user-churn rate. Lifecycle-aware cohort comparisons are needed; "
+        "simply excluding deleted accounts would not establish retention."
+    )
+    st.markdown(
+        "**Concentration:** The ten busiest signing accounts generated "
+        f"{weekly['top_10_accounts_transaction_share_pct'].min():.2f}%–"
+        f"{weekly['top_10_accounts_transaction_share_pct'].max():.2f}% "
+        "of weekly transactions. Verifying their roles would help establish "
+        "whether this reflects shared infrastructure serving independent "
+        "demand or dependence on a few participants."
+    )
+    st.markdown(
+        "**Economics:** Recorded receipt execution costs changed by "
+        f"{change('recorded_execution_cost_near'):+.2f}% between the first "
+        "and final weeks. This measures execution spending, not holder "
+        "returns. Relevant fee distributions, issuance and other economic "
+        "flows need separate reconciliation."
+    )
+    st.markdown(
+        "**What would weaken the case:** Declining comparable-cohort "
+        "participation after lifecycle effects are examined; increasing "
+        "dependence accompanied by weakening independent demand; or "
+        "economic flows that do not support the assumed token-demand "
+        "or supply effects. These conditions have not all been tested."
+    )
+    st.caption(
+        "Self-deletion evidence: saved result 17. Other figures use the "
+        "combined weekly results. The full investment assessment and "
+        "economic mechanisms note are included in the repository."
+    )
+
 growth_tab, returns_tab, concentration_tab, costs_tab = st.tabs(
     ["Growth", "Account returns", "Concentration", "Execution costs"]
 )
