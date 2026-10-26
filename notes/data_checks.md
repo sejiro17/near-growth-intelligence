@@ -308,3 +308,24 @@ Account-week summary fields repeat across receiver rows and must be deduplicated
 
 Query: `sql/19_leading_account_activity.sql`
 Results: `results/19_leading_account_activity_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Leading Account Actions
+
+I examined submitted action types and function-call methods for the five accounts consistently ranked among the ten busiest signing accounts.
+
+The export contains 178 rows across 40 account-week groups. Transaction totals reconcile with result 18. Every selected transaction matched an action record within the lookup window. No matched action rows had missing indices, and no FUNCTION_CALL rows had missing method names.
+
+DELEGATE_ACTION appeared in 13,246,938 transactions signed by sweat-relayer.near, representing 96.66% of its transactions. For meteor-relayer.near, it appeared in 1,239,064 transactions, or 98.02%.
+
+All 2,769,479 transactions signed by intents.near contained an execute_intents function call.
+
+For closemeat6237.near, 901,581 transactions contained swap calls and 702,584 contained ft_transfer_call calls, representing 55.65% and 43.37% respectively.
+
+Methods submitted by omni-relayer.bridge.near included sign_btc_transaction, sign_transfer, claim_fee, fin_transfer, verify_deposit_v2 and verify_withdraw_v2.
+
+The results distinguish delegated submissions from direct function calls and other actions. They support examining intermediary activity before interpreting signing-account concentration as end-user concentration.
+
+Delegated payload contents were not expanded. Submitted methods do not establish successful execution, operator identity or independent user demand. A transaction can contain multiple action or method categories, so category transaction counts must not be summed as unique transactions.
+
+Query: `sql/20_leading_account_actions.sql`
+Results: `results/20_leading_account_actions_2026-08-24_to_2026-10-18.csv`
