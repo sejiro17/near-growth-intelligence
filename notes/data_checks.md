@@ -439,3 +439,20 @@ The empty BigQuery log arrays did not imply an absence of diagnostic information
 
 Script: `analysis/05_fetch_failure_details.py`
 Results: `results/26_growth_account_failure_details_2026-08-24_to_2026-10-18.json`
+
+## 26 October 2026 — Execution Costs of Selected Growth Accounts
+
+I measured recorded initial-receipt execution costs for transactions signed by tinykoala595.near and wx-cruce.near during 24 August–18 October, allowing execution outcomes through 19 October.
+
+All 1,191,869 transactions reconciled to result 24 and matched exactly one initial receipt outcome. Every executor matched the original receiver. All cost values were present, finite and nonnegative.
+
+For tinykoala595.near, recorded initial-receipt costs totalled approximately 243.3451 NEAR. Its 715,518 failed receipts accounted for 211.1629 NEAR, or 86.78% of those costs. Failures represented 91.90% of the account's transactions.
+
+For wx-cruce.near, recorded initial-receipt costs totalled approximately 115.0938 NEAR. Its 6,441 failed receipts accounted for 1.0978 NEAR, or 0.95% of those costs. Failures represented 1.56% of the account's transactions.
+
+Failed execution therefore contributed recorded costs even when the initial receipt did not execute successfully. These amounts do not establish completed application activity, protocol revenue or value accruing to token holders.
+
+Costs cover initial receipts only, grouped by transaction submission week. They exclude transaction receipt-conversion costs and downstream receipts. Source cost fields use floating-point storage, so amounts are approximate. The selected accounts do not represent the whole network.
+
+Query: `sql/27_growth_account_execution_costs.sql`
+Results: `results/27_growth_account_execution_costs_2026-08-24_to_2026-10-18.csv`
