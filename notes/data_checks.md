@@ -390,3 +390,24 @@ A transaction may contain several action or method categories. Category transact
 
 Query: `sql/23_growth_account_activity.sql`
 Results: `results/23_growth_account_activity_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Initial Outcomes of Growth-Contributing Accounts
+
+I matched transactions signed by tinykoala595.near and wx-cruce.near to their initial receipt execution outcomes, allowing outcomes through 19 October.
+
+The export contains 30 rows across ten active account-week groups. Transaction counts reconcile with result 18. Within each account-week, transaction hashes and nonnull initial receipt identifiers were distinct.
+
+Every selected transaction matched exactly one initial receipt outcome. No missing or multiple outcome matches were reported, and every executor matched the original transaction receiver.
+
+Of 778,588 transactions signed by tinykoala595.near, 715,518 had FAILURE outcomes (91.90%), 62,955 had SUCCESS_VALUE outcomes (8.09%), and 115 had SUCCESS_RECEIPT_ID outcomes (0.01%).
+
+Of 413,281 transactions signed by wx-cruce.near, 6,441 had FAILURE outcomes (1.56%), 7,872 had SUCCESS_VALUE outcomes (1.90%), and 398,968 had SUCCESS_RECEIPT_ID outcomes (96.54%).
+
+These results qualify the earlier growth contribution findings. Submitted transaction growth does not establish successful economic activity. Most initial receipts associated with tinykoala595.near failed.
+
+Most initial receipts associated with wx-cruce.near returned SUCCESS_RECEIPT_ID. This does not establish the final outcome of downstream execution.
+
+The analysis does not establish failure causes, retries, operator motives, completed swaps or economic volume. Outcomes were grouped by account and week, rather than directly cross-tabulated with submitted methods.
+
+Query: `sql/24_growth_account_outcomes.sql`
+Results: `results/24_growth_account_outcomes_2026-08-24_to_2026-10-18.csv`
