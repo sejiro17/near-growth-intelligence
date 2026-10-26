@@ -287,3 +287,24 @@ Account roles and ownership remain unverified. Weekly totals and full-period acc
 
 Query: `sql/18_weekly_leading_signing_accounts.sql`
 Results: `results/18_weekly_leading_signing_accounts_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Leading Account Destinations
+
+I examined the original transaction receivers of the five signing accounts that ranked in the top ten during every week of the observation period.
+
+The export contains 399 receiver rows across 40 account-week groups. Account transaction totals and active days reconcile with result 18. Receiver rankings, transaction shares and top-twenty coverage totals passed the checks performed. No missing or empty receiver identifiers were reported.
+
+sweat-relayer.near submitted transactions to between 120,242 and 223,109 distinct original receivers per week. meteor-relayer.near submitted transactions to between 16,691 and 17,694.
+
+Across the period, their weekly top-twenty receiver lists captured 69.98% and 2.98% of their respective transactions. These percentages aggregate transactions covered by each week's ranking; they do not describe a single fixed receiver list.
+
+All 2,769,479 transactions signed by intents.near targeted intents.near. Most transactions signed by omni-relayer.bridge.near targeted omni.bridge.near, btc-connector.bridge.near and zcash-connector.bridge.near.
+
+closemeat6237.near had five distinct receivers each week. v2.ref-finance.near ranked first throughout and received 914,376 of its 1,620,042 transactions.
+
+These results show that signing-account concentration can coexist with many transaction destinations. They do not establish account ownership, distinct users, independent demand or successful execution. Original receivers also do not identify every participant or downstream destination in delegated execution.
+
+Account-week summary fields repeat across receiver rows and must be deduplicated before aggregation.
+
+Query: `sql/19_leading_account_activity.sql`
+Results: `results/19_leading_account_activity_2026-08-24_to_2026-10-18.csv`
