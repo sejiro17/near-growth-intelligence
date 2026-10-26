@@ -350,3 +350,24 @@ Group membership was selected using first-week transaction rankings and held con
 
 Script: `analysis/03_fixed_account_growth.py`
 Results: `results/21_fixed_account_growth_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Account Contributions to Transaction Growth
+
+I decomposed the first-to-final-week transaction change using the 51 account histories in result 18 and the fixed-group comparison in result 21.
+
+The 52 output rows contain 51 individual accounts and one aggregate remainder for all untracked accounts. Endpoint counts, changes, network shares and contribution percentages reconcile with the source exports.
+
+Outside the fixed first-week top ten, transactions increased by 808,409. The other 41 tracked accounts contributed a net increase of 454,289, or 56.20%. Untracked accounts combined contributed 354,120, or 43.80%.
+
+Transactions from the untracked remainder increased from 1,163,267 to 1,517,387, or 30.44%. Untracked means outside the union of accounts appearing in any weekly top-twenty signing-account ranking during the selected period. It does not mean verified users or independent applications.
+
+The largest positive contributions among tracked accounts outside the fixed group came from tinykoala595.near and wx-cruce.near: 148,950 and 137,767 transactions respectively. These represented 18.43% and 17.04% of the outside-group net increase.
+
+Both accounts had zero transactions in the first week. This does not establish when they were created or first used.
+
+The results show growth beyond the original leading accounts, alongside contributions from other prominent accounts. They do not establish how growth was distributed within the untracked remainder, account ownership or the causes of the changes.
+
+Contributions use the outside-group net increase as their denominator. Negative contributions and contributions above 100% are possible because increases and decreases offset each other. The comparison concerns the first and final weeks, not cumulative growth across the period.
+
+Script: `analysis/04_account_growth_contributions.py`
+Results: `results/22_account_growth_contributions_2026-08-24_to_2026-10-18.csv`
