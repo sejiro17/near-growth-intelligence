@@ -329,3 +329,24 @@ Delegated payload contents were not expanded. Submitted methods do not establish
 
 Query: `sql/20_leading_account_actions.sql`
 Results: `results/20_leading_account_actions_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Growth Outside a Fixed Account Group
+
+I held the ten busiest signing accounts from 24–30 August fixed and compared their transaction activity with all remaining signing accounts across eight weeks.
+
+All eight weekly rows reconcile with results 10 and 18. Fixed-group totals, remaining transaction counts, active-account counts, shares and growth percentages passed independent checks.
+
+Network transactions increased from 4,734,816 to 4,909,532 between the first and final weeks, or 3.69%.
+
+Transactions signed by the fixed group declined from 3,195,028 to 2,561,335, or 19.83%. Transactions outside it increased from 1,539,788 to 2,348,197, or 52.50%.
+
+The increase of 808,409 transactions outside the group offset its decline of 633,693. The fixed group's network transaction share fell from 67.48% to 52.17%. All ten selected accounts remained active each week.
+
+Transactions outside the group peaked at 3,673,647 during 28 September–4 October. The final week was 36.08% below that peak.
+
+Growth was not confined to the signing accounts that dominated the first week. However, the remaining activity includes other large accounts, intermediaries and account lifecycle events. It does not establish independent users, application diversity or sustained adoption.
+
+Group membership was selected using first-week transaction rankings and held constant. This is a descriptive comparison, not a simulation of the network without those accounts.
+
+Script: `analysis/03_fixed_account_growth.py`
+Results: `results/21_fixed_account_growth_2026-08-24_to_2026-10-18.csv`
