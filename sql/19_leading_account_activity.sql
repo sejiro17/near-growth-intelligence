@@ -112,6 +112,3 @@ ORDER BY
     r.signer_account_id,
     r.week_start,
     r.receiver_rank;
-
-
-    
