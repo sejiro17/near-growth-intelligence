@@ -475,3 +475,31 @@ Supply fields use floating-point storage, so converted amounts are approximate. 
 
 Query: `sql/28_daily_supply_checks.sql`
 Results: `results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv`
+
+## 27 October 2026 — Validator Balance Changes and Supply Reconciliation
+
+I investigated whether account-change records could help explain the observed total-supply increase.
+
+On 24 August, four update reasons were present: receipt_processing, action_receipt_gas_reward, transaction_processing and validator_accounts_update. Validator updates comprised 1,860 records affecting 465 accounts at four block heights.
+
+All 1,860 validator updates matched a usable previous account record in the selected lookup window. Their combined staked and nonstaked balances increased by approximately 108,245.80 NEAR.
+
+Forty comparisons showed decreases, totalling approximately 0.000000000580 NEAR. Their size is consistent with floating-point precision effects; they do not establish meaningful slashing or burning.
+
+I extended the comparison across 24 August–18 October, using records from 23 August as additional history. All 83,864 validator updates matched usable previous records across all 56 dates.
+
+The raw net balance increase associated with validator updates was approximately 4,919,384.47 NEAR. No individual decrease exceeded the analytical tolerance of 0.000001 NEAR. Raw changes and amounts within the tolerance were retained separately. This tolerance is not a protocol rule or a guarantee of source accuracy.
+
+Separately, 7,930,886 block records across the primary period matched their recorded predecessor hashes. Observed positive supply movements totalled approximately 4,990,242.56 NEAR, while decreases totalled 54,258.58 NEAR. Their difference reconciled to the 4,935,983.98 NEAR net supply increase in result 28.
+
+Positive block-level supply movements exceeded the measured validator-update balance increase by approximately 70,858.09 NEAR. The net supply increase exceeded it by approximately 16,599.51 NEAR. These differences remain unresolved.
+
+The measurements should not be labelled complete gross issuance or permanent burning. Increases and reductions can offset within a block, and matching available account records does not independently establish complete economic-flow coverage.
+
+The chunks schema contains gas usage but no explicit issuance or token-burning amount. I have paused further decomposition and retained the reconciliation gap as a measurement limitation.
+
+All amounts derived from floating-point balance and supply fields are approximate.
+
+Queries: `sql/29_inspect_account_change_reasons.sql`, `sql/30_inspect_validator_balance_changes.sql`, `sql/31_inspect_negative_validator_changes.sql`, `sql/32_daily_validator_balance_changes.sql`, `sql/33_daily_block_supply_movements.sql`
+
+Results: `results/29_account_change_reasons_2026-08-24.csv`, `results/30_validator_balance_changes_2026-08-24.csv`, `results/31_negative_validator_changes_2026-08-24.csv`, `results/32_daily_validator_balance_changes_2026-08-24_to_2026-10-18.csv`, `results/33_daily_block_supply_movements_2026-08-24_to_2026-10-18.csv`
