@@ -371,3 +371,22 @@ Contributions use the outside-group net increase as their denominator. Negative 
 
 Script: `analysis/04_account_growth_contributions.py`
 Results: `results/22_account_growth_contributions_2026-08-24_to_2026-10-18.csv`
+
+## 26 October 2026 — Activity of Two Growth-Contributing Accounts
+
+I examined transaction destinations, submitted action types and function-call methods for tinykoala595.near and wx-cruce.near, the two largest positive contributors among tracked accounts outside the fixed first-week top ten.
+
+The export contains 101 rows across ten account-week groups with observed transactions. Weekly totals reconcile with result 18. Weeks absent from the export correspond to zero transactions in that result.
+
+Every selected transaction matched an action record within the lookup window. No matched action rows had missing indices or missing FUNCTION_CALL method names.
+
+Of 778,588 transactions signed by tinykoala595.near, 778,338 contained a swap call to v2.ref-finance.near, representing 99.97%.
+
+Of 413,281 transactions signed by wx-cruce.near, 200,667 contained ft_transfer_call to 17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1, representing 48.55%. Another 199,869 contained ft_transfer_call to wrap.near, representing 48.36%.
+
+These findings associate two substantial growth contributions with specific contract interactions. They do not establish operator identity, automated behaviour, independent users, economic volume or successful execution.
+
+A transaction may contain several action or method categories. Category transaction counts overlap and must not be summed as unique transactions. The export does not expand function-call payloads or trace downstream execution.
+
+Query: `sql/23_growth_account_activity.sql`
+Results: `results/23_growth_account_activity_2026-08-24_to_2026-10-18.csv`
