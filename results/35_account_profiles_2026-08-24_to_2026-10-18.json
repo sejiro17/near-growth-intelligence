@@ -13,7 +13,8 @@
     "Profiles do not establish complete application coverage.",
     "Receiver breakdowns contain weekly top 20 destinations.",
     "Action-category transaction counts can overlap and must not be summed.",
-    "Current attribution evidence does not prove historical ownership."
+    "Current attribution evidence does not prove historical ownership.",
+    "Delegated inner actions have not been expanded. Observed action patterns do not independently establish service affiliation."
   ],
   "profiles": [
     {
@@ -1241,8 +1242,8 @@
     {
       "account_id": "sweat-relayer.near",
       "service": null,
-      "evidence_status": "Pending verification",
-      "role": "Observed signing account; service attribution unverified.",
+      "evidence_status": "Service attribution pending verification",
+      "role": "Observed signing account submitting delegated transactions and function calls. Delegated inner actions have not been expanded. Service affiliation and operator ownership remain unverified.",
       "source": null,
       "full_period_transactions": 13704363,
       "weekly": [
