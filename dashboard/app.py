@@ -106,7 +106,11 @@ try:
 
     economics = load_csv(
         f"34_weekly_economic_comparison_{PERIOD}.csv",
-        ["week_start", "week_end", "opening_supply_baseline_date"],
+        [
+            "week_start",
+            "week_end",
+            "opening_supply_baseline_date",
+        ],
     ).sort_values("week_start").reset_index(drop=True)
 
     if (
@@ -141,7 +145,8 @@ try:
 
     for field in economic_fields:
         economics[field] = pd.to_numeric(
-            economics[field], errors="raise"
+            economics[field],
+            errors="raise",
         )
 
         if not economics[field].map(isfinite).all():
@@ -151,12 +156,13 @@ try:
 
     economic_pairs = {
         "transactions": "transactions",
-        "weekly_active_signing_accounts":
-            "weekly_active_signing_accounts",
-        "receipt_execution_outcomes":
-            "receipt_execution_outcomes",
-        "recorded_receipt_execution_cost_near":
-            "recorded_execution_cost_near",
+        "weekly_active_signing_accounts": (
+            "weekly_active_signing_accounts"
+        ),
+        "receipt_execution_outcomes": "receipt_execution_outcomes",
+        "recorded_receipt_execution_cost_near": (
+            "recorded_execution_cost_near"
+        ),
     }
 
     for economic_field, weekly_field in economic_pairs.items():
@@ -165,7 +171,7 @@ try:
                 float(a),
                 float(b),
                 rel_tol=1e-12,
-                abs_tol=0.00001,
+                abs_tol=1e-5,
             )
             for a, b in zip(
                 economics[economic_field],
@@ -179,8 +185,9 @@ try:
     previous_close = None
 
     for row in economics.to_dict("records"):
-        if row["opening_supply_baseline_date"] != (
-            row["week_start"] - pd.Timedelta(days=1)
+        if (
+            row["opening_supply_baseline_date"]
+            != row["week_start"] - pd.Timedelta(days=1)
         ):
             raise ValueError(
                 "Unexpected opening supply baseline date."
@@ -240,7 +247,7 @@ try:
                 float(a),
                 float(b),
                 rel_tol=1e-12,
-                abs_tol=0.00001,
+                abs_tol=1e-5,
             )
             for a, b in checks
         ):
@@ -289,9 +296,9 @@ try:
             "Duplicate leading-account records."
         )
 
-    if not leading.groupby("signer_account_id").size().eq(
-        len(weekly)
-    ).all():
+    if not leading.groupby(
+        "signer_account_id"
+    ).size().eq(len(weekly)).all():
         raise ValueError(
             "Incomplete tracked-account weekly series."
         )
@@ -351,7 +358,9 @@ try:
     ]
 
     if (
-        not account_costs["cost_check"].eq("VALID_COST").all()
+        not account_costs["cost_check"].eq(
+            "VALID_COST"
+        ).all()
         or not account_costs[
             "account_week_unassessed_or_invalid_costs"
         ].eq(0).all()
@@ -366,20 +375,22 @@ try:
     ]
 
     if not cost_values.map(
-        lambda value: pd.notna(value)
-        and 0 <= value < float("inf")
+        lambda value: (
+            pd.notna(value)
+            and 0 <= value < float("inf")
+        )
     ).all():
         raise ValueError(
             "Selected-account costs must be finite and nonnegative."
         )
 
-    cost_counts = account_costs.set_index(cost_keys)[
-        "transactions"
-    ].sort_index()
+    cost_counts = account_costs.set_index(
+        cost_keys
+    )["transactions"].sort_index()
 
-    outcome_counts = outcomes.set_index(cost_keys)[
-        "transactions"
-    ].sort_index()
+    outcome_counts = outcomes.set_index(
+        cost_keys
+    )["transactions"].sort_index()
 
     if not cost_counts.equals(outcome_counts):
         raise ValueError(
@@ -450,7 +461,11 @@ try:
         )
 
     group_summary = spike[
-        ["return_group", "group_accounts", "group_transactions"]
+        [
+            "return_group",
+            "group_accounts",
+            "group_transactions",
+        ]
     ].drop_duplicates()
 
     expected_groups = {
@@ -460,7 +475,8 @@ try:
 
     if (
         len(group_summary) != 2
-        or set(group_summary["return_group"]) != expected_groups
+        or set(group_summary["return_group"])
+        != expected_groups
     ):
         raise ValueError(
             "The spike cohort group totals are inconsistent."
@@ -471,7 +487,9 @@ try:
 
     if (
         not spike["cohort_week"].eq(starting_week).all()
-        or not spike["followup_week"].eq(following_week).all()
+        or not spike["followup_week"].eq(
+            following_week
+        ).all()
     ):
         raise ValueError(
             "The spike cohort dates are inconsistent."
@@ -508,14 +526,20 @@ try:
         "group_accounts",
     ].iloc[0]
 
-    if returned_accounts != followup.iloc[0][
-        "active_cohort_accounts"
-    ]:
+    if (
+        returned_accounts
+        != followup.iloc[0]["active_cohort_accounts"]
+    ):
         raise ValueError(
             "The spike return count does not reconcile."
         )
 
-except (OSError, ValueError, KeyError, TypeError) as error:
+except (
+    OSError,
+    ValueError,
+    KeyError,
+    TypeError,
+) as error:
     st.error(
         f"Unable to load the research results: {error}"
     )
@@ -531,18 +555,22 @@ def show_weekly_chart(fig):
         ).tolist(),
         title_text="Week starting · 2026",
     )
+
     fig.update_layout(
         legend_title_text="",
         margin=dict(t=30, b=40),
     )
+
     st.plotly_chart(fig, width="stretch")
 
 
 st.title("NEAR Growth Intelligence")
+
 st.write(
     "Does higher network activity translate into broader, "
     "more persistent participation?"
 )
+
 st.caption(
     "24 August–18 October 2026 · Eight complete UTC weeks · "
     "Source: public NEAR mainnet data in Google BigQuery"
@@ -550,14 +578,18 @@ st.caption(
 
 with st.sidebar:
     st.header("About this research")
+
     st.write(
         "Explore activity, growth drivers, account returns, "
-        "concentration, economic comparisons and decision priorities."
+        "concentration, economic comparisons, decision priorities "
+        "and selected account profiles."
     )
+
     st.caption(
         "This dashboard displays saved research exports. "
         "It is not a live network feed."
     )
+
     st.markdown(
         "**Reading the metrics**\n\n"
         "- Signing accounts are identifiers, not verified people.\n"
@@ -568,12 +600,15 @@ with st.sidebar:
         "- Eight weeks do not establish long-term adoption."
     )
 
+
 first = weekly.iloc[0]
 last = weekly.iloc[-1]
 
 
 def change(field):
-    return 100 * (last[field] / first[field] - 1)
+    return 100 * (
+        last[field] / first[field] - 1
+    )
 
 
 a, b, c = st.columns(3)
@@ -584,33 +619,44 @@ a.metric(
     f"{change('transactions'):+.2f}% vs first week",
     delta_color="off",
 )
+
 b.metric(
     "Final-week active signing accounts",
     f"{int(last['weekly_active_signing_accounts']):,}",
-    f"{change('weekly_active_signing_accounts'):+.2f}% vs first week",
+    (
+        f"{change('weekly_active_signing_accounts'):+.2f}% "
+        "vs first week"
+    ),
     delta_color="off",
 )
+
 c.metric(
     "Final-week receipt execution cost",
     f"{last['recorded_execution_cost_near']:,.2f} NEAR",
-    f"{change('recorded_execution_cost_near'):+.2f}% vs first week",
+    (
+        f"{change('recorded_execution_cost_near'):+.2f}% "
+        "vs first week"
+    ),
     delta_color="off",
 )
 
 st.subheader("Investment assessment")
+
 st.info(
-    "Network activity continued, but this eight-week window does not "
-    "demonstrate broader, persistent participation or quantify economic "
-    "value accruing to NEAR holders. An adoption-led investment case "
-    "therefore remains conditional on stronger evidence of durable "
-    "application demand and measurable token value capture. "
-    "Activity outside the first week's ten leading accounts increased, "
-    "but selected-account checks show that transaction growth can also "
-    "include substantial failed execution activity."
+    "Network activity continued, but this eight-week window "
+    "does not demonstrate broader, persistent participation or "
+    "quantify economic value accruing to NEAR holders. An "
+    "adoption-led investment case therefore remains conditional "
+    "on stronger evidence of durable application demand and "
+    "measurable token value capture. Activity outside the first "
+    "week's ten leading accounts increased, but selected-account "
+    "checks show that transaction growth can also include "
+    "substantial failed execution activity."
 )
+
 st.caption(
-    "This assessment concerns the evidence examined; it is not a finding "
-    "that NEAR has no investment merit."
+    "This assessment concerns the evidence examined; "
+    "it is not a finding that NEAR has no investment merit."
 )
 
 with st.expander(
@@ -618,49 +664,61 @@ with st.expander(
 ):
     st.markdown(
         "**Participation:** Final-week transactions were "
-        f"{change('transactions'):+.2f}% versus the first week, while "
-        "weekly active signing accounts were "
+        f"{change('transactions'):+.2f}% versus the first week, "
+        "while weekly active signing accounts were "
         f"{change('weekly_active_signing_accounts'):+.2f}%. "
-        "Transaction growth alone does not establish broader adoption. "
-        "Longer-term participation associated with verified account roles "
-        "would strengthen the assessment."
+        "Transaction growth alone does not establish broader "
+        "adoption. Longer-term participation associated with "
+        "verified account roles would strengthen the assessment."
     )
+
     st.markdown(
-        "**Account lifecycle:** Successful receipt executions containing "
-        "self-deletion actions appeared among 82.53% of accounts absent "
-        "after the spike week. The low return share is not a verified "
-        "user-churn rate. Lifecycle-aware cohort comparisons are needed; "
-        "simply excluding deleted accounts would not establish retention."
+        "**Account lifecycle:** Successful receipt executions "
+        "containing self-deletion actions appeared among 82.53% "
+        "of accounts absent after the spike week. The low return "
+        "share is not a verified user-churn rate. Lifecycle-aware "
+        "cohort comparisons are needed; simply excluding deleted "
+        "accounts would not establish retention."
     )
+
     st.markdown(
-        "**Concentration:** The ten busiest signing accounts generated "
-        f"{weekly['top_10_accounts_transaction_share_pct'].min():.2f}%–"
+        "**Concentration:** The ten busiest signing accounts "
+        "generated "
+        f"{weekly['top_10_accounts_transaction_share_pct'].min():.2f}%"
+        "–"
         f"{weekly['top_10_accounts_transaction_share_pct'].max():.2f}% "
-        "of weekly transactions. Verifying their roles would help establish "
-        "whether this reflects shared infrastructure serving independent "
-        "demand or dependence on a few participants."
+        "of weekly transactions. Verifying their roles would help "
+        "establish whether this reflects shared infrastructure "
+        "serving independent demand or dependence on a few "
+        "participants."
     )
+
     st.markdown(
-        "**Economics:** Recorded receipt execution costs changed by "
-        f"{change('recorded_execution_cost_near'):+.2f}% between the first "
-        "and final weeks. This measures execution spending, not holder "
-        "returns. Relevant fee distributions, issuance and other economic "
-        "flows need separate reconciliation."
+        "**Economics:** Recorded receipt execution costs changed "
+        f"by {change('recorded_execution_cost_near'):+.2f}% "
+        "between the first and final weeks. This measures execution "
+        "spending, not holder returns. Relevant fee distributions, "
+        "issuance and other economic flows need separate "
+        "reconciliation."
     )
+
     st.markdown(
         "**What would weaken the case:** Declining comparable-cohort "
-        "participation after lifecycle effects are examined; increasing "
-        "dependence accompanied by weakening independent demand; or "
-        "economic flows that do not support the assumed token-demand "
-        "or supply effects. These conditions have not all been tested."
+        "participation after lifecycle effects are examined; "
+        "increasing dependence accompanied by weakening independent "
+        "demand; or economic flows that do not support the assumed "
+        "token-demand or supply effects. These conditions have not "
+        "all been tested."
     )
+
     st.caption(
-        "Self-deletion evidence: saved result 17. Weekly figures use the "
-        "combined weekly results. Growth drivers and selected-account "
-        "execution evidence are available in the Growth drivers tab. "
-        "The full investment assessment and economic mechanisms note "
-        "are included in the repository."
+        "Self-deletion evidence: saved result 17. Weekly figures "
+        "use the combined weekly results. Growth drivers and "
+        "selected-account execution evidence are available in the "
+        "Growth drivers tab. The full investment assessment and "
+        "economic mechanisms note are included in the repository."
     )
+
 
 (
     growth_tab,
@@ -669,6 +727,7 @@ with st.expander(
     concentration_tab,
     costs_tab,
     decisions_tab,
+    explorer_tab,
 ) = st.tabs(
     [
         "Growth",
@@ -677,24 +736,30 @@ with st.expander(
         "Concentration",
         "Economics",
         "Decision priorities",
+        "Account explorer",
     ]
 )
 
 
 with growth_tab:
-    st.subheader("Activity and costs followed different paths")
+    st.subheader(
+        "Activity and costs followed different paths"
+    )
+
     st.write(
         "Compare changes from the first week, indexed to 100. "
-        "An index of 150 means a value is 50% above its starting level."
+        "An index of 150 means a value is 50% above its "
+        "starting level."
     )
 
     index_columns = {
-        "transactions_index_first_week_100":
-            "Transactions",
-        "weekly_active_accounts_index_first_week_100":
-            "Weekly active signing accounts",
-        "recorded_cost_index_first_week_100":
-            "Recorded receipt execution cost",
+        "transactions_index_first_week_100": "Transactions",
+        "weekly_active_accounts_index_first_week_100": (
+            "Weekly active signing accounts"
+        ),
+        "recorded_cost_index_first_week_100": (
+            "Recorded receipt execution cost"
+        ),
     }
 
     indexed = weekly[
@@ -712,17 +777,19 @@ with growth_tab:
             "variable": "Metric",
         },
     )
+
     fig.add_hline(
         y=100,
         line_dash="dot",
         line_color="#888888",
     )
+
     show_weekly_chart(fig)
 
     st.caption(
-        "Transactions use submission dates; receipt costs use execution "
-        "dates. These series do not match individual transactions to "
-        "their complete execution costs."
+        "Transactions use submission dates; receipt costs use "
+        "execution dates. These series do not match individual "
+        "transactions to their complete execution costs."
     )
 
     st.subheader("Weekly participation")
@@ -733,18 +800,24 @@ with growth_tab:
         y="weekly_active_signing_accounts",
         labels={
             "week_start": "Week starting",
-            "weekly_active_signing_accounts":
-                "Distinct active signing accounts",
+            "weekly_active_signing_accounts": (
+                "Distinct active signing accounts"
+            ),
         },
     )
+
     show_weekly_chart(fig)
 
 
 with drivers_tab:
-    st.subheader("Where did transaction growth come from?")
+    st.subheader(
+        "Where did transaction growth come from?"
+    )
+
     st.write(
-        "Keep the first week's ten busiest signing accounts fixed across "
-        "all eight weeks, then compare their activity with every other account."
+        "Keep the first week's ten busiest signing accounts "
+        "fixed across all eight weeks, then compare their "
+        "activity with every other account."
     )
 
     fixed_first = fixed.iloc[0]
@@ -755,6 +828,7 @@ with drivers_tab:
         / fixed_first["fixed_group_transactions"]
         - 1
     )
+
     outside_change = 100 * (
         fixed_last["outside_fixed_group_transactions"]
         / fixed_first["outside_fixed_group_transactions"]
@@ -762,20 +836,24 @@ with drivers_tab:
     )
 
     left, right = st.columns(2)
+
     left.metric(
         "First-week leaders · transaction change",
         f"{fixed_change:+.2f}%",
     )
+
     right.metric(
         "All other accounts · transaction change",
         f"{outside_change:+.2f}%",
     )
 
     fixed_labels = {
-        "fixed_group_transactions":
-            "First-week top 10 accounts",
-        "outside_fixed_group_transactions":
-            "All other signing accounts",
+        "fixed_group_transactions": (
+            "First-week top 10 accounts"
+        ),
+        "outside_fixed_group_transactions": (
+            "All other signing accounts"
+        ),
     }
 
     fig = px.bar(
@@ -788,12 +866,14 @@ with drivers_tab:
             "variable": "Account group",
         },
     )
+
     show_weekly_chart(fig)
 
     st.caption(
-        "The group was selected using transaction counts for 24–30 August. "
-        "Membership stays fixed. This is an accounting comparison, not a "
-        "counterfactual network without these accounts."
+        "The group was selected using transaction counts for "
+        "24–30 August. Membership stays fixed. This is an "
+        "accounting comparison, not a counterfactual network "
+        "without these accounts."
     )
 
     st.subheader(
@@ -801,12 +881,11 @@ with drivers_tab:
     )
 
     group_names = {
-        "FIRST_WEEK_TOP_10":
-            "First-week top 10 accounts",
-        "OTHER_TRACKED_ACCOUNT":
-            "Other tracked accounts",
-        "ALL_UNTRACKED_ACCOUNTS":
-            "All untracked accounts combined",
+        "FIRST_WEEK_TOP_10": "First-week top 10 accounts",
+        "OTHER_TRACKED_ACCOUNT": "Other tracked accounts",
+        "ALL_UNTRACKED_ACCOUNTS": (
+            "All untracked accounts combined"
+        ),
     }
 
     contribution_groups = contributions.groupby(
@@ -820,9 +899,11 @@ with drivers_tab:
         ]
     ].sum()
 
-    contribution_groups["Account group"] = contribution_groups[
-        "comparison_group"
-    ].map(group_names)
+    contribution_groups["Account group"] = (
+        contribution_groups["comparison_group"].map(
+            group_names
+        )
+    )
 
     fig = px.bar(
         contribution_groups,
@@ -830,25 +911,30 @@ with drivers_tab:
         y="transaction_change",
         text_auto=",.0f",
         labels={
-            "transaction_change": "Change in transactions",
+            "transaction_change": "Change in transactions"
         },
     )
+
     st.plotly_chart(fig, width="stretch")
 
     st.caption(
-        "Tracked accounts are the union of the weekly top 20 signing accounts. "
-        "The untracked group combines all remaining accounts; it does not "
-        "identify ordinary users or independent demand. The three changes "
-        "sum to the network's net transaction change."
+        "Tracked accounts are the union of the weekly top 20 "
+        "signing accounts. The untracked group combines all "
+        "remaining accounts; it does not identify ordinary "
+        "users or independent demand. The three changes sum "
+        "to the network's net transaction change."
     )
 
     with st.expander(
         "Inspect individual growth contributions"
     ):
         display = contributions.copy()
-        display["signer_account_id"] = display[
-            "signer_account_id"
-        ].fillna("All untracked accounts combined")
+
+        display["signer_account_id"] = (
+            display["signer_account_id"].fillna(
+                "All untracked accounts combined"
+            )
+        )
 
         st.dataframe(
             display.sort_values(
@@ -859,10 +945,14 @@ with drivers_tab:
             width="stretch",
         )
 
-    st.subheader("Inspect the accounts behind the counts")
+    st.subheader(
+        "Inspect the accounts behind the counts"
+    )
 
     account_options = (
-        leading.groupby("signer_account_id")["transactions"]
+        leading.groupby(
+            "signer_account_id"
+        )["transactions"]
         .sum()
         .sort_values(ascending=False)
         .index.tolist()
@@ -871,10 +961,13 @@ with drivers_tab:
     chosen_account = st.selectbox(
         "Signing account",
         options=account_options,
+        key="drivers_signing_account",
     )
 
     account_series = leading.loc[
-        leading["signer_account_id"].eq(chosen_account)
+        leading["signer_account_id"].eq(
+            chosen_account
+        )
     ].sort_values("week_start")
 
     fig = px.line(
@@ -882,13 +975,17 @@ with drivers_tab:
         x="week_start",
         y="transactions",
         markers=True,
-        labels={"transactions": "Transactions"},
+        labels={
+            "transactions": "Transactions"
+        },
     )
+
     show_weekly_chart(fig)
 
     st.caption(
-        "All eight weeks are included for each tracked account. An account "
-        "name alone does not verify its owner, role or number of users."
+        "All eight weeks are included for each tracked account. "
+        "An account name alone does not verify its owner, role "
+        "or number of users."
     )
 
     action_views = [
@@ -910,7 +1007,9 @@ with drivers_tab:
 
     for title, frame, fields in action_views:
         selected_actions = frame.loc[
-            frame["signer_account_id"].eq(chosen_account)
+            frame["signer_account_id"].eq(
+                chosen_account
+            )
         ]
 
         if not selected_actions.empty:
@@ -933,10 +1032,13 @@ with drivers_tab:
                     hide_index=True,
                     width="stretch",
                 )
+
                 st.caption(
-                    "Transaction counts can overlap across action categories. "
-                    "DELEGATE_ACTION rows have not been expanded into their "
-                    "inner actions. Action records alone do not establish success."
+                    "Transaction counts can overlap across "
+                    "action categories. DELEGATE_ACTION rows "
+                    "have not been expanded into their inner "
+                    "actions. Action records alone do not "
+                    "establish success."
                 )
 
     st.subheader(
@@ -951,7 +1053,9 @@ with drivers_tab:
     )
 
     account_outcomes = outcomes.loc[
-        outcomes["signer_account_id"].eq(selected_account)
+        outcomes["signer_account_id"].eq(
+            selected_account
+        )
     ]
 
     outcome_totals = account_outcomes.groupby(
@@ -959,13 +1063,17 @@ with drivers_tab:
     )["transactions"].sum()
 
     total = int(outcome_totals.sum())
-    failed = int(outcome_totals.get("FAILURE", 0))
+    failed = int(
+        outcome_totals.get("FAILURE", 0)
+    )
 
     left, right = st.columns(2)
+
     left.metric(
         "Selected account · transactions",
         f"{total:,}",
     )
+
     right.metric(
         "Failed initial receipts",
         f"{failed / total:.2%}",
@@ -976,9 +1084,11 @@ with drivers_tab:
         as_index=False,
     )["transactions"].sum()
 
-    plot_outcomes["Initial receipt status"] = plot_outcomes[
-        "initial_receipt_status"
-    ].map(STATUS_LABELS)
+    plot_outcomes["Initial receipt status"] = (
+        plot_outcomes["initial_receipt_status"].map(
+            STATUS_LABELS
+        )
+    )
 
     fig = px.bar(
         plot_outcomes,
@@ -987,22 +1097,30 @@ with drivers_tab:
         color="Initial receipt status",
         barmode="stack",
         color_discrete_map=STATUS_COLORS,
-        labels={"transactions": "Transactions"},
+        labels={
+            "transactions": "Transactions"
+        },
     )
+
     show_weekly_chart(fig)
 
     st.caption(
-        "Each selected transaction matched one initial receipt outcome. "
-        "SUCCESS_RECEIPT_ID is not proof of successful downstream execution. "
-        "These two accounts were selected for investigation, so their outcome "
-        "shares do not estimate network-wide failure rates. Weeks without "
+        "Each selected transaction matched one initial receipt "
+        "outcome. SUCCESS_RECEIPT_ID is not proof of successful "
+        "downstream execution. These two accounts were selected "
+        "for investigation, so their outcome shares do not "
+        "estimate network-wide failure rates. Weeks without "
         "transactions have no outcome bars."
     )
 
-    st.subheader("What did these initial receipts cost?")
+    st.subheader(
+        "What did these initial receipts cost?"
+    )
 
     selected_costs = account_costs.loc[
-        account_costs["signer_account_id"].eq(selected_account)
+        account_costs["signer_account_id"].eq(
+            selected_account
+        )
     ].copy()
 
     total_cost = selected_costs[
@@ -1022,19 +1140,26 @@ with drivers_tab:
         "All initial receipts",
         f"{total_cost:,.4f} NEAR",
     )
+
     middle.metric(
         "Failed initial receipts",
         f"{failed_cost:,.4f} NEAR",
     )
+
     right.metric(
         "Failed share of initial-receipt cost",
-        f"{failed_cost / total_cost:.2%}"
-        if total_cost > 0 else "N/A",
+        (
+            f"{failed_cost / total_cost:.2%}"
+            if total_cost > 0
+            else "N/A"
+        ),
     )
 
-    selected_costs["Initial receipt status"] = selected_costs[
-        "initial_receipt_status"
-    ].map(STATUS_LABELS)
+    selected_costs["Initial receipt status"] = (
+        selected_costs["initial_receipt_status"].map(
+            STATUS_LABELS
+        )
+    )
 
     fig = px.bar(
         selected_costs,
@@ -1044,19 +1169,23 @@ with drivers_tab:
         barmode="stack",
         color_discrete_map=STATUS_COLORS,
         labels={
-            "recorded_initial_receipt_cost_near":
-                "Recorded initial-receipt execution cost (NEAR)",
+            "recorded_initial_receipt_cost_near": (
+                "Recorded initial-receipt execution cost (NEAR)"
+            )
         },
     )
+
     show_weekly_chart(fig)
 
     st.caption(
-        "Approximate costs from saved result 27, grouped by the originating "
-        "transaction's submission week. These cover initial receipts only "
-        "and exclude transaction receipt-conversion costs and downstream "
-        "receipts. They do not measure protocol revenue, permanent token "
-        "burning or value accruing to holders. Their scope differs from the "
-        "network-wide costs grouped by execution date in the Economics tab."
+        "Approximate costs from saved result 27, grouped by "
+        "the originating transaction's submission week. These "
+        "cover initial receipts only and exclude transaction "
+        "receipt-conversion costs and downstream receipts. "
+        "They do not measure protocol revenue, permanent token "
+        "burning or value accruing to holders. Their scope "
+        "differs from the network-wide costs grouped by "
+        "execution date in the Economics tab."
     )
 
     with st.expander(
@@ -1067,13 +1196,15 @@ with drivers_tab:
             hide_index=True,
             width="stretch",
         )
+
         st.download_button(
             "Download selected-account costs",
             data=selected_costs.to_csv(
                 index=False
             ).encode("utf-8"),
             file_name=(
-                f"27_{selected_account}_initial_receipt_costs_{PERIOD}.csv"
+                f"27_{selected_account}_"
+                f"initial_receipt_costs_{PERIOD}.csv"
             ),
             mime="text/csv",
         )
@@ -1088,7 +1219,8 @@ with drivers_tab:
                 "Reported execution error": message,
                 "Sampled receipts": count,
             }
-            for message, count in error_messages.most_common()
+            for message, count
+            in error_messages.most_common()
         ]
     )
 
@@ -1097,17 +1229,21 @@ with drivers_tab:
         hide_index=True,
         width="stretch",
     )
+
     st.write(
-        "All 18 sampled failed receipts executed on v2.ref-finance.near: "
-        "17 reported E68 slippage errors and one reported E22 insufficient "
-        "deposited tokens. These are reported contract errors, not a diagnosis "
+        "All 18 sampled failed receipts executed on "
+        "v2.ref-finance.near: 17 reported E68 slippage errors "
+        "and one reported E22 insufficient deposited tokens. "
+        "These are reported contract errors, not a diagnosis "
         "of the operators' intentions."
     )
+
     st.caption(
-        "The sample covers three selected receipts per active week for "
-        "tinykoala595.near. It does not estimate error frequencies across "
-        "all 715,518 failures, establish retries, or identify automation. "
-        "Sources: saved results 25 and 26."
+        "The sample covers three selected receipts per active "
+        "week for tinykoala595.near. It does not estimate error "
+        "frequencies across all 715,518 failures, establish "
+        "retries, or identify automation. Sources: saved "
+        "results 25 and 26."
     )
 
     with st.expander(
@@ -1116,12 +1252,15 @@ with drivers_tab:
         evidence = pd.DataFrame(
             [
                 {
-                    "Transaction hash":
-                        record["sample"]["transaction_hash"],
-                    "Receipt ID":
-                        record["sample"]["receipt_id"],
-                    "Executor":
-                        record["matched_receipt"]["executor_id"],
+                    "Transaction hash": (
+                        record["sample"]["transaction_hash"]
+                    ),
+                    "Receipt ID": (
+                        record["sample"]["receipt_id"]
+                    ),
+                    "Executor": (
+                        record["matched_receipt"]["executor_id"]
+                    ),
                     "Execution error": "; ".join(
                         record["matched_receipt"][
                             "execution_errors"
@@ -1131,6 +1270,7 @@ with drivers_tab:
                 for record in records
             ]
         )
+
         st.dataframe(
             evidence,
             hide_index=True,
@@ -1153,10 +1293,11 @@ with returns_tab:
     st.subheader(
         "Did accounts participate in later weeks?"
     )
+
     st.write(
-        "Each cohort contains all signing accounts active in its "
-        "starting week. Cells show the percentage active in a "
-        "particular later week."
+        "Each cohort contains all signing accounts active "
+        "in its starting week. Cells show the percentage "
+        "active in a particular later week."
     )
 
     heatmap = returns.pivot(
@@ -1165,8 +1306,14 @@ with returns_tab:
         values="cohort_active_share_pct",
     ).sort_index()
 
-    heatmap = heatmap.reindex(columns=range(5))
-    heatmap.index = heatmap.index.strftime("%d %b %Y")
+    heatmap = heatmap.reindex(
+        columns=range(5)
+    )
+
+    heatmap.index = heatmap.index.strftime(
+        "%d %b %Y"
+    )
+
     heatmap.columns = [
         "Starting week",
         "Week +1",
@@ -1188,16 +1335,26 @@ with returns_tab:
             "color": "Active share (%)",
         },
     )
-    fig.update_traces(hoverongaps=False)
-    st.plotly_chart(fig, width="stretch")
 
-    st.caption(
-        "Blank cells have no complete follow-up week. They are not "
-        "zero returns. Cohorts overlap and do not represent newly "
-        "acquired users. Participation need not be continuous."
+    fig.update_traces(
+        hoverongaps=False
     )
 
-    with st.expander("Inspect cohort results"):
+    st.plotly_chart(
+        fig,
+        width="stretch",
+    )
+
+    st.caption(
+        "Blank cells have no complete follow-up week. They "
+        "are not zero returns. Cohorts overlap and do not "
+        "represent newly acquired users. Participation need "
+        "not be continuous."
+    )
+
+    with st.expander(
+        "Inspect cohort results"
+    ):
         st.dataframe(
             returns,
             hide_index=True,
@@ -1205,18 +1362,20 @@ with returns_tab:
         )
 
     st.info(
-        "Account deletion changes how these returns should be read. "
-        "During 28 September–4 October, 309,280 accounts absent the "
-        "following week had successful receipt executions containing "
-        "self-deletion actions. They represented 82.53% of the absent "
-        "group. This absence should not be interpreted as ordinary "
-        "user churn. Reasons for deletion and later account recreation "
-        "remain unverified."
+        "Account deletion changes how these returns should "
+        "be read. During 28 September–4 October, 309,280 "
+        "accounts absent the following week had successful "
+        "receipt executions containing self-deletion actions. "
+        "They represented 82.53% of the absent group. This "
+        "absence should not be interpreted as ordinary user "
+        "churn. Reasons for deletion and later account "
+        "recreation remain unverified."
     )
 
     st.subheader(
         "The spike: account counts versus transaction activity"
     )
+
     st.write(
         "Among accounts active during 28 September–4 October, "
         "how much starting-week activity came from accounts "
@@ -1224,20 +1383,26 @@ with returns_tab:
     )
 
     group_labels = {
-        "ACTIVE_FOLLOWING_WEEK":
-            "Active the following week",
-        "NOT_ACTIVE_FOLLOWING_WEEK":
-            "Absent the following week",
+        "ACTIVE_FOLLOWING_WEEK": (
+            "Active the following week"
+        ),
+        "NOT_ACTIVE_FOLLOWING_WEEK": (
+            "Absent the following week"
+        ),
     }
 
     group_summary = group_summary.copy()
-    group_summary["Participation"] = group_summary[
-        "return_group"
-    ].map(group_labels)
+
+    group_summary["Participation"] = (
+        group_summary["return_group"].map(
+            group_labels
+        )
+    )
 
     account_total = group_summary[
         "group_accounts"
     ].sum()
+
     transaction_total = group_summary[
         "group_transactions"
     ].sum()
@@ -1247,6 +1412,7 @@ with returns_tab:
         * group_summary["group_accounts"]
         / account_total
     )
+
     group_summary[
         "Share of starting-week transactions (%)"
     ] = (
@@ -1262,13 +1428,17 @@ with returns_tab:
     ].iloc[0]
 
     left, right = st.columns(2)
+
     left.metric(
         "Accounts active the following week",
         f"{returned['Share of accounts (%)']:.2f}%",
     )
+
     right.metric(
         "Their share of starting-week transactions",
-        f"{returned['Share of starting-week transactions (%)']:.2f}%",
+        (
+            f"{returned['Share of starting-week transactions (%)']:.2f}%"
+        ),
     )
 
     comparison = group_summary.melt(
@@ -1300,17 +1470,23 @@ with returns_tab:
             ]
         },
     )
+
     fig.update_layout(
         xaxis_title=None,
         legend_title_text="",
     )
-    st.plotly_chart(fig, width="stretch")
+
+    st.plotly_chart(
+        fig,
+        width="stretch",
+    )
 
     st.caption(
         "The two groups cover the same starting-week cohort. "
         "Account shares and transaction shares have different "
-        "denominators. Absence the following week does not establish "
-        "permanent departure, and accounts are not verified people."
+        "denominators. Absence the following week does not "
+        "establish permanent departure, and accounts are not "
+        "verified people."
     )
 
     with st.expander(
@@ -1337,16 +1513,21 @@ with concentration_tab:
     )
 
     signer_shares = {
-        "top_1_account_transaction_share_pct":
-            "Top signing account",
-        "top_10_accounts_transaction_share_pct":
-            "Top 10 signing accounts",
-        "top_100_accounts_transaction_share_pct":
-            "Top 100 signing accounts",
+        "top_1_account_transaction_share_pct": (
+            "Top signing account"
+        ),
+        "top_10_accounts_transaction_share_pct": (
+            "Top 10 signing accounts"
+        ),
+        "top_100_accounts_transaction_share_pct": (
+            "Top 100 signing accounts"
+        ),
     }
 
     fig = px.line(
-        weekly.rename(columns=signer_shares),
+        weekly.rename(
+            columns=signer_shares
+        ),
         x="week_start",
         y=list(signer_shares.values()),
         markers=True,
@@ -1356,7 +1537,11 @@ with concentration_tab:
             "variable": "Group",
         },
     )
-    fig.update_yaxes(range=[0, 100])
+
+    fig.update_yaxes(
+        range=[0, 100]
+    )
+
     show_weekly_chart(fig)
 
     st.caption(
@@ -1373,7 +1558,9 @@ with concentration_tab:
     )
 
     selected = receivers.loc[
-        receivers["week_start"].eq(selected_week)
+        receivers["week_start"].eq(
+            selected_week
+        )
     ].sort_values("receiver_rank")
 
     if selected.empty:
@@ -1383,19 +1570,27 @@ with concentration_tab:
         st.stop()
 
     receiver_summary = selected.iloc[0]
+
     left, right = st.columns(2)
 
     left.metric(
         "Top 10 receivers · transaction share",
-        f"{receiver_summary['top_10_receiver_transaction_share_pct']:.2f}%",
+        (
+            f"{receiver_summary['top_10_receiver_transaction_share_pct']:.2f}%"
+        ),
     )
+
     right.metric(
         "Top 20 receivers · transaction share",
-        f"{receiver_summary['top_20_receiver_transaction_share_pct']:.2f}%",
+        (
+            f"{receiver_summary['top_20_receiver_transaction_share_pct']:.2f}%"
+        ),
     )
 
     fig = px.bar(
-        selected.sort_values("transactions"),
+        selected.sort_values(
+            "transactions"
+        ),
         x="transactions",
         y="receiver_account_id",
         orientation="h",
@@ -1407,24 +1602,35 @@ with concentration_tab:
             "transactions": "Transactions",
             "receiver_account_id": "Receiver account",
             "signing_accounts": "Distinct signing accounts",
-            "weekly_transaction_share_pct":
-                "Share of weekly transactions (%)",
+            "weekly_transaction_share_pct": (
+                "Share of weekly transactions (%)"
+            ),
         },
         height=700,
     )
+
     fig.update_layout(
-        yaxis=dict(categoryorder="total ascending"),
+        yaxis=dict(
+            categoryorder="total ascending"
+        ),
         margin=dict(t=30, b=40),
     )
-    st.plotly_chart(fig, width="stretch")
 
-    st.caption(
-        "Only the twenty busiest original transaction receivers are "
-        "shown. Absence from a ranking does not mean zero activity. "
-        "Receiver-level signing-account counts can overlap."
+    st.plotly_chart(
+        fig,
+        width="stretch",
     )
 
-    with st.expander("Inspect receiver results"):
+    st.caption(
+        "Only the twenty busiest original transaction "
+        "receivers are shown. Absence from a ranking does "
+        "not mean zero activity. Receiver-level signing-account "
+        "counts can overlap."
+    )
+
+    with st.expander(
+        "Inspect receiver results"
+    ):
         st.dataframe(
             selected[
                 [
@@ -1444,24 +1650,27 @@ with costs_tab:
     st.subheader(
         "Activity, execution spending and supply"
     )
+
     st.write(
-        "Compare network activity with recorded execution spending and "
-        "observed supply movement. These measures answer different "
-        "economic questions."
+        "Compare network activity with recorded execution "
+        "spending and observed supply movement. These measures "
+        "answer different economic questions."
     )
 
     econ_first = economics.iloc[0]
     econ_last = economics.iloc[-1]
 
     comparison_fields = {
-        "transactions":
-            "Transactions",
-        "receipt_execution_outcomes":
-            "Receipt execution outcomes",
-        "recorded_receipt_execution_cost_near":
-            "Recorded receipt execution cost",
-        "average_recorded_cost_per_receipt_near":
-            "Average cost per receipt",
+        "transactions": "Transactions",
+        "receipt_execution_outcomes": (
+            "Receipt execution outcomes"
+        ),
+        "recorded_receipt_execution_cost_near": (
+            "Recorded receipt execution cost"
+        ),
+        "average_recorded_cost_per_receipt_near": (
+            "Average cost per receipt"
+        ),
     }
 
     changes = pd.DataFrame(
@@ -1477,7 +1686,8 @@ with costs_tab:
                     )
                 ),
             }
-            for field, label in comparison_fields.items()
+            for field, label
+            in comparison_fields.items()
         ]
     )
 
@@ -1487,7 +1697,11 @@ with costs_tab:
         y="First-to-final-week change (%)",
         text_auto=".2f",
     )
-    st.plotly_chart(fig, width="stretch")
+
+    st.plotly_chart(
+        fig,
+        width="stretch",
+    )
 
     st.write(
         "Receipt execution outcomes increased "
@@ -1495,34 +1709,45 @@ with costs_tab:
         "while average recorded cost per receipt increased "
         f"{changes.iloc[3]['First-to-final-week change (%)']:.2f}%. "
         "Together, these describe the rise in recorded receipt "
-        "execution costs. The comparison does not identify its "
-        "underlying causes."
-    )
-    st.caption(
-        "Transaction counts use submission dates; receipt counts and "
-        "costs use execution dates. These are endpoint comparisons "
-        "across eight weeks, not matched transaction-chain costs "
-        "or a causal model."
+        "execution costs. The comparison does not identify "
+        "its underlying causes."
     )
 
-    st.subheader("Observed total-supply movement")
+    st.caption(
+        "Transaction counts use submission dates; receipt "
+        "counts and costs use execution dates. These are "
+        "endpoint comparisons across eight weeks, not matched "
+        "transaction-chain costs or a causal model."
+    )
+
+    st.subheader(
+        "Observed total-supply movement"
+    )
 
     opening_supply = float(
         econ_first["opening_observed_supply_near"]
     )
+
     closing_supply = float(
         econ_last["closing_observed_supply_near"]
     )
-    net_supply = closing_supply - opening_supply
+
+    net_supply = (
+        closing_supply - opening_supply
+    )
 
     left, right = st.columns(2)
+
     left.metric(
         "Net observed supply change",
         f"{net_supply:+,.2f} NEAR",
     )
+
     right.metric(
         "Change from opening supply",
-        f"{100 * net_supply / opening_supply:+.4f}%",
+        (
+            f"{100 * net_supply / opening_supply:+.4f}%"
+        ),
     )
 
     fig = px.bar(
@@ -1530,17 +1755,19 @@ with costs_tab:
         x="week_start",
         y="net_observed_supply_change_near",
         labels={
-            "net_observed_supply_change_near":
-                "Net observed supply change (NEAR)",
+            "net_observed_supply_change_near": (
+                "Net observed supply change (NEAR)"
+            )
         },
     )
+
     show_weekly_chart(fig)
 
     st.caption(
-        "Each week compares the preceding Sunday's closing supply "
-        "with the current Sunday's close. Total supply is not "
-        "circulating supply. Net supply movement does not separately "
-        "measure issuance and burning."
+        "Each week compares the preceding Sunday's closing "
+        "supply with the current Sunday's close. Total supply "
+        "is not circulating supply. Net supply movement does "
+        "not separately measure issuance and burning."
     )
 
     with st.expander(
@@ -1561,34 +1788,44 @@ with costs_tab:
         reconciliation = pd.DataFrame(
             [
                 {
-                    "Measurement":
-                        "Observed positive block supply movements",
+                    "Measurement": (
+                        "Observed positive block supply movements"
+                    ),
                     "NEAR": positive_supply,
                 },
                 {
-                    "Measurement":
-                        "Observed block supply decrease magnitude",
+                    "Measurement": (
+                        "Observed block supply decrease magnitude"
+                    ),
                     "NEAR": decreases,
                 },
                 {
-                    "Measurement":
-                        "Net observed supply change",
+                    "Measurement": (
+                        "Net observed supply change"
+                    ),
                     "NEAR": net_supply,
                 },
                 {
-                    "Measurement":
-                        "Validator-update net balance change",
+                    "Measurement": (
+                        "Validator-update net balance change"
+                    ),
                     "NEAR": validator_change,
                 },
                 {
-                    "Measurement":
-                        "Net supply change minus validator change",
-                    "NEAR": net_supply - validator_change,
+                    "Measurement": (
+                        "Net supply change minus validator change"
+                    ),
+                    "NEAR": (
+                        net_supply - validator_change
+                    ),
                 },
                 {
-                    "Measurement":
-                        "Positive supply movements minus validator change",
-                    "NEAR": positive_supply - validator_change,
+                    "Measurement": (
+                        "Positive supply movements minus validator change"
+                    ),
+                    "NEAR": (
+                        positive_supply - validator_change
+                    ),
                 },
             ]
         )
@@ -1598,20 +1835,24 @@ with costs_tab:
             hide_index=True,
             width="stretch",
         )
+
         st.write(
-            "The validator-update balance comparison does not fully "
-            "reconcile with supply movements. These differences remain "
-            "unresolved. Block-level increases and decreases can contain "
-            "offsetting effects; they are not complete measurements of "
-            "gross issuance and permanent burning. Recorded receipt "
-            "costs must not be substituted for either."
+            "The validator-update balance comparison does "
+            "not fully reconcile with supply movements. "
+            "These differences remain unresolved. Block-level "
+            "increases and decreases can contain offsetting "
+            "effects; they are not complete measurements of "
+            "gross issuance and permanent burning. Recorded "
+            "receipt costs must not be substituted for either."
         )
+
         st.caption(
-            "Source fields use floating-point storage. Amounts are "
-            "approximate. Underlying validation and the 0.000001 NEAR "
-            "analytical tolerance for individual validator balance "
-            "comparisons are documented in the data-check notes. "
-            "Sources: results 28 and 32–34."
+            "Source fields use floating-point storage. "
+            "Amounts are approximate. Underlying validation "
+            "and the 0.000001 NEAR analytical tolerance for "
+            "individual validator balance comparisons are "
+            "documented in the data-check notes. Sources: "
+            "results 28 and 32–34."
         )
 
     with st.expander(
@@ -1622,6 +1863,7 @@ with costs_tab:
             hide_index=True,
             width="stretch",
         )
+
         st.download_button(
             "Download weekly economic comparison",
             data=economics.to_csv(
@@ -1633,7 +1875,9 @@ with costs_tab:
             mime="text/csv",
         )
 
-    st.subheader("Recorded receipt execution costs")
+    st.subheader(
+        "Recorded receipt execution costs"
+    )
 
     cost_chart = weekly[
         [
@@ -1643,15 +1887,18 @@ with costs_tab:
         ]
     ].copy()
 
-    cost_chart["Non-failed receipt outcomes"] = (
+    cost_chart[
+        "Non-failed receipt outcomes"
+    ] = (
         cost_chart["recorded_execution_cost_near"]
         - cost_chart["failed_receipt_cost_near"]
     )
 
     cost_chart = cost_chart.rename(
         columns={
-            "failed_receipt_cost_near":
-                "Failed receipt outcomes",
+            "failed_receipt_cost_near": (
+                "Failed receipt outcomes"
+            )
         }
     )
 
@@ -1669,12 +1916,14 @@ with costs_tab:
             "variable": "Outcome group",
         },
     )
+
     show_weekly_chart(fig)
 
     st.caption(
         "Approximate amounts from floating-point source fields. "
-        "Costs exclude transaction receipt-conversion costs and do "
-        "not establish protocol revenue or permanent token burning."
+        "Costs exclude transaction receipt-conversion costs "
+        "and do not establish protocol revenue or permanent "
+        "token burning."
     )
 
     st.subheader(
@@ -1682,14 +1931,18 @@ with costs_tab:
     )
 
     failure_labels = {
-        "failed_receipt_share_pct":
-            "Failed share of outcomes",
-        "failed_receipt_cost_share_pct":
-            "Failed share of cost",
+        "failed_receipt_share_pct": (
+            "Failed share of outcomes"
+        ),
+        "failed_receipt_cost_share_pct": (
+            "Failed share of cost"
+        ),
     }
 
     fig = px.line(
-        weekly.rename(columns=failure_labels),
+        weekly.rename(
+            columns=failure_labels
+        ),
         x="week_start",
         y=list(failure_labels.values()),
         markers=True,
@@ -1699,7 +1952,11 @@ with costs_tab:
             "variable": "Metric",
         },
     )
-    fig.update_yaxes(rangemode="tozero")
+
+    fig.update_yaxes(
+        rangemode="tozero"
+    )
+
     show_weekly_chart(fig)
 
 
@@ -1707,10 +1964,11 @@ with decisions_tab:
     st.subheader(
         "Turn the evidence into investigation priorities"
     )
+
     st.write(
-        "Use these findings to decide what needs checking before "
-        "relying on a growth claim, evaluating application activity "
-        "or allocating support."
+        "Use these findings to decide what needs checking "
+        "before relying on a growth claim, evaluating "
+        "application activity or allocating support."
     )
 
     audience = st.selectbox(
@@ -1724,144 +1982,158 @@ with decisions_tab:
 
     audience_guidance = {
         "Investors and research analysts": (
-            "Test adoption and economic claims before using them "
-            "in an investment thesis. The project does not provide "
-            "a valuation or an expected-return forecast."
+            "Test adoption and economic claims before using "
+            "them in an investment thesis. The project does "
+            "not provide a valuation or an expected-return "
+            "forecast."
         ),
         "NEAR ecosystem teams": (
             "Identify growth that needs lifecycle, account-role "
-            "or execution-quality checks before it informs ecosystem "
-            "support. These are not application-impact rankings."
+            "or execution-quality checks before it informs "
+            "ecosystem support. These are not application-impact "
+            "rankings."
         ),
         "Application developers": (
-            "Use action patterns, receipt outcomes and diagnostic "
-            "errors to frame investigations. The selected accounts "
-            "do not represent every application's users."
+            "Use action patterns, receipt outcomes and "
+            "diagnostic errors to frame investigations. "
+            "The selected accounts do not represent every "
+            "application's users."
         ),
     }
 
-    st.write(audience_guidance[audience])
+    st.write(
+        audience_guidance[audience]
+    )
 
     priorities = [
         {
-            "Priority":
-                "Check lifecycle before interpreting account returns",
+            "Priority": (
+                "Check lifecycle before interpreting account returns"
+            ),
             "Evidence": (
-                "309,280 accounts absent after the spike week had "
-                "successful self-deletion receipts: 82.53% of the "
-                "absent group."
+                "309,280 accounts absent after the spike week "
+                "had successful self-deletion receipts: "
+                "82.53% of the absent group."
             ),
             "Decision implication": (
-                "Do not interpret the absence rate as ordinary "
-                "user churn."
+                "Do not interpret the absence rate as "
+                "ordinary user churn."
             ),
             "Next action": (
-                "Examine deletion, recreation and account roles "
-                "before evaluating acquisition or retention."
+                "Examine deletion, recreation and account "
+                "roles before evaluating acquisition or retention."
             ),
             "Evidence boundary": (
-                "Deletion motives, ownership and later recreation "
-                "remain unverified."
+                "Deletion motives, ownership and later "
+                "recreation remain unverified."
             ),
             "Sources": "Results 11, 16 and 17",
         },
         {
-            "Priority":
-                "Check execution quality behind growth",
+            "Priority": (
+                "Check execution quality behind growth"
+            ),
             "Evidence": (
                 "tinykoala595.near had 715,518 failed initial "
                 "receipts (91.90% of its transactions), costing "
                 "approximately 211.1629 NEAR."
             ),
             "Decision implication": (
-                "Additional submissions and execution costs do "
-                "not necessarily represent successful application "
-                "interactions."
+                "Additional submissions and execution costs "
+                "do not necessarily represent successful "
+                "application interactions."
             ),
             "Next action": (
-                "Use receipt outcomes and reported contract errors "
-                "alongside growth when selecting activity for "
-                "investigation."
+                "Use receipt outcomes and reported contract "
+                "errors alongside growth when selecting "
+                "activity for investigation."
             ),
             "Evidence boundary": (
-                "The two accounts and eighteen diagnostic receipts "
-                "do not establish network-wide failure or error "
-                "frequencies."
+                "The two accounts and eighteen diagnostic "
+                "receipts do not establish network-wide "
+                "failure or error frequencies."
             ),
             "Sources": "Results 22–27",
         },
         {
-            "Priority":
-                "Verify the roles behind concentration",
+            "Priority": (
+                "Verify the roles behind concentration"
+            ),
             "Evidence": (
                 "Weekly top-ten signers generated "
-                f"{weekly['top_10_accounts_transaction_share_pct'].min():.2f}%–"
+                f"{weekly['top_10_accounts_transaction_share_pct'].min():.2f}%"
+                "–"
                 f"{weekly['top_10_accounts_transaction_share_pct'].max():.2f}% "
-                "of transactions; leading-account records include "
-                "delegated actions."
+                "of transactions; leading-account records "
+                "include delegated actions."
             ),
             "Decision implication": (
-                "Signing concentration is not equivalent to "
-                "concentration among end users or application owners."
+                "Signing concentration is not equivalent "
+                "to concentration among end users or "
+                "application owners."
             ),
             "Next action": (
-                "Verify major account roles and delegated interactions "
-                "before interpreting concentration as broad demand "
-                "or weak demand."
+                "Verify major account roles and delegated "
+                "interactions before interpreting concentration "
+                "as broad demand or weak demand."
             ),
             "Evidence boundary": (
-                "Delegated payloads have not been expanded and "
-                "account names do not verify ownership."
+                "Delegated payloads have not been expanded "
+                "and account names do not verify ownership."
             ),
             "Sources": "Results 10 and 18–20",
         },
         {
-            "Priority":
-                "Follow growth beyond the original leaders",
+            "Priority": (
+                "Follow growth beyond the original leaders"
+            ),
             "Evidence": (
-                "Transactions outside the first week's top ten rose "
-                "52.50%, while the fixed leaders' activity fell 19.83%. "
-                "Untracked accounts contributed 43.80% of the outside "
-                "group's net increase."
+                "Transactions outside the first week's top "
+                "ten rose 52.50%, while the fixed leaders' "
+                "activity fell 19.83%. Untracked accounts "
+                "contributed 43.80% of the outside group's "
+                "net increase."
             ),
             "Decision implication": (
-                "The original leaders do not explain all growth. "
-                "Other contributors deserve investigation before "
-                "support decisions."
+                "The original leaders do not explain all "
+                "growth. Other contributors deserve "
+                "investigation before support decisions."
             ),
             "Next action": (
-                "Examine contributor roles, persistence and "
-                "execution quality."
+                "Examine contributor roles, persistence "
+                "and execution quality."
             ),
             "Evidence boundary": (
-                "The untracked aggregate is not a classification "
-                "of ordinary users, and contributions describe net "
-                "transaction changes."
+                "The untracked aggregate is not a "
+                "classification of ordinary users, and "
+                "contributions describe net transaction changes."
             ),
             "Sources": "Results 18 and 21–24",
         },
         {
-            "Priority":
-                "Require reconciliation before making economic claims",
+            "Priority": (
+                "Require reconciliation before making economic claims"
+            ),
             "Evidence": (
-                "Receipt costs rose 82.73% between the endpoints "
-                "while total supply increased approximately "
-                "4.936 million NEAR over the period."
+                "Receipt costs rose 82.73% between the "
+                "endpoints while total supply increased "
+                "approximately 4.936 million NEAR over "
+                "the period."
             ),
             "Decision implication": (
-                "Higher execution spending does not by itself "
-                "establish permanent burning, protocol revenue "
-                "or holder value."
+                "Higher execution spending does not by "
+                "itself establish permanent burning, "
+                "protocol revenue or holder value."
             ),
             "Next action": (
-                "Keep cost and supply measurements separate and "
-                "require identified economic flows before making "
-                "supply or valuation claims."
+                "Keep cost and supply measurements separate "
+                "and require identified economic flows "
+                "before making supply or valuation claims."
             ),
             "Evidence boundary": (
-                "Validator-update balances and supply movements "
-                "remain incompletely reconciled; no complete "
-                "value-capture model is provided."
+                "Validator-update balances and supply "
+                "movements remain incompletely reconciled; "
+                "no complete value-capture model is provided."
             ),
             "Sources": "Results 13, 14 and 28–34",
         },
@@ -1869,7 +2141,10 @@ with decisions_tab:
 
     chosen_priority = st.selectbox(
         "Choose an investigation priority",
-        [item["Priority"] for item in priorities],
+        [
+            item["Priority"]
+            for item in priorities
+        ],
     )
 
     priority = next(
@@ -1881,27 +2156,37 @@ with decisions_tab:
     st.markdown(
         f"**Evidence:** {priority['Evidence']}"
     )
+
     st.markdown(
-        f"**Decision implication:** {priority['Decision implication']}"
+        "**Decision implication:** "
+        + priority["Decision implication"]
     )
+
     st.markdown(
         f"**Next action:** {priority['Next action']}"
     )
+
     st.caption(
-        f"Evidence boundary: {priority['Evidence boundary']} "
-        f"Sources: {priority['Sources']}."
+        "Evidence boundary: "
+        + priority["Evidence boundary"]
+        + " Sources: "
+        + priority["Sources"]
+        + "."
     )
 
     with st.expander(
         "Compare all investigation priorities"
     ):
-        priority_table = pd.DataFrame(priorities)
+        priority_table = pd.DataFrame(
+            priorities
+        )
 
         st.dataframe(
             priority_table,
             hide_index=True,
             width="stretch",
         )
+
         st.download_button(
             "Download decision priorities",
             data=priority_table.to_csv(
@@ -1914,11 +2199,324 @@ with decisions_tab:
         )
 
     st.caption(
-        "Priorities reflect research interpretation, not automated "
-        "scores, application rankings or buy-and-sell signals. "
-        "The written rationale is recorded in "
+        "Priorities reflect research interpretation, not "
+        "automated scores, application rankings or buy-and-sell "
+        "signals. The written rationale is recorded in "
         "notes/decision_priorities.md."
     )
+
+
+with explorer_tab:
+    st.subheader("Account explorer")
+
+    st.write(
+        "Inspect selected signing accounts, their weekly "
+        "activity, destinations and transaction actions. "
+        "Profiles cover selected accounts rather than "
+        "complete applications."
+    )
+
+    profile_path = RESULTS / (
+        f"35_account_profiles_{PERIOD}.json"
+    )
+
+    try:
+        document = json.loads(
+            profile_path.read_text(
+                encoding="utf-8"
+            )
+        )
+
+        profiles = document["profiles"]
+
+        account_ids = [
+            profile["account_id"]
+            for profile in profiles
+        ]
+
+        if (
+            not profiles
+            or len(set(account_ids))
+            != len(account_ids)
+        ):
+            raise ValueError(
+                "Missing or duplicate account profiles."
+            )
+
+        expected_weeks = set(
+            weekly["week_start"].dt.strftime(
+                "%Y-%m-%d"
+            )
+        )
+
+        for profile in profiles:
+            rows = profile["weekly"]
+
+            if (
+                len(rows) != 8
+                or {
+                    row["week_start"]
+                    for row in rows
+                } != expected_weeks
+            ):
+                raise ValueError(
+                    "Profile weeks do not match "
+                    "the observation period."
+                )
+
+            if (
+                sum(
+                    row["transactions"]
+                    for row in rows
+                )
+                != profile["full_period_transactions"]
+            ):
+                raise ValueError(
+                    "Profile transaction totals "
+                    "do not reconcile."
+                )
+
+    except (
+        OSError,
+        ValueError,
+        KeyError,
+        TypeError,
+    ) as error:
+        st.error(
+            f"Unable to load account profiles: {error}"
+        )
+
+    else:
+        accounts = {
+            profile["account_id"]: profile
+            for profile in profiles
+        }
+
+        selected_profile_account = st.selectbox(
+            "Signing account",
+            list(accounts),
+            key="explorer_account",
+        )
+
+        profile = accounts[
+            selected_profile_account
+        ]
+
+        st.markdown(
+            "**Evidence status:** "
+            + profile["evidence_status"]
+        )
+
+        if profile.get("service"):
+            st.write(
+                "Associated service: "
+                + profile["service"]
+            )
+
+        st.write(profile["role"])
+
+        if profile.get("source"):
+            st.link_button(
+                "Open attribution source",
+                profile["source"],
+            )
+
+        st.caption(
+            "Attribution reviewed "
+            + document["attribution_review_date"]
+            + ". Current sources do not independently "
+            "prove historical ownership."
+        )
+
+        history = pd.DataFrame(
+            [
+                {
+                    key: value
+                    for key, value in row.items()
+                    if key not in (
+                        "top_receivers",
+                        "action_categories",
+                    )
+                }
+                for row in profile["weekly"]
+            ]
+        ).sort_values("week_start")
+
+        history["week_start"] = pd.to_datetime(
+            history["week_start"]
+        )
+
+        start_count = int(
+            history.iloc[0]["transactions"]
+        )
+
+        end_count = int(
+            history.iloc[-1]["transactions"]
+        )
+
+        c1, c2, c3 = st.columns(3)
+
+        c1.metric(
+            "Transactions signed · eight weeks",
+            (
+                f"{profile['full_period_transactions']:,}"
+            ),
+        )
+
+        c2.metric(
+            "Final-week transactions",
+            f"{end_count:,}",
+        )
+
+        if start_count:
+            percentage_change = (
+                100
+                * (
+                    end_count / start_count
+                    - 1
+                )
+            )
+
+            c3.metric(
+                "First-to-final-week change",
+                f"{percentage_change:+.2f}%",
+                delta_color="off",
+            )
+        else:
+            c3.metric(
+                "First-to-final-week change",
+                "Not defined",
+            )
+
+        fig = px.line(
+            history,
+            x="week_start",
+            y="transactions",
+            markers=True,
+            labels={
+                "week_start": "Week starting",
+                "transactions": "Transactions signed",
+            },
+        )
+
+        show_weekly_chart(fig)
+
+        fig = px.bar(
+            history,
+            x="week_start",
+            y="network_transaction_share_pct",
+            labels={
+                "week_start": "Week starting",
+                "network_transaction_share_pct": (
+                    "Network transaction share (%)"
+                ),
+            },
+        )
+
+        show_weekly_chart(fig)
+
+        profile_weeks = {
+            row["week_start"]: row
+            for row in profile["weekly"]
+        }
+
+        selected_profile_week = st.selectbox(
+            "Inspect a week",
+            options=sorted(profile_weeks),
+            format_func=lambda value: (
+                value
+                + " to "
+                + profile_weeks[value]["week_end"]
+            ),
+            key="explorer_week",
+        )
+
+        chosen_week = profile_weeks[
+            selected_profile_week
+        ]
+
+        st.markdown(
+            "#### Transaction destinations"
+        )
+
+        st.caption(
+            "Weekly top 20 receivers only. These are "
+            "original transaction destinations, not a "
+            "complete downstream execution trace."
+        )
+
+        profile_receivers = pd.DataFrame(
+            chosen_week["top_receivers"]
+        )
+
+        st.dataframe(
+            profile_receivers,
+            hide_index=True,
+            width="stretch",
+        )
+
+        st.write(
+            "Transactions outside the top 20 destinations: "
+            f"{chosen_week['outside_top_20_receiver_transactions']:,}. "
+            "Distinct receivers: "
+            f"{chosen_week['distinct_receivers']:,}."
+        )
+
+        st.markdown(
+            "#### Transaction actions"
+        )
+
+        st.info(
+            "A transaction can appear in several action "
+            "categories. Category transaction counts must "
+            "not be summed or interpreted as users."
+        )
+
+        st.dataframe(
+            pd.DataFrame(
+                chosen_week["action_categories"]
+            ),
+            hide_index=True,
+            width="stretch",
+        )
+
+        st.write(
+            "Transactions with action records: "
+            f"{chosen_week['transactions_with_action_records']:,}. "
+            "Without matching action records: "
+            f"{chosen_week['transactions_without_action_records']:,}."
+        )
+
+        with st.expander(
+            "Measurement boundaries and profile export"
+        ):
+            for boundary in document[
+                "measurement_boundaries"
+            ]:
+                st.write(
+                    "• " + boundary
+                )
+
+            st.caption(
+                "Relayer signing-account participation "
+                "does not measure the participation or "
+                "retention of the people it serves."
+            )
+
+            st.download_button(
+                "Download selected account profile",
+                data=json.dumps(
+                    profile,
+                    indent=2,
+                    ensure_ascii=False,
+                ),
+                file_name=(
+                    selected_profile_account
+                    + "_profile.json"
+                ),
+                mime="application/json",
+                key="explorer_download",
+            )
 
 
 st.divider()
@@ -1931,6 +2529,7 @@ with st.expander(
         hide_index=True,
         width="stretch",
     )
+
     st.download_button(
         "Download weekly results",
         data=weekly.to_csv(
@@ -1943,6 +2542,6 @@ with st.expander(
     )
 
 st.caption(
-    "Research in progress. Observed differences do not establish "
-    "their causes, user churn or investment returns."
+    "Research in progress. Observed differences do not "
+    "establish their causes, user churn or investment returns."
 )
