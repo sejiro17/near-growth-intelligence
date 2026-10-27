@@ -1,0 +1,4608 @@
+{
+  "period_start": "2026-08-24",
+  "period_end": "2026-10-18",
+  "attribution_review_date": "2026-10-27",
+  "source_files": [
+    "18_weekly_leading_signing_accounts_2026-08-24_to_2026-10-18.csv",
+    "19_leading_account_activity_2026-08-24_to_2026-10-18.csv",
+    "20_leading_account_actions_2026-08-24_to_2026-10-18.csv"
+  ],
+  "measurement_boundaries": [
+    "Metrics describe transactions signed by each selected account.",
+    "Signing identifiers are not application user counts.",
+    "Profiles do not establish complete application coverage.",
+    "Receiver breakdowns contain weekly top 20 destinations.",
+    "Action-category transaction counts can overlap and must not be summed.",
+    "Current attribution evidence does not prove historical ownership."
+  ],
+  "profiles": [
+    {
+      "account_id": "intents.near",
+      "service": "NEAR Intents",
+      "evidence_status": "Documented contract role",
+      "role": "Verifier contract; metrics here describe transactions it signed.",
+      "source": "https://github.com/near/intents",
+      "full_period_transactions": 2769479,
+      "weekly": [
+        {
+          "week_start": "2026-08-24",
+          "week_end": "2026-08-30",
+          "transactions": 355963,
+          "active_days": 7,
+          "network_transactions": 4734816,
+          "network_transaction_share_pct": 7.518,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 355963,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 355963,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 355963,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 355963,
+              "action_rows": 355963,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-08-31",
+          "week_end": "2026-09-06",
+          "transactions": 411275,
+          "active_days": 7,
+          "network_transactions": 4891529,
+          "network_transaction_share_pct": 8.4079,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 411275,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 411275,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 411275,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 411275,
+              "action_rows": 411275,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-07",
+          "week_end": "2026-09-13",
+          "transactions": 331657,
+          "active_days": 7,
+          "network_transactions": 5076874,
+          "network_transaction_share_pct": 6.5327,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 331657,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 331657,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 331657,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 331657,
+              "action_rows": 331657,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-14",
+          "week_end": "2026-09-20",
+          "transactions": 291740,
+          "active_days": 7,
+          "network_transactions": 5689381,
+          "network_transaction_share_pct": 5.1278,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 291740,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 291740,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 291740,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 291740,
+              "action_rows": 291740,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-21",
+          "week_end": "2026-09-27",
+          "transactions": 378740,
+          "active_days": 7,
+          "network_transactions": 5990686,
+          "network_transaction_share_pct": 6.3221,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 378740,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 378740,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 378740,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 378740,
+              "action_rows": 378740,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-28",
+          "week_end": "2026-10-04",
+          "transactions": 314430,
+          "active_days": 7,
+          "network_transactions": 6590352,
+          "network_transaction_share_pct": 4.7711,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 314430,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 314430,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 314430,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 314430,
+              "action_rows": 314430,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-05",
+          "week_end": "2026-10-11",
+          "transactions": 376522,
+          "active_days": 7,
+          "network_transactions": 6401624,
+          "network_transaction_share_pct": 5.8817,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 376522,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 376522,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 376522,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 376522,
+              "action_rows": 376522,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-12",
+          "week_end": "2026-10-18",
+          "transactions": 309152,
+          "active_days": 7,
+          "network_transactions": 4909532,
+          "network_transaction_share_pct": 6.297,
+          "distinct_receivers": 1,
+          "self_directed_transactions": 309152,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 309152,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "intents.near",
+              "rank": 1,
+              "transactions": 309152,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "execute_intents",
+              "transactions": 309152,
+              "action_rows": 309152,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account_id": "omni-relayer.bridge.near",
+      "service": "Omni Bridge",
+      "evidence_status": "Documented relayer role",
+      "role": "Documented as finalizing bridge transfers on NEAR. Operator and full historical coverage remain unverified.",
+      "source": "https://doc.aurora.dev/blog/omnibridge-tutorial/",
+      "full_period_transactions": 1367509,
+      "weekly": [
+        {
+          "week_start": "2026-08-24",
+          "week_end": "2026-08-30",
+          "transactions": 176301,
+          "active_days": 7,
+          "network_transactions": 4734816,
+          "network_transaction_share_pct": 3.7235,
+          "distinct_receivers": 3,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 176301,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 124359,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 51941,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 1,
+              "active_days": 1
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 42257,
+              "action_rows": 42257,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 42156,
+              "action_rows": 42156,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 31412,
+              "action_rows": 31412,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 24602,
+              "action_rows": 24602,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 17090,
+              "action_rows": 17090,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 10250,
+              "action_rows": 10250,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 8534,
+              "action_rows": 8534,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-08-31",
+          "week_end": "2026-09-06",
+          "transactions": 189383,
+          "active_days": 7,
+          "network_transactions": 4891529,
+          "network_transaction_share_pct": 3.8717,
+          "distinct_receivers": 7,
+          "self_directed_transactions": 1,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 189383,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 119334,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 46855,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 23188,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "nbtc.bridge.near",
+              "rank": 4,
+              "transactions": 2,
+              "active_days": 1
+            },
+            {
+              "receiver_account_id": "zec.omft.near",
+              "rank": 5,
+              "transactions": 2,
+              "active_days": 2
+            },
+            {
+              "receiver_account_id": "bridge-ops.near",
+              "rank": 6,
+              "transactions": 1,
+              "active_days": 1
+            },
+            {
+              "receiver_account_id": "omni-relayer.bridge.near",
+              "rank": 7,
+              "transactions": 1,
+              "active_days": 1
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 37753,
+              "action_rows": 37753,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 37741,
+              "action_rows": 37741,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 32723,
+              "action_rows": 32723,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 30608,
+              "action_rows": 30608,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 21050,
+              "action_rows": 21050,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 16266,
+              "action_rows": 16266,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 13230,
+              "action_rows": 13230,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "active_utxo_management",
+              "transactions": 3,
+              "action_rows": 3,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "storage_deposit",
+              "transactions": 3,
+              "action_rows": 3,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "bind_token",
+              "transactions": 2,
+              "action_rows": 2,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "ADD_KEY",
+              "method_name": "null",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_migrate_deposit",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-07",
+          "week_end": "2026-09-13",
+          "transactions": 136767,
+          "active_days": 7,
+          "network_transactions": 5076874,
+          "network_transaction_share_pct": 2.6939,
+          "distinct_receivers": 3,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 136767,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 84038,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 33956,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 18773,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 26410,
+              "action_rows": 26410,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 25220,
+              "action_rows": 25220,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 25049,
+              "action_rows": 25049,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 24217,
+              "action_rows": 24217,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 15323,
+              "action_rows": 15323,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 10996,
+              "action_rows": 10996,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 9551,
+              "action_rows": 9551,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "bind_token",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-14",
+          "week_end": "2026-09-20",
+          "transactions": 189516,
+          "active_days": 7,
+          "network_transactions": 5689381,
+          "network_transaction_share_pct": 3.331,
+          "distinct_receivers": 4,
+          "self_directed_transactions": 1,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 189516,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 91427,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 2,
+              "transactions": 56089,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 3,
+              "transactions": 41999,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "omni-relayer.bridge.near",
+              "rank": 4,
+              "transactions": 1,
+              "active_days": 1
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 53374,
+              "action_rows": 53374,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 24798,
+              "action_rows": 24798,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 24255,
+              "action_rows": 24255,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 24146,
+              "action_rows": 24146,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 22585,
+              "action_rows": 22585,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 22129,
+              "action_rows": 22129,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 18228,
+              "action_rows": 18228,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "ADD_KEY",
+              "method_name": "null",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-21",
+          "week_end": "2026-09-27",
+          "transactions": 212430,
+          "active_days": 7,
+          "network_transactions": 5990686,
+          "network_transaction_share_pct": 3.546,
+          "distinct_receivers": 4,
+          "self_directed_transactions": 1,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 212430,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 113194,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 51006,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 48229,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "omni-relayer.bridge.near",
+              "rank": 4,
+              "transactions": 1,
+              "active_days": 1
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 51583,
+              "action_rows": 51583,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 32878,
+              "action_rows": 32878,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 32783,
+              "action_rows": 32783,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 31575,
+              "action_rows": 31575,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 25897,
+              "action_rows": 25897,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 21745,
+              "action_rows": 21745,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 15948,
+              "action_rows": 15948,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "active_utxo_management",
+              "transactions": 10,
+              "action_rows": 10,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "bind_token",
+              "transactions": 6,
+              "action_rows": 6,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "ADD_KEY",
+              "method_name": "null",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "acl_renounce_role",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "acl_revoke_role",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "log_metadata",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "set_locked_tokens",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-28",
+          "week_end": "2026-10-04",
+          "transactions": 161162,
+          "active_days": 7,
+          "network_transactions": 6590352,
+          "network_transaction_share_pct": 2.4454,
+          "distinct_receivers": 4,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 161162,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 85852,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 44768,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 30541,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sol.omft.near",
+              "rank": 4,
+              "transactions": 1,
+              "active_days": 1
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 36356,
+              "action_rows": 36356,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 27324,
+              "action_rows": 27324,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 25791,
+              "action_rows": 25791,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 25755,
+              "action_rows": 25755,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 24628,
+              "action_rows": 24628,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 11629,
+              "action_rows": 11629,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 9678,
+              "action_rows": 9678,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-05",
+          "week_end": "2026-10-11",
+          "transactions": 162552,
+          "active_days": 7,
+          "network_transactions": 6401624,
+          "network_transaction_share_pct": 2.5392,
+          "distinct_receivers": 3,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 162552,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 97565,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 39486,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 25501,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 34897,
+              "action_rows": 34897,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 30572,
+              "action_rows": 30572,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 29222,
+              "action_rows": 29222,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 29208,
+              "action_rows": 29208,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 19625,
+              "action_rows": 19625,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 10465,
+              "action_rows": 10465,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 8547,
+              "action_rows": 8547,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "bind_token",
+              "transactions": 16,
+              "action_rows": 16,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-12",
+          "week_end": "2026-10-18",
+          "transactions": 139398,
+          "active_days": 7,
+          "network_transactions": 4909532,
+          "network_transaction_share_pct": 2.8393,
+          "distinct_receivers": 3,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 139398,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "omni.bridge.near",
+              "rank": 1,
+              "transactions": 86221,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "btc-connector.bridge.near",
+              "rank": 2,
+              "transactions": 31478,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zcash-connector.bridge.near",
+              "rank": 3,
+              "transactions": 21699,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_btc_transaction",
+              "transactions": 29162,
+              "action_rows": 29162,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "claim_fee",
+              "transactions": 27675,
+              "action_rows": 27675,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transfer",
+              "transactions": 27618,
+              "action_rows": 27618,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "fin_transfer",
+              "transactions": 24000,
+              "action_rows": 24000,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_deposit_v2",
+              "transactions": 15910,
+              "action_rows": 15910,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "verify_withdraw_v2",
+              "transactions": 8101,
+              "action_rows": 8101,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "submit_transfer_to_utxo_chain_connector",
+              "transactions": 6926,
+              "action_rows": 6926,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "active_utxo_management",
+              "transactions": 4,
+              "action_rows": 4,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "bind_token",
+              "transactions": 2,
+              "action_rows": 2,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account_id": "sweat-relayer.near",
+      "service": null,
+      "evidence_status": "Pending verification",
+      "role": "Observed signing account; service attribution unverified.",
+      "source": null,
+      "full_period_transactions": 13704363,
+      "weekly": [
+        {
+          "week_start": "2026-08-24",
+          "week_end": "2026-08-30",
+          "transactions": 1954610,
+          "active_days": 7,
+          "network_transactions": 4734816,
+          "network_transaction_share_pct": 41.2816,
+          "distinct_receivers": 223109,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 584363,
+          "transactions_with_action_records": 1954610,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 399067,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 387440,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 237255,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 115376,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 5,
+              "transactions": 114880,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 6,
+              "transactions": 91291,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 16691,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 7143,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "bd50001f7488868e5d9bf705d89bf8fdada8366daae52b22744cc885ea67b1e6",
+              "rank": 9,
+              "transactions": 182,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "dddc693156237751fd75f69d79dce6727a51a98d8ea6faba4e7bbe20a9a6a82a",
+              "rank": 10,
+              "transactions": 101,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "5217b57084b930215584620d3cd2b5b991adc4af5e7c8ca8acfb6cd2f42fe4bf",
+              "rank": 11,
+              "transactions": 95,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "a60c52fef71b4a982d3689d1bc4900ceef7d58407427be72e06141692af3c8ed",
+              "rank": 12,
+              "transactions": 90,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "6af9f40bf6e1dae0cf683fed1ba078a5b86d8d2aa5e51b78af9649d6e2665c89",
+              "rank": 13,
+              "transactions": 89,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "c52a836db33794798a90003408933ea38d7f0a979e5506fdb5cf1f3359fa7a9b",
+              "rank": 14,
+              "transactions": 82,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "ef87d96fa0110684ed386cdedd4bc9491fdd0c279ca1403d7edbac48ecccd53e",
+              "rank": 15,
+              "transactions": 82,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "cff969daa6ee621cb542a75ea693da8d99f8d839aaf93fd4b7b1dfafc4f8ca13",
+              "rank": 16,
+              "transactions": 80,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "c721f0c2afd8bd34d15302329c4a456fae6e2884d519b7effa5a0e40d8faeef2",
+              "rank": 17,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "f878f1646c05f9b52a3f360c11a169f9a23f785eb56e4037d408ffb5d68d3d89",
+              "rank": 18,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "a620b8163112eff07115b511e43175f12c6b65d9f50ee3abbed6f71a6b1ce72c",
+              "rank": 19,
+              "transactions": 74,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "74b132bb42c106e409181e3b36a0e9c8c292d23309d98af60d7672cd6eed5254",
+              "rank": 20,
+              "transactions": 73,
+              "active_days": 6
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1863318,
+              "action_rows": 1863318,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 91291,
+              "action_rows": 91291,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-08-31",
+          "week_end": "2026-09-06",
+          "transactions": 1953561,
+          "active_days": 7,
+          "network_transactions": 4891529,
+          "network_transaction_share_pct": 39.9376,
+          "distinct_receivers": 216712,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 637794,
+          "transactions_with_action_records": 1953561,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 413002,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 375782,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 247132,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 4,
+              "transactions": 99808,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 5,
+              "transactions": 80434,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 6,
+              "transactions": 76416,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 15446,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 6536,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "d6ba7e64990f9e146896fa25c7ac7b9d6a1d424a8c445f4bdf8838ad5fdc5634",
+              "rank": 9,
+              "transactions": 200,
+              "active_days": 2
+            },
+            {
+              "receiver_account_id": "23e6e884319f4b1c2fcf34630a2579b0f7e9474528e097bc9fa35665e8753d64",
+              "rank": 10,
+              "transactions": 122,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "ab6e683857fd55b36bd96a0e6ec3124f00a46995bdbad50bee7e6ad25112ecb4",
+              "rank": 11,
+              "transactions": 122,
+              "active_days": 3
+            },
+            {
+              "receiver_account_id": "61ec172f14c8c8fb9ed06b8a7a74e3b657775c8b8b80036fc3c413f93446ff95",
+              "rank": 12,
+              "transactions": 114,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "78ab8cdb9d082dd1a858cc5b727b41e3842473196f26c8ed1bc2b35446c7bf74",
+              "rank": 13,
+              "transactions": 93,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "1800699bf70d9acb529ef4c6d4e08c3a070c652650fa00588aa138490be5db86",
+              "rank": 14,
+              "transactions": 83,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "ef87d96fa0110684ed386cdedd4bc9491fdd0c279ca1403d7edbac48ecccd53e",
+              "rank": 15,
+              "transactions": 83,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "cb1bb7eeb2f291982fa71211f6928c94ee5f53458559c702a06369d64f5734d1",
+              "rank": 16,
+              "transactions": 82,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "c721f0c2afd8bd34d15302329c4a456fae6e2884d519b7effa5a0e40d8faeef2",
+              "rank": 17,
+              "transactions": 81,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "4711002f0cd160f864fadf7609c2f330a5ab9cbeccdaa81b994278867447faf6",
+              "rank": 18,
+              "transactions": 80,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "455c2897fdc84d3612801f8ca54bd024dd9029e4a3063bc378e41ca5d1621243",
+              "rank": 19,
+              "transactions": 78,
+              "active_days": 1
+            },
+            {
+              "receiver_account_id": "63e6b71d24d12f82ceee691c5c6fa3c281458521a096ae3f8cc4023d1f69bac3",
+              "rank": 20,
+              "transactions": 73,
+              "active_days": 6
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1873127,
+              "action_rows": 1873127,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 80434,
+              "action_rows": 80434,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-07",
+          "week_end": "2026-09-13",
+          "transactions": 2055866,
+          "active_days": 7,
+          "network_transactions": 5076874,
+          "network_transaction_share_pct": 40.4947,
+          "distinct_receivers": 215299,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 673839,
+          "transactions_with_action_records": 2055866,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 446059,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 371297,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 244932,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 111466,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 5,
+              "transactions": 103504,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 6,
+              "transactions": 83323,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 13784,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 6609,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "12084611ca5c8b24ab0e3a336ac29d66c9a35e9f0c5b2793e4a0c4a54525d04c",
+              "rank": 9,
+              "transactions": 122,
+              "active_days": 2
+            },
+            {
+              "receiver_account_id": "ef51fc636ed7f16469d3a3335a41581d8877edd819a7031f1b8d3ee29c9145da",
+              "rank": 10,
+              "transactions": 104,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "60f6e92fa74a29981de26d1a0faa0d83f03943e5d00a3ec227470f678807a31b",
+              "rank": 11,
+              "transactions": 93,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "3f044e8b5fa69d931c0d72892082dd11d55e34905596bd9164c75cdebf81e3d1",
+              "rank": 12,
+              "transactions": 90,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "908d19789e5ca409a41beef7012d6d33277241093087c1de353e002ae41e049e",
+              "rank": 13,
+              "transactions": 85,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "48f1a7db24a3bf99631b69850479fafa957d1d0bcf5a40ef0d4628affed9aaa4",
+              "rank": 14,
+              "transactions": 84,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "b0e5649f03723172b31de067353e45cbc167338e8f56207349bfbad2b604457e",
+              "rank": 15,
+              "transactions": 84,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "56c97f1baf9482e73af2562fdbc63322bae55cdf0a4b50553ca289a01aa5ae1a",
+              "rank": 16,
+              "transactions": 83,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "245e9191b7c91c96bb0c07cd3b89cb63fdc1c6f4290bccb65707fedd023bcb68",
+              "rank": 17,
+              "transactions": 81,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "c786dff5f918e36f8986f71d59a6423419bea4500908b981fe5355eb93c11c89",
+              "rank": 18,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "72e1f67f69b87faecb85cc219aa7e1824a000108f21a7c71be546f489df6ef90",
+              "rank": 19,
+              "transactions": 76,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "399f1db509e4497394978ba99cde71f0af23df6c8dae7e9d6a3e77916ae95205",
+              "rank": 20,
+              "transactions": 73,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1972543,
+              "action_rows": 1972543,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 83323,
+              "action_rows": 83323,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-14",
+          "week_end": "2026-09-20",
+          "transactions": 1768800,
+          "active_days": 7,
+          "network_transactions": 5689381,
+          "network_transaction_share_pct": 31.0895,
+          "distinct_receivers": 176773,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 554574,
+          "transactions_with_action_records": 1768800,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 404609,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 350443,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 243405,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 83576,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 5,
+              "transactions": 61251,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 6,
+              "transactions": 52485,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 11643,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 5583,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "455c2897fdc84d3612801f8ca54bd024dd9029e4a3063bc378e41ca5d1621243",
+              "rank": 9,
+              "transactions": 167,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "3754fd6d51e28559e51a1bb3c19136c49e6576f4d283dc5eb8568a6a17c3dd5c",
+              "rank": 10,
+              "transactions": 139,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "a78b185f07dd9041561dd7fe7397fb2bc6961a5de0f6368a3893106bf01441ea",
+              "rank": 11,
+              "transactions": 131,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "8ed84e03ee3ff353211c1ed662ef4f25553390378c00d4d23f963c71cb4bda36",
+              "rank": 12,
+              "transactions": 103,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "ccaaab6b8dbef2707cba87fc4238a844b4d4f957696d439557ed862357a03046",
+              "rank": 13,
+              "transactions": 100,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "bd0e7c5558f2625ca54ccd1ca6c27e710f9074f773d31028ff9abd22b01d1543",
+              "rank": 14,
+              "transactions": 98,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "4880fe307d5104e8441c6e3338a50892550b0c839f131ee55622bb83eb8d05c0",
+              "rank": 15,
+              "transactions": 91,
+              "active_days": 3
+            },
+            {
+              "receiver_account_id": "c48685710e9aea0236405e529908d3802d886f441ad787ad528f1e066671064e",
+              "rank": 16,
+              "transactions": 90,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "81d59ac2f614124a79c29d11efab8c926d2eb6422a81161b39e470fcc3c814e5",
+              "rank": 17,
+              "transactions": 81,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "399f1db509e4497394978ba99cde71f0af23df6c8dae7e9d6a3e77916ae95205",
+              "rank": 18,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "36a83d6cc454a92ab4180a7fd700d39019161040e7023b322ecd00c0c270aab9",
+              "rank": 19,
+              "transactions": 77,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "c01778b9dc6603e81cac1ca2e4bde488565e7eb5556089b7c1d2ad6160536aa4",
+              "rank": 20,
+              "transactions": 76,
+              "active_days": 4
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1716315,
+              "action_rows": 1716315,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 52485,
+              "action_rows": 52485,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-21",
+          "week_end": "2026-09-27",
+          "transactions": 1631056,
+          "active_days": 7,
+          "network_transactions": 5990686,
+          "network_transaction_share_pct": 27.2265,
+          "distinct_receivers": 159231,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 475044,
+          "transactions_with_action_records": 1631056,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 368492,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 339279,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 235929,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 93198,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 5,
+              "transactions": 55135,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 6,
+              "transactions": 48447,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 9424,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 5220,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "bde756e7010649b304bcbd1b4c4d6d39c0e785d2f63da4ad2172dd682593f0e2",
+              "rank": 9,
+              "transactions": 116,
+              "active_days": 3
+            },
+            {
+              "receiver_account_id": "e98396586f2e41947be5d4eccb3bbdbdd81d71e105586223a593c87facb7d6a5",
+              "rank": 10,
+              "transactions": 84,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "9a1b811db8e51bcf0a02ff63d736a24e7de2479a64841e0c8d141a0786bcded5",
+              "rank": 11,
+              "transactions": 74,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "4bf3be964391b10e123aa2fb04f30ef2f3d88b88cb0de41df0c1a2ec924ca271",
+              "rank": 12,
+              "transactions": 73,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "2f50b2d9ec6e9280f4d2c428881145ccebe0dae1a1e62472464143221c6edbfb",
+              "rank": 13,
+              "transactions": 70,
+              "active_days": 1
+            },
+            {
+              "receiver_account_id": "9f6171d4a1af34b3975852bffbee2e8eb723a774328f4db33fdbf7e64a4e1e07",
+              "rank": 14,
+              "transactions": 70,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "bd0e7c5558f2625ca54ccd1ca6c27e710f9074f773d31028ff9abd22b01d1543",
+              "rank": 15,
+              "transactions": 70,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "5631857280c688a3764166f7628674aafb5dc0f78940f7ea9c57e64bd4e75902",
+              "rank": 16,
+              "transactions": 68,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "ce052aa5521a9bbd5b17dfff9b697ec414dd3446fa3f1f90da03714d54ad1ec1",
+              "rank": 17,
+              "transactions": 67,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "d1325b9a3e25c8542b2c473074c706c32be8a6da6b9133fa5ea16490089b3a53",
+              "rank": 18,
+              "transactions": 67,
+              "active_days": 3
+            },
+            {
+              "receiver_account_id": "3858da332739a0118db40d436ebf51545ccaebe193a53ad7032c35c61b469b09",
+              "rank": 19,
+              "transactions": 65,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "0e457ec4b9a8bb4b6738eaf02f98c76339c92f8f9e611531e4a6db79f879e6e1",
+              "rank": 20,
+              "transactions": 64,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1582609,
+              "action_rows": 1582609,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 48447,
+              "action_rows": 48447,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-28",
+          "week_end": "2026-10-04",
+          "transactions": 1587135,
+          "active_days": 7,
+          "network_transactions": 6590352,
+          "network_transaction_share_pct": 24.0827,
+          "distinct_receivers": 158586,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 471201,
+          "transactions_with_action_records": 1587135,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 353911,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 333510,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 239499,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 107913,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 5,
+              "transactions": 35622,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 6,
+              "transactions": 30696,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 9346,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 4503,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "362e2543d956df8074f69f807acbdd9730d76098afbb8ecc3515b38a31656ab5",
+              "rank": 9,
+              "transactions": 103,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "1bba25d887aff9eaf5740344bf9157d59c368f0ef6d4e60e5e1a25d571bda0f1",
+              "rank": 10,
+              "transactions": 100,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "dfd046a280709df27c4ceeb9f478073cb12fdd1d9405338b34fdde956b3393da",
+              "rank": 11,
+              "transactions": 91,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "250344e5a6ce7b6f1fc4d00c0ce3d6fe4ec597194dfe5519eecc4fa087f6715e",
+              "rank": 12,
+              "transactions": 89,
+              "active_days": 3
+            },
+            {
+              "receiver_account_id": "f48be4ac52c4cd562246dd93309308a02eba212acd6cb380840b9d85b8516f20",
+              "rank": 13,
+              "transactions": 73,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "ef87d96fa0110684ed386cdedd4bc9491fdd0c279ca1403d7edbac48ecccd53e",
+              "rank": 14,
+              "transactions": 72,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "74b132bb42c106e409181e3b36a0e9c8c292d23309d98af60d7672cd6eed5254",
+              "rank": 15,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "9f6171d4a1af34b3975852bffbee2e8eb723a774328f4db33fdbf7e64a4e1e07",
+              "rank": 16,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "2ab5c3a81602a99b96e4299a57370aa51d881e7036e7aa0f7e5315360fc5c5d8",
+              "rank": 17,
+              "transactions": 68,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "697f33d7a639689a519e883699d412d33612b15d9a3733a195b252eeff3e2de2",
+              "rank": 18,
+              "transactions": 67,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "f57afbde9c4abc7b4b32979a91e8e7878085b7b34cf487a95e376061231f56d9",
+              "rank": 19,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "e28a837187227005abe67089b9bdacfdfc8f4eeaa14092ed5c4c73f4e50fb8e9",
+              "rank": 20,
+              "transactions": 64,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1556439,
+              "action_rows": 1556439,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 30696,
+              "action_rows": 30696,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-05",
+          "week_end": "2026-10-11",
+          "transactions": 1452023,
+          "active_days": 7,
+          "network_transactions": 6401624,
+          "network_transaction_share_pct": 22.6821,
+          "distinct_receivers": 142868,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 391947,
+          "transactions_with_action_records": 1452023,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 343996,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 304179,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 237952,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 86783,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 5,
+              "transactions": 39488,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 6,
+              "transactions": 33868,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 7826,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 3921,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "0c0290c7e9632926107b34a74cfd603f5efae7e29a9354a67e66d36b371d0f91",
+              "rank": 9,
+              "transactions": 798,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "c5c25da276bdacb31a3fa9dacc519cc1b46f0004c622773b837d9d608a005f68",
+              "rank": 10,
+              "transactions": 436,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "07a1f1bc488177648444cbd6706b40ff7163b2f5e19e98b925205404afd70411",
+              "rank": 11,
+              "transactions": 109,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "4f948295725c3e14fe095418cf2990561b19565dff4aea5a4bb56a880274022e",
+              "rank": 12,
+              "transactions": 108,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "ed93c37d2a037d38542a466bbd30faca9f3b39a70dc50188a42dca2ac9115d6c",
+              "rank": 13,
+              "transactions": 86,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "ef87d96fa0110684ed386cdedd4bc9491fdd0c279ca1403d7edbac48ecccd53e",
+              "rank": 14,
+              "transactions": 86,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "97afb7bc3b37d46636e8101980949412c828a35ec254bc47016f6e8ad8a9c838",
+              "rank": 15,
+              "transactions": 83,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "8f5abe4999007cd0e751f2bd48cc884aec1b2290c9bbb5d66df81deb2c10fd18",
+              "rank": 16,
+              "transactions": 80,
+              "active_days": 3
+            },
+            {
+              "receiver_account_id": "bbdd7db295b85dc6745b69d34567f0f896de119609b39ec795405a0e822439b1",
+              "rank": 17,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "1bba25d887aff9eaf5740344bf9157d59c368f0ef6d4e60e5e1a25d571bda0f1",
+              "rank": 18,
+              "transactions": 70,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "9f6171d4a1af34b3975852bffbee2e8eb723a774328f4db33fdbf7e64a4e1e07",
+              "rank": 19,
+              "transactions": 68,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "d72ba5d786d44acfde4ce3af0ab2429255d4e5660706231f3fee76a057796533",
+              "rank": 20,
+              "transactions": 68,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1412535,
+              "action_rows": 1412535,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 39488,
+              "action_rows": 39488,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-12",
+          "week_end": "2026-10-18",
+          "transactions": 1301312,
+          "active_days": 7,
+          "network_transactions": 4909532,
+          "network_transaction_share_pct": 26.5058,
+          "distinct_receivers": 120242,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 325842,
+          "transactions_with_action_records": 1301312,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "jars-oracle.sweat",
+              "rank": 1,
+              "transactions": 310623,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "spin.sweat",
+              "rank": 2,
+              "transactions": 287819,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oracle.sweat",
+              "rank": 3,
+              "transactions": 232838,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "learn.sweat",
+              "rank": 4,
+              "transactions": 70234,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat_welcome.near",
+              "rank": 5,
+              "transactions": 31627,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fast-auth.near",
+              "rank": 6,
+              "transactions": 31260,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "offerwall.sweat",
+              "rank": 7,
+              "transactions": 6316,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sweat-snek.near",
+              "rank": 8,
+              "transactions": 3513,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "5e8e917a45f4473e6fddefa275ec9013aab6b294e0f3e8d1abbc989cd627e689",
+              "rank": 9,
+              "transactions": 185,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "956f828f81513a7926da90a87fb713e81f62d4bb53526c013d02aff85ffafc2a",
+              "rank": 10,
+              "transactions": 124,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "f302cb11b379d607871e4405da848ef437d62cc0428499ffeee5a73e6328d934",
+              "rank": 11,
+              "transactions": 120,
+              "active_days": 2
+            },
+            {
+              "receiver_account_id": "97f4e9880b14288ed00bc609a58a887c657d13d4396e37215ce60f806e55b753",
+              "rank": 12,
+              "transactions": 110,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "ed93c37d2a037d38542a466bbd30faca9f3b39a70dc50188a42dca2ac9115d6c",
+              "rank": 13,
+              "transactions": 109,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "1f07558b44fb87dee404c63a72f370317d887bb1e803d3433dbbba88e1593686",
+              "rank": 14,
+              "transactions": 108,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "3c3a17680655c85803d8ae3983a767c8392c4a2bb928e52ef89427a5520b70c9",
+              "rank": 15,
+              "transactions": 93,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "ef87d96fa0110684ed386cdedd4bc9491fdd0c279ca1403d7edbac48ecccd53e",
+              "rank": 16,
+              "transactions": 91,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "f6351839dc179e8df11e0614714d45b4f832dfe630942f67fd79e7f924515845",
+              "rank": 17,
+              "transactions": 79,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "7aaff79d9009fd2ddbeddae1b4954ec9ec2ae39aaa4576ffc607cc53cec428c1",
+              "rank": 18,
+              "transactions": 75,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "53cc902a01a7b458eb0ec2c559dfe7e0deaa1c590722b8925ade9fb23fda0ef4",
+              "rank": 19,
+              "transactions": 73,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "6f2a57b7e91e5c54fdbff1906404ea233180cf6df184b749c09363733800a029",
+              "rank": 20,
+              "transactions": 73,
+              "active_days": 2
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 1270052,
+              "action_rows": 1270052,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign",
+              "transactions": 31260,
+              "action_rows": 31260,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account_id": "meteor-relayer.near",
+      "service": null,
+      "evidence_status": "Pending verification",
+      "role": "Observed signing account; service attribution unverified.",
+      "source": null,
+      "full_period_transactions": 1264098,
+      "weekly": [
+        {
+          "week_start": "2026-08-24",
+          "week_end": "2026-08-30",
+          "transactions": 153811,
+          "active_days": 7,
+          "network_transactions": 4734816,
+          "network_transaction_share_pct": 3.2485,
+          "distinct_receivers": 17107,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 151976,
+          "transactions_with_action_records": 153811,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 592,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "newsite7940.near",
+              "rank": 2,
+              "transactions": 83,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "rey2279.near",
+              "rank": 3,
+              "transactions": 76,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "deeppuma3033.near",
+              "rank": 4,
+              "transactions": 72,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "closesite6543.near",
+              "rank": 5,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "pyrojoke.near",
+              "rank": 6,
+              "transactions": 68,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "reiko_zealy.near",
+              "rank": 7,
+              "transactions": 67,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "daicahai.near",
+              "rank": 8,
+              "transactions": 66,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "zeycanode.near",
+              "rank": 9,
+              "transactions": 66,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "badwriter.near",
+              "rank": 10,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "kingmonkey.near",
+              "rank": 11,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "f2211.near",
+              "rank": 12,
+              "transactions": 63,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "ttttf.near",
+              "rank": 13,
+              "transactions": 62,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "laquer.near",
+              "rank": 14,
+              "transactions": 61,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "ugrig1968.tg",
+              "rank": 15,
+              "transactions": 61,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "darkcats.near",
+              "rank": 16,
+              "transactions": 60,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "perxan.near",
+              "rank": 17,
+              "transactions": 60,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "astralmouse.near",
+              "rank": 18,
+              "transactions": 59,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "meteorin.near",
+              "rank": 19,
+              "transactions": 59,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "orpur.near",
+              "rank": 20,
+              "transactions": 59,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 153215,
+              "action_rows": 153215,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 592,
+              "action_rows": 592,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transaction",
+              "transactions": 3,
+              "action_rows": 3,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "add_wallet",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-08-31",
+          "week_end": "2026-09-06",
+          "transactions": 152732,
+          "active_days": 7,
+          "network_transactions": 4891529,
+          "network_transaction_share_pct": 3.1224,
+          "distinct_receivers": 16691,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 150721,
+          "transactions_with_action_records": 152732,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 527,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrongzone2119.near",
+              "rank": 2,
+              "transactions": 109,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "lkiri.near",
+              "rank": 3,
+              "transactions": 104,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "shyyak2354.near",
+              "rank": 4,
+              "transactions": 100,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "littleblog953.near",
+              "rank": 5,
+              "transactions": 91,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "rudeoasis6866.near",
+              "rank": 6,
+              "transactions": 90,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "kymarnyu.near",
+              "rank": 7,
+              "transactions": 89,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "stp3032.near",
+              "rank": 8,
+              "transactions": 86,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "blizorykiy.near",
+              "rank": 9,
+              "transactions": 79,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "iborovik17.near",
+              "rank": 10,
+              "transactions": 77,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "hitriylis.near",
+              "rank": 11,
+              "transactions": 76,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "solidmouse2511.near",
+              "rank": 12,
+              "transactions": 76,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "easydress8633.near",
+              "rank": 13,
+              "transactions": 69,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "deeppuma3033.near",
+              "rank": 14,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "closesite6543.near",
+              "rank": 15,
+              "transactions": 64,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "dimas1995.near",
+              "rank": 16,
+              "transactions": 64,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "maliypovzroslel.near",
+              "rank": 17,
+              "transactions": 63,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "amitroubleshooter.tg",
+              "rank": 18,
+              "transactions": 62,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "massa_p.near",
+              "rank": 19,
+              "transactions": 61,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "neatmask2118.near",
+              "rank": 20,
+              "transactions": 59,
+              "active_days": 6
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 152205,
+              "action_rows": 152205,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 527,
+              "action_rows": 527,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-07",
+          "week_end": "2026-09-13",
+          "transactions": 151299,
+          "active_days": 7,
+          "network_transactions": 5076874,
+          "network_transaction_share_pct": 2.9802,
+          "distinct_receivers": 17016,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 149246,
+          "transactions_with_action_records": 151299,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 638,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "shyyak2354.near",
+              "rank": 2,
+              "transactions": 101,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "kymarnyu.near",
+              "rank": 3,
+              "transactions": 99,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrongzone2119.near",
+              "rank": 4,
+              "transactions": 91,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "rudeoasis6866.near",
+              "rank": 5,
+              "transactions": 90,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "6473352642.tg",
+              "rank": 6,
+              "transactions": 85,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "pyrojoke.near",
+              "rank": 7,
+              "transactions": 85,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "i5279686585.tg",
+              "rank": 8,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "niceurial4315.near",
+              "rank": 9,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "oxen32.near",
+              "rank": 10,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "clearnut5610.near",
+              "rank": 11,
+              "transactions": 69,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "nikantol.tg",
+              "rank": 12,
+              "transactions": 68,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "deeppuma3033.near",
+              "rank": 13,
+              "transactions": 66,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "meteorin.near",
+              "rank": 14,
+              "transactions": 63,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "tightgrain2906.near",
+              "rank": 15,
+              "transactions": 63,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "trakto.near",
+              "rank": 16,
+              "transactions": 63,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "kobraa.near",
+              "rank": 17,
+              "transactions": 62,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "laquer.near",
+              "rank": 18,
+              "transactions": 61,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "olenak.near",
+              "rank": 19,
+              "transactions": 61,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "orpur.near",
+              "rank": 20,
+              "transactions": 61,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 150661,
+              "action_rows": 150661,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 638,
+              "action_rows": 638,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-14",
+          "week_end": "2026-09-20",
+          "transactions": 152526,
+          "active_days": 7,
+          "network_transactions": 5689381,
+          "network_transaction_share_pct": 2.6809,
+          "distinct_receivers": 16931,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 149238,
+          "transactions_with_action_records": 152526,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 1043,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "brn1.near",
+              "rank": 2,
+              "transactions": 778,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "shyyak2354.near",
+              "rank": 3,
+              "transactions": 111,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "rudeoasis6866.near",
+              "rank": 4,
+              "transactions": 100,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "finecity7274.near",
+              "rank": 5,
+              "transactions": 99,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "silenthat7386.near",
+              "rank": 6,
+              "transactions": 99,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "6473352642.tg",
+              "rank": 7,
+              "transactions": 97,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrongzone2119.near",
+              "rank": 8,
+              "transactions": 96,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "timaflash.tg",
+              "rank": 9,
+              "transactions": 90,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "warmcat7866.near",
+              "rank": 10,
+              "transactions": 84,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "i5279686585.tg",
+              "rank": 11,
+              "transactions": 83,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "smarturial1188.near",
+              "rank": 12,
+              "transactions": 83,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "smartyrahee.near",
+              "rank": 13,
+              "transactions": 70,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "antitelo.near",
+              "rank": 14,
+              "transactions": 68,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "deeppuma3033.near",
+              "rank": 15,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "kymarnyu.near",
+              "rank": 16,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "laquer.near",
+              "rank": 17,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "alibabask9.near",
+              "rank": 18,
+              "transactions": 64,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "quiettea3128.near",
+              "rank": 19,
+              "transactions": 64,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "tightlynx8562.near",
+              "rank": 20,
+              "transactions": 64,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 151483,
+              "action_rows": 151483,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 1043,
+              "action_rows": 1043,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-21",
+          "week_end": "2026-09-27",
+          "transactions": 160052,
+          "active_days": 7,
+          "network_transactions": 5990686,
+          "network_transaction_share_pct": 2.6717,
+          "distinct_receivers": 17376,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 153024,
+          "transactions_with_action_records": 160052,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 5479,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "magellan82.near",
+              "rank": 2,
+              "transactions": 135,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "6473352642.tg",
+              "rank": 3,
+              "transactions": 103,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "speculatorz.near",
+              "rank": 4,
+              "transactions": 92,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "i5279686585.tg",
+              "rank": 5,
+              "transactions": 90,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "vu1089.near",
+              "rank": 6,
+              "transactions": 89,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "morshed6049.near",
+              "rank": 7,
+              "transactions": 88,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "hitamsusu.near",
+              "rank": 8,
+              "transactions": 80,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "finecity7274.near",
+              "rank": 9,
+              "transactions": 79,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "alighdiri.near",
+              "rank": 10,
+              "transactions": 77,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrongzone2119.near",
+              "rank": 11,
+              "transactions": 77,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "shyyak2354.near",
+              "rank": 12,
+              "transactions": 76,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "silenthat7386.near",
+              "rank": 13,
+              "transactions": 75,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "daicahai.near",
+              "rank": 14,
+              "transactions": 74,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "amalooker.near",
+              "rank": 15,
+              "transactions": 72,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sirmarpy.near",
+              "rank": 16,
+              "transactions": 72,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "diduzi.tg",
+              "rank": 17,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "rudeoasis6866.near",
+              "rank": 18,
+              "transactions": 70,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "anderis.near",
+              "rank": 19,
+              "transactions": 65,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "greengif495.near",
+              "rank": 20,
+              "transactions": 64,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 154573,
+              "action_rows": 154573,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 5479,
+              "action_rows": 5479,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-28",
+          "week_end": "2026-10-04",
+          "transactions": 171446,
+          "active_days": 7,
+          "network_transactions": 6590352,
+          "network_transaction_share_pct": 2.6015,
+          "distinct_receivers": 17694,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 159057,
+          "transactions_with_action_records": 171446,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 10724,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "jeroenoverkamp.near",
+              "rank": 2,
+              "transactions": 112,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "i5279686585.tg",
+              "rank": 3,
+              "transactions": 107,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "6473352642.tg",
+              "rank": 4,
+              "transactions": 100,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "otherrat516.near",
+              "rank": 5,
+              "transactions": 100,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "6e5623d6cb3df2914e38316f4ef6a335b160e9eea224380356410c98a52a28f7",
+              "rank": 6,
+              "transactions": 99,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "protacioo.near",
+              "rank": 7,
+              "transactions": 97,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "ddegener.near",
+              "rank": 8,
+              "transactions": 94,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "fatgarden3007.near",
+              "rank": 9,
+              "transactions": 92,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "nearbee.near",
+              "rank": 10,
+              "transactions": 91,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "creamsoda.near",
+              "rank": 11,
+              "transactions": 90,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "kafkaa.near",
+              "rank": 12,
+              "transactions": 81,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "deepzip5786.near",
+              "rank": 13,
+              "transactions": 79,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "5955409976415e93e55fecc28084423f4397a02dfab572d06ce4e197522f9074",
+              "rank": 14,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wildzip741.near",
+              "rank": 15,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "kaisar7.near",
+              "rank": 16,
+              "transactions": 77,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "wildrice7144.near",
+              "rank": 17,
+              "transactions": 77,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "vu1089.near",
+              "rank": 18,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "warmjava5732.near",
+              "rank": 19,
+              "transactions": 71,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "wrongzone2119.near",
+              "rank": 20,
+              "transactions": 71,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 160722,
+              "action_rows": 160722,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 10724,
+              "action_rows": 10724,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-05",
+          "week_end": "2026-10-11",
+          "transactions": 163154,
+          "active_days": 7,
+          "network_transactions": 6401624,
+          "network_transaction_share_pct": 2.5486,
+          "distinct_receivers": 17137,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 158012,
+          "transactions_with_action_records": 163154,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 3604,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "creamsoda.near",
+              "rank": 2,
+              "transactions": 107,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "gsa8888.near",
+              "rank": 3,
+              "transactions": 91,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "mscs1983.near",
+              "rank": 4,
+              "transactions": 89,
+              "active_days": 5
+            },
+            {
+              "receiver_account_id": "smartlemon5263.near",
+              "rank": 5,
+              "transactions": 87,
+              "active_days": 4
+            },
+            {
+              "receiver_account_id": "bigpant8296.near",
+              "rank": 6,
+              "transactions": 86,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "sickoil9394.near",
+              "rank": 7,
+              "transactions": 85,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "monkey765.tg",
+              "rank": 8,
+              "transactions": 81,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "432de5e4fb1331d26e41ed42ddc6c708b1bcc9fa79baea90ad75e33e6504bc6d",
+              "rank": 9,
+              "transactions": 79,
+              "active_days": 6
+            },
+            {
+              "receiver_account_id": "nearoil6062.near",
+              "rank": 10,
+              "transactions": 79,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wildzip741.near",
+              "rank": 11,
+              "transactions": 79,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "modernpie8049.near",
+              "rank": 12,
+              "transactions": 77,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "serginio260581.near",
+              "rank": 13,
+              "transactions": 77,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "bawidig.near",
+              "rank": 14,
+              "transactions": 76,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "brodyga198653214.near",
+              "rank": 15,
+              "transactions": 76,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "looseroom5912.near",
+              "rank": 16,
+              "transactions": 75,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "mako3388.near",
+              "rank": 17,
+              "transactions": 74,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "vitalnook9331.near",
+              "rank": 18,
+              "transactions": 74,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "chelovek0905.near",
+              "rank": 19,
+              "transactions": 73,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "nearatio34.near",
+              "rank": 20,
+              "transactions": 73,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 159550,
+              "action_rows": 159550,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 3604,
+              "action_rows": 3604,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-12",
+          "week_end": "2026-10-18",
+          "transactions": 159078,
+          "active_days": 7,
+          "network_transactions": 4909532,
+          "network_transaction_share_pct": 3.2402,
+          "distinct_receivers": 16872,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 155215,
+          "transactions_with_action_records": 159078,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "near",
+              "rank": 1,
+              "transactions": 2421,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "thinnode3256.near",
+              "rank": 2,
+              "transactions": 104,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "creamsoda.near",
+              "rank": 3,
+              "transactions": 94,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "meteor-fees.near",
+              "rank": 4,
+              "transactions": 88,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "mirhiy.near",
+              "rank": 5,
+              "transactions": 88,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "omkareshwarmahadev.tg",
+              "rank": 6,
+              "transactions": 84,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "432de5e4fb1331d26e41ed42ddc6c708b1bcc9fa79baea90ad75e33e6504bc6d",
+              "rank": 7,
+              "transactions": 80,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "kovelrams.near",
+              "rank": 8,
+              "transactions": 78,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "mscs1983.near",
+              "rank": 9,
+              "transactions": 77,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "narrowcloud7768.near",
+              "rank": 10,
+              "transactions": 76,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "blueorgin.near",
+              "rank": 11,
+              "transactions": 73,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "vu1089.near",
+              "rank": 12,
+              "transactions": 71,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "totalvit.near",
+              "rank": 13,
+              "transactions": 68,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "harddome267.near",
+              "rank": 14,
+              "transactions": 67,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "matematik777.near",
+              "rank": 15,
+              "transactions": 67,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "hotnewt8509.near",
+              "rank": 16,
+              "transactions": 66,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "rusjadzu11.near",
+              "rank": 17,
+              "transactions": 66,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "amko.near",
+              "rank": 18,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "deeppuma3033.near",
+              "rank": 19,
+              "transactions": 65,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "hardrice4888.near",
+              "rank": 20,
+              "transactions": 65,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "DELEGATE_ACTION",
+              "method_name": "null",
+              "transactions": 156655,
+              "action_rows": 156655,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "create_account",
+              "transactions": 2421,
+              "action_rows": 2421,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "add_wallet",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "sign_transaction",
+              "transactions": 1,
+              "action_rows": 1,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account_id": "closemeat6237.near",
+      "service": null,
+      "evidence_status": "Pending verification",
+      "role": "Observed signing account; ownership and role unverified.",
+      "source": null,
+      "full_period_transactions": 1620042,
+      "weekly": [
+        {
+          "week_start": "2026-08-24",
+          "week_end": "2026-08-30",
+          "transactions": 134153,
+          "active_days": 7,
+          "network_transactions": 4734816,
+          "network_transaction_share_pct": 2.8333,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 134153,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 83909,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 2,
+              "transactions": 24916,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 3,
+              "transactions": 24219,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 979,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 130,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 81536,
+              "action_rows": 81536,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 49849,
+              "action_rows": 49849,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 2373,
+              "action_rows": 2373,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 132,
+              "action_rows": 132,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 130,
+              "action_rows": 130,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 91,
+              "action_rows": 91,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 42,
+              "action_rows": 42,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-08-31",
+          "week_end": "2026-09-06",
+          "transactions": 147840,
+          "active_days": 7,
+          "network_transactions": 4891529,
+          "network_transaction_share_pct": 3.0224,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 147840,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 90947,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 2,
+              "transactions": 27874,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 3,
+              "transactions": 26758,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 2212,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 49,
+              "active_days": 5
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 88926,
+              "action_rows": 88926,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 56744,
+              "action_rows": 56744,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 2021,
+              "action_rows": 2021,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 51,
+              "action_rows": 51,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 49,
+              "action_rows": 49,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 26,
+              "action_rows": 26,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 23,
+              "action_rows": 23,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-07",
+          "week_end": "2026-09-13",
+          "transactions": 203877,
+          "active_days": 7,
+          "network_transactions": 5076874,
+          "network_transaction_share_pct": 4.0158,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 203877,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 129204,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 2,
+              "transactions": 36094,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 3,
+              "transactions": 34558,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 3921,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 100,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 126631,
+              "action_rows": 126631,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 74328,
+              "action_rows": 74328,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 2573,
+              "action_rows": 2573,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 102,
+              "action_rows": 102,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 100,
+              "action_rows": 100,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 75,
+              "action_rows": 75,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 68,
+              "action_rows": 68,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-14",
+          "week_end": "2026-09-20",
+          "transactions": 300414,
+          "active_days": 7,
+          "network_transactions": 5689381,
+          "network_transaction_share_pct": 5.2803,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 300414,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 173258,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 2,
+              "transactions": 59814,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 3,
+              "transactions": 59643,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 7483,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 216,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 169550,
+              "action_rows": 169550,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 126271,
+              "action_rows": 126271,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 3708,
+              "action_rows": 3708,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 254,
+              "action_rows": 254,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 220,
+              "action_rows": 220,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 216,
+              "action_rows": 216,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 195,
+              "action_rows": 195,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-21",
+          "week_end": "2026-09-27",
+          "transactions": 258902,
+          "active_days": 7,
+          "network_transactions": 5990686,
+          "network_transaction_share_pct": 4.3217,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 258902,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 109869,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 2,
+              "transactions": 74104,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 3,
+              "transactions": 69661,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 5225,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 43,
+              "active_days": 6
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 148349,
+              "action_rows": 148349,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 108688,
+              "action_rows": 108688,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 1181,
+              "action_rows": 1181,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 493,
+              "action_rows": 493,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 101,
+              "action_rows": 101,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 47,
+              "action_rows": 47,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 43,
+              "action_rows": 43,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-09-28",
+          "week_end": "2026-10-04",
+          "transactions": 209011,
+          "active_days": 7,
+          "network_transactions": 6590352,
+          "network_transaction_share_pct": 3.1715,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 209011,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 105407,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 2,
+              "transactions": 53574,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 3,
+              "transactions": 48728,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 1293,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 9,
+              "active_days": 3
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 105080,
+              "action_rows": 105080,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 103330,
+              "action_rows": 103330,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 327,
+              "action_rows": 327,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 235,
+              "action_rows": 235,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 18,
+              "action_rows": 18,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 12,
+              "action_rows": 12,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 9,
+              "action_rows": 9,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-05",
+          "week_end": "2026-10-11",
+          "transactions": 166617,
+          "active_days": 7,
+          "network_transactions": 6401624,
+          "network_transaction_share_pct": 2.6027,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 166617,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 113387,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 2,
+              "transactions": 25465,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 3,
+              "transactions": 24592,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 3137,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 36,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 113079,
+              "action_rows": 113079,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 53095,
+              "action_rows": 53095,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 308,
+              "action_rows": 308,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 39,
+              "action_rows": 39,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 37,
+              "action_rows": 37,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 36,
+              "action_rows": 36,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 23,
+              "action_rows": 23,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        },
+        {
+          "week_start": "2026-10-12",
+          "week_end": "2026-10-18",
+          "transactions": 199228,
+          "active_days": 7,
+          "network_transactions": 4909532,
+          "network_transaction_share_pct": 4.058,
+          "distinct_receivers": 5,
+          "self_directed_transactions": 0,
+          "missing_or_empty_receiver_transactions": 0,
+          "outside_top_20_receiver_transactions": 0,
+          "transactions_with_action_records": 199228,
+          "transactions_without_action_records": 0,
+          "top_receivers": [
+            {
+              "receiver_account_id": "v2.ref-finance.near",
+              "rank": 1,
+              "transactions": 108395,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+              "rank": 2,
+              "transactions": 44885,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "wrap.near",
+              "rank": 3,
+              "transactions": 41991,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "usdt.tether-token.near",
+              "rank": 4,
+              "transactions": 3871,
+              "active_days": 7
+            },
+            {
+              "receiver_account_id": "28f6283e2f11a3364e374e944bbc1fd497e765dbd7fec35835501d9a592d9197",
+              "rank": 5,
+              "transactions": 86,
+              "active_days": 7
+            }
+          ],
+          "action_categories": [
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "swap",
+              "transactions": 108091,
+              "action_rows": 108091,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer_call",
+              "transactions": 90618,
+              "action_rows": 90618,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "withdraw",
+              "transactions": 304,
+              "action_rows": 304,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_withdraw",
+              "transactions": 89,
+              "action_rows": 89,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "TRANSFER",
+              "method_name": "null",
+              "transactions": 86,
+              "action_rows": 86,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "near_deposit",
+              "transactions": 29,
+              "action_rows": 29,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            },
+            {
+              "action_kind": "FUNCTION_CALL",
+              "method_name": "ft_transfer",
+              "transactions": 11,
+              "action_rows": 11,
+              "action_rows_without_index": 0,
+              "function_call_rows_without_method": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

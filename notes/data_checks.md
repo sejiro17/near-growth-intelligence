@@ -522,3 +522,30 @@ Decimal arithmetic preserves the precision of exported values during aggregation
 
 Script: `analysis/06_weekly_economic_comparison.py`
 Results: `results/34_weekly_economic_comparison_2026-08-24_to_2026-10-18.csv`
+
+## 27 October 2026 — Account Profiles
+
+I combined the saved weekly signing-account, destination and action
+results into five account profiles covering eight weeks each.
+
+All 40 account-weeks matched their baseline transaction totals.
+The exported top-20 receiver counts reconciled to their reported totals,
+and those totals plus the outside-top-20 remainder matched each
+account's weekly transactions.
+
+Transactions with and without matching action records also reconciled
+to weekly totals. Each account's eight weekly transaction counts matched
+its reported full-period total.
+
+Profiles include attribution evidence separately from observed activity.
+NEAR Intents has a documented contract role, while the Omni Bridge
+account has a documented relayer role. Service attribution for the other
+three accounts remains unverified.
+
+These profiles describe transactions signed by selected accounts, not
+complete application activity or application user counts. Action-category
+transaction counts can overlap and must not be summed.
+
+Script: `analysis/07_account_profiles.py`
+Results: `results/35_account_profiles_2026-08-24_to_2026-10-18.json`
+Attribution: `notes/account_attribution.md`
