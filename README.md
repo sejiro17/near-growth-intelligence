@@ -133,7 +133,3 @@ Running the SQL queries requires BigQuery access and may incur query charges.
 | `notes/` | Research methods, findings, attribution evidence and interpretation boundaries. |
 
 **Built with:** SQL, Google BigQuery, Python, pandas, Plotly and Streamlit.
-
-## Further Work
-
-Extend the observation period, strengthen account attribution, investigate delegated and downstream execution, resolve documented reconciliation gaps, and evaluate the dashboard with intended users.
