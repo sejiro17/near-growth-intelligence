@@ -10,6 +10,17 @@ The analysis also compares recorded execution spending with observed total-suppl
 
 The observation period covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC.
 
+## What the Project Helps Readers Investigate
+
+- Whether transaction growth accompanies broader account participation.
+- Which signing accounts contribute to changes in activity.
+- Whether low return rates require account-lifecycle context.
+- Whether selected growth includes failed execution activity.
+- How execution spending and observed supply movements differ.
+- What the evidence supports and what requires further investigation.
+
+The Account Explorer adds selected account profiles with weekly trends, destination and action breakdowns, attribution evidence and coverage checks.
+
 ## Key Findings
 
 ### Transaction growth and account participation diverged
@@ -72,6 +83,24 @@ Action checks found different activity patterns among leading accounts, includin
 
 Account-level concentration does not establish equivalent concentration in ownership, applications or end users.
 
+### Account profiles distinguish activity from attribution
+
+The Account Explorer covers five signing accounts across all eight weeks:
+
+- intents.near
+- omni-relayer.bridge.near
+- sweat-relayer.near
+- meteor-relayer.near
+- closemeat6237.near
+
+For example, sweat-relayer.near signed 13,704,363 transactions across the period. Its weekly transactions declined from 1,954,610 to 1,301,312, a decrease of 33.42%. Its network transaction share fell from 41.28% to 26.51%.
+
+The profile therefore shows a decline in its own submissions alongside a lower network share. It does not establish the cause of that decline.
+
+Official sources document the NEAR Intents contract role and the Omni Bridge account's relaying role. Service attribution for the other three profiles remains unverified. The observed delegated activity of sweat-relayer.near is described separately from service affiliation.
+
+These profiles measure selected signing-account activity, not complete application activity or application user counts.
+
 ### Receipt volume and average cost changed alongside execution spending
 
 Across 280,743,473 receipt execution outcomes, recorded execution costs totalled approximately 65,878.09 NEAR.
@@ -131,7 +160,7 @@ The full rationale is recorded in [notes/decision_priorities.md](notes/decision_
 
 ## Dashboard
 
-Six views allow readers to explore the evidence:
+Seven views allow readers to explore the evidence:
 
 - **Growth:** Weekly participation and indexed comparisons of transactions, active signing accounts and recorded receipt execution costs.
 - **Growth drivers:** Fixed-account comparisons, growth contributions, account activity, selected initial receipt outcomes and costs, and sampled execution errors.
@@ -139,6 +168,7 @@ Six views allow readers to explore the evidence:
 - **Concentration:** Signing-account transaction shares and a weekly explorer of the twenty busiest original transaction receivers.
 - **Economics:** Changes in receipt volume and average cost, recorded execution spending, observed supply movements and unresolved reconciliation differences.
 - **Decision priorities:** Audience guidance and evidence-based investigation priorities, with supporting findings, next actions and downloadable tables.
+- **Account explorer:** Five selected signing-account profiles, with weekly transaction trends, network shares, destination and action breakdowns, attribution evidence and downloadable profiles.
 
 [Hosted dashboard](https://near-growth-intelligence.streamlit.app) — access is currently restricted to authorised viewers.
 
@@ -188,6 +218,22 @@ The fixed-account comparison selects the first week's top ten signing accounts a
 The untracked group combines all accounts outside the tracked set. It is not a classification of ordinary users or independent demand.
 
 Receiver exports contain each week's twenty busiest original transaction destinations. Absence from a ranking does not establish zero activity. Receiver-level signing-account counts can overlap.
+
+### Account profiles and attribution
+
+Five account profiles combine saved results 18, 19 and 20. Each profile covers eight weeks and includes transaction counts, network transaction shares, active days, leading destinations, action categories and matching coverage.
+
+The destination breakdown contains each account's weekly top twenty receivers, with transactions outside that group reported separately. A receiver may appear in several weeks; weekly receiver counts must not be summed as full-period distinct counts.
+
+Action-category transaction counts can overlap. Delegated inner actions have not been expanded.
+
+Attribution is recorded separately from measured activity. Official references support the documented roles of intents.near and omni-relayer.bridge.near. The other three profiles retain unverified service attribution.
+
+The attribution register also records a documented Aurora association for relay.aurora. That account is not included in the five-profile explorer because the selected destination and action exports do not cover it.
+
+Account names and transaction patterns do not independently prove ownership. Current documentation does not establish historical ownership or complete application coverage throughout the observation period.
+
+Sources and interpretation boundaries are recorded in [notes/account_attribution.md](notes/account_attribution.md).
 
 ### Actions and execution outcomes
 
@@ -249,6 +295,7 @@ Checks include:
 - Diagnostic RPC response identities and failure statuses.
 - Daily closing-supply observations, block supply movements and validator balance comparisons.
 - Reconciliation of weekly economic results to the underlying exports.
+- Account-profile coverage across forty account-weeks, transaction totals, top-receiver totals and action-record matching.
 
 Earlier exploratory checks found unmatched execution outcomes during 1 July–22 August. Their cause remains unresolved. The primary period uses complete calendar weeks within the later interval where all checked outcomes matched exactly one ACTION receipt.
 
@@ -260,6 +307,10 @@ For the two selected growth accounts, all 1,191,869 transactions matched exactly
 
 The supply investigation covers 57 closing-supply dates, including the opening baseline, and 56 days of block movements and validator balance comparisons. The validator-to-supply reconciliation remains unresolved.
 
+All forty account-profile weeks reconciled to their baseline transaction counts. Exported top-receiver counts plus the outside-group remainder matched weekly totals. Transactions with and without action records also reconciled to weekly totals.
+
+The Account Explorer was checked locally and on the hosted dashboard, including account and week selection and the available attribution-source links. These checks establish functionality, not independent validation of its usefulness to intended users.
+
 Detailed checks and findings are recorded in [notes/data_checks.md](notes/data_checks.md).
 
 ## Limitations
@@ -268,6 +319,8 @@ Detailed checks and findings are recorded in [notes/data_checks.md](notes/data_c
 - Signing identifiers are not verified people; ownership and account roles remain incompletely understood.
 - Lifecycle events complicate participation and return measures.
 - Transaction receivers are not automatically applications or downstream destinations.
+- Selected account profiles do not establish complete application activity or application user counts.
+- Documented service associations do not independently establish historical ownership or configuration.
 - Transactions, actions and receipt executions measure different units.
 - Submitted actions and initial receipt outcomes do not establish completed execution chains or economic activity.
 - Selected growth accounts and diagnostic receipts do not represent the whole network.
@@ -285,9 +338,10 @@ python analysis/02_weekly_execution_costs.py
 python analysis/03_fixed_account_growth.py
 python analysis/04_account_growth_contributions.py
 python analysis/06_weekly_economic_comparison.py
+python analysis/07_account_profiles.py
 ```
 
-These scripts use saved exports and do not require another BigQuery scan.
+These scripts use saved exports and do not require another BigQuery scan or RPC request.
 
 To validate saved diagnostic responses or resume incomplete RPC lookups:
 
@@ -306,11 +360,14 @@ SQL queries are stored in `sql/`. Running them requires BigQuery access and may 
 - [Growth quality and investment assessment](notes/investment_thesis.md)
 - [NEAR economic mechanisms and measurement boundaries](notes/economic_mechanisms.md)
 - [Decision priorities](notes/decision_priorities.md)
+- [Account attribution and evidence](notes/account_attribution.md)
 
 ## Future Research
 
 - Extend the observation period and compare additional cohorts.
-- Verify account roles and expand delegated actions where practical.
+- Strengthen account attribution and expand delegated actions where practical.
+- Extend profiles to additional accounts with comparable coverage.
+- Evaluate the dashboard with intended users and document their feedback.
 - Examine outcomes across a broader set of growth-contributing accounts.
 - Investigate downstream execution before classifying completed application activity.
 - Examine deletion motives, recreation and ownership continuity.
@@ -328,7 +385,7 @@ SQL queries are stored in `sql/`. Running them requires BigQuery access and may 
 ## Repository Structure
 
 - `sql/`: Extraction, validation and analytical queries.
-- `analysis/`: Derived-table and diagnostic retrieval scripts.
-- `results/`: Exported query results, derived tables and RPC evidence.
+- `analysis/`: Derived-table, account-profile and diagnostic retrieval scripts.
+- `results/`: Exported query results, derived tables, account profiles and RPC evidence.
 - `dashboard/`: Interactive Streamlit dashboard.
-- `notes/`: Research plan, data checks, investment assessment, economic mechanisms and decision priorities.
+- `notes/`: Research plan, data checks, investment assessment, economic mechanisms, decision priorities and account attribution.
