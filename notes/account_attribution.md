@@ -1,96 +1,98 @@
 # Account Attribution
 
-## Purpose
+This register records the sources supporting account roles and service
+associations used in the research. Observed activity is kept separate
+from claims about ownership or application coverage.
 
-This register documents the evidence linking selected accounts to services
-and technical roles. Account names alone are not sufficient verification.
+Initial review: 27 October 2026.
+Register updated: 28 October 2026.
 
-## Initial Review — 27 October 2026
+## Account Register
 
-| Account | Associated service | Evidence status | Supported interpretation |
+| Account | Service association | Evidence status | Role or observation |
 |---|---|---|---|
-| intents.near | NEAR Intents | Documented contract role | The NEAR Intents Verifier contract. Its role as a transaction signer is analysed separately from calls received by the contract. |
-| relay.aurora | Aurora | Documented association | Aurora documentation uses this account in an example linking Aurora execution to an underlying NEAR transaction. Complete operational coverage has not been established. |
-| sweat-relayer.near | Not yet established | Pending verification | A leading transaction-signing account in the selected dataset. Service attribution remains unverified. |
-| meteor-relayer.near | Not yet established | Pending verification | A leading transaction-signing account in the selected dataset. Service attribution remains unverified. |
-| omni-relayer.bridge.near | Omni Bridge | Documented relayer role | Aurora's official Omni Bridge tutorial identifies this account as finalizing transfers on NEAR. Operator identity and complete historical coverage have not been independently established. |
+| intents.near | NEAR Intents | Documented contract role | The Verifier contract. The explorer measures transactions it signed, separately from calls it received. |
+| omni-relayer.bridge.near | Omni Bridge | Documented relayer role | Aurora's official tutorial identifies it as finalizing a bridge transfer on NEAR. |
+| relay.aurora | Aurora | Documented association | Appears in Aurora's official example connecting Aurora execution to a NEAR transaction. |
+| sweat-relayer.near | Unverified | Service attribution pending | Recorded activity includes delegated transactions and function calls. |
+| meteor-relayer.near | Unverified | Pending verification | Recorded activity includes delegated transactions. |
+| closemeat6237.near | Unverified | Pending verification | A selected signing account with destination and action breakdowns. |
 
-## Sources
+“Documented” describes what the cited source supports. It does not
+independently establish historical ownership or complete operational
+coverage. Unverified entries retain their account identifiers without
+an assumed service label.
+
+## Supporting Sources
 
 ### NEAR Intents
 
-https://github.com/near/intents
+[Official contract repository](https://github.com/near/intents)
 
-The official repository describes the Verifier contract and links to its
-deployed account:
+The repository describes the Verifier and links to its deployment at
+[intents.near](https://nearblocks.io/address/intents.near). The contract
+evaluates signed intents and supports atomic execution.
 
-https://nearblocks.io/address/intents.near
-
-The Verifier evaluates signed intents and supports their atomic execution.
-This establishes the contract's documented purpose. It does not mean every
-transaction signed by this account represents a completed swap.
-
-### Aurora
-
-https://doc.aurora.dev/blog/evm-gas-near-gas-on-aurora/
-
-The official article uses relay.aurora in a NEAR transaction-status request
-when explaining the relationship between Aurora and NEAR execution.
-
-This supports an association with Aurora's transaction infrastructure.
-The example alone does not establish the account's complete operational
-scope or its role throughout the observation period.
+This documents the contract's purpose. It does not classify every
+transaction signed by the account as a completed swap.
 
 ### Omni Bridge
 
-https://github.com/near-one/omni-bridge
+[Official bridge repository](https://github.com/near-one/omni-bridge)
 
-The official repository identifies omni.bridge.near as the NEAR bridge
-contract.
+The repository identifies omni.bridge.near as the NEAR bridge contract.
 
-https://doc.aurora.dev/blog/omnibridge-tutorial/
+[Aurora's Omni Bridge tutorial](https://doc.aurora.dev/blog/omnibridge-tutorial/)
 
-Aurora's official tutorial explicitly identifies omni-relayer.bridge.near
-as the account that automatically finalizes the illustrated transfer on
-NEAR.
+The tutorial explicitly identifies omni-relayer.bridge.near as finalizing
+the illustrated transfer on NEAR. This supports a relaying role without
+establishing the operator's identity.
 
-This supports its bridge-relaying role. It does not establish the account's
-operator or imply that every transaction it signs represents a completed
-cross-chain transfer.
+### Aurora
 
-### Pending Verification
+[Aurora's gas comparison article](https://doc.aurora.dev/blog/evm-gas-near-gas-on-aurora/)
 
-Direct official confirmation of the exact account-to-service relationship
-has not yet been recorded for:
+The article uses relay.aurora in a transaction-status request when
+connecting Aurora execution to an underlying NEAR transaction.
+The example supports the association recorded here.
 
+### Accounts Without Confirmed Service Attribution
+
+No direct official confirmation of service affiliation has been recorded
+for sweat-relayer.near, meteor-relayer.near or closemeat6237.near.
+
+Their activity descriptions come from the saved transaction, destination
+and action results. Names and action patterns alone do not establish
+ownership.
+
+Evidence: results 18–20 and 35.
+
+## Dashboard Coverage
+
+The Account Explorer contains five profiles:
+
+- intents.near
+- omni-relayer.bridge.near
 - sweat-relayer.near
 - meteor-relayer.near
+- closemeat6237.near
 
-These accounts remain available for account-level analysis without a
-verified service label. Pending verification does not imply suspicious
-activity.
+Each includes eight weeks of signing-account activity, destination and
+action breakdowns, and an attribution status. Source links are displayed
+where a documented role is recorded.
 
-## Measurement Boundaries
+relay.aurora remains in this register but is not profiled because the
+selected destination and action exports do not cover it.
 
-- Signing-account activity and contract-receiver activity are separate measures.
-- A relayer may submit transactions for other participants.
-- A signing identifier is not a count of an application's users.
-- Selected accounts do not necessarily cover an entire application's activity.
-- A documented service association does not establish account ownership.
-- Current documentation does not independently establish historical ownership
-  or configuration throughout the observation period.
-- Transaction counts do not establish completed swaps or cross-chain transfers.
-- Unverified accounts remain visible without an assumed application label.
+## Reading the Profiles
 
-## Use in the Dashboard
+Signing-account activity and contract-receiver activity are different
+measures. A relayer can submit transactions for other participants,
+so its signing identifier is not an application user count.
 
-Profiles will identify the selected account, its supported role, the evidence
-status and the source.
+Profiles cover selected accounts rather than entire applications.
+Delegated inner actions have not been expanded, and transaction counts
+alone do not establish completed swaps or cross-chain transfers.
 
-Metrics will describe the account's observed activity within the selected
-period. They will not be presented as complete application activity or
-application user counts.
-
-Any future grouping of multiple accounts under one service will document
-its membership and attribution evidence. Overlapping groups will not be
-summed as independent ecosystem activity.
+Any later service-level grouping should record its account membership,
+supporting sources and overlap with other groups.

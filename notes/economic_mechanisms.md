@@ -2,45 +2,76 @@
 
 ## Purpose
 
-I reviewed official NEAR documentation to distinguish the network's documented economic mechanisms from the activity, execution costs and supply movements measured in this project.
+This note separates NEAR's documented economic mechanisms from the
+execution spending and supply movements measured in this project.
 
-Sources were initially reviewed on 25 October 2026 and rechecked on 27 October. Current documentation does not independently establish which parameters applied throughout the historical observation period.
+The analysis covers 24 August–18 October 2026. The supply comparison
+uses closing supply on 23 August as its opening baseline.
 
-The primary analysis covers 24 August–18 October 2026. The supply comparison uses the closing observation on 23 August as its opening baseline.
+Official sources were initially reviewed on 25 October 2026, with
+execution-fee and tokenomics references rechecked on 28 October.
+Current documentation does not independently establish the parameters
+active throughout the historical period.
 
 ## Execution Fees
 
-NEAR's documentation states that execution consumes gas and that gas fees are charged in NEAR. Operations consume gas, while the network's gas price affects their cost in NEAR.
+NEAR charges execution fees in NEAR. Gas measures the resources used,
+while the gas price affects the corresponding token cost.
 
-The documentation also describes contract rewards associated with execution. I therefore do not treat the dataset's tokens_burnt field as a direct measurement of permanent token supply reduction.
+The documentation also describes contract rewards associated with
+execution. The dataset's `tokens_burnt` field is therefore not treated
+as an independently reconciled measurement of permanent supply reduction.
 
-Across the selected eight weeks, recorded receipt execution costs totalled approximately 65,878.09 NEAR.
+### Measured spending
 
-Between the first and final weeks:
+| Component | Eight-week recorded spending |
+|---|---:|
+| Transaction receipt conversion | 2,110.82 NEAR |
+| Receipt execution | 65,878.09 NEAR |
+| Combined | 67,988.91 NEAR |
 
-- Receipt execution outcomes increased 66.85%.
-- Average recorded cost per receipt increased 9.52%.
-- Total recorded receipt execution costs increased 82.73%.
+Conversion contributed 3.10% of combined spending. Combined weekly
+spending increased 83.13% between the first and final weeks.
 
-Receipt count multiplied by average recorded cost gives total recorded receipt cost. This describes the arithmetic of the increase without identifying its underlying causes.
+Within the receipt-execution component, outcome counts increased 66.85%
+and average recorded cost per receipt increased 9.52%. Together, these
+account arithmetically for the 82.73% increase in receipt execution costs.
 
-The results do not isolate the contributions of gas prices, execution complexity or changes in the mix of operations.
+The results do not isolate the contributions of gas prices, execution
+complexity or changes in operation mix.
 
-Costs exclude transaction receipt-conversion costs. They have not been reconciled to all fee distributions or supply effects.
+Conversion costs use transaction submission dates. Receipt execution
+costs use execution dates. The combined total is a calendar-period
+comparison, not the complete fees of a matched transaction cohort.
+
+### Economic interpretation
+
+These measurements establish expenditure denominated in NEAR for
+network execution.
+
+They do not measure external token purchases, holding periods or net
+market demand. Fees may be paid from existing balances, through
+sponsored transactions or after acquiring tokens shortly before use.
+Failed execution can also incur costs.
+
+Recorded spending has not been fully reconciled to fee distributions,
+permanent burning or economic value accruing to holders.
 
 Source: [Gas and execution fees](https://docs.near.org/protocol/transactions/gas)
 
-Evidence: results 13, 14 and 34.
+Evidence: results 13, 14, 34, 36 and 37.
 
 ## Storage Requirements
 
-NEAR uses storage staking, which requires balances to support stored contract data. Removing data can release some of that balance.
+Storage staking requires balances to support stored data. Removing data
+can release some of that requirement.
 
-This connects state storage to demand for NEAR balances, but those requirements can change as data is added or removed.
+This creates a use for NEAR balances, but commitments can change over
+time. Releasing a storage requirement is not permanent token destruction.
 
-The self-deletion findings make account lifecycle activity relevant to the research. They do not quantify released storage balances or establish why accounts were deleted.
-
-Releasing a storage requirement is different from destroying tokens. The deletion results should not be treated as a measurement of permanent burning.
+The account-deletion findings make lifecycle activity relevant to the
+research. They do not quantify released storage balances or establish
+why accounts were deleted.
 
 Source: [Storage staking](https://docs.near.org/protocol/storage/storage-staking)
 
@@ -48,15 +79,18 @@ Evidence: results 16 and 17.
 
 ## Staking and Network Security
 
-NEAR uses proof-of-stake validation. Validators participate in securing the network and receive rewards.
+NEAR uses proof-of-stake validation. Staking commits tokens to network
+security, while validators receive rewards.
 
-Staking creates a use for the token. Staked balances should not be treated as permanent token destruction.
+Staked tokens remain part of total supply. Staking is not permanent
+token destruction.
 
-The economic investigation compared combined nonstaked and staked account balances around records labelled validator_accounts_update.
+The project compared combined nonstaked and staked balances around
+records labelled `validator_accounts_update`. This is not a complete
+measurement of network-wide staking positions, validator rewards or
+gross issuance.
 
-That comparison is not a complete measurement of network-wide staking positions, validator rewards or gross issuance. It remains incompletely reconciled with observed supply movements.
-
-Transaction growth alone cannot establish changes in staking demand or validator economics.
+Transaction growth alone cannot establish changes in staking demand.
 
 Source: [Validators](https://docs.near.org/protocol/network/validators)
 
@@ -64,35 +98,31 @@ Evidence: results 29–34.
 
 ## Product Revenue and Governance
 
-NEAR's February 2026 tokenomics article reports an operating Intents fee-sharing mechanism with payouts denominated in NEAR.
+NEAR's February 2026 tokenomics article describes an operating Intents
+fee-sharing mechanism with payouts denominated in NEAR.
 
-It also describes governance-controlled uses of product revenue, including buybacks and staking or locking acquired tokens. Whether, when and how these tools are used remains subject to governance discretion.
+It also describes governance-controlled uses of revenue, including
+buybacks and staking or locking acquired tokens. These should not be
+assumed to occur automatically or produce a guaranteed supply outcome.
 
-I therefore do not assume that product revenue automatically produces recurring buybacks or a guaranteed supply outcome.
+Product revenue is separate from network execution spending. This
+project has not independently reconciled Intents fees, treasury receipts,
+distributions or realised buybacks during the observation period.
 
-Product revenue is separate from the receipt execution costs measured here. This project has not independently reconciled Intents fees, treasury receipts, buyback transactions or their timing during the selected period.
-
-A buyback, staking commitment, lock and permanent burn are different events. They should not be combined into a single measure of total-supply reduction.
+A buyback changes who holds tokens. Staking and locking affect their
+availability under particular conditions. A permanent burn reduces
+supply. These events must not be combined into one measure of token
+destruction.
 
 Source: [Evolving NEAR Tokenomics, 24 February 2026](https://near.org/blog/evolving-near-tokenomics)
 
-## Observed Total-Supply Movement
+## Observed Supply and Reconciliation
 
-Closing total supply increased from approximately 1,304,386,568.87 NEAR on 23 August to 1,309,322,552.85 NEAR on 18 October.
+Closing total supply increased from approximately 1,304,386,568.87 NEAR
+on 23 August to 1,309,322,552.85 NEAR on 18 October.
 
-The net observed increase was approximately 4,935,983.98 NEAR, or 0.3784% of opening supply.
-
-Every weekly closing-supply comparison in the selected period showed a positive net change.
-
-This measures the net movement in recorded total supply. It does not separately identify gross issuance and permanent burning, and it is not a measurement of circulating supply.
-
-The observed increase also does not establish what supply would have been without the measured activity. That would require an additional model and verified assumptions.
-
-Evidence: results 28, 33 and 34.
-
-## Supply Reconciliation
-
-I compared block-level supply movements with changes in combined nonstaked and staked balances recorded under validator_accounts_update.
+The net increase was approximately 4,935,983.98 NEAR, or 0.3784% of
+opening supply. All eight weekly closing-supply comparisons were positive.
 
 | Measurement | Approximate NEAR |
 |---|---:|
@@ -103,67 +133,44 @@ I compared block-level supply movements with changes in combined nonstaked and s
 | Net supply increase minus validator-update change | 16,599.51 |
 | Positive supply movements minus validator-update change | 70,858.09 |
 
-The positive block movements minus the decrease magnitude reconcile to the net observed supply change.
+Positive block movements minus the decrease magnitude reconcile to
+the net supply change. Validator-update balance changes do not fully
+reconcile with these movements; the differences remain unresolved.
 
-The validator-update balance comparison does not fully reconcile with supply movements. These differences remain unresolved.
+The project therefore does not classify validator-update changes as
+complete gross issuance or block supply decreases as complete permanent
+burning. A block can contain offsetting effects.
 
-I therefore do not present:
+Recorded execution spending must not be subtracted from net supply
+growth to infer issuance. The measurements have different meanings,
+and fee allocation has not been fully reconciled.
 
-- Validator-update balance changes as complete gross issuance.
-- Block supply decreases as complete permanent burning.
-- Recorded receipt execution costs as a substitute for either measure.
+Total supply is not circulating supply. The observations also do not
+establish what supply would have been without the measured activity.
 
-A block can contain offsetting economic effects. Its net supply movement does not necessarily expose every component separately.
+Source fields use floating-point storage, so amounts are approximate.
+The 0.000001 NEAR tolerance applied to individual validator balance
+comparisons is an analytical choice, not a protocol rule.
 
-Source balance, supply and cost fields use floating-point storage, so amounts are approximate.
+Evidence: results 28–34.
 
-The validator comparison applied a 0.000001 NEAR analytical tolerance to individual balance differences. This is a research choice for handling the observed small differences, not a protocol rule or a guarantee of source accuracy.
+## Implication for the Investment Thesis
 
-Evidence: results 29–34.
+The project quantifies one economic channel: recorded execution
+expenditure in NEAR.
 
-## What the Results Establish
+Storage, staking and product-revenue mechanisms provide additional
+connections to investigate. Their presence in documentation does not
+establish their realised magnitude or benefit to holders.
 
-The project measures:
+A stronger investment argument requires persistent useful activity
+linked to economic flows of meaningful scale, with supply changes,
+distributions and potential selling pressure considered.
 
-- Transaction activity, account participation and concentration.
-- Growth contributions from fixed and tracked account groups.
-- Initial receipt outcomes and costs for two selected growth accounts.
-- Reported errors in eighteen sampled failed receipts.
-- Network-wide recorded receipt execution costs.
-- Observed total-supply movement during the selected period.
+No fixed inflation rate, burning percentage or buyback assumption has
+been applied to the historical results. No valuation or expected token
+return has been derived.
 
-The results also show that successful self-deletion activity was widespread among accounts absent after the spike week.
-
-These measurements do not provide a complete reconciliation of:
-
-- Gross issuance and permanent burning.
-- Fee distributions and product revenue.
-- Storage commitments or network-wide staked balances.
-- Treasury receipts or realised buyback expenditure.
-- Economic value accruing to NEAR holders.
-
-No token valuation or expected investment return has been derived.
-
-## Implications for the Investment Assessment
-
-My interpretation is that sustained useful activity could support demand for execution, storage and network security. Whether that translates into durable economic value depends on the scale of those requirements, the relevant rules and how revenues are used.
-
-The current findings make the measurement boundaries clearer: execution spending increased between the endpoints, while recorded total supply increased across the period.
-
-Neither observation alone establishes the economic benefit of network activity to holders.
-
-A stronger assessment would connect persistent, identifiable usage to reconciled economic flows while distinguishing fees, issuance, burning, staking, locking and buybacks.
-
-The practical priority is to require that reconciliation before making supply or valuation claims.
-
-The broader interpretation is documented in [investment_thesis.md](investment_thesis.md), with investigation priorities in [decision_priorities.md](decision_priorities.md).
-
-## Historical Verification Boundary
-
-I have not applied a fixed inflation rate, fee-burning percentage or buyback assumption to the eight-week results.
-
-Before modelling those effects, I would need to verify the rules active during the observation period and reconcile the relevant on-chain flows.
-
-Current documentation and statements of intended policy are not substitutes for historical verification.
-
-The unresolved decomposition remains documented in [data_checks.md](data_checks.md). It does not change the separately measured net increase in observed total supply.
+The argument is developed in [investment_thesis.md](investment_thesis.md).
+Detailed validation and unresolved differences are recorded in
+[data_checks.md](data_checks.md).

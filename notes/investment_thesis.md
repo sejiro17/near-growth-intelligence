@@ -1,359 +1,273 @@
-# NEAR: Growth Quality and Investment Assessment
+# NEAR: Growth Quality and Investment Thesis
 
-## Research Question
+## Investment Argument
 
-Is NEAR's activity growth persistent and broadly distributed, and what does that imply for its long-term investment case?
+NEAR's long-term investment case depends on applications and services
+using the network repeatedly, with that usage creating meaningful
+economic demand for the NEAR token.
 
-## Investment Assessment
+Execution fees provide one direct connection: network operations incur
+costs denominated in NEAR. Storage, staking and product-revenue mechanisms
+provide other possible connections, but their economic significance
+requires separate measurement.
 
-NEAR maintained substantial transaction activity during the selected eight weeks. Transactions outside the first week's ten busiest signing accounts grew, even as activity from that fixed group declined. Growth therefore extended beyond the original leaders, but this does not establish broader participation by independent users.
+My analysis finds continued activity, growth beyond the original leading
+accounts and measurable execution spending. It also finds concentrated
+usage, account lifecycle effects and failed execution that complicate
+an adoption-led investment argument.
 
-My assessment remains conditional: an investment argument based on adoption growth needs stronger evidence of persistent application demand and a measurable connection between that demand and NEAR's economics.
+The evidence supports investigating NEAR's fundamentals beyond headline
+counts. It does not establish durable token value capture or that NEAR
+is attractive at a particular price.
 
-The findings show why headline activity needs context:
+## Scope
 
-- Final-week transactions were above their starting level, while weekly active signing accounts were below theirs.
-- Transactions outside the first week's top ten signing accounts increased 52.50%; activity from that fixed group declined 19.83%.
-- One investigated growth-contributing account had a 91.90% initial-receipt failure rate.
-- Successful self-deletion activity was widespread among accounts absent after the participation spike.
-- Transactions were concentrated among signing accounts and original receivers whose roles remain unverified.
-- Recorded receipt execution costs increased 82.73% between the first and final weeks, while observed total supply increased approximately 4.936 million NEAR across the period.
+The analysis covers 24 August–18 October 2026: eight complete UTC weeks.
 
-The economic findings establish increased execution spending and a net increase in observed total supply. They do not provide a complete reconciliation of issuance, fee allocation, permanent burning or value accruing to holders.
+It examines 44,284,794 transactions, account participation, concentration,
+selected execution outcomes and recorded economic measurements.
 
-These results support specific investigation priorities. They are insufficient on their own to justify an investment argument based on broad, sustained adoption.
+Signing accounts are identifiers, not verified people. Transactions,
+actions and receipt executions measure different units.
 
-## Observation Period
+## What Supports the Argument?
 
-The primary analysis covers 24 August–18 October 2026: eight complete Monday–Sunday weeks in UTC.
+### Growth extended beyond the original leaders
 
-The period contained 44,284,794 transactions and 280,743,473 receipt execution outcomes. These are different units and should not be treated as interchangeable measures of usage.
+Weekly transactions increased 3.69% between the first and final weeks.
 
-Signing accounts are identifiers, not verified individuals. They may represent people, automated services, relayers or other participants.
+The first week's ten busiest signing accounts, held fixed across the
+period, recorded a 19.83% decline in transactions. All other accounts
+combined recorded a 52.50% increase.
 
-The supply comparison uses the closing supply on 23 August as its opening baseline and the closing supply on 18 October as its endpoint.
+Their increase of 808,409 transactions offset the original leaders'
+decline of 633,693, leaving a network-wide net increase of 174,716.
 
-The conclusions apply to this observation window. They do not establish NEAR's long-term trajectory.
+This shows that growth was not confined to the original leaders.
+It does not establish additional independent users or successful
+application demand.
 
-## What the Evidence Shows
+Evidence: results 14, 18, 21 and 22.
 
-### Transaction activity continued, but growth was uneven
+### Accounts observed again generated most starting-week activity
 
-Weekly transactions increased from 4,734,816 in the first week to a peak of 6,590,352 during 28 September–4 October.
+Of the accounts active during 28 September–4 October, 18.14% participated
+again during 5–11 October.
 
-The final week recorded 4,909,532 transactions, 3.69% above the first week but 23.31% below the preceding week.
+Those returning identifiers generated 87.84% of starting-week transactions.
 
-Weekly active signing accounts ended at 129,446, compared with 139,759 in the first week: a decline of 7.38%.
-
-Transaction activity therefore continued without a corresponding increase in weekly signing-account participation between the two endpoints.
-
-This weakens the use of transaction growth alone as evidence of broader adoption. It does not establish that the remaining activity lacked useful demand, because account roles and transaction purposes have not been verified.
-
-Evidence: results 09, 10 and 14.
-
-### Self-deletion activity was widespread within the spike cohort
-
-Weekly active signing accounts increased 198.16% to 457,768 during 28 September–4 October. Of these accounts, 82.31% were active on only one day that week.
-
-Only 83,037 accounts, or 18.14% of the starting cohort, were active during 5–11 October.
-
-Further checks found that 309,280 accounts absent the following week had successful receipt executions containing self-deletion actions during the starting week. They represented 82.53% of the absent group and 67.56% of the full starting-week cohort.
-
-The account spike therefore includes extensive lifecycle activity. It should not be treated as a direct measurement of newly acquired users, and the low following-week return share should not be presented as ordinary user churn.
-
-The reasons for deletion, account ownership and later recreation remain unverified. The results do not establish how much deletion activity explains the increase from the preceding week.
-
-Removing these accounts from a denominator would not, by itself, produce a verified user-retention measure.
-
-Evidence: results 10, 11, 16 and 17.
-
-### Accounts active again generated most starting-week transactions
-
-The 18.14% of accounts active again the following week generated 5,788,805 transactions during the starting week: 87.84% of that week's total.
-
-The remaining 81.86% of accounts generated 12.16% of transactions.
-
-Most starting-week transaction activity therefore came from identifiers that also participated in the following week. The large number of absent accounts did not represent an equally large share of starting-week transactions.
-
-These figures describe the composition of starting-week activity. They do not measure how much transaction activity those accounts maintained in the following week, or whether they represented independent users.
+Most starting-week activity therefore came from accounts also observed
+the following week. This does not establish how much activity they
+maintained later or whether they represented independent users.
 
 Evidence: results 11 and 15.
 
-### Transaction concentration makes participant roles important
+### Execution created measurable expenditure in NEAR
 
-The ten busiest signing accounts contributed 48.17%–67.76% of weekly transactions. The ten busiest original transaction receivers accounted for 60.85%–70.22%.
-
-Changes involving a small number of accounts could therefore materially affect headline transaction figures.
-
-The next question is what these accounts represent: independent applications, shared infrastructure, relayers, automated services or other participants.
-
-Concentration alone does not establish manipulation or weak demand. Shared infrastructure can serve many users while concentrating transactions under a small number of identifiers.
-
-The findings establish concentration at the account level. They do not establish equivalent concentration in application ownership, economic activity or end users.
-
-Evidence: results 10 and 12.
-
-### Growth extended beyond the original leading accounts
-
-I fixed the ten busiest signing accounts from 24–30 August and followed the same identifiers across all eight weeks. Their combined weekly transactions declined from 3,195,028 to 2,561,335: a decrease of 19.83%.
-
-Transactions from all other accounts increased from 1,539,788 to 2,348,197, or 52.50%. Their increase of 808,409 transactions more than offset the original leaders' decline of 633,693, leaving the network's net increase of 174,716 transactions.
-
-Keeping membership fixed establishes growth outside the original leaders. It does not show whether NEAR would have grown without them.
-
-The increase outside the fixed group was not confined to other accounts appearing in weekly leader rankings. Accounts never appearing in any week's top twenty contributed 354,120 transactions, or 43.80% of the outside group's net increase. Other tracked accounts contributed the remaining 454,289, or 56.20%.
-
-These are contributions to a net change, not shares of all transactions. The untracked group combines many identifiers; its growth does not establish more users, independent ownership or useful application demand.
-
-Evidence: results 18, 21 and 22.
-
-### Account action records reveal different forms of activity
-
-DELEGATE_ACTION appeared in 96.66% of transactions signed by sweat-relayer.near and 98.02% of those signed by meteor-relayer.near.
-
-These records make it important to examine delegated activity before interpreting signing-account concentration as equivalent concentration among end users. I have not expanded the delegated actions or verified the participants behind them.
-
-All 2,769,479 transactions signed by intents.near contained execute_intents calls to the same account. Other investigated accounts interacted with multiple receivers and methods.
-
-These observations describe recorded actions and destinations. They do not verify operators' identities or the final results of execution chains.
-
-A concentrated signing identifier can therefore represent a different activity pattern from an account submitting direct contract calls. Account counts alone do not resolve that difference.
-
-Evidence: results 18–20.
-
-### Selected growth included substantial failed execution activity
-
-Two accounts outside the fixed group, tinykoala595.near and wx-cruce.near, contributed 148,950 and 137,767 transactions respectively to the first-to-final-week increase. They represented 18.43% and 17.04% of the outside group's net increase.
-
-Neither had transactions in the first week. This does not establish when either account was created or first used.
-
-Across the full observation period, tinykoala595.near signed 778,588 transactions. Of these, 778,338 contained swap calls targeting v2.ref-finance.near. Separately, matching each transaction to its initial receipt showed 715,518 failures: 91.90% of the account's transactions.
-
-The action and outcome summaries do not cross-tabulate every method against every outcome. I therefore do not claim that all 715,518 failures were swap failures. They establish that a growth-contributing account combined predominantly swap-related submissions with a high initial-receipt failure rate.
-
-For wx-cruce.near, 6,441 of 413,281 initial receipts failed, or 1.56%. Most returned SUCCESS_RECEIPT_ID: 398,968, or 96.54%. That status does not prove successful downstream execution or completed economic activity.
-
-These accounts were selected because of their growth contributions. Their outcome shares cannot be extrapolated to other accounts or used as network-wide failure rates.
-
-Evidence: results 22–24.
-
-### Failed initial receipts also contributed execution costs
-
-For tinykoala595.near, recorded initial-receipt execution costs totalled approximately 243.3451 NEAR. Failed receipts accounted for 211.1629 NEAR, or 86.78% of those costs, compared with 91.90% of its transactions.
-
-For wx-cruce.near, recorded initial-receipt costs totalled approximately 115.0938 NEAR. Failed receipts contributed 1.0978 NEAR, or 0.95% of costs, compared with 1.56% of transactions.
-
-Execution spending can therefore include failed activity. Higher recorded costs need to be examined alongside execution outcomes before supporting an argument about successful application demand.
-
-These amounts cover initial receipts only, grouped by transaction submission week. They exclude transaction receipt-conversion costs and downstream receipts. They do not measure protocol revenue, permanent token burning or value accruing to holders.
-
-Evidence: result 27.
-
-### The diagnostic sample identified reported contract errors
-
-I inspected three selected failed receipts per active week for tinykoala595.near, covering eighteen receipts across six weeks. All eighteen returned validated failures executing on v2.ref-finance.near.
-
-Seventeen reported E68: slippage error. One reported E22: not enough tokens in deposit.
-
-The sample establishes two reported error messages. It does not estimate their frequencies across all 715,518 failures, establish retries, identify automation or explain the underlying operational causes.
-
-The BigQuery log arrays for the sampled receipts were empty, but the RPC receipt statuses contained execution errors. Empty log arrays therefore did not mean that diagnostic information was unavailable.
-
-Evidence: results 25 and 26.
-
-### Receipt volume and average cost help explain the spending comparison
-
-Recorded receipt execution costs totalled approximately 65,878.09 NEAR across the eight weeks.
-
-The first and final weeks differed as follows:
-
-| Measure | First week | Final week | Change |
-|---|---:|---:|---:|
-| Transactions | 4,734,816 | 4,909,532 | +3.69% |
-| Receipt execution outcomes | 25,978,633 | 43,344,970 | +66.85% |
-| Recorded receipt execution cost | 5,770.56 NEAR | 10,544.79 NEAR | +82.73% |
-| Average recorded cost per receipt | 0.00022213 NEAR | 0.00024328 NEAR | +9.52% |
-
-The cost comparison reflects both more receipt execution outcomes and a higher average recorded cost per receipt between the endpoints.
-
-This is an arithmetic relationship: total recorded receipt cost equals the number of receipt outcomes multiplied by average recorded cost per outcome. It does not establish why receipt counts or average costs changed.
-
-Execution complexity, gas prices and changes in the mix of operations remain possible subjects for separate investigation. Their individual contributions have not been measured here.
-
-Transactions are grouped by submission date; receipt outcomes and their costs are grouped by execution date. The comparison does not match individual transactions to their complete execution costs.
-
-These figures exclude transaction receipt-conversion costs and do not measure protocol revenue, permanent token burning or holder returns.
-
-Evidence: results 13, 14 and 34.
-
-### Observed total supply increased during the period
-
-Closing total supply increased from approximately 1,304,386,568.87 NEAR on 23 August to 1,309,322,552.85 NEAR on 18 October.
-
-The net observed increase was approximately 4,935,983.98 NEAR, or 0.3784% of opening supply.
-
-Each of the eight weekly closing-supply comparisons showed a positive net change.
-
-This establishes a net increase in the total-supply values recorded in the dataset. Total supply is different from circulating supply, and the result does not separately quantify gross issuance and permanent burning.
-
-The increase occurred during a period with substantial recorded execution spending. Execution costs alone therefore cannot be treated as evidence that total supply declined.
-
-The comparison does not establish what supply would have been without that activity or attribute the net change to particular economic mechanisms.
-
-Evidence: results 28, 33 and 34.
-
-### The supply reconciliation remains incomplete
-
-I compared observed block supply movements with balance changes recorded under validator_accounts_update.
-
-Across the period:
-
-| Measurement | Approximate NEAR |
+| Component | Eight-week recorded spending |
 |---|---:|
-| Observed positive block supply movements | 4,990,242.56 |
-| Observed block supply decrease magnitude | 54,258.58 |
-| Net observed supply increase | 4,935,983.98 |
-| Validator-update net balance change | 4,919,384.47 |
-| Net supply increase minus validator-update change | 16,599.51 |
-| Positive supply movements minus validator-update change | 70,858.09 |
+| Transaction receipt conversion | 2,110.82 NEAR |
+| Receipt execution | 65,878.09 NEAR |
+| Combined | 67,988.91 NEAR |
 
-Positive block supply movements minus the decrease magnitude reconcile to the net observed supply change.
+Transaction conversion contributed 3.10% of the combined amount.
+Combined weekly spending increased 83.13% between the endpoints.
 
-The validator-update balance comparison does not fully reconcile with those supply movements. The differences remain unresolved.
+Receipt execution outcomes increased 66.85%, while average recorded
+cost per receipt increased 9.52%. Together, these account arithmetically
+for the 82.73% increase in receipt execution spending.
 
-I therefore do not label validator-update balance changes as a complete measurement of gross issuance, or block supply decreases as a complete measurement of permanent burning. Changes within a block can contain offsetting effects.
+This quantifies a use for NEAR in network execution. It does not identify
+the underlying causes of the spending increase.
 
-The tiny negative validator balance differences inspected for 24 August were within the analytical tolerance subsequently applied. No individual negative validator balance change exceeded 0.000001 NEAR in magnitude in the full-period comparison.
+Conversion uses transaction submission dates; receipt execution uses
+execution dates. The combined figure measures calendar-period spending,
+not the complete lifetime fees of a matched transaction cohort.
 
-That tolerance is an analytical choice for handling the observed floating-point differences. It is not a protocol rule or a guarantee of source precision.
+Evidence: results 13, 14, 34, 36 and 37.
 
-The unresolved reconciliation limits the economic decomposition. It does not erase the separately measured net increase in observed total supply.
+## What Challenges the Argument?
 
-Evidence: results 29–34.
+### More transactions did not establish broader participation
 
-## What This Means for the Investment Case
+Weekly active signing accounts declined 7.38%, from 139,759 to 129,446,
+between the endpoints.
 
-The positive evidence is continued transaction activity, growth outside the original leading accounts, and the substantial contribution of accounts observed in consecutive weeks to starting-week transactions.
+Final-week transactions were above their starting level but 23.31%
+below the preceding week. Activity persisted, but growth was uneven.
 
-The main reservations are that broader participation by independent users was not demonstrated, lifecycle events complicate return measures, and major participants' roles remain unverified.
+Evidence: results 09, 10 and 14.
 
-The selected-account findings also show that growth can include substantial failed execution activity. This does not erase growth elsewhere, but it weakens an interpretation that treats every additional transaction as successful application demand.
+### Account lifecycle events complicated return rates
 
-The economic comparison now distinguishes receipt volume, average recorded cost and observed total-supply movement. It shows that recorded receipt costs rose faster than transactions between the endpoints, while total supply increased across the period.
+The spike week contained 457,768 active signing accounts. Of these,
+82.31% were active on only one day.
 
-It does not quantify the benefit of that activity to NEAR holders. Fee distributions and the components of supply movement remain incompletely reconciled.
+Among accounts absent the following week, 309,280 had successful receipt
+executions containing self-deletion actions during the starting week.
+They represented 82.53% of the absent group.
 
-My assessment is therefore that this evidence does not establish an adoption-led investment case. This is a conclusion about the evidence examined, rather than a claim that NEAR has no investment merit.
+The spike is not a direct measure of user acquisition, and the low return
+share is not a verified user-churn rate. Deletion motives, ownership and
+later recreation remain unverified.
 
-## Decision Priorities
+Evidence: results 10, 11, 16 and 17.
 
-The findings support five practical investigation priorities.
+### Major accounts strongly influenced network activity
 
-| Priority | Decision implication | Next action |
-|---|---|---|
-| Check lifecycle before interpreting account returns | Absence after the spike is not a verified user-churn measure | Examine deletion, recreation and account roles before evaluating acquisition or retention |
-| Check execution quality behind growth | More submissions and execution spending do not necessarily mean more successful application interactions | Examine receipt outcomes and diagnostic errors alongside transaction growth |
-| Verify the roles behind concentration | Signing-account concentration does not directly establish end-user or application-ownership concentration | Verify major account roles and examine delegated interactions |
-| Follow growth beyond the original leaders | The original leaders do not explain all observed growth | Investigate other contributors' roles, persistence and execution quality |
-| Require reconciliation before making economic claims | Higher recorded costs do not establish permanent burning, protocol revenue or holder value | Identify and reconcile economic flows before making supply or valuation claims |
+The ten busiest signing accounts generated 48.17%–67.76% of weekly
+transactions. The ten busiest original receivers accounted for
+60.85%–70.22%.
 
-These priorities are qualitative interpretations of the research. They are not automated scores, verified application-impact rankings or buy-and-sell signals.
+Activity could change materially if major contributors reduce their
+submissions. However, concentrated signers may be relayers serving many
+participants rather than individual end users.
 
-The evidence, actions and measurement boundaries are documented in [decision_priorities.md](decision_priorities.md).
+Delegated actions were prevalent in the records of sweat-relayer.near
+and meteor-relayer.near. Their inner actions have not been expanded.
 
-## Connection to NEAR's Economics
+The Account Explorer distinguishes documented roles from unverified
+service attribution. Its profiles do not establish complete application
+coverage or application user counts.
 
-Official documentation describes uses for NEAR through execution fees, storage requirements and staking. Product revenues and governance-controlled uses of those revenues provide additional mechanisms to investigate.
+Evidence: results 10, 12, 18–20 and 35.
+Sources: [account_attribution.md](account_attribution.md).
 
-The investment question is whether persistent, useful activity creates durable demand for the token or produces other measurable economic effects.
+### Selected growth included substantial failed execution
 
-This project measures recorded receipt execution costs and observed total-supply movement. It does not provide a complete reconciliation of gross issuance, permanent burning, fee allocation, storage commitments, staked balances or realised buyback expenditure.
+tinykoala595.near contributed 18.43% of the outside group's net
+transaction increase. Across the full period, 91.90% of its 778,588
+transactions had failed initial receipts.
 
-I reviewed the mechanisms and their measurement boundaries in [economic_mechanisms.md](economic_mechanisms.md).
+Those failures incurred approximately 211.1629 NEAR in recorded
+initial-receipt costs.
 
-Historical parameters and relevant economic flows would need separate verification before building a supply or valuation model. Current documentation does not prove that every described rule applied unchanged throughout the observation period.
+Eighteen sampled failed receipts executed on v2.ref-finance.near:
+seventeen reported slippage errors and one reported insufficient
+deposited tokens. The sample does not establish population error
+frequencies or operational causes.
 
-## What Would Change My Assessment?
+Another selected contributor, wx-cruce.near, had a 1.56% initial-receipt
+failure rate. Most of its initial receipts returned SUCCESS_RECEIPT_ID,
+which does not establish successful downstream execution.
 
-### Evidence that would strengthen the investment case
+These accounts show why submissions and expenditure cannot automatically
+be classified as successful application demand. They do not represent
+network-wide failure rates.
 
-- Participation and transaction activity sustained across longer periods, with lifecycle events examined separately.
-- Verified applications attracting repeated interaction from participants whose roles are understood.
-- Evidence that concentrated infrastructure activity serves persistent, independent demand.
-- Growth outside the original leaders that persists and includes successful, identifiable application interactions.
-- Reconciled economic flows connecting measured usage to demand for NEAR, fee allocation and supply changes.
+Selected-account costs are already part of the relevant network records;
+they must not be added again to the network spending total.
 
-### Evidence that would weaken the investment case
+Evidence: results 22–27.
 
-- Repeated headline growth without persistent application participation once lifecycle activity is examined.
-- Declining participation across comparable cohorts with consistent definitions and complete follow-up.
-- Increasing dependence on a few participants, accompanied by evidence of weakening independent demand.
-- Broader evidence that transaction growth is dominated by failed or temporary activity.
-- Economic measurements that do not support the token-demand or supply effects assumed in an investment argument.
+## What Does the Economic Evidence Mean?
 
-These are conditions for further testing. The current analysis has not established all of them.
+Execution expenditure demonstrates token use, but spending is a flow,
+not a persistent holding requirement.
 
-## How the Research Supports Decisions
+Participants may pay from existing balances, acquire tokens shortly
+before execution or receive sponsored transactions. The project does
+not measure external purchases, holding periods or net market demand.
 
-### Investors and research analysts
+Storage and staking provide additional uses for NEAR balances.
+Their network-wide changes have not been measured here. Staking is
+not permanent token destruction.
 
-The dashboard helps test whether headline activity growth is accompanied by broader participation, repeat activity and changes in execution spending.
+NEAR's February 2026 tokenomics article describes Intents revenue-sharing
+payouts denominated in NEAR and governance-controlled uses of revenue.
+These are documented mechanisms, separate from the execution spending
+measured in this project. Product fees, distributions and realised
+buybacks have not been independently reconciled.
 
-The fixed-account comparison identifies growth beyond the original leaders. Execution checks examine the quality of selected growth, while the economic comparison separates recorded costs from observed supply movement.
+The investment question is whether persistent useful activity produces
+economic effects of sufficient scale after supply changes, distributions
+and potential selling pressure are considered. That relationship remains
+partly unmeasured.
 
-Together, these views help identify which assumptions require more evidence before they enter an investment thesis.
+Sources: [economic_mechanisms.md](economic_mechanisms.md).
 
-### NEAR ecosystem teams
+## Supply Movement
 
-The results show why account growth should be examined alongside lifecycle events, concentration and execution outcomes before informing ecosystem support.
+Observed total supply increased approximately 4,935,983.98 NEAR,
+or 0.3784%, between closing observations on 23 August and 18 October.
 
-Receiver rankings and growth contributions identify activity for investigation. Reported contract errors provide diagnostic leads, while the decision-priority view connects findings to practical next actions.
+The validator-update balance comparison does not fully reconcile with
+block supply movements. The net supply increase exceeded the measured
+validator-update balance change by approximately 16,599.51 NEAR.
 
-These results do not establish a verified ranking of application quality or ecosystem impact.
+This establishes observed net supply growth, not a complete decomposition
+of issuance and permanent burning.
 
-### Application developers
+Recorded execution spending must not be subtracted from net supply
+growth to infer issuance. Fee allocation and offsetting supply effects
+have not been fully reconciled.
 
-The project provides a framework for examining participation and return activity while distinguishing signing identifiers from people.
+The results also do not establish what supply would have been without
+execution activity. Total supply is different from circulating supply.
 
-Receipt outcomes, reported contract errors and execution costs add context to transaction counts. Application-level conclusions would require verified account mapping, relevant interactions and complete execution-chain analysis.
+Detailed reconciliation: results 28–34 and
+[data_checks.md](data_checks.md).
 
-## Data Quality and Remaining Uncertainty
+## Conditions That Would Strengthen or Weaken the Thesis
 
-Transaction-hash uniqueness, timestamp coverage, account fields and weekly reconciliations passed the checks performed.
+| Strengthen | Weaken |
+|---|---|
+| Successful activity persists across longer periods and identifiable uses. | Growth repeatedly depends on unsuccessful execution or temporary lifecycle activity. |
+| Participation remains durable after account roles and lifecycle events are examined. | Major contributors persistently reduce activity without replacement. |
+| Concentrated infrastructure can be linked to diverse underlying demand. | Headline growth remains dependent on poorly understood participants. |
+| Verified economic flows demonstrate meaningful expenditure, balance commitments or implemented revenue deployment. | Usage grows without meaningful additional economic demand, or assumed revenue mechanisms do not operate as expected. |
 
-Within the primary period, checked execution outcomes matched exactly one ACTION receipt. Earlier unmatched outcomes during 1 July–22 August remain unresolved.
+These are test conditions, not outcomes already established.
+Concentration, failures or supply growth do not individually invalidate
+the thesis; their scale, persistence and context matter.
 
-The spike action analysis found 474 transactions without matching transaction-action records in its selected lookup window. These remain a documented coverage limitation.
+## Decision Implications
 
-The deletion analysis matched all 309,642 selected deletion transactions to exactly one initial receipt outcome. Successful and failed outcomes were examined separately.
+The evidence supports checking lifecycle events before interpreting
+account returns, execution outcomes before classifying successful demand,
+and account roles before interpreting concentration.
 
-The leading-account series includes all eight weeks for the 51 identifiers appearing in at least one weekly top-twenty ranking. The fixed-account and growth-contribution tables reconcile to network transaction totals.
+For economic claims, measured execution spending should remain separate
+from permanent burning, product revenue and holder returns.
 
-For the two selected growth accounts, all 1,191,869 transactions matched exactly one initial receipt outcome, with the executor matching the original receiver. Their cost results reconcile to those outcome counts. This does not establish the results of downstream receipts.
+Practical investigation priorities are documented in
+[decision_priorities.md](decision_priorities.md).
 
-All eighteen diagnostic responses matched the sampled transaction hashes, signing accounts, receipt identifiers, executors and failure statuses. Raw RPC responses and earlier unsuccessful retrieval attempts are preserved in result 26.
+## Limits of the Assessment
 
-The supply investigation checked 57 daily closing-supply observations, including the opening baseline, and 56 days of block supply movements and validator balance comparisons. Weekly supply changes reconcile to the closing-supply observations and the aggregated block movements.
+Eight weeks cannot establish long-term adoption. Selected contributors
+and diagnostic samples do not represent the entire network, and initial
+receipt outcomes do not establish complete execution-chain results.
 
-The validator-update comparison remains incompletely reconciled with supply movements. Source balance, cost and supply fields use floating-point storage, so reported amounts are approximate.
+Earlier unmatched outcomes, action-record coverage gaps and unresolved
+supply differences remain documented. Source cost and supply fields
+use floating-point storage, so reported amounts are approximate.
 
-These checks support the measurements reported. They do not establish account ownership, deletion motives, permanent loss of an identifier, population-wide error frequencies or a complete economic-flow model.
+The project does not estimate fair value, expected returns or a margin
+of safety. A useful network is not automatically an attractive
+investment at every price.
 
-No price forecast, valuation model or expected token return has been derived from this analysis.
+## Evidence and Reproducibility
 
-## Reproducibility
+The repository includes SQL queries, exported results, diagnostic
+responses and Python scripts.
 
-The SQL queries, exported results and Python scripts are stored in this repository.
+- [Project overview and dashboard instructions](../README.md)
+- [Validation, coverage and investigation history](data_checks.md)
+- [Economic mechanisms and official references](economic_mechanisms.md)
+- [Account attribution evidence](account_attribution.md)
+- [Decision priorities](decision_priorities.md)
 
-The fixed-account comparison and contribution tables can be regenerated from saved exports using:
+`analysis/08_execution_spending.py` combines saved results 34 and 36
+to produce result 37.
 
-- `analysis/03_fixed_account_growth.py`
-- `analysis/04_account_growth_contributions.py`
+Official economic sources include:
 
-The weekly economic comparison can be regenerated using `analysis/06_weekly_economic_comparison.py`.
+- [Gas and execution fees](https://docs.near.org/protocol/transactions/gas)
+- [Storage staking](https://docs.near.org/protocol/storage/storage-staking)
+- [Validators](https://docs.near.org/protocol/network/validators)
+- [Evolving NEAR Tokenomics, 24 February 2026](https://near.org/blog/evolving-near-tokenomics)
 
-The diagnostic retrieval script, `analysis/05_fetch_failure_details.py`, preserves validated saved responses and resumes incomplete lookups. Retrieving missing responses requires RPC access.
-
-The dashboard can be run using the instructions in [README.md](../README.md). It displays saved exports rather than querying BigQuery when opened.
-
-Detailed checks and investigation notes are recorded in [data_checks.md](data_checks.md).
+Current documentation does not independently establish historical
+parameters. No fixed inflation, burning or buyback assumption has been
+applied to the results.

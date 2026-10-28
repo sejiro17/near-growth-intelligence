@@ -1,550 +1,813 @@
 # Data Checks
 
+This log records the checks performed, results observed and interpretation
+boundaries identified during the research. Earlier entries describe what
+was established at that stage; later entries record subsequent findings.
+
 ## 25 October 2026 — Historical Partition Coverage
 
-I checked daily partition metadata for transactions, receipt_actions, execution_outcomes and accounts before selecting the observation period.
+I checked partition metadata for transactions, receipt_actions,
+execution_outcomes and accounts before selecting the observation period.
 
-The transactions, receipt_actions and execution_outcomes tables each returned 2,275 nonempty daily partitions, spanning 23 July 2020 to 25 October 2026.
+The transactions, receipt_actions and execution_outcomes tables each
+returned 2,275 nonempty daily partitions, spanning 23 July 2020 to
+25 October 2026. All three had nonempty partitions for the 116 dates
+from 1 July to 24 October.
 
-All three tables had nonempty partitions for all 116 days in the candidate window of 1 July–24 October 2026. This establishes daily partition availability, not completeness of the underlying records.
+The accounts table did not appear in the filtered results. The reason
+was not established; its absence does not demonstrate that it contains
+no data.
 
-The accounts table did not appear in the filtered results. I have not established the reason and will not interpret its absence as evidence that it contains no data.
-
-The observation period remains provisional pending data-quality checks and query-cost estimates.
+This established partition availability rather than record completeness.
+The observation period remained provisional pending further checks.
 
 Query: `sql/01_check_partition_coverage.sql`
 Results: `results/01_partition_coverage_2026-10-25.csv`
 
 ## 25 October 2026 — Daily Partition Counts
 
-I inspected daily partition row counts for transactions, receipt_actions and execution_outcomes from 1 July to 24 October 2026.
+I inspected daily partition row counts for transactions, receipt_actions
+and execution_outcomes across the 116 candidate dates.
 
-The results contain all 116 expected dates, with no missing or zero counts across the three tables.
+All expected dates were present, with no missing or zero counts.
 
-The counts show several abrupt changes, including a transaction increase on 27 September and elevated receipt-action and execution-outcome counts on 10–11 October. On 15 October, receipt-action rows substantially exceeded execution-outcome rows.
+Counts changed sharply on several dates, including a transaction increase
+on 27 September and elevated receipt-action and outcome counts on
+10–11 October. Receipt-action rows substantially exceeded outcome rows
+on 15 October.
 
-These tables represent different units, so their row counts are not expected to match directly. I have not established whether the changes reflect underlying activity, ingestion issues or other causes.
-
-This check establishes nonempty daily coverage. It does not establish record uniqueness or completeness.
+The tables represent different units, so their counts need not match.
+The check did not establish whether changes reflected activity, ingestion
+issues or other causes.
 
 Query: `sql/02_daily_partition_counts.sql`
 Results: `results/02_daily_partition_counts_2026-07-01_to_2026-10-24.csv`
 
 ## 25 October 2026 — Daily Transaction Validation
 
-I checked transaction records from 1 July to 24 October 2026 across all 116 expected dates.
+I checked transaction records across all 116 candidate dates.
 
-The results contain 86,547,133 transaction rows. Each day's row count matched its distinct transaction-hash count, with no duplicate hashes within a day. Daily counts also matched the previously exported partition metadata.
+The results contained 86,547,133 rows. Daily row counts matched distinct
+transaction-hash counts and the partition metadata exported previously.
 
-I found no missing transaction hashes, signing accounts, receiving accounts or timestamps. All timestamps matched their block dates, and every day contained activity in all 24 UTC hours.
+There were no missing transaction hashes, signing accounts, receiving
+accounts or timestamps. Timestamps matched their block dates, and every
+day contained activity in all 24 UTC hours.
 
-Daily active signing accounts ranged from 42,517 to 177,196. These are account identifiers, not verified individuals.
+Daily active signing accounts ranged from 42,517 to 177,196.
 
-These checks support further analysis but do not establish complete ingestion or transaction-hash uniqueness across different days. The counts include all recorded transaction statuses.
+These checks established daily uniqueness among the selected hashes,
+not uniqueness across dates or complete ingestion. Counts included all
+recorded transaction statuses.
 
 Query: `sql/03_daily_transaction_checks.sql`
 Results: `results/03_daily_transaction_checks_2026-07-01_to_2026-10-24.csv`
 
 ## 25 October 2026 — Transaction Status and Hash Uniqueness
 
-I inspected transaction statuses and checked transaction-hash uniqueness across the full candidate window of 1 July–24 October 2026.
+All 86,547,133 candidate-window transactions had SUCCESS_RECEIPT_ID
+status, with no missing statuses. Daily totals matched result 03.
 
-All 86,547,133 transaction rows had status SUCCESS_RECEIPT_ID, with no missing statuses. Daily status totals matched the transaction counts from query 03.
+The full-window distinct transaction-hash count also equalled 86,547,133,
+establishing uniqueness across the selected records.
 
-The full-window distinct transaction-hash count also equalled 86,547,133, establishing that hashes were unique across the selected records.
-
-I will not interpret SUCCESS_RECEIPT_ID as proof of successful downstream execution. Execution outcomes require separate analysis.
+SUCCESS_RECEIPT_ID was not interpreted as successful downstream execution.
 
 Query: `sql/04_transaction_status_checks.sql`
 Results: `results/04_transaction_status_checks_2026-07-01_to_2026-10-24.csv`
 
 ## 25 October 2026 — Execution-Outcome Validation
 
-I inspected execution-outcome records from 1 July to 24 October 2026.
+The candidate window contained 486,375,712 outcome rows:
 
-The results contain 486,375,712 outcome rows across 116 days: 437,621,841 with status SUCCESS_VALUE, 36,472,564 with SUCCESS_RECEIPT_ID and 12,281,307 with FAILURE. Daily totals matched the partition counts from query 02.
+| Status | Rows |
+|---|---:|
+| SUCCESS_VALUE | 437,621,841 |
+| SUCCESS_RECEIPT_ID | 36,472,564 |
+| FAILURE | 12,281,307 |
 
-I found no missing receipt identifiers, executor accounts or timestamps, and no timestamp-date mismatches. Gas and token-cost fields contained no missing, negative or nonfinite values.
+Daily totals matched result 02. There were no missing receipt identifiers,
+executor accounts or timestamps, and no timestamp-date mismatches.
+Gas and token-cost values were present, finite and nonnegative.
 
-Within each date-and-status group, row counts matched distinct receipt-identifier counts. This does not establish identifier uniqueness across groups.
-
-Before calculating receipt-level failure rates or network execution costs, I will verify the execution units represented and check for duplication across groups.
+Within each date-and-status group, row counts matched distinct receipt
+identifiers. Uniqueness across groups and the execution units represented
+still required separate checks.
 
 Query: `sql/05_daily_execution_outcome_checks.sql`
 Results: `results/05_daily_execution_outcome_checks_2026-07-01_to_2026-10-24.csv`
 
 ## 25 October 2026 — Execution Units on 15 October
 
-I matched execution-outcome identifiers dated 15 October against transaction hashes and receipt identifiers recorded from 14–16 October.
+I matched outcome identifiers dated 15 October against transaction hashes
+and receipt identifiers recorded from 14–16 October.
 
-All 14,335,195 outcome rows matched exactly one ACTION receipt. None matched a transaction hash, a DATA receipt or both identifier types, and none remained unmatched within the lookup window.
+All 14,335,195 outcomes matched exactly one ACTION receipt. None matched
+transaction hashes, DATA receipts or both identifier types, and none
+remained unmatched.
 
-The status counts reconciled exactly to query 05: 132,614 FAILURE, 340,772 SUCCESS_RECEIPT_ID and 13,861,809 SUCCESS_VALUE.
+Status counts reconciled to result 05:
 
-Within each resulting group, outcome counts matched distinct identifier counts. No outcome matched multiple lookup rows.
+- FAILURE: 132,614.
+- SUCCESS_RECEIPT_ID: 340,772.
+- SUCCESS_VALUE: 13,861,809.
 
-This establishes the execution units for the inspected day only. It also shows that SUCCESS_RECEIPT_ID is present among ACTION receipt outcomes and cannot by itself identify transaction-processing records.
+Counts matched distinct identifiers within each resulting group.
+No outcome matched multiple lookup rows.
+
+This established the execution units for the inspected day. It also
+showed that SUCCESS_RECEIPT_ID occurs among ACTION receipt outcomes
+and cannot alone identify transaction-processing records.
 
 Query: `sql/06_inspect_execution_units.sql`
 Results: `results/06_execution_units_2026-10-15.csv`
 
 ## 25 October 2026 — Full-Window Outcome Matching
 
-I checked execution-outcome identifier uniqueness across 1 July–24 October 2026 and matched identifiers against receipt_details records dated 30 June–25 October.
+I checked outcome-identifier uniqueness across 1 July–24 October and
+matched identifiers against receipt_details dated 30 June–25 October.
 
-All 486,375,712 outcome identifiers were unique across the selected window, with no identifiers repeated across dates or statuses.
+All 486,375,712 identifiers were unique across the selected dates and
+statuses. Of these, 482,361,311 matched exactly one ACTION receipt.
 
-Of these, 482,361,311 matched exactly one ACTION receipt. The remaining 4,014,401 outcomes (0.83%) had no receipt match within the lookup window. The total reconciled to query 05.
+The remaining 4,014,401 outcomes, approximately 0.83%, had no receipt
+match within the lookup window. Counts reconciled to result 05.
 
-I have not established why these identifiers were unmatched. I will retain them for investigation before calculating receipt-level rates or interpreting aggregate execution costs.
+The unmatched records were retained for investigation.
 
 Query: `sql/07_full_window_outcome_matching.sql`
 Results: `results/07_full_window_outcome_matching_2026-07-01_to_2026-10-24.csv`
 
 ## 25 October 2026 — Unmatched Outcome Investigation
 
-I examined the 4,014,401 outcomes that did not match receipt_details within the lookup window.
+All 4,014,401 unmatched outcomes were dated 1 July–22 August.
+None occurred from 23 August to 24 October.
 
-All unmatched outcomes were dated 1 July–22 August 2026. None occurred from 23 August to 24 October.
+The unmatched records comprised:
 
-The unmatched records comprised 3,841,814 SUCCESS_VALUE, 144,068 SUCCESS_RECEIPT_ID and 28,519 FAILURE outcomes. Their total reconciled to query 07.
+- 3,841,814 SUCCESS_VALUE outcomes.
+- 144,068 SUCCESS_RECEIPT_ID outcomes.
+- 28,519 FAILURE outcomes.
 
-None of their identifiers matched transaction hashes recorded from 30 June to 25 October. The results therefore do not support classifying them as transaction-processing outcomes on that basis.
+Their total reconciled to result 07. None of their identifiers matched
+transaction hashes recorded from 30 June to 25 October.
 
-The cause remains unresolved. I will account for this matching limitation when choosing the observation period and defining receipt-based metrics.
+The cause remained unresolved. These results informed the selection
+of the later primary observation period.
 
 Query: `sql/08_inspect_unmatched_outcomes.sql`
 Results: `results/08_unmatched_outcomes_2026-07-01_to_2026-10-24.csv`
 
 ## 25 October 2026 — Weekly Activity Baseline
 
-I summarised the validated daily transaction results into eight complete Monday–Sunday weeks from 24 August to 18 October 2026.
+I summarised validated daily transactions into eight complete
+Monday–Sunday weeks from 24 August to 18 October.
 
-The weekly totals reconcile to 44,284,794 transactions across 56 dates. All weekly averages and week-to-week percentage changes reconciled to the daily source.
+Totals reconciled to 44,284,794 transactions across 56 dates.
+Weekly averages and percentage changes reconciled to the daily source.
 
-Weekly transactions peaked at 6,590,352 during 28 September–4 October. In the final week, transactions declined 23.31% and average daily active signing accounts declined 39.50% from the preceding week.
+Transactions peaked at 6,590,352 during 28 September–4 October.
+In the final week, transactions declined 23.31% and average daily active
+signing accounts declined 39.50% from the preceding week.
 
-Compared with the first week, the final week recorded 3.69% more transactions but 29.87% fewer average daily active signing accounts. I have not established the causes of these differences.
+Against the first week, final-week transactions increased 3.69%, while
+average daily active signing accounts declined 29.87%.
 
-Signing-account-days count an identifier once per active day. They are not weekly distinct accounts, and account identifiers are not verified individuals.
+Signing-account-days count an identifier once per active day.
+They are not weekly distinct accounts.
 
 Script: `analysis/01_weekly_activity_baseline.py`
 Results: `results/09_weekly_activity_baseline_2026-08-24_to_2026-10-18.csv`
 
 ## 25 October 2026 — Weekly Signing Activity and Concentration
 
-I counted distinct transaction-signing accounts within each of the eight complete weeks from 24 August to 18 October.
+Weekly transaction totals and signing-account-days reconciled to the
+baseline. Reported averages, concentration shares and account changes
+reconciled to the exported counts.
 
-Weekly transaction totals and signing-account-days reconciled to the previous baseline, covering 44,284,794 transactions. All reported averages, concentration shares and weekly account changes reconciled to the exported counts.
+Weekly active signing accounts peaked at 457,768 during
+28 September–4 October, up 198.16% from the preceding week.
+Of these, 376,771, or 82.31%, were active on only one day.
 
-Weekly active signing accounts peaked at 457,768 during 28 September–4 October, an increase of 198.16% from the preceding week. Of these accounts, 376,771 (82.31%) were active on only one day within that week.
+Final-week active signing accounts fell to 129,446: down 66.33% from
+the preceding week and 7.38% below the first week.
 
-Weekly active signing accounts fell to 129,446 in the final week, down 66.33% from the preceding week and 7.38% below the first week.
+The ten busiest signing accounts generated 48.17%–67.76% of weekly
+transactions. Rankings were recalculated each week.
 
-The ten busiest signing accounts contributed between 48.17% and 67.76% of weekly transactions. Rankings were calculated separately for each week; these are not necessarily the same accounts throughout.
-
-These results describe signing-account identifiers, not verified individuals. Activity within a week does not establish return activity across weeks, and the causes of the observed changes remain unverified.
+These results describe identifiers rather than verified people.
+Within-week activity does not establish participation in later weeks.
 
 Query: `sql/10_weekly_signing_activity.sql`
 Results: `results/10_weekly_signing_activity_2026-08-24_to_2026-10-18.csv`
 
 ## 25 October 2026 — Weekly Account Returns
 
-I measured subsequent weekly activity among signing accounts active in each of the eight starting weeks.
+I measured later weekly activity among accounts active in each starting
+week.
 
-All cohort sizes reconciled to the weekly signing-activity results. The export contained 30 eligible cohort-follow-up combinations, with correct percentages and no incomplete follow-up weeks. Every starting-week count matched its cohort size.
+All cohort sizes reconciled to result 10. The export contained 30 eligible
+cohort-follow-up combinations, with correct percentages and no incomplete
+follow-up weeks. Starting-week counts matched their cohort sizes.
 
-Next-week active shares ranged from 18.14% to 77.96% across the seven cohorts with an observed following week.
+Next-week active shares ranged from 18.14% to 77.96%.
 
-Of the 457,768 signing accounts active during 28 September–4 October, 83,037 (18.14%) were active the following week and 77,133 (16.85%) were active two weeks later.
+Of the 457,768 accounts active during 28 September–4 October:
 
-Four-week active shares ranged from 47.70% to 51.65% across the four cohorts with complete four-week follow-up.
+- 83,037, or 18.14%, were active the following week.
+- 77,133, or 16.85%, were active two weeks later.
 
-Each cohort includes all signing accounts active in its starting week, not necessarily newly acquired users. Accounts may belong to multiple cohorts. Each follow-up measures activity during that particular week; it does not require continuous participation or measure cumulative returns.
+Four-week active shares ranged from 47.70% to 51.65% among the four
+cohorts with complete follow-up.
 
-Account identifiers are not verified individuals, and the causes of the observed differences remain unverified.
+Cohorts include all active signing accounts, not necessarily new users.
+They overlap. Follow-ups measure activity in a particular week, not
+continuous participation or cumulative returns.
 
 Query: `sql/11_weekly_account_returns.sql`
 Results: `results/11_weekly_account_returns_2026-08-24_to_2026-10-18.csv`
 
 ## 25 October 2026 — Weekly Receiver Activity
 
-I ranked transaction receivers by transaction count within each of the eight complete weeks from 24 August to 18 October.
+The export contained twenty receivers per week, giving 160 rows.
+Weekly totals, rankings, transaction shares and concentration totals
+reconciled to the saved counts.
 
-The export contained 20 receivers per week, giving 160 rows. Weekly transaction totals reconciled to the previous baseline. Receiver rankings, transaction shares and top-10 and top-20 concentration totals reconciled to the exported counts.
+The ten busiest receivers accounted for 60.85%–70.22% of weekly
+transactions. The twenty busiest accounted for 70.48%–80.81%.
 
-The ten busiest receivers accounted for 60.85%–70.22% of weekly transactions. The twenty busiest accounted for 70.48%–80.81%.
+game.hot.tg ranked first in the first two weeks.
+v2.ref-finance.near ranked first in the remaining six.
 
-game.hot.tg ranked first in the first two weeks. v2.ref-finance.near ranked first in the remaining six weeks.
+These are original transaction destinations, not necessarily verified
+applications or downstream destinations. Receiver-level signing-account
+counts can overlap and must not be summed as network-wide unique accounts.
 
-These are original transaction destinations, not necessarily downstream execution destinations or verified applications. Signing-account counts can overlap across receivers and must not be summed as weekly unique accounts.
-
-The export contains only each week's twenty busiest receivers. A receiver's absence from another week's ranking does not establish zero activity.
+Absence from a top-twenty ranking does not establish zero activity.
 
 Query: `sql/12_weekly_receiver_activity.sql`
 Results: `results/12_weekly_receiver_activity_2026-08-24_to_2026-10-18.csv`
 
 ## 25 October 2026 — Weekly Receipt Execution Costs
 
-I aggregated execution outcomes by execution date across the eight complete weeks from 24 August to 18 October.
+Weekly counts and status breakdowns reconciled to the validated daily
+results, totalling 280,743,473 receipt execution outcomes.
 
-Weekly outcome counts and status breakdowns reconciled to the validated daily results, totalling 280,743,473 receipt execution outcomes. Every week contained seven observed dates, with zero unexpected statuses or invalid gas and token-cost values.
+Each week contained seven dates, with no unexpected statuses or invalid
+gas and token-cost values.
 
-Recorded execution costs totalled approximately 65,878.09 NEAR, including 4,218.49 NEAR associated with failed receipts. Reported failure shares, cost shares and average costs reconciled to the exported figures.
+Recorded receipt execution costs totalled approximately 65,878.09 NEAR,
+including 4,218.49 NEAR associated with failed receipts. Failure shares,
+cost shares and average costs reconciled.
 
-Weekly recorded execution costs peaked at approximately 11,950.25 NEAR during 5–11 October. The final week recorded approximately 10,544.79 NEAR, compared with 5,770.56 NEAR in the first week.
+Weekly costs peaked at approximately 11,950.25 NEAR during 5–11 October.
+Final-week costs were approximately 10,544.79 NEAR, compared with
+5,770.56 NEAR in the first week.
 
-These figures describe receipt executions occurring during each week. They do not trace the complete execution chain of transactions submitted that week or include transaction receipt-conversion costs. They do not establish protocol revenue, permanent token burning or value accruing to token holders.
+These figures use receipt execution dates and exclude transaction
+receipt-conversion costs. They do not trace complete transaction chains
+or independently measure revenue, permanent burning or holder value.
 
-Amounts are approximate because the source cost fields use floating-point storage.
+Source cost fields use floating-point storage, so amounts are approximate.
 
 Query: `sql/13_weekly_execution_costs.sql`
 Results: `results/13_weekly_execution_costs_2026-08-24_to_2026-10-18.csv`
 
 ## 25 October 2026 — Combined Weekly Growth and Costs
 
-I combined the weekly activity, signing-account and receipt execution-cost exports into one table covering eight complete weeks.
+I combined weekly activity, signing-account and receipt-cost exports.
 
-All source values were preserved. Week boundaries, overlapping transaction totals and signing-account-days reconciled across the inputs. Growth indices and weekly cost changes calculated correctly.
+Source values were preserved. Week boundaries, overlapping totals and
+signing-account-days reconciled. Indices and weekly changes calculated
+correctly.
 
-With the first week indexed to 100, the final week recorded 103.69 for transactions, 92.62 for weekly active signing accounts and 182.73 for recorded receipt execution costs.
+With the first week indexed to 100, the final week recorded:
 
-Activity and recorded execution costs therefore changed at different rates during the observation period. These comparisons do not establish the causes of the differences or demonstrate economic value accruing to token holders.
+- Transactions: 103.69.
+- Weekly active signing accounts: 92.62.
+- Recorded receipt execution costs: 182.73.
 
-Transactions are grouped by submission date, while receipt costs are grouped by execution date. The indices compare weekly trends rather than matching transaction submissions to their complete execution costs.
+The series changed at different rates. Transactions use submission dates,
+while receipt costs use execution dates. The indices compare weekly
+trends rather than matched transaction-chain costs.
 
 Script: `analysis/02_weekly_execution_costs.py`
 Results: `results/14_weekly_growth_and_costs_2026-08-24_to_2026-10-18.csv`
 
 ## 25 October 2026 — Receiver Activity by Subsequent Account Participation
 
-I divided signing accounts active during 28 September–4 October into two groups according to whether they were active during 5–11 October. I then ranked each group's transaction receivers during the starting week.
+I grouped accounts active during 28 September–4 October according to
+their participation during 5–11 October, then ranked their starting-week
+receivers.
 
-The groups reconciled to 457,768 signing accounts and 6,590,352 starting-week transactions. Receiver rankings, transaction shares and account-interaction percentages reconciled to the exported counts.
+The groups reconciled to 457,768 accounts and 6,590,352 transactions.
+Rankings, transaction shares and interaction percentages reconciled.
 
-The 83,037 accounts active the following week represented 18.14% of the cohort and generated 5,788,805 starting-week transactions (87.84%). The remaining 374,731 accounts generated 801,547 transactions (12.16%).
+The 83,037 returning accounts represented 18.14% of the cohort and
+generated 5,788,805 starting-week transactions, or 87.84%.
 
-Among accounts active the following week, v2.ref-finance.near received the most starting-week transactions: 1,139,455. Among accounts absent the following week, wallet.kaiching ranked first with 134,826 transactions from two signing accounts. This receiver therefore does not explain the group's large account count.
+The remaining 374,731 accounts generated 801,547 transactions, or 12.16%.
 
-The export contains only the twenty busiest receivers per group, and account-interaction counts can overlap across receivers. These associations do not establish what caused the spike or identify genuine users, automated activity or campaigns.
+Among returning accounts, v2.ref-finance.near received the most
+starting-week transactions: 1,139,455.
 
-Absence in the following week does not establish permanent departure. Signing-account identifiers are not verified individuals.
+Among absent accounts, wallet.kaiching ranked first with 134,826
+transactions from two signing accounts. This receiver therefore did
+not explain the group's large account count.
+
+Only twenty receivers per group were exported, and account-interaction
+counts can overlap. The associations do not identify causes, independent
+users, automation or campaigns.
 
 Query: `sql/15_spike_cohort_receivers.sql`
 Results: `results/15_spike_cohort_receivers_2026-09-28_to_2026-10-11.csv`
 
 ## 25 October 2026 — Spike Cohort Transaction Actions
 
-I compared submitted transaction action types during 28 September–4 October between accounts active and absent during the following week.
+I compared starting-week action types between accounts active and absent
+the following week.
 
-Group account and transaction totals reconciled to the previous cohort results. Reported percentages calculated correctly. Matched records had zero missing action indices and zero duplicate indices within each transaction-action-kind group.
+Group totals and percentages reconciled. Matched records had no missing
+action indices or duplicate indices within transaction-action-kind groups.
 
-Among accounts absent the following week, 309,286 (82.54%) submitted transactions containing DELETE_ACCOUNT actions. These accounted for 309,601 transactions.
+Among absent accounts, 309,286, or 82.54%, submitted transactions
+containing DELETE_ACCOUNT actions. These accounted for 309,601
+transactions.
 
-Among accounts active the following week, 80,191 (96.57%) submitted transactions containing FUNCTION_CALL actions. DELEGATE_ACTION appeared in 1,945,506 transactions from 28 signing accounts.
+Among returning accounts, 80,191, or 96.57%, submitted transactions
+containing FUNCTION_CALL actions. DELEGATE_ACTION appeared in 1,945,506
+transactions from 28 signing accounts.
 
-There were 474 transactions without matching action records in the selected lookup window: seven from returning accounts and 467 from accounts absent the following week. The reason remains unresolved.
+There were 474 transactions without matching action records:
+seven from returning accounts and 467 from absent accounts.
+The reason remained unresolved.
 
-These results describe submitted actions, not confirmed execution outcomes. DELETE_ACCOUNT actions do not by themselves establish successful deletion or that the deleted account was the signing account.
-
-Transactions and signing accounts can appear under multiple action types. Their counts must not be summed across action kinds as distinct totals. Delegated payload contents were not expanded.
+Submitted deletion actions did not alone establish successful deletion
+or that the signer was the deleted account. Transactions and accounts
+can appear under several action types; counts must not be summed as
+distinct totals. Delegated payloads were not expanded.
 
 Query: `sql/16_spike_cohort_actions.sql`
 Results: `results/16_spike_cohort_actions_2026-09-28_to_2026-10-11.csv`
 
 ## 25 October 2026 — Spike Account Deletion Outcomes
 
-I checked the initial receipt execution outcomes for transactions containing DELETE_ACCOUNT actions during 28 September–4 October, allowing outcomes through 11 October.
+I checked initial receipt outcomes for transactions containing
+DELETE_ACCOUNT actions during 28 September–4 October, allowing
+outcomes through 11 October.
 
-All 309,642 deletion transactions reconciled to the previous action results. Each matched exactly one execution outcome. In every case, the transaction signer equalled the receiver, and the execution account matched that receiver.
+All 309,642 deletion transactions reconciled to the previous action
+results and matched exactly one outcome. In every case, the signer
+equalled the receiver and the executor matched that receiver.
 
-Among accounts absent the following week, 309,587 deletion transactions from 309,280 distinct signing accounts had SUCCESS_VALUE outcomes. These accounts represented 82.53% of the absent group and 67.56% of the full starting-week cohort.
+Among absent accounts:
 
-A further 14 deletion transactions from 11 accounts in the absent group failed. Account counts can overlap between successful and failed outcome groups.
+- 309,587 deletion transactions from 309,280 accounts had SUCCESS_VALUE
+  outcomes.
+- Those accounts represented 82.53% of the absent group and 67.56%
+  of the full starting-week cohort.
+- Fourteen deletion transactions from eleven accounts failed.
 
-Among accounts active the following week, 41 self-deletion transactions from nine accounts had SUCCESS_VALUE outcomes. Subsequent activity under those identifiers does not establish continuity of ownership; account recreation or other lifecycle activity has not been investigated.
+Account counts can overlap between successful and failed groups.
 
-The results establish successful receipt executions containing self-deletion actions. They do not establish why the accounts were deleted, who controlled them or whether the identifiers were later recreated.
+Among returning accounts, 41 self-deletion transactions from nine
+accounts had SUCCESS_VALUE outcomes. Later activity under those
+identifiers does not establish continuity of ownership.
 
-The large absent-account count should not be interpreted as ordinary user churn without accounting for this deletion activity.
+The results establish successful receipt executions containing
+self-deletion actions. Motives, ownership and later recreation were
+not established. The large absent-account count should not be treated
+as ordinary user churn.
 
 Query: `sql/17_spike_account_deletion_checks.sql`
 Results: `results/17_spike_account_deletion_checks_2026-09-28_to_2026-10-11.csv`
 
 ## 26 October 2026 — Leading Signing Accounts
 
-I identified each week's twenty busiest signing accounts during 24 August–18 October, then tracked the combined set across all eight weeks.
+I identified each week's twenty busiest signing accounts and tracked
+their combined set across all eight weeks.
 
-The export contains 408 account-week rows covering 51 distinct signing accounts. Weekly transaction totals, active signing-account counts and top-ten transaction counts reconcile with result 10. Account histories, rank flags and reported transaction shares passed the checks performed.
+The export contained 408 account-week rows covering 51 accounts.
+Weekly totals, active-account counts and top-ten transaction counts
+reconciled to result 10. Histories, rank flags and shares passed checks.
 
-sweat-relayer.near ranked first every week and submitted 13,704,363 transactions, representing 30.95% of the period's total. Its weekly transactions declined from 1,954,610 to 1,301,312 between the first and final weeks, a decrease of 33.42%.
+sweat-relayer.near ranked first every week and submitted 13,704,363
+transactions, or 30.95% of the period total. Its weekly transactions
+declined from 1,954,610 to 1,301,312: a decrease of 33.42%.
 
-Five accounts appeared in the top ten every week: sweat-relayer.near, intents.near, closemeat6237.near, omni-relayer.bridge.near and meteor-relayer.near.
+Five accounts appeared in the top ten every week:
 
-Transactions outside each week's top ten increased from 1,539,788 to 2,063,276, or 34.00%, between the first and final weeks. These groups change membership, so this comparison does not track a fixed set of accounts or establish independent user demand.
+- sweat-relayer.near
+- intents.near
+- closemeat6237.near
+- omni-relayer.bridge.near
+- meteor-relayer.near
 
-Account roles and ownership remain unverified. Weekly totals and full-period account summaries repeat across rows and must not be summed without deduplication.
+Transactions outside each week's top ten increased from 1,539,788 to
+2,063,276, or 34.00%. Membership changes across weekly rankings, so
+this does not track a fixed account group.
+
+Roles and ownership were unverified at this stage. Repeated weekly
+and full-period summary fields require deduplication before aggregation.
 
 Query: `sql/18_weekly_leading_signing_accounts.sql`
 Results: `results/18_weekly_leading_signing_accounts_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Leading Account Destinations
 
-I examined the original transaction receivers of the five signing accounts that ranked in the top ten during every week of the observation period.
+I examined original receivers for the five accounts ranked in the
+top ten every week.
 
-The export contains 399 receiver rows across 40 account-week groups. Account transaction totals and active days reconcile with result 18. Receiver rankings, transaction shares and top-twenty coverage totals passed the checks performed. No missing or empty receiver identifiers were reported.
+The export contained 399 receiver rows across forty account-weeks.
+Transaction totals and active days reconciled to result 18.
+Rankings, shares and coverage totals passed checks. No missing or
+empty receiver identifiers were reported.
 
-sweat-relayer.near submitted transactions to between 120,242 and 223,109 distinct original receivers per week. meteor-relayer.near submitted transactions to between 16,691 and 17,694.
+Weekly distinct receivers ranged from:
 
-Across the period, their weekly top-twenty receiver lists captured 69.98% and 2.98% of their respective transactions. These percentages aggregate transactions covered by each week's ranking; they do not describe a single fixed receiver list.
+- 120,242 to 223,109 for sweat-relayer.near.
+- 16,691 to 17,694 for meteor-relayer.near.
 
-All 2,769,479 transactions signed by intents.near targeted intents.near. Most transactions signed by omni-relayer.bridge.near targeted omni.bridge.near, btc-connector.bridge.near and zcash-connector.bridge.near.
+Their weekly top-twenty receiver lists captured 69.98% and 2.98%
+respectively of their transactions across the period. These are
+aggregated weekly rankings, not fixed receiver lists.
 
-closemeat6237.near had five distinct receivers each week. v2.ref-finance.near ranked first throughout and received 914,376 of its 1,620,042 transactions.
+All 2,769,479 transactions signed by intents.near targeted itself.
+Most omni-relayer.bridge.near transactions targeted omni.bridge.near,
+btc-connector.bridge.near and zcash-connector.bridge.near.
 
-These results show that signing-account concentration can coexist with many transaction destinations. They do not establish account ownership, distinct users, independent demand or successful execution. Original receivers also do not identify every participant or downstream destination in delegated execution.
+closemeat6237.near had five receivers each week. v2.ref-finance.near
+ranked first throughout and received 914,376 of its 1,620,042 transactions.
 
-Account-week summary fields repeat across receiver rows and must be deduplicated before aggregation.
+Signing concentration can coexist with many destinations. Original
+receivers do not identify all downstream participants, particularly
+in delegated execution.
+
+Account-week summaries repeat across rows and require deduplication.
 
 Query: `sql/19_leading_account_activity.sql`
 Results: `results/19_leading_account_activity_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Leading Account Actions
 
-I examined submitted action types and function-call methods for the five accounts consistently ranked among the ten busiest signing accounts.
+The export contained 178 rows across forty account-weeks.
+Transaction totals reconciled to result 18. Every selected transaction
+matched an action record, with no missing indices or FUNCTION_CALL
+method names.
 
-The export contains 178 rows across 40 account-week groups. Transaction totals reconcile with result 18. Every selected transaction matched an action record within the lookup window. No matched action rows had missing indices, and no FUNCTION_CALL rows had missing method names.
+DELEGATE_ACTION appeared in:
 
-DELEGATE_ACTION appeared in 13,246,938 transactions signed by sweat-relayer.near, representing 96.66% of its transactions. For meteor-relayer.near, it appeared in 1,239,064 transactions, or 98.02%.
+- 13,246,938 sweat-relayer.near transactions: 96.66%.
+- 1,239,064 meteor-relayer.near transactions: 98.02%.
 
-All 2,769,479 transactions signed by intents.near contained an execute_intents function call.
+All 2,769,479 intents.near transactions contained execute_intents calls.
 
-For closemeat6237.near, 901,581 transactions contained swap calls and 702,584 contained ft_transfer_call calls, representing 55.65% and 43.37% respectively.
+For closemeat6237.near, 901,581 transactions contained swap calls and
+702,584 contained ft_transfer_call calls: 55.65% and 43.37% respectively.
 
-Methods submitted by omni-relayer.bridge.near included sign_btc_transaction, sign_transfer, claim_fee, fin_transfer, verify_deposit_v2 and verify_withdraw_v2.
+omni-relayer.bridge.near methods included sign_btc_transaction,
+sign_transfer, claim_fee, fin_transfer, verify_deposit_v2 and
+verify_withdraw_v2.
 
-The results distinguish delegated submissions from direct function calls and other actions. They support examining intermediary activity before interpreting signing-account concentration as end-user concentration.
-
-Delegated payload contents were not expanded. Submitted methods do not establish successful execution, operator identity or independent user demand. A transaction can contain multiple action or method categories, so category transaction counts must not be summed as unique transactions.
+The results distinguish delegated submissions from direct calls.
+Delegated inner actions were not expanded. Submitted methods do not
+establish execution success or ownership. Category transaction counts
+can overlap and must not be summed as unique transactions.
 
 Query: `sql/20_leading_account_actions.sql`
 Results: `results/20_leading_account_actions_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Growth Outside a Fixed Account Group
 
-I held the ten busiest signing accounts from 24–30 August fixed and compared their transaction activity with all remaining signing accounts across eight weeks.
+I held the first week's ten busiest signing accounts fixed across
+all eight weeks.
 
-All eight weekly rows reconcile with results 10 and 18. Fixed-group totals, remaining transaction counts, active-account counts, shares and growth percentages passed independent checks.
+Weekly rows reconciled to results 10 and 18. Group totals, remaining
+transactions, active-account counts, shares and changes passed checks.
 
-Network transactions increased from 4,734,816 to 4,909,532 between the first and final weeks, or 3.69%.
+Between the endpoints:
 
-Transactions signed by the fixed group declined from 3,195,028 to 2,561,335, or 19.83%. Transactions outside it increased from 1,539,788 to 2,348,197, or 52.50%.
+- Network transactions increased from 4,734,816 to 4,909,532: +3.69%.
+- Fixed-group transactions declined from 3,195,028 to 2,561,335: −19.83%.
+- Transactions outside the group increased from 1,539,788 to 2,348,197:
+  +52.50%.
 
-The increase of 808,409 transactions outside the group offset its decline of 633,693. The fixed group's network transaction share fell from 67.48% to 52.17%. All ten selected accounts remained active each week.
+The outside increase of 808,409 offset the fixed group's decline of
+633,693. The fixed group's network share fell from 67.48% to 52.17%.
+All ten selected accounts remained active each week.
 
-Transactions outside the group peaked at 3,673,647 during 28 September–4 October. The final week was 36.08% below that peak.
+Outside-group transactions peaked at 3,673,647 during
+28 September–4 October. The final week was 36.08% below that peak.
 
-Growth was not confined to the signing accounts that dominated the first week. However, the remaining activity includes other large accounts, intermediaries and account lifecycle events. It does not establish independent users, application diversity or sustained adoption.
-
-Group membership was selected using first-week transaction rankings and held constant. This is a descriptive comparison, not a simulation of the network without those accounts.
+Growth extended beyond the original leaders, but the outside group
+includes intermediaries, other large accounts and lifecycle activity.
+This is a descriptive comparison, not a counterfactual network
+without the selected accounts.
 
 Script: `analysis/03_fixed_account_growth.py`
 Results: `results/21_fixed_account_growth_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Account Contributions to Transaction Growth
 
-I decomposed the first-to-final-week transaction change using the 51 account histories in result 18 and the fixed-group comparison in result 21.
+I decomposed the endpoint change using the 51 account histories in
+result 18 and fixed-group comparison in result 21.
 
-The 52 output rows contain 51 individual accounts and one aggregate remainder for all untracked accounts. Endpoint counts, changes, network shares and contribution percentages reconcile with the source exports.
+The 52 output rows contain 51 accounts and one untracked remainder.
+Endpoint counts, changes, shares and contribution percentages reconciled.
 
-Outside the fixed first-week top ten, transactions increased by 808,409. The other 41 tracked accounts contributed a net increase of 454,289, or 56.20%. Untracked accounts combined contributed 354,120, or 43.80%.
+Of the 808,409 increase outside the fixed group:
 
-Transactions from the untracked remainder increased from 1,163,267 to 1,517,387, or 30.44%. Untracked means outside the union of accounts appearing in any weekly top-twenty signing-account ranking during the selected period. It does not mean verified users or independent applications.
+- The other 41 tracked accounts contributed 454,289: 56.20%.
+- Untracked accounts contributed 354,120: 43.80%.
 
-The largest positive contributions among tracked accounts outside the fixed group came from tinykoala595.near and wx-cruce.near: 148,950 and 137,767 transactions respectively. These represented 18.43% and 17.04% of the outside-group net increase.
+Untracked transactions increased from 1,163,267 to 1,517,387: +30.44%.
+Untracked means outside every weekly top-twenty signing-account ranking,
+not verified users or independent applications.
 
-Both accounts had zero transactions in the first week. This does not establish when they were created or first used.
+The largest positive tracked contributions outside the fixed group were:
 
-The results show growth beyond the original leading accounts, alongside contributions from other prominent accounts. They do not establish how growth was distributed within the untracked remainder, account ownership or the causes of the changes.
+- tinykoala595.near: 148,950 transactions, or 18.43%.
+- wx-cruce.near: 137,767 transactions, or 17.04%.
 
-Contributions use the outside-group net increase as their denominator. Negative contributions and contributions above 100% are possible because increases and decreases offset each other. The comparison concerns the first and final weeks, not cumulative growth across the period.
+Both had zero first-week transactions. This does not establish creation
+dates or first-ever use.
+
+Contribution percentages use the outside-group net increase as their
+denominator. Negative contributions or values above 100% are possible
+because increases and decreases offset. The comparison is between
+endpoints, not cumulative growth.
 
 Script: `analysis/04_account_growth_contributions.py`
 Results: `results/22_account_growth_contributions_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Activity of Two Growth-Contributing Accounts
 
-I examined transaction destinations, submitted action types and function-call methods for tinykoala595.near and wx-cruce.near, the two largest positive contributors among tracked accounts outside the fixed first-week top ten.
+I examined destinations, action types and methods for tinykoala595.near
+and wx-cruce.near.
 
-The export contains 101 rows across ten account-week groups with observed transactions. Weekly totals reconcile with result 18. Weeks absent from the export correspond to zero transactions in that result.
+The export contained 101 rows across ten active account-weeks.
+Totals reconciled to result 18. Missing weeks corresponded to zero
+transactions. All transactions matched action records, with no missing
+indices or FUNCTION_CALL method names.
 
-Every selected transaction matched an action record within the lookup window. No matched action rows had missing indices or missing FUNCTION_CALL method names.
+Of 778,588 tinykoala595.near transactions, 778,338 contained swap calls
+to v2.ref-finance.near: 99.97%.
 
-Of 778,588 transactions signed by tinykoala595.near, 778,338 contained a swap call to v2.ref-finance.near, representing 99.97%.
+Of 413,281 wx-cruce.near transactions:
 
-Of 413,281 transactions signed by wx-cruce.near, 200,667 contained ft_transfer_call to 17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1, representing 48.55%. Another 199,869 contained ft_transfer_call to wrap.near, representing 48.36%.
+- 200,667 contained ft_transfer_call to
+  17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1:
+  48.55%.
+- 199,869 contained ft_transfer_call to wrap.near: 48.36%.
 
-These findings associate two substantial growth contributions with specific contract interactions. They do not establish operator identity, automated behaviour, independent users, economic volume or successful execution.
+These observations associate growth with particular interactions.
+They do not establish ownership, automation, economic volume or success.
 
-A transaction may contain several action or method categories. Category transaction counts overlap and must not be summed as unique transactions. The export does not expand function-call payloads or trace downstream execution.
+Action-category transaction counts overlap. Payloads and downstream
+execution were not expanded.
 
 Query: `sql/23_growth_account_activity.sql`
 Results: `results/23_growth_account_activity_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Initial Outcomes of Growth-Contributing Accounts
 
-I matched transactions signed by tinykoala595.near and wx-cruce.near to their initial receipt execution outcomes, allowing outcomes through 19 October.
+I matched the two selected accounts' transactions to initial receipt
+outcomes, allowing outcomes through 19 October.
 
-The export contains 30 rows across ten active account-week groups. Transaction counts reconcile with result 18. Within each account-week, transaction hashes and nonnull initial receipt identifiers were distinct.
+The export contained thirty rows across ten active account-weeks.
+Counts reconciled to result 18. Transaction hashes and nonnull initial
+receipt identifiers were distinct within each account-week.
 
-Every selected transaction matched exactly one initial receipt outcome. No missing or multiple outcome matches were reported, and every executor matched the original transaction receiver.
+Every transaction matched exactly one outcome, with the executor
+matching the original receiver.
 
-Of 778,588 transactions signed by tinykoala595.near, 715,518 had FAILURE outcomes (91.90%), 62,955 had SUCCESS_VALUE outcomes (8.09%), and 115 had SUCCESS_RECEIPT_ID outcomes (0.01%).
+| Account | FAILURE | SUCCESS_VALUE | SUCCESS_RECEIPT_ID |
+|---|---:|---:|---:|
+| tinykoala595.near | 715,518 (91.90%) | 62,955 (8.09%) | 115 (0.01%) |
+| wx-cruce.near | 6,441 (1.56%) | 7,872 (1.90%) | 398,968 (96.54%) |
 
-Of 413,281 transactions signed by wx-cruce.near, 6,441 had FAILURE outcomes (1.56%), 7,872 had SUCCESS_VALUE outcomes (1.90%), and 398,968 had SUCCESS_RECEIPT_ID outcomes (96.54%).
+Most tinykoala595.near initial receipts failed. Most wx-cruce.near
+initial receipts returned SUCCESS_RECEIPT_ID, which does not establish
+downstream success.
 
-These results qualify the earlier growth contribution findings. Submitted transaction growth does not establish successful economic activity. Most initial receipts associated with tinykoala595.near failed.
-
-Most initial receipts associated with wx-cruce.near returned SUCCESS_RECEIPT_ID. This does not establish the final outcome of downstream execution.
-
-The analysis does not establish failure causes, retries, operator motives, completed swaps or economic volume. Outcomes were grouped by account and week, rather than directly cross-tabulated with submitted methods.
+Outcomes were grouped by account and week rather than cross-tabulated
+against every submitted method. The analysis did not establish failure
+causes, retries, completed swaps or economic volume.
 
 Query: `sql/24_growth_account_outcomes.sql`
 Results: `results/24_growth_account_outcomes_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Sampled Failure Logs
 
-I selected three failed initial receipts per active week for tinykoala595.near, using a deterministic transaction-hash ordering.
+I selected three failed initial receipts per active week for
+tinykoala595.near using deterministic transaction-hash ordering.
 
-The sample contains 18 distinct receipts across six weeks. Each receipt had one matched FAILURE outcome, and every executor matched the original receiver.
+The sample contained eighteen distinct receipts across six weeks.
+Each had exactly one FAILURE outcome, with the executor matching
+the original receiver.
 
-All 18 exported log arrays were empty. The sample therefore provides no diagnostic error messages and does not establish a common failure cause, retries or operator intent.
+All exported log arrays were empty, providing no diagnostic messages
+through this source. Further inspection required execution details
+from another source.
 
-The sample is intended for diagnostic inspection, not for estimating the prevalence of particular error causes. Further investigation requires execution details from another source.
+The sample was diagnostic, not designed to estimate error frequencies.
 
 Query: `sql/25_inspect_growth_account_failures.sql`
 Results: `results/25_growth_account_failure_sample_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Detailed Errors for Sampled Failures
 
-I retrieved execution details for all 18 sampled failed receipts and checked the returned transaction hashes, signing accounts, receipt identifiers, executors and failure statuses against result 25.
+I retrieved execution details for all eighteen receipts and checked
+transaction hashes, signing accounts, receipt identifiers, executors
+and failure statuses against result 25.
 
-Seventeen receipts reported E68: slippage error. One reported E22: not enough tokens in deposit. All sampled failures executed on v2.ref-finance.near.
+Seventeen reported E68: slippage error. One reported E22: not enough
+tokens in deposit. All executed on v2.ref-finance.near.
 
-These findings establish at least two reported error causes within the sample. They do not estimate the distribution of causes across all 715,518 failures or establish retries, automation or operator intent.
+These are reported contract errors within the sample, not estimates
+of causes across all 715,518 failures or proof of retries or automation.
 
-The original archival endpoint returned five validated responses before rejecting subsequent requests with HTTP 429 and a deprecation message. The remaining 13 lookups succeeded through FastNear's archival endpoint. Earlier failed attempts are preserved in the completed JSON.
+The original archival endpoint returned five validated responses before
+HTTP 429 responses and a deprecation message. The remaining thirteen
+lookups succeeded through FastNear's archival endpoint. Earlier failed
+attempts remain preserved in the completed JSON.
 
-The empty BigQuery log arrays did not imply an absence of diagnostic information: the RPC receipt statuses contained execution errors.
+Empty BigQuery log arrays did not imply that diagnostic information
+was unavailable: RPC receipt statuses contained execution errors.
 
 Script: `analysis/05_fetch_failure_details.py`
 Results: `results/26_growth_account_failure_details_2026-08-24_to_2026-10-18.json`
 
 ## 26 October 2026 — Execution Costs of Selected Growth Accounts
 
-I measured recorded initial-receipt execution costs for transactions signed by tinykoala595.near and wx-cruce.near during 24 August–18 October, allowing execution outcomes through 19 October.
+All 1,191,869 selected transactions reconciled to result 24 and matched
+exactly one initial receipt outcome. Executors matched the original
+receivers, and costs were present, finite and nonnegative.
 
-All 1,191,869 transactions reconciled to result 24 and matched exactly one initial receipt outcome. Every executor matched the original receiver. All cost values were present, finite and nonnegative.
+| Account | Initial-receipt costs | Failed-receipt costs | Failed cost share |
+|---|---:|---:|---:|
+| tinykoala595.near | 243.3451 NEAR | 211.1629 NEAR | 86.78% |
+| wx-cruce.near | 115.0938 NEAR | 1.0978 NEAR | 0.95% |
 
-For tinykoala595.near, recorded initial-receipt costs totalled approximately 243.3451 NEAR. Its 715,518 failed receipts accounted for 211.1629 NEAR, or 86.78% of those costs. Failures represented 91.90% of the account's transactions.
+Failures represented 91.90% and 1.56% respectively of the accounts'
+transactions.
 
-For wx-cruce.near, recorded initial-receipt costs totalled approximately 115.0938 NEAR. Its 6,441 failed receipts accounted for 1.0978 NEAR, or 0.95% of those costs. Failures represented 1.56% of the account's transactions.
+Costs cover initial receipts only, grouped by transaction submission
+week. They exclude conversion costs and downstream receipts.
+Amounts are approximate because source cost fields use floating-point
+storage.
 
-Failed execution therefore contributed recorded costs even when the initial receipt did not execute successfully. These amounts do not establish completed application activity, protocol revenue or value accruing to token holders.
-
-Costs cover initial receipts only, grouped by transaction submission week. They exclude transaction receipt-conversion costs and downstream receipts. Source cost fields use floating-point storage, so amounts are approximate. The selected accounts do not represent the whole network.
+The selected accounts do not represent the network. Their costs are
+not an additional component to add to network-wide receipt totals.
 
 Query: `sql/27_growth_account_execution_costs.sql`
 Results: `results/27_growth_account_execution_costs_2026-08-24_to_2026-10-18.csv`
 
 ## 26 October 2026 — Daily Total Supply Checks
 
-I examined daily block records from 23 August through 18 October. The closing block on 23 August provides the baseline immediately before the primary eight-week observation period.
+I examined block records for 57 dates from 23 August to 18 October.
+The closing observation on 23 August provides the opening baseline.
 
-All 57 dates contained records. Within each day, block counts matched distinct block heights and hashes. No missing heights, hashes or timestamps, timestamp-date mismatches, or missing or invalid supply values were found.
+All dates contained records. Daily counts matched distinct block
+heights and hashes. No missing heights, hashes or timestamps,
+timestamp-date mismatches, or invalid supply values were found.
 
-Each day's highest recorded block also had its latest timestamp. All closing observations were within one second of the following UTC midnight. These checks do not independently establish that every produced block was indexed.
+Each day's highest recorded block had its latest timestamp.
+Closing observations were within one second of the following UTC
+midnight. These checks do not prove every produced block was indexed.
 
-Observed closing total supply increased from approximately 1,304,386,568.87 NEAR on 23 August to 1,309,322,552.85 NEAR on 18 October.
+Closing total supply increased from approximately 1,304,386,568.87 NEAR
+to 1,309,322,552.85 NEAR.
 
-The net increase was approximately 4,935,983.98 NEAR, or 0.3784%. All 56 daily changes were positive and reconciled to the endpoint difference.
+The net increase was approximately 4,935,983.98 NEAR, or 0.3784%.
+All 56 daily changes were positive and reconciled to the endpoints.
 
-These figures measure observed net supply movement. They do not separately quantify gross issuance, permanent burning or the causes of supply changes. Total supply is not circulating supply, and changes in staking or storage commitments should not automatically be interpreted as changes in total supply.
+This measures observed net total-supply movement, not separate gross
+issuance, permanent burning or circulating supply. Staking and storage
+commitments are not automatically changes in total supply.
 
-Supply fields use floating-point storage, so converted amounts are approximate. The endpoints are the last recorded blocks of their respective dates.
+Amounts are approximate and use the last recorded blocks of each date.
 
 Query: `sql/28_daily_supply_checks.sql`
 Results: `results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv`
 
 ## 27 October 2026 — Validator Balance Changes and Supply Reconciliation
 
-I investigated whether account-change records could help explain the observed total-supply increase.
+I investigated account-change records as a possible explanation for
+observed supply movement.
 
-On 24 August, four update reasons were present: receipt_processing, action_receipt_gas_reward, transaction_processing and validator_accounts_update. Validator updates comprised 1,860 records affecting 465 accounts at four block heights.
+On 24 August, four update reasons appeared: receipt_processing,
+action_receipt_gas_reward, transaction_processing and
+validator_accounts_update.
 
-All 1,860 validator updates matched a usable previous account record in the selected lookup window. Their combined staked and nonstaked balances increased by approximately 108,245.80 NEAR.
+Validator updates comprised 1,860 records affecting 465 accounts at
+four block heights. All matched usable previous records. Combined
+staked and nonstaked balances increased approximately 108,245.80 NEAR.
 
-Forty comparisons showed decreases, totalling approximately 0.000000000580 NEAR. Their size is consistent with floating-point precision effects; they do not establish meaningful slashing or burning.
+Forty comparisons showed decreases totalling approximately
+0.000000000580 NEAR. Their scale was consistent with floating-point
+precision effects rather than evidence of meaningful slashing or burning.
 
-I extended the comparison across 24 August–18 October, using records from 23 August as additional history. All 83,864 validator updates matched usable previous records across all 56 dates.
+Across 24 August–18 October, all 83,864 validator updates matched
+usable previous records, using 23 August as additional history.
 
-The raw net balance increase associated with validator updates was approximately 4,919,384.47 NEAR. No individual decrease exceeded the analytical tolerance of 0.000001 NEAR. Raw changes and amounts within the tolerance were retained separately. This tolerance is not a protocol rule or a guarantee of source accuracy.
+The raw validator-update net balance increase was approximately
+4,919,384.47 NEAR. No individual decrease exceeded 0.000001 NEAR.
+Raw changes and within-tolerance amounts were retained separately.
 
-Separately, 7,930,886 block records across the primary period matched their recorded predecessor hashes. Observed positive supply movements totalled approximately 4,990,242.56 NEAR, while decreases totalled 54,258.58 NEAR. Their difference reconciled to the 4,935,983.98 NEAR net supply increase in result 28.
+The tolerance is an analytical choice, not a protocol rule or guarantee
+of source accuracy.
 
-Positive block-level supply movements exceeded the measured validator-update balance increase by approximately 70,858.09 NEAR. The net supply increase exceeded it by approximately 16,599.51 NEAR. These differences remain unresolved.
+Separately, 7,930,886 block records matched their recorded predecessor
+hashes. Positive supply movements totalled approximately 4,990,242.56 NEAR
+and decreases 54,258.58 NEAR, reconciling to the net increase in result 28.
 
-The measurements should not be labelled complete gross issuance or permanent burning. Increases and reductions can offset within a block, and matching available account records does not independently establish complete economic-flow coverage.
+Positive movements exceeded the validator-update increase by
+70,858.09 NEAR. The net supply increase exceeded it by 16,599.51 NEAR.
+These differences remained unresolved.
 
-The chunks schema contains gas usage but no explicit issuance or token-burning amount. I have paused further decomposition and retained the reconciliation gap as a measurement limitation.
+The measurements were not classified as complete gross issuance or
+permanent burning. Effects can offset within a block, and matching
+available records does not prove complete economic-flow coverage.
 
-All amounts derived from floating-point balance and supply fields are approximate.
+The inspected chunks schema contained gas usage but no explicit
+issuance or token-burning amount. Further decomposition was paused
+with the gap retained in the research record.
 
-Queries: `sql/29_inspect_account_change_reasons.sql`, `sql/30_inspect_validator_balance_changes.sql`, `sql/31_inspect_negative_validator_changes.sql`, `sql/32_daily_validator_balance_changes.sql`, `sql/33_daily_block_supply_movements.sql`
+All amounts derived from floating-point fields are approximate.
 
-Results: `results/29_account_change_reasons_2026-08-24.csv`, `results/30_validator_balance_changes_2026-08-24.csv`, `results/31_negative_validator_changes_2026-08-24.csv`, `results/32_daily_validator_balance_changes_2026-08-24_to_2026-10-18.csv`, `results/33_daily_block_supply_movements_2026-08-24_to_2026-10-18.csv`
+Queries:
+
+- `sql/29_inspect_account_change_reasons.sql`
+- `sql/30_inspect_validator_balance_changes.sql`
+- `sql/31_inspect_negative_validator_changes.sql`
+- `sql/32_daily_validator_balance_changes.sql`
+- `sql/33_daily_block_supply_movements.sql`
+
+Results:
+
+- `results/29_account_change_reasons_2026-08-24.csv`
+- `results/30_validator_balance_changes_2026-08-24.csv`
+- `results/31_negative_validator_changes_2026-08-24.csv`
+- `results/32_daily_validator_balance_changes_2026-08-24_to_2026-10-18.csv`
+- `results/33_daily_block_supply_movements_2026-08-24_to_2026-10-18.csv`
 
 ## 27 October 2026 — Weekly Economic Comparison
 
-I combined the saved weekly activity and execution-cost results with daily supply movements and validator-update balance changes. No additional BigQuery scan was required.
+I combined saved activity and receipt-cost results with daily supply
+movements and validator-update balance changes. No new scan was required.
 
-All eight complete weeks reconciled to results 14, 28, 32 and 33. Weekly supply changes used the previous Sunday's closing supply as the opening baseline and reconciled to the full-period endpoint difference.
+All eight weeks reconciled to results 14, 28, 32 and 33.
+Weekly supply changes used the preceding Sunday's closing supply
+and reconciled to the full-period endpoint difference.
 
-Between the first and final weeks, transactions increased 3.69%, receipt execution outcomes increased 66.85%, and recorded receipt execution costs increased 82.73%. Average recorded cost per receipt increased 9.52%.
+Between the first and final weeks:
 
-The comparison shows that receipt volume and average recorded cost per receipt both increased between the endpoints. Transaction submissions alone therefore provide an incomplete description of the execution-cost increase. These results do not establish the underlying causes or match individual transactions to complete execution chains.
+- Transactions increased 3.69%.
+- Receipt outcomes increased 66.85%.
+- Recorded receipt costs increased 82.73%.
+- Average recorded cost per receipt increased 9.52%.
 
-Observed total supply increased approximately 4,935,983.98 NEAR during the period. Measured validator-update net balance changes totalled 4,919,384.47 NEAR, leaving an unresolved difference of 16,599.51 NEAR.
+Receipt volume and average costs both increased. This describes
+arithmetic relationships, not their causes or matched transaction-chain
+costs.
 
-Recorded execution costs, observed supply movements and validator-update balance changes remain separate measurements. Their comparison does not establish complete gross issuance, permanent burning, protocol revenue or holder returns.
+Observed supply increased 4,935,983.98 NEAR. Validator-update balances
+increased 4,919,384.47 NEAR, leaving an unresolved 16,599.51 NEAR gap.
 
-Decimal arithmetic preserves the precision of exported values during aggregation; it does not restore precision lost in the floating-point source fields.
+Costs, supply movements and validator balances remain separate measures.
+They do not establish complete issuance, burning, revenue or holder
+returns.
+
+Decimal arithmetic preserves exported precision during aggregation;
+it does not restore precision absent from floating-point source fields.
 
 Script: `analysis/06_weekly_economic_comparison.py`
 Results: `results/34_weekly_economic_comparison_2026-08-24_to_2026-10-18.csv`
 
 ## 27 October 2026 — Account Profiles
 
-I combined the saved weekly signing-account, destination and action
-results into five account profiles covering eight weeks each.
+I combined saved signing-account, destination and action results into
+five profiles covering eight weeks each.
 
-All 40 account-weeks matched their baseline transaction totals.
-The exported top-20 receiver counts reconciled to their reported totals,
-and those totals plus the outside-top-20 remainder matched each
-account's weekly transactions.
+All forty account-weeks matched baseline transaction totals.
+Top-twenty receiver rows reconciled to their reported totals, and those
+totals plus the outside-group remainder matched weekly transactions.
 
-Transactions with and without matching action records also reconciled
-to weekly totals. Each account's eight weekly transaction counts matched
-its reported full-period total.
+Transactions with and without action records reconciled to weekly
+totals. Each account's eight weeks matched its full-period total.
 
-Profiles include attribution evidence separately from observed activity.
-NEAR Intents has a documented contract role, while the Omni Bridge
-account has a documented relayer role. Service attribution for the other
-three accounts remains unverified.
+Attribution is separate from activity. NEAR Intents has a documented
+contract role, and the Omni Bridge account has a documented relayer role.
+The other three service associations remain unverified.
 
-These profiles describe transactions signed by selected accounts, not
-complete application activity or application user counts. Action-category
-transaction counts can overlap and must not be summed.
+Profiles describe transactions signed by selected accounts, not complete
+application activity or user counts. Action-category transaction counts
+can overlap.
+
+The subsequent profile clarification describes observed delegated
+transactions and function calls for sweat-relayer.near without assigning
+a verified service affiliation.
 
 Script: `analysis/07_account_profiles.py`
 Results: `results/35_account_profiles_2026-08-24_to_2026-10-18.json`
@@ -552,51 +815,48 @@ Attribution: `notes/account_attribution.md`
 
 ## 28 October 2026 — Transaction Receipt-Conversion Costs
 
-I measured recorded transaction receipt-conversion costs across the
-eight-week observation period.
+The export covered eight complete weeks and reconciled to 44,284,794
+transactions. Weekly transaction counts matched distinct hashes.
 
-The export contains eight complete weeks and reconciles to 44,284,794
-transactions. Each week's transaction count equals its distinct
-transaction-hash count.
-
-There were no missing, negative or nonfinite conversion-cost values.
-Reported average costs reconcile to weekly costs divided by transactions.
+Missing, negative and nonfinite cost counts were zero.
+Reported averages reconciled to weekly costs divided by transactions.
 
 Recorded conversion costs totalled approximately 2,110.82 NEAR.
-Weekly costs increased from 213.34 NEAR to 413.28 NEAR, a rise of 93.72%
-between the endpoints. The calculation does not establish why costs changed.
+Weekly costs increased from 213.34 NEAR to 413.28 NEAR: +93.72%
+between the endpoints.
 
-These costs describe transaction receipt conversion. They remain separate
-from recorded receipt execution costs until the combined comparison is
-prepared. They are not independently measured protocol revenue or
-permanent token burning.
+This measured transaction receipt conversion separately from receipt
+execution. It did not establish the causes of the change, protocol
+revenue or permanent burning.
 
 Query: `sql/34_weekly_transaction_conversion_costs.sql`
 Results: `results/36_weekly_transaction_conversion_costs_2026-08-24_to_2026-10-18.csv`
 
 ## 28 October 2026 — Combined Recorded Execution Spending
 
-I combined transaction receipt-conversion costs with recorded receipt
-execution costs across eight complete weeks.
+I combined transaction conversion and receipt execution costs across
+eight complete weeks.
 
-Weekly dates and transaction totals matched the existing economic
-comparison. Conversion-cost coverage checks passed, and reported
-per-transaction and per-receipt averages reconciled.
+Dates and transaction totals matched the existing economic comparison.
+Conversion coverage checks passed, and per-transaction and per-receipt
+averages reconciled.
 
-Recorded transaction conversion costs totalled approximately
-2,110.8191 NEAR. Receipt execution costs totalled 65,878.0861 NEAR.
-Combined recorded execution spending was 67,988.9052 NEAR.
+| Component | Recorded spending |
+|---|---:|
+| Transaction conversion | 2,110.8191 NEAR |
+| Receipt execution | 65,878.0861 NEAR |
+| Combined | 67,988.9052 NEAR |
 
-Conversion contributed 3.1047% of combined spending. Combined weekly
-spending increased 83.13% between the first and final weeks.
+Conversion contributed 3.1047% of combined spending.
+Combined weekly spending increased 83.13% between the endpoints.
 
-The comparison combines calendar-period measurements: conversion costs
-use transaction submission dates, while receipt costs use execution
-dates. It does not match transactions to their complete execution chains.
+Conversion uses transaction submission dates; receipt costs use
+execution dates. This is a calendar-period comparison, not a matched
+calculation of complete transaction-chain fees.
 
-These amounts measure recorded execution expenditure in NEAR. They do
-not establish permanent burning, protocol revenue, persistent token
-holdings or economic value accruing to holders.
+The amounts measure recorded execution expenditure in NEAR.
+They do not independently establish permanent burning, protocol revenue,
+persistent token holdings, external purchases or holder returns.
 
 Script: `analysis/08_execution_spending.py`
 Results: `results/37_weekly_execution_spending_2026-08-24_to_2026-10-18.csv`
