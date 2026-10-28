@@ -1061,3 +1061,69 @@ The local CLI was previously unavailable. Review the dry-run byte
 estimate and schema validation before separately authorising extraction.
 Filtering to eight Sundays limits the date scope but does not establish
 the billed scan size without a dry run.
+
+## 28 October 2026 — Weekly Coverage Test and Investigation Closure
+
+Saved the supplied export unchanged as
+`results/41_weekly_fixed_population_locked_balances_2026-08-24_to_2026-10-18.json`.
+Local validation compared it with SQL 37 and pilot result 40. No further
+BigQuery queries or RPC requests were made during this review.
+
+All eight expected weeks and Sunday observations are present. Every
+weekly account audit retains the same 465 pilot identifiers, including
+missing entries. Recomputed population fingerprints match result 40 and
+the fingerprint required by SQL 37.
+
+| Week starting | Sunday observation | Pilot accounts observed | Missing pilot accounts | Additional observed accounts | Fixed-population total |
+|---|---|---:|---:|---:|---|
+| 24 August | 30 August | 465 | 0 | 2 | 625,909,908.15 NEAR |
+| 31 August | 6 September | 464 | 1 | 4 | Null |
+| 7 September | 13 September | 462 | 3 | 6 | Null |
+| 14 September | 20 September | 454 | 11 | 6 | Null |
+| 21 September | 27 September | 454 | 11 | 7 | Null |
+| 28 September | 4 October | 448 | 17 | 9 | Null |
+| 5 October | 11 October | 444 | 21 | 10 | Null |
+| 12 October | 18 October | 436 | 29 | 12 | Null |
+
+All dates are in 2026. The displayed complete total is rounded; its
+account audit reconciles exactly to the exported value of
+625,909,908.15086654542189221117952 NEAR using decimal arithmetic.
+
+All 3,627 observed fixed-population records contain exactly one update,
+valid indices and finite, nonnegative balances. The 93 missing
+account-week entries remain explicitly missing. Missing-account lists
+reconcile to the audits; additional-account lists contain distinct
+identifiers outside the pilot population and reconcile to the reported
+membership counts. Additional accounts are excluded from the fixed total.
+Membership differs from the pilot at every selected height, including
+30 August, which has complete pilot coverage plus two additional accounts.
+
+Only 30 August provides a complete fixed-population observation. The
+seven subsequent observations have missing pilot accounts, false
+fixed-population validation flags and null totals, with no partial total
+exposed. This demonstrates the missing-record safeguard. No duplicate or
+invalid observed records occurred, so those SQL safeguards were not
+exercised by this export.
+
+An unresolved timing discrepancy occurs in all eight rows:
+`seconds_before_next_utc_midnight` is one second below the interval
+recalculated from the exported timestamps. Its cause has not been
+established. Balance reconciliation is unaffected. The export alone also
+cannot independently establish that each selected height was the day's
+last qualifying validator update.
+
+The successful one-day pilot established internally consistent recorded
+balances for the same observed accounts at four heights on 24 August.
+The weekly coverage test did not establish a complete comparable series:
+this export does not support an eight-week fixed-population balance trend.
+Missing updates do not establish zero balances or validator departure.
+No missing states were reconstructed, no population was changed and no
+observations were summed across time. Balance differences are not net
+staking inflows, and the population is not independently established as
+complete network coverage. Historical ingestion provenance, completeness
+and source FLOAT precision remain qualified as documented for the pilot;
+BIGNUMERIC conversion does not restore lost source precision.
+
+This bounded investigation is closed with the successful pilot and
+unsuccessful weekly coverage test retained separately. No staking trend
+has been added to the dashboard or investment thesis.
