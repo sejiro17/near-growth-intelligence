@@ -718,7 +718,7 @@ with st.sidebar:
         "execution-chain results.\n"
         "- Execution spending is separate from protocol revenue "
         "and holder returns.\n"
-        "- Eight weeks do not establish long-term adoption."
+        "- The observation windows do not establish long-term adoption."
     )
 
 a, b, c = st.columns(3)
@@ -844,17 +844,17 @@ with growth_tab:
     st.subheader("Fifteen-week transaction comparison")
     st.caption("6 July–18 October 2026 · Transaction activity only · Saved results 38 and 39")
     left, middle, right = st.columns(3)
-    left.metric("Transactions · fifteen-week endpoint change",
+    left.metric("Transaction change",
                 f"{percentage_change(extended, 'transactions'):+.2f}%")
-    middle.metric("Active signing accounts · fifteen-week endpoint change",
+    middle.metric("Active account change",
                  f"{percentage_change(extended, 'weekly_active_signing_accounts'):+.2f}%")
     top_ten_endpoint_change = (
         extended.iloc[-1]["top_10_accounts_transaction_share_pct"]
         - extended.iloc[0]["top_10_accounts_transaction_share_pct"]
     )
-    right.metric("Weekly top-ten share · endpoint change",
-                 f"{top_ten_endpoint_change:+.2f} percentage points")
-    st.caption("Endpoints compare 6–12 July with 12–18 October.")
+    right.metric("Top-ten share change",
+                 f"{top_ten_endpoint_change:+.2f} pp".replace("-", "−"))
+    st.caption("Endpoints compare 6–12 July with 12–18 October · pp = percentage points.")
     labels = {
         "average_weekly_transactions": "Average weekly transactions",
         "average_weekly_active_signing_accounts": "Average weekly active signing accounts",
@@ -864,10 +864,13 @@ with growth_tab:
     display = extended_comparison.copy()
     display["Measure"] = display["metric"].map(labels)
     display["Change"] = display.apply(
-        lambda row: (f"{row['absolute_change']:+.4f} percentage points"
+        lambda row: (f"{row['absolute_change']:+.2f} pp"
                      if row["metric"] == "weekly_top_10_transaction_share_pct"
                      else f"{row['relative_change_pct']:+.2f}%"), axis=1,
     )
+    # Format a presentation copy; retain full precision in the source data.
+    for field in ("first_period_value", "final_period_value"):
+        display[field] = display[field].map(lambda value: f"{value:,.2f}")
     st.dataframe(display.rename(columns={
         "first_period_value": "6 July–2 August",
         "final_period_value": "21 September–18 October",
