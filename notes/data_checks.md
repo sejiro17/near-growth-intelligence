@@ -1127,3 +1127,34 @@ BIGNUMERIC conversion does not restore lost source precision.
 This bounded investigation is closed with the successful pilot and
 unsuccessful weekly coverage test retained separately. No staking trend
 has been added to the dashboard or investment thesis.
+
+## 28 October 2026 — Intents Revenue-Attribution Feasibility
+
+No historically attributable Intents revenue-distribution cycle was
+established for 24 August–18 October 2026. Asset, amount, source and
+recipient accounts, applicable historical distribution rule and a
+transaction or unambiguous cycle reference remain unverified. This does
+not establish that distributions did not occur.
+
+The [official Verifier fee interface](https://github.com/near/intents/blob/master/contracts/defuse/src/fees.rs)
+exposes configurable fees and a configurable collector. These Verifier
+fees are not automatically the broader Intents revenue-sharing mechanism.
+Mutable repository source does not establish historical deployment or
+configuration. The [official contract README](https://github.com/near/intents/blob/master/README.md)
+describes customer deposits, swaps and withdrawals; ordinary transfers
+cannot establish revenue rather than customer principal, solver
+settlements, refunds or internal movements.
+
+Some official sources were inaccessible during the assessment:
+[Evolving NEAR Tokenomics](https://near.org/blog/evolving-near-tokenomics),
+Intents documentation and generated contract documentation returned access
+denials. Their historical claims and any payout references could not be
+independently rechecked. Existing attributed descriptions of documented
+mechanisms remain separate from verification of a historical cycle.
+
+Historical beneficiaries and any direct, indirect or discretionary
+connection to NEAR holders were not established. Implemented buybacks or
+guaranteed holder benefits cannot be inferred. Extraction was not
+recommended because historical attribution remained unresolved. The
+assessment stopped without extraction code, BigQuery queries or RPC
+requests.
