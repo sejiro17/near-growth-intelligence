@@ -881,3 +881,30 @@ The extended period contained 79,171,891 transactions. Between the first and fin
 The longer window shows that endpoint growth depends on the selected baseline. Lower signing-account concentration does not independently establish broader user demand.
 
 This extension covers transaction activity only. It does not extend receipt execution costs or resolve the earlier receipt-matching differences. Signing accounts remain identifiers rather than verified individuals.
+
+## 28 October 2026 — Four-Week Activity Comparison
+
+Compared 6 July–2 August with 21 September–18 October using the fifteen-week transaction export.
+
+Script: `analysis/09_extended_activity_comparison.py`
+
+Source: `results/38_extended_weekly_signing_activity_2026-07-06_to_2026-10-18.csv`
+
+Output: `results/39_extended_activity_comparison_2026-07-06_to_2026-10-18.csv`
+
+The script validated fifteen consecutive complete weeks, count bounds, reported ratios and weekly account changes before calculating the comparison.
+
+| Measure | First four weeks | Final four weeks | Change |
+|---|---:|---:|---:|
+| Average weekly transactions | 5,132,084.50 | 5,973,048.50 | +16.39% |
+| Average weekly active signing accounts | 156,738.50 | 281,297.00 | +79.47% |
+| Active days per active account-week | 4.0409 | 1.9158 | −52.59% |
+| Weekly top-ten transaction share | 67.3087% | 52.3887% | −14.9200 percentage points |
+
+The four-week averages show higher transaction and account activity, whereas the first-to-final-week comparison shows declines. The direction of the growth comparison therefore depends on the periods selected.
+
+Active days per active account-week decreased despite higher average weekly account counts. This describes aggregate participation frequency, not changes in the behaviour of a fixed account cohort.
+
+The final comparison period includes the account spike. The figures have not been adjusted for deletion activity and do not establish sustained adoption or user retention.
+
+Average weekly active accounts are not unique accounts across four weeks. Participation frequency is weighted across account-weeks. The top-ten share is weighted by transactions, with accounts ranked separately each week.
