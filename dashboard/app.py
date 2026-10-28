@@ -695,10 +695,19 @@ st.write(
     "more persistent participation?"
 )
 
+st.markdown(
+    "**Reading the comparisons · 2026 (UTC)**\n\n"
+    "- **Eight-week research:** 24 August–18 October. "
+    "Detailed growth, cohort, execution and economic analysis.\n"
+    "- **Fifteen-week transaction context:** 6 July–18 October. "
+    "Broader transaction activity and signing-account comparisons.\n"
+    "- **Four-week averages:** 6 July–2 August versus 21 September–18 October. "
+    "Two groups of four weeks within the transaction context, rather than "
+    "individual endpoints."
+)
 st.caption(
-    "Transaction comparison: 6 July–18 October 2026 · Fifteen UTC weeks. "
-    "Economics and detailed execution analysis: 24 August–18 October 2026. "
-    "Source: public NEAR mainnet data in Google BigQuery"
+    "Economic measurements cover the eight-week research window only. "
+    "Source: saved public NEAR mainnet exports from Google BigQuery."
 )
 
 with st.sidebar:
@@ -722,16 +731,17 @@ with st.sidebar:
         "- The observation windows do not establish long-term adoption."
     )
 
+st.subheader("Eight-week research · final week")
 a, b, c = st.columns(3)
 
 a.metric(
-    "Final-week transactions",
+    "Transactions",
     f"{int(last['transactions']):,}",
     f"{percentage_change(weekly, 'transactions'):+.2f}% vs 24–30 August",
     delta_color="off",
 )
 b.metric(
-    "Final-week active signing accounts",
+    "Active signing accounts",
     f"{int(last['weekly_active_signing_accounts']):,}",
     (
         f"{percentage_change(weekly, 'weekly_active_signing_accounts'):+.2f}% "
@@ -740,7 +750,7 @@ b.metric(
     delta_color="off",
 )
 c.metric(
-    "Final-week combined execution spending",
+    "Combined execution spending",
     (
         f"{spending.iloc[-1]['combined_recorded_execution_spending_near']:,.2f}"
         " NEAR"
@@ -749,7 +759,7 @@ c.metric(
     delta_color="off",
 )
 st.caption(
-    "The three metrics above cover the original 24 August–18 October period. "
+    "Final week: 12–18 October; changes compare with 24–30 August. "
     "Combined spending includes transaction receipt conversion "
     "and receipt execution recorded during the calendar period."
 )
@@ -770,7 +780,7 @@ with st.expander(
     "What supports the assessment, and what would change it?"
 ):
     st.markdown(
-        "**Participation (eight weeks: 24 August–18 October 2026):** Final-week transactions were "
+        "**Participation · Eight-week research:** Final-week transactions were "
         f"{percentage_change(weekly, 'transactions'):+.2f}% versus "
         "the first week, while weekly active signing accounts were "
         f"{percentage_change(weekly, 'weekly_active_signing_accounts'):+.2f}%. "
@@ -784,13 +794,13 @@ with st.expander(
         "an ordinary user-churn rate."
     )
     st.markdown(
-        "**Concentration (eight weeks: 24 August–18 October 2026):** The ten busiest signing accounts "
+        "**Concentration · Eight-week research:** The ten busiest signing accounts "
         f"generated {top_ten_min:.2f}%–{top_ten_max:.2f}% of weekly "
         "transactions. Their roles matter when distinguishing "
         "shared infrastructure from independent participation."
     )
     st.markdown(
-        f"**Execution use (eight weeks: 24 August–18 October 2026):** Combined recorded spending totalled "
+        f"**Execution use · Eight-week research:** Combined recorded spending totalled "
         f"**{combined_total:,.2f} NEAR**, comprising "
         f"{conversion_total:,.2f} NEAR in transaction conversion "
         f"and {receipt_total:,.2f} NEAR in receipt execution. "
@@ -842,20 +852,21 @@ with st.expander(
 
 
 with growth_tab:
-    st.subheader("Fifteen-week transaction comparison")
+    st.subheader("Fifteen-week transaction context")
     st.caption("6 July–18 October 2026 · Transaction activity only · Saved results 38 and 39")
     left, middle, right = st.columns(3)
-    left.metric("Transaction change",
+    left.metric("Endpoint transactions",
                 f"{percentage_change(extended, 'transactions'):+.2f}%")
-    middle.metric("Active account change",
+    middle.metric("Endpoint active accounts",
                  f"{percentage_change(extended, 'weekly_active_signing_accounts'):+.2f}%")
     top_ten_endpoint_change = (
         extended.iloc[-1]["top_10_accounts_transaction_share_pct"]
         - extended.iloc[0]["top_10_accounts_transaction_share_pct"]
     )
-    right.metric("Top-ten share change",
+    right.metric("Endpoint top-ten share",
                  f"{top_ten_endpoint_change:+.2f} pp".replace("-", "−"))
     st.caption("Endpoints compare 6–12 July with 12–18 October · pp = percentage points.")
+    st.subheader("Four-week averages")
     labels = {
         "average_weekly_transactions": "Average weekly transactions",
         "average_weekly_active_signing_accounts": "Average weekly active signing accounts",
@@ -890,7 +901,7 @@ with growth_tab:
         "weighted by transactions, with membership ranked each week. "
         "These measures do not establish user retention or independent demand."
     )
-    st.subheader("Original eight-week activity and economics")
+    st.subheader("Eight-week research")
     st.caption("24 August–18 October 2026 · All spending, supply and detailed execution measurements remain within this period.")
     st.subheader("Activity and spending followed different paths")
     st.write(
@@ -950,6 +961,7 @@ with growth_tab:
 
 
 with drivers_tab:
+    st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Where did transaction growth come from?")
     st.write(
         "Keep the first week's ten busiest signing accounts fixed "
@@ -1226,6 +1238,7 @@ with drivers_tab:
 
 
 with returns_tab:
+    st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Did accounts participate in later weeks?")
     st.write(
         "Each cohort contains all signing accounts active in its "
@@ -1364,6 +1377,7 @@ with returns_tab:
 
 
 with concentration_tab:
+    st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("How broadly was activity distributed?")
     signer_shares = {
         "top_1_account_transaction_share_pct": "Top signing account",
@@ -1451,6 +1465,7 @@ with concentration_tab:
 
 
 with costs_tab:
+    st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Recorded execution spending")
     st.write(
         "Combine transaction receipt-conversion costs and receipt "
@@ -1676,6 +1691,7 @@ with costs_tab:
 
 
 with decisions_tab:
+    st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Turn the evidence into investigation priorities")
     st.write(
         "Choose what needs checking before relying on a growth claim, "
@@ -1817,6 +1833,7 @@ with decisions_tab:
 
 
 with explorer_tab:
+    st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Account explorer")
     st.write(
         "Inspect selected signing accounts, their weekly activity, "
