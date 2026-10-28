@@ -1,8 +1,6 @@
 # NEAR Growth Intelligence — Product Requirements
 
-Status: hosted interactive dashboard backed by saved, dated research exports.
-No automatic extraction or daily refresh. Zero additional project spending is
-a firm requirement; using the dashboard requires no paid services or cloud credentials.
+A hosted interactive research dashboard. The dashboard uses saved, dated research exports. Interactions do not query external data sources.
 
 ## Problem, users and decisions
 
@@ -26,10 +24,10 @@ persistent demand and holder benefits.
 | Transaction comparison | 6 July–18 October 2026 | Fifteen complete weeks; 79,171,891 transactions. Show endpoints and first-four-week versus final-four-week comparisons. |
 | Economics and detailed investigations | 24 August–18 October 2026 | Eight complete weeks; 44,284,794 transactions. Includes returns, growth contributors, execution, profiles and economic measurements. |
 
-Supply uses the 23 August closing baseline. Explain baseline sensitivity and
-the final period's account spike. Never refresh historical exports or conclusions.
+These windows are fixed research observations. Supply uses the 23 August
+closing baseline. Explain baseline sensitivity and the final period's account spike.
 
-Preserve all seven dashboard views:
+Provide seven dashboard views:
 
 | View | Required purpose |
 |---|---|
@@ -44,49 +42,47 @@ Preserve all seven dashboard views:
 Evidence: [research plan](../notes/research_plan.md),
 [thesis](../notes/investment_thesis.md), [data checks](../notes/data_checks.md).
 
-## Saved-data operation
+## Requirements
 
-- Read only the included CSV and JSON research exports. Dashboard visits must
-  not submit BigQuery queries, make RPC requests or extract new source data.
-- Display the fixed observation periods explicitly; do not describe the data
-  as current, daily refreshed or real-time.
-- Keep local interaction, filters and charts independent of cloud authentication,
-  billing accounts and paid services. Preserve credential-ignore rules.
-- Preserve existing data validation and report missing or invalid research
-  inputs rather than fabricating or silently replacing observations.
-- Keep historical SQL and reproduction scripts available for research review.
-  Reproducing derived tables from saved exports requires no new source queries;
-  optional source extraction may incur charges and is not required to use the app.
+- Use included CSV and JSON research exports for dashboard interactions,
+  filters, charts and downloads, without external queries or cloud credentials.
+- Display fixed observation periods explicitly and reconcile figures with the
+  saved evidence. Report missing or invalid inputs rather than fabricating data.
+- Provide evidence links and reproduction instructions. Derived-table scripts
+  use saved exports; optional SQL extraction may incur BigQuery charges and is
+  not required to use the dashboard.
+- Protect credentials through ignore rules; keep secrets out of code, exports
+  and Git history. Preserve restricted repository and hosted-dashboard access.
 
-## Explicit exclusions
+## Exclusions and interpretation boundaries
 
-No daily-refresh feature, executable refresh workflow, automatic extraction,
-real-time feed, visitor queries, paid-service setup, unbounded backfills, fabricated
-data, historical rewrites, new delivery infrastructure or access changes.
-No verified user counts, complete-chain success, valuation forecasts, guaranteed
-holder benefits or inferred net staking inflows. Staking extension results are
-inconclusive; historical distributions and buybacks remain unverified, not disproven.
+Live data feeds and automatic source extraction are outside the product scope.
+Signing accounts are not verified people. Initial receipt outcomes do not
+establish complete-chain success. The product does not provide valuation
+forecasts or guaranteed holder benefits.
 
-## Acceptance checklist
+Recorded execution spending measures token use, not persistent token demand,
+protocol revenue or holder returns. Supply changes remain incompletely
+reconciled. Staking extension results are inconclusive; balance changes are not
+net staking inflows. Historical distributions and buybacks remain unverified,
+not disproven.
 
-Local checks, distinct from hosted deployment verification:
+## Acceptance criteria
 
-- [x] All seven historical views render from the saved exports without app errors.
-- [x] Historical research, exports, validation scripts and investment findings remain unchanged.
-- [x] Refresh workflow, runner, SQL, dependencies, tests and dashboard integration are removed.
-- [x] No executable refresh workflow remains; credential-ignore rules are preserved.
-- [x] README and product requirements describe saved-data operation and fixed scopes.
-- [ ] Verify the hosted Streamlit deployment serves the reviewed revision and all seven views.
-- [ ] Confirm intended reviewers can access the hosted dashboard with existing restrictions.
-
-Local checks do not establish deployed availability or reviewer access. Live cloud
-SQL, WIF authentication and refresh delivery are excluded, not readiness requirements.
+- All seven views render from saved exports without application errors.
+- Figures reconcile with saved evidence and use consistent units and definitions.
+- Fixed research dates and interpretation boundaries are explicit.
+- Evidence links resolve and downloads contain the corresponding displayed data.
+- Dashboard interactions require no external queries or cloud credentials.
+- Credentials remain excluded from repository files and exports.
 
 ## Submission readiness
 
-- Align figures, scopes, evidence links, reproduction commands and limitations
-  across README, notes and dashboard. Present counterevidence and a conditional thesis.
-- Verify intended reviewers can access restricted materials through authorised
-  channels; preserve repository/dashboard privacy.
-- Review the diff and local rendering checks before committing. Verify hosted
-  rendering after an authorised delivery, without enabling paid services or refresh.
+- Figures, scopes, reproduction commands and limitations agree across README,
+  notes and dashboard; the investment case includes counterevidence.
+- The hosted Streamlit deployment serves the intended revision and all seven views.
+- Intended reviewers can access the dashboard and evidence under existing
+  repository and dashboard restrictions.
+
+Local rendering and file-link checks do not establish hosted availability,
+reviewer access or deployed download behavior; these require hosted verification.

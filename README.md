@@ -4,7 +4,7 @@ An interactive research dashboard for investigating the quality of NEAR's activi
 
 I built this project to help analysts, ecosystem teams and developers examine what headline figures leave out: who contributes to activity, whether accounts return, how concentrated transactions are, and whether additional submissions translate into successful execution.
 
-Transaction research covers **6 July–18 October 2026: fifteen complete UTC weeks**, containing **79,171,891 transactions**. Economic measurements and detailed execution analysis remain scoped to **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**.
+Fixed transaction research observations cover **6 July–18 October 2026: fifteen complete UTC weeks**, containing **79,171,891 transactions**. Economic measurements and detailed execution analysis remain scoped to **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**.
 
 Across fifteen-week endpoints, transactions declined **10.63%** and weekly active signing accounts declined **24.65%**. First-four-week versus final-four-week averages increased **16.39%** and **79.47%**, respectively. Growth direction depends on the comparison period; the final four weeks include the account spike.
 
@@ -14,9 +14,9 @@ Across fifteen-week endpoints, transactions declined **10.63%** and weekly activ
 
 Access is currently restricted to authorised viewers. You can also run the dashboard locally using the instructions below.
 
-The hosted interactive dashboard reads saved, dated research exports. Opening or using it does not run BigQuery queries, make RPC requests or automatically extract new data. No paid services or cloud credentials are required to use it.
+The dashboard uses saved, dated research exports. Interactions do not query external data sources.
 
-See [product requirements](docs/product_requirements.md) for scope, interpretation boundaries and acceptance criteria. Automatic extraction and daily refresh are excluded; zero additional project spending is a requirement.
+See [product requirements](docs/product_requirements.md) for scope, interpretation boundaries and acceptance criteria.
 
 ## Three Findings Behind the Project — 24 August–18 October 2026
 
