@@ -573,3 +573,30 @@ permanent token burning.
 
 Query: `sql/34_weekly_transaction_conversion_costs.sql`
 Results: `results/36_weekly_transaction_conversion_costs_2026-08-24_to_2026-10-18.csv`
+
+## 28 October 2026 — Combined Recorded Execution Spending
+
+I combined transaction receipt-conversion costs with recorded receipt
+execution costs across eight complete weeks.
+
+Weekly dates and transaction totals matched the existing economic
+comparison. Conversion-cost coverage checks passed, and reported
+per-transaction and per-receipt averages reconciled.
+
+Recorded transaction conversion costs totalled approximately
+2,110.8191 NEAR. Receipt execution costs totalled 65,878.0861 NEAR.
+Combined recorded execution spending was 67,988.9052 NEAR.
+
+Conversion contributed 3.1047% of combined spending. Combined weekly
+spending increased 83.13% between the first and final weeks.
+
+The comparison combines calendar-period measurements: conversion costs
+use transaction submission dates, while receipt costs use execution
+dates. It does not match transactions to their complete execution chains.
+
+These amounts measure recorded execution expenditure in NEAR. They do
+not establish permanent burning, protocol revenue, persistent token
+holdings or economic value accruing to holders.
+
+Script: `analysis/08_execution_spending.py`
+Results: `results/37_weekly_execution_spending_2026-08-24_to_2026-10-18.csv`
