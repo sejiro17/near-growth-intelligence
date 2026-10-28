@@ -549,3 +549,27 @@ transaction counts can overlap and must not be summed.
 Script: `analysis/07_account_profiles.py`
 Results: `results/35_account_profiles_2026-08-24_to_2026-10-18.json`
 Attribution: `notes/account_attribution.md`
+
+## 28 October 2026 — Transaction Receipt-Conversion Costs
+
+I measured recorded transaction receipt-conversion costs across the
+eight-week observation period.
+
+The export contains eight complete weeks and reconciles to 44,284,794
+transactions. Each week's transaction count equals its distinct
+transaction-hash count.
+
+There were no missing, negative or nonfinite conversion-cost values.
+Reported average costs reconcile to weekly costs divided by transactions.
+
+Recorded conversion costs totalled approximately 2,110.82 NEAR.
+Weekly costs increased from 213.34 NEAR to 413.28 NEAR, a rise of 93.72%
+between the endpoints. The calculation does not establish why costs changed.
+
+These costs describe transaction receipt conversion. They remain separate
+from recorded receipt execution costs until the combined comparison is
+prepared. They are not independently measured protocol revenue or
+permanent token burning.
+
+Query: `sql/34_weekly_transaction_conversion_costs.sql`
+Results: `results/36_weekly_transaction_conversion_costs_2026-08-24_to_2026-10-18.csv`
