@@ -805,9 +805,8 @@ Profiles describe transactions signed by selected accounts, not complete
 application activity or user counts. Action-category transaction counts
 can overlap.
 
-The subsequent profile clarification describes observed delegated
-transactions and function calls for sweat-relayer.near without assigning
-a verified service affiliation.
+Observed activity for sweat-relayer.near includes delegated transactions
+and function calls; service affiliation remains unverified.
 
 Script: `analysis/07_account_profiles.py`
 Results: `results/35_account_profiles_2026-08-24_to_2026-10-18.json`
@@ -914,8 +913,8 @@ Average weekly active accounts are not unique accounts across four weeks. Partic
 Saved the supplied pilot export unchanged as
 `results/40_staking_balance_pilot_2026-08-24.json` and validated it locally
 against `sql/36_staking_balance_pilot.sql`. No new BigQuery query or RPC
-request was made during validation. The earlier CLI dry-run attempt could
-not start because `bq` was unavailable; no byte estimate was obtained.
+request was made during validation. No dry-run byte estimate was obtained
+during the initial local review.
 
 The measurement is **Protocol-locked balances recorded in observed
 validator updates.** It covers four selected heights on 24 August 2026.
@@ -981,8 +980,10 @@ The saved export's SHA-256 is
 
 ## 28 October 2026 — Proposed Eight-Week Fixed-Population Extension
 
-Prepared `sql/37_weekly_fixed_population_locked_balances.sql` for review.
-It has not been dry-run or executed; no extension results are claimed.
+At the design stage, `sql/37_weekly_fixed_population_locked_balances.sql`
+had not been dry-run or executed, and no extension results were available.
+The subsequent [completed coverage test](#28-october-2026--weekly-coverage-test-and-investigation-closure)
+records the validation of the supplied export and its coverage limitations.
 The period remains 24 August–18 October 2026, matching the original
 eight-week economic window.
 
@@ -1025,13 +1026,13 @@ not alone invalidate an otherwise complete fixed-population total.
 Error counters named `fixed` apply to the pilot accounts; the query does
 not validate or measure the additional accounts' balances as a cohort.
 
-After an authorised extraction, validation must confirm eight ordered
-weekly rows, the frozen population fingerprint, actual observation
-heights and times, exact one-record coverage, all diagnostics, and exact
-audit-to-total reconciliation. Review membership differences even when
-the fixed-population total passes. Do not compare an incomplete week as
-though it contained the same observed balance coverage. A passing query
-flag establishes structural consistency, not complete ingestion.
+The design-stage validation criteria cover eight ordered weekly rows,
+the frozen population fingerprint, actual observation heights and times,
+exact one-record coverage, all diagnostics, and exact audit-to-total
+reconciliation. Membership differences remain relevant even when the
+fixed-population total passes. Incomplete weeks do not provide comparable
+observed balance coverage. A passing query flag establishes structural
+consistency, not complete ingestion.
 
 Holding the pilot population fixed makes account composition comparable,
 but excludes later entrants and can leave gaps when original accounts
@@ -1039,13 +1040,13 @@ stop receiving qualifying updates. It therefore cannot describe the
 changing validator population as a whole. The pilot population is itself
 selected from observed update records, not independently established as
 complete network coverage. Eight weekly observations cannot establish
-long-term persistence or causation by application activity. Do not sum
-balance observations across time or describe differences as net staking
-inflows. Preserve the pilot's source-precision and provenance qualifications.
+long-term persistence or causation by application activity. Balances are
+point observations, not additive across time; differences do not identify
+net staking inflows. The pilot's source-precision and provenance
+qualifications also apply.
 
-From the repository root, the proposed dry run uses `us-east1` and the
-existing CLI billing-project configuration without overriding project
-or authentication settings:
+From the repository root, this reproducibility dry-run example uses
+`us-east1` and the reader's configured billing project and credentials:
 
 ```bash
 pilot_accounts_json=$(python3 -c 'import json; from pathlib import Path; rows=json.loads(Path("results/40_staking_balance_pilot_2026-08-24.json").read_text()); print(json.dumps(sorted(a["account_id"] for a in rows[0]["account_audit"])))')
@@ -1057,8 +1058,6 @@ bq query \
   < sql/37_weekly_fixed_population_locked_balances.sql
 ```
 
-The local CLI was previously unavailable. Review the dry-run byte
-estimate and schema validation before separately authorising extraction.
 Filtering to eight Sundays limits the date scope but does not establish
 the billed scan size without a dry run.
 
@@ -1066,8 +1065,9 @@ the billed scan size without a dry run.
 
 Saved the supplied export unchanged as
 `results/41_weekly_fixed_population_locked_balances_2026-08-24_to_2026-10-18.json`.
-Local validation compared it with SQL 37 and pilot result 40. No further
-BigQuery queries or RPC requests were made during this review.
+Local validation compared it with SQL 37 and pilot result 40, using the
+[design-stage sampling rule and validation criteria](#28-october-2026--proposed-eight-week-fixed-population-extension).
+No further BigQuery queries or RPC requests were made during this review.
 
 All eight expected weeks and Sunday observations are present. Every
 weekly account audit retains the same 465 pilot identifiers, including
