@@ -4,13 +4,13 @@
 
 NEAR's long-term investment case depends on applications and services using the network repeatedly, with that usage creating meaningful economic demand for the NEAR token.
 
-Execution fees provide one direct connection: network operations incur costs denominated in NEAR. Storage, staking and product-revenue mechanisms provide other possible connections, but their economic significance requires separate measurement.
+Repeated useful activity could create recurring expenditure in NEAR for execution and balance requirements for storage; network security also requires staked NEAR. These uses could support long-term token demand if their scale and persistence are economically meaningful after supply changes and potential selling pressure. Execution expenditure demonstrates token use, not persistent demand or value accruing to holders. Product-revenue mechanisms provide another conditional connection, but historical distributions and holder benefits remain unverified.
 
 My analysis finds substantial activity, growth beyond the original leading accounts and measurable execution spending. The extended comparison also finds higher transaction activity across four-week averages, alongside less frequent participation per active account-week.
 
 The evidence is mixed. Growth depends on the comparison period, account lifecycle events complicate participation measures, and some investigated growth included substantial failed execution.
 
-A stronger investment case would connect persistent, successful and identifiable usage to economic demand of meaningful scale. The current evidence does not establish durable token value capture or that NEAR is attractive at a particular price.
+The argument therefore remains conditional on persistent, successful and identifiable usage producing meaningful economic demand. Evidence that sustained useful activity creates no meaningful recurring expenditure or balance requirements, or that its economic effects are persistently outweighed by supply changes and selling pressure, would invalidate this proposed route from usage to long-term token value. The current evidence establishes neither that outcome nor durable token value capture, and does not establish that NEAR is attractive at a particular price.
 
 ## Scope
 
@@ -230,6 +230,14 @@ Selected contributors and diagnostic samples do not represent the entire network
 Earlier unmatched outcomes, action-record coverage gaps and unresolved supply differences remain documented. Source cost and supply fields use floating-point storage, so reported amounts are approximate.
 
 The project does not estimate fair value, expected returns or a margin of safety. A useful network is not automatically an attractive investment at every price.
+
+## Conclusion
+
+The measured case is strongest for execution use: activity beyond the original leaders and higher four-week transaction averages accompany expenditure denominated in NEAR. It is weaker for persistence and holder value: fifteen-week endpoints declined, participation frequency fell, lifecycle events complicated account-count interpretation, and selected growth included substantial failed execution. The final four-week comparison includes the account spike; economic measurements remain confined to the original eight weeks.
+
+Long-term value remains conditional on useful activity persisting and creating economic demand of meaningful scale after supply effects and potential selling pressure. Storage requirements remain unmeasured, the weekly staking extension is inconclusive, revenue distributions and buybacks remain historically unverified, and supply reconciliation is incomplete. None of these gaps establishes that the mechanisms have no economic effect, but they prevent a demonstrated claim of value accruing to holders.
+
+Persistent evidence of growth without meaningful economic demand, or economic effects consistently outweighed by supply changes and selling pressure, would invalidate the proposed value mechanism. Repeated dependence on temporary lifecycle activity or unsuccessful execution without durable useful demand would undermine its adoption premise. The saved observations raise these risks without establishing either long-term outcome; they support a conditional investment argument, not a buying recommendation or valuation.
 
 ## Evidence and Reproducibility
 
