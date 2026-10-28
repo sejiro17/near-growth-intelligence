@@ -1,7 +1,8 @@
 # NEAR Growth Intelligence — Product Requirements
 
-Status: historical dashboard implemented; Latest activity implemented locally
-but inactive. No daily schedule or initial latest-activity export exists.
+Status: hosted interactive dashboard backed by saved, dated research exports.
+No automatic extraction or daily refresh. Zero additional project spending is
+a firm requirement; using the dashboard requires no paid services or cloud credentials.
 
 ## Problem, users and decisions
 
@@ -43,67 +44,43 @@ Preserve all seven dashboard views:
 Evidence: [research plan](../notes/research_plan.md),
 [thesis](../notes/investment_thesis.md), [data checks](../notes/data_checks.md).
 
-## Separate daily-refreshed activity
+## Saved-data operation
 
-- Show daily transactions and exact distinct transaction-signing identifiers
-  separately from research. Describe refresh as daily when operated daily,
-  never real-time or currently active.
-- Until a validated export exists, show “Daily refresh not yet activated.”
-  Never fabricate data or trigger BigQuery/RPC calls from dashboard visits.
-- Deliver separate data, candidate-state, status and backup files through the
-  private repository to Streamlit. Retain 30 calendar days of published history.
-- Keep the workflow manual-only, gated by enablement, confirmation and `main`.
-  Scheduling requires separate approval. Use repository/owner/branch/workflow-
-  restricted WIF; keep credentials out of code, exports, logs and Git history.
-- Query four completed UTC date partitions in `us-east1`. New jobs require a
-  dry run and configurable maximum-bytes-billed cap: default 5 GiB, never
-  automatically increased. Reuse existing daily jobs before requiring a dry run.
-
-## Eligibility, freshness and failures
-
-- Validate identifiers, timestamps, hash uniqueness, all 24 UTC hours and
-  five-minute day-boundary coverage. Missing or partial observations are not zero.
-- Require matching summaries from independent observations at least 20 hours
-  apart and day age of 48 hours, using query start times. Cached retrieval is
-  not new evidence. Eligibility checks do not prove complete ingestion.
-- Preserve unresolved revisions beyond the lookback until independently
-  resolved or their published rows leave retained history.
-- Show observation date, source verification, publication, ages and gaps.
-  Recalculate locally every 60 seconds in active sessions. Mark overdue source
-  verification after 30 hours, delayed dates, failures, revisions and fallback stale.
-- Validate before per-file atomic replacement. Incomplete status and data/state
-  checksums must prevent mixed bundles appearing current. Preserve valid data
-  and fallback; multiple files are not one atomic transaction or a disk-recovery guarantee.
-- Publish one Git revision without force pushes or weaker branch protection.
-  Rejected delivery leaves remote data unchanged; the app detects overdue
-  delivery but cannot immediately identify an unpublished failure.
-
-Operational details, costs and setup: [refresh runbook](latest_activity_setup.md).
+- Read only the included CSV and JSON research exports. Dashboard visits must
+  not submit BigQuery queries, make RPC requests or extract new source data.
+- Display the fixed observation periods explicitly; do not describe the data
+  as current, daily refreshed or real-time.
+- Keep local interaction, filters and charts independent of cloud authentication,
+  billing accounts and paid services. Preserve credential-ignore rules.
+- Preserve existing data validation and report missing or invalid research
+  inputs rather than fabricating or silently replacing observations.
+- Keep historical SQL and reproduction scripts available for research review.
+  Reproducing derived tables from saved exports requires no new source queries;
+  optional source extraction may incur charges and is not required to use the app.
 
 ## Explicit exclusions
 
-No real-time feed, visitor extraction, automatic activation, unbounded backfills,
-fabricated data, historical rewrites, new delivery infrastructure or access changes.
+No daily-refresh feature, executable refresh workflow, automatic extraction,
+real-time feed, visitor queries, paid-service setup, unbounded backfills, fabricated
+data, historical rewrites, new delivery infrastructure or access changes.
 No verified user counts, complete-chain success, valuation forecasts, guaranteed
 holder benefits or inferred net staking inflows. Staking extension results are
 inconclusive; historical distributions and buybacks remain unverified, not disproven.
 
 ## Acceptance checklist
 
-Tested locally with fixtures and mocked cloud clients; not end-to-end cloud validation:
+Local checks, distinct from hosted deployment verification:
 
-- [x] Seven historical tabs survive missing, corrupt or stale latest data.
-- [x] No initial latest export; disabled runner does not submit queries.
-- [x] Validation, stability/age, persistent revisions and cached timestamps pass regressions.
-- [x] Billing caps, job reuse and creation conflicts pass mocked tests.
-- [x] Mixed/interrupted writes, rollback, fallback, gaps and freshness are checked.
-- [x] Periodic fragment registration and manual guards are checked; action pins verified upstream.
-- [ ] Verify live WIF/IAM authentication and public-dataset access.
-- [ ] Validate live SQL/schema compatibility and review a capped dry-run byte estimate.
-- [ ] Verify GitHub dispatch, repository publication permissions and protected-branch failure behavior.
-- [ ] Verify deployed Streamlit synchronization, rendering and periodic freshness behavior with unchanged access restrictions.
+- [x] All seven historical views render from the saved exports without app errors.
+- [x] Historical research, exports, validation scripts and investment findings remain unchanged.
+- [x] Refresh workflow, runner, SQL, dependencies, tests and dashboard integration are removed.
+- [x] No executable refresh workflow remains; credential-ignore rules are preserved.
+- [x] README and product requirements describe saved-data operation and fixed scopes.
+- [ ] Verify the hosted Streamlit deployment serves the reviewed revision and all seven views.
+- [ ] Confirm intended reviewers can access the hosted dashboard with existing restrictions.
 
-The 34 passing local tests do not establish cloud or deployment readiness.
+Local checks do not establish deployed availability or reviewer access. Live cloud
+SQL, WIF authentication and refresh delivery are excluded, not readiness requirements.
 
 ## Submission readiness
 
@@ -111,6 +88,5 @@ The 34 passing local tests do not establish cloud or deployment readiness.
   across README, notes and dashboard. Present counterevidence and a conditional thesis.
 - Verify intended reviewers can access restricted materials through authorised
   channels; preserve repository/dashboard privacy.
-- Review pending changes and checks. Historical submission does not require
-  refresh activation: disclose it as inactive. Claim operating refresh only
-  after separately approved setup and end-to-end validation; approve scheduling separately.
+- Review the diff and local rendering checks before committing. Verify hosted
+  rendering after an authorised delivery, without enabling paid services or refresh.
