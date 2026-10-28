@@ -4,7 +4,9 @@ An interactive research dashboard for investigating the quality of NEAR's activi
 
 I built this project to help analysts, ecosystem teams and developers examine what headline figures leave out: who contributes to activity, whether accounts return, how concentrated transactions are, and whether additional submissions translate into successful execution.
 
-The analysis covers **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**.
+Transaction research covers **6 July–18 October 2026: fifteen complete UTC weeks**, containing **79,171,891 transactions**. Economic measurements and detailed execution analysis remain scoped to **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**.
+
+Across fifteen-week endpoints, transactions declined **10.63%** and weekly active signing accounts declined **24.65%**. First-four-week versus final-four-week averages increased **16.39%** and **79.47%**, respectively. Growth direction depends on the comparison period; the final four weeks include the account spike.
 
 ## Explore the Dashboard
 
@@ -14,7 +16,7 @@ Access is currently restricted to authorised viewers. You can also run the dashb
 
 The dashboard reads saved research exports. Opening it does not run BigQuery queries, make RPC requests or refresh the source data.
 
-## Three Findings Behind the Project
+## Three Findings Behind the Project — 24 August–18 October 2026
 
 ### More transactions did not mean broader account participation
 
@@ -75,7 +77,7 @@ Transactions and their receipt-conversion costs are grouped by submission date. 
 
 Validation includes transaction uniqueness, outcome matching, cost-field checks, cohort reconciliation, diagnostic response identities, account-profile totals, spending reconciliation and supply comparisons.
 
-Combined recorded execution spending totalled approximately **67,988.91 NEAR**:
+During **24 August–18 October 2026**, combined recorded execution spending totalled approximately **67,988.91 NEAR**:
 
 | Component | Recorded spending |
 |---|---:|
@@ -87,7 +89,7 @@ Transaction conversion contributed **3.10%** of combined spending. Weekly combin
 
 This is a calendar-period comparison, not a matched transaction-chain fee calculation. Execution expenditure measures token use during the period; it does not establish persistent holdings or net market buying.
 
-Observed total supply increased approximately **4,935,983.98 NEAR** across the period. Supply movement and execution spending are separate measurements. Validator-update balances and supply movements remain incompletely reconciled.
+Observed total supply increased approximately **4,935,983.98 NEAR** during **24 August–18 October 2026**, using closing supply on 23 August as the opening baseline. Supply movement and execution spending are separate measurements. Validator-update balances and supply movements remain incompletely reconciled.
 
 The detailed evidence is available in:
 
@@ -100,7 +102,7 @@ The detailed evidence is available in:
 
 ## Interpretation Boundaries
 
-- Eight weeks cannot establish long-term adoption.
+- Fifteen weeks of transactions cannot establish long-term adoption; economics and detailed execution analysis cover eight weeks.
 - Signing accounts are identifiers, not verified people. Relayers can submit transactions for other participants.
 - Account absence is not automatically user churn, and documented service associations do not prove historical ownership.
 - Transactions, actions and receipt executions measure different units. An initial receipt outcome does not establish complete downstream success.
@@ -121,6 +123,7 @@ python analysis/04_account_growth_contributions.py
 python analysis/06_weekly_economic_comparison.py
 python analysis/07_account_profiles.py
 python analysis/08_execution_spending.py
+python analysis/09_extended_activity_comparison.py
 ```
 
 These scripts use saved exports and do not require new BigQuery scans or RPC requests.

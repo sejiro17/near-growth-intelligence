@@ -34,6 +34,30 @@ within the primary period.
 Closing supply on 23 August provides the opening baseline for supply
 comparisons.
 
+The completed transaction-only extension covers 6 July–18 October 2026:
+fifteen complete UTC weeks and 79,171,891 transactions (results 38 and 39).
+It compares both first-to-final-week endpoints and the first four weeks
+(6 July–2 August) with the final four weeks (21 September–18 October).
+The dashboard presents both comparisons alongside the original analyses.
+
+Endpoint transactions and active signing accounts declined 10.63% and
+24.65%; four-week averages increased 16.39% and 79.47%, respectively.
+Growth direction therefore depends on the comparison period. The final
+four weeks include the account spike and are not adjusted for deletion
+activity. These descriptive comparisons do not establish causality,
+sustained adoption or user retention. Average weekly accounts are not
+four-week unique accounts; participation frequency is weighted across
+account-weeks and top-ten concentration by transactions, with weekly
+rankings recalculated.
+
+Extended weekly totals and account-days reconcile to the saved daily
+checks; overlapping weeks reconcile to the original signing results,
+except for the newly available prior-week change on 24 August. Script
+`analysis/09_extended_activity_comparison.py` validates result 38 and
+produces result 39. Economic measurements, detailed execution analysis
+and receipt-matching conclusions remain scoped to the original eight
+weeks; the extension does not resolve earlier outcome-matching gaps.
+
 Earlier unresolved outcome matching during 1 July–22 August remains
 documented. The coverage checks do not establish complete ingestion.
 

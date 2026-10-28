@@ -11,6 +11,7 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
 PERIOD = "2026-08-24_to_2026-10-18"
+EXTENDED_PERIOD = "2026-07-06_to_2026-10-18"
 
 st.set_page_config(
     page_title="NEAR Growth Intelligence",
@@ -83,6 +84,112 @@ def validate_weeks(frame, name):
         raise ValueError(f"{name} does not cover eight complete weeks.")
 
 
+def validate_extended_activity(extended, comparison, original):
+    expected = pd.date_range("2026-07-06", periods=15, freq="7D")
+    if (
+        extended["week_start"].tolist() != expected.tolist()
+        or not extended["week_end"].eq(
+            extended["week_start"] + pd.Timedelta(days=6)
+        ).all()
+    ):
+        raise ValueError("Extended activity must cover fifteen complete weeks.")
+
+    fields = [field for field in original.columns
+              if field not in ("week_start", "week_end")]
+    validate_numbers(extended, [field for field in fields
+                               if field != "weekly_active_accounts_change_pct"])
+    counts = ["weekly_active_signing_accounts", "transactions",
+              "signing_account_days", "accounts_active_one_day",
+              "accounts_active_all_seven_days", "top_1_account_transactions",
+              "top_10_accounts_transactions", "top_100_accounts_transactions"]
+    for field in counts:
+        if extended[field].lt(0).any() or extended[field].mod(1).ne(0).any():
+            raise ValueError(f"Invalid extended count: {field}.")
+    accounts = extended["weekly_active_signing_accounts"]
+    transactions = extended["transactions"]
+    days = extended["signing_account_days"]
+    if (
+        accounts.le(0).any() or transactions.le(0).any()
+        or days.lt(accounts).any() or days.gt(7 * accounts).any()
+        or days.gt(transactions).any()
+        or (extended["accounts_active_one_day"]
+            + extended["accounts_active_all_seven_days"]).gt(accounts).any()
+    ):
+        raise ValueError("Extended participation counts do not reconcile.")
+    ratios = {
+        "transactions_per_weekly_active_account": transactions / accounts,
+        "average_active_days_per_account": days / accounts,
+    }
+    previous = extended["top_1_account_transactions"]
+    for rank in (1, 10, 100):
+        count = extended[f"top_{rank}_account{'s' if rank != 1 else ''}_transactions"]
+        if count.lt(previous).any() or count.gt(transactions).any():
+            raise ValueError("Extended concentration counts do not reconcile.")
+        field = f"top_{rank}_account{'s' if rank != 1 else ''}_transaction_share_pct"
+        ratios[field] = 100 * count / transactions
+        previous = count
+    for field, expected_ratio in ratios.items():
+        if (extended[field] - expected_ratio).abs().gt(0.005001).any():
+            raise ValueError(f"Extended ratio does not reconcile: {field}.")
+    changes = pd.to_numeric(
+        extended["weekly_active_accounts_change_pct"], errors="raise"
+    )
+    if not pd.isna(changes.iloc[0]) or (
+        changes.iloc[1:] - 100 * (accounts / accounts.shift(1) - 1).iloc[1:]
+    ).abs().gt(0.005001).any() or changes.iloc[1:].isna().any():
+        raise ValueError("Extended weekly account changes do not reconcile.")
+
+    overlap = extended.loc[extended["week_start"].isin(original["week_start"])]
+    for field in original.columns:
+        # The original first week has no previous week within its window.
+        start = 1 if field == "weekly_active_accounts_change_pct" else 0
+        if not overlap[field].iloc[start:].reset_index(drop=True).equals(
+            original[field].iloc[start:].reset_index(drop=True)
+        ):
+            raise ValueError(f"Extended overlap differs from result 10: {field}.")
+
+    def summary(frame):
+        return {
+            "average_weekly_transactions": frame["transactions"].sum() / 4,
+            "average_weekly_active_signing_accounts":
+                frame["weekly_active_signing_accounts"].sum() / 4,
+            "active_days_per_active_account_week":
+                frame["signing_account_days"].sum()
+                / frame["weekly_active_signing_accounts"].sum(),
+            "weekly_top_10_transaction_share_pct":
+                100 * frame["top_10_accounts_transactions"].sum()
+                / frame["transactions"].sum(),
+        }
+
+    first_summary = summary(extended.iloc[:4])
+    final_summary = summary(extended.iloc[-4:])
+    if len(comparison) != 4 or set(comparison["metric"]) != set(first_summary):
+        raise ValueError("Unexpected four-week comparison metrics.")
+    validate_numbers(comparison, [
+        "weeks_per_period", "first_period_value", "final_period_value",
+        "absolute_change", "relative_change_pct",
+    ])
+    for row in comparison.to_dict("records"):
+        if (
+            row["first_period_start"] != pd.Timestamp("2026-07-06")
+            or row["first_period_end"] != pd.Timestamp("2026-08-02")
+            or row["final_period_start"] != pd.Timestamp("2026-09-21")
+            or row["final_period_end"] != pd.Timestamp("2026-10-18")
+            or row["weeks_per_period"] != 4
+        ):
+            raise ValueError("Unexpected four-week comparison periods.")
+        first_value = first_summary[row["metric"]]
+        final_value = final_summary[row["metric"]]
+        for field, value in {
+            "first_period_value": first_value,
+            "final_period_value": final_value,
+            "absolute_change": final_value - first_value,
+            "relative_change_pct": 100 * (final_value / first_value - 1),
+        }.items():
+            if not isfinite(float(row[field])) or abs(row[field] - value) > 0.000051:
+                raise ValueError(f"Four-week comparison differs: {field}.")
+
+
 def download_csv(label, frame, filename):
     st.download_button(
         label,
@@ -97,6 +204,25 @@ try:
         f"14_weekly_growth_and_costs_{PERIOD}.csv",
         ["week_start", "week_end"],
     ).sort_values("week_start").reset_index(drop=True)
+
+    extended = load_csv(
+        f"38_extended_weekly_signing_activity_{EXTENDED_PERIOD}.csv",
+        ["week_start", "week_end"],
+    ).sort_values("week_start").reset_index(drop=True)
+    extended_comparison = load_csv(
+        f"39_extended_activity_comparison_{EXTENDED_PERIOD}.csv",
+        ["first_period_start", "first_period_end",
+         "final_period_start", "final_period_end"],
+    )
+    original_signing = load_csv(
+        f"10_weekly_signing_activity_{PERIOD}.csv",
+        ["week_start", "week_end"],
+    ).sort_values("week_start").reset_index(drop=True)
+    validate_weeks(original_signing, "Original signing activity")
+    validate_extended_activity(extended, extended_comparison, original_signing)
+    for field in original_signing.columns:
+        if not original_signing[field].equals(weekly[field]):
+            raise ValueError(f"Result 10 differs from result 14: {field}.")
 
     returns = load_csv(
         f"11_weekly_account_returns_{PERIOD}.csv",
@@ -569,7 +695,8 @@ st.write(
     "more persistent participation?"
 )
 st.caption(
-    "24 August–18 October 2026 · Eight complete UTC weeks · "
+    "Transaction comparison: 6 July–18 October 2026 · Fifteen UTC weeks. "
+    "Economics and detailed execution analysis: 24 August–18 October 2026. "
     "Source: public NEAR mainnet data in Google BigQuery"
 )
 
@@ -599,7 +726,7 @@ a, b, c = st.columns(3)
 a.metric(
     "Final-week transactions",
     f"{int(last['transactions']):,}",
-    f"{percentage_change(weekly, 'transactions'):+.2f}% vs first week",
+    f"{percentage_change(weekly, 'transactions'):+.2f}% vs 24–30 August",
     delta_color="off",
 )
 b.metric(
@@ -607,7 +734,7 @@ b.metric(
     f"{int(last['weekly_active_signing_accounts']):,}",
     (
         f"{percentage_change(weekly, 'weekly_active_signing_accounts'):+.2f}% "
-        "vs first week"
+        "vs 24–30 August"
     ),
     delta_color="off",
 )
@@ -617,18 +744,20 @@ c.metric(
         f"{spending.iloc[-1]['combined_recorded_execution_spending_near']:,.2f}"
         " NEAR"
     ),
-    f"{combined_change:+.2f}% vs first week",
+    f"{combined_change:+.2f}% vs 24–30 August",
     delta_color="off",
 )
 st.caption(
+    "The three metrics above cover the original 24 August–18 October period. "
     "Combined spending includes transaction receipt conversion "
     "and receipt execution recorded during the calendar period."
 )
 
 st.subheader("Investment assessment")
 st.info(
-    "NEAR recorded sustained transaction activity and execution "
-    "spending during the selected period. The investment argument "
+    "Growth direction depends on the comparison period: fifteen-week "
+    "endpoints declined while four-week averages increased. NEAR recorded transaction activity and execution "
+    "spending during 24 August–18 October. The investment argument "
     "is that persistent, useful application activity could support "
     "demand for NEAR through execution, storage and network security. "
     "The evidence supports measured execution use, while account "
@@ -640,7 +769,7 @@ with st.expander(
     "What supports the assessment, and what would change it?"
 ):
     st.markdown(
-        "**Participation:** Final-week transactions were "
+        "**Participation (eight weeks: 24 August–18 October 2026):** Final-week transactions were "
         f"{percentage_change(weekly, 'transactions'):+.2f}% versus "
         "the first week, while weekly active signing accounts were "
         f"{percentage_change(weekly, 'weekly_active_signing_accounts'):+.2f}%. "
@@ -654,13 +783,13 @@ with st.expander(
         "an ordinary user-churn rate."
     )
     st.markdown(
-        "**Concentration:** The ten busiest signing accounts "
+        "**Concentration (eight weeks: 24 August–18 October 2026):** The ten busiest signing accounts "
         f"generated {top_ten_min:.2f}%–{top_ten_max:.2f}% of weekly "
         "transactions. Their roles matter when distinguishing "
         "shared infrastructure from independent participation."
     )
     st.markdown(
-        f"**Execution use:** Combined recorded spending totalled "
+        f"**Execution use (eight weeks: 24 August–18 October 2026):** Combined recorded spending totalled "
         f"**{combined_total:,.2f} NEAR**, comprising "
         f"{conversion_total:,.2f} NEAR in transaction conversion "
         f"and {receipt_total:,.2f} NEAR in receipt execution. "
@@ -687,7 +816,7 @@ with st.expander(
         "evidence of broader demand."
     )
     st.caption(
-        "Sources: saved results 10–17, 21–27, 34 and 37. "
+        "Sources: saved results 10–17, 21–27, 34, 37, 38 and 39. "
         "The repository contains the investment thesis and "
         "economic mechanisms note."
     )
@@ -712,6 +841,53 @@ with st.expander(
 
 
 with growth_tab:
+    st.subheader("Fifteen-week transaction comparison")
+    st.caption("6 July–18 October 2026 · Transaction activity only · Saved results 38 and 39")
+    left, middle, right = st.columns(3)
+    left.metric("Transactions · fifteen-week endpoint change",
+                f"{percentage_change(extended, 'transactions'):+.2f}%")
+    middle.metric("Active signing accounts · fifteen-week endpoint change",
+                 f"{percentage_change(extended, 'weekly_active_signing_accounts'):+.2f}%")
+    top_ten_endpoint_change = (
+        extended.iloc[-1]["top_10_accounts_transaction_share_pct"]
+        - extended.iloc[0]["top_10_accounts_transaction_share_pct"]
+    )
+    right.metric("Weekly top-ten share · endpoint change",
+                 f"{top_ten_endpoint_change:+.2f} percentage points")
+    st.caption("Endpoints compare 6–12 July with 12–18 October.")
+    labels = {
+        "average_weekly_transactions": "Average weekly transactions",
+        "average_weekly_active_signing_accounts": "Average weekly active signing accounts",
+        "active_days_per_active_account_week": "Active days per active account-week",
+        "weekly_top_10_transaction_share_pct": "Weekly top-ten transaction share (%)",
+    }
+    display = extended_comparison.copy()
+    display["Measure"] = display["metric"].map(labels)
+    display["Change"] = display.apply(
+        lambda row: (f"{row['absolute_change']:+.4f} percentage points"
+                     if row["metric"] == "weekly_top_10_transaction_share_pct"
+                     else f"{row['relative_change_pct']:+.2f}%"), axis=1,
+    )
+    st.dataframe(display.rename(columns={
+        "first_period_value": "6 July–2 August",
+        "final_period_value": "21 September–18 October",
+    })[["Measure", "6 July–2 August", "21 September–18 October", "Change"]],
+        hide_index=True, width="stretch")
+    st.info(
+        "The direction of growth depends on the comparison period: "
+        "fifteen-week endpoints show declines, while first-four-week versus "
+        "final-four-week averages show increases in transactions and accounts. "
+        "The final four weeks include the account spike; figures are not "
+        "adjusted for deletion activity and do not establish sustained adoption."
+    )
+    st.caption(
+        "Average weekly accounts are not unique accounts across four weeks. "
+        "Active days are weighted across account-weeks; top-ten shares are "
+        "weighted by transactions, with membership ranked each week. "
+        "These measures do not establish user retention or independent demand."
+    )
+    st.subheader("Original eight-week activity and economics")
+    st.caption("24 August–18 October 2026 · All spending, supply and detailed execution measurements remain within this period.")
     st.subheader("Activity and spending followed different paths")
     st.write(
         "Compare changes from the first week, indexed to 100. "
@@ -1274,7 +1450,7 @@ with costs_tab:
     st.subheader("Recorded execution spending")
     st.write(
         "Combine transaction receipt-conversion costs and receipt "
-        "execution costs recorded during the eight-week period."
+        "execution costs recorded during 24 August–18 October 2026 (eight weeks)."
     )
 
     a, b, c = st.columns(3)
