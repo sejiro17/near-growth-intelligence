@@ -860,3 +860,24 @@ persistent token holdings, external purchases or holder returns.
 
 Script: `analysis/08_execution_spending.py`
 Results: `results/37_weekly_execution_spending_2026-08-24_to_2026-10-18.csv`
+
+## 28 October 2026 — Extended Weekly Signing Activity
+
+Extended the transaction-based comparison to 6 July–18 October 2026, covering fifteen complete UTC weeks.
+
+Query: `sql/35_extended_weekly_signing_activity.sql`
+
+Export: `results/38_extended_weekly_signing_activity_2026-07-06_to_2026-10-18.csv`
+
+Checks:
+- The export contains fifteen consecutive Monday–Sunday weeks.
+- Weekly transaction totals and signing-account-days reconcile to the existing daily transaction checks across 105 dates.
+- The eight overlapping weeks reconcile to result 10, except for the expected change in the first overlapping week's previous-week comparison.
+- For 24 August, the extended query reports a −1.09% change in active signing accounts. The original query left this blank because its observation window started that week.
+- Reported averages, concentration shares and weekly account changes reconcile to their underlying counts.
+
+The extended period contained 79,171,891 transactions. Between the first and final weeks, transactions declined 10.63% and weekly active signing accounts declined 24.65%. The top-ten signing accounts' transaction share fell from 66.19% to 57.97%, a decrease of 8.22 percentage points.
+
+The longer window shows that endpoint growth depends on the selected baseline. Lower signing-account concentration does not independently establish broader user demand.
+
+This extension covers transaction activity only. It does not extend receipt execution costs or resolve the earlier receipt-matching differences. Signing accounts remain identifiers rather than verified individuals.
