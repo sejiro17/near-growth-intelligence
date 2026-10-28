@@ -14,9 +14,9 @@ Across fifteen-week endpoints, transactions declined **10.63%** and weekly activ
 
 Access is currently restricted to authorised viewers. You can also run the dashboard locally using the instructions below.
 
-The dashboard reads saved research exports. Opening it does not run BigQuery queries, make RPC requests or refresh the source data.
+The hosted interactive dashboard reads saved, dated research exports. Opening or using it does not run BigQuery queries, make RPC requests or automatically extract new data. No paid services or cloud credentials are required to use it.
 
-The separate **Latest activity** section is implemented but inactive, with a gated manual-only workflow and no initial export. It is designed for daily refreshed transactions and distinct signing accounts; eligibility checks do not prove complete ingestion. See [product requirements](docs/product_requirements.md) and [refresh setup and limits](docs/latest_activity_setup.md).
+See [product requirements](docs/product_requirements.md) for scope, interpretation boundaries and acceptance criteria. Automatic extraction and daily refresh are excluded; zero additional project spending is a requirement.
 
 ## Three Findings Behind the Project — 24 August–18 October 2026
 
