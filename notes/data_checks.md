@@ -908,3 +908,156 @@ Active days per active account-week decreased despite higher average weekly acco
 The final comparison period includes the account spike. The figures have not been adjusted for deletion activity and do not establish sustained adoption or user retention.
 
 Average weekly active accounts are not unique accounts across four weeks. Participation frequency is weighted across account-weeks. The top-ten share is weighted by transactions, with accounts ranked separately each week.
+
+## 28 October 2026 — Validator-Update Locked-Balance Pilot
+
+Saved the supplied pilot export unchanged as
+`results/40_staking_balance_pilot_2026-08-24.json` and validated it locally
+against `sql/36_staking_balance_pilot.sql`. No new BigQuery query or RPC
+request was made during validation. The earlier CLI dry-run attempt could
+not start because `bq` was unavailable; no byte estimate was obtained.
+
+The measurement is **Protocol-locked balances recorded in observed
+validator updates.** It covers four selected heights on 24 August 2026.
+Only `validator_accounts_update` rows are in the SQL's source filter;
+these observations are not end-of-block balances.
+
+| Block height | Distinct accounts | Update records | Recorded locked balance (NEAR, rounded) |
+|---|---:|---:|---:|
+| 212644334 | 465 | 465 | 623,760,899.40 |
+| 212687534 | 465 | 465 | 623,824,698.38 |
+| 212730734 | 465 | 465 | 624,178,843.49 |
+| 212773934 | 465 | 465 | 624,382,454.90 |
+
+Checks passed:
+
+- Exactly the four expected heights, with observation date 24 August.
+  Heights and record counts also match saved result 30.
+- The same 465 distinct, nonempty account identifiers appear at every
+  height. Membership was compared by identifier, not just by count.
+- All 1,860 account-audit entries contain exactly one recorded update,
+  matching their reported update counts.
+- Source balances are present, finite and nonnegative. Converted balances
+  are nonnegative integer yoctoNEAR values, with no conversion failures.
+- Account indices are present and nonnegative. Every audited
+  `(account, height, index)` key has one record. Repeated indices across
+  different accounts do not violate this key.
+- Account-level diagnostic counts reconcile to the boundary summaries;
+  all reported error counts are zero and all structural flags are true.
+- High-precision decimal sums of each account audit's converted balances,
+  divided by 10^24, equal its reported NEAR total exactly. No observations
+  were summed across time.
+- All converted balances equal the binary64 values reconstructed from
+  the exported source FLOAT representations. This confirms conversion
+  consistency, not original protocol precision.
+- Zero balances occur for 27, 27, 27 and 29 accounts respectively and
+  were retained as valid observations.
+
+The export supports a comparable recorded-balance series for this fixed
+observed population at these four update heights. It does not establish
+complete network coverage, a simultaneous global state, epoch boundaries,
+beneficial ownership, delegator claims or long-term persistence. Changes
+in recorded balances do not identify net staking inflows, purchases,
+rewards or withdrawals.
+
+The published [NEAR indexer account-change model](https://github.com/near/near-indexer-for-explorer/blob/master/database/src/models/account_changes.rs)
+maps `affected_account_staked_balance` to `AccountView.locked`.
+[NEAR core](https://github.com/near/nearcore/blob/master/core/primitives/src/views.rs)
+describes `locked` as the balance locked for validation, in yoctoNEAR.
+Delegator stake shares are separate contract accounting and must not be
+added to a pool's protocol-locked balance.
+
+These mutable reference implementations do not identify the deployed
+historical BigQuery ingestion version or prove its transformations,
+completeness or agreement with canonical chain state. The JSON has no
+query-job provenance and does not repeat the update reason in each audit
+record, so the export alone cannot authenticate the producing query.
+Source FLOAT precision remains limited; BIGNUMERIC conversion cannot
+restore precision already lost. This pilot does not resolve or reopen
+the earlier supply-reconciliation gap.
+
+The saved export's SHA-256 is
+`20b1e815d798bf5ad9044a3d8ae3d3baf03198864316629c70b05c7fd9be3e4e`.
+
+## 28 October 2026 — Proposed Eight-Week Fixed-Population Extension
+
+Prepared `sql/37_weekly_fixed_population_locked_balances.sql` for review.
+It has not been dry-run or executed; no extension results are claimed.
+The period remains 24 August–18 October 2026, matching the original
+eight-week economic window.
+
+For each Monday–Sunday week, select the last recorded
+`validator_accounts_update` block height on its Sunday: 30 August,
+6 September, 13 September, 20 September, 27 September, 4 October,
+11 October and 18 October. The source reads only those eight date
+partitions and validator-update rows, without an account filter.
+The height is selected before checking account membership or balances;
+there is no fallback to an earlier, more complete height or another day.
+This is a consistent recorded-update sampling rule, not a claim that
+observations occur at identical times, UTC closing states or verified
+epoch boundaries. Actual timestamps and seconds before the next UTC
+midnight are returned so observation timing can be reviewed.
+
+The parameter `pilot_accounts` must contain exactly the original 465
+identifiers from result 40. The SQL checks the input count, distinct valid
+count and SHA-256 of sorted identifiers joined by a single newline with
+no trailing newline:
+`40144fbb99d2f921b6f5b6d47d27c3b929664ded71ee740626fc36389050779e`.
+No account membership is inferred afresh from later weeks.
+
+Each weekly output retains an account audit for the fixed population,
+including missing observations and every duplicate update. Separate
+counts and identifier arrays report missing pilot accounts and additional
+accounts observed at the selected height. Missing means no qualifying
+update at that height; it does not establish account deletion, zero
+balance or departure from validation. Additional observed identifiers
+are not automatically newly created accounts or new validators.
+
+A fixed-population balance total is returned only when all 465 pilot
+accounts have exactly one valid update at the selected height, the
+population fingerprint matches, indices and balances pass checks, and
+the selected rows have a consistent timestamp on the expected date.
+Missing observations are never zero-filled or carried forward. A missing
+Sunday still produces a dated row with failed checks and a null total.
+Additional observed accounts are excluded from the fixed total and
+reported separately: they make `membership_matches_pilot` false but do
+not alone invalidate an otherwise complete fixed-population total.
+Error counters named `fixed` apply to the pilot accounts; the query does
+not validate or measure the additional accounts' balances as a cohort.
+
+After an authorised extraction, validation must confirm eight ordered
+weekly rows, the frozen population fingerprint, actual observation
+heights and times, exact one-record coverage, all diagnostics, and exact
+audit-to-total reconciliation. Review membership differences even when
+the fixed-population total passes. Do not compare an incomplete week as
+though it contained the same observed balance coverage. A passing query
+flag establishes structural consistency, not complete ingestion.
+
+Holding the pilot population fixed makes account composition comparable,
+but excludes later entrants and can leave gaps when original accounts
+stop receiving qualifying updates. It therefore cannot describe the
+changing validator population as a whole. The pilot population is itself
+selected from observed update records, not independently established as
+complete network coverage. Eight weekly observations cannot establish
+long-term persistence or causation by application activity. Do not sum
+balance observations across time or describe differences as net staking
+inflows. Preserve the pilot's source-precision and provenance qualifications.
+
+From the repository root, the proposed dry run uses `us-east1` and the
+existing CLI billing-project configuration without overriding project
+or authentication settings:
+
+```bash
+pilot_accounts_json=$(python3 -c 'import json; from pathlib import Path; rows=json.loads(Path("results/40_staking_balance_pilot_2026-08-24.json").read_text()); print(json.dumps(sorted(a["account_id"] for a in rows[0]["account_audit"])))')
+bq query \
+  --location=us-east1 \
+  --use_legacy_sql=false \
+  --dry_run \
+  --parameter="pilot_accounts:ARRAY<STRING>:$pilot_accounts_json" \
+  < sql/37_weekly_fixed_population_locked_balances.sql
+```
+
+The local CLI was previously unavailable. Review the dry-run byte
+estimate and schema validation before separately authorising extraction.
+Filtering to eight Sundays limits the date scope but does not establish
+the billed scan size without a dry run.
