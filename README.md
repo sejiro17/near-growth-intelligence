@@ -16,6 +16,8 @@ Access is currently restricted to authorised viewers. You can also run the dashb
 
 The dashboard reads saved research exports. Opening it does not run BigQuery queries, make RPC requests or refresh the source data.
 
+The separate **Latest activity** section is implemented but inactive, with a gated manual-only workflow and no initial export. It is designed for daily refreshed transactions and distinct signing accounts; eligibility checks do not prove complete ingestion. See [product requirements](docs/product_requirements.md) and [refresh setup and limits](docs/latest_activity_setup.md).
+
 ## Three Findings Behind the Project — 24 August–18 October 2026
 
 ### More transactions did not mean broader account participation

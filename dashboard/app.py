@@ -1,4 +1,5 @@
 import json
+import sys
 from collections import Counter
 from math import isclose, isfinite
 from pathlib import Path
@@ -9,6 +10,11 @@ import streamlit as st
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from latest_activity.view import render_latest_activity
+
 RESULTS = ROOT / "results"
 PERIOD = "2026-08-24_to_2026-10-18"
 EXTENDED_PERIOD = "2026-07-06_to_2026-10-18"
@@ -694,6 +700,11 @@ st.write(
     "Does higher network activity translate into broader, "
     "more persistent participation?"
 )
+
+render_latest_activity(ROOT / "latest_activity_data")
+st.divider()
+st.subheader("Fixed historical research")
+
 st.caption(
     "Transaction comparison: 6 July–18 October 2026 · Fifteen UTC weeks. "
     "Economics and detailed execution analysis: 24 August–18 October 2026. "
