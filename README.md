@@ -40,11 +40,11 @@ These findings show why activity counts need account, lifecycle and execution co
 
 | View | What it helps investigate |
 |---|---|
-| Growth | Whether transactions, signing-account participation and recorded receipt costs moved together. |
+| Growth | Whether transactions, signing-account participation and combined recorded execution spending moved together. |
 | Growth drivers | Which accounts contributed to changes, including selected execution outcomes, costs and diagnostic errors. |
 | Account returns | Weekly cohort participation and the lifecycle context behind the account spike. |
 | Concentration | How much activity depended on leading signing accounts and original transaction receivers. |
-| Economics | Receipt volume, average recorded cost, observed supply changes and unresolved reconciliation differences. |
+| Economics | Transaction conversion and receipt execution spending, receipt volume, average receipt cost and observed supply changes. |
 | Decision priorities | What needs investigation before findings inform adoption, support or economic claims. |
 | Account explorer | Five selected signing accounts, with weekly trends, destinations, actions and attribution evidence. |
 
@@ -71,16 +71,28 @@ Saved CSV and JSON exports are included, so launching the dashboard does not req
 
 The workflow combines SQL extraction and validation, saved results, Python-derived tables and a Streamlit dashboard.
 
-Transactions are grouped by submission date. Network receipt outcomes and costs are grouped by execution date. Account cohorts, weekly rankings and a fixed first-week account group provide different views of participation and concentration.
+Transactions and their receipt-conversion costs are grouped by submission date. Network receipt outcomes and execution costs are grouped by execution date. Account cohorts, weekly rankings and a fixed first-week account group provide different views of participation and concentration.
 
-Validation includes transaction uniqueness, outcome matching, cost-field checks, cohort reconciliation, diagnostic response identities, account-profile totals and supply comparisons.
+Validation includes transaction uniqueness, outcome matching, cost-field checks, cohort reconciliation, diagnostic response identities, account-profile totals, spending reconciliation and supply comparisons.
 
-Recorded receipt execution costs totalled approximately **65,878.09 NEAR**. Observed total supply increased approximately **4,935,983.98 NEAR** across the period. These are separate measurements; validator-update balances and supply movements remain incompletely reconciled.
+Combined recorded execution spending totalled approximately **67,988.91 NEAR**:
+
+| Component | Recorded spending |
+|---|---:|
+| Transaction receipt conversion | 2,110.82 NEAR |
+| Receipt execution | 65,878.09 NEAR |
+| **Combined** | **67,988.91 NEAR** |
+
+Transaction conversion contributed **3.10%** of combined spending. Weekly combined spending increased **83.13%** between the first and final weeks.
+
+This is a calendar-period comparison, not a matched transaction-chain fee calculation. Execution expenditure measures token use during the period; it does not establish persistent holdings or net market buying.
+
+Observed total supply increased approximately **4,935,983.98 NEAR** across the period. Supply movement and execution spending are separate measurements. Validator-update balances and supply movements remain incompletely reconciled.
 
 The detailed evidence is available in:
 
 - [Data checks, coverage and findings](notes/data_checks.md)
-- [Growth quality and investment assessment](notes/investment_thesis.md)
+- [Growth quality and investment thesis](notes/investment_thesis.md)
 - [Economic mechanisms and measurement boundaries](notes/economic_mechanisms.md)
 - [Account attribution and sources](notes/account_attribution.md)
 - [Decision priorities](notes/decision_priorities.md)
@@ -93,7 +105,7 @@ The detailed evidence is available in:
 - Account absence is not automatically user churn, and documented service associations do not prove historical ownership.
 - Transactions, actions and receipt executions measure different units. An initial receipt outcome does not establish complete downstream success.
 - Selected account investigations and diagnostic samples do not represent the whole network.
-- Recorded execution costs are not protocol revenue, permanent token burning or holder returns. The supply analysis is not a complete economic-flow or valuation model.
+- Recorded execution spending is not protocol revenue, permanent token burning or holder returns. The supply analysis is not a complete economic-flow or valuation model.
 
 Earlier unmatched outcomes, action-record coverage gaps and unresolved economic differences are documented in the data-check notes.
 
@@ -108,6 +120,7 @@ python analysis/03_fixed_account_growth.py
 python analysis/04_account_growth_contributions.py
 python analysis/06_weekly_economic_comparison.py
 python analysis/07_account_profiles.py
+python analysis/08_execution_spending.py
 ```
 
 These scripts use saved exports and do not require new BigQuery scans or RPC requests.
