@@ -52,7 +52,7 @@ Evidence: [research plan](../notes/research_plan.md),
   use saved exports; optional SQL extraction may incur BigQuery charges and is
   not required to use the dashboard.
 - Protect credentials through ignore rules; keep secrets out of code, exports
-  and Git history. Preserve restricted repository and hosted-dashboard access.
+  and Git history.
 
 ## Exclusions and interpretation boundaries
 
@@ -69,20 +69,13 @@ not disproven.
 
 ## Acceptance criteria
 
-- All seven views render from saved exports without application errors.
+- All seven views render from saved exports without application errors in the
+  hosted Streamlit dashboard.
 - Figures reconcile with saved evidence and use consistent units and definitions.
-- Fixed research dates and interpretation boundaries are explicit.
+- Research scopes, dates, reproduction commands and interpretation boundaries
+  are explicit and agree across README, notes and dashboard; the investment case
+  includes counterevidence.
 - Evidence links resolve and downloads contain the corresponding displayed data.
 - Dashboard interactions require no external queries or cloud credentials.
 - Credentials remain excluded from repository files and exports.
-
-## Submission readiness
-
-- Figures, scopes, reproduction commands and limitations agree across README,
-  notes and dashboard; the investment case includes counterevidence.
-- The hosted Streamlit deployment serves the intended revision and all seven views.
-- Intended reviewers can access the dashboard and evidence under existing
-  repository and dashboard restrictions.
-
-Local rendering and file-link checks do not establish hosted availability,
-reviewer access or deployed download behavior; these require hosted verification.
+- Intended users can access the dashboard and supporting evidence.
