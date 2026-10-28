@@ -171,7 +171,7 @@ Participants may pay from existing balances, acquire tokens shortly before execu
 
 Storage and staking provide additional uses for NEAR balances. Their network-wide changes have not been measured here. Staking is not permanent token destruction.
 
-The economic mechanisms note reviews NEAR's documented Intents revenue-sharing and governance-controlled uses of revenue. These mechanisms are separate from the execution spending measured in this project. Product fees, distributions and realised buybacks have not been independently reconciled.
+The economic mechanisms note reviews NEAR's documented Intents revenue-sharing and governance-controlled uses of revenue. These mechanisms are separate from the execution spending measured in this project. Product fees have not been independently reconciled. This research has not established historically attributable distributions or implemented buybacks during 24 August–18 October 2026; this does not establish that distributions did not occur. Documented mechanisms do not establish guaranteed benefits to NEAR holders.
 
 The investment question is whether persistent useful activity produces economic effects of sufficient scale after supply changes, distributions and potential selling pressure are considered. That relationship remains partly unmeasured.
 
