@@ -12,8 +12,6 @@ Across fifteen-week endpoints, transactions declined **10.63%** and weekly activ
 
 **[Open NEAR Growth Intelligence](https://near-growth-intelligence.streamlit.app)**
 
-Access is currently restricted to authorised viewers. You can also run the dashboard locally using the instructions below.
-
 The dashboard uses saved, dated research exports. Interactions do not query external data sources.
 
 See [product requirements](docs/product_requirements.md) for scope, interpretation boundaries and acceptance criteria.
