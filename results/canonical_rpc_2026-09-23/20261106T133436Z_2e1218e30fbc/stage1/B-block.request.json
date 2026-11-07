@@ -1,0 +1,8 @@
+{
+  "id": "B-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": 216921134
+  }
+}

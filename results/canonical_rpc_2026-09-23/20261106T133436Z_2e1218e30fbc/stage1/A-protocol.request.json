@@ -1,0 +1,8 @@
+{
+  "id": "A-protocol",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_protocol_config",
+  "params": {
+    "block_id": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG"
+  }
+}

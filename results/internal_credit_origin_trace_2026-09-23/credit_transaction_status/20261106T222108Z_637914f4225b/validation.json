@@ -1,0 +1,8 @@
+{
+  "boundary": "Final request for one candidate credit; no upstream history or additional lookback.",
+  "receipt_id": "CBEA6sgmmaxoVwLE8iMDHQQ1G8CQRVvo76mDWYfLP5Pm",
+  "revenue_attribution": null,
+  "transaction_hash": "FGQNVx1jNEGKmFmX4qwaZ7hvScztjfQFUptBtso8EkFm",
+  "validation": "TRANSACTION_AND_TARGET_LOGS_VALIDATED_GRAPH_REVIEW_PENDING",
+  "verified_fee_amount": null
+}

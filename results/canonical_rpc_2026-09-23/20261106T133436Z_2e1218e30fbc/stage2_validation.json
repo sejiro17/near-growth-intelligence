@@ -1,0 +1,10 @@
+{
+  "coverage_limitation": "Observed responses only; all-shard historical retention is not independently verified.",
+  "independently_measured_actual_burn": null,
+  "independently_measured_issuance": null,
+  "status": "OBSERVED_RESPONSES_CONSISTENT",
+  "validator_account_counts": {
+    "A": 461,
+    "B": 462
+  }
+}

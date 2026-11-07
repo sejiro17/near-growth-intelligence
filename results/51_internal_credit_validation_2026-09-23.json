@@ -1,0 +1,341 @@
+{
+  "attribution": {
+    "classification": "UNCLASSIFIED_INTERNAL_TRANSFER_CREDIT",
+    "memo": null,
+    "remaining_question": "What mechanism generated this credit, and does independent historical configuration establish its fee origin?",
+    "verified_fee_credit_amount": null,
+    "withdrawal_revenue_origin": null
+  },
+  "boundary": {
+    "additional_lookback_days_planned": 0,
+    "selected_credit_receipts": 1,
+    "stop": "After this one credit's origin/transaction-status trace, consolidate and move to returning-account activity. No counterparty-history recursion or 22 September query is prepared."
+  },
+  "comparison": {
+    "amount_near": "1252.862790024676320487808800",
+    "blocks_before_debit": 5,
+    "nanoseconds_before_debit": "2910324742",
+    "net_interpretation": "Only selected logged movements; no opening/closing balance or economic reconciliation.",
+    "observed_selected_movements_net_base_units": "0"
+  },
+  "decoded_records": [
+    {
+      "block_hash": "HsjykbqBnDRp5s2bqcJkpEHnsPKEezUUGccFesqjjToL",
+      "block_height": 216859512,
+      "child_receipt_ids": [
+        "2iuU9FHcvaRPH1KRotrwnaSVoD9msdLeESsGUkY1fQfB"
+      ],
+      "chunk_hash": "DqLqEJLjYT2sG6Hh82HHSXmKUoBTqWBoznFCxmTu2q9T",
+      "events": [
+        {
+          "decoded": {
+            "data": [
+              {
+                "account_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+                "intent_hash": "4CaYWhLiAdqgdCqesGzf9UANCgoesGXR6wVTymRD4vKt",
+                "receiver_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+                "tokens": {
+                  "nep141:wrap.near": "1252862790024676320487808800"
+                }
+              }
+            ],
+            "event": "transfer",
+            "standard": "dip4",
+            "version": "0.3.0"
+          },
+          "log_index": 0,
+          "raw_log": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.3.0\",\"event\":\"transfer\",\"data\":[{\"intent_hash\":\"4CaYWhLiAdqgdCqesGzf9UANCgoesGXR6wVTymRD4vKt\",\"account_id\":\"51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe\",\"receiver_id\":\"a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd\",\"tokens\":{\"nep141:wrap.near\":\"1252862790024676320487808800\"}}]}"
+        },
+        {
+          "decoded": {
+            "data": [
+              {
+                "account_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+                "intent_hash": "4CaYWhLiAdqgdCqesGzf9UANCgoesGXR6wVTymRD4vKt",
+                "nonce": "Vij2xgAlKBKzgHncVb4M4Rhd+csFi3PzFNAd9BmNBIk="
+              }
+            ],
+            "event": "intents_executed",
+            "standard": "dip4",
+            "version": "0.3.1"
+          },
+          "log_index": 1,
+          "raw_log": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.3.1\",\"event\":\"intents_executed\",\"data\":[{\"intent_hash\":\"4CaYWhLiAdqgdCqesGzf9UANCgoesGXR6wVTymRD4vKt\",\"account_id\":\"51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe\",\"nonce\":\"Vij2xgAlKBKzgHncVb4M4Rhd+csFi3PzFNAd9BmNBIk=\"}]}"
+        },
+        {
+          "decoded": {
+            "data": [
+              {
+                "amounts": [
+                  "1252862790024676320487808800"
+                ],
+                "new_owner_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+                "old_owner_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+                "token_ids": [
+                  "nep141:wrap.near"
+                ]
+              }
+            ],
+            "event": "mt_transfer",
+            "standard": "nep245",
+            "version": "1.0.0"
+          },
+          "log_index": 2,
+          "raw_log": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_transfer\",\"data\":[{\"old_owner_id\":\"51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe\",\"new_owner_id\":\"a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"1252862790024676320487808800\"]}]}"
+        }
+      ],
+      "executed_in_block_hash": "HsjykbqBnDRp5s2bqcJkpEHnsPKEezUUGccFesqjjToL",
+      "index_in_chunk": 0,
+      "internal_changes": [
+        {
+          "amount_base_units": "1252862790024676320487808800",
+          "asset": "nep141:wrap.near",
+          "data_index": 0,
+          "economic_classification": "UNCLASSIFIED_INTERNAL_ACTIVITY",
+          "log_index": 2,
+          "mechanism": "mt_transfer",
+          "memo": null,
+          "new_owner_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+          "old_owner_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+          "signed_change_base_units": "1252862790024676320487808800",
+          "token_index": 0
+        }
+      ],
+      "receipt_id": "CBEA6sgmmaxoVwLE8iMDHQQ1G8CQRVvo76mDWYfLP5Pm",
+      "shard_id": 7,
+      "status": "SUCCESS_VALUE",
+      "timestamp_nanoseconds": "1790136140871367670",
+      "timestamp_utc": "2026-09-23T04:02:20.871367Z"
+    },
+    {
+      "block_hash": "5RCDGcbp8sZ4PtgD3U72GNmtMPPcg9d5AwKZTq5VQg6s",
+      "block_height": 216859517,
+      "child_receipt_ids": [
+        "B23gSUARb4MtcpgHx8o6Ho4v8hgKhCW7yh8rf5fVr8Ae",
+        "499bkNHK9YLEeCamUqhswsnVJkZVggX3PAu65zZjd9pw",
+        "JDBTzCzH5DpQmNfYwceNzMraJGT6rWxiJG4uunYDppff"
+      ],
+      "chunk_hash": "BMxd3t6QP4cJ7y6VG9yCsGyHsehk4nEvb86qHaYUVSkD",
+      "events": [
+        {
+          "decoded": {
+            "data": [
+              {
+                "account_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+                "amount": "1252862790024676320487808800",
+                "intent_hash": "BxqSbLAnK6ekuwiZBEa9Gywt6X834KFMQyRr4kanC718",
+                "receiver_id": "fefundsadmin.sputnik-dao.near"
+              }
+            ],
+            "event": "native_withdraw",
+            "standard": "dip4",
+            "version": "0.3.0"
+          },
+          "log_index": 0,
+          "raw_log": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.3.0\",\"event\":\"native_withdraw\",\"data\":[{\"intent_hash\":\"BxqSbLAnK6ekuwiZBEa9Gywt6X834KFMQyRr4kanC718\",\"account_id\":\"a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd\",\"receiver_id\":\"fefundsadmin.sputnik-dao.near\",\"amount\":\"1252862790024676320487808800\"}]}"
+        },
+        {
+          "decoded": {
+            "data": [
+              {
+                "account_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+                "intent_hash": "BxqSbLAnK6ekuwiZBEa9Gywt6X834KFMQyRr4kanC718",
+                "nonce": "Vij2xgAlKBKzQA8QKQQQ4RhDixNwSA1FRwx14w5WbIg="
+              }
+            ],
+            "event": "intents_executed",
+            "standard": "dip4",
+            "version": "0.3.1"
+          },
+          "log_index": 1,
+          "raw_log": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.3.1\",\"event\":\"intents_executed\",\"data\":[{\"intent_hash\":\"BxqSbLAnK6ekuwiZBEa9Gywt6X834KFMQyRr4kanC718\",\"account_id\":\"a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd\",\"nonce\":\"Vij2xgAlKBKzQA8QKQQQ4RhDixNwSA1FRwx14w5WbIg=\"}]}"
+        },
+        {
+          "decoded": {
+            "data": [
+              {
+                "amounts": [
+                  "1252862790024676320487808800"
+                ],
+                "memo": "withdraw",
+                "owner_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+                "token_ids": [
+                  "nep141:wrap.near"
+                ]
+              }
+            ],
+            "event": "mt_burn",
+            "standard": "nep245",
+            "version": "1.0.0"
+          },
+          "log_index": 2,
+          "raw_log": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_burn\",\"data\":[{\"owner_id\":\"a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"1252862790024676320487808800\"],\"memo\":\"withdraw\"}]}"
+        }
+      ],
+      "executed_in_block_hash": "5RCDGcbp8sZ4PtgD3U72GNmtMPPcg9d5AwKZTq5VQg6s",
+      "index_in_chunk": 0,
+      "internal_changes": [
+        {
+          "amount_base_units": "1252862790024676320487808800",
+          "asset": "nep141:wrap.near",
+          "data_index": 0,
+          "economic_classification": "UNCLASSIFIED_INTERNAL_ACTIVITY",
+          "log_index": 2,
+          "mechanism": "mt_burn",
+          "memo": "withdraw",
+          "new_owner_id": null,
+          "old_owner_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+          "signed_change_base_units": "-1252862790024676320487808800",
+          "token_index": 0
+        }
+      ],
+      "receipt_id": "Fnt2xfvuLebRXp4cSupgdHbdeDmDXaWRkUTaJQctwjTK",
+      "shard_id": 7,
+      "status": "SUCCESS_VALUE",
+      "timestamp_nanoseconds": "1790136143781692412",
+      "timestamp_utc": "2026-09-23T04:02:23.781692Z"
+    }
+  ],
+  "derivation_method": "Validate dotted export and retained JSON; decode only supported event versions; integer u128 amounts; count NEP245 movements once and use DIP4 logs as context; compare anchor to saved RPC.",
+  "input_hashes": {
+    "analysis/11_collect_canonical_validator_evidence.py": {
+      "bytes": 21427,
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    "analysis/14_decode_frontend_native_transfers.py": {
+      "bytes": 15196,
+      "sha256": "0998bb9ef520c47ce13a2e62fe70037472a17ebdff5caa748ade0ebb054c1c1d"
+    },
+    "analysis/15_trace_frontend_transfer_origin.py": {
+      "bytes": 12129,
+      "sha256": "957e69289f484903c2bd93f4d4020a3ea83e2569f51aa19db9795f4556107840"
+    },
+    "analysis/16_internal_credit_evidence.py": {
+      "bytes": 21544,
+      "sha256": "07604d6f10a67bb9ed95d16b35a3bdf76d7940ff62659093c0a2e0dda94177b7"
+    },
+    "results/47_frontend_wallet_native_transfer_diagnostic_2026-09-23.json": {
+      "bytes": 201513,
+      "sha256": "d69601fb513e4276eaa0db9126ee415a2899768eca5f599034f822570992f9cf"
+    },
+    "results/48_frontend_wallet_native_transfers_decoded_2026-09-23.json": {
+      "bytes": 34355,
+      "sha256": "11b9d042124fca2b1d42c8b217a9f8f21556225125824adc0745999d372f64d8"
+    },
+    "results/49_frontend_transfer_origin_request_2026-09-23.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    },
+    "results/50_intents_internal_account_event_candidates_2026-09-23.json": {
+      "bytes": 14557,
+      "sha256": "d4f613697c659fb0ae9afdce8bb357d16ef8c3a0dcf6448f728a02de262468e1"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/run.json": {
+      "bytes": 1370,
+      "sha256": "ab67f0ffb0ff85142fcbf24ee2caa45f2332496dfb25c3689e0e7e6b3bad72eb"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/transfer-origin.metadata.json": {
+      "bytes": 1345,
+      "sha256": "d44852e2653d9e3f44a35aa134d3f59d369fcbac6aa7bf8f19f708a31a25851f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/transfer-origin.request.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/transfer-origin.response.body": {
+      "bytes": 152,
+      "sha256": "ab745691c4de7f37322d7b0004c09d57ca08ea37733de983c742d92010017445"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/run.json": {
+      "bytes": 1370,
+      "sha256": "ab67f0ffb0ff85142fcbf24ee2caa45f2332496dfb25c3689e0e7e6b3bad72eb"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/transfer-origin.metadata.json": {
+      "bytes": 1345,
+      "sha256": "d44852e2653d9e3f44a35aa134d3f59d369fcbac6aa7bf8f19f708a31a25851f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/transfer-origin.request.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/transfer-origin.response.body": {
+      "bytes": 152,
+      "sha256": "ab745691c4de7f37322d7b0004c09d57ca08ea37733de983c742d92010017445"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/run.json": {
+      "bytes": 1447,
+      "sha256": "81becfd8e6a0c5284985f09689328c177617104551d6aa71a53b1044e8db171f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/transfer-transaction-status.metadata.json": {
+      "bytes": 1349,
+      "sha256": "9bb02f785e9ebe4e435e5eebe14f704ffcc9c1f19651cfcc5706cbd47690a06f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/transfer-transaction-status.request.json": {
+      "bytes": 249,
+      "sha256": "0542324faa95d3090bb3853f7ff983f5d43c0b572f3ee7cb1ce4ec1f9b7527c7"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/transfer-transaction-status.response.body": {
+      "bytes": 20418,
+      "sha256": "584737a2840b2efc3af6481f9e426758e419b74be4b3b6f831d58f7be46a81fe"
+    },
+    "sql/40_intents_internal_account_event_candidates.sql": {
+      "bytes": 9428,
+      "sha256": "7bbec04919de48192036e10b44f43c7ae1912821d472352482c8ffff1a6a366d"
+    }
+  },
+  "limitations": [
+    "Reported global partition diagnostics describe observed source records, not independently established completeness.",
+    "Exact amount equality and temporal precedence do not establish fee origin or allocation within commingled balances.",
+    "The internal account's fee-recipient identity and opening balance remain unverified; no burn/buyback claim is established."
+  ],
+  "priority3_preparation": "Result 11 saves cohort counts, not membership IDs; results 13/36 save network spending, not returner spending. Design cohort-specific success and cost measurements, separating initial-receipt success from downstream settlement and submission dates from execution dates.",
+  "selected_credit": {
+    "amount_base_units": "1252862790024676320487808800",
+    "asset": "nep141:wrap.near",
+    "block_hash": "HsjykbqBnDRp5s2bqcJkpEHnsPKEezUUGccFesqjjToL",
+    "block_height": 216859512,
+    "child_receipt_ids": [
+      "2iuU9FHcvaRPH1KRotrwnaSVoD9msdLeESsGUkY1fQfB"
+    ],
+    "chunk_hash": "DqLqEJLjYT2sG6Hh82HHSXmKUoBTqWBoznFCxmTu2q9T",
+    "data_index": 0,
+    "economic_classification": "UNCLASSIFIED_INTERNAL_ACTIVITY",
+    "executed_in_block_hash": "HsjykbqBnDRp5s2bqcJkpEHnsPKEezUUGccFesqjjToL",
+    "index_in_chunk": 0,
+    "log_index": 2,
+    "mechanism": "mt_transfer",
+    "memo": null,
+    "new_owner_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+    "old_owner_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+    "receipt_id": "CBEA6sgmmaxoVwLE8iMDHQQ1G8CQRVvo76mDWYfLP5Pm",
+    "shard_id": 7,
+    "signed_change_base_units": "1252862790024676320487808800",
+    "status": "SUCCESS_VALUE",
+    "timestamp_nanoseconds": "1790136140871367670",
+    "timestamp_utc": "2026-09-23T04:02:20.871367Z",
+    "token_index": 0
+  },
+  "summary_validation": {
+    "anchor_rows_matching_saved_rpc_identifiers": "1",
+    "candidates_with_duplicate_receipt_keys": "0",
+    "candidates_with_invalid_identity_or_status": "0",
+    "candidates_without_available_ordering_fields": "0",
+    "coverage_basis": "OBSERVED_RECORDS_AND_TEXT_MATCHES_ONLY_NOT_INDEPENDENT_COMPLETENESS",
+    "decoding_status": "EVENT_ENCODING_AND_VERSION_VALIDATION_REQUIRED_BEFORE_AMOUNT_DECODING",
+    "discovery_check": "OBSERVED_CANDIDATES_REQUIRE_OFFLINE_EVENT_VALIDATION",
+    "distinct_candidate_receipt_ids": "2",
+    "empty_result_interpretation": "NO_OBSERVED_MATCHES_IS_NOT_PROOF_OF_NO_INTERNAL_ACTIVITY",
+    "failure_candidates": "0",
+    "intents_rows_without_available_logs": "0",
+    "observed_intents_outcome_rows": "315426",
+    "observed_partition_outcome_rows": "4656116",
+    "observed_withdrawal_anchor_rows": "1",
+    "opening_internal_balance": null,
+    "output_candidate_rows": "2",
+    "success_receipt_id_candidates": "0",
+    "success_value_candidates": "2",
+    "unavailable_executor_rows": "0",
+    "verified_fee_credit_amount": null,
+    "withdrawal_revenue_attribution": null
+  }
+}

@@ -152,3 +152,24 @@ validation or professional investment review.
 - [Economic mechanisms](economic_mechanisms.md)
 - [Account attribution](account_attribution.md)
 - [Decision priorities](decision_priorities.md)
+
+## Post-Submission Measurement Sequence
+
+The supply and bounded wallet-provenance findings are consolidated in
+[the 6 November validation record](data_checks.md#6-november-2026--priorities-12-consolidated).
+Supply reconciliation and revenue origin remain unresolved; these components
+are unavailable inputs to an investment model rather than assumed value capture.
+
+The bounded [persistent economic activity](persistent_activity_plan.md) phase
+is complete. Results 56–61 validate nine complete transaction checkpoints,
+three exact-return initial-receipt measurements and two corresponding
+repeated-checkpoint subsets. Three incomplete transaction follow-ups and
+unmeasured receipt checkpoints remain unavailable. Results 60–61 compare two
+overlapping cohorts during one shared submission week, without causal claims.
+
+The dashboard and investment thesis integrate the validated supply, bounded
+withdrawal and persistence findings through result 62. Independent issuance,
+actual burn, revenue origin and holder value capture remain unresolved.
+No further collection is part of this measurement phase. Published derived
+evidence is rebuilt with `python3 -B analysis/23_rebuild_published_results.py`
+using saved inputs only; publication follows a separate review.

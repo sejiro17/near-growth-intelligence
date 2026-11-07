@@ -23,9 +23,16 @@ persistent demand and holder benefits.
 |---|---|---|
 | Transaction comparison | 6 July–18 October 2026 | Fifteen complete weeks; 79,171,891 transactions. Show endpoints and first-four-week versus final-four-week comparisons. |
 | Economics and detailed investigations | 24 August–18 October 2026 | Eight complete weeks; 44,284,794 transactions. Includes returns, growth contributors, execution, profiles and economic measurements. |
+| Bounded persistence phase | Starting activity weeks from 10 August; complete transaction follow-ups through 18 October | Nine complete transaction checkpoints; initial receipts for three exact-return points and two overlapping repeated subsets. Execution lookups have six-day tails ending 17/24 October. Other receipt checkpoints and incomplete returns remain unavailable. |
 
 These windows are fixed research observations. Supply uses the 23 August
 closing baseline. Explain baseline sensitivity and the final period's account spike.
+
+The opening narrative answers what grew, how much persisted, what initially
+executed successfully and what economic use/value capture is demonstrated.
+Show concentration, failed activity, overlapping populations and material gaps
+beside the claims. Independent issuance, actual burn and withdrawal revenue
+origin remain unresolved; neither a full revenue ledger nor a valuation is established.
 
 Provide seven dashboard views:
 

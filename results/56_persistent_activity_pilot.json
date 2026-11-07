@@ -1,0 +1,94 @@
+[
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-08-10\",\"week_end\":\"2026-08-16\",\"transactions\":4521998,\"distinct_transaction_hashes\":4521998,\"active_accounts\":139856,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"210.057205399162793005236224\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-08-17\",\"week_end\":\"2026-08-23\",\"transactions\":5152284,\"distinct_transaction_hashes\":5152284,\"active_accounts\":141295,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"232.762463065152844901859328\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-08-24\",\"week_end\":\"2026-08-30\",\"transactions\":4734816,\"distinct_transaction_hashes\":4734816,\"active_accounts\":139759,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"213.339983351673216549040128\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-08-31\",\"week_end\":\"2026-09-06\",\"transactions\":4891529,\"distinct_transaction_hashes\":4891529,\"active_accounts\":135677,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"220.042073368532736707985408\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-09-07\",\"week_end\":\"2026-09-13\",\"transactions\":5076874,\"distinct_transaction_hashes\":5076874,\"active_accounts\":132731,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"227.700051211935637929254912\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-09-14\",\"week_end\":\"2026-09-20\",\"transactions\":5689381,\"distinct_transaction_hashes\":5689381,\"active_accounts\":145183,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"243.611538798105782119837696\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-09-21\",\"week_end\":\"2026-09-27\",\"transactions\":5990686,\"distinct_transaction_hashes\":5990686,\"active_accounts\":153530,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"254.974330259045978406313984\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-09-28\",\"week_end\":\"2026-10-04\",\"transactions\":6590352,\"distinct_transaction_hashes\":6590352,\"active_accounts\":457768,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"275.529289708540204041216\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-10-05\",\"week_end\":\"2026-10-11\",\"transactions\":6401624,\"distinct_transaction_hashes\":6401624,\"active_accounts\":384444,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"262.343948111339008871845888\"}"
+  },
+  {
+    "row_kind": "WEEK_CONTROL",
+    "record_json": "{\"week_start\":\"2026-10-12\",\"week_end\":\"2026-10-18\",\"transactions\":4909532,\"distinct_transaction_hashes\":4909532,\"active_accounts\":129446,\"observed_days\":7,\"observed_hours\":168,\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"413.27789919813321358522368\"}"
+  },
+  {
+    "row_kind": "SUMMARY",
+    "record_json": "{\"source_start\":\"2026-08-10\",\"source_end\":\"2026-10-18\",\"transaction_rows\":53959076,\"distinct_transaction_hashes\":53959076,\"observed_days\":70,\"observed_hours\":1680,\"missing_transaction_hashes\":0,\"missing_signer_accounts\":0,\"missing_receiver_accounts\":0,\"invalid_timestamps\":0,\"invalid_conversion_cost_rows\":0,\"source_controls_passed\":true,\"cohort_count\":4,\"week_control_rows\":10,\"checkpoint_rows\":12,\"coverage_basis\":\"OBSERVED_RECORDS_ONLY_NOT_INDEPENDENT_COMPLETENESS\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-10\",\"cohort_week_end\":\"2026-08-16\",\"week_offset\":1,\"followup_week\":\"2026-08-17\",\"followup_week_end\":\"2026-08-23\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":139856,\"observed_week_transactions\":5152284,\"returning_accounts\":114293,\"returning_transactions\":5036245,\"top_1_transactions\":1873673,\"top_10_transactions\":3350438,\"top_20_transactions\":3808833,\"sum_squared_returner_transactions\":\"3828585474549\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"225.838932412010947439087616\",\"return_at_1_and_4_accounts\":95425,\"repeated_checkpoint_returners_accounts\":52423,\"any_return_weeks_1_to_4_accounts\":123291,\"any_return_weeks_1_to_8_accounts\":126986,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-10\",\"cohort_week_end\":\"2026-08-16\",\"week_offset\":4,\"followup_week\":\"2026-09-07\",\"followup_week_end\":\"2026-09-13\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":139856,\"observed_week_transactions\":5076874,\"returning_accounts\":100646,\"returning_transactions\":4664879,\"top_1_transactions\":2055866,\"top_10_transactions\":3360455,\"top_20_transactions\":3667633,\"sum_squared_returner_transactions\":\"4480105369669\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"210.269809942636845824872448\",\"return_at_1_and_4_accounts\":95425,\"repeated_checkpoint_returners_accounts\":52423,\"any_return_weeks_1_to_4_accounts\":123291,\"any_return_weeks_1_to_8_accounts\":126986,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-10\",\"cohort_week_end\":\"2026-08-16\",\"week_offset\":8,\"followup_week\":\"2026-10-05\",\"followup_week_end\":\"2026-10-11\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":139856,\"observed_week_transactions\":6401624,\"returning_accounts\":66309,\"returning_transactions\":3888965,\"top_1_transactions\":1452023,\"top_10_transactions\":2877112,\"top_20_transactions\":3098705,\"sum_squared_returner_transactions\":\"2421624546897\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"178.091295295805881218842624\",\"return_at_1_and_4_accounts\":95425,\"repeated_checkpoint_returners_accounts\":52423,\"any_return_weeks_1_to_4_accounts\":123291,\"any_return_weeks_1_to_8_accounts\":126986,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-17\",\"cohort_week_end\":\"2026-08-23\",\"week_offset\":1,\"followup_week\":\"2026-08-24\",\"followup_week_end\":\"2026-08-30\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":141295,\"observed_week_transactions\":4734816,\"returning_accounts\":112171,\"returning_transactions\":4667005,\"top_1_transactions\":1954610,\"top_10_transactions\":3195028,\"top_20_transactions\":3508797,\"sum_squared_returner_transactions\":\"4072800267579\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"209.407503860617233984413696\",\"return_at_1_and_4_accounts\":77812,\"repeated_checkpoint_returners_accounts\":53455,\"any_return_weeks_1_to_4_accounts\":123629,\"any_return_weeks_1_to_8_accounts\":126920,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-17\",\"cohort_week_end\":\"2026-08-23\",\"week_offset\":4,\"followup_week\":\"2026-09-14\",\"followup_week_end\":\"2026-09-20\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":141295,\"observed_week_transactions\":5689381,\"returning_accounts\":85447,\"returning_transactions\":4744446,\"top_1_transactions\":1768800,\"top_10_transactions\":3232276,\"top_20_transactions\":3829067,\"sum_squared_returner_transactions\":\"3467114051590\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"208.355304204318476174999552\",\"return_at_1_and_4_accounts\":77812,\"repeated_checkpoint_returners_accounts\":53455,\"any_return_weeks_1_to_4_accounts\":123629,\"any_return_weeks_1_to_8_accounts\":126920,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-17\",\"cohort_week_end\":\"2026-08-23\",\"week_offset\":8,\"followup_week\":\"2026-10-12\",\"followup_week_end\":\"2026-10-18\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":141295,\"observed_week_transactions\":4909532,\"returning_accounts\":65251,\"returning_transactions\":3528043,\"top_1_transactions\":1301312,\"top_10_transactions\":2650181,\"top_20_transactions\":2800365,\"sum_squared_returner_transactions\":\"1959804409497\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"163.70758505454832910422016\",\"return_at_1_and_4_accounts\":77812,\"repeated_checkpoint_returners_accounts\":53455,\"any_return_weeks_1_to_4_accounts\":123629,\"any_return_weeks_1_to_8_accounts\":126920,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-24\",\"cohort_week_end\":\"2026-08-30\",\"week_offset\":1,\"followup_week\":\"2026-08-31\",\"followup_week_end\":\"2026-09-06\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":139759,\"observed_week_transactions\":4891529,\"returning_accounts\":108956,\"returning_transactions\":4805289,\"top_1_transactions\":1953561,\"top_10_transactions\":3314683,\"top_20_transactions\":3623924,\"sum_squared_returner_transactions\":\"4127929183735\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"214.131451781896998833934336\",\"return_at_1_and_4_accounts\":64280,\"repeated_checkpoint_returners_accounts\":null,\"any_return_weeks_1_to_4_accounts\":121276,\"any_return_weeks_1_to_8_accounts\":null,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-24\",\"cohort_week_end\":\"2026-08-30\",\"week_offset\":4,\"followup_week\":\"2026-09-21\",\"followup_week_end\":\"2026-09-27\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":139759,\"observed_week_transactions\":5990686,\"returning_accounts\":72188,\"returning_transactions\":5147314,\"top_1_transactions\":1631056,\"top_10_transactions\":3185055,\"top_20_transactions\":3775936,\"sum_squared_returner_transactions\":\"3055092447832\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"221.069481331177368908996608\",\"return_at_1_and_4_accounts\":64280,\"repeated_checkpoint_returners_accounts\":null,\"any_return_weeks_1_to_4_accounts\":121276,\"any_return_weeks_1_to_8_accounts\":null,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-08-24\",\"cohort_week_end\":\"2026-08-30\",\"week_offset\":8,\"followup_week\":\"2026-10-19\",\"followup_week_end\":\"2026-10-25\",\"followup_complete\":false,\"source_controls_passed\":true,\"measurement_available\":false,\"cohort_accounts\":139759,\"observed_week_transactions\":null,\"returning_accounts\":null,\"returning_transactions\":null,\"top_1_transactions\":null,\"top_10_transactions\":null,\"top_20_transactions\":null,\"sum_squared_returner_transactions\":null,\"invalid_conversion_cost_rows\":null,\"recorded_conversion_spending_near\":null,\"return_at_1_and_4_accounts\":64280,\"repeated_checkpoint_returners_accounts\":null,\"any_return_weeks_1_to_4_accounts\":121276,\"any_return_weeks_1_to_8_accounts\":null,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-09-28\",\"cohort_week_end\":\"2026-10-04\",\"week_offset\":1,\"followup_week\":\"2026-10-05\",\"followup_week_end\":\"2026-10-11\",\"followup_complete\":true,\"source_controls_passed\":true,\"measurement_available\":true,\"cohort_accounts\":457768,\"observed_week_transactions\":6401624,\"returning_accounts\":83037,\"returning_transactions\":5174834,\"top_1_transactions\":1452023,\"top_10_transactions\":3083690,\"top_20_transactions\":3667556,\"sum_squared_returner_transactions\":\"2503557941828\",\"invalid_conversion_cost_rows\":0,\"recorded_conversion_spending_near\":\"224.114123400778586446954496\",\"return_at_1_and_4_accounts\":null,\"repeated_checkpoint_returners_accounts\":null,\"any_return_weeks_1_to_4_accounts\":null,\"any_return_weeks_1_to_8_accounts\":null,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-09-28\",\"cohort_week_end\":\"2026-10-04\",\"week_offset\":4,\"followup_week\":\"2026-10-26\",\"followup_week_end\":\"2026-11-01\",\"followup_complete\":false,\"source_controls_passed\":true,\"measurement_available\":false,\"cohort_accounts\":457768,\"observed_week_transactions\":null,\"returning_accounts\":null,\"returning_transactions\":null,\"top_1_transactions\":null,\"top_10_transactions\":null,\"top_20_transactions\":null,\"sum_squared_returner_transactions\":null,\"invalid_conversion_cost_rows\":null,\"recorded_conversion_spending_near\":null,\"return_at_1_and_4_accounts\":null,\"repeated_checkpoint_returners_accounts\":null,\"any_return_weeks_1_to_4_accounts\":null,\"any_return_weeks_1_to_8_accounts\":null,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  },
+  {
+    "row_kind": "CHECKPOINT",
+    "record_json": "{\"cohort_week\":\"2026-09-28\",\"cohort_week_end\":\"2026-10-04\",\"week_offset\":8,\"followup_week\":\"2026-11-23\",\"followup_week_end\":\"2026-11-29\",\"followup_complete\":false,\"source_controls_passed\":true,\"measurement_available\":false,\"cohort_accounts\":457768,\"observed_week_transactions\":null,\"returning_accounts\":null,\"returning_transactions\":null,\"top_1_transactions\":null,\"top_10_transactions\":null,\"top_20_transactions\":null,\"sum_squared_returner_transactions\":null,\"invalid_conversion_cost_rows\":null,\"recorded_conversion_spending_near\":null,\"return_at_1_and_4_accounts\":null,\"repeated_checkpoint_returners_accounts\":null,\"any_return_weeks_1_to_4_accounts\":null,\"any_return_weeks_1_to_8_accounts\":null,\"attribution_scope\":\"SUBMISSION_WEEK_OUTER_SIGNER_INITIAL_RECEIPT_ECONOMICS_NOT_EXTRACTED\"}"
+  }
+]

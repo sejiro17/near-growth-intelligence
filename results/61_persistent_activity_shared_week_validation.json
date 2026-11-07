@@ -1,0 +1,651 @@
+{
+  "derivation": "python3 -B analysis/22_validate_shared_week_receipts.py; saved inputs only, strict duplicate-key JSON decoding, integer counts and 80-digit Decimal monetary sums via analysis/21 helpers; ratios at 60 digits. No source requests.",
+  "diagnostic_example_occurrences_checked": 192,
+  "export_rows": 75,
+  "limitations": [
+    "Populations overlap and follow-up horizons differ. Descriptive outcome/spending differences do not identify a causal cohort effect. Accounts are outer signers, not verified people or newly created accounts.",
+    "Observed source weeks/days and matching diagnostics do not independently establish complete ingestion. Receipt-owner uniqueness is bounded to five transaction weeks.",
+    "Only initial receipts are assessed. SUCCESS_RECEIPT_ID is not complete-chain success; descendant costs and outcomes remain unavailable.",
+    "Execution lookups cover 5\u201317 October. The 12\u201317 October tail is six days, not a complete UTC week; elapsed follow-up varies by submission date. Missing matches/costs remain unavailable.",
+    "Monetary strings and Decimal preserve saved arithmetic, not integer source accuracy. Costs originate as FLOAT. The 0.00001 NEAR baseline screen is not an economic or source-precision tolerance; internal subtotal identities are exact.",
+    "Diagnostic examples do not include submission timestamps, executor IDs or execution heights, so SQL's lag/executor/height tests cannot be independently recomputed for every transaction offline.",
+    "Recorded conversion and initial-receipt spending are distinct components; neither demonstrates revenue, fresh token purchases, burn, persistent holdings or holder value. Independent issuance and actual supply burn remain unresolved."
+  ],
+  "measurement_phase": "CLOSED_WITH_STATED_LIMITATIONS",
+  "overlap": {
+    "august_and_september_accounts": 58957,
+    "august_and_september_transactions": 3871009,
+    "august_transactions_also_in_september_share_pct": "99.5382833221692661157917337903529602349211165438619272737091",
+    "basis": "SQL 43's unique selected union includes August exact +8 and September exact +1; the repeated group is a subset of the former. Inclusion-exclusion uses saved aggregate counts, not independently reconstructed IDs.",
+    "repeated_and_september_exact_membership": null,
+    "repeated_transactions_share_of_august_exact_pct": "98.5274231061477796791691362611903167038016541676255764708605",
+    "union_accounts": 90389,
+    "union_or_intersection_receipt_spending_near": null,
+    "union_transactions": 5192790
+  },
+  "populations": [
+    {
+      "accounts_with_both_success_and_failure": 1359,
+      "by_execution_date": [
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-05",
+          "recorded_initial_receipt_spending_subtotal_near": "191.345127084703233937264640",
+          "transactions": 602001,
+          "valid_cost_transactions": 602001
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-06",
+          "recorded_initial_receipt_spending_subtotal_near": "203.844940819751688421232640",
+          "transactions": 588688,
+          "valid_cost_transactions": 588688
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-07",
+          "recorded_initial_receipt_spending_subtotal_near": "208.764417788184396754792448",
+          "transactions": 572511,
+          "valid_cost_transactions": 572511
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-08",
+          "recorded_initial_receipt_spending_subtotal_near": "278.678394918796860333109248",
+          "transactions": 648040,
+          "valid_cost_transactions": 648040
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-09",
+          "recorded_initial_receipt_spending_subtotal_near": "208.815270470612020136292352",
+          "transactions": 528366,
+          "valid_cost_transactions": 528366
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-10",
+          "recorded_initial_receipt_spending_subtotal_near": "174.887759383818695162429440",
+          "transactions": 469699,
+          "valid_cost_transactions": 469699
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-11",
+          "recorded_initial_receipt_spending_subtotal_near": "183.476539963685041691398144",
+          "transactions": 479659,
+          "valid_cost_transactions": 479659
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-12",
+          "recorded_initial_receipt_spending_subtotal_near": "0.000322185534419199983616",
+          "transactions": 1,
+          "valid_cost_transactions": 1
+        }
+      ],
+      "by_status": [
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "FAILURE",
+          "recorded_initial_receipt_spending_subtotal_near": "179.579262838986544287481856",
+          "transactions": 325699,
+          "valid_cost_transactions": 325699
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "SUCCESS_RECEIPT_ID",
+          "recorded_initial_receipt_spending_subtotal_near": "273.076719308733593625722880",
+          "transactions": 516427,
+          "valid_cost_transactions": 516427
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "SUCCESS_VALUE",
+          "recorded_initial_receipt_spending_subtotal_near": "997.156790467366217723297792",
+          "transactions": 3046839,
+          "valid_cost_transactions": 3046839
+        }
+      ],
+      "exact_return_share_pct": "47.4123384052167944171147465964992563779887884681386569042444",
+      "exclusion_counts": {
+        "EXECUTION_AFTER_LOOKUP_CUTOFF": 0,
+        "EXECUTION_BLOCK_UNAVAILABLE_OR_BOUNDARY": 0,
+        "EXECUTOR_MISMATCH_OR_UNAVAILABLE": 0,
+        "INVALID_EXECUTION_BLOCK": 0,
+        "INVALID_INITIAL_RECEIPT_ID": 0,
+        "INVALID_OUTCOME_RECORD_TIME": 0,
+        "MISSING_EXECUTION_HASH": 0,
+        "MISSING_INITIAL_RECEIPT_ID": 0,
+        "MULTIPLE_EXECUTION_BLOCK_OBSERVATIONS": 0,
+        "MULTIPLE_OUTCOME_OBSERVATIONS": 0,
+        "NEGATIVE_EXECUTION_LAG": 0,
+        "NO_OUTCOME_IN_LOOKUP_WINDOW": 0,
+        "SHARED_INITIAL_RECEIPT_ID": 0,
+        "STATUS_UNAVAILABLE_OR_UNRECOGNIZED": 0
+      },
+      "failed_initial_receipts": 325699,
+      "initial_failure_share_pct": "8.37495323305815300471976477031806663212448556363968305191741",
+      "initial_success_share_pct": "91.6250467669418469952802352296819333678755144363603169480826",
+      "observed": {
+        "accounts_with_assessed_initial_receipts": 66309,
+        "accounts_with_failed_initial_receipts": 1369,
+        "accounts_with_successful_initial_receipts": 66299,
+        "assessed_initial_receipts": 3888965,
+        "cohort_week": "2026-08-10",
+        "complete_initial_receipt_spending_near": "1449.812772615086355636502528",
+        "distinct_transaction_hashes": 3888965,
+        "expected_accounts": 66309,
+        "expected_cohort_accounts": 139856,
+        "expected_conversion_near": "178.091295295805881218842624",
+        "expected_transactions": 3888965,
+        "group_matches_result56": true,
+        "invalid_assessed_cost_rows": 0,
+        "invalid_conversion_rows": 0,
+        "lookup_days_observed": true,
+        "maximum_assessed_execution_lag_microseconds": 9697571,
+        "minimum_assessed_execution_lag_microseconds": 0,
+        "observed_accounts": 66309,
+        "population": "AUG10_EXACT_WEEK8",
+        "record_execution_hash_disagreements": 0,
+        "record_execution_time_disagreements": 0,
+        "recorded_conversion_spending_near": "178.091295295805881218842624",
+        "result56_controls_passed": true,
+        "return_definition": "EXACT_WEEK_RETURNERS",
+        "submission_week": "2026-10-05",
+        "transactions": 3888965,
+        "unassessed_initial_receipts": 0,
+        "valid_assessed_initial_spending_subtotal_near": "1449.812772615086355636502528",
+        "valid_initial_cost_transactions": 3888965,
+        "week_offset": 8
+      },
+      "population": "AUG10_EXACT_WEEK8",
+      "successful_initial_receipts": 3563266,
+      "tail_spending_subtotal_near": "0.000322185534419199983616",
+      "tail_transactions": 1,
+      "transaction_share_of_observed_week_pct": "60.7496628980396224458043771393009023960170106835390519655637"
+    },
+    {
+      "accounts_with_both_success_and_failure": 1160,
+      "by_execution_date": [
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-05",
+          "recorded_initial_receipt_spending_subtotal_near": "188.590149969173017649479680",
+          "transactions": 593710,
+          "valid_cost_transactions": 593710
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-06",
+          "recorded_initial_receipt_spending_subtotal_near": "201.158764604090995435425792",
+          "transactions": 580576,
+          "valid_cost_transactions": 580576
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-07",
+          "recorded_initial_receipt_spending_subtotal_near": "206.011128006006200377978880",
+          "transactions": 564431,
+          "valid_cost_transactions": 564431
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-08",
+          "recorded_initial_receipt_spending_subtotal_near": "275.233884006154250167414784",
+          "transactions": 638666,
+          "valid_cost_transactions": 638666
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-09",
+          "recorded_initial_receipt_spending_subtotal_near": "206.052748455662651153297408",
+          "transactions": 520305,
+          "valid_cost_transactions": 520305
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-10",
+          "recorded_initial_receipt_spending_subtotal_near": "172.141630994597916085305344",
+          "transactions": 461985,
+          "valid_cost_transactions": 461985
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-11",
+          "recorded_initial_receipt_spending_subtotal_near": "180.901016736813524001124352",
+          "transactions": 472023,
+          "valid_cost_transactions": 472023
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-12",
+          "recorded_initial_receipt_spending_subtotal_near": "0.000322185534419199983616",
+          "transactions": 1,
+          "valid_cost_transactions": 1
+        }
+      ],
+      "by_status": [
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "FAILURE",
+          "recorded_initial_receipt_spending_subtotal_near": "179.496913046096920687591424",
+          "transactions": 324904,
+          "valid_cost_transactions": 324904
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "SUCCESS_RECEIPT_ID",
+          "recorded_initial_receipt_spending_subtotal_near": "272.043577227103755840225280",
+          "transactions": 513218,
+          "valid_cost_transactions": 513218
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "SUCCESS_VALUE",
+          "recorded_initial_receipt_spending_subtotal_near": "978.549154684832297542193152",
+          "transactions": 2993575,
+          "valid_cost_transactions": 2993575
+        }
+      ],
+      "exact_return_share_pct": "37.4835545132135911222972199977119322731952865804827822903558",
+      "exclusion_counts": {
+        "EXECUTION_AFTER_LOOKUP_CUTOFF": 0,
+        "EXECUTION_BLOCK_UNAVAILABLE_OR_BOUNDARY": 0,
+        "EXECUTOR_MISMATCH_OR_UNAVAILABLE": 0,
+        "INVALID_EXECUTION_BLOCK": 0,
+        "INVALID_INITIAL_RECEIPT_ID": 0,
+        "INVALID_OUTCOME_RECORD_TIME": 0,
+        "MISSING_EXECUTION_HASH": 0,
+        "MISSING_INITIAL_RECEIPT_ID": 0,
+        "MULTIPLE_EXECUTION_BLOCK_OBSERVATIONS": 0,
+        "MULTIPLE_OUTCOME_OBSERVATIONS": 0,
+        "NEGATIVE_EXECUTION_LAG": 0,
+        "NO_OUTCOME_IN_LOOKUP_WINDOW": 0,
+        "SHARED_INITIAL_RECEIPT_ID": 0,
+        "STATUS_UNAVAILABLE_OR_UNRECOGNIZED": 0
+      },
+      "failed_initial_receipts": 324904,
+      "initial_failure_share_pct": "8.47937610933223582136061384812003663128895630317324151674832",
+      "initial_success_share_pct": "91.5206238906677641786393861518799633687110436968267584832517",
+      "observed": {
+        "accounts_with_assessed_initial_receipts": 52423,
+        "accounts_with_failed_initial_receipts": 1165,
+        "accounts_with_successful_initial_receipts": 52418,
+        "assessed_initial_receipts": 3831697,
+        "cohort_week": "2026-08-10",
+        "complete_initial_receipt_spending_near": "1430.089644958032974070009856",
+        "distinct_transaction_hashes": 3831697,
+        "expected_accounts": 52423,
+        "expected_cohort_accounts": 139856,
+        "expected_conversion_near": null,
+        "expected_transactions": null,
+        "group_matches_result56": true,
+        "invalid_assessed_cost_rows": 0,
+        "invalid_conversion_rows": 0,
+        "lookup_days_observed": true,
+        "maximum_assessed_execution_lag_microseconds": 9697571,
+        "minimum_assessed_execution_lag_microseconds": 0,
+        "observed_accounts": 52423,
+        "population": "AUG10_REPEATED_CHECKPOINTS",
+        "record_execution_hash_disagreements": 0,
+        "record_execution_time_disagreements": 0,
+        "recorded_conversion_spending_near": "176.097112485742396833083392",
+        "result56_controls_passed": true,
+        "return_definition": "ALL_THREE_EXACT_CHECKPOINTS_1_4_8",
+        "submission_week": "2026-10-05",
+        "transactions": 3831697,
+        "unassessed_initial_receipts": 0,
+        "valid_assessed_initial_spending_subtotal_near": "1430.089644958032974070009856",
+        "valid_initial_cost_transactions": 3831697,
+        "week_offset": 8
+      },
+      "population": "AUG10_REPEATED_CHECKPOINTS",
+      "successful_initial_receipts": 3506793,
+      "tail_spending_subtotal_near": "0.000322185534419199983616",
+      "tail_transactions": 1,
+      "transaction_share_of_observed_week_pct": "59.8550773991099758436296789689616259874056958046895600241439"
+    },
+    {
+      "accounts_with_both_success_and_failure": 2129,
+      "by_execution_date": [
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-05",
+          "recorded_initial_receipt_spending_subtotal_near": "289.053699146779034461798400",
+          "transactions": 812982,
+          "valid_cost_transactions": 812982
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-06",
+          "recorded_initial_receipt_spending_subtotal_near": "387.481158430081091080556544",
+          "transactions": 826511,
+          "valid_cost_transactions": 826511
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-07",
+          "recorded_initial_receipt_spending_subtotal_near": "394.970014938407356619452416",
+          "transactions": 835003,
+          "valid_cost_transactions": 835003
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-08",
+          "recorded_initial_receipt_spending_subtotal_near": "480.217334592040437838061568",
+          "transactions": 936681,
+          "valid_cost_transactions": 936681
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-09",
+          "recorded_initial_receipt_spending_subtotal_near": "315.795919208025238714802176",
+          "transactions": 659319,
+          "valid_cost_transactions": 659319
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-10",
+          "recorded_initial_receipt_spending_subtotal_near": "217.447134368303894521749504",
+          "transactions": 540704,
+          "valid_cost_transactions": 540704
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-11",
+          "recorded_initial_receipt_spending_subtotal_near": "231.534277871111959143866368",
+          "transactions": 563633,
+          "valid_cost_transactions": 563633
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "execution_date": "2026-10-12",
+          "recorded_initial_receipt_spending_subtotal_near": "0.000322185534419199983616",
+          "transactions": 1,
+          "valid_cost_transactions": 1
+        }
+      ],
+      "by_status": [
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "FAILURE",
+          "recorded_initial_receipt_spending_subtotal_near": "372.004312300573182018715648",
+          "transactions": 913574,
+          "valid_cost_transactions": 913574
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "SUCCESS_RECEIPT_ID",
+          "recorded_initial_receipt_spending_subtotal_near": "360.222046435062964964589568",
+          "transactions": 802565,
+          "valid_cost_transactions": 802565
+        },
+        {
+          "complete_bucket_cost_coverage": true,
+          "observed_initial_status": "SUCCESS_VALUE",
+          "recorded_initial_receipt_spending_subtotal_near": "1584.273502004647284596965376",
+          "transactions": 3458695,
+          "valid_cost_transactions": 3458695
+        }
+      ],
+      "exact_return_share_pct": "18.1395379318781566208210272452421313853305604585729015571206",
+      "exclusion_counts": {
+        "EXECUTION_AFTER_LOOKUP_CUTOFF": 0,
+        "EXECUTION_BLOCK_UNAVAILABLE_OR_BOUNDARY": 0,
+        "EXECUTOR_MISMATCH_OR_UNAVAILABLE": 0,
+        "INVALID_EXECUTION_BLOCK": 0,
+        "INVALID_INITIAL_RECEIPT_ID": 0,
+        "INVALID_OUTCOME_RECORD_TIME": 0,
+        "MISSING_EXECUTION_HASH": 0,
+        "MISSING_INITIAL_RECEIPT_ID": 0,
+        "MULTIPLE_EXECUTION_BLOCK_OBSERVATIONS": 0,
+        "MULTIPLE_OUTCOME_OBSERVATIONS": 0,
+        "NEGATIVE_EXECUTION_LAG": 0,
+        "NO_OUTCOME_IN_LOOKUP_WINDOW": 0,
+        "SHARED_INITIAL_RECEIPT_ID": 0,
+        "STATUS_UNAVAILABLE_OR_UNRECOGNIZED": 0
+      },
+      "failed_initial_receipts": 913574,
+      "initial_failure_share_pct": "17.6541701627530467643986261201808599077767518726204550716023",
+      "initial_success_share_pct": "82.3458298372469532356013738798191400922232481273795449283977",
+      "observed": {
+        "accounts_with_assessed_initial_receipts": 83037,
+        "accounts_with_failed_initial_receipts": 2150,
+        "accounts_with_successful_initial_receipts": 83016,
+        "assessed_initial_receipts": 5174834,
+        "cohort_week": "2026-09-28",
+        "complete_initial_receipt_spending_near": "2316.499860740283431580270592",
+        "distinct_transaction_hashes": 5174834,
+        "expected_accounts": 83037,
+        "expected_cohort_accounts": 457768,
+        "expected_conversion_near": "224.114123400778586446954496",
+        "expected_transactions": 5174834,
+        "group_matches_result56": true,
+        "invalid_assessed_cost_rows": 0,
+        "invalid_conversion_rows": 0,
+        "lookup_days_observed": true,
+        "maximum_assessed_execution_lag_microseconds": 13212501,
+        "minimum_assessed_execution_lag_microseconds": 0,
+        "observed_accounts": 83037,
+        "population": "SEP28_EXACT_WEEK1",
+        "record_execution_hash_disagreements": 0,
+        "record_execution_time_disagreements": 0,
+        "recorded_conversion_spending_near": "224.114123400778586446954496",
+        "result56_controls_passed": true,
+        "return_definition": "EXACT_WEEK_RETURNERS",
+        "submission_week": "2026-10-05",
+        "transactions": 5174834,
+        "unassessed_initial_receipts": 0,
+        "valid_assessed_initial_spending_subtotal_near": "2316.499860740283431580270592",
+        "valid_initial_cost_transactions": 5174834,
+        "week_offset": 1
+      },
+      "population": "SEP28_EXACT_WEEK1",
+      "successful_initial_receipts": 4261260,
+      "tail_spending_subtotal_near": "0.000322185534419199983616",
+      "tail_transactions": 1,
+      "transaction_share_of_observed_week_pct": "80.8362690467293924166742689042655426185605402629082870221681"
+    }
+  ],
+  "prior_validation_provenance": {
+    "current_sql43": {
+      "bytes": 23662,
+      "sha256": "1b6add55a7a34c75d55d7da331a5e13a939cd7b8abab1f0df485b66fdc20dc98"
+    },
+    "difference": "One extra space after SQL 43's final semicolon and before its final LF; recorded bytes/hash recovered in memory only.",
+    "recorded_inputs_and_metrics_reproduced": true,
+    "recorded_sql43": {
+      "bytes": 23661,
+      "sha256": "b1d0fd263f612360b3ea50a55321b78be68da5d412a3b8cadaa89e8b8525d658"
+    },
+    "result59_exact_with_current_files": false
+  },
+  "publication_ready": true,
+  "row_kinds": {
+    "ASSESSMENT_BUCKET": 66,
+    "POPULATION": 3,
+    "SUMMARY": 1,
+    "WEEK_CONTROL": 5
+  },
+  "source_export_bytes": 144072,
+  "source_export_sha256": "7ef17d5ff401ece94eba4e7c29989ad1dba3e633438372983f5c624712b4b951",
+  "source_hashes": {
+    "analysis/19_persistent_activity_plan.py": {
+      "bytes": 23965,
+      "sha256": "d3e5438daf0d48f83e279bd04a766fe42b276cfc26fd84445bead8c885ead470"
+    },
+    "analysis/20_validate_persistent_activity_pilot.py": {
+      "bytes": 11956,
+      "sha256": "f3df7fa87583e287051e14b05a7371aacdf91e6500bc3e105d1f735982537b28"
+    },
+    "analysis/21_validate_initial_receipt_pilot.py": {
+      "bytes": 30131,
+      "sha256": "dbfafec7bdf0ed3f70de9461ba739f2eaa5b2026da6e385e4c195ca8f57ba2a0"
+    },
+    "analysis/22_validate_shared_week_receipts.py": {
+      "bytes": 22964,
+      "sha256": "e5d2e2dde64935e52603dbf072192457e8ee7895ebfefec1167f31b8090f2fb9"
+    },
+    "results/02_daily_partition_counts_2026-07-01_to_2026-10-24.csv": {
+      "bytes": 4025,
+      "sha256": "04f7f0c5df063f76c119ab05ae30f6b6366128fb09ee1aaf3fa6ff224e66f57f"
+    },
+    "results/03_daily_transaction_checks_2026-07-01_to_2026-10-24.csv": {
+      "bytes": 13334,
+      "sha256": "f049619a646835327d05ff55be434b820f8a12e97f72ffff2ae2d7085713905b"
+    },
+    "results/11_weekly_account_returns_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 2094,
+      "sha256": "0e0dfd80a47045aa8e2ce8e3300d6f3c3f2ead93e486a0ee23350a00350a88f9"
+    },
+    "results/17_spike_account_deletion_checks_2026-09-28_to_2026-10-11.csv": {
+      "bytes": 676,
+      "sha256": "6b860a018f6957ed0a804e971d38c3894d51c17dc3ae41e2549eb7df7dfc771e"
+    },
+    "results/36_weekly_transaction_conversion_costs_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 871,
+      "sha256": "9ef5bdf734831f04defb2dde376496819eee1932b1ed057e60377585bbcc9593"
+    },
+    "results/38_extended_weekly_signing_activity_2026-07-06_to_2026-10-18.csv": {
+      "bytes": 2162,
+      "sha256": "82ef0ede02c5dcd362c9ce1bffb8754fa38f0ad5e04e00cdbc191d60a966bb71"
+    },
+    "results/55_persistent_activity_plan_and_saved_baselines.json": {
+      "bytes": 12510,
+      "sha256": "9a0289158929477ced84dca3f6232645a9d8235169f445f18790156e5ee33871"
+    },
+    "results/56_persistent_activity_pilot.json": {
+      "bytes": 15557,
+      "sha256": "6dbc05ee3c0deea1c4bfd2c1ad955da2f236cb0b1b580b1fd5cbea97c0cd6c09"
+    },
+    "results/57_persistent_activity_pilot_validation.json": {
+      "bytes": 32493,
+      "sha256": "f97751577e60bfdb9edbfa5ba28731768a6cd7e431a67c6c89733ffdb5935a83"
+    },
+    "results/58_persistent_activity_initial_receipt_pilot.json": {
+      "bytes": 96495,
+      "sha256": "ede4a0c74d3db9d1910d118bb8e9e104a035e9b2033290c0d8f26d07b50a9f54"
+    },
+    "results/59_persistent_activity_initial_receipt_validation.json": {
+      "bytes": 26224,
+      "sha256": "d30a401e04393c3cf24aeef8dab789a1eaf7fbba6e2f6ac96ee005be15e9765e"
+    },
+    "results/60_persistent_activity_shared_week_initial_receipts.json": {
+      "bytes": 144072,
+      "sha256": "7ef17d5ff401ece94eba4e7c29989ad1dba3e633438372983f5c624712b4b951"
+    },
+    "sql/34_weekly_transaction_conversion_costs.sql": {
+      "bytes": 1812,
+      "sha256": "fa2647d64c5f466ef802cf9750066f0370178d101774b87d0d5dafff92bf8c88"
+    },
+    "sql/41_persistent_activity_transaction_pilot.sql": {
+      "bytes": 10982,
+      "sha256": "c0f42f4f0e4e99ab216db83a783378cd1a6e3f7655a862943356846996f18060"
+    },
+    "sql/42_persistent_activity_initial_receipt_pilot.sql": {
+      "bytes": 22140,
+      "sha256": "7abac312aab63d910d92b9ade5ef9c41002fceaed9f65a5a178b8e981d2a9dea"
+    },
+    "sql/43_persistent_activity_shared_week_initial_receipts.sql": {
+      "bytes": 23662,
+      "sha256": "1b6add55a7a34c75d55d7da331a5e13a939cd7b8abab1f0df485b66fdc20dc98"
+    }
+  },
+  "source_summary": {
+    "bucket_records": 66,
+    "classified_distinct_transaction_hashes": 5192790,
+    "classified_transaction_rows": 5192790,
+    "coverage_basis": "OWNERSHIP_COUNTS_BOUNDED_TO_FIVE_TX_WEEKS_OBSERVED_COVERAGE_ONLY",
+    "distinct_transaction_hashes": 27743132,
+    "invalid_identity_or_timestamp_rows": 0,
+    "lookup_end": "2026-10-17",
+    "matching_group_controls": 3,
+    "matching_week_controls": 5,
+    "observed_block_days": 13,
+    "observed_block_partition_rows": 1863671,
+    "observed_days": 35,
+    "observed_hours": 840,
+    "observed_outcome_days": 13,
+    "observed_outcome_partition_rows": 106421496,
+    "population_records": 3,
+    "receipt_ids_with_multiple_outcomes": 0,
+    "receipt_ids_with_observed_outcomes": 5192790,
+    "result56_controls_passed": true,
+    "scope": "OVERLAPPING_GROUPS_INITIAL_RECEIPTS_ONLY_NOT_COMPLETE_CHAIN_OR_REVENUE",
+    "selected_accounts": 90389,
+    "selected_distinct_receipt_ids": 5192790,
+    "selected_outcome_observations": 5192790,
+    "selected_transactions": 5192790,
+    "submission_week": "2026-10-05",
+    "submission_week_end": "2026-10-11",
+    "transaction_rows": 27743132,
+    "week_control_records": 5
+  },
+  "unavailable": {
+    "actual_native_burn_near": null,
+    "complete_chain_success": null,
+    "descendant_spending_near": null,
+    "independent_issuance_near": null,
+    "revenue_origin": null
+  },
+  "unique_diagnostic_transactions_checked": 89,
+  "validation": "STRUCTURAL_ARITHMETIC_AND_SAVED_CONTROL_CHECKS_PASSED",
+  "weekly_controls": [
+    {
+      "active_accounts": 139856,
+      "distinct_transaction_hashes": 4521998,
+      "invalid_conversion_cost_rows": 0,
+      "matches_result56": true,
+      "observed_days": 7,
+      "observed_hours": 168,
+      "recorded_conversion_spending_near": "210.057205399162793005236224",
+      "transactions": 4521998,
+      "week_start": "2026-08-10"
+    },
+    {
+      "active_accounts": 141295,
+      "distinct_transaction_hashes": 5152284,
+      "invalid_conversion_cost_rows": 0,
+      "matches_result56": true,
+      "observed_days": 7,
+      "observed_hours": 168,
+      "recorded_conversion_spending_near": "232.762463065152844901859328",
+      "transactions": 5152284,
+      "week_start": "2026-08-17"
+    },
+    {
+      "active_accounts": 132731,
+      "distinct_transaction_hashes": 5076874,
+      "invalid_conversion_cost_rows": 0,
+      "matches_result56": true,
+      "observed_days": 7,
+      "observed_hours": 168,
+      "recorded_conversion_spending_near": "227.700051211935637929254912",
+      "transactions": 5076874,
+      "week_start": "2026-09-07"
+    },
+    {
+      "active_accounts": 457768,
+      "distinct_transaction_hashes": 6590352,
+      "invalid_conversion_cost_rows": 0,
+      "matches_result56": true,
+      "observed_days": 7,
+      "observed_hours": 168,
+      "recorded_conversion_spending_near": "275.529289708540204041216",
+      "transactions": 6590352,
+      "week_start": "2026-09-28"
+    },
+    {
+      "active_accounts": 384444,
+      "distinct_transaction_hashes": 6401624,
+      "invalid_conversion_cost_rows": 0,
+      "matches_result56": true,
+      "observed_days": 7,
+      "observed_hours": 168,
+      "recorded_conversion_spending_near": "262.343948111339008871845888",
+      "transactions": 6401624,
+      "week_start": "2026-10-05"
+    }
+  ]
+}

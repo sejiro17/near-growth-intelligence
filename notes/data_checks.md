@@ -1158,3 +1158,234 @@ guaranteed holder benefits cannot be inferred. Extraction was not
 recommended because historical attribution remained unresolved. The
 assessment stopped without extraction code, BigQuery queries or RPC
 requests.
+
+## 6 November 2026 — Supply Comparison and Canonical Account Witness
+
+The saved exports support an eight-week observational comparison for
+24 August–18 October, using the 23 August close as the opening baseline.
+[Result 46](../results/46_observational_supply_comparison_2026-08-24_to_2026-10-18.json)
+retains exact exported digits, eight weekly rows, 56 daily rows, source
+hashes and arithmetic diagnostics. Opening supply is
+1,304,386,568.872595 NEAR and closing supply is
+1,309,322,552.8524296 NEAR. Net movement is 4,935,983.9798346 NEAR,
+compared with 4,919,384.46545613831 NEAR of raw validator balance change.
+The residual is +16,599.51437846169 NEAR: approximately 0.336296% of
+net movement and 0.00127259% of opening supply. Absolute daily residuals
+sum to 84,284.66902631883 NEAR, comprising +50,442.09170239026 NEAR
+and -33,842.57732392857 NEAR of signed daily residuals. The period net
+therefore hides cancellation. The 0.00001 NEAR tolerance checks saved
+arithmetic consistency only, not source accuracy or economic reconciliation.
+
+[Result 42](../results/42_supply_validator_event_diagnostic_2026-09-23.json)
+has identical positive-supply-movement and validator-update height/hash
+sets at heights 216877934, 216921134 and 216964334 on 23 September.
+Matching event identifiers do not establish monetary reconciliation.
+The saved canonical RPC comparison at the first two exact hashes,
+[result 43](../results/43_canonical_rpc_bigquery_comparison_2026-09-23.json),
+contains 461 and 462 distinct validator-update accounts, each with one
+record. The selected BigQuery evidence contains 302 and 390 respectively.
+All BigQuery validator accounts occur in RPC. The differences are 159
+and 72 updates, totalling 231 records across 160 distinct accounts.
+All 224 and 225 blank-chunk BigQuery validator records also appear as
+RPC validator updates. A blank chunk identifier therefore does not by
+itself invalidate an account update. Shared balance comparisons retain
+the source FLOAT precision qualifications recorded in result 43.
+
+The saved shard layout and inferred per-shard account ranks support a
+hypothesis of collisions involving blank chunk identifiers and reused
+indices. The actual ingestion key and responsible ETL step are unconfirmed.
+This two-block finding does not establish the same discrepancy elsewhere
+in the dataset or invalidate unrelated transaction findings.
+
+[Result 45](../results/45_bitwise_validator_update_witness_2026-09-23.json)
+pairs the exact parent state for `bitwise_1.poolv1.near` at height
+216877933 with its sole `validator_accounts_update` post-state at
+216877934. Integer arithmetic gives a liquid change of zero and a
+locked and combined change of 1128147246190549662124317432 yoctoNEAR,
+exactly **+1,128.147246190549662124317432 NEAR**. This measures one
+BigQuery-omitted account change. Neither this witness nor subsequently
+recovered updates can simply be added to the original daily total:
+later observed predecessor comparisons may already incorporate omitted
+movements, while intervening updates of other causes can change the
+comparison interval. Reconstructing the account history requires valid
+before-states, cause distinctions and within-account ordering.
+
+Independently measured issuance and actual burn remain unavailable.
+Validator account changes are not independently measured minting, and
+execution spending or negative supply movements do not measure actual
+burn. Saved-response consistency does not prove complete historical
+retention across all shards. The original observational totals remain
+unchanged, including the +11,427.31386968814 NEAR residual on 23 September.
+
+Offline reproduction uses the recorded inputs and existing validators:
+
+```bash
+python3 -B analysis/13_consolidate_supply_evidence.py comparison --output /tmp/near-comparison-reproduced.json
+python3 -B analysis/13_consolidate_supply_evidence.py witness
+python3 -B analysis/13_consolidate_supply_evidence.py table
+python3 -B analysis/13_consolidate_supply_evidence.py check
+```
+
+The comparison reproduces result 43 byte-for-byte. The witness and supply
+commands default to stdout. Explicit output paths must be new files.
+No collection commands are invoked by this reproduction procedure.
+
+## 6 November 2026 — Priorities 1–2 Consolidated
+
+The supply investigation validates saved arithmetic and identifies a bounded
+historical-record discrepancy; it does not complete the economic supply identity.
+Results 43, 45 and 46 reproduce from their recorded inputs with
+`analysis/13_consolidate_supply_evidence.py`. The period supply-versus-validator
+change residual remains **+16,599.51437846169 NEAR**, including
+**+11,427.31386968814 NEAR** on 23 September. Absolute daily residuals sum to
+84,284.66902631883 NEAR, so net cancellation matters. The 0.00001 NEAR threshold
+tests saved arithmetic consistency, not source accuracy.
+
+The two-block canonical comparison contains 231 validator updates absent from
+the selected BigQuery observations. Blank-chunk records can be valid updates.
+The exact parent/post witness measures +1,128.147246190549662124317432 NEAR for
+one omitted account change. Reused indices and blank chunk identifiers support
+an ingestion-collision hypothesis, but the responsible ingestion key or ETL
+operation remains unconfirmed. These findings cannot be extrapolated to the
+entire dataset or used to invalidate unrelated transaction measurements.
+Recovered changes cannot simply be added to the original daily total because
+later recorded predecessor comparisons may already include omitted changes.
+Independently measured issuance and actual native burn remain unavailable.
+
+The bounded wallet investigation is closed. [Result 48](../results/48_frontend_wallet_native_transfers_decoded_2026-09-23.json)
+reproduces the decoding of result 47: 22 successful native transfer actions to
+`fefundsadmin.sputnik-dao.near` on 23 September, totalling exactly
+8,000.969220749197522847764034 NEAR. The retained JSON deposit strings are decoded
+with integer arithmetic. All payments remain economically unclassified. This
+one-day native discovery excludes tokens and internal Verifier balances and is
+not a complete revenue-distribution or buyback ledger.
+
+[Result 54](../results/54_internal_credit_trace_consolidation_2026-09-23.json)
+reproduces the completed origin trace for one payment. A signed internal transfer
+of `1252862790024676320487808800` units of `nep141:wrap.near` from
+`51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe`
+credited `a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd`.
+Five blocks later that account was debited for the verified native withdrawal.
+The subsequent payout of 1,252.862790024676320487808800 NEAR executed at height
+216859521 after unwrapping. The credit's signed
+intent has `memo: null`; its returned execution graph contains no swap or
+additional application callback. Checksums, identities, logs and exact amounts
+agree with results 47–53. The same-account initial receipt payload omission is
+retained explicitly; transaction actions supply its initiating-method evidence.
+
+The internal accounts' front-end fee-collection role, prior funding, opening
+balances and allocation within commingled balances remain unverified. A named
+fee-recipient destination, matching amount, successful withdrawal or APP_FEE memo
+does not by itself establish revenue origin. Internal `mt_burn` concerns a
+Verifier balance representation and does not measure native NEAR destruction.
+The one-candidate boundary is complete; no additional attribution collection is
+included in the persistence measurement step.
+
+These limitations prevent deriving independently reconciled issuance, permanent
+burn or fee-offset inflation; an attributable revenue yield or buyback-funded
+holder return; or a valuation based on verified holder cash flows. Recorded
+execution spending does not establish external NEAR purchases, persistent token
+holdings or net market demand. An investment model must keep these channels
+conditional rather than fill unavailable components with balancing figures or
+assumed percentages. The limitations do not establish that fee distributions or
+buybacks never occurred, and do not negate separately validated activity counts.
+
+Offline reproduction:
+
+```bash
+python3 -B analysis/13_consolidate_supply_evidence.py check
+python3 -B analysis/14_decode_frontend_native_transfers.py
+python3 -B analysis/16_internal_credit_evidence.py check
+python3 -B analysis/18_consolidate_internal_credit_trace.py
+```
+
+The latter three commands default to stdout. Raw captures and published exports
+are retained unchanged. Priority 3 is specified in
+[Persistent economic activity measurement](persistent_activity_plan.md).
+
+## 7 November 2026 — Persistence Validation and Integration
+
+The bounded measurement phase is closed. Result 56 contains all 23 expected
+records and validates 53,959,076 transactions across ten complete weeks.
+Nine exact transaction checkpoints are available; three incomplete checkpoints
+remain unavailable. Repeated return is the intersection of starting membership
+with activity in all three exact +1/+4/+8 weeks, not continuous weekly activity.
+Result 57 retains the transaction, concentration and saved-baseline checks.
+
+Result 58 contains all 51 expected records for the 17 August cohort's +8
+submissions during 12–18 October. Its 65,251 exact returners signed 3,528,043
+transactions; the overlapping repeated subset has 53,455 accounts and 3,475,043
+transactions. Result 59 validates status/date buckets, initial matching and
+recorded spending. Both groups have zero unassessed initial receipts or invalid
+costs. Execution costs are 1,312.24525168980803277846528 and
+1,286.265444482067478128304128 NEAR, separate from conversion costs.
+
+Result 60 contains all 75 expected records: one summary, five weekly controls,
+three populations and 66 assessment buckets. The transaction source controls
+reconcile 27,743,132 unique hashes over 35 observed days/840 hours. The selected
+unique union contains 90,389 accounts, 5,192,790 transactions, the same number of
+distinct initial receipt IDs and observed outcomes, and zero duplicate outcome
+keys. Classification preserves the unique transaction count. The lookup has
+records on all 13 days for outcomes and blocks; these are observed-coverage
+diagnostics, not independent proof of complete ingestion.
+
+| Shared-week group | Accounts | Transactions | Successful initial receipts | Failed initial receipts | Conversion NEAR | Initial-receipt NEAR |
+|---|---:|---:|---:|---:|---:|---:|
+| 10 August exact +8 | 66,309 | 3,888,965 | 3,563,266 | 325,699 | 178.091295295805881218842624 | 1449.812772615086355636502528 |
+| 10 August all checkpoints | 52,423 | 3,831,697 | 3,506,793 | 324,904 | 176.097112485742396833083392 | 1430.089644958032974070009856 |
+| 28 September exact +1 | 83,037 | 5,174,834 | 4,261,260 | 913,574 | 224.114123400778586446954496 | 2316.499860740283431580270592 |
+
+The corresponding transaction shares of the observed week are 60.75%, 59.86%
+and 80.84%; initial success rates are 91.63%, 91.52% and 82.35%. SUCCESS_VALUE
+and SUCCESS_RECEIPT_ID remain separately recorded. All groups' buckets reconcile
+exactly to their transaction/status/cost totals. No missing/shared initial IDs,
+duplicate-match exclusions, unresolved execution blocks, invalid executor/time
+comparisons or invalid costs are reported for the selected records.
+
+The exact-return groups overlap by 58,957 accounts and 3,871,009 transactions,
+using inclusion-exclusion against the unique union before population expansion.
+The repeated August population is a subset of the August exact +8 population.
+Its intersection with September and spending for any union/intersection are
+unavailable. Overlapping totals must not be added. Different horizons and
+membership composition prevent causal interpretation of the descriptive rates.
+
+One distinct selected initial receipt executed in each pilot's six-day tail,
+also appearing in overlapping populations: 0.000322185534419199983616 NEAR on
+12 October and 0.00064349229576029995008 NEAR on 19 October. The tails cover
+12–17 and 19–24 October, not complete UTC weeks. Follow-up elapsed time varies
+by submission date. Descendant success and spending are not assessed.
+
+Receipt-owner uniqueness covers only four/five source transaction weeks.
+Limited examples corroborate saved identities, dates and hash/time consistency;
+they cannot independently reconstruct every account membership or every link,
+executor comparison, execution height or lag. Source monetary fields remain
+FLOAT-derived. Decimal preserves saved arithmetic; the 0.00001 NEAR screen
+applies to saved baseline consistency only. Internal subtotal identities are
+checked exactly. Missing costs suppress complete totals, rather than becoming
+zero; focused synthetic tests cover missing costs and duplicate exclusions.
+
+Result 61 records the shared-week validation and source hashes. SQL 42 has a
+proven extra final LF relative to result 57's fingerprint; SQL 43 has a proven
+space after its final semicolon relative to result 59's fingerprint. Removing
+only these bytes in memory recovers the recorded hashes and historical metrics.
+No SQL or historical validation export is rewritten.
+
+Result 62 integrates the validated observations into the dashboard and thesis.
+The +16,599.51437846169 NEAR supply residual, bounded 231-update discrepancy,
+unconfirmed ingestion-collision hypothesis and unverified withdrawal revenue
+origin remain explicit. Independent issuance, actual native burn and holder
+value capture remain unavailable. These qualifications do not generalize the
+two-block discrepancy or invalidate unrelated transaction measurements.
+
+Offline reproduction and reconciliation:
+
+```bash
+python3 -B analysis/23_rebuild_published_results.py
+python3 -B -m unittest discover -s tests -v
+```
+
+The rebuild verifies 17 derived artifacts using saved exports and provenance,
+runs legacy builders in an isolated temporary copy, and disables source requests.
+Existing outputs must match byte-for-byte and are never overwritten. Five other
+execution-eligible checkpoints remain unmeasured; one earlier point lies outside
+the agreed execution scope. No further extraction is part of this closed phase.

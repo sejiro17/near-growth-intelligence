@@ -1,0 +1,10 @@
+{
+  "account_id": "bitwise_1.poolv1.near",
+  "account_identity_basis": "Recorded request and JSON-RPC ID; account ID need not be echoed.",
+  "block_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+  "block_height": 216877933,
+  "independently_measured_actual_burn": null,
+  "independently_measured_issuance": null,
+  "monetary_change": null,
+  "status": "OBSERVED_RESPONSE_IDENTITY_VALIDATED"
+}

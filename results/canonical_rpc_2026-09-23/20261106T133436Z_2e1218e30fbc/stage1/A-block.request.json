@@ -1,0 +1,8 @@
+{
+  "id": "A-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": 216877934
+  }
+}

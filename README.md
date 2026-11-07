@@ -4,9 +4,15 @@ An interactive research dashboard for investigating the quality of NEAR's activi
 
 I built this project to help analysts, ecosystem teams and developers examine what headline figures leave out: who contributes to activity, whether accounts return, how concentrated transactions are, and whether additional submissions translate into successful execution.
 
-Fixed transaction research observations cover **6 July–18 October 2026: fifteen complete UTC weeks**, containing **79,171,891 transactions**. Economic measurements and detailed execution analysis remain scoped to **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**.
+Fixed transaction research observations cover **6 July–18 October 2026: fifteen complete UTC weeks**, containing **79,171,891 transactions**. Network calendar-period economics cover **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**. Selected activity cohorts start on 10 August; bounded initial-receipt lookups include six-day execution tails through 24 October.
 
 Across fifteen-week endpoints, transactions declined **10.63%** and weekly active signing accounts declined **24.65%**. First-four-week versus final-four-week averages increased **16.39%** and **79.47%**, respectively. Growth direction depends on the comparison period; the final four weeks include the account spike.
+
+The completed persistence phase finds exact +8 returns of **47.41%** and **46.18%** for the 10 and 17 August activity cohorts, with **37.48%** and **37.83%** active at all three selected checkpoints. Their top ten returners generated **73.98%** and **75.12%** of +8 transactions. Selected initial receipts executed successfully and incurred measured spending; complete-chain success remains unavailable.
+
+The supply residual remains **+16,599.51437846169 NEAR**. Two exact blocks establish 231 validator updates absent from selected BigQuery evidence; an ingestion-collision explanation remains unconfirmed. A verified native withdrawal has **unverified revenue origin**. Independent issuance, actual native burn and holder value capture remain unresolved. The dashboard and [investment thesis](notes/investment_thesis.md) present these qualifications beside the findings.
+
+The revenue/buyback ledger, full issuance/burn reconciliation, broad relayer attribution and conditional investment model remain incomplete. The current thesis organizes evidence and unresolved inputs; it does not implement a valuation model.
 
 ## Explore the Dashboard
 
@@ -44,9 +50,9 @@ These findings show why activity counts need account, lifecycle and execution co
 |---|---|
 | Growth | Whether transactions, signing-account participation and combined recorded execution spending moved together. |
 | Growth drivers | Which accounts contributed to changes, including selected execution outcomes, costs and diagnostic errors. |
-| Account returns | Weekly cohort participation and the lifecycle context behind the account spike. |
+| Account returns | Exact +1/+4/+8 activity returns, repeated-checkpoint intersections, concentration and scoped initial-receipt outcomes/spending; lifecycle context for the spike. |
 | Concentration | How much activity depended on leading signing accounts and original transaction receivers. |
-| Economics | Transaction conversion and receipt execution spending, receipt volume, average receipt cost and observed supply changes. |
+| Economics | Recorded spending, the eight-week observational supply residual, bounded canonical evidence and the withdrawal trace's unresolved revenue origin. |
 | Decision priorities | What needs investigation before findings inform adoption, support or economic claims. |
 | Account explorer | Five selected signing accounts, with weekly trends, destinations, actions and attribution evidence. |
 
@@ -102,7 +108,8 @@ The detailed evidence is available in:
 
 ## Interpretation Boundaries
 
-- Fifteen weeks of transactions cannot establish long-term adoption; economics and detailed execution analysis cover eight weeks.
+- Fifteen weeks of transactions cannot establish long-term adoption. Network calendar-period economics cover eight weeks; selected initial-receipt pilots have explicit six-day tails through 24 October.
+- Starting-week activity cohorts overlap and are not newly acquired users. Repeated return means activity at all exact +1/+4/+8 checkpoints, not continuous weekly activity. Incomplete follow-ups remain unavailable.
 - Signing accounts are identifiers, not verified people. Relayers can submit transactions for other participants.
 - Account absence is not automatically user churn, and documented service associations do not prove historical ownership.
 - Transactions, actions and receipt executions measure different units. An initial receipt outcome does not establish complete downstream success.
@@ -113,28 +120,29 @@ Earlier unmatched outcomes, action-record coverage gaps and unresolved economic 
 
 ## Reproduce the Derived Results
 
-After activating the environment:
+After activating the environment, one command rebuilds and reconciles the published derived evidence from saved inputs and provenance manifests:
 
 ```bash
-python analysis/01_weekly_activity_baseline.py
-python analysis/02_weekly_execution_costs.py
-python analysis/03_fixed_account_growth.py
-python analysis/04_account_growth_contributions.py
-python analysis/06_weekly_economic_comparison.py
-python analysis/07_account_profiles.py
-python analysis/08_execution_spending.py
-python analysis/09_extended_activity_comparison.py
+python3 -B analysis/23_rebuild_published_results.py
 ```
 
-These scripts use saved exports and do not require new BigQuery scans or RPC requests.
+The command runs legacy builders in an isolated temporary copy, revalidates saved canonical and withdrawal captures, validates the cohort exports, and reproduces results 61–62. It verifies 17 derived artifacts. Missing named derived outputs are created exclusively; an existing output must match byte-for-byte and is never overwritten. Raw exports/captures and historical provenance remain unchanged. Network operations are disabled; no BigQuery query, dry run or RPC collector is invoked.
 
-To validate saved diagnostic responses or resume incomplete lookups:
+Use `--check` for verification without creating missing outputs:
 
 ```bash
-python analysis/05_fetch_failure_details.py
+python3 -B analysis/23_rebuild_published_results.py --check
 ```
 
-When all eighteen saved responses validate, no RPC requests are made and the results are left unchanged. Incomplete lookups require network access.
+Results 57 and 59 retain their recorded SQL identities. Proven trailing-whitespace differences in current SQL 42/43 are documented in the validation reports and verified in memory, without rewriting historical reports. A mismatch beyond those verified differences stops validation.
+
+Run the offline analysis and dashboard smoke tests in the installed environment:
+
+```bash
+python3 -B -m unittest discover -s tests -v
+```
+
+Dashboard smoke tests use Streamlit AppTest in-process, without starting a server. Source collection remains a separate manual workflow.
 
 Running the SQL queries requires BigQuery access and may incur query charges.
 
