@@ -1,0 +1,27 @@
+{
+  "collector_sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846",
+  "connect_timeout_seconds": 15,
+  "coverage_limitation": "Observed responses only; all-shard historical retention is not independently verified.",
+  "created_at": "2026-11-06T13:34:36.353890+00:00",
+  "diagnostic_sha256": "0aa9b53e0ba261d2ad468bf0f16c769a08fe5c21a717ca943845adb8d0514e64",
+  "diagnostic_source": "/Users/USER/Documents/near-growth-intelligence/results/42_supply_validator_event_diagnostic_2026-09-23.json",
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "request_timeout_seconds": 60,
+  "spacing_seconds": 65,
+  "stage1_requests": 6,
+  "stage2_requests": 2,
+  "targets": {
+    "A": {
+      "hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+      "height": 216877934,
+      "parent": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+      "saved_records": 302
+    },
+    "B": {
+      "hash": "J6jyjUSFFatXnCKEG3nKaD9qQLzQrY4xWyFkB5a5mJHB",
+      "height": 216921134,
+      "parent": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+      "saved_records": 390
+    }
+  }
+}

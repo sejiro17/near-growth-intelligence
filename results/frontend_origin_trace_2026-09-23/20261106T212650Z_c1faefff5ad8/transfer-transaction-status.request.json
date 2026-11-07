@@ -1,0 +1,10 @@
+{
+  "id": "transfer-transaction-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "intents.near",
+    "tx_hash": "FFwediesLXUhqu8RwxeEpY2F6sRakHmysAjzwxZbXjXi",
+    "wait_until": "FINAL"
+  }
+}

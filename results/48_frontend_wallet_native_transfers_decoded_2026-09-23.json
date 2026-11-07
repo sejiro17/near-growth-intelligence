@@ -1,0 +1,733 @@
+{
+  "derivation": {
+    "method": "Parse dotted result rows and both JSON argument layers; require agreement with source-row JSON; validate decimal strings as u128; sum integers and format with 24 decimals.",
+    "script": {
+      "bytes": 15196,
+      "path": "analysis/14_decode_frontend_native_transfers.py",
+      "sha256": "0998bb9ef520c47ce13a2e62fe70037472a17ebdff5caa748ade0ebb054c1c1d"
+    }
+  },
+  "limitations": [
+    "UNCLASSIFIED_TRANSFER throughout; receipt signer is not necessarily the originating transaction signer.",
+    "Amounts are saved TRANSFER deposits, not independently reconciled net wallet balance changes.",
+    "Observed-record consistency does not establish independent historical completeness.",
+    "Native-only; excludes tokens and internal Verifier balances.",
+    "No fee, principal, refund or internal-movement attribution is established."
+  ],
+  "source": {
+    "bytes": 201513,
+    "path": "results/47_frontend_wallet_native_transfer_diagnostic_2026-09-23.json",
+    "sha256": "d69601fb513e4276eaa0db9126ee415a2899768eca5f599034f822570992f9cf"
+  },
+  "summary": {
+    "amount_near": "8000.969220749197522847764034",
+    "amount_yoctonear": "8000969220749197522847764034",
+    "transfer_rows": 22
+  },
+  "transfers": [
+    {
+      "action_index": 0,
+      "amount_near": "277.156067505941231672880476",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "277156067505941231672880476",
+      "block_hash": "5sjupQ9Lm2kVrmWD923ghdAxRNx5zWpzix1PHLSFYYFF",
+      "block_height": 216849608,
+      "block_timestamp_nanoseconds": "1790130183070514098",
+      "block_timestamp_utc": "2026-09-23T02:23:03.070514Z",
+      "child_receipt_ids": [
+        "8E8GnWFRQMvqAKX9UdTYSrLSgKq21SdN24XBpZCu9oqN"
+      ],
+      "chunk_hash": "4crX6sPsEe73RPmQwH6tsX5FAKZBovNC8B48BxXP2djH",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"277156067505941231672880476\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"277156067505941231672880476\"}",
+      "receipt_id": "Ha38MibAZtuVcpUp7XRCAvuEUMemW1zHS8wxR98BEHiz",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:oxEocH88sCavwDRXqoMtryK2Qm9Af72jxMsvsQGHQJx",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 1
+    },
+    {
+      "action_index": 0,
+      "amount_near": "238.547609195954461862724789",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "238547609195954461862724789",
+      "block_hash": "3ishG9ZHcwPAyJrynBMx5XSTisi4FvarSdhJX9s3YDNZ",
+      "block_height": 216851523,
+      "block_timestamp_nanoseconds": "1790131341352389795",
+      "block_timestamp_utc": "2026-09-23T02:42:21.352389Z",
+      "child_receipt_ids": [
+        "6TWiwa4tomPRcP1EdgQa7JE3XwwKVx1y5LRSXgoArqJL"
+      ],
+      "chunk_hash": "HDMcQNCDeK2sXxpXiH8RnZaik3jPqQN9rzhurq7a53Ww",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"238547609195954461862724789\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"238547609195954461862724789\"}",
+      "receipt_id": "HLoswjGV68XdjKYkdqBAxnhJ3TT5YMFR4UCMG7e3Wmvy",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:5feHBLeyMBf7mppZR1kHv3Hk43kG7b69pM1JKEfWPjdC",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 2
+    },
+    {
+      "action_index": 0,
+      "amount_near": "246.324002226270854995759289",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "246324002226270854995759289",
+      "block_hash": "HchdXSwMT8Vbh2iCQy3nU4JCXvff3iVs6izDdpTusN2u",
+      "block_height": 216856495,
+      "block_timestamp_nanoseconds": "1790134345350480667",
+      "block_timestamp_utc": "2026-09-23T03:32:25.350480Z",
+      "child_receipt_ids": [
+        "78rb8FkaS3QmsN2mieZaJ3gZo4hethXjAZNwUi1MkAxp"
+      ],
+      "chunk_hash": "BGTnRrXVb1QbZogosEKPL4478zdxWNqWDzazdgNGV2DR",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"246324002226270854995759289\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"246324002226270854995759289\"}",
+      "receipt_id": "8hrDNSqiQ3xvAXWjQdAMoSYaFypraBhE37e6ENNZQT3Q",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:oxEocH88sCavwDRXqoMtryK2Qm9Af72jxMsvsQGHQJx",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 3
+    },
+    {
+      "action_index": 0,
+      "amount_near": "1252.862790024676320487808800",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "1252862790024676320487808800",
+      "block_hash": "8gAqfFuPUhwZwwKy1uyEW2wSXyiSbX6A44kS3UR28ajH",
+      "block_height": 216859521,
+      "block_timestamp_nanoseconds": "1790136146000487385",
+      "block_timestamp_utc": "2026-09-23T04:02:26.000487Z",
+      "child_receipt_ids": [
+        "DXxVWT5uREGEQ9CVJHH6UzCRAmv97A3ad1HGVnEQ483r"
+      ],
+      "chunk_hash": "9ZyUMqk1AxNjkjo2TtpBne3Kcxv4j3Jij5Cq7W7vp8oR",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"1252862790024676320487808800\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"1252862790024676320487808800\"}",
+      "receipt_id": "5z6sNxeEzHdQuU1P8j7o5DiTcLxXJdHj9nbFvX5H1wFK",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:BXa2Evq6XGAr3TiXfQisyv9PYp4Gpzm14AbLuw8h6G77",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 4
+    },
+    {
+      "action_index": 0,
+      "amount_near": "322.005955912156470136184149",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "322005955912156470136184149",
+      "block_hash": "FFcfS3SKX2Rp5MiGpHCy5rVdhGc3uNhGd8JgoPv9XKfE",
+      "block_height": 216866452,
+      "block_timestamp_nanoseconds": "1790140349543010554",
+      "block_timestamp_utc": "2026-09-23T05:12:29.543010Z",
+      "child_receipt_ids": [
+        "9E3xXfRz8fuWehUZhGyTCf2rX64nmxdqnJD2M24xfvRB"
+      ],
+      "chunk_hash": "8zM1HmfJMbu7ctr9GjDapRjnehZb3UyCYLM2Q3yoGWKv",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"322005955912156470136184149\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"322005955912156470136184149\"}",
+      "receipt_id": "LfNbdU9AD3hHopGTJGSUYah1gW5C5HGZhdMHPhcHNwQ",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:2nwukzu9FrAYbrrBRyHH7XNaJpQcYCoVqZAPeSXEbQJF",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 5
+    },
+    {
+      "action_index": 0,
+      "amount_near": "335.116914035865034059682793",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "335116914035865034059682793",
+      "block_hash": "JD5estrSFuR6AYxjUNqLewiipyJog9fuNQ9bBhQ49QQ6",
+      "block_height": 216870809,
+      "block_timestamp_nanoseconds": "1790143052876842992",
+      "block_timestamp_utc": "2026-09-23T05:57:32.876842Z",
+      "child_receipt_ids": [
+        "JAuXy3buRnSqEsGfoPXAcagbkXoW1SQj2DZEHZ9MTh5C"
+      ],
+      "chunk_hash": "2zVPL4dJYghkGrS2DrVRC8NSLAvWQhAdqVMnF25C5atN",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"335116914035865034059682793\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"335116914035865034059682793\"}",
+      "receipt_id": "7gZygsG8kDyBsRadiy8DhAauozEpTqRYeE6aYouBcZaZ",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:FKPYRP9c93qVKPexkDAsHhqmgwmrS4H5uMiuqGXhY2y3",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 6
+    },
+    {
+      "action_index": 0,
+      "amount_near": "300.449968641202523942942155",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "300449968641202523942942155",
+      "block_hash": "F55L3kYyzfsKPVL9nRhowT6Y9WZyCQoMvmmb3nQPy1PQ",
+      "block_height": 216872143,
+      "block_timestamp_nanoseconds": "1790143879618008048",
+      "block_timestamp_utc": "2026-09-23T06:11:19.618008Z",
+      "child_receipt_ids": [
+        "ES8UwAqNXca84SwBCr7YsVC26AFikY4Dsq4TuJpCD57g"
+      ],
+      "chunk_hash": "6mSNjRGYhhvcproTquDhD3PA6RNgjaw6bBifUjbZQH6e",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"300449968641202523942942155\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"300449968641202523942942155\"}",
+      "receipt_id": "BV8ut9jp51idrBo9BfJ32uH2oPDgsLJL8M7yy1x8Mhy8",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:FKPYRP9c93qVKPexkDAsHhqmgwmrS4H5uMiuqGXhY2y3",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 7
+    },
+    {
+      "action_index": 0,
+      "amount_near": "370.809430348824850182709608",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "370809430348824850182709608",
+      "block_hash": "CGzFgGS9zTjMBLYqKXv66FnWE5WZ5EEW6oNpHzrrPA7S",
+      "block_height": 216875041,
+      "block_timestamp_nanoseconds": "1790145679991587339",
+      "block_timestamp_utc": "2026-09-23T06:41:19.991587Z",
+      "child_receipt_ids": [
+        "Cvc4eHjxUyPtM289xsmNRjw4QrCQzpqyaSsctdQYoaP2"
+      ],
+      "chunk_hash": "DdCawBYGxMrkJmbwxPkgVXve7MGuvYPi8FkZqjZSV9L5",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"370809430348824850182709608\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"370809430348824850182709608\"}",
+      "receipt_id": "bHHkxncK6QYzW39ah95jBfi26br6GFykMUpeuuavyrx",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:2nwukzu9FrAYbrrBRyHH7XNaJpQcYCoVqZAPeSXEbQJF",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 8
+    },
+    {
+      "action_index": 0,
+      "amount_near": "278.409695781663559587237325",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "278409695781663559587237325",
+      "block_hash": "7Y2RNi8xQA1S1VD3QyHcnWjkw5mkXA7Jak846VsmfKLd",
+      "block_height": 216880825,
+      "block_timestamp_nanoseconds": "1790149287635023761",
+      "block_timestamp_utc": "2026-09-23T07:41:27.635023Z",
+      "child_receipt_ids": [
+        "Ej67pPi8zDrAvsRE98QU5Psp35iU3q3Jbec56CVCpk87"
+      ],
+      "chunk_hash": "GPXB573oBK2HMPaR6GmHTinBkSHgFCVPm889jjN6624h",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"278409695781663559587237325\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"278409695781663559587237325\"}",
+      "receipt_id": "9LYZE8SGRkpaE4BfTxuH1NLsydML8BQqTbgkT4HQxLHX",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:BXa2Evq6XGAr3TiXfQisyv9PYp4Gpzm14AbLuw8h6G77",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 9
+    },
+    {
+      "action_index": 0,
+      "amount_near": "220.955902098579217426223257",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "220955902098579217426223257",
+      "block_hash": "81e7kGXpnBabHzKmHvVR2vxhTayhhJAoNfNj2YvAYAbp",
+      "block_height": 216887662,
+      "block_timestamp_nanoseconds": "1790153549248860401",
+      "block_timestamp_utc": "2026-09-23T08:52:29.248860Z",
+      "child_receipt_ids": [
+        "BHGm1AwscNTmPCJeatU7b6nq1koKQ5Ps9Wbxww2DG6rK"
+      ],
+      "chunk_hash": "2HnwssCdPUgdUV3Qt9ZAeWsahPVDq97wbxDFbR7dpPNn",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"220955902098579217426223257\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"220955902098579217426223257\"}",
+      "receipt_id": "AKdz5awpNRgW9ixHYpiWJAfSQjPNMZH4NnvvXx6Y1m4t",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:BXa2Evq6XGAr3TiXfQisyv9PYp4Gpzm14AbLuw8h6G77",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 10
+    },
+    {
+      "action_index": 0,
+      "amount_near": "224.805989527231615799971344",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "224805989527231615799971344",
+      "block_hash": "7i1PaoCR29jNDtx4njUJ4b1Rz9k5c61ZBRDVvvbUSQhb",
+      "block_height": 216892447,
+      "block_timestamp_nanoseconds": "1790156556905697425",
+      "block_timestamp_utc": "2026-09-23T09:42:36.905697Z",
+      "child_receipt_ids": [
+        "s4DpneHUQBV3qqkV1anTb9Zt8GCib3Tx8XTnhFJ73TH"
+      ],
+      "chunk_hash": "F2CxTTsbuDdDJhe5mYC1prraHHA3REEkT7jd4RkkTVv",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"224805989527231615799971344\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"224805989527231615799971344\"}",
+      "receipt_id": "B1aNR7ETN9TaKnTnGJcnTjymiKsuewXgw43HKK4PSuXi",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:8KwHMd5ruFvFqcBCAq1k7k5aqpdLoGMfbUeQKjbaMdSb",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 11
+    },
+    {
+      "action_index": 0,
+      "amount_near": "356.057917264629374516834945",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "356057917264629374516834945",
+      "block_hash": "6Nm79iqcd1BLJrLnEJQ9BRHYrYpbou7kWrj3c48TALRq",
+      "block_height": 216895631,
+      "block_timestamp_nanoseconds": "1790158581133397128",
+      "block_timestamp_utc": "2026-09-23T10:16:21.133397Z",
+      "child_receipt_ids": [
+        "81gHio2rKdVhmjdVR19RXGxJpdWwFpwGaS9JtcGyZvPW"
+      ],
+      "chunk_hash": "9dWJ1FmisbLAjfEgzvPyAFuiXqgdYGkBu6MocHJiuCnq",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"356057917264629374516834945\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"356057917264629374516834945\"}",
+      "receipt_id": "AhuJUD6teiHj5Ewg5UN5kirNBSkHNpMWdSKfTJyzBjvU",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:FKPYRP9c93qVKPexkDAsHhqmgwmrS4H5uMiuqGXhY2y3",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 12
+    },
+    {
+      "action_index": 0,
+      "amount_near": "251.055493354452139101694458",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "251055493354452139101694458",
+      "block_hash": "o388iyddGPmb59cNz8ku8uusH23Xyt3E8p25d2rJXuZ",
+      "block_height": 216904807,
+      "block_timestamp_nanoseconds": "1790164344597082218",
+      "block_timestamp_utc": "2026-09-23T11:52:24.597082Z",
+      "child_receipt_ids": [
+        "FRvNgYKQ9GHQFnYJY4QwsuJKbyxug9LsMQ5WdxS6rFLX"
+      ],
+      "chunk_hash": "B48USRLa32DCV5v4gjwbPNV9PN5Jgn2eE4GLmJ1WyDoW",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"251055493354452139101694458\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"251055493354452139101694458\"}",
+      "receipt_id": "8tXyJi5NeTVafGtEu7ftuw9ZZBsu8cBmpL2EeRQW71Dk",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:FKPYRP9c93qVKPexkDAsHhqmgwmrS4H5uMiuqGXhY2y3",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 13
+    },
+    {
+      "action_index": 0,
+      "amount_near": "942.618305945944027192052209",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "942618305945944027192052209",
+      "block_hash": "6NdKTvNdnTvx9vLLQmwC6JYeJwrxf5ZcTvGEH33NUkLQ",
+      "block_height": 216910477,
+      "block_timestamp_nanoseconds": "1790167956292003003",
+      "block_timestamp_utc": "2026-09-23T12:52:36.292003Z",
+      "child_receipt_ids": [
+        "3y7hWK6F38aDAk1NKZpYBw7xnvRhjuViyFEWxuQ1xLLz"
+      ],
+      "chunk_hash": "Aw13ttYH7Kr1WaFe5b8ddz4ZwfN1hgtaY1Rrms8H8LmV",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"942618305945944027192052209\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"942618305945944027192052209\"}",
+      "receipt_id": "HJnrK8m44Kb7CjQDF3kczPZrBcMPdk4JE2C8KH7XtNYr",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:4vq3dbhcG3A1fJufpgMZwa1UKQcnWf3aprFFp916J82Z",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 14
+    },
+    {
+      "action_index": 0,
+      "amount_near": "606.160044586165952007304062",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "606160044586165952007304062",
+      "block_hash": "7zJkbtBFMaReMfMugtoYZgMvt79zAQxJFPkdDT5KgR7h",
+      "block_height": 216911769,
+      "block_timestamp_nanoseconds": "1790168781532772582",
+      "block_timestamp_utc": "2026-09-23T13:06:21.532772Z",
+      "child_receipt_ids": [
+        "G22R35yPfBVdy6hojkTHyqXWj8seagBjGXJ3hZ5gFRVK"
+      ],
+      "chunk_hash": "EFJp9gBUYVJ6DxSKcJxK9RU8Dr4BBpKa76FXW12x6G1g",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"606160044586165952007304062\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"606160044586165952007304062\"}",
+      "receipt_id": "ABVj5A14zYEaChb1t9Hybfg9gp7weCscdGYxNZLPp4FF",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:BXa2Evq6XGAr3TiXfQisyv9PYp4Gpzm14AbLuw8h6G77",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 15
+    },
+    {
+      "action_index": 0,
+      "amount_near": "323.662155035680180973195063",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "323662155035680180973195063",
+      "block_hash": "4ajXeVFQnmsaaBWwF9rLUG7zXNsBG9E6aoJFBeJh7JXV",
+      "block_height": 216912811,
+      "block_timestamp_nanoseconds": "1790169448305481719",
+      "block_timestamp_utc": "2026-09-23T13:17:28.305481Z",
+      "child_receipt_ids": [
+        "JDKsA54UWiSPF9nAJfFeZCu6FnFc2LvJdhGfNKurM7WY"
+      ],
+      "chunk_hash": "6uTwkSTE69TL2tfG1Twkfc6y91VAdUwuc1raKonKCGoW",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"323662155035680180973195063\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"323662155035680180973195063\"}",
+      "receipt_id": "3mCUEx2HRVdXbeTPmgXHAY3bESR8CtraF5FwgqTPumse",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:BXa2Evq6XGAr3TiXfQisyv9PYp4Gpzm14AbLuw8h6G77",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 16
+    },
+    {
+      "action_index": 0,
+      "amount_near": "244.260678313659715032024774",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "244260678313659715032024774",
+      "block_hash": "75LX5UsEifnRrsjABFzwMayQw7ov9qgiKMro25YJsPgQ",
+      "block_height": 216919396,
+      "block_timestamp_nanoseconds": "1790173579716000236",
+      "block_timestamp_utc": "2026-09-23T14:26:19.716Z",
+      "child_receipt_ids": [
+        "BtDJ9ygmxhiDwvgHuXC6MkLTC5kiEjZtkGb3WT5EPDKv"
+      ],
+      "chunk_hash": "HwRBbRkM6ZU9gBbEthhJHyMyNCn3beR63zHyQJ496g4B",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"244260678313659715032024774\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"244260678313659715032024774\"}",
+      "receipt_id": "3PQa4horiJnXozrTHut7M4zdFDtBZM7NEQ7AZvJgpWhR",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:2nwukzu9FrAYbrrBRyHH7XNaJpQcYCoVqZAPeSXEbQJF",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 17
+    },
+    {
+      "action_index": 0,
+      "amount_near": "230.443930515511172082759521",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "230443930515511172082759521",
+      "block_hash": "8wK5DnRPosiuQCaqiGK7T6bZJR39K6vJZDpdUdB8S3ax",
+      "block_height": 216925234,
+      "block_timestamp_nanoseconds": "1790177260494661012",
+      "block_timestamp_utc": "2026-09-23T15:27:40.494661Z",
+      "child_receipt_ids": [
+        "B62YJdyGPTGwAcgQx7QEygbKQ2CXYdkg8sC3T6ZzATRa"
+      ],
+      "chunk_hash": "69Qkb8cSDzWhAFkSHF7NmKtcXyqy21gfyNTwAgrqSb9V",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"230443930515511172082759521\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"230443930515511172082759521\"}",
+      "receipt_id": "BF7MEPpVjo7SdsUg5uhX3ra7yPsqoRKApYSJ2F5hqJua",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:CTjF3Xm8s7Gob9qLPMbh3sAq8scdoEpibrDFFCMAVwcQ",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 18
+    },
+    {
+      "action_index": 0,
+      "amount_near": "241.984924055314954094427157",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "241984924055314954094427157",
+      "block_hash": "6vxm95hkpSN9Yq15PwYvTfRxAiEEFDu9X6AbUvQYKJzu",
+      "block_height": 216927642,
+      "block_timestamp_nanoseconds": "1790178771853403681",
+      "block_timestamp_utc": "2026-09-23T15:52:51.853403Z",
+      "child_receipt_ids": [
+        "8qsT6c7SXuM7Qfons6KzELCRyZwqv6QKBy3iLCnHdq5y"
+      ],
+      "chunk_hash": "DZBbehBifeWTd9cvaZ2cPr1W5mT3EvAZ2KXsXRJBgJjX",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"241984924055314954094427157\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"241984924055314954094427157\"}",
+      "receipt_id": "2wbXPPFSDKq6XnGhR5jSoGvvMUqMCwRvW8LdQoV9UG4Z",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:BXa2Evq6XGAr3TiXfQisyv9PYp4Gpzm14AbLuw8h6G77",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 19
+    },
+    {
+      "action_index": 0,
+      "amount_near": "232.883392154063652112692844",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "232883392154063652112692844",
+      "block_hash": "F12unR514v1AxxXLWfybmhfpEPjD3hGqyKog2hiFVEix",
+      "block_height": 216936128,
+      "block_timestamp_nanoseconds": "1790184083805741562",
+      "block_timestamp_utc": "2026-09-23T17:21:23.805741Z",
+      "child_receipt_ids": [
+        "CFDDJZyyD6gPjCnrZmFoCiXczWMZpeQ8XkCm42Psz3GG"
+      ],
+      "chunk_hash": "HGXRPsqS74Zrkuqs5RgAWUEQ9iShXJVUD2ZemK2WwrCb",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"232883392154063652112692844\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"232883392154063652112692844\"}",
+      "receipt_id": "8sJFEpEryuFuxVPUwhV48aL8gpVZwPaj6nyapLY7nEvE",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:5feHBLeyMBf7mppZR1kHv3Hk43kG7b69pM1JKEfWPjdC",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 20
+    },
+    {
+      "action_index": 0,
+      "amount_near": "270.352612586973764193102280",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "270352612586973764193102280",
+      "block_hash": "DLyds6UPQozvoRvYn2itFusbtA8B32jJYT5pJKiF5tUt",
+      "block_height": 216953516,
+      "block_timestamp_nanoseconds": "1790194579540791917",
+      "block_timestamp_utc": "2026-09-23T20:16:19.540791Z",
+      "child_receipt_ids": [
+        "FtoqjnKcP2DZoRBJk3YgXptC6H24qf6xVhAXViwdPHDE"
+      ],
+      "chunk_hash": "C29zjxoCVEUcpE8tC1epaxsEkyPzVNnmj3odbpZVaenh",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"270352612586973764193102280\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"270352612586973764193102280\"}",
+      "receipt_id": "4ovvtiByMRHkuVQ6To8ggVGHL2R7r2caixT8XwdsaYC6",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:8KwHMd5ruFvFqcBCAq1k7k5aqpdLoGMfbUeQKjbaMdSb",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 21
+    },
+    {
+      "action_index": 0,
+      "amount_near": "234.045441638436451387552736",
+      "amount_validation": "OBSERVED_NESTED_JSON_EXACT_DECIMAL_STRING_U128",
+      "amount_yoctonear": "234045441638436451387552736",
+      "block_hash": "592AWkpwxE8gkfXJ9gPo4LWkd48ijXdtvSrZZ4ktfmPc",
+      "block_height": 216963723,
+      "block_timestamp_nanoseconds": "1790200646356257479",
+      "block_timestamp_utc": "2026-09-23T21:57:26.356257Z",
+      "child_receipt_ids": [
+        "Fs3nu3S39tnbcPsTUAaGnvKPyJBVNjmG1xCCPxAfTkym"
+      ],
+      "chunk_hash": "EfZw7Z3YMJRC9A6DCh6SwUwPKUSegbkcjco4H1cS3dj",
+      "economic_classification": "UNCLASSIFIED_TRANSFER",
+      "execution_status": "SUCCESS_VALUE",
+      "initial_origin_check": "NO_INITIAL_TX_MATCH_DESCENDANT_OR_BOUNDARY_OR_COVERAGE_UNRESOLVED",
+      "is_delegate_action": false,
+      "logs": {
+        "list": []
+      },
+      "observation_date": "2026-09-23",
+      "originating_transaction": null,
+      "predecessor_account_id": "intents.near",
+      "raw_args_json": "\"{\\\"deposit\\\":\\\"234045441638436451387552736\\\"}\"",
+      "raw_args_scalar_text": "{\"deposit\":\"234045441638436451387552736\"}",
+      "receipt_id": "3hwRf1peD7f1EyjfYeLpZVPDMQpUgWwyv4frpJxvPwDQ",
+      "receipt_signer_account_id": "intents.near",
+      "receipt_signer_public_key": "ed25519:oxEocH88sCavwDRXqoMtryK2Qm9Af72jxMsvsQGHQJx",
+      "receiver_account_id": "fefundsadmin.sputnik-dao.near",
+      "shard_id": 9,
+      "source_export_row_index": 22
+    }
+  ]
+}

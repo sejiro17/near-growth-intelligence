@@ -4,7 +4,8 @@ This research helps readers identify which growth claims need closer
 examination before they inform investment research, ecosystem support
 or application development.
 
-The priorities are based on the eight-week findings. They are qualitative
+The priorities include the eight-week findings and the completed bounded
+cohort, supply and withdrawal research. They are qualitative
 investigation guides, not automated scores, application rankings or
 buy-and-sell signals.
 
@@ -99,6 +100,31 @@ The combined spending comparison uses conversion submission dates and
 receipt execution dates, rather than matched transaction-chain costs.
 
 Evidence: results 13, 14, 28–34, 36 and 37.
+
+## Completed Measurement and Conditional Investment Inputs
+
+The persistence phase is closed. Exact +8 returns were 47.41% and 46.18% for
+the 10 and 17 August activity cohorts; all-three-checkpoint shares were 37.48%
+and 37.83%. Their top ten returners contributed 73.98% and 75.12% of +8
+transactions. Selected initial receipts have complete observed matching/cost
+coverage, but descendant success and costs remain unavailable. The shared-week
+comparison contains 3,871,009 transactions in both exact-return groups; groups
+must not be added or treated as causal experiments. Evidence: results 56–61.
+
+The supply residual remains +16,599.51437846169 NEAR. The 231 missing validator
+updates are established only for the selected two-block comparison; an ingestion
+collision remains unconfirmed. Neither the exact witness nor recovered updates
+can simply be added to the original daily total. Evidence: results 43, 45–46.
+
+The bounded trace establishes one signed internal transfer and native withdrawal,
+not revenue origin. The one-day transfer discovery is not a complete revenue or
+buyback ledger. Evidence: results 47–54.
+
+Independent issuance, actual supply burn, attributable revenue yield and holder
+cash flows remain unavailable. The investment case can discuss measured execution
+use and conditions for stronger evidence; it cannot substitute expenditure,
+transfers or assumed percentages for those missing valuation inputs. No additional
+collection or valuation estimate is part of the completed measurement phase.
 
 ## Who Can Use These Priorities?
 

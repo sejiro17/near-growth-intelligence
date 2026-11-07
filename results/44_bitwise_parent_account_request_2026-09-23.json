@@ -1,0 +1,10 @@
+{
+  "id": "A-bitwise-parent-account",
+  "jsonrpc": "2.0",
+  "method": "query",
+  "params": {
+    "account_id": "bitwise_1.poolv1.near",
+    "block_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+    "request_type": "view_account"
+  }
+}

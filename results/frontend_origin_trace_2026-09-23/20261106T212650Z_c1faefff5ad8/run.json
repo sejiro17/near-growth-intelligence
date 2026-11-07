@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-11-06T21:26:50.958675+00:00",
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "input_hashes": {
+    "analysis/11_collect_canonical_validator_evidence.py": {
+      "bytes": 21427,
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    "analysis/14_decode_frontend_native_transfers.py": {
+      "bytes": 15196,
+      "sha256": "0998bb9ef520c47ce13a2e62fe70037472a17ebdff5caa748ade0ebb054c1c1d"
+    },
+    "analysis/15_trace_frontend_transfer_origin.py": {
+      "bytes": 12129,
+      "sha256": "957e69289f484903c2bd93f4d4020a3ea83e2569f51aa19db9795f4556107840"
+    },
+    "results/47_frontend_wallet_native_transfer_diagnostic_2026-09-23.json": {
+      "bytes": 201513,
+      "sha256": "d69601fb513e4276eaa0db9126ee415a2899768eca5f599034f822570992f9cf"
+    },
+    "results/49_frontend_transfer_origin_request_2026-09-23.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    }
+  },
+  "interpretation": "Origin/transaction identity evidence only; payments remain UNCLASSIFIED_TRANSFER.",
+  "request": {
+    "id": "transfer-transaction-status",
+    "jsonrpc": "2.0",
+    "method": "EXPERIMENTAL_tx_status",
+    "params": {
+      "sender_account_id": "intents.near",
+      "tx_hash": "FFwediesLXUhqu8RwxeEpY2F6sRakHmysAjzwxZbXjXi",
+      "wait_until": "FINAL"
+    }
+  },
+  "request_count": 1,
+  "spacing_seconds": 65
+}
