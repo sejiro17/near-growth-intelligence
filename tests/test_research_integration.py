@@ -62,7 +62,7 @@ class ResearchIntegrationTests(unittest.TestCase):
                              'What economic demand or value capture is demonstrated?'):
                 self.assertIn(question, text)
             metrics = {item.label: item.value for item in app.metric}
-            self.assertEqual(metrics['Supply minus raw validator change'], '16,599.51437846 NEAR')
+            self.assertEqual(metrics['Supply minus raw validator change'], '16,599.51 NEAR')
             table = next(x.value for x in app.dataframe if 'All +1/+4/+8' in x.value.columns)
             self.assertEqual(table['+8 return'].tolist(), ['47.41%', '46.18%', 'Unavailable', 'Unavailable'])
             app.selectbox(key='explorer_account').select('meteor-relayer.near').run()

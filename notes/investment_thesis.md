@@ -8,7 +8,7 @@
 
 **What executed successfully?** During 5–11 October, 91.63% of the August +8 group's initial receipts and 82.35% of the September +1 group's initial receipts succeeded. The groups share 3,871,009 transactions; these are descriptive rates at different horizons, not causal cohort effects. The 17 August cohort's +8 group had 92.99% initial-receipt success during 12–18 October. Observed initial-receipt matching and cost coverage were complete in these pilots; descendant outcomes remain unavailable.
 
-**What economic demand or value capture is demonstrated?** Recorded NEAR-denominated conversion and receipt execution spending establishes measured execution use associated with persistent signing accounts. It does not establish fresh purchases, durable holdings, net market demand or holder value capture. The supply comparison retains a +16,599.51437846169 NEAR residual; a verified 1,252.862790024676320487808800 NEAR withdrawal has unverified revenue origin. Independent issuance and actual native supply burn remain unavailable. A holder cash-flow valuation cannot be derived from these observations.
+**What economic demand or value capture is demonstrated?** Recorded NEAR-denominated conversion and receipt execution spending establishes measured execution use associated with persistent signing accounts. It does not establish fresh purchases, durable holdings, net market demand or holder value capture. The supply comparison retains a +16,599.51437846169 NEAR residual; a verified 1,252.862790024676320487808800 NEAR withdrawal has unverified revenue origin. Full-window independent issuance and actual native supply burn remain unavailable. A holder cash-flow valuation cannot be derived from these observations.
 
 The investment argument remains conditional: sustained useful activity could support recurring expenditure or balance requirements, but the route from these requirements to durable token demand must be measured separately. Funding sources, economic beneficiaries, supply adjustments and potential selling pressure remain material missing inputs. No fair value, expected return or attractive entry price is established.
 
@@ -220,7 +220,7 @@ Recorded execution spending must not be subtracted from net supply growth to inf
 
 The results also do not establish what supply would have been without execution activity. Total supply is different from circulating supply.
 
-Independent issuance and actual native supply burn remain unavailable, not zero. The 0.00001 NEAR threshold checks saved arithmetic only; it is not a source-accuracy or economic-reconciliation tolerance. Detailed evidence: results 43, 45 and 46 and [data_checks.md](data_checks.md).
+Full-window independent issuance and actual native supply burn remain unavailable, not zero. The ongoing supply investigation is separate from this published eight-week comparison. The 0.00001 NEAR threshold checks saved arithmetic only; it is not a source-accuracy or economic-reconciliation tolerance. Detailed evidence: results 43, 45 and 46 and [data_checks.md](data_checks.md).
 
 ### A verified withdrawal did not establish revenue origin
 
@@ -237,7 +237,7 @@ Evidence: results 47–54. The agreed one-credit provenance investigation is clo
 | Persistent execution | Starting-week accounts returned at selected checkpoints and incurred measured conversion/initial-receipt spending, including successful initial execution. | Independent uses, funding sources, purchase flows and holding periods are unmeasured; spending cannot be converted into net buying or holder returns. |
 | Balance commitments | Execution alone does not measure durable storage/security balances. | Persistent economically attributable balance requirements remain unquantified in this phase. |
 | Revenue deployment | One successful internal credit and native withdrawal are traced. | Revenue origin, distributions, beneficiaries and any implemented buybacks remain unverified; attributable revenue yield is unavailable. |
-| Supply effects | Saved supply movement, raw validator changes, residuals and a bounded ingestion discrepancy are documented. | Independent issuance and actual supply burn remain unavailable; no reconciled fee-offset inflation estimate is supported. |
+| Supply effects | Saved supply movement, raw validator changes, residuals and a bounded ingestion discrepancy are documented. | Full-window independent issuance and actual supply burn remain unavailable; no reconciled fee-offset inflation estimate is supported. |
 | Valuation | No verified holder cash-flow series or valuation model is established. | Do not substitute spending, transfers, balancing figures or assumed protocol percentages for missing cash flows. |
 
 The conditional case would strengthen if economically identifiable activity supports recurring expenditure or durable balance commitments at a meaningful scale, with supply and beneficiary flows independently reconciled. The current data do not establish that these conditions hold or that supply effects and selling pressure outweigh them. No price target or expected return is assigned.
@@ -292,7 +292,7 @@ Persistent evidence of growth without meaningful economic demand, or economic ef
 
 The repository includes SQL queries, exported results, diagnostic responses and Python scripts.
 
-The bounded measurement phase is closed. Rebuild and reconcile the published derived evidence from saved inputs only:
+The published persistence phase and bounded withdrawal-provenance trace are complete within their stated limits; supply reconciliation remains ongoing. Rebuild and reconcile the published derived evidence from saved inputs only:
 
 ```bash
 python3 -B analysis/23_rebuild_published_results.py

@@ -8,6 +8,11 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+if __package__:
+    from . import presentation
+else:
+    import presentation
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT = ROOT / "results/62_integrated_research_evidence.json"
@@ -44,9 +49,34 @@ def load_evidence(source_signature):
 
 
 def overview(data):
-    for item in data["opening"]:
-        st.markdown(f"**{item['question']}** {item['answer']}")
-    st.caption("NEAR mainnet · saved research · activity cohorts are starting-week outer signers, not verified people or newly acquired users. Sources: results 39, 46, 54, 57, 59 and 61.")
+    growth = {row["metric"]: row for row in data["growth_comparison"]}
+    august = data["cohorts"][:2]
+    a, _, september = data["shared_week"]["populations"]
+    st.markdown("**What grew?** Four-week averages rose "
+                f"{fmt(growth['average_weekly_transactions']['relative_change_pct'])}% for transactions and "
+                f"{fmt(growth['average_weekly_active_signing_accounts']['relative_change_pct'])}% for signing accounts. "
+                "Fifteen-week endpoints declined; the final four weeks include the account spike.")
+    st.markdown("**How much persisted?** "
+                f"{fmt(august[0]['checkpoint_return_shares_pct']['8'])}% and "
+                f"{fmt(august[1]['checkpoint_return_shares_pct']['8'])}% of the 10 and 17 August cohorts returned at exact week +8. "
+                "These are overlapping account cohorts; returner transactions are highly concentrated.")
+    st.markdown("**What executed successfully?** Initial-receipt success was "
+                f"{fmt(a['initial_success_share_pct'])}% for the August +8 group and "
+                f"{fmt(september['initial_success_share_pct'])}% for the September +1 group during 5–11 October. "
+                "The groups overlap; descendant success is unmeasured.")
+    st.markdown("**What economic demand or value capture is demonstrated?** Recorded spending establishes execution use. "
+                "Fresh purchases, durable holdings and holder value capture are unmeasured; "
+                "eight-week supply reconciliation and revenue attribution remain unresolved.")
+    st.caption("NEAR mainnet · UTC 2026 · starting-week signing accounts, not verified people or newly acquired users. "
+               "The current published checkpoint uses saved results 39, 46, 54, 57, 59 and 61. "
+               "Named evidence downloads preserve saved precision; table-toolbar exports contain presentation data.")
+    with st.expander("Opening evidence and measurement scope"):
+        for item in data["opening"]:
+            st.markdown(f"**{item['question']}** {item['answer']}")
+        st.caption("Economic unavailability in this checkpoint refers to the full eight-week accounting. "
+                   "The ongoing supply investigation does not change these published window totals.")
+        st.download_button("Download integrated research evidence (JSON)", data=ARTIFACT.read_bytes(),
+                           file_name=ARTIFACT.name, mime="application/json", key="integrated_evidence_download")
 
 
 def persistent_activity(data):
@@ -59,7 +89,7 @@ def persistent_activity(data):
             "+4 return": fmt(row["checkpoint_return_shares_pct"]["4"], suffix="%"),
             "+8 return": fmt(row["checkpoint_return_shares_pct"]["8"], suffix="%"),
             "All +1/+4/+8": fmt(row["repeated_checkpoint_return_share_pct"], suffix="%")})
-    st.dataframe(pd.DataFrame(cohort_rows), hide_index=True, width="stretch", alt="Four activity cohorts with exact-week and all-three-checkpoint return shares; incomplete follow-ups are unavailable")
+    presentation.table(pd.DataFrame(cohort_rows), hide_index=True, width="stretch", alt="Four activity cohorts with exact-week and all-three-checkpoint return shares; incomplete follow-ups are unavailable")
     st.info("Returning means starting-week membership plus activity in the selected exact week. Repeated means activity at all three +1/+4/+8 checkpoints, without requiring intervening weekly activity. Any-return unions are separate measures. Three incomplete checkpoints remain unavailable.")
     population_rows = []
     for group in (*data["shared_week"]["populations"], *data["october12_pilot"]["populations"]):
@@ -72,28 +102,40 @@ def persistent_activity(data):
             "Accounts": row["observed_accounts"], "Transactions": row["transactions"],
             "Week transaction share": fmt(transaction_share, suffix="%"),
             "Initial success": fmt(success, suffix="%"), "Failed initial receipts": group["failed_initial_receipts"],
-            "Conversion NEAR": fmt(row["recorded_conversion_spending_near"], 8),
-            "Initial receipt NEAR": fmt(row["complete_initial_receipt_spending_near"], 8),
+            "Conversion NEAR": row["recorded_conversion_spending_near"],
+            "Initial receipt NEAR": row["complete_initial_receipt_spending_near"],
             "Unassessed receipts": row["unassessed_initial_receipts"]})
-    st.dataframe(pd.DataFrame(population_rows), hide_index=True, width="stretch", alt="Overlapping returner groups with transactions, initial-receipt outcomes and separate recorded conversion and receipt spending")
+    populations = pd.DataFrame(population_rows)
+    presentation.table(populations[["Group", "Submission week", "Accounts", "Transactions", "Week transaction share", "Initial success"]],
+                       hide_index=True, width="stretch", alt="Overlapping returner groups with transaction contribution and initial-receipt success")
     overlap = data["shared_week"]["overlap"]
     st.warning(f"These groups overlap. The shared 5–11 October week contains {overlap['august_and_september_accounts']:,} accounts and {overlap['august_and_september_transactions']:,} transactions in both exact-return groups. The August repeated-checkpoint population is a subset. Do not add totals or infer causal differences between horizons. Union/intersection spending is unavailable.")
+    st.markdown("**Recorded spending for the same overlapping groups**")
+    presentation.table(populations[["Group", "Submission week", "Conversion NEAR", "Initial receipt NEAR"]],
+                       near_places=4, hide_index=True, width="stretch", alt="Separate recorded conversion and initial-receipt spending for overlapping groups")
+    st.caption("Conversion uses submission weeks; initial-receipt spending uses actual execution dates and includes the six-day tails. "
+               "Failed receipts are included; descendants are excluded. These are FLOAT-derived recorded costs, not revenue or fresh purchases.")
     st.markdown("**Concentration and contrary evidence.** The top ten returners contributed 73.98% and 75.12% of the August cohorts’ +8 transactions. The September +1 group’s top ten contributed 59.59%. Its initial-receipt failure rate was 17.65%; the August shared-week groups were 8.37% and 8.48%. The September account spike also has separately measured self-deletion context; low account return is not verified user churn.")
-    st.caption("All selected initial receipts in both execution pilots have one observed outcome, valid execution attribution and valid costs; no link exclusions were reported. This describes selected observed records, not independent ingestion completeness. Receipt-owner uniqueness covers four/five source transaction weeks. Initial success includes SUCCESS_VALUE and SUCCESS_RECEIPT_ID, not complete-chain success. Source costs are FLOAT-derived; extra decimal digits preserve arithmetic, not source accuracy.")
+    st.caption("All selected initial receipts have one observed outcome and valid attribution/costs. "
+               "This is observed-record consistency, not independent ingestion completeness or complete-chain success.")
     with st.expander("Execution dates, statuses and coverage"):
+        presentation.table(populations[["Group", "Submission week", "Failed initial receipts", "Unassessed receipts"]],
+                           hide_index=True, width="stretch", alt="Failed and unassessed initial-receipt counts for each overlapping group")
         rows = []
         for group in (*data["shared_week"]["populations"], *data["october12_pilot"]["populations"]):
             for part in group["by_execution_date"]:
                 rows.append({"Group": NAMES[group["population"]], "Execution date": part["execution_date"],
                     "Transactions": part["transactions"], "Valid-cost transactions": part["valid_cost_transactions"],
                     "Initial receipt NEAR": part["recorded_initial_receipt_spending_subtotal_near"]})
-        st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", alt="Exact saved initial-receipt spending by actual execution date and overlapping population")
+        presentation.table(pd.DataFrame(rows), hide_index=True, width="stretch", alt="Saved initial-receipt spending by actual execution date and overlapping population")
         st.write("Each submission week has a six-day execution tail: 12–17 October or 19–24 October. Each pilot has one distinct selected receipt in its tail, also present in its overlapping groups. The tails are partial UTC weeks. Elapsed follow-up varies by submission date; descendants are excluded.")
         statuses = [{"Group": NAMES[g["population"]], "Submission week": g["observed"]["submission_week"],
                      "Status": s["observed_initial_status"], "Transactions": s["transactions"],
                      "Initial receipt NEAR": s["recorded_initial_receipt_spending_subtotal_near"]}
                     for g in (*data["shared_week"]["populations"], *data["october12_pilot"]["populations"]) for s in g["by_status"]]
-        st.dataframe(pd.DataFrame(statuses), hide_index=True, width="stretch", alt="Initial-receipt status counts and costs, including failed execution")
+        presentation.table(pd.DataFrame(statuses), hide_index=True, width="stretch", alt="Initial-receipt status counts and costs, including failed execution")
+        st.caption("Receipt-owner uniqueness covers four/five selected source transaction weeks. Initial success includes SUCCESS_VALUE and SUCCESS_RECEIPT_ID. "
+                   "Zero link exclusions were reported. Source costs are FLOAT-derived; extra saved digits do not establish source accuracy.")
         st.caption("The exports contain aggregates and up to three diagnostic examples per bucket; complete account memberships, submission timestamps and every executor/height comparison cannot be independently reconstructed offline. Monetary totals become unavailable if matching/cost coverage fails.")
 
 
@@ -102,23 +144,40 @@ def supply_and_trace(data):
     supply = data["supply"]
     period, cancellation = supply["period"], supply["cancellation"]
     left, right = st.columns(2)
-    left.metric("Supply minus raw validator change", fmt(period["residual_near"], 8)+" NEAR")
-    right.metric("Sum of absolute daily residuals", fmt(cancellation["sum_absolute_daily_residuals_near"], 8)+" NEAR")
-    st.write(f"The period residual is {fmt(cancellation['period_residual_as_pct_of_net_supply_change'], 6)}% of net supply movement and {fmt(cancellation['period_residual_as_pct_of_opening_supply'], 8)}% of opening supply. Netting hides daily cancellation. The 23 September residual remains +11,427.31386968814 NEAR.")
+    left.metric("Supply minus raw validator change", fmt(period["residual_near"])+" NEAR")
+    right.metric("Sum of absolute daily residuals", fmt(cancellation["sum_absolute_daily_residuals_near"])+" NEAR")
+    st.write(f"The period residual is {fmt(cancellation['period_residual_as_pct_of_net_supply_change'])}% of net supply movement and {fmt(cancellation['period_residual_as_pct_of_opening_supply'], 6)}% of opening supply. Netting hides daily cancellation. The 23 September residual remains +11,427.31 NEAR.")
     labels = {"start": "Week starting", "opening_supply_near": "Opening supply NEAR", "closing_supply_near": "Closing supply NEAR",
         "net_supply_movement_near": "Net supply movement NEAR", "raw_validator_balance_change_near": "Raw validator change NEAR", "residual_near": "Residual NEAR"}
     rows = [{label: row[key] for key, label in labels.items()} for row in supply["weekly"]]
-    st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", alt="Eight-week observational supply comparison with opening and closing supply, raw validator changes and unexplained residuals")
+    presentation.table(pd.DataFrame(rows), hide_index=True, width="stretch", alt="Eight-week observational supply comparison with opening and closing supply, raw validator changes and unexplained residuals")
     canonical = supply["canonical_comparison"]
-    st.warning(f"At two exact block hashes, {canonical['additional_validator_updates']} RPC validator updates were absent from selected BigQuery evidence; {canonical['blank_chunk_validator_updates_confirmed']} blank-chunk observations were valid updates. One parent/post witness measures exactly +{canonical['witness_change_near']} NEAR. {canonical['hypothesis']} {canonical['no_adjustment']}")
-    st.caption("Independent issuance and actual native supply burn remain unavailable. Validator balance changes are not issuance; execution costs, negative supply movements and internal mt_burn are not measured native destruction. Decimal preserves saved digits from FLOAT-derived sources. The 0.00001 NEAR threshold checks saved arithmetic only. Sources: results 42–46.")
+    st.warning(f"At two exact block hashes, {canonical['additional_validator_updates']:,} RPC validator updates were absent from selected BigQuery evidence; {canonical['blank_chunk_validator_updates_confirmed']:,} blank-chunk observations were valid updates. "
+               "The ingestion cause is unconfirmed and the finding is limited to those blocks. Recovered updates are not adjustments to the original daily total.")
+    st.caption("Full-window issuance and actual native supply burn remain unavailable. Validator balance changes are not issuance; "
+               "execution spending and negative supply movements are not measured native destruction. Sources: results 42–46.")
+    with st.expander("Exact supply comparisons and accounting limits"):
+        st.json({"period_residual_near": period["residual_near"],
+                 "sum_absolute_daily_residuals_near": cancellation["sum_absolute_daily_residuals_near"],
+                 "witness_change_near": canonical["witness_change_near"]})
+        st.write(canonical["hypothesis"])
+        st.write(canonical["no_adjustment"])
+        st.caption("The witness measures one account balance change. Decimal preserves saved FLOAT-derived digits; "
+                   "the 0.00001 NEAR threshold checks saved arithmetic only, not source accuracy or economic reconciliation. "
+                   "The eight-week decomposition remains open; the separate epoch pilot does not establish full-window coverage.")
     st.subheader("A verified withdrawal with unverified revenue origin")
     trace = data["withdrawal"]
-    st.write(f"On 23 September, the native-transfer diagnostic found {trace['transfer_rows']} successful transfers to fefundsadmin.sputnik-dao.near, totalling {trace['amount_near']} NEAR. One traced payout of {trace['traced_withdrawal_near']} NEAR followed a successful signed internal transfer and native withdrawal after unwrapping.")
+    st.write(f"On 23 September, the native-transfer diagnostic found {trace['transfer_rows']:,} successful transfers to fefundsadmin.sputnik-dao.near, totalling {fmt(trace['amount_near'], 4)} NEAR. One traced payout of {fmt(trace['traced_withdrawal_near'], 4)} NEAR followed a successful signed internal transfer and native withdrawal after unwrapping.")
     st.warning(trace["limits"]+" A documented recipient, matching amount or successful withdrawal does not establish fee origin, a buyback or holder cash flow. The bounded provenance investigation is closed.")
-    st.caption("All discovered payments remain economically unclassified. Missing attribution is not evidence that distributions did not occur. Sources: results 47–54; one day and one candidate trace only.")
-    st.dataframe(pd.DataFrame([
-        {"Investment input": "Independent issuance", "Status": "Unavailable", "Implication": "No reconciled issuance or fee-offset inflation estimate"},
+    st.caption("All discovered payments remain economically unclassified. Native-only discovery excludes tokens and internal Verifier balances. "
+               "Missing attribution is not evidence that distributions did not occur. Sources: results 47–54; one day and one candidate trace only.")
+    with st.expander("Exact withdrawal amounts and attribution limits"):
+        st.json({"discovered_native_transfers_near": trace["amount_near"],
+                 "traced_withdrawal_near": trace["traced_withdrawal_near"], "revenue_origin": trace["revenue_origin"]})
+        st.caption("A successful internal transfer and withdrawal establish a mechanism, not the withdrawn funds' revenue origin. "
+                   "Internal mt_burn does not establish native NEAR destruction.")
+    presentation.table(pd.DataFrame([
+        {"Investment input": "Full-window issuance", "Status": "Unavailable", "Implication": "No reconciled issuance or fee-offset inflation estimate"},
         {"Investment input": "Actual supply burn", "Status": "Unavailable", "Implication": "No measured permanent destruction or burn-based valuation"},
         {"Investment input": "Revenue origin and holder distributions", "Status": "Unverified", "Implication": "No attributable revenue yield, buyback return or holder cash-flow valuation"},
         {"Investment input": "Persistent purchases and balance commitments", "Status": "Unmeasured", "Implication": "Recorded spending alone does not establish net buying or durable holdings"}
