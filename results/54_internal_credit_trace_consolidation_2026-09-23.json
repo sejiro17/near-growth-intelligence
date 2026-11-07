@@ -1,0 +1,209 @@
+{
+  "closure": {
+    "additional_collection": "NONE; agreed one-candidate boundary reached",
+    "fee_origin": "UNRESOLVED",
+    "single_candidate_trace": "COMPLETE"
+  },
+  "credit_trace": {
+    "amount_base_units": "1252862790024676320487808800",
+    "amount_near_equivalent": "1252.862790024676320487808800",
+    "asset": "nep141:wrap.near",
+    "decoded_args_utf8": "{\"signed\":[{\"standard\":\"nep413\",\"payload\":{\"message\":\"{\\\"deadline\\\":\\\"2026-10-23T04:02:18.294Z\\\",\\\"intents\\\":[{\\\"intent\\\":\\\"transfer\\\",\\\"receiver_id\\\":\\\"a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd\\\",\\\"tokens\\\":{\\\"nep141:wrap.near\\\":\\\"1252862790024676320487808800\\\"},\\\"memo\\\":null}],\\\"signer_id\\\":\\\"51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe\\\"}\",\"nonce\":\"Vij2xgAlKBKzgHncVb4M4Rhd+csFi3PzFNAd9BmNBIk=\",\"recipient\":\"intents.near\"},\"public_key\":\"ed25519:6Wk4sb8Gc449VB4LoofP3AM8hMSMgbAwwUEc4RhBodV7\",\"signature\":\"ed25519:5Mjm2FE9aXCUUWCxmBzefLarw3Dqic9Xhd8SdxMsYfPAZphsDBMJa48toisGaYnVXqoKVmC3cxs7wXNr9ds8aX9j\"}]}",
+    "economic_classification": "UNCLASSIFIED_INTERNAL_TRANSFER_CREDIT",
+    "graph_validation": "Unique parent links and no missing child outcomes within the returned graph; no additional application callback payloads.",
+    "internal_recipient": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+    "internal_sender": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+    "limitations": [
+      "Public-key/account correspondence does not establish organizational ownership or fee-collector role.",
+      "No fee calculation, swap intent or APP_FEE memo occurs in this signed message; this does not exclude earlier fee funding.",
+      "Opening balance, commingling and allocation to the subsequent withdrawal remain unresolved.",
+      "No independently measured native burn or buyback is established."
+    ],
+    "mechanism": "SUCCESSFUL_SIGNED_INTERNAL_TRANSFER",
+    "memo": null,
+    "method": "execute_intents",
+    "network_signer": "intents.near",
+    "network_signer_public_key": "ed25519:Anpgu2DvnC3E4yULEyN5eX64KPpgpKTHomgWcm6ArZyr",
+    "payload_limitation": "Initial same-account receipt payload is omitted; initiating action is reconstructed from transaction.actions.",
+    "public_key_account_mapping": "MATCHES",
+    "raw_args_base64": "eyJzaWduZWQiOlt7InN0YW5kYXJkIjoibmVwNDEzIiwicGF5bG9hZCI6eyJtZXNzYWdlIjoie1wiZGVhZGxpbmVcIjpcIjIwMjYtMTAtMjNUMDQ6MDI6MTguMjk0WlwiLFwiaW50ZW50c1wiOlt7XCJpbnRlbnRcIjpcInRyYW5zZmVyXCIsXCJyZWNlaXZlcl9pZFwiOlwiYThjNTZlYmJkYWJjNmI2NzA5ZDRmOTQ2ZDU0Njc5ZGIxZTQwMDZmNWVlYjZiM2Q0OWM4OTdjODZjNzBiYTZjZFwiLFwidG9rZW5zXCI6e1wibmVwMTQxOndyYXAubmVhclwiOlwiMTI1Mjg2Mjc5MDAyNDY3NjMyMDQ4NzgwODgwMFwifSxcIm1lbW9cIjpudWxsfV0sXCJzaWduZXJfaWRcIjpcIjUxZThmOTRkNzdiNWU5MGRjOTg1MmNhNjExMzc3MWUxMWU4MzgyY2U2OTQ3M2E3NWUzMTNlNDE2NjVkZTdjYmVcIn0iLCJub25jZSI6IlZpajJ4Z0FsS0JLemdIbmNWYjRNNFJoZCtjc0ZpM1B6Rk5BZDlCbU5CSWs9IiwicmVjaXBpZW50IjoiaW50ZW50cy5uZWFyIn0sInB1YmxpY19rZXkiOiJlZDI1NTE5OjZXazRzYjhHYzQ0OVZCNExvb2ZQM0FNOGhNU01nYkF3d1VFYzRSaEJvZFY3Iiwic2lnbmF0dXJlIjoiZWQyNTUxOTo1TWptMkZFOWFYQ1VVV0N4bUJ6ZWZMYXJ3M0RxaWM5WGhkOFNkeE1zWWZQQVpwaHNEQk1KYTQ4dG9pc0dhWW5WWHFvS1ZtQzNjeHM3d1hOcjlkczhhWDlqIn1dfQ==",
+    "receipt_outcome_count": 2,
+    "receipt_path": [
+      "FGQNVx1jNEGKmFmX4qwaZ7hvScztjfQFUptBtso8EkFm",
+      "CBEA6sgmmaxoVwLE8iMDHQQ1G8CQRVvo76mDWYfLP5Pm",
+      "2iuU9FHcvaRPH1KRotrwnaSVoD9msdLeESsGUkY1fQfB"
+    ],
+    "returned_receipt_payload_count": 1,
+    "signed_intent_public_key": "ed25519:6Wk4sb8Gc449VB4LoofP3AM8hMSMgbAwwUEc4RhBodV7",
+    "signed_message": {
+      "deadline": "2026-10-23T04:02:18.294Z",
+      "intents": [
+        {
+          "intent": "transfer",
+          "memo": null,
+          "receiver_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+          "tokens": {
+            "nep141:wrap.near": "1252862790024676320487808800"
+          }
+        }
+      ],
+      "signer_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe"
+    },
+    "system_return_amount_yoctonear": "300346528005343700000000",
+    "transaction_hash": "FGQNVx1jNEGKmFmX4qwaZ7hvScztjfQFUptBtso8EkFm",
+    "transaction_receiver": "intents.near",
+    "verified_fee_amount": null,
+    "withdrawal_revenue_origin": null
+  },
+  "derivation_method": "Validate saved HTTP/JSON-RPC/checksums and input provenance; compare target logs with result 50; strictly decode base64/JSON; validate exact integer transfer, signed account/nonce and unique returned outcome graph.",
+  "input_hashes": {
+    "analysis/11_collect_canonical_validator_evidence.py": {
+      "bytes": 21427,
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    "analysis/14_decode_frontend_native_transfers.py": {
+      "bytes": 15196,
+      "sha256": "0998bb9ef520c47ce13a2e62fe70037472a17ebdff5caa748ade0ebb054c1c1d"
+    },
+    "analysis/15_trace_frontend_transfer_origin.py": {
+      "bytes": 12129,
+      "sha256": "957e69289f484903c2bd93f4d4020a3ea83e2569f51aa19db9795f4556107840"
+    },
+    "analysis/16_internal_credit_evidence.py": {
+      "bytes": 21544,
+      "sha256": "07604d6f10a67bb9ed95d16b35a3bdf76d7940ff62659093c0a2e0dda94177b7"
+    },
+    "analysis/17_collect_internal_credit_status.py": {
+      "bytes": 7092,
+      "sha256": "475189cb85e42789ef43e9feff5079de35b03a816b7d9aa7b4ea92b8f1830128"
+    },
+    "analysis/18_consolidate_internal_credit_trace.py": {
+      "bytes": 8623,
+      "sha256": "f9017ab676f5e23defc3dd005fa6aea022fb9816e740cf94ced53b2ad150a548"
+    },
+    "results/47_frontend_wallet_native_transfer_diagnostic_2026-09-23.json": {
+      "bytes": 201513,
+      "sha256": "d69601fb513e4276eaa0db9126ee415a2899768eca5f599034f822570992f9cf"
+    },
+    "results/48_frontend_wallet_native_transfers_decoded_2026-09-23.json": {
+      "bytes": 34355,
+      "sha256": "11b9d042124fca2b1d42c8b217a9f8f21556225125824adc0745999d372f64d8"
+    },
+    "results/49_frontend_transfer_origin_request_2026-09-23.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    },
+    "results/50_intents_internal_account_event_candidates_2026-09-23.json": {
+      "bytes": 14557,
+      "sha256": "d4f613697c659fb0ae9afdce8bb357d16ef8c3a0dcf6448f728a02de262468e1"
+    },
+    "results/51_internal_credit_validation_2026-09-23.json": {
+      "bytes": 16538,
+      "sha256": "0b0de3b589a644f990a1e08fd4ab1e5dfe409f8b4a912b78613e23d8ff6f91ec"
+    },
+    "results/52_internal_credit_origin_request_2026-09-23.json": {
+      "bytes": 183,
+      "sha256": "0568ba1f0147e401ecb80adaa2d11728a4c28df24ae02d539e66c64f337e54e1"
+    },
+    "results/53_internal_credit_transaction_status_request_2026-09-23.json": {
+      "bytes": 256,
+      "sha256": "2b9c0e182976bdf16b5fef738a70e07e20b317f17d723710019cd3ef457d84c8"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/run.json": {
+      "bytes": 1370,
+      "sha256": "ab67f0ffb0ff85142fcbf24ee2caa45f2332496dfb25c3689e0e7e6b3bad72eb"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/transfer-origin.metadata.json": {
+      "bytes": 1345,
+      "sha256": "d44852e2653d9e3f44a35aa134d3f59d369fcbac6aa7bf8f19f708a31a25851f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/transfer-origin.request.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T211752Z_97d93531faa2/transfer-origin.response.body": {
+      "bytes": 152,
+      "sha256": "ab745691c4de7f37322d7b0004c09d57ca08ea37733de983c742d92010017445"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/run.json": {
+      "bytes": 1370,
+      "sha256": "ab67f0ffb0ff85142fcbf24ee2caa45f2332496dfb25c3689e0e7e6b3bad72eb"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/transfer-origin.metadata.json": {
+      "bytes": 1345,
+      "sha256": "d44852e2653d9e3f44a35aa134d3f59d369fcbac6aa7bf8f19f708a31a25851f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/transfer-origin.request.json": {
+      "bytes": 176,
+      "sha256": "d82bb1320e3cd4d70ee4398cc5b84fabf5480426f5aa4e9dba9b96435eefb8f3"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/origin_input/transfer-origin.response.body": {
+      "bytes": 152,
+      "sha256": "ab745691c4de7f37322d7b0004c09d57ca08ea37733de983c742d92010017445"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/run.json": {
+      "bytes": 1447,
+      "sha256": "81becfd8e6a0c5284985f09689328c177617104551d6aa71a53b1044e8db171f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/transfer-transaction-status.metadata.json": {
+      "bytes": 1349,
+      "sha256": "9bb02f785e9ebe4e435e5eebe14f704ffcc9c1f19651cfcc5706cbd47690a06f"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/transfer-transaction-status.request.json": {
+      "bytes": 249,
+      "sha256": "0542324faa95d3090bb3853f7ff983f5d43c0b572f3ee7cb1ce4ec1f9b7527c7"
+    },
+    "results/frontend_origin_trace_2026-09-23/20261106T212650Z_c1faefff5ad8/transfer-transaction-status.response.body": {
+      "bytes": 20418,
+      "sha256": "584737a2840b2efc3af6481f9e426758e419b74be4b3b6f831d58f7be46a81fe"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/20261106T220603Z_aa17a137070d/internal-credit-origin.metadata.json": {
+      "bytes": 1345,
+      "sha256": "c84813dac977811d6014f042454e62c56c27822a5465007445746af15885297d"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/20261106T220603Z_aa17a137070d/internal-credit-origin.request.json": {
+      "bytes": 183,
+      "sha256": "0568ba1f0147e401ecb80adaa2d11728a4c28df24ae02d539e66c64f337e54e1"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/20261106T220603Z_aa17a137070d/internal-credit-origin.response.body": {
+      "bytes": 159,
+      "sha256": "4fcb065c5310d28402d1cee85b38f5a0963b492d33130c574d8b6c7dd46a296b"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/20261106T220603Z_aa17a137070d/run.json": {
+      "bytes": 5364,
+      "sha256": "161c061e02489b750e0cd6b83555b867eda8ec7f27b620deb28975d724b14412"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/credit_transaction_status/20261106T222108Z_637914f4225b/internal-credit-transaction-status.metadata.json": {
+      "bytes": 1347,
+      "sha256": "246492c0ca4de50138b237e2d479c3ae2596402f49a06cd8545f206bcaa0ce7b"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/credit_transaction_status/20261106T222108Z_637914f4225b/internal-credit-transaction-status.request.json": {
+      "bytes": 256,
+      "sha256": "2b9c0e182976bdf16b5fef738a70e07e20b317f17d723710019cd3ef457d84c8"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/credit_transaction_status/20261106T222108Z_637914f4225b/internal-credit-transaction-status.response.body": {
+      "bytes": 7547,
+      "sha256": "305d8edb00709d3fb464b25d3fc2c672a5aee355f18f42c32621d5f3b3ce59ce"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/credit_transaction_status/20261106T222108Z_637914f4225b/run.json": {
+      "bytes": 6414,
+      "sha256": "81af3cc1516f734c5f65864897aa157f5d29341789c733064f0848211adfdd41"
+    },
+    "results/internal_credit_origin_trace_2026-09-23/credit_transaction_status/20261106T222108Z_637914f4225b/validation.json": {
+      "bytes": 378,
+      "sha256": "1043bfd44a6011a9889ffdf4489e13494324f8348d117cbaf3136a8bb56ac43a"
+    },
+    "sql/40_intents_internal_account_event_candidates.sql": {
+      "bytes": 9428,
+      "sha256": "7bbec04919de48192036e10b44f43c7ae1912821d472352482c8ffff1a6a366d"
+    }
+  },
+  "priority3_preparation": "Result 11 saves cohort counts, not membership IDs; results 13/36 save network spending, not returner spending. Design cohort-specific success and cost measurements, separating initial-receipt success from downstream settlement and submission dates from execution dates.",
+  "subsequent_withdrawal_comparison": {
+    "amount_near": "1252.862790024676320487808800",
+    "blocks_before_debit": 5,
+    "nanoseconds_before_debit": "2910324742",
+    "net_interpretation": "Only selected logged movements; no opening/closing balance or economic reconciliation.",
+    "observed_selected_movements_net_base_units": "0"
+  }
+}

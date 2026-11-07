@@ -1,0 +1,8 @@
+{
+  "coverage_limitation": "Observed responses only; all-shard historical retention is not independently verified.",
+  "status": "OBSERVED_RESPONSES_CONSISTENT",
+  "union_counts": {
+    "A": 464,
+    "B": 475
+  }
+}

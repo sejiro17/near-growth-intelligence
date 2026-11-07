@@ -1,0 +1,8 @@
+{
+  "id": "internal-credit-origin",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_receipt_to_tx",
+  "params": {
+    "receipt_id": "CBEA6sgmmaxoVwLE8iMDHQQ1G8CQRVvo76mDWYfLP5Pm"
+  }
+}

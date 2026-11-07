@@ -1,0 +1,10 @@
+{
+  "id": "internal-credit-transaction-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "intents.near",
+    "tx_hash": "FGQNVx1jNEGKmFmX4qwaZ7hvScztjfQFUptBtso8EkFm",
+    "wait_until": "FINAL"
+  }
+}

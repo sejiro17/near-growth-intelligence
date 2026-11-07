@@ -1,0 +1,795 @@
+{
+  "cancellation": {
+    "largest_absolute_daily_residual_date": "2026-09-23",
+    "largest_absolute_daily_residual_signed_near": "11427.31386968814",
+    "period_residual_as_pct_of_net_supply_change": "0.33629595327450644413793323653785727183890932983987",
+    "period_residual_as_pct_of_opening_supply": "0.0012725916361442568160964857647616369843650669788467",
+    "sum_absolute_daily_residuals_near": "84284.66902631883",
+    "sum_negative_daily_residuals_near": "-33842.57732392857",
+    "sum_positive_daily_residuals_near": "50442.09170239026"
+  },
+  "daily": [
+    {
+      "closing_supply_near": "1304494004.399983",
+      "end": "2026-08-24",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "107435.527388",
+      "opening_supply_near": "1304386568.872595",
+      "raw_validator_balance_change_near": "108245.79990914708",
+      "residual_near": "-810.27252114708",
+      "start": "2026-08-24"
+    },
+    {
+      "closing_supply_near": "1304574605.389038",
+      "end": "2026-08-25",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "80600.989055",
+      "opening_supply_near": "1304494004.399983",
+      "raw_validator_balance_change_near": "81327.91272011571",
+      "residual_near": "-726.92366511571",
+      "start": "2026-08-25"
+    },
+    {
+      "closing_supply_near": "1304655138.4675715",
+      "end": "2026-08-26",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "80533.0785335",
+      "opening_supply_near": "1304574605.389038",
+      "raw_validator_balance_change_near": "74713.37587864039",
+      "residual_near": "5819.70265485961",
+      "start": "2026-08-26"
+    },
+    {
+      "closing_supply_near": "1304736793.202195",
+      "end": "2026-08-27",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81654.7346235",
+      "opening_supply_near": "1304655138.4675715",
+      "raw_validator_balance_change_near": "82330.89379444877",
+      "residual_near": "-676.15917094877",
+      "start": "2026-08-27"
+    },
+    {
+      "closing_supply_near": "1304845738.5192711",
+      "end": "2026-08-28",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "108945.3170761",
+      "opening_supply_near": "1304736793.202195",
+      "raw_validator_balance_change_near": "106532.30174195545",
+      "residual_near": "2413.01533414455",
+      "start": "2026-08-28"
+    },
+    {
+      "closing_supply_near": "1304927268.734754",
+      "end": "2026-08-29",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81530.2154829",
+      "opening_supply_near": "1304845738.5192711",
+      "raw_validator_balance_change_near": "81500.0652233098",
+      "residual_near": "30.1502595902",
+      "start": "2026-08-29"
+    },
+    {
+      "closing_supply_near": "1305009374.8346548",
+      "end": "2026-08-30",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "82106.0999008",
+      "opening_supply_near": "1304927268.734754",
+      "raw_validator_balance_change_near": "82707.07206467364",
+      "residual_near": "-600.97216387364",
+      "start": "2026-08-30"
+    },
+    {
+      "closing_supply_near": "1305091562.3644817",
+      "end": "2026-08-31",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "82187.5298269",
+      "opening_supply_near": "1305009374.8346548",
+      "raw_validator_balance_change_near": "79699.85847970212",
+      "residual_near": "2487.67134719788",
+      "start": "2026-08-31"
+    },
+    {
+      "closing_supply_near": "1305201288.0579965",
+      "end": "2026-09-01",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "109725.6935148",
+      "opening_supply_near": "1305091562.3644817",
+      "raw_validator_balance_change_near": "109095.02225261659",
+      "residual_near": "630.67126218341",
+      "start": "2026-09-01"
+    },
+    {
+      "closing_supply_near": "1305283851.675412",
+      "end": "2026-09-02",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "82563.6174155",
+      "opening_supply_near": "1305201288.0579965",
+      "raw_validator_balance_change_near": "83234.2076528149",
+      "residual_near": "-670.5902373149",
+      "start": "2026-09-02"
+    },
+    {
+      "closing_supply_near": "1305368471.6101146",
+      "end": "2026-09-03",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "84619.9347026",
+      "opening_supply_near": "1305283851.675412",
+      "raw_validator_balance_change_near": "84445.5838126871",
+      "residual_near": "174.3508899129",
+      "start": "2026-09-03"
+    },
+    {
+      "closing_supply_near": "1305451043.9497604",
+      "end": "2026-09-04",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "82572.3396458",
+      "opening_supply_near": "1305368471.6101146",
+      "raw_validator_balance_change_near": "83404.90176626883",
+      "residual_near": "-832.56212046883",
+      "start": "2026-09-04"
+    },
+    {
+      "closing_supply_near": "1305532884.6036997",
+      "end": "2026-09-05",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81840.6539393",
+      "opening_supply_near": "1305451043.9497604",
+      "raw_validator_balance_change_near": "81057.65926883169",
+      "residual_near": "782.99467046831",
+      "start": "2026-09-05"
+    },
+    {
+      "closing_supply_near": "1305642171.5424056",
+      "end": "2026-09-06",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "109286.9387059",
+      "opening_supply_near": "1305532884.6036997",
+      "raw_validator_balance_change_near": "110034.73266722978",
+      "residual_near": "-747.79396132978",
+      "start": "2026-09-06"
+    },
+    {
+      "closing_supply_near": "1305724213.7102716",
+      "end": "2026-09-07",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "82042.1678660",
+      "opening_supply_near": "1305642171.5424056",
+      "raw_validator_balance_change_near": "82764.03148062402",
+      "residual_near": "-721.86361462402",
+      "start": "2026-09-07"
+    },
+    {
+      "closing_supply_near": "1305806062.3961463",
+      "end": "2026-09-08",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81848.6858747",
+      "opening_supply_near": "1305724213.7102716",
+      "raw_validator_balance_change_near": "79424.66769855047",
+      "residual_near": "2424.01817614953",
+      "start": "2026-09-08"
+    },
+    {
+      "closing_supply_near": "1305887955.3596606",
+      "end": "2026-09-09",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81892.9635143",
+      "opening_supply_near": "1305806062.3961463",
+      "raw_validator_balance_change_near": "82625.83624281736",
+      "residual_near": "-732.87272851736",
+      "start": "2026-09-09"
+    },
+    {
+      "closing_supply_near": "1305969458.0852919",
+      "end": "2026-09-10",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81502.7256313",
+      "opening_supply_near": "1305887955.3596606",
+      "raw_validator_balance_change_near": "82178.64511042158",
+      "residual_near": "-675.91947912158",
+      "start": "2026-09-10"
+    },
+    {
+      "closing_supply_near": "1306079443.7030632",
+      "end": "2026-09-11",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "109985.6177713",
+      "opening_supply_near": "1305969458.0852919",
+      "raw_validator_balance_change_near": "110779.90330072607",
+      "residual_near": "-794.28552942607",
+      "start": "2026-09-11"
+    },
+    {
+      "closing_supply_near": "1306161329.057404",
+      "end": "2026-09-12",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81885.3543408",
+      "opening_supply_near": "1306079443.7030632",
+      "raw_validator_balance_change_near": "78700.59823010498",
+      "residual_near": "3184.75611069502",
+      "start": "2026-09-12"
+    },
+    {
+      "closing_supply_near": "1306243206.818513",
+      "end": "2026-09-13",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81877.761109",
+      "opening_supply_near": "1306161329.057404",
+      "raw_validator_balance_change_near": "82459.83204243229",
+      "residual_near": "-582.07093343229",
+      "start": "2026-09-13"
+    },
+    {
+      "closing_supply_near": "1306324643.8153458",
+      "end": "2026-09-14",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81436.9968328",
+      "opening_supply_near": "1306243206.818513",
+      "raw_validator_balance_change_near": "82106.568329453",
+      "residual_near": "-669.571496653",
+      "start": "2026-09-14"
+    },
+    {
+      "closing_supply_near": "1306434002.7305133",
+      "end": "2026-09-15",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "109358.9151675",
+      "opening_supply_near": "1306324643.8153458",
+      "raw_validator_balance_change_near": "109924.79459632828",
+      "residual_near": "-565.87942882828",
+      "start": "2026-09-15"
+    },
+    {
+      "closing_supply_near": "1306515719.9697382",
+      "end": "2026-09-16",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81717.2392249",
+      "opening_supply_near": "1306434002.7305133",
+      "raw_validator_balance_change_near": "78184.04608823148",
+      "residual_near": "3533.19313666852",
+      "start": "2026-09-16"
+    },
+    {
+      "closing_supply_near": "1306597157.4715674",
+      "end": "2026-09-17",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81437.5018292",
+      "opening_supply_near": "1306515719.9697382",
+      "raw_validator_balance_change_near": "77576.92910114481",
+      "residual_near": "3860.57272805519",
+      "start": "2026-09-17"
+    },
+    {
+      "closing_supply_near": "1306677457.4107318",
+      "end": "2026-09-18",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "80299.9391644",
+      "opening_supply_near": "1306597157.4715674",
+      "raw_validator_balance_change_near": "81297.2951457643",
+      "residual_near": "-997.3559813643",
+      "start": "2026-09-18"
+    },
+    {
+      "closing_supply_near": "1306784674.3424635",
+      "end": "2026-09-19",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "107216.9317317",
+      "opening_supply_near": "1306677457.4107318",
+      "raw_validator_balance_change_near": "107992.78705184665",
+      "residual_near": "-775.85532014665",
+      "start": "2026-09-19"
+    },
+    {
+      "closing_supply_near": "1306866141.585723",
+      "end": "2026-09-20",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81467.2432595",
+      "opening_supply_near": "1306784674.3424635",
+      "raw_validator_balance_change_near": "76314.69317348479",
+      "residual_near": "5152.55008601521",
+      "start": "2026-09-20"
+    },
+    {
+      "closing_supply_near": "1306946432.0652702",
+      "end": "2026-09-21",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "80290.4795472",
+      "opening_supply_near": "1306866141.585723",
+      "raw_validator_balance_change_near": "81239.95459178477",
+      "residual_near": "-949.47504458477",
+      "start": "2026-09-21"
+    },
+    {
+      "closing_supply_near": "1307054581.149431",
+      "end": "2026-09-22",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "108149.0841608",
+      "opening_supply_near": "1306946432.0652702",
+      "raw_validator_balance_change_near": "108188.95202520252",
+      "residual_near": "-39.86786440252",
+      "start": "2026-09-22"
+    },
+    {
+      "closing_supply_near": "1307135620.0902753",
+      "end": "2026-09-23",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "81038.9408443",
+      "opening_supply_near": "1307054581.149431",
+      "raw_validator_balance_change_near": "69611.62697461186",
+      "residual_near": "11427.31386968814",
+      "start": "2026-09-23"
+    },
+    {
+      "closing_supply_near": "1307215643.8598795",
+      "end": "2026-09-24",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "80023.7696042",
+      "opening_supply_near": "1307135620.0902753",
+      "raw_validator_balance_change_near": "80902.79820756445",
+      "residual_near": "-879.02860336445",
+      "start": "2026-09-24"
+    },
+    {
+      "closing_supply_near": "1307294623.6655881",
+      "end": "2026-09-25",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "78979.8057086",
+      "opening_supply_near": "1307215643.8598795",
+      "raw_validator_balance_change_near": "79992.81978402878",
+      "residual_near": "-1013.01407542878",
+      "start": "2026-09-25"
+    },
+    {
+      "closing_supply_near": "1307399637.4564118",
+      "end": "2026-09-26",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "105013.7908237",
+      "opening_supply_near": "1307294623.6655881",
+      "raw_validator_balance_change_near": "105799.97101920468",
+      "residual_near": "-786.18019550468",
+      "start": "2026-09-26"
+    },
+    {
+      "closing_supply_near": "1307477697.5599585",
+      "end": "2026-09-27",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "78060.1035467",
+      "opening_supply_near": "1307399637.4564118",
+      "raw_validator_balance_change_near": "79316.6679450961",
+      "residual_near": "-1256.5643983961",
+      "start": "2026-09-27"
+    },
+    {
+      "closing_supply_near": "1307582423.4203942",
+      "end": "2026-09-28",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "104725.8604357",
+      "opening_supply_near": "1307477697.5599585",
+      "raw_validator_balance_change_near": "106048.47604918823",
+      "residual_near": "-1322.61561348823",
+      "start": "2026-09-28"
+    },
+    {
+      "closing_supply_near": "1307661530.8225956",
+      "end": "2026-09-29",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "79107.4022014",
+      "opening_supply_near": "1307582423.4203942",
+      "raw_validator_balance_change_near": "80302.41911525105",
+      "residual_near": "-1195.01691385105",
+      "start": "2026-09-29"
+    },
+    {
+      "closing_supply_near": "1307742138.6640506",
+      "end": "2026-09-30",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "80607.8414550",
+      "opening_supply_near": "1307661530.8225956",
+      "raw_validator_balance_change_near": "80731.67369284184",
+      "residual_near": "-123.83223784184",
+      "start": "2026-09-30"
+    },
+    {
+      "closing_supply_near": "1307821213.596042",
+      "end": "2026-10-01",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "79074.9319914",
+      "opening_supply_near": "1307742138.6640506",
+      "raw_validator_balance_change_near": "81327.01086200196",
+      "residual_near": "-2252.07887060196",
+      "start": "2026-10-01"
+    },
+    {
+      "closing_supply_near": "1307926045.5464032",
+      "end": "2026-10-02",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "104831.9503612",
+      "opening_supply_near": "1307821213.596042",
+      "raw_validator_balance_change_near": "104154.24008636689",
+      "residual_near": "677.71027483311",
+      "start": "2026-10-02"
+    },
+    {
+      "closing_supply_near": "1308004137.079667",
+      "end": "2026-10-03",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "78091.5332638",
+      "opening_supply_near": "1307926045.5464032",
+      "raw_validator_balance_change_near": "78713.37399356882",
+      "residual_near": "-621.84072976882",
+      "start": "2026-10-03"
+    },
+    {
+      "closing_supply_near": "1308108480.2022994",
+      "end": "2026-10-04",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "104343.1226324",
+      "opening_supply_near": "1308004137.079667",
+      "raw_validator_balance_change_near": "105034.35578189974",
+      "residual_near": "-691.23314949974",
+      "start": "2026-10-04"
+    },
+    {
+      "closing_supply_near": "1308186530.7021034",
+      "end": "2026-10-05",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "78050.4998040",
+      "opening_supply_near": "1308108480.2022994",
+      "raw_validator_balance_change_near": "78932.61807940746",
+      "residual_near": "-882.11827540746",
+      "start": "2026-10-05"
+    },
+    {
+      "closing_supply_near": "1308264597.3537161",
+      "end": "2026-10-06",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "78066.6516127",
+      "opening_supply_near": "1308186530.7021034",
+      "raw_validator_balance_change_near": "78878.30717498454",
+      "residual_near": "-811.65556228454",
+      "start": "2026-10-06"
+    },
+    {
+      "closing_supply_near": "1308369598.8662431",
+      "end": "2026-10-07",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "105001.5125270",
+      "opening_supply_near": "1308264597.3537161",
+      "raw_validator_balance_change_near": "105853.39508907567",
+      "residual_near": "-851.88256207567",
+      "start": "2026-10-07"
+    },
+    {
+      "closing_supply_near": "1308447462.4523895",
+      "end": "2026-10-08",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "77863.5861464",
+      "opening_supply_near": "1308369598.8662431",
+      "raw_validator_balance_change_near": "79059.4526622054",
+      "residual_near": "-1195.8665158054",
+      "start": "2026-10-08"
+    },
+    {
+      "closing_supply_near": "1308552153.4704163",
+      "end": "2026-10-09",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "104691.0180268",
+      "opening_supply_near": "1308447462.4523895",
+      "raw_validator_balance_change_near": "104890.05137585437",
+      "residual_near": "-199.03334905437",
+      "start": "2026-10-09"
+    },
+    {
+      "closing_supply_near": "1308629061.4010308",
+      "end": "2026-10-10",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "76907.9306145",
+      "opening_supply_near": "1308552153.4704163",
+      "raw_validator_balance_change_near": "71541.09555013123",
+      "residual_near": "5366.83506436877",
+      "start": "2026-10-10"
+    },
+    {
+      "closing_supply_near": "1308704560.6070876",
+      "end": "2026-10-11",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "75499.2060568",
+      "opening_supply_near": "1308629061.4010308",
+      "raw_validator_balance_change_near": "77726.6983077306",
+      "residual_near": "-2227.4922509306",
+      "start": "2026-10-11"
+    },
+    {
+      "closing_supply_near": "1308809574.80092",
+      "end": "2026-10-12",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "105014.1938324",
+      "opening_supply_near": "1308704560.6070876",
+      "raw_validator_balance_change_near": "105941.89514890617",
+      "residual_near": "-927.70131650617",
+      "start": "2026-10-12"
+    },
+    {
+      "closing_supply_near": "1308888011.2606628",
+      "end": "2026-10-13",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "78436.4597428",
+      "opening_supply_near": "1308809574.80092",
+      "raw_validator_balance_change_near": "79396.31354342093",
+      "residual_near": "-959.85380062093",
+      "start": "2026-10-13"
+    },
+    {
+      "closing_supply_near": "1308982203.9373012",
+      "end": "2026-10-14",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "94192.6766384",
+      "opening_supply_near": "1308888011.2606628",
+      "raw_validator_balance_change_near": "95108.71557296505",
+      "residual_near": "-916.03893456505",
+      "start": "2026-10-14"
+    },
+    {
+      "closing_supply_near": "1309057509.6271002",
+      "end": "2026-10-15",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "75305.6897990",
+      "opening_supply_near": "1308982203.9373012",
+      "raw_validator_balance_change_near": "76106.93430555027",
+      "residual_near": "-801.24450655027",
+      "start": "2026-10-15"
+    },
+    {
+      "closing_supply_near": "1309163647.827679",
+      "end": "2026-10-16",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "106138.2005788",
+      "opening_supply_near": "1309057509.6271002",
+      "raw_validator_balance_change_near": "106895.29322331314",
+      "residual_near": "-757.09264451314",
+      "start": "2026-10-16"
+    },
+    {
+      "closing_supply_near": "1309243179.1116097",
+      "end": "2026-10-17",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "79531.2839307",
+      "opening_supply_near": "1309163647.827679",
+      "raw_validator_balance_change_near": "77054.69809314009",
+      "residual_near": "2476.58583755991",
+      "start": "2026-10-17"
+    },
+    {
+      "closing_supply_near": "1309322552.8524296",
+      "end": "2026-10-18",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "79373.7408199",
+      "opening_supply_near": "1309243179.1116097",
+      "raw_validator_balance_change_near": "79974.64237646977",
+      "residual_near": "-600.90155656977",
+      "start": "2026-10-18"
+    }
+  ],
+  "derivation": {
+    "code_hashes": {
+      "analysis/10_supply_comparison_check.py": {
+        "bytes": 24674,
+        "sha256": "11f2e3f0b35f4e307c6de8061caae561845467def307611d78a360479baf4d5d"
+      },
+      "analysis/11_collect_canonical_validator_evidence.py": {
+        "bytes": 21427,
+        "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+      },
+      "analysis/12_collect_bitwise_parent_witness.py": {
+        "bytes": 7937,
+        "sha256": "1336a23b6d16f57840a3878afd99a804e54c98bcabddbc531d56ea0102fd6b07"
+      },
+      "analysis/13_consolidate_supply_evidence.py": {
+        "bytes": 25329,
+        "sha256": "c0e4ba9c1675441f28a24dc123df52e5b54ae8e241ffa0488927d1499d348f0e"
+      }
+    },
+    "method": "Reuse analysis/10 validation of seven saved exports and all expected daily/weekly coverage. Compute endpoint movement from the 23 August close, sum raw saved validator changes, and subtract. Use Decimal precision 50; retain exported digits. Sum absolute daily residuals before any weekly or period netting.",
+    "offline_command": "python3 -B analysis/13_consolidate_supply_evidence.py supply"
+  },
+  "limitations": [
+    "Source FLOAT precision is not recovered by Decimal or BIGNUMERIC conversion.",
+    "The 0.00001 NEAR tolerance checks saved arithmetic only, not source accuracy or economic reconciliation.",
+    "This table preserves the original observed series. No recovered RPC changes are added.",
+    "Validator balance changes are not independently measured issuance. Execution spending and supply decreases are not independently measured actual burn.",
+    "The two-block RPC discrepancy is not evidence of the same discrepancy throughout the dataset or a reassessment of unrelated transaction findings."
+  ],
+  "opening_baseline_date": "2026-08-23",
+  "period": {
+    "closing_supply_near": "1309322552.8524296",
+    "end": "2026-10-18",
+    "independently_measured_actual_burn_near": null,
+    "independently_measured_issuance_near": null,
+    "net_supply_movement_near": "4935983.9798346",
+    "opening_supply_near": "1304386568.872595",
+    "raw_validator_balance_change_near": "4919384.46545613831",
+    "residual_near": "16599.51437846169",
+    "start": "2026-08-24"
+  },
+  "saved_arithmetic_checks": {
+    "count": 576,
+    "maximum_absolute_discrepancy_near": "1.5671310241974671523E-7",
+    "tolerance_near": "0.00001"
+  },
+  "source_hashes": {
+    "results/13_weekly_execution_costs_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 1591,
+      "sha256": "8cac34153e0c02deda70be3a805ab60e1cf9e6a70f78fa001d69238b9e215878"
+    },
+    "results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv": {
+      "bytes": 16967,
+      "sha256": "874e7d867e663dcb02c3e021c0fe37b9476b94de4212dc03bd3305b0f50fbe37"
+    },
+    "results/32_daily_validator_balance_changes_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 9887,
+      "sha256": "a8634594f19829cfc039c8589ac792666bac6af74eb7fc905ac07a6e031be129"
+    },
+    "results/33_daily_block_supply_movements_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 8444,
+      "sha256": "fabec3ede4f6e7fbfdfa24079fc8462752778eb5bb658c6c3900cb418e2e2c60"
+    },
+    "results/34_weekly_economic_comparison_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 3285,
+      "sha256": "f6d78c3f005cf820716b5713362f732be96c2b3ddb426db9aa9656a106ef100a"
+    },
+    "results/36_weekly_transaction_conversion_costs_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 871,
+      "sha256": "9ef5bdf734831f04defb2dde376496819eee1932b1ed057e60377585bbcc9593"
+    },
+    "results/37_weekly_execution_spending_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 1290,
+      "sha256": "9586a244725d117737d4350f52fb7e191dd738e8403a7a4b0f5cc2dae480ca28"
+    }
+  },
+  "weekly": [
+    {
+      "closing_supply_near": "1305009374.8346548",
+      "end": "2026-08-30",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "622805.9620598",
+      "opening_supply_near": "1304386568.872595",
+      "raw_validator_balance_change_near": "617357.42133229084",
+      "residual_near": "5448.54072750916",
+      "start": "2026-08-24"
+    },
+    {
+      "closing_supply_near": "1305642171.5424056",
+      "end": "2026-09-06",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "632796.7077508",
+      "opening_supply_near": "1305009374.8346548",
+      "raw_validator_balance_change_near": "630971.96590015101",
+      "residual_near": "1824.74185064899",
+      "start": "2026-08-31"
+    },
+    {
+      "closing_supply_near": "1306243206.818513",
+      "end": "2026-09-13",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "601035.2761074",
+      "opening_supply_near": "1305642171.5424056",
+      "raw_validator_balance_change_near": "598933.51410567677",
+      "residual_near": "2101.76200172323",
+      "start": "2026-09-07"
+    },
+    {
+      "closing_supply_near": "1306866141.585723",
+      "end": "2026-09-20",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "622934.767210",
+      "opening_supply_near": "1306243206.818513",
+      "raw_validator_balance_change_near": "613397.11348625331",
+      "residual_near": "9537.65372374669",
+      "start": "2026-09-14"
+    },
+    {
+      "closing_supply_near": "1307477697.5599585",
+      "end": "2026-09-27",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "611555.9742355",
+      "opening_supply_near": "1306866141.585723",
+      "raw_validator_balance_change_near": "605052.79054749316",
+      "residual_near": "6503.18368800684",
+      "start": "2026-09-21"
+    },
+    {
+      "closing_supply_near": "1308108480.2022994",
+      "end": "2026-10-04",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "630782.6423409",
+      "opening_supply_near": "1307477697.5599585",
+      "raw_validator_balance_change_near": "636311.54958111853",
+      "residual_near": "-5528.90724021853",
+      "start": "2026-09-28"
+    },
+    {
+      "closing_supply_near": "1308704560.6070876",
+      "end": "2026-10-11",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "596080.4047882",
+      "opening_supply_near": "1308108480.2022994",
+      "raw_validator_balance_change_near": "596881.61823938927",
+      "residual_near": "-801.21345118927",
+      "start": "2026-10-05"
+    },
+    {
+      "closing_supply_near": "1309322552.8524296",
+      "end": "2026-10-18",
+      "independently_measured_actual_burn_near": null,
+      "independently_measured_issuance_near": null,
+      "net_supply_movement_near": "617992.2453420",
+      "opening_supply_near": "1308704560.6070876",
+      "raw_validator_balance_change_near": "620478.49226376542",
+      "residual_near": "-2486.24692176542",
+      "start": "2026-10-12"
+    }
+  ]
+}
