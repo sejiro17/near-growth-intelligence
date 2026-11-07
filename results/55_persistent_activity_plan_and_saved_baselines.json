@@ -1,0 +1,316 @@
+{
+  "cohort_points": [
+    {
+      "cohort_accounts_saved": 139856,
+      "cohort_week": "2026-08-10",
+      "cohort_week_end": "2026-08-16",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-08-17",
+      "followup_week_end": "2026-08-23",
+      "initial_receipt_reference_window": "UNAVAILABLE_IN_INITIAL_EXECUTION_PILOT",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 1
+    },
+    {
+      "cohort_accounts_saved": 139856,
+      "cohort_week": "2026-08-10",
+      "cohort_week_end": "2026-08-16",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-09-07",
+      "followup_week_end": "2026-09-13",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 4
+    },
+    {
+      "cohort_accounts_saved": 139856,
+      "cohort_week": "2026-08-10",
+      "cohort_week_end": "2026-08-16",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-10-05",
+      "followup_week_end": "2026-10-11",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 8
+    },
+    {
+      "cohort_accounts_saved": 141295,
+      "cohort_week": "2026-08-17",
+      "cohort_week_end": "2026-08-23",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-08-24",
+      "followup_week_end": "2026-08-30",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 1
+    },
+    {
+      "cohort_accounts_saved": 141295,
+      "cohort_week": "2026-08-17",
+      "cohort_week_end": "2026-08-23",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-09-14",
+      "followup_week_end": "2026-09-20",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 4
+    },
+    {
+      "cohort_accounts_saved": 141295,
+      "cohort_week": "2026-08-17",
+      "cohort_week_end": "2026-08-23",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-10-12",
+      "followup_week_end": "2026-10-18",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 8
+    },
+    {
+      "cohort_accounts_saved": 139759,
+      "cohort_week": "2026-08-24",
+      "cohort_week_end": "2026-08-30",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-08-31",
+      "followup_week_end": "2026-09-06",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": 108956,
+      "saved_exact_return_share_pct": "77.96",
+      "week_offset": 1
+    },
+    {
+      "cohort_accounts_saved": 139759,
+      "cohort_week": "2026-08-24",
+      "cohort_week_end": "2026-08-30",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-09-21",
+      "followup_week_end": "2026-09-27",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": 72188,
+      "saved_exact_return_share_pct": "51.65",
+      "week_offset": 4
+    },
+    {
+      "cohort_accounts_saved": 139759,
+      "cohort_week": "2026-08-24",
+      "cohort_week_end": "2026-08-30",
+      "complete_saved_transaction_followup": false,
+      "followup_week": "2026-10-19",
+      "followup_week_end": "2026-10-25",
+      "initial_receipt_reference_window": "UNAVAILABLE_IN_INITIAL_EXECUTION_PILOT",
+      "missing_saved_dates": [
+        "2026-10-25"
+      ],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 8
+    },
+    {
+      "cohort_accounts_saved": 457768,
+      "cohort_week": "2026-09-28",
+      "cohort_week_end": "2026-10-04",
+      "complete_saved_transaction_followup": true,
+      "followup_week": "2026-10-05",
+      "followup_week_end": "2026-10-11",
+      "initial_receipt_reference_window": "CHECKED_REFERENCE_REQUIRE_NEW_INITIAL_LINK_DIAGNOSTICS",
+      "missing_saved_dates": [],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": 83037,
+      "saved_exact_return_share_pct": "18.14",
+      "week_offset": 1
+    },
+    {
+      "cohort_accounts_saved": 457768,
+      "cohort_week": "2026-09-28",
+      "cohort_week_end": "2026-10-04",
+      "complete_saved_transaction_followup": false,
+      "followup_week": "2026-10-26",
+      "followup_week_end": "2026-11-01",
+      "initial_receipt_reference_window": "UNAVAILABLE_IN_INITIAL_EXECUTION_PILOT",
+      "missing_saved_dates": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 4
+    },
+    {
+      "cohort_accounts_saved": 457768,
+      "cohort_week": "2026-09-28",
+      "cohort_week_end": "2026-10-04",
+      "complete_saved_transaction_followup": false,
+      "followup_week": "2026-11-23",
+      "followup_week_end": "2026-11-29",
+      "initial_receipt_reference_window": "UNAVAILABLE_IN_INITIAL_EXECUTION_PILOT",
+      "missing_saved_dates": [
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27",
+        "2026-11-28",
+        "2026-11-29"
+      ],
+      "returner_initial_receipt_spending_near": null,
+      "returner_transactions": null,
+      "saved_exact_return_accounts": null,
+      "saved_exact_return_share_pct": null,
+      "week_offset": 8
+    }
+  ],
+  "definitions": {
+    "any_return": "Separate union across every week in a complete 1..4 or 1..8 interval.",
+    "exact_return": "Starting-week account active in the exact +k week; no intervening-week requirement.",
+    "population": "Distinct outer signers active in the starting week; creation history unavailable.",
+    "repeated_checkpoint_return": "Active at all exact +1/+4/+8 checkpoints, requiring all three complete follow-ups.",
+    "spending": "Stage 1 measures recorded transaction conversion by submission week; initial receipts require stage 2.",
+    "transaction_share": "Returners' follow-up-week submissions divided by all observed submissions in that week."
+  },
+  "expected_export_rows": {
+    "CHECKPOINT": 12,
+    "SUMMARY": 1,
+    "WEEK_CONTROL": 10
+  },
+  "expected_source_days": 70,
+  "expected_source_transactions": 53959076,
+  "limitations": [
+    "Accounts and overlapping cohorts are not independent people or disjoint populations.",
+    "Saved cohort/network aggregates cannot identify returners' transaction or execution-cost numerators.",
+    "Observed daily coverage is not independent ingestion completeness.",
+    "Incomplete follow-ups remain unavailable; earlier execution matching is separately qualified.",
+    "Source FLOAT precision is not restored by Decimal or BIGNUMERIC; spending is not revenue or purchases."
+  ],
+  "saved_spike_deletion_context": [
+    {
+      "cohort_week": "2026-09-28",
+      "cohort_week_end": "2026-10-04",
+      "deletion_action_rows": "41",
+      "deletion_target": "SIGNER_EQUALS_RECEIVER",
+      "deletion_transactions": "41",
+      "executor_check": "EXECUTOR_MATCHES_RECEIVER",
+      "followup_week": "2026-10-05",
+      "followup_week_end": "2026-10-11",
+      "initial_receipt_status": "SUCCESS_VALUE",
+      "matching_outcome_rows": "41",
+      "return_group": "ACTIVE_FOLLOWING_WEEK",
+      "signing_accounts": "9",
+      "target_accounts": "9"
+    },
+    {
+      "cohort_week": "2026-09-28",
+      "cohort_week_end": "2026-10-04",
+      "deletion_action_rows": "14",
+      "deletion_target": "SIGNER_EQUALS_RECEIVER",
+      "deletion_transactions": "14",
+      "executor_check": "EXECUTOR_MATCHES_RECEIVER",
+      "followup_week": "2026-10-05",
+      "followup_week_end": "2026-10-11",
+      "initial_receipt_status": "FAILURE",
+      "matching_outcome_rows": "14",
+      "return_group": "NOT_ACTIVE_FOLLOWING_WEEK",
+      "signing_accounts": "11",
+      "target_accounts": "11"
+    },
+    {
+      "cohort_week": "2026-09-28",
+      "cohort_week_end": "2026-10-04",
+      "deletion_action_rows": "309587",
+      "deletion_target": "SIGNER_EQUALS_RECEIVER",
+      "deletion_transactions": "309587",
+      "executor_check": "EXECUTOR_MATCHES_RECEIVER",
+      "followup_week": "2026-10-05",
+      "followup_week_end": "2026-10-11",
+      "initial_receipt_status": "SUCCESS_VALUE",
+      "matching_outcome_rows": "309587",
+      "return_group": "NOT_ACTIVE_FOLLOWING_WEEK",
+      "signing_accounts": "309280",
+      "target_accounts": "309280"
+    }
+  ],
+  "saved_spike_lifecycle_comparison": {
+    "absent_accounts": 374731,
+    "cohort_accounts": 457768,
+    "exact_week_1_returners": 83037,
+    "limitation": "Grouped observations do not establish deletion-before-return ordering, recreation, continuity or disjointness of failed/successful deletion account sets.",
+    "successful_self_delete_absent_accounts": 309280,
+    "successful_self_delete_absent_share_pct": "82.5338709634377726956136535274637006279170925277065414924306",
+    "successful_self_delete_returning_accounts": 9
+  },
+  "source_end": "2026-10-18",
+  "source_hashes": {
+    "analysis/19_persistent_activity_plan.py": {
+      "bytes": 23965,
+      "sha256": "d3e5438daf0d48f83e279bd04a766fe42b276cfc26fd84445bead8c885ead470"
+    },
+    "results/02_daily_partition_counts_2026-07-01_to_2026-10-24.csv": {
+      "bytes": 4025,
+      "sha256": "04f7f0c5df063f76c119ab05ae30f6b6366128fb09ee1aaf3fa6ff224e66f57f"
+    },
+    "results/03_daily_transaction_checks_2026-07-01_to_2026-10-24.csv": {
+      "bytes": 13334,
+      "sha256": "f049619a646835327d05ff55be434b820f8a12e97f72ffff2ae2d7085713905b"
+    },
+    "results/11_weekly_account_returns_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 2094,
+      "sha256": "0e0dfd80a47045aa8e2ce8e3300d6f3c3f2ead93e486a0ee23350a00350a88f9"
+    },
+    "results/17_spike_account_deletion_checks_2026-09-28_to_2026-10-11.csv": {
+      "bytes": 676,
+      "sha256": "6b860a018f6957ed0a804e971d38c3894d51c17dc3ae41e2549eb7df7dfc771e"
+    },
+    "results/36_weekly_transaction_conversion_costs_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 871,
+      "sha256": "9ef5bdf734831f04defb2dde376496819eee1932b1ed057e60377585bbcc9593"
+    },
+    "results/38_extended_weekly_signing_activity_2026-07-06_to_2026-10-18.csv": {
+      "bytes": 2162,
+      "sha256": "82ef0ede02c5dcd362c9ce1bffb8754fa38f0ad5e04e00cdbc191d60a966bb71"
+    },
+    "sql/41_persistent_activity_transaction_pilot.sql": {
+      "bytes": 10982,
+      "sha256": "c0f42f4f0e4e99ab216db83a783378cd1a6e3f7655a862943356846996f18060"
+    }
+  },
+  "source_start": "2026-08-10"
+}

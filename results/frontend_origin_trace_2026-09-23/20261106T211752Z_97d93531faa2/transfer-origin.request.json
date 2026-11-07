@@ -1,0 +1,8 @@
+{
+  "id": "transfer-origin",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_receipt_to_tx",
+  "params": {
+    "receipt_id": "5z6sNxeEzHdQuU1P8j7o5DiTcLxXJdHj9nbFvX5H1wFK"
+  }
+}

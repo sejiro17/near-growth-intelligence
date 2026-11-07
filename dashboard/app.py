@@ -1,11 +1,13 @@
 import json
 from collections import Counter
+from decimal import Decimal
 from math import isclose, isfinite
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from dashboard import research_views
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -200,6 +202,7 @@ def download_csv(label, frame, filename):
 
 
 try:
+    research = research_views.load_evidence(research_views.signature())
     weekly = load_csv(
         f"14_weekly_growth_and_costs_{PERIOD}.csv",
         ["week_start", "week_end"],
@@ -681,19 +684,16 @@ receipt_change = percentage_change(
 )
 conversion_share = 100 * conversion_total / combined_total
 
-opening_supply = float(economics.iloc[0]["opening_observed_supply_near"])
-closing_supply = float(economics.iloc[-1]["closing_observed_supply_near"])
-net_supply = closing_supply - opening_supply
+opening_supply = Decimal(research["supply"]["period"]["opening_supply_near"])
+closing_supply = Decimal(research["supply"]["period"]["closing_supply_near"])
+net_supply = Decimal(research["supply"]["period"]["net_supply_movement_near"])
 
 top_ten_min = weekly["top_10_accounts_transaction_share_pct"].min()
 top_ten_max = weekly["top_10_accounts_transaction_share_pct"].max()
 
 
 st.title("NEAR Growth Intelligence")
-st.write(
-    "Does higher network activity translate into broader, "
-    "more persistent participation?"
-)
+research_views.overview(research)
 
 st.markdown(
     "**Reading the comparisons · 2026 (UTC)**\n\n"
@@ -706,8 +706,9 @@ st.markdown(
     "individual endpoints."
 )
 st.caption(
-    "Economic measurements cover the eight-week research window only. "
-    "Source: saved public NEAR mainnet exports from Google BigQuery."
+    "Network calendar-period economics cover 24 August–18 October. "
+    "Starting activity cohorts extend back to 10 August; bounded initial-receipt lookups extend through 24 October. "
+    "Sources: saved public NEAR mainnet BigQuery exports and bounded canonical RPC captures."
 )
 
 with st.sidebar:
@@ -766,14 +767,10 @@ st.caption(
 
 st.subheader("Investment assessment")
 st.info(
-    "Growth direction depends on the comparison period: fifteen-week "
-    "endpoints declined while four-week averages increased. NEAR recorded transaction activity and execution "
-    "spending during 24 August–18 October. The investment argument "
-    "is that persistent, useful application activity could support "
-    "demand for NEAR through execution, storage and network security. "
-    "The evidence supports measured execution use, while account "
-    "lifecycle events, concentration and failed execution make "
-    "headline growth an incomplete adoption measure."
+    "Two August activity cohorts show exact +8 returns and successful initial-receipt execution with recorded spending. "
+    "Concentration, failed execution, deletion context and declining longer-window endpoints qualify that evidence. "
+    "The supply decomposition and the traced withdrawal's revenue origin remain unresolved. "
+    "The conditional investment case has evidence of execution use, but no verified holder cash-flow valuation."
 )
 
 with st.expander(
@@ -902,7 +899,7 @@ with growth_tab:
         "These measures do not establish user retention or independent demand."
     )
     st.subheader("Eight-week research")
-    st.caption("24 August–18 October 2026 · All spending, supply and detailed execution measurements remain within this period.")
+    st.caption("24 August–18 October 2026 · Network calendar-period economics. Separate cohort receipt lookups include six-day execution tails through 24 October.")
     st.subheader("Activity and spending followed different paths")
     st.write(
         "Compare changes from the first week, indexed to 100. "
@@ -1238,7 +1235,8 @@ with drivers_tab:
 
 
 with returns_tab:
-    st.caption("Eight-week research · 24 August–18 October 2026")
+    research_views.persistent_activity(research)
+    st.caption("Original eight-week cohort series · 24 August–18 October 2026")
     st.subheader("Did accounts participate in later weeks?")
     st.write(
         "Each cohort contains all signing accounts active in its "
@@ -1593,49 +1591,7 @@ with costs_tab:
         "supply movement to infer issuance or burning."
     )
 
-    with st.expander(
-        "Inspect supply reconciliation and measurement boundaries"
-    ):
-        validator_change = economics[
-            "validator_update_net_balance_change_near"
-        ].sum()
-        positive_supply = economics[
-            "observed_positive_supply_movements_near"
-        ].sum()
-        decreases = economics[
-            "observed_supply_decrease_magnitude_near"
-        ].sum()
-
-        reconciliation = pd.DataFrame([
-            ("Observed positive block supply movements", positive_supply),
-            ("Observed block supply decrease magnitude", decreases),
-            ("Net observed supply change", net_supply),
-            ("Validator-update net balance change", validator_change),
-            (
-                "Net supply change minus validator change",
-                net_supply - validator_change,
-            ),
-            (
-                "Positive supply movements minus validator change",
-                positive_supply - validator_change,
-            ),
-        ], columns=["Measurement", "NEAR"])
-
-        st.dataframe(
-            reconciliation, hide_index=True, width="stretch"
-        )
-        st.write(
-            "Validator-update balance changes do not fully reconcile "
-            "with supply movements. Block-level movements can contain "
-            "offsetting effects, so they do not separately expose all "
-            "gross issuance and permanent burning."
-        )
-        st.caption(
-            "Source fields use floating-point storage. The "
-            "0.000001 NEAR tolerance for individual validator balance "
-            "comparisons is an analytical choice. Sources: results "
-            "28 and 32–34."
-        )
+    research_views.supply_and_trace(research)
 
     with st.expander("Inspect and download the weekly economic comparison"):
         st.dataframe(economics, hide_index=True, width="stretch")
@@ -1691,6 +1647,7 @@ with costs_tab:
 
 
 with decisions_tab:
+    st.info("The bounded supply, withdrawal-provenance and persistent-activity measurement phase is closed. Exact checkpoint returns and selected initial-receipt spending are validated. Independent issuance, actual burn, revenue origin and holder cash flows remain unresolved investment inputs; no valuation or causal cohort effect is established.")
     st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Turn the evidence into investigation priorities")
     st.write(
