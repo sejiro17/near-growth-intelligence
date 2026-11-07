@@ -8,6 +8,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import research_views
+import presentation
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -192,10 +193,11 @@ def validate_extended_activity(extended, comparison, original):
                 raise ValueError(f"Four-week comparison differs: {field}.")
 
 
-def download_csv(label, frame, filename):
+def download_csv(label, frame, filename, *, source=None, filters=None):
     st.download_button(
         label,
-        data=frame.to_csv(index=False).encode("utf-8"),
+        data=(presentation.saved_csv(source, filters) if source
+              else frame.to_csv(index=False).encode("utf-8")),
         file_name=filename,
         mime="text/csv",
     )
@@ -651,7 +653,7 @@ def show_weekly_chart(fig):
         legend_title_text="",
         margin=dict(t=30, b=40),
     )
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="stretch", alt="Weekly " + (fig.layout.yaxis.title.text or "saved observations") + " during 24 August–18 October 2026")
 
 
 def percentage_change(frame, field):
@@ -880,7 +882,7 @@ with growth_tab:
     # Format a presentation copy; retain full precision in the source data.
     for field in ("first_period_value", "final_period_value"):
         display[field] = display[field].map(lambda value: f"{value:,.2f}")
-    st.dataframe(display.rename(columns={
+    presentation.table(display.rename(columns={
         "first_period_value": "6 July–2 August",
         "final_period_value": "21 September–18 October",
     })[["Measure", "6 July–2 August", "21 September–18 October", "Change"]],
@@ -1021,6 +1023,7 @@ with drivers_tab:
             labels={"transaction_change": "Change in transactions"},
         ),
         width="stretch",
+        alt="Changes in transactions by fixed first-week leaders, other tracked accounts and all untracked accounts",
     )
     st.caption(
         "Tracked accounts are the union of the weekly top 20. "
@@ -1033,7 +1036,7 @@ with drivers_tab:
         display["signer_account_id"] = display[
             "signer_account_id"
         ].fillna("All untracked accounts combined")
-        st.dataframe(
+        presentation.table(
             display.sort_values("transaction_change", ascending=False),
             hide_index=True,
             width="stretch",
@@ -1088,7 +1091,7 @@ with drivers_tab:
                     )[["transactions", "action_rows"]]
                     .sum().sort_values("transactions", ascending=False)
                 )
-                st.dataframe(
+                presentation.table(
                     action_totals, hide_index=True, width="stretch"
                 )
                 st.caption(
@@ -1098,7 +1101,7 @@ with drivers_tab:
                 )
 
     st.subheader(
-        "Did the selected growth accounts execute successfully?"
+        "How did selected accounts' initial receipts execute?"
     )
     selected_account = st.selectbox(
         "Inspect initial receipt outcomes",
@@ -1153,7 +1156,7 @@ with drivers_tab:
 
     left, middle, right = st.columns(3)
     left.metric("All initial receipts", f"{total_cost:,.4f} NEAR")
-    middle.metric("Failed initial receipts", f"{failed_cost:,.4f} NEAR")
+    middle.metric("Failed initial-receipt spending", f"{failed_cost:,.4f} NEAR")
     right.metric(
         "Failed share of initial-receipt cost",
         f"{failed_cost / total_cost:.2%}" if total_cost > 0 else "N/A",
@@ -1182,13 +1185,15 @@ with drivers_tab:
     )
 
     with st.expander("Inspect and download selected-account costs"):
-        st.dataframe(
+        presentation.table(
             selected_costs, hide_index=True, width="stretch"
         )
         download_csv(
             "Download selected-account costs",
             selected_costs,
             f"27_{selected_account}_initial_receipt_costs_{PERIOD}.csv",
+            source=f"27_growth_account_execution_costs_{PERIOD}.csv",
+            filters={"signer_account_id": selected_account},
         )
 
     st.subheader("What did the sampled failures report?")
@@ -1199,7 +1204,7 @@ with drivers_tab:
         }
         for message, count in error_messages.most_common()
     ])
-    st.dataframe(
+    presentation.table(
         diagnostic_table, hide_index=True, width="stretch"
     )
     st.write(
@@ -1225,12 +1230,13 @@ with drivers_tab:
             }
             for record in records
         ])
-        st.dataframe(evidence, hide_index=True, width="stretch")
+        presentation.table(evidence, hide_index=True, width="stretch")
 
     download_csv(
         "Download growth contributions",
         contributions,
         f"22_account_growth_contributions_{PERIOD}.csv",
+        source=f"22_account_growth_contributions_{PERIOD}.csv",
     )
 
 
@@ -1268,7 +1274,7 @@ with returns_tab:
         },
     )
     fig.update_traces(hoverongaps=False)
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="stretch", alt="Exact-week activity shares by overlapping starting-week cohort; incomplete follow-ups are blank")
     st.caption(
         "Blank cells lack a complete follow-up week; they are not zero "
         "returns. Cohorts overlap and are not newly acquired users. "
@@ -1276,7 +1282,7 @@ with returns_tab:
     )
 
     with st.expander("Inspect cohort results"):
-        st.dataframe(returns, hide_index=True, width="stretch")
+        presentation.table(returns, hide_index=True, width="stretch")
 
     st.info(
         "During 28 September–4 October, 309,280 accounts absent the "
@@ -1353,7 +1359,7 @@ with returns_tab:
         },
     )
     fig.update_layout(xaxis_title=None, legend_title_text="")
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="stretch", alt="Account share versus starting-week transaction share for spike accounts that returned or were absent the following week")
     st.caption(
         "The groups cover the same starting-week cohort. Account and "
         "transaction shares have different denominators. Absence does "
@@ -1361,7 +1367,7 @@ with returns_tab:
     )
 
     with st.expander("Inspect spike cohort group totals"):
-        st.dataframe(
+        presentation.table(
             group_summary[[
                 "Participation",
                 "group_accounts",
@@ -1441,7 +1447,7 @@ with concentration_tab:
             yaxis=dict(categoryorder="total ascending"),
             margin=dict(t=30, b=40),
         )
-        st.plotly_chart(fig, width="stretch")
+        st.plotly_chart(fig, width="stretch", alt="Twenty leading original transaction receivers for the selected submission week")
         st.caption(
             "Only the twenty busiest original transaction receivers "
             "are shown. Absence from a ranking does not mean zero "
@@ -1449,7 +1455,7 @@ with concentration_tab:
         )
 
         with st.expander("Inspect receiver results"):
-            st.dataframe(
+            presentation.table(
                 selected[[
                     "receiver_rank",
                     "receiver_account_id",
@@ -1514,11 +1520,12 @@ with costs_tab:
     )
 
     with st.expander("Inspect and download combined execution spending"):
-        st.dataframe(spending, hide_index=True, width="stretch")
+        presentation.table(spending, hide_index=True, width="stretch")
         download_csv(
             "Download combined execution spending",
             spending,
             f"37_weekly_execution_spending_{PERIOD}.csv",
+            source=f"37_weekly_execution_spending_{PERIOD}.csv",
         )
 
     st.subheader("Activity and spending changed at different rates")
@@ -1546,6 +1553,7 @@ with costs_tab:
             text_auto=".2f",
         ),
         width="stretch",
+        alt="First-to-final-week percentage changes in transactions, receipt outcomes and separate recorded spending components",
     )
 
     receipt_count_change = percentage_change(
@@ -1594,11 +1602,12 @@ with costs_tab:
     research_views.supply_and_trace(research)
 
     with st.expander("Inspect and download the weekly economic comparison"):
-        st.dataframe(economics, hide_index=True, width="stretch")
+        presentation.table(economics, hide_index=True, width="stretch")
         download_csv(
             "Download weekly economic comparison",
             economics,
             f"34_weekly_economic_comparison_{PERIOD}.csv",
+            source=f"34_weekly_economic_comparison_{PERIOD}.csv",
         )
 
     st.subheader("Receipt execution costs by outcome")
@@ -1647,7 +1656,7 @@ with costs_tab:
 
 
 with decisions_tab:
-    st.info("The bounded supply, withdrawal-provenance and persistent-activity measurement phase is closed. Exact checkpoint returns and selected initial-receipt spending are validated. Independent issuance, actual burn, revenue origin and holder cash flows remain unresolved investment inputs; no valuation or causal cohort effect is established.")
+    st.info("The published persistence measurements and bounded withdrawal-provenance investigation are complete within their stated limits. Supply reconciliation is ongoing. Full-window issuance, actual burn, revenue origin and holder cash flows remain unresolved investment inputs; no valuation or causal cohort effect is established.")
     st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Turn the evidence into investigation priorities")
     st.write(
@@ -1774,7 +1783,7 @@ with decisions_tab:
 
     with st.expander("Compare all investigation priorities"):
         priority_table = pd.DataFrame(priorities)
-        st.dataframe(
+        presentation.table(
             priority_table, hide_index=True, width="stretch"
         )
         download_csv(
@@ -1920,7 +1929,7 @@ with explorer_tab:
             "Weekly top 20 original receivers, not a complete "
             "downstream execution trace."
         )
-        st.dataframe(
+        presentation.table(
             pd.DataFrame(chosen_week["top_receivers"]),
             hide_index=True,
             width="stretch",
@@ -1937,7 +1946,7 @@ with explorer_tab:
             "Category transaction counts must not be summed or "
             "interpreted as users."
         )
-        st.dataframe(
+        presentation.table(
             pd.DataFrame(chosen_week["action_categories"]),
             hide_index=True,
             width="stretch",
@@ -1968,11 +1977,12 @@ with explorer_tab:
 st.divider()
 
 with st.expander("Inspect and download weekly activity and receipt costs"):
-    st.dataframe(weekly, hide_index=True, width="stretch")
+    presentation.table(weekly, hide_index=True, width="stretch")
     download_csv(
         "Download weekly activity and receipt costs",
         weekly,
         f"14_weekly_growth_and_costs_{PERIOD}.csv",
+        source=f"14_weekly_growth_and_costs_{PERIOD}.csv",
     )
 
 st.caption(

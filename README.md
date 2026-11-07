@@ -8,9 +8,9 @@ Fixed transaction research observations cover **6 July–18 October 2026: fiftee
 
 Across fifteen-week endpoints, transactions declined **10.63%** and weekly active signing accounts declined **24.65%**. First-four-week versus final-four-week averages increased **16.39%** and **79.47%**, respectively. Growth direction depends on the comparison period; the final four weeks include the account spike.
 
-The completed persistence phase finds exact +8 returns of **47.41%** and **46.18%** for the 10 and 17 August activity cohorts, with **37.48%** and **37.83%** active at all three selected checkpoints. Their top ten returners generated **73.98%** and **75.12%** of +8 transactions. Selected initial receipts executed successfully and incurred measured spending; complete-chain success remains unavailable.
+The completed persistence phase finds exact +8 returns of **47.41%** and **46.18%** for the 10 and 17 August activity cohorts, with **37.48%** and **37.83%** active at all three selected checkpoints. Their top ten returners generated **73.98%** and **75.12%** of +8 transactions. Initial-receipt success ranged from **82.35% to 92.99%** across the three exact-return execution pilots. These overlapping groups also include failed receipts; complete-chain success remains unavailable.
 
-The supply residual remains **+16,599.51437846169 NEAR**. Two exact blocks establish 231 validator updates absent from selected BigQuery evidence; an ingestion-collision explanation remains unconfirmed. A verified native withdrawal has **unverified revenue origin**. Independent issuance, actual native burn and holder value capture remain unresolved. The dashboard and [investment thesis](notes/investment_thesis.md) present these qualifications beside the findings.
+The supply residual remains **+16,599.51437846169 NEAR**. Two exact blocks establish 231 validator updates absent from selected BigQuery evidence; an ingestion-collision explanation remains unconfirmed. A verified native withdrawal has **unverified revenue origin**. Full-window independent issuance, actual native burn and holder value capture remain unresolved. The dashboard and [investment thesis](notes/investment_thesis.md) present these qualifications beside the findings.
 
 The revenue/buyback ledger, full issuance/burn reconciliation, broad relayer attribution and conditional investment model remain incomplete. The current thesis organizes evidence and unresolved inputs; it does not implement a valuation model.
 
@@ -142,7 +142,7 @@ Run the offline analysis and dashboard smoke tests in the installed environment:
 python3 -B -m unittest discover -s tests -v
 ```
 
-Dashboard smoke tests use Streamlit AppTest in-process, without starting a server. Source collection remains a separate manual workflow.
+Dashboard checks include in-process Streamlit AppTest interactions and a separate console-launch regression that starts a temporary local server without a custom PYTHONPATH. Named source CSV downloads preserve saved bytes, or exact original cell strings for filtered selections; table-toolbar exports contain presentation data. Source collection remains a separate manual workflow.
 
 Running the SQL queries requires BigQuery access and may incur query charges.
 
