@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from dashboard import research_views
+import research_views
 
 
 ROOT = Path(__file__).resolve().parents[1]
