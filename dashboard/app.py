@@ -1,3 +1,4 @@
+import importlib
 import json
 from collections import Counter
 from decimal import Decimal
@@ -11,6 +12,9 @@ import research_views
 import presentation
 import model_views
 import review_views
+
+# A running Streamlit server can retain imported views across script upgrades.
+research_views = importlib.reload(research_views)
 
 
 ROOT = Path(__file__).resolve().parents[1]
