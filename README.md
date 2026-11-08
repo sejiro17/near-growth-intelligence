@@ -148,8 +148,3 @@ coverage. [Original criteria and current status](notes/deliverable_status.md) ·
 | [sql/](sql/) · [analysis/](analysis/) | Source-query definitions, offline validators and rebuild tooling. |
 | [results/](results/) | Saved exports, derived evidence and bounded captures. |
 | [notes/](notes/) · [docs/](docs/) | Methods, accounting investigations, research status and visual assets. |
-
-The annotated tag **submission-2026-11-02**, at
-`7c8beb4c320be0a506bf955a1cb9e79c91001389`, preserves the repository version
-associated with the 2 November submission; organiser snapshot verification is
-not claimed. Subsequent research preserves that history.
