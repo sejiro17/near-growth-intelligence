@@ -1,0 +1,469 @@
+{
+  "downstream_coverage": {
+    "closed_provenance": "Results 47–54 remain closed and are not reused as a revenue-origin or relayer-population inference.",
+    "failure_control_scope": "18 preselected failed tinykoala transactions; retained receipt graphs, not a representative network sample or relayer census",
+    "failure_controls": [
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "G9HVmtTJjgJsVL4diStKMX84iRPSxFctR3Cnmyx4KPYg"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "85R9MAKpgPYBqFDS5SoSZKZKS5CT2fFW94BaQQizhoYY"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "HGe1mUaWpWtR7ifoCgJL8p3sr1WWTvUzhZoJCPTY2jjf"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "2M6dptPEipqWFjAFarHX1yCLgiA271JSubRCg6nBfJ9a"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "6wLffTfkcFRLN7KmsetLVFiy1oSYETsKoinK1TJbWJst"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "GmzVbNy1FinknhPmgsmj2s4zE62h3KZTBgv7nQjnDbeZ"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "FASa3cgPLoVHdEc9iTtxHVhrLJAgcTtNCFMLWw2JEgmt"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "AMHoQCxHJ7GygEgvK9pNhu9x86z2Hzo75SKhrLmbzHF4"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "36A7mpDxaNG9ysGLQGweRGzTSTibLpJ7PAqNruFiqpJ9"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "59ekBeycDJjw3byV76tVrK2X9mDauGG2c5VR35UYJ5J"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "DwpkitiyiYC6536iZZoy9Zr2Md6y9yUnpgird4FCWfMa"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "CuW2Pg9j1Droh9kDfQPwWTjk7BJKyyWqWUjyuKwi6nhW"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "7TN7PW1b17qR8hwqmWtZLi1pveBkXdMy8wRve7MrqnNk"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "7BQgDDW6YyTGUysASusnjYDHsUqcmUPrdArcCrtJjeVk"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "6EEvE2wGuNLJ91rJSkhZ1WozRqwMXwd3ETG6cwLYFXVd"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "4u9mQ6GbcVwYDULLtbg4TmsSWTTLu4kG4fPjHivJAPrJ"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "CGdhU6QUpLN5NiugTgxaybkS9QJdLWkN1KB49zmgu12a"
+      },
+      {
+        "final_execution_status": "FINAL",
+        "missing_emitted_outcome_ids": [],
+        "outcomes": 4,
+        "signer": "tinykoala595.near",
+        "transaction_hash": "3YnqyRH3WMHdHkffwcbBNvtqLyd4Ba1qEkoDFaFGTQ1r"
+      }
+    ],
+    "other_census": "Cohort results 58–62 cover initial receipts only. 398,968 wx transactions have SUCCESS_RECEIPT_ID, which does not establish downstream success. Five-account profiles expose action kinds/original receivers without delegated inner payloads.",
+    "tinykoala_and_wx_initial_status_counts": {
+      "tinykoala595.near": {
+        "FAILURE": 715518,
+        "SUCCESS_RECEIPT_ID": 115,
+        "SUCCESS_VALUE": 62955
+      },
+      "wx-cruce.near": {
+        "FAILURE": 6441,
+        "SUCCESS_RECEIPT_ID": 398968,
+        "SUCCESS_VALUE": 7872
+      }
+    }
+  },
+  "largest_named_endpoint_growth_contributors": [
+    {
+      "account_id": "tinykoala595.near",
+      "endpoint_change": 148950,
+      "final_week_transactions": 148950,
+      "first_week_transactions": 0,
+      "group": "OTHER_TRACKED_ACCOUNT"
+    },
+    {
+      "account_id": "wx-cruce.near",
+      "endpoint_change": 137767,
+      "final_week_transactions": 137767,
+      "first_week_transactions": 0,
+      "group": "OTHER_TRACKED_ACCOUNT"
+    },
+    {
+      "account_id": "0here.tg",
+      "endpoint_change": 137531,
+      "final_week_transactions": 230797,
+      "first_week_transactions": 93266,
+      "group": "FIRST_WEEK_TOP_10"
+    },
+    {
+      "account_id": "e6bb0ba0850ad9d5126e8b9790b6fc5688463e8bef963e7a3c06433907ebfd34",
+      "endpoint_change": 71572,
+      "final_week_transactions": 71572,
+      "first_week_transactions": 0,
+      "group": "OTHER_TRACKED_ACCOUNT"
+    },
+    {
+      "account_id": "closemeat6237.near",
+      "endpoint_change": 65075,
+      "final_week_transactions": 199228,
+      "first_week_transactions": 134153,
+      "group": "FIRST_WEEK_TOP_10"
+    },
+    {
+      "account_id": "fa00cce34214a03cc31ae77ef5cc0a6d92b6956cb792774ec83ceb26fbd4b9b0",
+      "endpoint_change": 51223,
+      "final_week_transactions": 51223,
+      "first_week_transactions": 0,
+      "group": "OTHER_TRACKED_ACCOUNT"
+    }
+  ],
+  "leaders": [
+    {
+      "account_id": "sweat-relayer.near",
+      "delegate_action_share_pct": "96.662194368319052844703544411367387159840993703975879798280299492942503055413812",
+      "delegate_action_transactions": 13246938,
+      "largest_observed_original_receivers": [
+        {
+          "receiver": "jars-oracle.sweat",
+          "transactions": 3039759
+        },
+        {
+          "receiver": "spin.sweat",
+          "transactions": 2749749
+        },
+        {
+          "receiver": "oracle.sweat",
+          "transactions": 1918942
+        }
+      ],
+      "observed_network_transaction_share_pct": "30.945978883857967138788090557675395306117941973490945898946712950725253458331544",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "Service attribution pending verification",
+      "transactions": 13704363
+    },
+    {
+      "account_id": "intents.near",
+      "delegate_action_share_pct": "0",
+      "delegate_action_transactions": 0,
+      "largest_observed_original_receivers": [
+        {
+          "receiver": "intents.near",
+          "transactions": 2769479
+        }
+      ],
+      "observed_network_transaction_share_pct": "6.2537922159014672169413275355870459733876147194000721782741046509101973015839252",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "Documented contract role",
+      "transactions": 2769479
+    },
+    {
+      "account_id": "closemeat6237.near",
+      "delegate_action_share_pct": "0",
+      "delegate_action_transactions": 0,
+      "largest_observed_original_receivers": [
+        {
+          "receiver": "v2.ref-finance.near",
+          "transactions": 914376
+        },
+        {
+          "receiver": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+          "transactions": 345019
+        },
+        {
+          "receiver": "wrap.near",
+          "transactions": 331857
+        }
+      ],
+      "observed_network_transaction_share_pct": "3.6582353753299608890582171388219622292925196851993937241753907673139452788241490",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "Pending verification",
+      "transactions": 1620042
+    },
+    {
+      "account_id": "omni-relayer.bridge.near",
+      "delegate_action_share_pct": "0",
+      "delegate_action_transactions": 0,
+      "largest_observed_original_receivers": [
+        {
+          "receiver": "omni.bridge.near",
+          "transactions": 801990
+        },
+        {
+          "receiver": "btc-connector.bridge.near",
+          "transactions": 341489
+        },
+        {
+          "receiver": "zcash-connector.bridge.near",
+          "transactions": 224021
+        }
+      ],
+      "observed_network_transaction_share_pct": "3.0879877187641428342198001417823011664003675844128347983282930027855611115634861",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "Documented relayer role",
+      "transactions": 1367509
+    },
+    {
+      "account_id": "meteor-relayer.near",
+      "delegate_action_share_pct": "98.019615567780346144048958229504358048189301778817781532760909359875579266797353",
+      "delegate_action_transactions": 1239064,
+      "largest_observed_original_receivers": [
+        {
+          "receiver": "near",
+          "transactions": 25028
+        },
+        {
+          "receiver": "brn1.near",
+          "transactions": 778
+        },
+        {
+          "receiver": "wrongzone2119.near",
+          "transactions": 444
+        }
+      ],
+      "observed_network_transaction_share_pct": "2.8544741565242462232069996757803592808854434323438424484937199888521554373720244",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "Pending verification",
+      "transactions": 1264098
+    },
+    {
+      "account_id": "0here.tg",
+      "delegate_action_share_pct": null,
+      "delegate_action_transactions": null,
+      "largest_observed_original_receivers": [],
+      "observed_network_transaction_share_pct": "2.1374402238384579591812033719745879364370533145079098708238317649168696595946681",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "No profile role anchor in selected saved register",
+      "transactions": 946561
+    },
+    {
+      "account_id": "bridge-mng.near",
+      "delegate_action_share_pct": null,
+      "delegate_action_transactions": null,
+      "largest_observed_original_receivers": [],
+      "observed_network_transaction_share_pct": "2.1202718025514581822374515279443323141573154884721830251711230721768740755574024",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "No profile role anchor in selected saved register",
+      "transactions": 938958
+    },
+    {
+      "account_id": "escrow.ai.near",
+      "delegate_action_share_pct": null,
+      "delegate_action_transactions": null,
+      "largest_observed_original_receivers": [],
+      "observed_network_transaction_share_pct": "2.0200681073507985607881567655028495785709198511796170938494147675159107661198559",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "No profile role anchor in selected saved register",
+      "transactions": 894583
+    },
+    {
+      "account_id": "tinykoala595.near",
+      "delegate_action_share_pct": null,
+      "delegate_action_transactions": null,
+      "largest_observed_original_receivers": [],
+      "observed_network_transaction_share_pct": "1.7581384707355757373512903774600374114871122579908579906683093072534107305546008",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "No profile role anchor in selected saved register",
+      "transactions": 778588
+    },
+    {
+      "account_id": "relay.aurora",
+      "delegate_action_share_pct": null,
+      "delegate_action_transactions": null,
+      "largest_observed_original_receivers": [],
+      "observed_network_transaction_share_pct": "1.6784948802065106140044368276840127109996266438543216436775115178361222590309441",
+      "receiver_coverage": "Weekly top-20 original receivers only; not decoded inner destinations or a full downstream census",
+      "role_status": "Documented Aurora association in saved register; no selected-action profile or historical operator verification",
+      "transactions": 743318
+    }
+  ],
+  "network": "NEAR mainnet",
+  "network_transactions": 44284794,
+  "proposed_sequence": {
+    "automatic_retries": 0,
+    "decision": "Can establish whether one high-volume signer's transaction relays a distinct on-chain actor into claim.sweat, and whether that transaction's receipt/callback graph settled. Cannot establish population user counts, service ownership, revenue, buyback or burn.",
+    "endpoint": "https://archival-rpc.mainnet.near.org",
+    "execution_authorized": false,
+    "fallbacks": [],
+    "first": {
+      "id": "priority4-sweat-origin",
+      "jsonrpc": "2.0",
+      "method": "EXPERIMENTAL_receipt_to_tx",
+      "params": {
+        "receipt_id": "2iLefvugZmJmpNn52hcyMBjxcfYGGz5d6R8h4W1dXaDS"
+      }
+    },
+    "maximum_new_requests": 2,
+    "scan_hints": null,
+    "second_template": {
+      "id": "priority4-sweat-status",
+      "jsonrpc": "2.0",
+      "method": "EXPERIMENTAL_tx_status",
+      "params": {
+        "sender_account_id": "<validated origin sender_account_id>",
+        "tx_hash": "<validated origin transaction_hash>",
+        "wait_until": "FINAL"
+      }
+    },
+    "stop_conditions": [
+      "Stop after this one transaction trace; no broad block download or account-history scan.",
+      "Stop on unsupported origin index, missing historical data, HTTP/JSON-RPC error, ambiguous identity or response cap; retain bytes and report missing evidence.",
+      "Preserve existing 65-second spacing, 15/60-second timeouts and immutable checksummed bytes. Require a new explicit 8 MiB response guard before any collection: the legacy analysis-11 transport has no byte cap. No live collector is prepared or run by this offline plan."
+    ],
+    "validation": [
+      "Verify origin response checksum, JSON-RPC identity, 32-byte transaction hash and sender matching saved receipt signer sweat-relayer.near; stop on conflict. Never pass a receipt ID as tx_hash.",
+      "Validate FINAL transaction details, exact signer/hash and the selected receipt payload. Preserve ordered actions and raw arguments.",
+      "Distinguish outer signer from SignedDelegate sender_id/receiver_id/public_key/nonce/max_block_height where actually present. Absence of a delegate action leaves the mechanism different or unresolved; do not force that explanation.",
+      "Preserve receiving contracts, executors, predecessor IDs, generated receipt_ids, logs/status and callback data dependencies. Aggregate each identity before linking; duplicate/ambiguous IDs remain unresolved.",
+      "Validate every emitted child has an outcome, with explicit exceptions for data receipts; match callback data IDs to producers. FINAL or top-level success alone is insufficient.",
+      "Keep costs, deposits and token amounts in exact raw units; do not infer fee payer/user ownership from signer or predecessor alone."
+    ]
+  },
+  "ranking_scope": "Full-period totals among saved union of weekly top-20 signers; not an exhaustive all-account ranking",
+  "selected_signers": 51,
+  "source_requests": 0,
+  "sources": {
+    "analysis/15_trace_frontend_transfer_origin.py": {
+      "bytes": 12129,
+      "sha256": "957e69289f484903c2bd93f4d4020a3ea83e2569f51aa19db9795f4556107840"
+    },
+    "analysis/39_review_model_and_attribution.py": {
+      "bytes": 14845,
+      "sha256": "87f0fd7fddeb665053885791a59ef152af45c1dcae6caf10e80f69186b19170c"
+    },
+    "notes/account_attribution.md": {
+      "bytes": 4034,
+      "sha256": "3a0520cf7127d9e25a476761176ccc106974997a818ea3d89c5f0eb8a288d714"
+    },
+    "results/18_weekly_leading_signing_accounts_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 49908,
+      "sha256": "75c2c74c07a9f5d5e3f67bc83c403c34f400887a24d6047e9b0784b1a147b7c7"
+    },
+    "results/19_leading_account_activity_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 47985,
+      "sha256": "b710eae2ec179254875118719e32b6e630b11f02816736ebfa365b2618ba15ed"
+    },
+    "results/20_leading_account_actions_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 19533,
+      "sha256": "9d74da7a78147acc0421bc8dbc3e163b15b8a483364f11ad9795071b8ed9fc0b"
+    },
+    "results/22_account_growth_contributions_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 5716,
+      "sha256": "5da06232a6a68fe83c2abb6b8003de0f1577025a227c27ce299a588b6e45cef4"
+    },
+    "results/24_growth_account_outcomes_2026-08-24_to_2026-10-18.csv": {
+      "bytes": 3675,
+      "sha256": "923278c5c1c92a5293201fc83dbf06f303d8e5c734aac18ab126a31305ffa04a"
+    },
+    "results/26_growth_account_failure_details_2026-08-24_to_2026-10-18.json": {
+      "bytes": 337007,
+      "sha256": "14920d5761066a81fbab3d2e4765e4713d2fc2eb0b2a3eaef636a656917d2df2"
+    },
+    "results/35_account_profiles_2026-08-24_to_2026-10-18.json": {
+      "bytes": 155889,
+      "sha256": "c65aabdbedc0dc855807b0dc1ab5d4b766408dfa4b4668f9ecbb62bae4b865d4"
+    },
+    "results/83_neardata_canonical_block_A_comparison_2026-09-23.json": {
+      "bytes": 19900,
+      "sha256": "dbb7af4a7eca1f7c3103d95e5394275e726741e784fb1b0ff8a95766ad5b1ea7"
+    },
+    "results/neardata_supply_block_pilot_recovery_2026-09-23/20261107T154218Z_8ca556d6bf23_recovery_01/hop-01-archive/block-A.metadata.json": {
+      "bytes": 1583,
+      "sha256": "321ddd3fc48d76158403fd6664f6082d5b54949506064c5bd687bee9b2c608b2"
+    },
+    "results/neardata_supply_block_pilot_recovery_2026-09-23/20261107T154218Z_8ca556d6bf23_recovery_01/hop-01-archive/block-A.response.body": {
+      "bytes": 191778,
+      "sha256": "42338102d2847e49473bd76d760d6d3bab7fafa1f660a0db8f8651725c2611ba"
+    }
+  },
+  "status": "BOUNDED_ATTRIBUTION_DESIGN_ONLY_NO_COLLECTION",
+  "target": {
+    "decoded_args_utf8": "{}",
+    "deposit_yocto": "0",
+    "execution_outcome_in_saved_block": null,
+    "gas": 300000000000000,
+    "interpretation": "Saved receipt distinguishes signer, predecessor and called contract. It does not prove predecessor is a delegated inner signer, verify beneficial ownership, establish execution success or expose its originating transaction.",
+    "method_name": "claim",
+    "observed_container_block_hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+    "observed_container_block_height": 216877934,
+    "original_signer_id": "sweat-relayer.near",
+    "originating_transaction_hash": null,
+    "raw_args_base64": "e30=",
+    "receipt_id": "2iLefvugZmJmpNn52hcyMBjxcfYGGz5d6R8h4W1dXaDS",
+    "receipt_predecessor_id": "f5998a73a0b8172c8573c5dcff0ed342e6a3df46be1a26cdee6eaa4ec891ebb6",
+    "receipt_receiver_id": "claim.sweat",
+    "source_shard_id": 9
+  },
+  "untracked_group_endpoint_increase": 354120,
+  "window": "2026-08-24/2026-10-18"
+}

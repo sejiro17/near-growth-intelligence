@@ -50,7 +50,7 @@ class ResearchIntegrationTests(unittest.TestCase):
         for group in data['shared_week']['populations']:
             self.assertIn(f"{group['observed']['transactions']:,}", thesis)
         self.assertIn('3,871,009', thesis)
-        self.assertIn('python3 -B analysis/23_rebuild_published_results.py', (ROOT / 'README.md').read_text())
+        self.assertIn('.venv/bin/python -B analysis/44_rebuild_integrated_research.py --check', (ROOT / 'README.md').read_text())
 
     def test_dashboard_opening_metrics_and_account_interaction(self):
         with patch('socket.socket.connect', side_effect=AssertionError('Network forbidden')):

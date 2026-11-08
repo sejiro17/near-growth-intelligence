@@ -1,0 +1,1997 @@
+{
+  "corrections": [
+    "Every displayed applied-result group explicitly identifies illustrative defaults or user-edited hypothetical assumptions.",
+    "Sensitivity now covers every major assumption, including explicit supply scenarios, without changing measured unavailable values.",
+    "The reviewed calculation entry point checks allocation bounds at 320-digit precision, preventing an extremely small over-allocation from rounding down in the historical validator.",
+    "Zero-target walkthroughs remain zero even when capture or allocation is zero; positive targets with zero coefficients stay unreachable."
+  ],
+  "major_assumption_sensitivity": [
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": null,
+      "changed_value": null,
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "No assumption change",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "Applied baseline",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "309218.0374850821619305593283230"
+      },
+      "changed_assumption": "reward_mint_near_per_week",
+      "changed_value": "309218.0374850821619305593283230",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "reward_mint_near_per_week × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "reward_mint_near_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "12368721499.40328647722237313292"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "61.8436074970164323861118656646"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "1236872.149940328647722237313292"
+      },
+      "changed_assumption": "reward_mint_near_per_week",
+      "changed_value": "1236872.149940328647722237313292",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "reward_mint_near_per_week × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "reward_mint_near_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "49474885997.61314590888949253168"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "247.3744299880657295444474626584"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "2.5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "price_usd_per_near",
+      "changed_value": "2.5",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "5000.00000",
+        "purchased_and_held_near": "5000.00000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "price_usd_per_near × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "price_usd_per_near",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "12368721499.40328647722237313292"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "61.8436074970164323861118656646"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "5000.00000",
+        "purchased_and_held_near_per_week": "5000.00000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "10",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "price_usd_per_near",
+      "changed_value": "10",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "1250.000000",
+        "purchased_and_held_near": "1250.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "price_usd_per_near × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "price_usd_per_near",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "49474885997.61314590888949253168"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "247.3744299880657295444474626584"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "1250.000000",
+        "purchased_and_held_near_per_week": "1250.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "50000000.0",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "eligible_activity_usd_per_week",
+      "changed_value": "50000000.0",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "25000.00000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "6250.0000000",
+        "gross_eligible_fees_usd": "50000.0000",
+        "purchase_and_destruction_budget_usd": "6250.0000000",
+        "purchased_and_destroyed_near": "1250.0000000",
+        "purchased_and_held_near": "1250.0000000",
+        "retained_budget_before_operating_costs_usd": "12500.0000000"
+      },
+      "horizon_weeks": "1",
+      "note": "eligible_activity_usd_per_week × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "eligible_activity_usd_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "40"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "247.3744299880657295444474626584"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "25000.00000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "6250.0000000",
+        "gross_eligible_fees_usd_per_week": "50000.0000",
+        "purchase_and_destruction_budget_usd_per_week": "6250.0000000",
+        "purchased_and_destroyed_near_per_week": "1250.0000000",
+        "purchased_and_held_near_per_week": "1250.0000000",
+        "retained_budget_before_operating_costs_usd_per_week": "12500.0000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "200000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "eligible_activity_usd_per_week",
+      "changed_value": "200000000",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "100000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "25000.000000",
+        "gross_eligible_fees_usd": "200000.000",
+        "purchase_and_destruction_budget_usd": "25000.000000",
+        "purchased_and_destroyed_near": "5000.000000",
+        "purchased_and_held_near": "5000.000000",
+        "retained_budget_before_operating_costs_usd": "50000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "eligible_activity_usd_per_week × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "eligible_activity_usd_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "10"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "61.8436074970164323861118656646"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "100000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "25000.000000",
+        "gross_eligible_fees_usd_per_week": "200000.000",
+        "purchase_and_destruction_budget_usd_per_week": "25000.000000",
+        "purchased_and_destroyed_near_per_week": "5000.000000",
+        "purchased_and_held_near_per_week": "5000.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "50000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.000",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "fee_rate",
+      "changed_value": "0.000",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "0.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "0.000000",
+        "gross_eligible_fees_usd": "0.000",
+        "purchase_and_destruction_budget_usd": "0.000000",
+        "purchased_and_destroyed_near": "0.000000",
+        "purchased_and_held_near": "0.000000",
+        "retained_budget_before_operating_costs_usd": "0.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "fee_rate × 0",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "fee_rate",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_capture_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "fraction",
+          "value": null
+        },
+        "reward_only_activity_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "USD/week",
+          "value": null
+        },
+        "reward_only_capture_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "fraction",
+          "value": null
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "0.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "0.000000",
+        "gross_eligible_fees_usd_per_week": "0.000",
+        "purchase_and_destruction_budget_usd_per_week": "0.000000",
+        "purchased_and_destroyed_near_per_week": "0.000000",
+        "purchased_and_held_near_per_week": "0.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "0.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.0005",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "fee_rate",
+      "changed_value": "0.0005",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "25000.00000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "6250.0000000",
+        "gross_eligible_fees_usd": "50000.0000",
+        "purchase_and_destruction_budget_usd": "6250.0000000",
+        "purchased_and_destroyed_near": "1250.0000000",
+        "purchased_and_held_near": "1250.0000000",
+        "retained_budget_before_operating_costs_usd": "12500.0000000"
+      },
+      "horizon_weeks": "1",
+      "note": "fee_rate × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "fee_rate",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "8000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "40"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "49474885997.61314590888949253168"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "247.3744299880657295444474626584"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "25000.00000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "6250.0000000",
+        "gross_eligible_fees_usd_per_week": "50000.0000",
+        "purchase_and_destruction_budget_usd_per_week": "6250.0000000",
+        "purchased_and_destroyed_near_per_week": "1250.0000000",
+        "purchased_and_held_near_per_week": "1250.0000000",
+        "retained_budget_before_operating_costs_usd_per_week": "12500.0000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.002",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "fee_rate",
+      "changed_value": "0.002",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "100000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "25000.000000",
+        "gross_eligible_fees_usd": "200000.000",
+        "purchase_and_destruction_budget_usd": "25000.000000",
+        "purchased_and_destroyed_near": "5000.000000",
+        "purchased_and_held_near": "5000.000000",
+        "retained_budget_before_operating_costs_usd": "50000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "fee_rate × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "fee_rate",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "2000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "10"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "12368721499.40328647722237313292"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "61.8436074970164323861118656646"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "100000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "25000.000000",
+        "gross_eligible_fees_usd_per_week": "200000.000",
+        "purchase_and_destruction_budget_usd_per_week": "25000.000000",
+        "purchased_and_destroyed_near_per_week": "5000.000000",
+        "purchased_and_held_near_per_week": "5000.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "50000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.0",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "capture_fraction",
+      "changed_value": "0.0",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "0.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "0.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "0.000000",
+        "purchased_and_destroyed_near": "0.000000",
+        "purchased_and_held_near": "0.000000",
+        "retained_budget_before_operating_costs_usd": "0.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "capture_fraction × 0",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "capture_fraction",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "USD/week",
+          "value": null
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "0.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "0.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "0.000000",
+        "purchased_and_destroyed_near_per_week": "0.000000",
+        "purchased_and_held_near_per_week": "0.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "0.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.25",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "capture_fraction",
+      "changed_value": "0.25",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "25000.00000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "6250.0000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "6250.0000000",
+        "purchased_and_destroyed_near": "1250.0000000",
+        "purchased_and_held_near": "1250.0000000",
+        "retained_budget_before_operating_costs_usd": "12500.0000000"
+      },
+      "horizon_weeks": "1",
+      "note": "capture_fraction × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "capture_fraction",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "8000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "49474885997.61314590888949253168"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "25000.00000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "6250.0000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "6250.0000000",
+        "purchased_and_destroyed_near_per_week": "1250.0000000",
+        "purchased_and_held_near_per_week": "1250.0000000",
+        "retained_budget_before_operating_costs_usd_per_week": "12500.0000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "1.0",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "capture_fraction",
+      "changed_value": "1.0",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "100000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "25000.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "25000.000000",
+        "purchased_and_destroyed_near": "5000.000000",
+        "purchased_and_held_near": "5000.000000",
+        "retained_budget_before_operating_costs_usd": "50000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "capture_fraction × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "capture_fraction",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "2000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "12368721499.40328647722237313292"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "100000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "25000.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "25000.000000",
+        "purchased_and_destroyed_near_per_week": "5000.000000",
+        "purchased_and_held_near_per_week": "5000.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "50000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.00",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "destruction_allocation",
+      "changed_value": "0.00",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "0.000000",
+        "purchased_and_destroyed_near": "0.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "37500.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "destruction_allocation × 0",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "destruction_allocation",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "2666666666.6666666666666666666666666666666666666666666666666666666666666666666667"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "13.333333333333333333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "reward_only_activity_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "USD/week",
+          "value": null
+        },
+        "reward_only_capture_threshold": {
+          "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+          "unit": "fraction",
+          "value": null
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "0.000000",
+        "purchased_and_destroyed_near_per_week": "0.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "37500.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.125",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "destruction_allocation",
+      "changed_value": "0.125",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "6250.0000000",
+        "purchased_and_destroyed_near": "1250.0000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "31250.0000000"
+      },
+      "horizon_weeks": "1",
+      "note": "destruction_allocation × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "destruction_allocation",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "3200000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "16"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "49474885997.61314590888949253168"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "247.3744299880657295444474626584"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "6250.0000000",
+        "purchased_and_destroyed_near_per_week": "1250.0000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "31250.0000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.50",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "destruction_allocation",
+      "changed_value": "0.50",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "25000.000000",
+        "purchased_and_destroyed_near": "5000.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "12500.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "destruction_allocation × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "destruction_allocation",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "8000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "40"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "12368721499.40328647722237313292"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "61.8436074970164323861118656646"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "25000.000000",
+        "purchased_and_destroyed_near_per_week": "5000.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "12500.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.00",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "custody_allocation",
+      "changed_value": "0.00",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "0.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "0.000000",
+        "retained_budget_before_operating_costs_usd": "37500.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "custody_allocation × 0",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "custody_allocation",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "2666666666.6666666666666666666666666666666666666666666666666666666666666666666667"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "13.333333333333333333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "0.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "0.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "37500.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.125",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "custody_allocation",
+      "changed_value": "0.125",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "6250.0000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "1250.0000000",
+        "retained_budget_before_operating_costs_usd": "31250.0000000"
+      },
+      "horizon_weeks": "1",
+      "note": "custody_allocation × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "custody_allocation",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "3200000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "16"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "6250.0000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "1250.0000000",
+        "retained_budget_before_operating_costs_usd_per_week": "31250.0000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.50",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "custody_allocation",
+      "changed_value": "0.50",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "25000.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "5000.000000",
+        "retained_budget_before_operating_costs_usd": "12500.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "custody_allocation × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "custody_allocation",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "8000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "40"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "25000.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "5000.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "12500.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "500000.0",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "retained_budget_hurdle_usd_per_week",
+      "changed_value": "500000.0",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "retained_budget_hurdle_usd_per_week × 0.5",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "retained_budget_hurdle_usd_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "2000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "10"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "2000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "retained_budget_hurdle_usd_per_week",
+      "changed_value": "2000000",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "retained_budget_hurdle_usd_per_week × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "retained_budget_hurdle_usd_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "8000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "40"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": null,
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "2",
+        "other_destruction_near_per_week": null,
+        "other_supply_adjustment_near_per_week": null,
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "horizon_weeks",
+      "changed_value": "2",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "100000.0000",
+        "conditional_supply_change_near": null,
+        "conditional_total_destruction_near": null,
+        "custody_purchase_budget_usd": "25000.000000",
+        "gross_eligible_fees_usd": "200000.000",
+        "purchase_and_destruction_budget_usd": "25000.000000",
+        "purchased_and_destroyed_near": "5000.000000",
+        "purchased_and_held_near": "5000.000000",
+        "retained_budget_before_operating_costs_usd": "50000.000000"
+      },
+      "horizon_weeks": "2",
+      "note": "horizon_weeks × 2",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "horizon_weeks",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+          "unit": "USD/week",
+          "value": null
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": null,
+        "conditional_total_destruction_near_per_week": null,
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": "0",
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": "0",
+        "other_supply_adjustment_near_per_week": "0",
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": null,
+      "changed_value": null,
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": "615936.074970164323861118656646",
+        "conditional_total_destruction_near": "2500.000000",
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "Only this scenario assumes zero for previously unavailable terms",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "Explicit missing supply terms = 0",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": "615936.074970164323861118656646",
+        "conditional_total_destruction_near_per_week": "2500.000000",
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": "100",
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": "0",
+        "other_supply_adjustment_near_per_week": "0",
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "additional_issuance_near_per_week",
+      "changed_value": "100",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": "616036.074970164323861118656646",
+        "conditional_total_destruction_near": "2500.000000",
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "Explicit supply scenario; zero only where a missing term was explicitly filled in this case",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "additional_issuance_near_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24741442998.80657295444474626584"
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": "616036.074970164323861118656646",
+        "conditional_total_destruction_near_per_week": "2500.000000",
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": "0",
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": "100",
+        "other_supply_adjustment_near_per_week": "0",
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "other_destruction_near_per_week",
+      "changed_value": "100",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": "615836.074970164323861118656646",
+        "conditional_total_destruction_near": "2600.000000",
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "Explicit supply scenario; zero only where a missing term was explicitly filled in this case",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "other_destruction_near_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24733442998.80657295444474626584"
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": "615836.074970164323861118656646",
+        "conditional_total_destruction_near_per_week": "2600.000000",
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": "0",
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": "0",
+        "other_supply_adjustment_near_per_week": "100",
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "other_supply_adjustment_near_per_week",
+      "changed_value": "100",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": "616036.074970164323861118656646",
+        "conditional_total_destruction_near": "2500.000000",
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "Explicit supply scenario; zero only where a missing term was explicitly filled in this case",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "other_supply_adjustment_near_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24741442998.80657295444474626584"
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": "616036.074970164323861118656646",
+        "conditional_total_destruction_near_per_week": "2500.000000",
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    },
+    {
+      "assumptions": {
+        "additional_issuance_near_per_week": "0",
+        "capture_fraction": "0.5",
+        "custody_allocation": "0.25",
+        "destruction_allocation": "0.25",
+        "eligible_activity_usd_per_week": "100000000",
+        "fee_rate": "0.001",
+        "horizon_weeks": "1",
+        "other_destruction_near_per_week": "0",
+        "other_supply_adjustment_near_per_week": "-100",
+        "price_usd_per_near": "5",
+        "retained_budget_hurdle_usd_per_week": "1000000",
+        "reward_mint_near_per_week": "618436.074970164323861118656646"
+      },
+      "changed_assumption": "other_supply_adjustment_near_per_week",
+      "changed_value": "-100",
+      "horizon_totals": {
+        "captured_fee_revenue_usd": "50000.0000",
+        "conditional_supply_change_near": "615836.074970164323861118656646",
+        "conditional_total_destruction_near": "2500.000000",
+        "custody_purchase_budget_usd": "12500.000000",
+        "gross_eligible_fees_usd": "100000.000",
+        "purchase_and_destruction_budget_usd": "12500.000000",
+        "purchased_and_destroyed_near": "2500.000000",
+        "purchased_and_held_near": "2500.000000",
+        "retained_budget_before_operating_costs_usd": "25000.000000"
+      },
+      "horizon_weeks": "1",
+      "note": "Explicit supply scenario; zero only where a missing term was explicitly filled in this case",
+      "qualification": "ILLUSTRATIVE_OR_USER_EDITED_HYPOTHETICAL_CASE",
+      "scenario": "other_supply_adjustment_near_per_week",
+      "thresholds": {
+        "full_supply_neutral_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24733442998.80657295444474626584"
+        },
+        "retained_budget_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "4000000000"
+        },
+        "retained_budget_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "20"
+        },
+        "reward_only_activity_threshold": {
+          "status": "CONDITIONAL_THRESHOLD",
+          "unit": "USD/week",
+          "value": "24737442998.80657295444474626584"
+        },
+        "reward_only_capture_threshold": {
+          "status": "EXCEEDS_FEASIBLE_FRACTION",
+          "unit": "fraction",
+          "value": "123.6872149940328647722237313292"
+        }
+      },
+      "weekly": {
+        "captured_fee_revenue_usd_per_week": "50000.0000",
+        "conditional_supply_change_near_per_week": "615836.074970164323861118656646",
+        "conditional_total_destruction_near_per_week": "2500.000000",
+        "custody_purchase_budget_usd_per_week": "12500.000000",
+        "gross_eligible_fees_usd_per_week": "100000.000",
+        "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+        "purchased_and_destroyed_near_per_week": "2500.000000",
+        "purchased_and_held_near_per_week": "2500.000000",
+        "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+      }
+    }
+  ],
+  "original_result_preserved": "results/90_conditional_investment_model.json",
+  "review": {
+    "classification": "ILLUSTRATIVE_OR_USER_EDITED_SCENARIO_NOT_MEASURED_CAPTURE",
+    "defaults_not_direct_inputs_to_this_threshold": {
+      "custody_allocation": "Does not enter this formula; constrains feasible destruction allocation through a_d + a_h <= 1.",
+      "eligible_activity_usd_per_week": "Comparator for required capture and achieved destruction, not an input to the required-activity threshold.",
+      "horizon_weeks": "Weekly threshold is unchanged: reward target and scenario flows scale by the same T.",
+      "optional_supply_components": "Not assumed zero. Excluded from reward-only target; their absence blocks full supply-neutral calculation.",
+      "retained_budget_hurdle_usd_per_week": "Separate retained-budget target, not part of reward coverage."
+    },
+    "direct_formula_threshold": {
+      "status": "CONDITIONAL_THRESHOLD",
+      "unit": "USD/week",
+      "value": "24737442998.80657295444474626584"
+    },
+    "formula": "V_required = I_reward × P / (f × c × a_d)",
+    "formula_comparison_discrepancy_usd_per_week": "0.00000000000000000000",
+    "price_treatment": "Assumed constant effective USD/NEAR purchase price including assumed purchase costs; no live quote, price impact, feedback, mark-to-market return or endogenous price forecast.",
+    "target_scope": "Dated 21–27 September 2026 epoch-reward minting baseline only; not independently measured total issuance including subsidies, full supply neutrality, observed fee capture or verified revenue.",
+    "units": "(NEAR/week × USD/NEAR) / three dimensionless fractions = USD/week",
+    "walkthrough": [
+      {
+        "Calculation": "I_reward",
+        "Step": "Dated reward baseline repeated as an assumption",
+        "Unit": "NEAR/week",
+        "Value": "618436.074970164323861118656646"
+      },
+      {
+        "Calculation": "I_reward × P",
+        "Step": "Purchase budget needed for destruction",
+        "Unit": "USD/week",
+        "Value": "3092180.374850821619305593283230"
+      },
+      {
+        "Calculation": "required destruction budget / a_d",
+        "Step": "Captured revenue needed",
+        "Unit": "USD/week",
+        "Value": "12368721.49940328647722237313292"
+      },
+      {
+        "Calculation": "required captured revenue / c",
+        "Step": "Eligible gross fees needed",
+        "Unit": "USD/week",
+        "Value": "24737442.99880657295444474626584"
+      },
+      {
+        "Calculation": "required eligible gross fees / f",
+        "Step": "Eligible activity needed",
+        "Unit": "USD/week",
+        "Value": "24737442998.80657295444474626584"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "source_requests": 0,
+  "sources": {
+    "analysis/39_review_model_and_attribution.py": {
+      "bytes": 14845,
+      "sha256": "87f0fd7fddeb665053885791a59ef152af45c1dcae6caf10e80f69186b19170c"
+    },
+    "dashboard/model_review.py": {
+      "bytes": 10121,
+      "sha256": "fc5feb323b858a6ff4d37c59cf8d7969f217aa7be218d76ca8cc08380b762d0c"
+    },
+    "results/90_conditional_investment_model.json": {
+      "bytes": 26008,
+      "sha256": "33c42eb9c845be9784f714e389b425515c8a6af4df97ebff9f138c05c5bc64be"
+    }
+  },
+  "status": "OFFLINE_REVIEW_ILLUSTRATIVE_DEFAULTS_NOT_OBSERVED_ECONOMIC_CAPTURE"
+}

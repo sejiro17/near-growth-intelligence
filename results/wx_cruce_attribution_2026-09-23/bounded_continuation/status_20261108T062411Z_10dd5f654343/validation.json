@@ -1,0 +1,12 @@
+{
+  "date_gate": "Indexed date/height validated; canonical header required before descendant interpretation",
+  "indexed_submission_timestamp_nanosec": "1790180236824648967",
+  "initial_outcome_status": {
+    "SuccessReceiptId": "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf"
+  },
+  "initial_receipt_id": "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s",
+  "network_signer": "wx-cruce.near",
+  "receiver": "wrap.near",
+  "submission_block_hash": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW",
+  "transaction_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN"
+}

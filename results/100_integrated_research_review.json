@@ -1,0 +1,1308 @@
+{
+  "attribution": {
+    "population_scope": "Full-period totals among saved union of weekly top-20 signers; not an exhaustive all-account ranking",
+    "population_table": [
+      {
+        "account_id": "sweat-relayer.near",
+        "delegate_action_transactions": 13246938,
+        "delegate_coverage": "Result 20 distinct-transaction action buckets; categories may overlap",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": [
+          {
+            "receiver": "jars-oracle.sweat",
+            "transactions": 3039759
+          },
+          {
+            "receiver": "spin.sweat",
+            "transactions": 2749749
+          },
+          {
+            "receiver": "oracle.sweat",
+            "transactions": 1918942
+          }
+        ],
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 13704363,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "intents.near",
+        "delegate_action_transactions": 0,
+        "delegate_coverage": "Result 20 distinct-transaction action buckets; categories may overlap",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": [
+          {
+            "receiver": "intents.near",
+            "transactions": 2769479
+          }
+        ],
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 2769479,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "closemeat6237.near",
+        "delegate_action_transactions": 0,
+        "delegate_coverage": "Result 20 distinct-transaction action buckets; categories may overlap",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": [
+          {
+            "receiver": "v2.ref-finance.near",
+            "transactions": 914376
+          },
+          {
+            "receiver": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+            "transactions": 345019
+          },
+          {
+            "receiver": "wrap.near",
+            "transactions": 331857
+          }
+        ],
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 1620042,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "omni-relayer.bridge.near",
+        "delegate_action_transactions": 0,
+        "delegate_coverage": "Result 20 distinct-transaction action buckets; categories may overlap",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": [
+          {
+            "receiver": "omni.bridge.near",
+            "transactions": 801990
+          },
+          {
+            "receiver": "btc-connector.bridge.near",
+            "transactions": 341489
+          },
+          {
+            "receiver": "zcash-connector.bridge.near",
+            "transactions": 224021
+          }
+        ],
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 1367509,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "meteor-relayer.near",
+        "delegate_action_transactions": 1239064,
+        "delegate_coverage": "Result 20 distinct-transaction action buckets; categories may overlap",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": [
+          {
+            "receiver": "near",
+            "transactions": 25028
+          },
+          {
+            "receiver": "brn1.near",
+            "transactions": 778
+          },
+          {
+            "receiver": "wrongzone2119.near",
+            "transactions": 444
+          }
+        ],
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 1264098,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "0here.tg",
+        "delegate_action_transactions": null,
+        "delegate_coverage": "Unavailable in selected action export; not zero",
+        "endpoint_growth_transactions": 137531,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": null,
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 946561,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "bridge-mng.near",
+        "delegate_action_transactions": null,
+        "delegate_coverage": "Unavailable in selected action export; not zero",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": null,
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 938958,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "escrow.ai.near",
+        "delegate_action_transactions": null,
+        "delegate_coverage": "Unavailable in selected action export; not zero",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": null,
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 894583,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "tinykoala595.near",
+        "delegate_action_transactions": null,
+        "delegate_coverage": "Unavailable in selected action export; not zero",
+        "endpoint_growth_transactions": 148950,
+        "growth_receiver_action_buckets": [
+          {
+            "action": "FUNCTION_CALL",
+            "method": "swap",
+            "receiver": "v2.ref-finance.near",
+            "transactions": 778338
+          },
+          {
+            "action": "FUNCTION_CALL",
+            "method": "withdraw",
+            "receiver": "v2.ref-finance.near",
+            "transactions": 57
+          },
+          {
+            "action": "FUNCTION_CALL",
+            "method": "ft_transfer_call",
+            "receiver": "wrap.near",
+            "transactions": 56
+          }
+        ],
+        "initial_outcome_weeks": [
+          "2026-09-07",
+          "2026-09-14",
+          "2026-09-21",
+          "2026-09-28",
+          "2026-10-05",
+          "2026-10-12"
+        ],
+        "initial_outcomes": {
+          "FAILURE": 715518,
+          "SUCCESS_RECEIPT_ID": 115,
+          "SUCCESS_VALUE": 62955
+        },
+        "original_receivers": null,
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 778588,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "relay.aurora",
+        "delegate_action_transactions": null,
+        "delegate_coverage": "Unavailable in selected action export; not zero",
+        "endpoint_growth_transactions": null,
+        "growth_receiver_action_buckets": null,
+        "initial_outcome_weeks": null,
+        "initial_outcomes": null,
+        "original_receivers": null,
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 743318,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      },
+      {
+        "account_id": "wx-cruce.near",
+        "delegate_action_transactions": null,
+        "delegate_coverage": "Unavailable in selected action export; not zero",
+        "endpoint_growth_transactions": 137767,
+        "growth_receiver_action_buckets": [
+          {
+            "action": "FUNCTION_CALL",
+            "method": "ft_transfer_call",
+            "receiver": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+            "transactions": 200667
+          },
+          {
+            "action": "FUNCTION_CALL",
+            "method": "ft_transfer_call",
+            "receiver": "wrap.near",
+            "transactions": 199869
+          },
+          {
+            "action": "FUNCTION_CALL",
+            "method": "ft_transfer",
+            "receiver": "wrap.near",
+            "transactions": 6415
+          }
+        ],
+        "initial_outcome_weeks": [
+          "2026-09-21",
+          "2026-09-28",
+          "2026-10-05",
+          "2026-10-12"
+        ],
+        "initial_outcomes": {
+          "FAILURE": 6441,
+          "SUCCESS_RECEIPT_ID": 398968,
+          "SUCCESS_VALUE": 7872
+        },
+        "original_receivers": null,
+        "receiver_scope": "Weekly top-20 original receivers in result 19; result 23 joint receiver/action buckets overlap and are not added to infer unique transactions or inner actors",
+        "transactions": 413281,
+        "unresolved": "Population-wide inner actors, economic funders, descendant settlement and human/beneficial ownership are unmeasured; absence from selected exports is unavailable coverage, not no activity"
+      }
+    ],
+    "scope": "Selected mechanisms and failure controls are separate from population statistics. No population descendant-success, human-user or economic-funder estimate.",
+    "selected_cases": [
+      {
+        "account_id": "sweat-relayer.near",
+        "all_returned_receipts_successful_transactions": 1,
+        "covered_graph_transactions": 1,
+        "eligible_population": 13246938,
+        "eligible_population_label": "DELEGATE_ACTION transactions",
+        "independent_ingestion_completeness": null,
+        "label": "Delegated claim",
+        "mechanism": "Explicit Delegate \u2192 claim.sweat.claim \u2192 token.sweat.ft_transfer \u2192 claim callback; no verified human/operator or revenue attribution.",
+        "missing_emitted_outcomes": 0,
+        "receipt_status_counts": {
+          "SuccessReceiptId": 1,
+          "SuccessValue": 7
+        },
+        "recorded_charge_near": "0.0007690267153439",
+        "recorded_charge_yocto": "769026715343900000000",
+        "returned_receipt_outcomes": 8,
+        "selected_transactions": 1,
+        "selection": "PURPOSIVELY_SELECTED_NOT_REPRESENTATIVE",
+        "share_of_eligible_population_pct": "0.000007548914322691024899489980250530348975740657954313668562501009667290660",
+        "share_of_signed_population_pct": "0.000007296946235297474242327060367563235153651432029347150246968793806760664",
+        "signed_population": 13704363,
+        "source_artifact": "results/97_priority4_attribution_coverage.json",
+        "submission": {
+          "canonical_successor_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+          "hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+          "height": 216877932,
+          "identity_basis": "Exact transaction-outcome block hash and saved canonical successor prev_hash; heights are not assumed consecutive",
+          "timestamp_nanosec": "1790147484906615725",
+          "timestamp_utc": "2026-09-23T07:11:24.906615725Z",
+          "within_original_window": true
+        },
+        "transaction_hashes": [
+          "4Hy1wk5EDGHDwAVd4FvFkUPALcsracRWZAW8Z8aB8gB4"
+        ],
+        "transactions_with_returned_failure": 0,
+        "unresolved_callback_dependencies": 0
+      },
+      {
+        "account_id": "wx-cruce.near",
+        "all_returned_receipts_successful_transactions": 1,
+        "covered_graph_transactions": 1,
+        "eligible_population": 398968,
+        "eligible_population_label": "Initial SUCCESS_RECEIPT_ID outcomes",
+        "independent_ingestion_completeness": null,
+        "label": "Accepted transfer-call",
+        "mechanism": "wrap.near.ft_transfer_call \u2192 Ref ft_on_transfer \u2192 resolver, empty msg; consistent with funding/deposit, no swap/output-asset evidence or independently verified internal credit.",
+        "missing_emitted_outcomes": 0,
+        "receipt_status_counts": {
+          "SuccessReceiptId": 1,
+          "SuccessValue": 5
+        },
+        "recorded_charge_near": "0.0007174786101312",
+        "recorded_charge_yocto": "717478610131200000000",
+        "returned_receipt_outcomes": 6,
+        "selected_transactions": 1,
+        "selection": "PURPOSIVELY_SELECTED_NOT_REPRESENTATIVE",
+        "share_of_eligible_population_pct": "0.0002506466684044835676044194020573078542640011228970744520863828677989212",
+        "share_of_signed_population_pct": "0.0002419661199038910571741744720904178996856860102448455167307473607545471",
+        "signed_population": 413281,
+        "source_artifact": "results/99_wx_cruce_forwarding_case_2026-09-23.json",
+        "submission": {
+          "hash": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW",
+          "height": 216929956,
+          "timestamp_nanosec": "1790180236824648967",
+          "timestamp_utc": "2026-09-23T16:17:16.824648967Z",
+          "within_research_window": true
+        },
+        "transaction_hashes": [
+          "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN"
+        ],
+        "transactions_with_returned_failure": 0,
+        "unresolved_callback_dependencies": 0
+      },
+      {
+        "account_id": "tinykoala595.near",
+        "all_returned_receipts_successful_transactions": 0,
+        "covered_graph_transactions": 18,
+        "eligible_population": 715518,
+        "eligible_population_label": "Failed initial receipts",
+        "independent_ingestion_completeness": null,
+        "label": "Failed execution controls",
+        "mechanism": "18 preselected failed transactions; each returned graph has one failure and two successful receipts. Seventeen sampled slippage errors and one insufficient-deposit error; not population error frequencies.",
+        "missing_emitted_outcomes": 0,
+        "receipt_status_counts": {
+          "Failure": 18,
+          "SuccessValue": 36
+        },
+        "recorded_charge_near": "0.0057232795870303",
+        "recorded_charge_yocto": "5723279587030300000000",
+        "returned_receipt_outcomes": 54,
+        "selected_transactions": 18,
+        "selection": "PURPOSIVELY_SELECTED_NOT_REPRESENTATIVE",
+        "share_of_eligible_population_pct": "0.002515659983396644109582148876757817413398405071570526527634524917612136",
+        "share_of_signed_population_pct": "0.002311877398572801019281057504097160500804019584170318576705523331980457",
+        "signed_population": 778588,
+        "source_artifact": "results/95_sweat_trace_tinykoala_controls.json",
+        "submission": null,
+        "transaction_hashes": [
+          "G9HVmtTJjgJsVL4diStKMX84iRPSxFctR3Cnmyx4KPYg",
+          "85R9MAKpgPYBqFDS5SoSZKZKS5CT2fFW94BaQQizhoYY",
+          "HGe1mUaWpWtR7ifoCgJL8p3sr1WWTvUzhZoJCPTY2jjf",
+          "2M6dptPEipqWFjAFarHX1yCLgiA271JSubRCg6nBfJ9a",
+          "6wLffTfkcFRLN7KmsetLVFiy1oSYETsKoinK1TJbWJst",
+          "GmzVbNy1FinknhPmgsmj2s4zE62h3KZTBgv7nQjnDbeZ",
+          "FASa3cgPLoVHdEc9iTtxHVhrLJAgcTtNCFMLWw2JEgmt",
+          "AMHoQCxHJ7GygEgvK9pNhu9x86z2Hzo75SKhrLmbzHF4",
+          "36A7mpDxaNG9ysGLQGweRGzTSTibLpJ7PAqNruFiqpJ9",
+          "59ekBeycDJjw3byV76tVrK2X9mDauGG2c5VR35UYJ5J",
+          "DwpkitiyiYC6536iZZoy9Zr2Md6y9yUnpgird4FCWfMa",
+          "CuW2Pg9j1Droh9kDfQPwWTjk7BJKyyWqWUjyuKwi6nhW",
+          "7TN7PW1b17qR8hwqmWtZLi1pveBkXdMy8wRve7MrqnNk",
+          "7BQgDDW6YyTGUysASusnjYDHsUqcmUPrdArcCrtJjeVk",
+          "6EEvE2wGuNLJ91rJSkhZ1WozRqwMXwd3ETG6cwLYFXVd",
+          "4u9mQ6GbcVwYDULLtbg4TmsSWTTLu4kG4fPjHivJAPrJ",
+          "CGdhU6QUpLN5NiugTgxaybkS9QJdLWkN1KB49zmgu12a",
+          "3YnqyRH3WMHdHkffwcbBNvtqLyd4Ba1qEkoDFaFGTQ1r"
+        ],
+        "transactions_with_returned_failure": 18,
+        "unresolved_callback_dependencies": 0
+      },
+      {
+        "account_id": "sweat-relayer.near",
+        "all_returned_receipts_successful_transactions": 1,
+        "covered_graph_transactions": 1,
+        "delegation_status": "EXPLICIT_DELEGATE_RETURNED",
+        "eligible_population": 3039759,
+        "eligible_population_label": "Saved jars-oracle.sweat original-receiver bucket",
+        "independent_ingestion_completeness": null,
+        "label": "Delegated jar deposit",
+        "mechanism": "Explicit Delegate from jars-oracle.sweat to token.sweat.ft_transfer_call targeting v2.jars.sweat. The receiver logs a deposit and the resolver accepts the full token amount; apply_booster rejects the beneficiary despite successful receipt outcomes. Airdrop is the payload type, not verified human adoption, economic purpose, revenue or native supply destruction.",
+        "missing_emitted_outcomes": 0,
+        "observed_behavior": {
+          "amount_base_units": "3000000000000000000",
+          "application_qualification": "All returned receipt outcomes succeed, but the apply_booster event rejects the beneficiary. A deposit is recorded; not every requested application effect is established as successful. Airdrop is the payload type, not independently verified economic purpose.",
+          "beneficiary": "bf64bc9bba2145608d50859f3b1ae145df34d6d9cdf352ab7896292cd68ef33c",
+          "booster_applied": false,
+          "booster_event": {
+            "event": {
+              "data": {
+                "applied": [],
+                "rejected": [
+                  "bf64bc9bba2145608d50859f3b1ae145df34d6d9cdf352ab7896292cd68ef33c"
+                ],
+                "score": 3000,
+                "timestamp": 1789963200000
+              },
+              "event": "apply_booster",
+              "standard": "sweat_jar",
+              "version": "4.2.3"
+            },
+            "executor": "v2.jars.sweat",
+            "log_index": 1,
+            "raw_log": "EVENT_JSON:{\n  \"standard\": \"sweat_jar\",\n  \"version\": \"4.2.3\",\n  \"event\": \"apply_booster\",\n  \"data\": {\n    \"applied\": [],\n    \"rejected\": [\n      \"bf64bc9bba2145608d50859f3b1ae145df34d6d9cdf352ab7896292cd68ef33c\"\n    ],\n    \"timestamp\": 1789963200000,\n    \"score\": 3000\n  }\n}",
+            "receipt_id": "7GmQFW6evEgXx7ucHwE38WUfpMERYJHNcqdZUwLkeRpc"
+          },
+          "callback_returns": {
+            "ft_on_transfer": "0",
+            "ft_resolve_transfer": "3000000000000000000"
+          },
+          "deposit_event": {
+            "event": {
+              "data": [
+                "bf64bc9bba2145608d50859f3b1ae145df34d6d9cdf352ab7896292cd68ef33c",
+                [
+                  "steps_365d_20000_10000_tiered_v1",
+                  "3000000000000000000"
+                ]
+              ],
+              "event": "deposit",
+              "standard": "sweat_jar",
+              "version": "4.2.3"
+            },
+            "executor": "v2.jars.sweat",
+            "log_index": 0,
+            "raw_log": "EVENT_JSON:{\n  \"standard\": \"sweat_jar\",\n  \"version\": \"4.2.3\",\n  \"event\": \"deposit\",\n  \"data\": [\n    \"bf64bc9bba2145608d50859f3b1ae145df34d6d9cdf352ab7896292cd68ef33c\",\n    [\n      \"steps_365d_20000_10000_tiered_v1\",\n      \"3000000000000000000\"\n    ]\n  ]\n}",
+            "receipt_id": "7GmQFW6evEgXx7ucHwE38WUfpMERYJHNcqdZUwLkeRpc"
+          },
+          "independent_beneficiary_balance_check": null,
+          "mechanism": "EXPLICIT_DELEGATED_TOKEN_TRANSFER_CALL_WITH_RECORDED_JAR_DEPOSIT",
+          "product_id": "steps_365d_20000_10000_tiered_v1",
+          "requested_message_type": "airdrop",
+          "token_contract": "token.sweat",
+          "token_decimals": null,
+          "transfer_event": {
+            "event": {
+              "data": [
+                {
+                  "amount": "3000000000000000000",
+                  "memo": "",
+                  "new_owner_id": "v2.jars.sweat",
+                  "old_owner_id": "jars-oracle.sweat"
+                }
+              ],
+              "event": "ft_transfer",
+              "standard": "nep141",
+              "version": "1.0.0"
+            },
+            "executor": "token.sweat",
+            "log_index": 0,
+            "raw_log": "EVENT_JSON:{\"standard\":\"nep141\",\"version\":\"1.0.0\",\"event\":\"ft_transfer\",\"data\":[{\"old_owner_id\":\"jars-oracle.sweat\",\"new_owner_id\":\"v2.jars.sweat\",\"amount\":\"3000000000000000000\",\"memo\":\"\"}]}",
+            "receipt_id": "4UijpeS5JPTtXHbzqSn1KDG2VxwSRNqE2rRgj4j8srvi"
+          },
+          "units_qualification": "Raw token base units; no metadata request or decimal conversion",
+          "verified_revenue_or_purchase": null
+        },
+        "receipt_status_counts": {
+          "SuccessReceiptId": 1,
+          "SuccessValue": 7
+        },
+        "recorded_charge_near": "0.0012424938755553",
+        "recorded_charge_yocto": "1242493875555300000000",
+        "returned_receipt_outcomes": 8,
+        "selected_transactions": 1,
+        "selection": "PURPOSIVELY_SELECTED_NOT_REPRESENTATIVE",
+        "selection_key": "sweat-relayer.near \u2192 jars-oracle.sweat",
+        "share_of_eligible_population_pct": "0.00003289734482240203910902147176799213358690606722440825078567083772101670",
+        "share_of_signed_population_pct": "0.000007296946235297474242327060367563235153651432029347150246968793806760664",
+        "signed_population": 13704363,
+        "source_artifact": "results/106_sweat_jars_selected_mechanism_2026-09-23.json",
+        "submission": {
+          "hash": "EfqWgHidykoyeXWxuD9Zf5NUhGqvRnP8ezo4BGBVAXwQ",
+          "height": 216835295,
+          "timestamp_nanosec": "1790121602273417299",
+          "timestamp_utc": "2026-09-23T00:00:02.273417299Z",
+          "within_research_window": true
+        },
+        "transaction_hashes": [
+          "5WPinUvUZgj9hETPGEHooRNUSVW56g7cAeagLSk5vPug"
+        ],
+        "transactions_with_returned_failure": 0,
+        "unresolved_callback_dependencies": 0
+      }
+    ]
+  },
+  "deliverables": [
+    {
+      "completed": "Eight-week observational comparison; one protocol-validated 23-epoch reward week; exact weekly endpoints; 144 inclusion-timed header blocks.",
+      "criterion": "Eight weekly identities with independent issuance, actual burn and verified adjustments, canonical coverage and exact arithmetic.",
+      "deliverable": "1. Supply reconciliation",
+      "gap": "Seven other reward weeks, complete inclusion-timed debits, gross burn/subsidies and full-window canonical coverage. Implied debit is not independent burn.",
+      "investment_conclusion_affected": "Full-window net issuance, independently verified burn and fee-offset inflation cannot be estimated from implied debit or the sampled prefix.",
+      "saved_work": "Reproduce reward maps, protocol checks, endpoints and overlapping debit scopes; enumerate missing canonical coverage without extrapolating it.",
+      "source_dependency": "Lossless retained canonical headers/chunks with predecessor links and inclusion-timed net debits; seven other reward-week endpoint/epoch/configuration captures. Gross burn/subsidy splitting needs retained runtime statistics not established as public API fields.",
+      "status": "Partial"
+    },
+    {
+      "completed": "Three-wallet native flows, six endpoint states, eight weekly flow observations, internal-leg cancellation, closed withdrawal trace and one known owner\u2013asset balance reconciliation (result 103).",
+      "criterion": "Historically attributed accounts/assets, eight-week reconciled opening/closing balances and classified fees, principal, settlements, refunds and verified purchases.",
+      "deliverable": "2. Revenue/buyback ledger",
+      "gap": "Complete token/internal-asset coverage, historical roles, fee origin, purchase settlement and balance adjustments. The 1cs difference stays unallocated.",
+      "investment_conclusion_affected": "Attributable revenue yield, verified buyback spend, purchased holdings and holder benefit cannot be inferred from wallet inflows or one internal stock decrease.",
+      "saved_work": "Reproduce native and known internal-asset stocks/flows separately, with exact identities and unavailable economic classifications. One asset reconciliation is not complete flow history. No residual-driven collection.",
+      "source_dependency": "Retained historical NEP-141/NEP-245 events indexed by owner/recipient; historical internal-account associations, role/policy/fee configuration and successful exchange settlement. Native-counterparty SQL 45 cannot discover all assets; no accessible complete index is established.",
+      "status": "Partial"
+    },
+    {
+      "completed": "Four activity cohorts; nine complete checkpoints; three incomplete checkpoints remain null; three exact-return initial-receipt pilots and two overlapping repeated-checkpoint subsets.",
+      "criterion": "Several starting-week activity cohorts, exact +1/+4/+8 checkpoints wherever follow-up is complete, transaction contribution, concentration and scoped outcomes/spending.",
+      "deliverable": "3. Persistent activity",
+      "gap": "No continuous-week or human retention claim, no execution result for other checkpoints, no descendant census, six-day lookup tails and aggregate/FLOAT source limits.",
+      "investment_conclusion_affected": "Persistent signing-account use is supported in scope; broad human retention, execution across every cohort and complete-chain economic demand remain unestablished.",
+      "saved_work": "Reproduce denominators, overlap, returner contribution/concentration and scoped execution-date spending; keep the three incomplete follow-ups unavailable.",
+      "source_dependency": "Retained transaction-to-initial-receipt/outcome exports for other complete checkpoints, longer execution tails and later follow-up weeks. Saved aggregates cannot recover missing account-level links or descendant outcomes.",
+      "status": "Cohort layer validated; execution coverage partial"
+    },
+    {
+      "completed": "Selected Sweat claim and delegated jar deposit (with booster rejection), accepted wx transfer-call, 18 failed tinykoala controls, canonical submission dates and saved population coverage table.",
+      "criterion": "Reproducible population attribution and descendant coverage with historical roles, submitter/inner actor distinctions and no join duplication.",
+      "deliverable": "4. Attribution/execution",
+      "gap": "Population-wide descendant success, independent actor/funder/ownership mapping and internal exchange credit or swap evidence. Selected cases are not representative.",
+      "investment_conclusion_affected": "Independent-user breadth, economic payer identity and population downstream settlement/success cannot be inferred from signer rankings or selected examples.",
+      "saved_work": "Revalidate returned DAGs, callbacks, exact charges and selection denominators alongside population signer/receiver statistics; keep selected cases separate.",
+      "source_dependency": "Population-linked delegated identities, historical actor/funder roles and a declared sampling frame with descendant receipt outcomes. Bounded RPC traces establish selected mechanisms, not a population census.",
+      "status": "Partial"
+    },
+    {
+      "completed": "Reviewed Decimal model, zero-capture and allocation guards, horizon scaling, 27 sensitivity cases and reproducible hypothetical outputs.",
+      "criterion": "Editable assumptions, units/formulas, disjoint revenue/destruction/custody outputs, thresholds, sensitivity and measurable revision conditions.",
+      "deliverable": "5. Conditional investment model",
+      "gap": "Measured fee capture, purchases, destruction and full supply components remain unavailable; scenarios do not establish fair value or expected returns.",
+      "investment_conclusion_affected": "Conditional activity/capture hurdles are calculable; fair value, expected returns and observed economic or investment break-even are unsupported.",
+      "saved_work": "Reproduce formulas, sensitivity, units, allocation constraints and field-level provenance; distinguish the dated reward baseline from illustrative and unavailable inputs.",
+      "source_dependency": "Historically attributed fee-bearing activity/capture, independently verified purchases/destruction and complete supply components from deliverables 1\u20132; actor attribution constrains demand interpretation.",
+      "status": "Implemented; empirical calibration incomplete"
+    }
+  ],
+  "header_prefix": {
+    "first_height": 216877934,
+    "identity_discrepancy_yocto": "0",
+    "last_height": 216878077,
+    "net_debit_near": "0.5486610196812742",
+    "net_debit_yocto": "548661019681274200000000",
+    "produced_blocks": 144,
+    "reported_blocks_per_minute": 30,
+    "scope": "Prefix only; no independent canonical tail control; no extrapolation to epoch/week. External raw captures are not dashboard inputs."
+  },
+  "historical_checkpoint": "submission-2026-11-02",
+  "model_input_provenance": {
+    "context_only_sources": [
+      "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json",
+      "results/103_known_internal_asset_stock_comparison_2026-08-24_to_2026-10-18.json",
+      "results/104_wallet_ledger_with_known_asset_reconciliation.json"
+    ],
+    "inputs": [
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "1",
+        "input": "horizon_weeks",
+        "label": "Hypothetical horizon",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "weeks"
+      },
+      {
+        "basis": "21\u201327 September 2026 protocol-validated epoch rewards only; repetition is assumed, subsidies excluded",
+        "default_value": "618436.074970164323861118656646",
+        "input": "reward_mint_near_per_week",
+        "label": "Reward minting assumption",
+        "source": "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json",
+        "status": "DATED_BASELINE_REPEATED_AS_SCENARIO",
+        "unit": "NEAR/week"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "5",
+        "input": "price_usd_per_near",
+        "label": "Effective purchase price",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "USD/NEAR"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "100000000",
+        "input": "eligible_activity_usd_per_week",
+        "label": "Eligible economic activity",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "USD/week"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "0.001",
+        "input": "fee_rate",
+        "label": "Fee rate on eligible activity",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "fraction"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "0.5",
+        "input": "capture_fraction",
+        "label": "Captured share of eligible fees",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "fraction"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "0.25",
+        "input": "destruction_allocation",
+        "label": "Captured budget allocated to purchase and destruction",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "fraction"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "0.25",
+        "input": "custody_allocation",
+        "label": "Captured budget allocated to purchases held in custody",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "fraction"
+      },
+      {
+        "basis": "Editable scenario default; no observed economic calibration",
+        "default_value": "1000000",
+        "input": "retained_budget_hurdle_usd_per_week",
+        "label": "Chosen retained-budget hurdle",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "ILLUSTRATIVE_ASSUMPTION",
+        "unit": "USD/week"
+      },
+      {
+        "basis": "No measured value; an entered value would be an explicit assumption",
+        "default_value": null,
+        "input": "additional_issuance_near_per_week",
+        "label": "Additional issuance beyond reward minting",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "UNAVAILABLE",
+        "unit": "NEAR/week"
+      },
+      {
+        "basis": "No measured value; an entered value would be an explicit assumption",
+        "default_value": null,
+        "input": "other_destruction_near_per_week",
+        "label": "Other destruction, disjoint from modeled purchases",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "UNAVAILABLE",
+        "unit": "NEAR/week"
+      },
+      {
+        "basis": "No measured value; an entered value would be an explicit assumption",
+        "default_value": null,
+        "input": "other_supply_adjustment_near_per_week",
+        "label": "Other signed supply adjustment",
+        "source": "config/conditional_model_assumptions.json",
+        "status": "UNAVAILABLE",
+        "unit": "NEAR/week"
+      }
+    ],
+    "measured_fee_capture": null,
+    "measured_purchase_or_destruction": null,
+    "qualification": "Native and internal asset stocks are context, not fee-bearing USD activity, revenue, purchases or supply destruction. The reward-only target excludes independently unavailable subsidies; scenario outputs are not expected returns.",
+    "wallet_stock_reconciliation_used_to_calibrate_capture": false
+  },
+  "native_ledger": {
+    "actual_native_burn_near": null,
+    "coverage": {
+      "amount_scope": "OFFLINE_STRICT_JSON_INTEGER_DECODING_REQUIRED_NO_SQL_MONETARY_TOTAL",
+      "coverage_basis": "OBSERVED_RECORDS_NOT_INDEPENDENT_COMPLETENESS",
+      "duplicate_outcome_action_rows": 0,
+      "economic_scope": "UNCLASSIFIED_TRANSFER_UNTIL_INDEPENDENT_ATTRIBUTION",
+      "excluded_action_rows": 0,
+      "expected_export_rows": 2565,
+      "expected_lookup_days": 63,
+      "failed_action_rows": 3,
+      "function_call_rows": 19,
+      "internal_movement_rows": 2,
+      "lookup_end": "2026-10-24",
+      "lookup_start": "2026-08-23",
+      "observed_action_days": 63,
+      "origin_scope": "RECEIPT_ORIGIN_FIELDS_UNVERIFIED_NO_INITIAL_ONLY_SUBSTITUTE",
+      "output_action_rows": 2498,
+      "outside_execution_window_rows": 244,
+      "scope": "NATIVE_ACTION_CANDIDATES_NOT_COMPLETE_BALANCE_OR_MULTI_ASSET_LEDGER",
+      "successful_local_action_candidates": 2251,
+      "target_end": "2026-10-18",
+      "target_start": "2026-08-24",
+      "time_basis": "EXECUTION_DATE_FOR_ACCEPTED_FLOWS_SOURCE_DATE_RETAINED",
+      "transfer_action_rows": 2479,
+      "unavailable_selector_rows": 0,
+      "unmatched_outcome_action_rows": 0,
+      "unresolved_execution_date_rows": 0
+    },
+    "external_net_near": "956945.106578107785216431387923",
+    "external_net_yocto": "956945106578107785216431387923",
+    "internal_transfer_count": 2,
+    "internal_transfer_near": "502794",
+    "revenue_near": null,
+    "scope": "Native actions and six endpoint account states; not complete token/internal-asset coverage, weekly stock reconciliation or independently attributed revenue/buybacks.",
+    "unallocated_residual_near": "0.0010849311842748",
+    "verified_purchases_near": null,
+    "wallets": [
+      {
+        "account_id": "fefundsadmin.sputnik-dao.near",
+        "balance_change_near": "303194.134220968599240887798125",
+        "balance_change_yocto": "303194134220968599240887798125",
+        "classification": "UNCLASSIFIED_NATIVE_FLOWS",
+        "closing_liquid_yocto": "1913463450661649657631982695779",
+        "closing_locked_yocto": "0",
+        "closing_near": "1913463.450661649657631982695779",
+        "closing_yocto": "1913463450661649657631982695779",
+        "complete_balance_reconciliation": false,
+        "external_inflow_yocto": "303194134220968599240887798125",
+        "external_outflow_yocto": "0",
+        "inflow_near": "303194.134220968599240887798125",
+        "inflow_yocto": "303194134220968599240887798125",
+        "internal_inflow_yocto": "0",
+        "internal_outflow_yocto": "0",
+        "net_flow_near": "303194.134220968599240887798125",
+        "net_flow_yocto": "303194134220968599240887798125",
+        "opening_liquid_yocto": "1610269316440681058391094897654",
+        "opening_locked_yocto": "0",
+        "opening_near": "1610269.316440681058391094897654",
+        "opening_yocto": "1610269316440681058391094897654",
+        "outflow_near": "0",
+        "outflow_yocto": "0",
+        "residual_near": "0",
+        "residual_yocto": "0"
+      },
+      {
+        "account_id": "1csfundsadmin.sputnik-dao.near",
+        "balance_change_near": "-502528.06263458771199957228482",
+        "balance_change_yocto": "-502528062634587711999572284820",
+        "classification": "UNCLASSIFIED_NATIVE_FLOWS",
+        "closing_liquid_yocto": "270875891412420848813311023",
+        "closing_locked_yocto": "0",
+        "closing_near": "270.875891412420848813311023",
+        "closing_yocto": "270875891412420848813311023",
+        "complete_balance_reconciliation": false,
+        "external_inflow_yocto": "265936280481103725627715181",
+        "external_outflow_yocto": "1",
+        "inflow_near": "265.936280481103725627715181",
+        "inflow_yocto": "265936280481103725627715181",
+        "internal_inflow_yocto": "0",
+        "internal_outflow_yocto": "502794000000000000000000000000",
+        "net_flow_near": "-502528.06371951889627437228482",
+        "net_flow_yocto": "-502528063719518896274372284820",
+        "opening_liquid_yocto": "502798938526000132848385595843",
+        "opening_locked_yocto": "0",
+        "opening_near": "502798.938526000132848385595843",
+        "opening_yocto": "502798938526000132848385595843",
+        "outflow_near": "502794.000000000000000000000001",
+        "outflow_yocto": "502794000000000000000000000001",
+        "residual_near": "0.0010849311842748",
+        "residual_yocto": "1084931184274800000000"
+      },
+      {
+        "account_id": "buybacks.multisignature.near",
+        "balance_change_near": "1156279.036076658082249915874618",
+        "balance_change_yocto": "1156279036076658082249915874618",
+        "classification": "UNCLASSIFIED_NATIVE_FLOWS",
+        "closing_liquid_yocto": "2014526467298357764650388041622",
+        "closing_locked_yocto": "0",
+        "closing_near": "2014526.467298357764650388041622",
+        "closing_yocto": "2014526467298357764650388041622",
+        "complete_balance_reconciliation": false,
+        "external_inflow_yocto": "653485036076658082249915874618",
+        "external_outflow_yocto": "0",
+        "inflow_near": "1156279.036076658082249915874618",
+        "inflow_yocto": "1156279036076658082249915874618",
+        "internal_inflow_yocto": "502794000000000000000000000000",
+        "internal_outflow_yocto": "0",
+        "net_flow_near": "1156279.036076658082249915874618",
+        "net_flow_yocto": "1156279036076658082249915874618",
+        "opening_liquid_yocto": "858247431221699682400472167004",
+        "opening_locked_yocto": "0",
+        "opening_near": "858247.431221699682400472167004",
+        "opening_yocto": "858247431221699682400472167004",
+        "outflow_near": "0",
+        "outflow_yocto": "0",
+        "residual_near": "0",
+        "residual_yocto": "0"
+      }
+    ],
+    "weekly": [
+      {
+        "accepted_action_count": 162,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "35589558492045410583929124811",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "1311600000000000000000000",
+            "observed_outflow_yocto": "1000000000000000000000000"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "74058329583837601624260211735",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-08-30",
+        "week_start": "2026-08-24"
+      },
+      {
+        "accepted_action_count": 241,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "45727241880581489521279030205",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "0",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "119802048975740655380782604811",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-09-06",
+        "week_start": "2026-08-31"
+      },
+      {
+        "accepted_action_count": 198,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "23259921561429270957416608654",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "1418620000000000000000000",
+            "observed_outflow_yocto": "502793000000000000000000000001"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "571195727894400902941455068560",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-09-13",
+        "week_start": "2026-09-07"
+      },
+      {
+        "accepted_action_count": 299,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "37032197765503493110203990197",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "263107004321113754467715181",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "101115736406384223233693058296",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-09-20",
+        "week_start": "2026-09-14"
+      },
+      {
+        "accepted_action_count": 434,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "44207102703967330195024647557",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "99056159989971160000000",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "88564157514314172036671154012",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-09-27",
+        "week_start": "2026-09-21"
+      },
+      {
+        "accepted_action_count": 294,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "48306461046755092044827340006",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "0",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "61489062486333780543974850602",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-10-04",
+        "week_start": "2026-09-28"
+      },
+      {
+        "accepted_action_count": 353,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "35190269289567434523878666340",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "0",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "77433728146389448373588365469",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-10-11",
+        "week_start": "2026-10-05"
+      },
+      {
+        "accepted_action_count": 270,
+        "wallets": [
+          {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "33881381481119078304328390355",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "observed_inflow_yocto": "0",
+            "observed_outflow_yocto": "0"
+          },
+          {
+            "account_id": "buybacks.multisignature.near",
+            "observed_inflow_yocto": "62620245069257298115490561133",
+            "observed_outflow_yocto": "0"
+          }
+        ],
+        "week_end": "2026-10-18",
+        "week_start": "2026-10-12"
+      }
+    ],
+    "window": {
+      "end_exclusive": "2026-10-19T00:00:00Z",
+      "start_inclusive": "2026-08-24T00:00:00Z"
+    }
+  },
+  "network": "NEAR mainnet",
+  "persistence_visual": [
+    {
+      "cohort": "2026-08-10",
+      "exact_week8_return_pct": "47.4123384052167944171147465964992563779887884681386569042444",
+      "top10_returner_transactions_pct": "73.9814320776864795646142354071070323337957528545512752107566"
+    },
+    {
+      "cohort": "2026-08-17",
+      "exact_week8_return_pct": "46.1806857992144095686330018755086874977883152270073250999682",
+      "top10_returner_transactions_pct": "75.1175935213941553433447381451983436709813344111735599594449"
+    }
+  ],
+  "primary_window": [
+    "2026-08-24",
+    "2026-10-18"
+  ],
+  "returner_execution_bounds": {
+    "classification": "TRANSACTION_LEVEL_INITIAL_SUCCESS_BOUNDS_NOT_ACCOUNT_RATES",
+    "display_rounding": "Lower percentages rounded down and upper percentages up to two decimals using integer division. Exact counts and rational numerators/denominators are authoritative. Zero outside denominator has no percentage.",
+    "formula": {
+      "B": "N-T",
+      "N": "population transactions",
+      "S": "successful assessed initial receipts",
+      "T": "transactions from this population's own ten leading returners",
+      "lower": "max(0,S-T)",
+      "upper": "min(S,B)"
+    },
+    "limitations": [
+      "Proves minimum successful initial receipts beyond each population's own ten leading signers within observed coverage, not measured account-level success rates, independent humans, revenue or complete-chain settlement.",
+      "Cohorts overlap and use different submission weeks; never sum their bounds or interpret differences causally.",
+      "Complete membership and receipt lists are not exported. Alignment uses reviewed, hashed SQL definitions and validated aggregate controls; no independent row-level set-equality or ingestion-completeness proof is available.",
+      "Six-day initial-execution tails and observed receipt-owner uniqueness windows remain unchanged. Spending is not allocated outside the top ten by these counts."
+    ],
+    "membership_and_unit_review": {
+      "SQL41": "Starting-week signer membership intersected with exact follow-up-week activity; own ranking by transactions DESC, signer ID; top-ten transactions summed once per account.",
+      "SQL42": "17 August members active in 12\u201318 October; all selected submission-week transactions; EXACT_WEEK_8_RETURNERS excludes no account for missing +1/+4 activity.",
+      "SQL43": "10 August members active in 5\u201311 October; AUG10_EXACT_WEEK8 distinct from repeated-checkpoint subset. Counts and frozen expected membership controls match SQL41.",
+      "unit": "Submitted transactions, each with one assessed initial receipt; actions and descendant receipts are not denominators."
+    },
+    "populations": [
+      {
+        "bounds": {
+          "outside_initial_success_pct_lower_display": "67.81",
+          "outside_initial_success_pct_upper_display": "100.00",
+          "outside_success_fraction_lower": {
+            "denominator": 1011853,
+            "numerator": 686154
+          },
+          "outside_success_fraction_upper": {
+            "denominator": 1011853,
+            "numerator": 1011853
+          },
+          "outside_top10_transactions": 1011853,
+          "successful_initial_receipts_outside_top10_lower": 686154,
+          "successful_initial_receipts_outside_top10_upper": 1011853
+        },
+        "cohort_week": "2026-08-10",
+        "membership_verification": "Reviewed SQL definitions plus matching exported cohort/group controls; complete membership lists are not exported",
+        "one_assessed_initial_receipt_per_transaction": true,
+        "own_top10_transactions": 2877112,
+        "population": "AUG10_EXACT_WEEK8",
+        "returning_accounts": 66309,
+        "status": "AVAILABLE_OBSERVED_INITIAL_RECEIPT_BOUNDS",
+        "submission_week": "2026-10-05",
+        "suppression_reason": null,
+        "total_failed_initial_receipts": 325699,
+        "total_successful_initial_receipts": 3563266,
+        "total_transactions": 3888965,
+        "unit": "one assessed initial receipt per submitted transaction"
+      },
+      {
+        "bounds": {
+          "outside_initial_success_pct_lower_display": "71.81",
+          "outside_initial_success_pct_upper_display": "100.00",
+          "outside_success_fraction_lower": {
+            "denominator": 877862,
+            "numerator": 630408
+          },
+          "outside_success_fraction_upper": {
+            "denominator": 877862,
+            "numerator": 877862
+          },
+          "outside_top10_transactions": 877862,
+          "successful_initial_receipts_outside_top10_lower": 630408,
+          "successful_initial_receipts_outside_top10_upper": 877862
+        },
+        "cohort_week": "2026-08-17",
+        "membership_verification": "Reviewed SQL definitions plus matching exported cohort/group controls; complete membership lists are not exported",
+        "one_assessed_initial_receipt_per_transaction": true,
+        "own_top10_transactions": 2650181,
+        "population": "EXACT_WEEK_8_RETURNERS",
+        "returning_accounts": 65251,
+        "status": "AVAILABLE_OBSERVED_INITIAL_RECEIPT_BOUNDS",
+        "submission_week": "2026-10-12",
+        "suppression_reason": null,
+        "total_failed_initial_receipts": 247454,
+        "total_successful_initial_receipts": 3280589,
+        "total_transactions": 3528043,
+        "unit": "one assessed initial receipt per submitted transaction"
+      }
+    ],
+    "schema_version": 1,
+    "source_requests": 0,
+    "sources": {
+      "analysis/19_persistent_activity_plan.py": {
+        "bytes": 23965,
+        "sha256": "d3e5438daf0d48f83e279bd04a766fe42b276cfc26fd84445bead8c885ead470"
+      },
+      "analysis/21_validate_initial_receipt_pilot.py": {
+        "bytes": 30131,
+        "sha256": "dbfafec7bdf0ed3f70de9461ba739f2eaa5b2026da6e385e4c195ca8f57ba2a0"
+      },
+      "analysis/22_validate_shared_week_receipts.py": {
+        "bytes": 22964,
+        "sha256": "e5d2e2dde64935e52603dbf072192457e8ee7895ebfefec1167f31b8090f2fb9"
+      },
+      "analysis/48_returner_execution_bounds.py": {
+        "bytes": 12874,
+        "sha256": "f3f5c2466ad852506fca455687b9cccf906a4a2023e9c427d8a5d0a28f62a13a"
+      },
+      "results/56_persistent_activity_pilot.json": {
+        "bytes": 15557,
+        "sha256": "6dbc05ee3c0deea1c4bfd2c1ad955da2f236cb0b1b580b1fd5cbea97c0cd6c09"
+      },
+      "results/57_persistent_activity_pilot_validation.json": {
+        "bytes": 32493,
+        "sha256": "f97751577e60bfdb9edbfa5ba28731768a6cd7e431a67c6c89733ffdb5935a83"
+      },
+      "results/58_persistent_activity_initial_receipt_pilot.json": {
+        "bytes": 96495,
+        "sha256": "ede4a0c74d3db9d1910d118bb8e9e104a035e9b2033290c0d8f26d07b50a9f54"
+      },
+      "results/59_persistent_activity_initial_receipt_validation.json": {
+        "bytes": 26224,
+        "sha256": "d30a401e04393c3cf24aeef8dab789a1eaf7fbba6e2f6ac96ee005be15e9765e"
+      },
+      "results/60_persistent_activity_shared_week_initial_receipts.json": {
+        "bytes": 144072,
+        "sha256": "7ef17d5ff401ece94eba4e7c29989ad1dba3e633438372983f5c624712b4b951"
+      },
+      "results/61_persistent_activity_shared_week_validation.json": {
+        "bytes": 28536,
+        "sha256": "00ed69474ff6cea7368241d23f37b25c623c47032751a3b8fa634216aabbf0dd"
+      },
+      "sql/41_persistent_activity_transaction_pilot.sql": {
+        "bytes": 10982,
+        "sha256": "c0f42f4f0e4e99ab216db83a783378cd1a6e3f7655a862943356846996f18060"
+      },
+      "sql/42_persistent_activity_initial_receipt_pilot.sql": {
+        "bytes": 22140,
+        "sha256": "7abac312aab63d910d92b9ade5ef9c41002fceaed9f65a5a178b8e981d2a9dea"
+      },
+      "sql/43_persistent_activity_shared_week_initial_receipts.sql": {
+        "bytes": 23662,
+        "sha256": "1b6add55a7a34c75d55d7da331a5e13a939cd7b8abab1f0df485b66fdc20dc98"
+      }
+    }
+  },
+  "schema_version": 1,
+  "source_validation_scope": "Unified rebuild revalidates reward/configuration and wallet/case captures. Header-prefix arithmetic is reproduced from saved validated summary exports; independently revalidating large external raw headers needs their retained external paths.",
+  "sources": {
+    "results/102_known_asset_wallet_coverage_2026-08-24_to_2026-10-18.json": {
+      "bytes": 7635,
+      "sha256": "1436373f7636a3dbc925a794e9af0416768460e0e964a11488ac094e74ac6539"
+    },
+    "results/103_known_internal_asset_stock_comparison_2026-08-24_to_2026-10-18.json": {
+      "bytes": 6061,
+      "sha256": "4514f8e8bc973f46ef768e69aadc3e4b17369df9e4f3c9f8b152145f58c72258"
+    },
+    "results/104_wallet_ledger_with_known_asset_reconciliation.json": {
+      "bytes": 22659,
+      "sha256": "c9fe667bb310bfc3e630add8f16f86796fe929521986a93ef95d54d9f87922a5"
+    },
+    "results/105_returner_initial_success_outside_top10_bounds.json": {
+      "bytes": 6957,
+      "sha256": "5cf159daef51d501d37162107f965bdf34cda86ae3781a9c8482e15a2be4bb10"
+    },
+    "results/106_sweat_jars_selected_mechanism_2026-09-23.json": {
+      "bytes": 55546,
+      "sha256": "f5e188deb87acbcedfde32520b2a492ef61cea167b9fae158d88f42d39af15fa"
+    },
+    "results/26_growth_account_failure_details_2026-08-24_to_2026-10-18.json": {
+      "bytes": 337007,
+      "sha256": "14920d5761066a81fbab3d2e4765e4713d2fc2eb0b2a3eaef636a656917d2df2"
+    },
+    "results/62_integrated_research_evidence.json": {
+      "bytes": 68043,
+      "sha256": "5071a88dcd06b683aa689efeae28afdf7a1e196fb34bf2fd9cc3164e54a6659b"
+    },
+    "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json": {
+      "bytes": 105002,
+      "sha256": "a4926883771da888baca6938cd5995509c0c667d993e3e364819b2c5692fb53a"
+    },
+    "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json": {
+      "bytes": 3110417,
+      "sha256": "6cbad8621599a6570b0dd97717d8cbee816f73e3277e4842ac33dfd8b22de599"
+    },
+    "results/85_neardata_header_pilot_validation_216877934_to_216878033.json": {
+      "bytes": 671919,
+      "sha256": "4a2711e3049ddd83ed0912db71465b0045cbd09ce23627073cced3c06006868b"
+    },
+    "results/88_neardata_optimized_segment_validation_216878034_to_216879033.json": {
+      "bytes": 63022,
+      "sha256": "a387e7fed1a12c1e24d1f65c63023ddacd0e6097dd411c5cf7fd1af0dab9d873"
+    },
+    "results/89_neardata_optimized_prefix_rate_limit_assessment.json": {
+      "bytes": 8491,
+      "sha256": "a7f8389a6886e17f91c8ed9b8bdb99f053568cd08023511c364ad48d7263a12a"
+    },
+    "results/90_conditional_investment_model.json": {
+      "bytes": 26008,
+      "sha256": "33c42eb9c845be9784f714e389b425515c8a6af4df97ebff9f138c05c5bc64be"
+    },
+    "results/91_conditional_model_formula_review.json": {
+      "bytes": 83118,
+      "sha256": "c42b3fa3535fc0441bc7a62d38d1a516d34d2df66128c6dc026d5125c031917d"
+    },
+    "results/95_sweat_trace_tinykoala_controls.json": {
+      "bytes": 19454,
+      "sha256": "6cea24ce02f6633484a41a79c1f408516f718ba16bb419506c3378143d414efc"
+    },
+    "results/96_sweat_relayer_attribution_trace_2026-09-23.json": {
+      "bytes": 23086,
+      "sha256": "fdeb385c317ede53489bb200287ffa1d1b38978b7517f8c155db595e8614190d"
+    },
+    "results/97_priority4_attribution_coverage.json": {
+      "bytes": 39003,
+      "sha256": "9e75165ee30995443eb29b43701f559de1a7bf7b0fb94708aecd40bc7d3dda25"
+    },
+    "results/99_wx_cruce_forwarding_case_2026-09-23.json": {
+      "bytes": 31420,
+      "sha256": "688cab8ecc4c10dbda50295a061469e4e3685b392fc1d973c9b07fa49e5fade0"
+    }
+  },
+  "status": "INTEGRATED_WITH_OPEN_DELIVERABLES",
+  "supply_week": {
+    "application_epochs": 23,
+    "conditional_reward_map_implied_weekly_net_debit_near": "6880.100734646470923400000000",
+    "exact_supply_movement_near": "611555.974235517852937718656646",
+    "gross_actual_burn_yocto": null,
+    "independently_measured_weekly_net_debit_yocto": null,
+    "observed_boundary_header_debits_near": "0.104122811923337500000000",
+    "recorded_reward_maps_near": "618436.074970164323861118656646",
+    "subsidies_yocto": null,
+    "week": "2026-09-21/2026-09-27"
+  },
+  "unavailable": {
+    "actual_gross_native_burn": null,
+    "attributed_product_revenue": null,
+    "full_window_independent_issuance": null,
+    "population_descendant_success_rate": null,
+    "subsidies": null,
+    "verified_buybacks": null
+  },
+  "wallet_asset_ledger": {
+    "coverage": {
+      "complete_asset_pair_denominator": null,
+      "complete_multi_asset_coverage": null,
+      "known_asset_boundary_states": 2,
+      "known_owner_asset_pairs_reconciled": 1,
+      "native_boundary_states": 6,
+      "native_wallets": 3,
+      "weekly_multi_asset_stock_reconciliation": null
+    },
+    "known_owner_asset_reconciliations": [
+      {
+        "asset_id": "nep141:wrap.near",
+        "boundary_qualification": "SAVED_OBSERVED_DAY_CLOSES_MATCH_LEDGER_NOT_INDEPENDENT_CANONICAL_EDGE_PROOF",
+        "classification": "ONE_KNOWN_OWNER_ASSET_BALANCE_RECONCILIATION",
+        "closing": {
+          "asset_id": "nep141:wrap.near",
+          "balance_base_units": "1000100010001000100010",
+          "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+          "block_height": 220581912,
+          "contract": "intents.near",
+          "logs": [],
+          "owner": "1csfundsadmin.sputnik-dao.near",
+          "raw_result_utf8": "\"1000100010001000100010\""
+        },
+        "complete_flow_history": null,
+        "contract": "intents.near",
+        "economic_classification": "UNCLASSIFIED_INTERNAL_ASSET_TRANSFER",
+        "limitation": "One known owner\u2013asset stock reconciliation. Zero residual does not rule out offsetting movements or establish complete asset coverage, revenue origin or purchases.",
+        "opening": {
+          "asset_id": "nep141:wrap.near",
+          "balance_base_units": "990000000000000000000000000",
+          "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+          "block_height": 212636216,
+          "contract": "intents.near",
+          "logs": [],
+          "owner": "1csfundsadmin.sputnik-dao.near",
+          "raw_result_utf8": "\"990000000000000000000000000\""
+        },
+        "owner": "1csfundsadmin.sputnik-dao.near",
+        "recipient_is_verified_buyback_wallet_alias": null,
+        "selected_movement": {
+          "amount_base_units": "989998999899989998999899990",
+          "asset_id": "nep141:wrap.near",
+          "asset_index": 0,
+          "contract": "intents.near",
+          "data_index": 0,
+          "economic_classification": "UNCLASSIFIED_INTERNAL_ASSET_TRANSFER",
+          "execution_block_hash": "3PinDypYma8i74BHhpy5LjDjaTZ9wgmv9u949qdCv9da",
+          "execution_block_height": 214941383,
+          "execution_timestamp_utc": "2026-09-09T12:28:03.642806Z",
+          "log_index": 0,
+          "new_owner_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+          "old_owner_id": "1csfundsadmin.sputnik-dao.near",
+          "receipt_id": "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL"
+        },
+        "selected_observed_internal_flow_net_base_units": "-989998999899989998999899990",
+        "stock_change_base_units": "-989998999899989998999899990",
+        "stock_change_minus_selected_flow_base_units": "0",
+        "unit": "internal asset base units; no display conversion assumed"
+      }
+    ],
+    "scope": "One known owner\u2013asset balance reconciliation; not complete asset coverage or complete flow history. Native residual stays unallocated; revenue and purchases remain unavailable.",
+    "source_artifact": "results/104_wallet_ledger_with_known_asset_reconciliation.json"
+  }
+}

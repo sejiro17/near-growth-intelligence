@@ -63,6 +63,17 @@ class DashboardAuditTests(unittest.TestCase):
         self.assertIn("Full-window issuance", text)
         self.assertIn("six-day", text)
         self.assertIn("descendants are excluded", text)
+        overlap_warning = next(x.value for x in app.warning if "Some accounts belong" in x.value)
+        self.assertIn("group totals cannot be combined", overlap_warning)
+        self.assertIn("unavailable", overlap_warning)
+        self.assertNotIn("Do not", overlap_warning)
+        methodology = next(x for x in app.expander if x.label == "Methodology: overlap, execution dates and coverage")
+        methodology_text = "\n".join(x.value for x in methodology.markdown)
+        overlap = evidence["shared_week"]["overlap"]
+        self.assertIn(f"{overlap['august_and_september_accounts']:,}", methodology_text)
+        self.assertIn(f"{overlap['august_and_september_transactions']:,}", methodology_text)
+        self.assertIn("subset", methodology_text)
+        self.assertIn("union or the intersection", methodology_text)
         for node in app.dataframe:
             config = json.loads(node.proto.columns)
             for column in node.value.columns:
@@ -117,7 +128,15 @@ class DashboardAuditTests(unittest.TestCase):
         with patch.object(st, "download_button", side_effect=record):
             app = self.app()
             self.healthy(app)
-        self.assertEqual(len(outputs), 8)
+        filenames = {item["file_name"] for item in outputs}
+        self.assertTrue({"conditional_scenario_applied.json", "100_integrated_research_review.json",
+                         "103_known_internal_asset_stock_comparison_2026-08-24_to_2026-10-18.json",
+                         "104_wallet_ledger_with_known_asset_reconciliation.json",
+                         "105_returner_initial_success_outside_top10_bounds.json"} <= filenames)
+        scenario = next(x for x in outputs if x["file_name"] == "conditional_scenario_applied.json")
+        applied = json.loads(scenario["data"])
+        self.assertEqual(applied["scenario"]["classification"], "SCENARIO_NOT_OBSERVED_OR_EXPECTED_RETURN")
+        self.assertIsNone(applied["evidence"]["measured_unavailable"]["attributed_product_revenue_usd"])
         for item in outputs:
             source = RESULTS / item["file_name"]
             if source.exists():

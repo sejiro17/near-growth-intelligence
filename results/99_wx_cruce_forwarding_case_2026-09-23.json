@@ -1,0 +1,725 @@
+{
+  "candidate": {
+    "account_id": "wx-cruce.near",
+    "is_action_arg": true,
+    "is_any_signer": true,
+    "is_delegated_signer": false,
+    "is_event_log": false,
+    "is_explicit_refund_to": false,
+    "is_function_call": false,
+    "is_predecessor": true,
+    "is_real_receiver": false,
+    "is_real_signer": true,
+    "is_receiver": true,
+    "is_signer": true,
+    "is_success": true,
+    "transaction_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+    "tx_block_height": 216929956,
+    "tx_block_timestamp": "1790180236824648967",
+    "tx_index": 0
+  },
+  "canonical_submission": {
+    "hash": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW",
+    "height": 216929956,
+    "timestamp_nanosec": "1790180236824648967",
+    "timestamp_utc": "2026-09-23T16:17:16.824648967Z",
+    "within_research_window": true
+  },
+  "classification": "SELECTED_WX_FORWARDING_MECHANISM_CASE",
+  "collection": {
+    "canonical_status_requests": 2,
+    "data_requests_total": 6,
+    "further_pagination": false,
+    "history_pages": 2,
+    "indexed_batch_requests": 1,
+    "maximum_continuation_candidates": 5,
+    "retries": 0,
+    "submission_headers": 1
+  },
+  "decoded_calls": [
+    {
+      "args_sha256": "9f5b72cd2a3aa8a0f571f5fb8b03dee66e78689180361a211fbade0e52f71896",
+      "attached_gas": 100000000000000,
+      "decoded_utf8": "{\"receiver_id\":\"v2.ref-finance.near\",\"amount\":\"2041882904280066641796431\",\"msg\":\"\"}",
+      "deposit_yocto": "1",
+      "location": "transaction.actions[0]",
+      "method_name": "ft_transfer_call",
+      "raw_args_base64": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0="
+    },
+    {
+      "args_sha256": "9f5b72cd2a3aa8a0f571f5fb8b03dee66e78689180361a211fbade0e52f71896",
+      "attached_gas": 100000000000000,
+      "decoded_utf8": "{\"receiver_id\":\"v2.ref-finance.near\",\"amount\":\"2041882904280066641796431\",\"msg\":\"\"}",
+      "deposit_yocto": "1",
+      "location": "receipts[0].Action.actions[0]",
+      "method_name": "ft_transfer_call",
+      "raw_args_base64": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0="
+    },
+    {
+      "args_sha256": "9233b745be0e9bb39530806efd81624b3448a5b89052f87f6e429cc30cfa961f",
+      "attached_gas": 70000000000000,
+      "decoded_utf8": "{\"sender_id\":\"wx-cruce.near\",\"amount\":\"2041882904280066641796431\",\"msg\":\"\"}",
+      "deposit_yocto": "0",
+      "location": "receipts[1].Action.actions[0]",
+      "method_name": "ft_on_transfer",
+      "raw_args_base64": "eyJzZW5kZXJfaWQiOiJ3eC1jcnVjZS5uZWFyIiwiYW1vdW50IjoiMjA0MTg4MjkwNDI4MDA2NjY0MTc5NjQzMSIsIm1zZyI6IiJ9"
+    },
+    {
+      "args_sha256": "ffb566269fb952bd0248d4f0771c9b4c5f599fbfcd51afbe36a8bf31fd6c6043",
+      "attached_gas": 5000000000000,
+      "decoded_utf8": "{\"sender_id\":\"wx-cruce.near\",\"receiver_id\":\"v2.ref-finance.near\",\"amount\":\"2041882904280066641796431\"}",
+      "deposit_yocto": "0",
+      "location": "receipts[3].Action.actions[0]",
+      "method_name": "ft_resolve_transfer",
+      "raw_args_base64": "eyJzZW5kZXJfaWQiOiJ3eC1jcnVjZS5uZWFyIiwicmVjZWl2ZXJfaWQiOiJ2Mi5yZWYtZmluYW5jZS5uZWFyIiwiYW1vdW50IjoiMjA0MTg4MjkwNDI4MDA2NjY0MTc5NjQzMSJ9"
+    }
+  ],
+  "identity_gate": {
+    "date_gate": "Indexed date/height validated; canonical header required before descendant interpretation",
+    "indexed_receiver_and_ordered_actions_match_canonical": true,
+    "indexed_submission_timestamp_nanosec": "1790180236824648967",
+    "initial_outcome_status": {
+      "SuccessReceiptId": "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf"
+    },
+    "initial_receipt_id": "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s",
+    "network_signer": "wx-cruce.near",
+    "receiver": "wrap.near",
+    "submission_block_hash": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW",
+    "transaction_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN"
+  },
+  "index_source": {
+    "access_observation": "Credential-free history and five-hash lookup; availability for this sample does not establish complete retained history",
+    "documentation": "https://tx.main.fastnear.com/",
+    "source_commit": "7dcbdb449eb400a9a78883b3ae9d53fa42282fbe"
+  },
+  "original_candidate": "Ineligible storage_deposit: initial SuccessValue; original captures preserved, no descendants interpreted for that candidate",
+  "population_coverage": {
+    "saved_forwarded_initial_outcomes": 398968,
+    "saved_signed_transactions": 413281,
+    "selected_transactions": 1,
+    "share_of_forwarded_initial_outcomes_pct": "0.0002506466684044835676044194020573078542640011228970744520863828677989212",
+    "share_of_signed_transactions_pct": "0.0002419661199038910571741744720904178996856860102448455167307473607545471"
+  },
+  "qualification": "One purposively selected ft_transfer_call case after one ineligible storage-deposit candidate. Not representative; successful initial forwarding does not establish descendant or economic success. Returned-graph completeness differs from independent ingestion completeness. Charges/token events are not product revenue or native supply burn; actor keys are not people.",
+  "recorded_charge_near": "0.0007174786101312",
+  "returned_graph": {
+    "callback_dependencies": [
+      {
+        "callback_receipt_id": "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf",
+        "data_id": "8qLmdFUqZXeKe561hEMcKdamzmg2Y7Dq4pX81Tq3XFVQ",
+        "delivered_data_receipt_ids": [],
+        "producer_receipt_ids": [
+          "DrL6tNW3monGWuP7TLk1tHF6JpfjHPUPjX5aaC8iyvz2"
+        ],
+        "receiver_id": "wrap.near",
+        "status": "MATCHED"
+      }
+    ],
+    "coverage": {
+      "all_observed_receipt_outcomes_successful": true,
+      "ambiguous_parent_links": {},
+      "data_receipts_without_execution_outcome_expected": [],
+      "disconnected_outcomes": [],
+      "emitted_distinct_child_ids": 6,
+      "independent_historical_ingestion_completeness": null,
+      "missing_action_payloads": [],
+      "missing_emitted_action_outcomes": [],
+      "observed_graph_consistent_and_covered": true,
+      "receipt_status_counts": {
+        "SuccessReceiptId": 1,
+        "SuccessValue": 5
+      },
+      "reconstructed_same_account_initial_payloads": [],
+      "returned_receipt_outcomes": 6,
+      "returned_receipt_payloads": 6,
+      "root_returned_as_child": false,
+      "unlinked_action_payloads": [],
+      "unresolved_return_receipt_ids": []
+    },
+    "declared_delegate_sender_ids": [],
+    "delegate_observations": [],
+    "delegate_scope": "Occurrences retain their transaction/receipt action locations. A delegate in another branch is not automatically the actor behind the selected target; no beneficial owner or distinct-user count is inferred.",
+    "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+    "economic_qualification": "Recorded charges are not measured supply destruction or revenue. Signer/predecessor/delegate authority does not establish beneficial ownership or economic funding. Graph coverage is not successful business settlement.",
+    "final_execution_status": "FINAL",
+    "function_calls": [
+      {
+        "args_sha256": "9f5b72cd2a3aa8a0f571f5fb8b03dee66e78689180361a211fbade0e52f71896",
+        "attached_gas": 100000000000000,
+        "deposit_yocto": "1",
+        "location": "transaction.actions[0]",
+        "method_name": "ft_transfer_call",
+        "raw_args_base64": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0="
+      },
+      {
+        "args_sha256": "9f5b72cd2a3aa8a0f571f5fb8b03dee66e78689180361a211fbade0e52f71896",
+        "attached_gas": 100000000000000,
+        "deposit_yocto": "1",
+        "location": "receipts[0].Action.actions[0]",
+        "method_name": "ft_transfer_call",
+        "raw_args_base64": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0="
+      },
+      {
+        "args_sha256": "9233b745be0e9bb39530806efd81624b3448a5b89052f87f6e429cc30cfa961f",
+        "attached_gas": 70000000000000,
+        "deposit_yocto": "0",
+        "location": "receipts[1].Action.actions[0]",
+        "method_name": "ft_on_transfer",
+        "raw_args_base64": "eyJzZW5kZXJfaWQiOiJ3eC1jcnVjZS5uZWFyIiwiYW1vdW50IjoiMjA0MTg4MjkwNDI4MDA2NjY0MTc5NjQzMSIsIm1zZyI6IiJ9"
+      },
+      {
+        "args_sha256": "ffb566269fb952bd0248d4f0771c9b4c5f599fbfcd51afbe36a8bf31fd6c6043",
+        "attached_gas": 5000000000000,
+        "deposit_yocto": "0",
+        "location": "receipts[3].Action.actions[0]",
+        "method_name": "ft_resolve_transfer",
+        "raw_args_base64": "eyJzZW5kZXJfaWQiOiJ3eC1jcnVjZS5uZWFyIiwicmVjZWl2ZXJfaWQiOiJ2Mi5yZWYtZmluYW5jZS5uZWFyIiwiYW1vdW50IjoiMjA0MTg4MjkwNDI4MDA2NjY0MTc5NjQzMSJ9"
+      }
+    ],
+    "network_signer": "wx-cruce.near",
+    "network_signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX",
+    "network_transaction_has_delegate_action": false,
+    "ordered_transaction_actions": [
+      {
+        "FunctionCall": {
+          "args": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0=",
+          "deposit": "1",
+          "gas": 100000000000000,
+          "method_name": "ft_transfer_call"
+        }
+      }
+    ],
+    "parent_links": {
+      "9hy8qJne3FfGFJDTzcAVLbJ55xyUVVEcGwsM6uu6TPUG": [
+        "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s"
+      ],
+      "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf": [
+        "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s"
+      ],
+      "ASWbjqakfJyLhtEhye8R7iEZvdNsBDHd9pgSWke5LnLh": [
+        "DrL6tNW3monGWuP7TLk1tHF6JpfjHPUPjX5aaC8iyvz2"
+      ],
+      "DrL6tNW3monGWuP7TLk1tHF6JpfjHPUPjX5aaC8iyvz2": [
+        "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s"
+      ],
+      "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s": [
+        "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN"
+      ],
+      "HUZnU3PXpZBRS31bQh8usaXiC2VqXCNems7E13CFVMTV": [
+        "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf"
+      ]
+    },
+    "receipt_outcomes": [
+      {
+        "block_hash": "HUYhhAC7DGhtHabC8UiYdQNCQeagw4oi9kZZ6K381pFf",
+        "child_receipt_ids": [
+          "DrL6tNW3monGWuP7TLk1tHF6JpfjHPUPjX5aaC8iyvz2",
+          "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf",
+          "9hy8qJne3FfGFJDTzcAVLbJ55xyUVVEcGwsM6uu6TPUG"
+        ],
+        "executor_id": "wrap.near",
+        "gas_burnt": 2598796565639,
+        "id": "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s",
+        "logs": [
+          "Transfer 2041882904280066641796431 from wx-cruce.near to v2.ref-finance.near"
+        ],
+        "recorded_execution_charge_yocto": "259879656563900000000",
+        "status": {
+          "SuccessReceiptId": "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf"
+        }
+      },
+      {
+        "block_hash": "cKDuzpJbAMcFy3mqTx52tvsugF1gVsNfSSY8m6QpwHX",
+        "child_receipt_ids": [
+          "ASWbjqakfJyLhtEhye8R7iEZvdNsBDHd9pgSWke5LnLh"
+        ],
+        "executor_id": "v2.ref-finance.near",
+        "gas_burnt": 2902872444449,
+        "id": "DrL6tNW3monGWuP7TLk1tHF6JpfjHPUPjX5aaC8iyvz2",
+        "logs": [],
+        "recorded_execution_charge_yocto": "290287244444900000000",
+        "status": {
+          "SuccessValue": "IjAi"
+        }
+      },
+      {
+        "block_hash": "3gQCB4yRrq5Jn4tRqJHsEb2XnHj7Nsbzk2uYvVcFBX7M",
+        "child_receipt_ids": [],
+        "executor_id": "wx-cruce.near",
+        "gas_burnt": 223182562500,
+        "id": "ASWbjqakfJyLhtEhye8R7iEZvdNsBDHd9pgSWke5LnLh",
+        "logs": [],
+        "recorded_execution_charge_yocto": "0",
+        "status": {
+          "SuccessValue": ""
+        }
+      },
+      {
+        "block_hash": "3gQCB4yRrq5Jn4tRqJHsEb2XnHj7Nsbzk2uYvVcFBX7M",
+        "child_receipt_ids": [
+          "HUZnU3PXpZBRS31bQh8usaXiC2VqXCNems7E13CFVMTV"
+        ],
+        "executor_id": "wrap.near",
+        "gas_burnt": 1360336903439,
+        "id": "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf",
+        "logs": [],
+        "recorded_execution_charge_yocto": "136033690343900000000",
+        "status": {
+          "SuccessValue": "IjIwNDE4ODI5MDQyODAwNjY2NDE3OTY0MzEi"
+        }
+      },
+      {
+        "block_hash": "EXS2r7vLVvJ8dACWgZUjCTf4tPeAYVh76XBnkWghywaK",
+        "child_receipt_ids": [],
+        "executor_id": "wx-cruce.near",
+        "gas_burnt": 223182562500,
+        "id": "HUZnU3PXpZBRS31bQh8usaXiC2VqXCNems7E13CFVMTV",
+        "logs": [],
+        "recorded_execution_charge_yocto": "0",
+        "status": {
+          "SuccessValue": ""
+        }
+      },
+      {
+        "block_hash": "cKDuzpJbAMcFy3mqTx52tvsugF1gVsNfSSY8m6QpwHX",
+        "child_receipt_ids": [],
+        "executor_id": "wx-cruce.near",
+        "gas_burnt": 223182562500,
+        "id": "9hy8qJne3FfGFJDTzcAVLbJ55xyUVVEcGwsM6uu6TPUG",
+        "logs": [],
+        "recorded_execution_charge_yocto": "0",
+        "status": {
+          "SuccessValue": ""
+        }
+      }
+    ],
+    "receipt_roles": [
+      {
+        "action_signer_id": "wx-cruce.near",
+        "payload": {
+          "Action": {
+            "actions": [
+              {
+                "FunctionCall": {
+                  "args": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0=",
+                  "deposit": "1",
+                  "gas": 100000000000000,
+                  "method_name": "ft_transfer_call"
+                }
+              }
+            ],
+            "gas_price": "1000000000",
+            "input_data_ids": [],
+            "is_promise_yield": false,
+            "output_data_receivers": [],
+            "signer_id": "wx-cruce.near",
+            "signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX"
+          }
+        },
+        "predecessor_id": "wx-cruce.near",
+        "receipt_id": "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s",
+        "receiver_id": "wrap.near"
+      },
+      {
+        "action_signer_id": "wx-cruce.near",
+        "payload": {
+          "Action": {
+            "actions": [
+              {
+                "FunctionCall": {
+                  "args": "eyJzZW5kZXJfaWQiOiJ3eC1jcnVjZS5uZWFyIiwiYW1vdW50IjoiMjA0MTg4MjkwNDI4MDA2NjY0MTc5NjQzMSIsIm1zZyI6IiJ9",
+                  "deposit": "0",
+                  "gas": 70000000000000,
+                  "method_name": "ft_on_transfer"
+                }
+              }
+            ],
+            "gas_price": "1000000000",
+            "input_data_ids": [],
+            "is_promise_yield": false,
+            "output_data_receivers": [
+              {
+                "data_id": "8qLmdFUqZXeKe561hEMcKdamzmg2Y7Dq4pX81Tq3XFVQ",
+                "receiver_id": "wrap.near"
+              }
+            ],
+            "signer_id": "wx-cruce.near",
+            "signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX"
+          }
+        },
+        "predecessor_id": "wrap.near",
+        "receipt_id": "DrL6tNW3monGWuP7TLk1tHF6JpfjHPUPjX5aaC8iyvz2",
+        "receiver_id": "v2.ref-finance.near"
+      },
+      {
+        "action_signer_id": "wx-cruce.near",
+        "payload": {
+          "Action": {
+            "actions": [
+              {
+                "Transfer": {
+                  "deposit": "70597971253681100000000"
+                }
+              }
+            ],
+            "gas_price": "0",
+            "input_data_ids": [],
+            "is_promise_yield": false,
+            "output_data_receivers": [],
+            "signer_id": "wx-cruce.near",
+            "signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX"
+          }
+        },
+        "predecessor_id": "system",
+        "receipt_id": "ASWbjqakfJyLhtEhye8R7iEZvdNsBDHd9pgSWke5LnLh",
+        "receiver_id": "wx-cruce.near"
+      },
+      {
+        "action_signer_id": "wx-cruce.near",
+        "payload": {
+          "Action": {
+            "actions": [
+              {
+                "FunctionCall": {
+                  "args": "eyJzZW5kZXJfaWQiOiJ3eC1jcnVjZS5uZWFyIiwicmVjZWl2ZXJfaWQiOiJ2Mi5yZWYtZmluYW5jZS5uZWFyIiwiYW1vdW50IjoiMjA0MTg4MjkwNDI4MDA2NjY0MTc5NjQzMSJ9",
+                  "deposit": "0",
+                  "gas": 5000000000000,
+                  "method_name": "ft_resolve_transfer"
+                }
+              }
+            ],
+            "gas_price": "1000000000",
+            "input_data_ids": [
+              "8qLmdFUqZXeKe561hEMcKdamzmg2Y7Dq4pX81Tq3XFVQ"
+            ],
+            "is_promise_yield": false,
+            "output_data_receivers": [],
+            "signer_id": "wx-cruce.near",
+            "signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX"
+          }
+        },
+        "predecessor_id": "wrap.near",
+        "receipt_id": "9s1PkW3w87pnqDE8kcHLW4pBx8r1bipTFACyaURZgdAf",
+        "receiver_id": "wrap.near"
+      },
+      {
+        "action_signer_id": "wx-cruce.near",
+        "payload": {
+          "Action": {
+            "actions": [
+              {
+                "Transfer": {
+                  "deposit": "5752296357670100000000"
+                }
+              }
+            ],
+            "gas_price": "0",
+            "input_data_ids": [],
+            "is_promise_yield": false,
+            "output_data_receivers": [],
+            "signer_id": "wx-cruce.near",
+            "signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX"
+          }
+        },
+        "predecessor_id": "system",
+        "receipt_id": "HUZnU3PXpZBRS31bQh8usaXiC2VqXCNems7E13CFVMTV",
+        "receiver_id": "wx-cruce.near"
+      },
+      {
+        "action_signer_id": "wx-cruce.near",
+        "payload": {
+          "Action": {
+            "actions": [
+              {
+                "Transfer": {
+                  "deposit": "23851812654762100000000"
+                }
+              }
+            ],
+            "gas_price": "0",
+            "input_data_ids": [],
+            "is_promise_yield": false,
+            "output_data_receivers": [],
+            "signer_id": "wx-cruce.near",
+            "signer_public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX"
+          }
+        },
+        "predecessor_id": "system",
+        "receipt_id": "9hy8qJne3FfGFJDTzcAVLbJ55xyUVVEcGwsM6uu6TPUG",
+        "receiver_id": "wx-cruce.near"
+      }
+    ],
+    "recorded_transaction_and_receipt_execution_charge_yocto": "717478610131200000000",
+    "top_level_status": {
+      "SuccessValue": "IjIwNDE4ODI5MDQyODAwNjY2NDE3OTY0MzEi"
+    },
+    "transaction": {
+      "actions": [
+        {
+          "FunctionCall": {
+            "args": "eyJyZWNlaXZlcl9pZCI6InYyLnJlZi1maW5hbmNlLm5lYXIiLCJhbW91bnQiOiIyMDQxODgyOTA0MjgwMDY2NjQxNzk2NDMxIiwibXNnIjoiIn0=",
+            "deposit": "1",
+            "gas": 100000000000000,
+            "method_name": "ft_transfer_call"
+          }
+        }
+      ],
+      "hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+      "nonce": 216929928000005,
+      "priority_fee": 0,
+      "public_key": "ed25519:3EoJBKYPB3PvnmxV2Grt4Rs6braEuWTTPKguSaHA4wqX",
+      "receiver_id": "wrap.near",
+      "signature": "ed25519:3gaejAUvCrqwd7P3yBTDQLxEzFEFfVxHRdvHghbjuELxAmQi7nPVRTw1TU1PsJHHR5MAjrF1w9VDf6ZFhN8xiZYJ",
+      "signer_id": "wx-cruce.near"
+    },
+    "transaction_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+    "transaction_outcome": {
+      "block_hash": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW",
+      "child_receipt_ids": [
+        "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s"
+      ],
+      "executor_id": "wx-cruce.near",
+      "gas_burnt": 312780187785,
+      "id": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+      "logs": [],
+      "recorded_execution_charge_yocto": "31278018778500000000",
+      "status": {
+        "SuccessReceiptId": "G4nXXsrwfdJhAJxoUymRJ7Qbo1wgqPrzrwjtorzPaQ6s"
+      }
+    },
+    "transaction_outcome_block_hash": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW",
+    "transaction_receiver": "wrap.near",
+    "unknown_delegate_encodings": []
+  },
+  "selection_audit": [
+    {
+      "methods": [
+        "ft_transfer_call"
+      ],
+      "receiver": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
+      "transaction_hash": "74wKVKhaP6RghLEPvtcf2K9MMDsFE943HsPov7PiWgbb"
+    },
+    {
+      "methods": [
+        "ft_transfer_call"
+      ],
+      "receiver": "wrap.near",
+      "transaction_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN"
+    },
+    {
+      "methods": [
+        "storage_deposit"
+      ],
+      "receiver": "v2.ref-finance.near",
+      "transaction_hash": "BjjiQY6XMfFLP3f4xqn9egRTFwZZPN2EUxbbwMavW4Hs"
+    },
+    {
+      "methods": [
+        "storage_deposit"
+      ],
+      "receiver": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
+      "transaction_hash": "Cmz2hH2cG1kqQyoZTfuGNcN7FYTniDMm5DARwuBab8y7"
+    },
+    {
+      "methods": [
+        "register_tokens"
+      ],
+      "receiver": "v2.ref-finance.near",
+      "transaction_hash": "GkAGkZW7aTyfQoceLPnjV31FTsPKLc8B2HEUweNVWGhJ"
+    }
+  ],
+  "sources": {
+    "analysis/40_trace_sweat_relayer.py": {
+      "bytes": 28205,
+      "sha256": "8731409db1e775b96b38b32ff4c3e87c7fb6eb80449fde1f15c4ce6e203d1cf6"
+    },
+    "analysis/42_trace_wx_cruce.py": {
+      "bytes": 16524,
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    "analysis/43_select_wx_forwarding_case.py": {
+      "bytes": 10090,
+      "sha256": "0b7d43300ee149fa78f925254ac725354ae0ccb5943de025ee235356cc6fdc51"
+    },
+    "results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv": {
+      "bytes": 16967,
+      "sha256": "874e7d867e663dcb02c3e021c0fe37b9476b94de4212dc03bd3305b0f50fbe37"
+    },
+    "results/98_wx_cruce_candidate_source_assessment.json": {
+      "bytes": 3175,
+      "sha256": "65514e9ed69b823e299799b9dffd2788491cbe9e16d72fb178d6f1e08fde0a31"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/collector.py": {
+      "bytes": 16524,
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/metadata.json": {
+      "bytes": 1238,
+      "sha256": "dd7cdf1b81ea35c289d03c802ec0164330859c11503c11737c7516e1c6698289"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/request.http": {
+      "bytes": 528,
+      "sha256": "74a2ad5659759026c49c7dc8d40f517ddc4cd9e22e4e7c23165eedf987c0c99c"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/request.json": {
+      "bytes": 284,
+      "sha256": "7c8e7ab758995096d537bd4d4078a5260fb071c060623ee8a26a246e5e2782c1"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/response.body": {
+      "bytes": 28171,
+      "sha256": "97c136f674404d70c179eb828ace44c8d9e7c992cadad3e1e8fdb1e0d12eeb15"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/run.json": {
+      "bytes": 288,
+      "sha256": "478084b73b1cc1641310d773e71bdc777aa62f0d28ee7e5daeb7fbd218e7a34c"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/details_20261108T062259Z_b93030a194eb/validation.json": {
+      "bytes": 167,
+      "sha256": "d261e0ff57debc2be5e808e36a046688da5261b39d13d1535ab27af3086f1205"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/collector.py": {
+      "bytes": 16524,
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/metadata.json": {
+      "bytes": 1370,
+      "sha256": "dbd4583379f71e1dd203ffb46fec89a0683d9f71b5b498dcbff725247d42da41"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/request.http": {
+      "bytes": 395,
+      "sha256": "8fe941cf2b459ca4ac4bfade0c756a26eea95b13e55c75dceb69a1830c2d9bf0"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/request.json": {
+      "bytes": 157,
+      "sha256": "99de2bf955c78f93b48ab6d6d8ae3d3c59448a2764168de5f409cd90a2196b82"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/response.body": {
+      "bytes": 19794,
+      "sha256": "d2041caf19de5c6dd592e32693aa3c3bc7877e5f5f505b5a42565e38b715f61d"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/run.json": {
+      "bytes": 280,
+      "sha256": "783fd62028cf9315e2170a4c2fdaf9b5b3474181c3993a91486e529eee26ba78"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/header_20261108T062547Z_e561ad1e7514/validation.json": {
+      "bytes": 217,
+      "sha256": "6f1eb85043f66611f6fcf41103add155e6efad54f4135e86a7e9562bd299ff82"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/collector.py": {
+      "bytes": 16524,
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/metadata.json": {
+      "bytes": 1231,
+      "sha256": "bf55d95c3fae4675fd9f195ad035c2ba087006fce4f13e05cfb27dc31aa3498c"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/request.http": {
+      "bytes": 439,
+      "sha256": "3b7f1df0f42339be79b82646f3aab2bed72ad7079f688cbef6b586715f36e161"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/request.json": {
+      "bytes": 200,
+      "sha256": "9eb25b0951f34f4e2d1fe87c7611ab49f3223cdee2ff392716e9000662fa21d5"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/response.body": {
+      "bytes": 2305,
+      "sha256": "fe37a89f8b90ce3b72659a23cd0c4f8b495c7bf25dc7188de0b93eeed9467f43"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/run.json": {
+      "bytes": 283,
+      "sha256": "5feab2149d4dfeb9bc5df5e6f8b658a29954999d85abf5f9423f699e0d2ab694"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/history_20261108T062130Z_8f45c2e086b9/validation.json": {
+      "bytes": 2795,
+      "sha256": "785c74c04100d73dd70a50ad84913e67ca4c445d180d3d0d920f793e00902fd6"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/collector.py": {
+      "bytes": 16524,
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/metadata.json": {
+      "bytes": 1370,
+      "sha256": "a3d682f028a3af72bf05b5b0180af4c021be8ed51a4fcaaeaf591449af1274d2"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/request.http": {
+      "bytes": 482,
+      "sha256": "95bae4c0c17abee89e9f2dcfab3b304f66461df4566eaa3cc205e775dc8a87ab"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/request.json": {
+      "bytes": 244,
+      "sha256": "90e4a13ccd0afbbe538f873b17d1ac45aa04bac2483893e922cfdb24c069f361"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/response.body": {
+      "bytes": 13805,
+      "sha256": "250e0b11e516708ecf862fad3e0da7a7fa3ede2243a0f80af2a7cd0562448b78"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/run.json": {
+      "bytes": 280,
+      "sha256": "5ae97b22df136cae2dedf6428955b56cf3a1e5c16da78bd0884e654b853e2f50"
+    },
+    "results/wx_cruce_attribution_2026-09-23/bounded_continuation/status_20261108T062411Z_10dd5f654343/validation.json": {
+      "bytes": 563,
+      "sha256": "54faba14039fef9825b79e7f55d6af975d3a5def3a5f3660331b935868df26a8"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/collector.py": {
+      "bytes": 15844,
+      "sha256": "1caa4121c619a4b5f4e77398fb251298a0eb3c3ba822fe15b264b89e667fbc78"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/metadata.json": {
+      "bytes": 1229,
+      "sha256": "71c78caa75968baffd218ff70644b6de340c0cfb5be1d1d919207f58fcc13367"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/request.http": {
+      "bytes": 399,
+      "sha256": "0213abd4e7d25c0a6cb0dfa769d9fea01aa566b2450ae802449585bcad843d43"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/request.json": {
+      "bytes": 160,
+      "sha256": "299736dac6834ea4bf475769901e5fa250e75b11fa4b4ae80505fec4662e35ca"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/response.body": {
+      "bytes": 519,
+      "sha256": "cc5110d80f7df563f1ceb7e856b08f85ac423814c0dc9855eb33f081ba4deb2e"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/run.json": {
+      "bytes": 283,
+      "sha256": "5feab2149d4dfeb9bc5df5e6f8b658a29954999d85abf5f9423f699e0d2ab694"
+    },
+    "results/wx_cruce_attribution_2026-09-23/history_20261108T061540Z_590a83aa2005/validation.json": {
+      "bytes": 520,
+      "sha256": "b915941022960cd57bdc4efb1125ac7252162c0757e1d45d49f552a8e95ebc1d"
+    },
+    "results/wx_cruce_attribution_2026-09-23/saved_input_inventory.json": {
+      "bytes": 115896,
+      "sha256": "82296af03a8aaaf1e72d287e02b9f945796fce1258d84c3e897c6a6175cce617"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/collector.py": {
+      "bytes": 15844,
+      "sha256": "1caa4121c619a4b5f4e77398fb251298a0eb3c3ba822fe15b264b89e667fbc78"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/metadata.json": {
+      "bytes": 1368,
+      "sha256": "9bb26bbc3071304e8b40d4094fa448fb996a78ac457483282ef14675d9ace167"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/request.http": {
+      "bytes": 482,
+      "sha256": "9efe709a3f28880a9221eb8943efce814f7b36729e1aeb51975c4d6c3b22d2bb"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/request.json": {
+      "bytes": 244,
+      "sha256": "30cd906667cadf964c700d381fac165eb482a38b3a0ad2c4d8ed4cf4300615dc"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/response.body": {
+      "bytes": 5497,
+      "sha256": "a844085d8c47b98ad1d007e3fb861a3c7427276cb47b86c977bedde3e9f2f810"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/run.json": {
+      "bytes": 280,
+      "sha256": "5ae97b22df136cae2dedf6428955b56cf3a1e5c16da78bd0884e654b853e2f50"
+    },
+    "results/wx_cruce_attribution_2026-09-23/status_20261108T061700Z_fd5db3ad5e04/stopped.json": {
+      "bytes": 128,
+      "sha256": "cbf259c983725c3d61c76b6b7ab684543f04ab639d4b92e61b43e8d8e73f8211"
+    }
+  }
+}

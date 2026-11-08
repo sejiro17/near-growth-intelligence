@@ -1,0 +1,62 @@
+{
+  "body_complete": true,
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "finished_at": "2026-11-07T15:09:30.149909+00:00",
+  "http_reason": "OK",
+  "http_status": 200,
+  "http_version": 11,
+  "request_bytes": 234,
+  "request_http_method": "POST",
+  "request_path": "/",
+  "request_sha256": "477bf5106eb060fd4adadee38e2174fe700110113cd6ac72058b5b53cdf4712e",
+  "response_bytes": 288,
+  "response_headers": [
+    [
+      "Date",
+      "Sat, 07 Nov 2026 15:09:30 GMT"
+    ],
+    [
+      "Content-Type",
+      "application/json"
+    ],
+    [
+      "Content-Length",
+      "288"
+    ],
+    [
+      "Connection",
+      "close"
+    ],
+    [
+      "CF-Ray",
+      "a56d4252d99065e2-LOS"
+    ],
+    [
+      "CF-Cache-Status",
+      "DYNAMIC"
+    ],
+    [
+      "Access-Control-Allow-Origin",
+      "*"
+    ],
+    [
+      "Server",
+      "cloudflare"
+    ],
+    [
+      "Vary",
+      "origin, access-control-request-method, access-control-request-headers"
+    ],
+    [
+      "access-control-expose-headers",
+      "accept-encoding, accept, host, user-agent, content-type, content-length, authorization"
+    ],
+    [
+      "alt-svc",
+      "h3=\":443\"; ma=86400"
+    ]
+  ],
+  "response_sha256": "f6648282eafdfd89a21f00307709d606c7fe829e67abde691e65d75026886c9f",
+  "started_at": "2026-11-07T15:09:26.242758+00:00",
+  "transport_error": null
+}

@@ -1,0 +1,8 @@
+{
+  "id": "sweat-submission-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63"
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "classification": "ILLUSTRATIVE_SCENARIO_NOT_OBSERVED_REVENUE_FORECAST_OR_INVESTMENT_BREAK_EVEN",
+  "dated_baseline": {
+    "epoch_reward_mint_near_per_week": "618436.074970164323861118656646",
+    "period": "2026-09-21/2026-09-27",
+    "scope": "Protocol-validated epoch rewards only; total issuance including subsidies remains unavailable. Repeating this dated week is a scenario assumption."
+  },
+  "display_y_unit": "USD billions/week",
+  "fixed_assumptions": {
+    "additional_issuance_near_per_week": null,
+    "custody_allocation": "0.25",
+    "destruction_allocation": "0.25",
+    "eligible_activity_usd_per_week": "100000000",
+    "fee_rate": "0.001",
+    "horizon_weeks": "1",
+    "other_destruction_near_per_week": null,
+    "other_supply_adjustment_near_per_week": null,
+    "price_usd_per_near": "5",
+    "retained_budget_hurdle_usd_per_week": "1000000",
+    "reward_mint_near_per_week": "618436.074970164323861118656646"
+  },
+  "formula": "V_required = I_reward * P / (fee_rate * capture_fraction * destruction_allocation)",
+  "numerical_method": "Decimal string inputs; reviewed 80-digit scenario calculation; display-only rounding for axes and SVG coordinates.",
+  "points": [
+    {
+      "capture_fraction": "0.25",
+      "capture_pct": 25,
+      "required_activity_usd_per_week": "49474885997.61314590888949253168"
+    },
+    {
+      "capture_fraction": "0.26",
+      "capture_pct": 26,
+      "required_activity_usd_per_week": "47572005766.935717220086050511230769230769230769230769230769230769230769230769231"
+    },
+    {
+      "capture_fraction": "0.27",
+      "capture_pct": 27,
+      "required_activity_usd_per_week": "45810079627.419579545268048640444444444444444444444444444444444444444444444444444"
+    },
+    {
+      "capture_fraction": "0.28",
+      "capture_pct": 28,
+      "required_activity_usd_per_week": "44174005355.011737418651332617571428571428571428571428571428571428571428571428571"
+    },
+    {
+      "capture_fraction": "0.29",
+      "capture_pct": 29,
+      "required_activity_usd_per_week": "42650763791.045815438697838389379310344827586206896551724137931034482758620689655"
+    },
+    {
+      "capture_fraction": "0.3",
+      "capture_pct": 30,
+      "required_activity_usd_per_week": "41229071664.6776215907412437764"
+    },
+    {
+      "capture_fraction": "0.31",
+      "capture_pct": 31,
+      "required_activity_usd_per_week": "39899101610.978343474910881073935483870967741935483870967741935483870967741935484"
+    },
+    {
+      "capture_fraction": "0.32",
+      "capture_pct": 32,
+      "required_activity_usd_per_week": "38652254685.635270241319916040375"
+    },
+    {
+      "capture_fraction": "0.33",
+      "capture_pct": 33,
+      "required_activity_usd_per_week": "37480974240.616019627946585251272727272727272727272727272727272727272727272727273"
+    },
+    {
+      "capture_fraction": "0.34",
+      "capture_pct": 34,
+      "required_activity_usd_per_week": "36378592645.303783756536391567411764705882352941176470588235294117647058823529412"
+    },
+    {
+      "capture_fraction": "0.35",
+      "capture_pct": 35,
+      "required_activity_usd_per_week": "35339204284.009389934921066094057142857142857142857142857142857142857142857142857"
+    },
+    {
+      "capture_fraction": "0.36",
+      "capture_pct": 36,
+      "required_activity_usd_per_week": "34357559720.564684658951036480333333333333333333333333333333333333333333333333333"
+    },
+    {
+      "capture_fraction": "0.37",
+      "capture_pct": 37,
+      "required_activity_usd_per_week": "33428977025.414287776276684143027027027027027027027027027027027027027027027027027"
+    },
+    {
+      "capture_fraction": "0.38",
+      "capture_pct": 38,
+      "required_activity_usd_per_week": "32549267103.692859150585192455052631578947368421052631578947368421052631578947368"
+    },
+    {
+      "capture_fraction": "0.39",
+      "capture_pct": 39,
+      "required_activity_usd_per_week": "31714670511.290478146724033674153846153846153846153846153846153846153846153846154"
+    },
+    {
+      "capture_fraction": "0.4",
+      "capture_pct": 40,
+      "required_activity_usd_per_week": "30921803748.5082161930559328323"
+    },
+    {
+      "capture_fraction": "0.41",
+      "capture_pct": 41,
+      "required_activity_usd_per_week": "30167613413.178747505420422275414634146341463414634146341463414634146341463414634"
+    },
+    {
+      "capture_fraction": "0.42",
+      "capture_pct": 42,
+      "required_activity_usd_per_week": "29449336903.341158279100888411714285714285714285714285714285714285714285714285714"
+    },
+    {
+      "capture_fraction": "0.43",
+      "capture_pct": 43,
+      "required_activity_usd_per_week": "28764468603.263456923772960774232558139534883720930232558139534883720930232558140"
+    },
+    {
+      "capture_fraction": "0.44",
+      "capture_pct": 44,
+      "required_activity_usd_per_week": "28110730680.462014720959938938454545454545454545454545454545454545454545454545455"
+    },
+    {
+      "capture_fraction": "0.45",
+      "capture_pct": 45,
+      "required_activity_usd_per_week": "27486047776.451747727160829184266666666666666666666666666666666666666666666666667"
+    },
+    {
+      "capture_fraction": "0.46",
+      "capture_pct": 46,
+      "required_activity_usd_per_week": "26888524998.702796689613854636782608695652173913043478260869565217391304347826087"
+    },
+    {
+      "capture_fraction": "0.47",
+      "capture_pct": 47,
+      "required_activity_usd_per_week": "26316428722.134652079196538580680851063829787234042553191489361702127659574468085"
+    },
+    {
+      "capture_fraction": "0.48",
+      "capture_pct": 48,
+      "required_activity_usd_per_week": "25768169790.42351349421327736025"
+    },
+    {
+      "capture_fraction": "0.49",
+      "capture_pct": 49,
+      "required_activity_usd_per_week": "25242288774.292421382086475781469387755102040816326530612244897959183673469387755"
+    },
+    {
+      "capture_fraction": "0.5",
+      "capture_pct": 50,
+      "required_activity_usd_per_week": "24737442998.80657295444474626584"
+    },
+    {
+      "capture_fraction": "0.51",
+      "capture_pct": 51,
+      "required_activity_usd_per_week": "24252395096.869189171024261044941176470588235294117647058823529411764705882352941"
+    },
+    {
+      "capture_fraction": "0.52",
+      "capture_pct": 52,
+      "required_activity_usd_per_week": "23786002883.467858610043025255615384615384615384615384615384615384615384615384615"
+    },
+    {
+      "capture_fraction": "0.53",
+      "capture_pct": 53,
+      "required_activity_usd_per_week": "23337210376.232615994759194590415094339622641509433962264150943396226415094339623"
+    },
+    {
+      "capture_fraction": "0.54",
+      "capture_pct": 54,
+      "required_activity_usd_per_week": "22905039813.709789772634024320222222222222222222222222222222222222222222222222222"
+    },
+    {
+      "capture_fraction": "0.55",
+      "capture_pct": 55,
+      "required_activity_usd_per_week": "22488584544.369611776767951150763636363636363636363636363636363636363636363636364"
+    },
+    {
+      "capture_fraction": "0.56",
+      "capture_pct": 56,
+      "required_activity_usd_per_week": "22087002677.505868709325666308785714285714285714285714285714285714285714285714286"
+    },
+    {
+      "capture_fraction": "0.57",
+      "capture_pct": 57,
+      "required_activity_usd_per_week": "21699511402.461906100390128303368421052631578947368421052631578947368421052631579"
+    },
+    {
+      "capture_fraction": "0.58",
+      "capture_pct": 58,
+      "required_activity_usd_per_week": "21325381895.522907719348919194689655172413793103448275862068965517241379310344828"
+    },
+    {
+      "capture_fraction": "0.59",
+      "capture_pct": 59,
+      "required_activity_usd_per_week": "20963934744.751333012241310394779661016949152542372881355932203389830508474576271"
+    },
+    {
+      "capture_fraction": "0.6",
+      "capture_pct": 60,
+      "required_activity_usd_per_week": "20614535832.3388107953706218882"
+    },
+    {
+      "capture_fraction": "0.61",
+      "capture_pct": 61,
+      "required_activity_usd_per_week": "20276592621.972600782331759234295081967213114754098360655737704918032786885245902"
+    },
+    {
+      "capture_fraction": "0.62",
+      "capture_pct": 62,
+      "required_activity_usd_per_week": "19949550805.489171737455440536967741935483870967741935483870967741935483870967742"
+    },
+    {
+      "capture_fraction": "0.63",
+      "capture_pct": 63,
+      "required_activity_usd_per_week": "19632891268.894105519400592274476190476190476190476190476190476190476190476190476"
+    },
+    {
+      "capture_fraction": "0.64",
+      "capture_pct": 64,
+      "required_activity_usd_per_week": "19326127342.8176351206599580201875"
+    },
+    {
+      "capture_fraction": "0.65",
+      "capture_pct": 65,
+      "required_activity_usd_per_week": "19028802306.774286888034420204492307692307692307692307692307692307692307692307692"
+    },
+    {
+      "capture_fraction": "0.66",
+      "capture_pct": 66,
+      "required_activity_usd_per_week": "18740487120.308009813973292625636363636363636363636363636363636363636363636363636"
+    },
+    {
+      "capture_fraction": "0.67",
+      "capture_pct": 67,
+      "required_activity_usd_per_week": "18460778357.318338025705034526746268656716417910447761194029850746268656716417910"
+    },
+    {
+      "capture_fraction": "0.68",
+      "capture_pct": 68,
+      "required_activity_usd_per_week": "18189296322.651891878268195783705882352941176470588235294117647058823529411764706"
+    },
+    {
+      "capture_fraction": "0.69",
+      "capture_pct": 69,
+      "required_activity_usd_per_week": "17925683332.468531126409236424521739130434782608695652173913043478260869565217391"
+    },
+    {
+      "capture_fraction": "0.7",
+      "capture_pct": 70,
+      "required_activity_usd_per_week": "17669602142.004694967460533047028571428571428571428571428571428571428571428571429"
+    },
+    {
+      "capture_fraction": "0.71",
+      "capture_pct": 71,
+      "required_activity_usd_per_week": "17420734506.201811939749821313971830985915492957746478873239436619718309859154930"
+    },
+    {
+      "capture_fraction": "0.72",
+      "capture_pct": 72,
+      "required_activity_usd_per_week": "17178779860.282342329475518240166666666666666666666666666666666666666666666666667"
+    },
+    {
+      "capture_fraction": "0.73",
+      "capture_pct": 73,
+      "required_activity_usd_per_week": "16943454108.771625311263524839616438356164383561643835616438356164383561643835616"
+    },
+    {
+      "capture_fraction": "0.74",
+      "capture_pct": 74,
+      "required_activity_usd_per_week": "16714488512.707143888138342071513513513513513513513513513513513513513513513513514"
+    },
+    {
+      "capture_fraction": "0.75",
+      "capture_pct": 75,
+      "required_activity_usd_per_week": "16491628665.87104863629649751056"
+    },
+    {
+      "capture_fraction": "0.76",
+      "capture_pct": 76,
+      "required_activity_usd_per_week": "16274633551.846429575292596227526315789473684210526315789473684210526315789473684"
+    },
+    {
+      "capture_fraction": "0.77",
+      "capture_pct": 77,
+      "required_activity_usd_per_week": "16063274674.549722697691393679116883116883116883116883116883116883116883116883117"
+    },
+    {
+      "capture_fraction": "0.78",
+      "capture_pct": 78,
+      "required_activity_usd_per_week": "15857335255.645239073362016837076923076923076923076923076923076923076923076923077"
+    },
+    {
+      "capture_fraction": "0.79",
+      "capture_pct": 79,
+      "required_activity_usd_per_week": "15656609492.915552502813130548"
+    },
+    {
+      "capture_fraction": "0.8",
+      "capture_pct": 80,
+      "required_activity_usd_per_week": "15460901874.25410809652796641615"
+    },
+    {
+      "capture_fraction": "0.81",
+      "capture_pct": 81,
+      "required_activity_usd_per_week": "15270026542.473193181756016213481481481481481481481481481481481481481481481481481"
+    },
+    {
+      "capture_fraction": "0.82",
+      "capture_pct": 82,
+      "required_activity_usd_per_week": "15083806706.589373752710211137707317073170731707317073170731707317073170731707317"
+    },
+    {
+      "capture_fraction": "0.83",
+      "capture_pct": 83,
+      "required_activity_usd_per_week": "14902074095.666610213520931485445783132530120481927710843373493975903614457831325"
+    },
+    {
+      "capture_fraction": "0.84",
+      "capture_pct": 84,
+      "required_activity_usd_per_week": "14724668451.670579139550444205857142857142857142857142857142857142857142857142857"
+    },
+    {
+      "capture_fraction": "0.85",
+      "capture_pct": 85,
+      "required_activity_usd_per_week": "14551437058.121513502614556626964705882352941176470588235294117647058823529411765"
+    },
+    {
+      "capture_fraction": "0.86",
+      "capture_pct": 86,
+      "required_activity_usd_per_week": "14382234301.631728461886480387116279069767441860465116279069767441860465116279070"
+    },
+    {
+      "capture_fraction": "0.87",
+      "capture_pct": 87,
+      "required_activity_usd_per_week": "14216921263.681938479565946129793103448275862068965517241379310344827586206896552"
+    },
+    {
+      "capture_fraction": "0.88",
+      "capture_pct": 88,
+      "required_activity_usd_per_week": "14055365340.231007360479969469227272727272727272727272727272727272727272727272727"
+    },
+    {
+      "capture_fraction": "0.89",
+      "capture_pct": 89,
+      "required_activity_usd_per_week": "13897439886.969984805867834980808988764044943820224719101123595505617977528089888"
+    },
+    {
+      "capture_fraction": "0.9",
+      "capture_pct": 90,
+      "required_activity_usd_per_week": "13743023888.225873863580414592133333333333333333333333333333333333333333333333333"
+    },
+    {
+      "capture_fraction": "0.91",
+      "capture_pct": 91,
+      "required_activity_usd_per_week": "13592001647.695919205738871574637362637362637362637362637362637362637362637362637"
+    },
+    {
+      "capture_fraction": "0.92",
+      "capture_pct": 92,
+      "required_activity_usd_per_week": "13444262499.351398344806927318391304347826086956521739130434782608695652173913043"
+    },
+    {
+      "capture_fraction": "0.93",
+      "capture_pct": 93,
+      "required_activity_usd_per_week": "13299700536.992781158303627024645161290322580645161290322580645161290322580645161"
+    },
+    {
+      "capture_fraction": "0.94",
+      "capture_pct": 94,
+      "required_activity_usd_per_week": "13158214361.067326039598269290340425531914893617021276595744680851063829787234043"
+    },
+    {
+      "capture_fraction": "0.95",
+      "capture_pct": 95,
+      "required_activity_usd_per_week": "13019706841.477143660234076982021052631578947368421052631578947368421052631578947"
+    },
+    {
+      "capture_fraction": "0.96",
+      "capture_pct": 96,
+      "required_activity_usd_per_week": "12884084895.211756747106638680125"
+    },
+    {
+      "capture_fraction": "0.97",
+      "capture_pct": 97,
+      "required_activity_usd_per_week": "12751259277.735346883734405291670103092783505154639175257731958762886597938144330"
+    },
+    {
+      "capture_fraction": "0.98",
+      "capture_pct": 98,
+      "required_activity_usd_per_week": "12621144387.146210691043237890734693877551020408163265306122448979591836734693878"
+    },
+    {
+      "capture_fraction": "0.99",
+      "capture_pct": 99,
+      "required_activity_usd_per_week": "12493658080.205339875982195083757575757575757575757575757575757575757575757575758"
+    },
+    {
+      "capture_fraction": "1",
+      "capture_pct": 100,
+      "required_activity_usd_per_week": "12368721499.40328647722237313292"
+    }
+  ],
+  "qualifications": [
+    "Capture is assumed, not measured from wallet flows or fees.",
+    "Custody allocation, comparator activity and horizon do not set this reward-only weekly threshold; the disjoint budget constraint still applies.",
+    "Zero-capture unreachability is not a zero activity requirement. No data-source-accuracy or economic-reconciliation tolerance is implied.",
+    "No price forecast, investment return, purchase execution or actual supply destruction is established."
+  ],
+  "source_requests": 0,
+  "sources": {
+    "dashboard/conditional_model.py": {
+      "bytes": 22973,
+      "sha256": "f4895aa10cd85683e0c45d4d8c96e3c1870efd26c56b551d9ad6bc8467a6ce75"
+    },
+    "dashboard/model_review.py": {
+      "bytes": 10121,
+      "sha256": "fc5feb323b858a6ff4d37c59cf8d7969f217aa7be218d76ca8cc08380b762d0c"
+    },
+    "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json": {
+      "bytes": 105002,
+      "sha256": "a4926883771da888baca6938cd5995509c0c667d993e3e364819b2c5692fb53a"
+    },
+    "results/90_conditional_investment_model.json": {
+      "bytes": 26008,
+      "sha256": "33c42eb9c845be9784f714e389b425515c8a6af4df97ebff9f138c05c5bc64be"
+    },
+    "results/91_conditional_model_formula_review.json": {
+      "bytes": 83118,
+      "sha256": "c42b3fa3535fc0441bc7a62d38d1a516d34d2df66128c6dc026d5125c031917d"
+    }
+  },
+  "varied_assumption": "capture_fraction",
+  "x_unit": "share of eligible fees captured (%)",
+  "y_unit": "eligible activity USD/week",
+  "zero_capture": {
+    "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+    "unit": "USD/week",
+    "value": null
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "body_cap_bytes": 8388608,
+  "credentials": false,
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "fallbacks": [],
+  "redirects": false,
+  "request_count": 1,
+  "retries": 0,
+  "spacing_seconds": 65,
+  "stage": "status",
+  "timeouts_seconds": [
+    15,
+    60
+  ]
+}

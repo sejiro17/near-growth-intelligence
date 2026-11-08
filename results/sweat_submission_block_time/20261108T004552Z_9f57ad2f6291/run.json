@@ -1,0 +1,30 @@
+{
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "fallbacks": [],
+  "inputs": {
+    "analysis/41_consolidate_priority4.py": {
+      "bytes": 17895,
+      "sha256": "bb6dbcb7fafa7c7af1ed9f613cd493092e9f0c9565604c6b2457f249274c0e77"
+    },
+    "results/96_sweat_relayer_attribution_trace_2026-09-23.json": {
+      "bytes": 23086,
+      "sha256": "fdeb385c317ede53489bb200287ffa1d1b38978b7517f8c155db595e8614190d"
+    },
+    "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-parent-block.response.body": {
+      "bytes": 18533,
+      "sha256": "3075e87bee8fc63e160b407c25ec3a912a7cc61367caebbb923ac7ce20389b3d"
+    }
+  },
+  "request": {
+    "id": "sweat-submission-block",
+    "jsonrpc": "2.0",
+    "method": "block",
+    "params": {
+      "block_id": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63"
+    }
+  },
+  "request_count": 1,
+  "response_body_cap_bytes": 8388608,
+  "retries": 0,
+  "spacing_seconds": 65
+}

@@ -1,0 +1,477 @@
+{
+  "controls": [
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "G9HVmtTJjgJsVL4diStKMX84iRPSxFctR3Cnmyx4KPYg"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "85R9MAKpgPYBqFDS5SoSZKZKS5CT2fFW94BaQQizhoYY"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "HGe1mUaWpWtR7ifoCgJL8p3sr1WWTvUzhZoJCPTY2jjf"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "2M6dptPEipqWFjAFarHX1yCLgiA271JSubRCg6nBfJ9a"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "6wLffTfkcFRLN7KmsetLVFiy1oSYETsKoinK1TJbWJst"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "GmzVbNy1FinknhPmgsmj2s4zE62h3KZTBgv7nQjnDbeZ"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "FASa3cgPLoVHdEc9iTtxHVhrLJAgcTtNCFMLWw2JEgmt"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "AMHoQCxHJ7GygEgvK9pNhu9x86z2Hzo75SKhrLmbzHF4"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "36A7mpDxaNG9ysGLQGweRGzTSTibLpJ7PAqNruFiqpJ9"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "59ekBeycDJjw3byV76tVrK2X9mDauGG2c5VR35UYJ5J"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "DwpkitiyiYC6536iZZoy9Zr2Md6y9yUnpgird4FCWfMa"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "CuW2Pg9j1Droh9kDfQPwWTjk7BJKyyWqWUjyuKwi6nhW"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "7TN7PW1b17qR8hwqmWtZLi1pveBkXdMy8wRve7MrqnNk"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "7BQgDDW6YyTGUysASusnjYDHsUqcmUPrdArcCrtJjeVk"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "6EEvE2wGuNLJ91rJSkhZ1WozRqwMXwd3ETG6cwLYFXVd"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "4u9mQ6GbcVwYDULLtbg4TmsSWTTLu4kG4fPjHivJAPrJ"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "CGdhU6QUpLN5NiugTgxaybkS9QJdLWkN1KB49zmgu12a"
+    },
+    {
+      "coverage": {
+        "all_observed_receipt_outcomes_successful": false,
+        "ambiguous_parent_links": {},
+        "data_receipts_without_execution_outcome_expected": [],
+        "disconnected_outcomes": [],
+        "emitted_distinct_child_ids": 3,
+        "independent_historical_ingestion_completeness": null,
+        "missing_action_payloads": [],
+        "missing_emitted_action_outcomes": [],
+        "observed_graph_consistent_and_covered": true,
+        "receipt_status_counts": {
+          "Failure": 1,
+          "SuccessValue": 2
+        },
+        "reconstructed_same_account_initial_payloads": [],
+        "returned_receipt_outcomes": 3,
+        "returned_receipt_payloads": 3,
+        "root_returned_as_child": false,
+        "unlinked_action_payloads": [],
+        "unresolved_return_receipt_ids": []
+      },
+      "delegation_status": "NOT_ESTABLISHED_BY_RETURNED_ACTIONS",
+      "transaction_hash": "3YnqyRH3WMHdHkffwcbBNvtqLyd4Ba1qEkoDFaFGTQ1r"
+    }
+  ],
+  "scope": "18 selected failed tinykoala traces, not sweat-relayer population evidence",
+  "selected_control_share_of_saved_715518_failed_initial_receipts_pct": "0.002515659983396644109582148876757817413398405071570526527634524917612136",
+  "source": {
+    "bytes": 337007,
+    "sha256": "14920d5761066a81fbab3d2e4765e4713d2fc2eb0b2a3eaef636a656917d2df2"
+  },
+  "source_requests": 0,
+  "sweat_population_coverage_before_collection": {
+    "confirmed_network_delegate_trace_members_in_saved_window": 0,
+    "confirmed_trace_members_in_saved_window": 0,
+    "identity_validated_trace_transactions": 0,
+    "one_trace_share_of_saved_delegate_population_pct_only_if_network_transaction_delegate_and_membership_confirmed": "0.000007548914322691024899489980250530348975740657954313668562501009667290660",
+    "one_trace_share_of_saved_signer_population_pct_if_membership_confirmed": "0.000007296946235297474242327060367563235153651432029347150246968793806760664",
+    "qualification": "One selected mechanism trace is not representative. Date membership requires a saved submission-block identity/timestamp, not the target receipt's container date. No third header request is automatic. A differing predecessor is not delegation; the source-20 delegate denominator requires an explicit delegate in network transaction actions, not merely another receipt branch.",
+    "saved_delegate_action_transactions": 13246938,
+    "saved_signer_transactions": 13704363,
+    "transaction_submission_window_membership": null
+  },
+  "validator": {
+    "bytes": 28205,
+    "path": "analysis/40_trace_sweat_relayer.py",
+    "sha256": "8731409db1e775b96b38b32ff4c3e87c7fb6eb80449fde1f15c4ce6e203d1cf6"
+  }
+}

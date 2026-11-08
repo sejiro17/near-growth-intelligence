@@ -1389,3 +1389,170 @@ runs legacy builders in an isolated temporary copy, and disables source requests
 Existing outputs must match byte-for-byte and are never overwritten. Five other
 execution-eligible checkpoints remain unmeasured; one earlier point lies outside
 the agreed execution scope. No further extraction is part of this closed phase.
+
+## 7 November 2026 — Protocol-Validated Weekly Epoch Rewards
+
+[Result 72](../results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json)
+consolidates the observed epoch walk and its historical configuration checks for
+21–27 September. There are 23 application epochs, 4786–4808. The opening-epoch
+sentinel is reached through actual boundary/parent links, without assuming fixed
+epoch durations. Reward responses are assigned to the preceding epoch's first
+block, not the response epoch's start or the period in which rewards were earned.
+
+The 21 new configuration responses plus saved A/B evidence establish active
+protocol 86 and matching reviewed runtime/economic settings for all 23
+applications. Raw byte lengths, hashes, HTTP/JSON-RPC identities and saved block
+identities validate. Integer reward-map sums include all returned payees,
+including treasury. Every sampled boundary's supply/mint/net-header-debit
+arithmetic closes with zero-yocto discrepancy.
+
+| Component | NEAR | Interpretation |
+| --- | ---: | --- |
+| Protocol-validated epoch reward minting | 618,436.074970164323861118656646 | Independently recorded reward maps, validated application scope; excludes separately unavailable subsidies. |
+| Exact endpoint supply movement | +611,555.974235517852937718656646 | Captured weekly endpoints; observed-source canonical/edge qualifications remain. |
+| Implied weekly net debit | 6,880.100734646470923400000000 | Minting minus net supply movement; not independently measured weekly debit or burn. |
+| Independently observed boundary-header net debits | 0.104122811923337500000000 | 23 application blocks only; not extrapolated to intervening blocks. |
+
+Gross burn, subsidies, independent full-week net debit and the full eight-week
+accounting remain unresolved. The original +16,599.51437846169 NEAR
+supply-versus-validator residual and its source/ingestion qualifications remain
+unchanged; that observational residual compares different measurements. Neither
+the exact account witness nor recovered updates are added to old daily totals.
+
+Offline reproduction, without overwriting captures:
+
+```bash
+.venv/bin/python analysis/28_supply_protocol_checks.py validate \
+  --run-dir results/supply_protocol_checks_2026-09-21_to_2026-09-27/20261107T115319Z_136187c69e9d
+```
+
+The output reproduces result 72 and the capture's final validation byte-for-byte.
+The independent net-debit pilot's exact range, required lossless fields and
+acceptance gates are recorded in [result 73](../results/73_supply_header_chunk_acquisition_spec_2026-09-23.json)
+and the [acquisition specification](supply_header_chunk_acquisition.md).
+No suitable accessible bulk path, retained coverage, read permission or cost has
+been established. No individual-block scan or new configuration collection is
+part of the consolidation.
+
+Priority 2 proceeds as a [three-account native candidate ledger](three_wallet_native_ledger_plan.md).
+SQL 45 prepares full-target-window discovery and records boundary/coverage
+limitations. Results 47–54 remain the saved one-day and closed provenance
+controls. At that preparation stage, results 74–75 were not yet available;
+their subsequent saved-export validation is recorded below. Native actions are
+not a complete multi-asset or account-balance ledger, and unknown transfers
+remain distinct from verified revenue, purchases and refunds.
+
+## 7 November 2026 — Saved Three-Account Native Flow Export
+
+Result 74 contains actual data rows and passes SQL 45's complete export-count
+checks: 2,565 rows comprise one summary, 63 daily controls, three account controls
+and 2,498 distinct receipt/actions. All nested lookup counts reconcile; duplicate
+action/outcome/block, unmatched-outcome and unresolved-date diagnostics are zero.
+This establishes observed-record consistency, not independent ingestion or
+boundary completeness. Job/retrieval metadata and restored BigQuery access are
+not established by the saved JSON.
+
+Analysis 29 derives result 75 using exact integer deposits: 2,479 transfers and
+19 function calls. All amounts decode without float. The target execution window
+contains 2,251 successful local actions and three failed callbacks; 244 actions
+execute outside the target. All 22 saved result-48 control transfers match exact
+keys, counterparties, amounts and execution hashes.
+
+The [ledger plan](three_wallet_native_ledger_plan.md#saved-result-74-validation--7-november-2026)
+records exact account subtotals. Between-account transfers total 502,794 NEAR,
+excluded from group external flows. Observed external inflow is
+956945.106578107785216431387924 NEAR and outflow is one yoctoNEAR. No amount is
+classified as verified revenue, refund or purchase. Observed zero native outflow
+does not establish absence of buybacks or other asset movements.
+
+Analysis 30 reproduces result 75 and prepares result 76: eight weekly native
+action subledgers, exact saved DAO parent/child links and a separate internal
+asset event. Two successful DAO-generated native transfers have failed sibling
+callbacks; full-chain settlement is unresolved. A successful logged transfer of
+`989998999899989998999899990` base units of `nep141:wrap.near` is separate from
+its one-yoctoNEAR native deposit and is not added to native totals. Economic
+origin and ultimate beneficiary remain unverified. This does not reopen the
+closed result-54 provenance investigation.
+
+Exact historical balances, fees/refunds/rewards, receipt funding timing, full
+multi-asset coverage and historical purpose evidence remain dependencies for a
+reconciled, attributed ledger. No new collection is scheduled while access and
+coverage remain unresolved. Raw result 74 and prior evidence are preserved.
+
+```bash
+.venv/bin/python analysis/30_wallet_saved_evidence_ledger.py
+.venv/bin/python -m unittest discover -s tests -p 'test_wallet*.py' -v
+```
+
+These commands use saved files only and preserve existing outputs.
+
+## 7 November 2026 — Neardata Historical Block-A Comparison
+
+[Result 83](../results/83_neardata_canonical_block_A_comparison_2026-09-23.json)
+validates the saved original 302 and manually collected archive HTTP-200 response.
+It reproduces the recovery's `validation.json` byte-for-byte. Original-hop copies,
+request/response hashes and lengths, endpoint, timestamps and exact block
+identities validate. The archive body is 191,778 bytes; no credentials or cookies
+were sent. Raw captures, collectors and frozen plans 81–82 remain unchanged.
+
+The exact supply string, predecessor, epoch IDs, timestamp, mask and all ten
+ordered chunk headers match the canonical RPC control. Every chunk has an exact
+quoted `balance_burnt` value. Independent integer summation for the five newly
+included chunks gives `2206853430760200000000` yoctoNEAR, or
+0.002206853430760200000000 NEAR, with zero discrepancy. Carried-forward headers'
+`1680380063688100000000` yoctoNEAR is excluded from that inclusion block's sum.
+Block A was already counted in result 72's boundary-header debit total; this
+source confirmation is not an additional debit or additional block coverage.
+
+Ten shard payload records contain 477 observed state changes and two observed
+receipt outcomes. Those counts do not prove independently complete state or
+receipt retention. Exact historical header access is now observed at this one
+point; full A→B/weekly predecessor coverage and bulk volume/cost remain
+unestablished. Gross burn and subsidies remain separately unavailable, and the
+eight-week accounting stays open. No additional source collection is scheduled.
+
+```bash
+.venv/bin/python analysis/35_recover_neardata_archive_redirect.py validate \
+  --run-dir results/neardata_supply_block_pilot_recovery_2026-09-23/20261107T154218Z_8ca556d6bf23_recovery_01
+```
+
+## 7 November 2026 — Header Coverage, Collection Pause and Conditional Model
+
+Result 85 validates 100 header slots. Results 88–89 preserve the subsequent
+stopped optimized segment: 44 valid new blocks through 216878077, one HTTP 429
+at 216878078, 857,247 downloaded body bytes and 22.665232459 seconds runtime.
+The error body states **30 blocks/minute**. The saved start audit did not exceed
+the configured 120 requests/minute. Three additional scheduled attempt
+directories have no recorded responses and are not counted as successful blocks.
+
+The continuous validated prefix is **216877934–216878077, 144 blocks**. Integer
+inclusion-timed net header debit totals **0.5486610196812742 NEAR**, including A
+once, with zero cumulative supply-identity discrepancy using the separately
+validated reward map. This does not establish independent gross burn or subsidies.
+The prefix debit is not extrapolated. Full-epoch/week and eight-week supply
+accounting remain incomplete.
+
+**Neardata bulk collection is paused: no retries, host/IP rotation, cap increases
+or slower recovery.** Results 88–89, raw captures and the submission tag are
+preserved. The dated result-72 reward mint of
+618,436.074970164323861118656646 NEAR remains valid for 21–27 September only.
+Its difference from exact supply movement remains implied debit, not verified
+weekly debit or burn. No collection is part of the model work.
+
+[Result 90](../results/90_conditional_investment_model.json) implements the
+[conditional economic model](conditional_investment_model.md) from saved inputs.
+It separates measured inputs from explicit assumptions, keeps measured revenue,
+buybacks, burn and holder cash flows unavailable, and never feeds native wallet
+inflows or execution spending into fee revenue. The fee budget is allocated once
+between assumed purchase/destruction, purchases held and a remaining budget.
+Custody never reduces total supply. Unknown supply components remain null unless
+explicitly assumed, including when the entered assumption is zero.
+
+Activity/capture thresholds, sensitivity and analyst-selected measurable thesis
+conditions are conditional arithmetic, not expected returns. Reproduction uses
+`python3 -B analysis/38_conditional_investment_model.py --with-published --check`
+with network operations disabled and no existing-output overwrite. The five
+original research requirements and their outstanding measurement dependencies
+remain in [the research plan](research_plan.md). The closed provenance finding,
+population overlaps, initial-receipt scope, FLOAT cost precision and existing
+browser visual-review gap are retained.

@@ -1,0 +1,8 @@
+{
+  "id": "epoch-016-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1"
+  }
+}

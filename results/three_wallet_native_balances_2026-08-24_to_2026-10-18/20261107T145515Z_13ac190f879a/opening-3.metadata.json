@@ -1,0 +1,15 @@
+{
+  "body_complete": false,
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "finished_at": "2026-11-07T14:59:17.237261+00:00",
+  "http_status": null,
+  "request_bytes": 233,
+  "request_http_method": "POST",
+  "request_path": "/",
+  "request_sha256": "ddce6d9918c61e73954f29792f675c02b135dafe194c479bdd068d6f7be328ab",
+  "response_bytes": 0,
+  "response_headers": [],
+  "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "started_at": "2026-11-07T14:58:57.347849+00:00",
+  "transport_error": "RemoteDisconnected: Remote end closed connection without response"
+}

@@ -1,0 +1,28 @@
+{
+  "body_bytes": 0,
+  "headers": [
+    [
+      "Host",
+      "mainnet.neardata.xyz"
+    ],
+    [
+      "Accept",
+      "application/json"
+    ],
+    [
+      "Accept-Encoding",
+      "identity"
+    ],
+    [
+      "Connection",
+      "close"
+    ],
+    [
+      "User-Agent",
+      "near-growth-intelligence-single-block-pilot/1"
+    ]
+  ],
+  "method": "GET",
+  "path": "/v0/block/216877934",
+  "url": "https://mainnet.neardata.xyz/v0/block/216877934"
+}

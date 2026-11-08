@@ -1,0 +1,8 @@
+{
+  "id": "epoch-046-validators",
+  "jsonrpc": "2.0",
+  "method": "validators",
+  "params": {
+    "epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7"
+  }
+}

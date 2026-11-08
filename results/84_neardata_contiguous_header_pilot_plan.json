@@ -1,0 +1,347 @@
+{
+  "actual_pilot_download_bytes_before_manual_run": null,
+  "actual_pilot_throughput_before_manual_run": null,
+  "allowed_hosts": [
+    "mainnet.neardata.xyz",
+    "a3.mainnet.neardata.xyz"
+  ],
+  "automatic_retries": 0,
+  "cached_pilot_heights": [
+    216877934
+  ],
+  "connect_timeout_seconds": 15,
+  "credentials": "NONE; no Authorization, cookies, query keys or environment credentials",
+  "documented_limit_requests_per_minute_per_ip": 180,
+  "excluded_unusable_saved_captures": [],
+  "following_boundary_B": {
+    "hash": "J6jyjUSFFatXnCKEG3nKaD9qQLzQrY4xWyFkB5a5mJHB",
+    "height": 216921134
+  },
+  "full_interval": [
+    216877934,
+    216921133
+  ],
+  "full_interval_collection_proposal": null,
+  "full_interval_last_hash_control": {
+    "hash": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+    "height": 216921133
+  },
+  "historical_supply_constructor": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/core/primitives/src/block.rs",
+  "large_raw_files_belong_in_git": false,
+  "lifetime_downloaded_body_cap_bytes": 67108864,
+  "maximum_attempts_per_height": 2,
+  "maximum_lifetime_http_requests": 396,
+  "maximum_pilot_heights": 100,
+  "maximum_session_http_requests": 198,
+  "monetary_scope": "Newly included headers only; opening predecessor excluded. Pilot overlaps already measured A and is not added to earlier boundary totals",
+  "network": "mainnet",
+  "null_policy": "One bounded successor probe inside the pilot only; null is skipped only with matching predecessor height/hash bypass; two consecutive or trailing nulls stop",
+  "pacing_seconds_after_each_response": 1,
+  "per_response_body_cap_bytes": 33554432,
+  "pilot_interval": [
+    216877934,
+    216878033
+  ],
+  "raw_store": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/pilot_216877934_216878033",
+  "references": [
+    "https://github.com/fastnear/neardata-server/blob/7324d9131e7e8285306606ba05822b007e44c53a/README.md",
+    "https://github.com/fastnear/neardata-server/blob/7324d9131e7e8285306606ba05822b007e44c53a/src/api.rs"
+  ],
+  "request_path": "/v0/block/{height}/headers",
+  "request_timeout_seconds": 60,
+  "routing": "Official base then at most one HTTPS redirect to the previously verified a3 host, identical height and /headers path",
+  "scope": "100_HEIGHT_PILOT_ONLY_FULL_INTERVAL_DISABLED",
+  "seeds": {
+    "216877933": {
+      "block": {
+        "chunks": [
+          {
+            "balance_burnt": "51444911781000000000",
+            "chunk_hash": "E4VNzYfdzStx2NgcdRDR6n1GztWL96GZ1UT72emAx6ba",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 10
+          },
+          {
+            "balance_burnt": "499682363826400000000",
+            "chunk_hash": "GkVZeLQ9Wc13BxmkarEZXmstsC4SQWG162mpWrNySXtF",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 11
+          },
+          {
+            "balance_burnt": "0",
+            "chunk_hash": "31X7ZkAQjSWrrvye7utKmkV3CraSfvp9dqNGTtmsAUc2",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 1
+          },
+          {
+            "balance_burnt": "31592731297500000000",
+            "chunk_hash": "9Ct8uQpNGjBzYEVoTonRCeLo7omXFxxCBDh3Au5YTBpy",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 8
+          },
+          {
+            "balance_burnt": "0",
+            "chunk_hash": "4TgKq3Nxihyz9k7evz6J3Ddt5xG3mvFXKp8vQAsUqpkH",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 9
+          },
+          {
+            "balance_burnt": "0",
+            "chunk_hash": "tsyqj2M55EULJKP6HXaeTuB2vLhpLbEXtSeEhv4PLEk",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 6
+          },
+          {
+            "balance_burnt": "510068396663700000000",
+            "chunk_hash": "6cH54YPktKbrhEyZYVTAHDpnrcNHwtKdHkqGmaB7cJDm",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 7
+          },
+          {
+            "balance_burnt": "639036571900500000000",
+            "chunk_hash": "8y14o3B8NKpG48HEGZWoWi1zp7xPfXNxBcByqZbwAtWT",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 4
+          },
+          {
+            "balance_burnt": "1072696094289700000000",
+            "chunk_hash": "DAymDN8HESgo2wc2si6jRFtTP4zFbSpgFFYKbu3jt12x",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 12
+          },
+          {
+            "balance_burnt": "0",
+            "chunk_hash": "46z2Jfp5jdPGWsyeF9qBymNVfARL2mXCBd1YNJRvQ77P",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 13
+          }
+        ],
+        "header": {
+          "chunk_mask": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "chunks_included": 10,
+          "epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7",
+          "hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+          "height": 216877933,
+          "next_epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+          "prev_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+          "prev_height": 216877932,
+          "timestamp_nanosec": "1790147485548163769",
+          "total_supply": "1307054347346648920877965154628416"
+        }
+      },
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 152,
+          "path": "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-parent-block.request.json",
+          "sha256": "80bf86e8e8d43c5075e1138fb2044c56322621e5915390f769b2a63d9396aeb0"
+        },
+        {
+          "bytes": 18533,
+          "path": "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-parent-block.response.body",
+          "sha256": "3075e87bee8fc63e160b407c25ec3a912a7cc61367caebbb923ac7ce20389b3d"
+        },
+        {
+          "bytes": 1349,
+          "path": "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-parent-block.metadata.json",
+          "sha256": "0761c801e8dd7265a67bb1121b61ed77ff8db4727cc7cffb6a71af0130f75bd3"
+        }
+      ]
+    },
+    "216877934": {
+      "block": {
+        "chunks": [
+          {
+            "balance_burnt": "32698993485500000000",
+            "chunk_hash": "AiBrJQz5wJKNHfhHvzr57YTzuBBCrQq48s6nbsDGRS28",
+            "height_created": 216877934,
+            "height_included": 216877934,
+            "prev_block_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+            "shard_id": 10
+          },
+          {
+            "balance_burnt": "499682363826400000000",
+            "chunk_hash": "GkVZeLQ9Wc13BxmkarEZXmstsC4SQWG162mpWrNySXtF",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 11
+          },
+          {
+            "balance_burnt": "0",
+            "chunk_hash": "31X7ZkAQjSWrrvye7utKmkV3CraSfvp9dqNGTtmsAUc2",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 1
+          },
+          {
+            "balance_burnt": "31592731297500000000",
+            "chunk_hash": "9Ct8uQpNGjBzYEVoTonRCeLo7omXFxxCBDh3Au5YTBpy",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 8
+          },
+          {
+            "balance_burnt": "270275544671600000000",
+            "chunk_hash": "5yMU9CH7uRzr6wHqcgJZ3vVxVhxpjmyGxqKubPZKo9VN",
+            "height_created": 216877934,
+            "height_included": 216877934,
+            "prev_block_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+            "shard_id": 9
+          },
+          {
+            "balance_burnt": "250986291114400000000",
+            "chunk_hash": "G4TmUH6onEFzPd83jn7AuwDbnSLpqqtJtPuwDnXqdppr",
+            "height_created": 216877934,
+            "height_included": 216877934,
+            "prev_block_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+            "shard_id": 6
+          },
+          {
+            "balance_burnt": "510068396663700000000",
+            "chunk_hash": "6cH54YPktKbrhEyZYVTAHDpnrcNHwtKdHkqGmaB7cJDm",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 7
+          },
+          {
+            "balance_burnt": "639036571900500000000",
+            "chunk_hash": "8y14o3B8NKpG48HEGZWoWi1zp7xPfXNxBcByqZbwAtWT",
+            "height_created": 216877933,
+            "height_included": 216877933,
+            "prev_block_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+            "shard_id": 4
+          },
+          {
+            "balance_burnt": "1442904047442200000000",
+            "chunk_hash": "AhUiMKUkMzqycvpJLF7ZreMeTayfjn2kYeJiu4Ctu9pc",
+            "height_created": 216877934,
+            "height_included": 216877934,
+            "prev_block_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+            "shard_id": 12
+          },
+          {
+            "balance_burnt": "209988554046500000000",
+            "chunk_hash": "DYahXBAeQWfHy4KY72fVZbs8QPVVhqW9M2ZZYfqWJhi3",
+            "height_created": 216877934,
+            "height_included": 216877934,
+            "prev_block_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+            "shard_id": 13
+          }
+        ],
+        "header": {
+          "chunk_mask": [
+            true,
+            false,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true,
+            true
+          ],
+          "chunks_included": 5,
+          "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+          "hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+          "height": 216877934,
+          "next_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+          "prev_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+          "prev_height": 216877933,
+          "timestamp_nanosec": "1790147486203722296",
+          "total_supply": "1307081318396302606160667252596139"
+        }
+      },
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 19900,
+          "path": "results/83_neardata_canonical_block_A_comparison_2026-09-23.json",
+          "sha256": "dbb7af4a7eca1f7c3103d95e5394275e726741e784fb1b0ff8a95766ad5b1ea7"
+        },
+        {
+          "bytes": 108,
+          "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.request.json",
+          "sha256": "7b940e4a8f46db3b1557e1e4411662d6ee2453250b2aea78aa475daf84adf44f"
+        },
+        {
+          "bytes": 21511,
+          "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.response.body",
+          "sha256": "0827bdeeb88fd216766d8902d48098c3e28161f3775eead151058955db1eefae"
+        },
+        {
+          "bytes": 1349,
+          "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.metadata.json",
+          "sha256": "dc09796333f6ff40ded5be428af466463e97c41eedfc44bb425e63a7a402f9a9"
+        }
+      ]
+    }
+  },
+  "source_files": [
+    {
+      "bytes": 30530,
+      "path": "analysis/36_neardata_header_pilot.py",
+      "sha256": "56a4fcc7faab168b058a32a23cae51a3d4a03f13f02cae0ebb4d3f5f3857da5d"
+    },
+    {
+      "bytes": 13255,
+      "path": "analysis/35_recover_neardata_archive_redirect.py",
+      "sha256": "1179de27b32b82236dbcd793532479f56f55fdf6a0d627708025359ed9cd8afc"
+    },
+    {
+      "bytes": 16533,
+      "path": "analysis/34_neardata_single_block_pilot.py",
+      "sha256": "bd1f1e33adc7bb23938e1eadaadc157c507bd4578372e3126dd49bcb11963e9d"
+    },
+    {
+      "bytes": 21427,
+      "path": "analysis/11_collect_canonical_validator_evidence.py",
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    {
+      "bytes": 19900,
+      "path": "results/83_neardata_canonical_block_A_comparison_2026-09-23.json",
+      "sha256": "dbb7af4a7eca1f7c3103d95e5394275e726741e784fb1b0ff8a95766ad5b1ea7"
+    },
+    {
+      "bytes": 105002,
+      "path": "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json",
+      "sha256": "a4926883771da888baca6938cd5995509c0c667d993e3e364819b2c5692fb53a"
+    }
+  ]
+}

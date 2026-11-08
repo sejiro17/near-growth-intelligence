@@ -1,0 +1,15 @@
+{
+  "body_complete": false,
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "finished_at": "2026-11-07T10:42:15.683353+00:00",
+  "http_status": null,
+  "request_bytes": 116,
+  "request_http_method": "POST",
+  "request_path": "/",
+  "request_sha256": "8da40fcdcbbb9eb2637d8666a662d60e9b31d37d22fb0e812c452873a78ef9de",
+  "response_bytes": 0,
+  "response_headers": [],
+  "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "started_at": "2026-11-07T10:41:48.940285+00:00",
+  "transport_error": "TimeoutError: _ssl.c:993: The handshake operation timed out"
+}

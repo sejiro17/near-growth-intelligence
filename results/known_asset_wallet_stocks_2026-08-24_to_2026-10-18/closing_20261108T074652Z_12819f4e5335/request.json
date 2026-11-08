@@ -1,0 +1,12 @@
+{
+  "id": "known-asset-closing",
+  "jsonrpc": "2.0",
+  "method": "query",
+  "params": {
+    "account_id": "intents.near",
+    "args_base64": "ewogICJhY2NvdW50X2lkIjogIjFjc2Z1bmRzYWRtaW4uc3B1dG5pay1kYW8ubmVhciIsCiAgInRva2VuX2lkIjogIm5lcDE0MTp3cmFwLm5lYXIiCn0K",
+    "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+    "method_name": "mt_balance_of",
+    "request_type": "call_function"
+  }
+}

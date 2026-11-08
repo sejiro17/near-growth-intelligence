@@ -1,0 +1,197 @@
+{
+  "inventory": {
+    "closed_trace_accounts": [
+      {
+        "account_id": "51e8f94d77b5e90dc9852ca6113771e11e8382ce69473a75e313e41665de7cbe",
+        "additional_provenance_collection": "NONE",
+        "verified_fee_role": null
+      },
+      {
+        "account_id": "a8c56ebbdabc6b6709d4f946d54679db1e4006f5eeb6b3d49c897c86c70ba6cd",
+        "additional_provenance_collection": "NONE",
+        "verified_fee_role": null
+      }
+    ],
+    "complete_asset_universe": null,
+    "complete_token_flows": null,
+    "discovery_dependency": "A retained, success-qualified owner-indexed NEP-141/NEP-245 event history plus historical internal-account associations. SQL 45 selects native counterparties only; neither native account RPC nor one known-token view enumerates all assets. No accessible complete index is established by saved evidence.",
+    "historical_role_evidence": [
+      {
+        "account_id": "fefundsadmin.sputnik-dao.near",
+        "closing_code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "equal_endpoint_code_hashes": true,
+        "historical_policy_and_beneficial_ownership": null,
+        "intermediate_contract_or_configuration_changes": "NOT_ESTABLISHED_BY_ENDPOINTS",
+        "observed_called_methods": [],
+        "opening_code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "wasm_to_source_version_match": null
+      },
+      {
+        "account_id": "1csfundsadmin.sputnik-dao.near",
+        "closing_code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "equal_endpoint_code_hashes": true,
+        "historical_policy_and_beneficial_ownership": null,
+        "intermediate_contract_or_configuration_changes": "NOT_ESTABLISHED_BY_ENDPOINTS",
+        "observed_called_methods": [
+          "act_proposal",
+          "add_proposal",
+          "on_proposal_callback"
+        ],
+        "opening_code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "wasm_to_source_version_match": null
+      },
+      {
+        "account_id": "buybacks.multisignature.near",
+        "closing_code_hash": "2v9kZJHN4sogHuKtKHaqYAqQBazkqH2cjY1rrjQYvNQa",
+        "equal_endpoint_code_hashes": true,
+        "historical_policy_and_beneficial_ownership": null,
+        "intermediate_contract_or_configuration_changes": "NOT_ESTABLISHED_BY_ENDPOINTS",
+        "observed_called_methods": [],
+        "opening_code_hash": "2v9kZJHN4sogHuKtKHaqYAqQBazkqH2cjY1rrjQYvNQa",
+        "wasm_to_source_version_match": null
+      }
+    ],
+    "known_internal_contract": "intents.near",
+    "known_token_contracts": [
+      "wrap.near"
+    ],
+    "observed_asset_ids": [
+      "nep141:wrap.near"
+    ],
+    "observed_movements": [
+      {
+        "amount_base_units": "989998999899989998999899990",
+        "asset_id": "nep141:wrap.near",
+        "asset_index": 0,
+        "contract": "intents.near",
+        "data_index": 0,
+        "economic_classification": "UNCLASSIFIED_INTERNAL_ASSET_TRANSFER",
+        "execution_block_hash": "3PinDypYma8i74BHhpy5LjDjaTZ9wgmv9u949qdCv9da",
+        "execution_block_height": 214941383,
+        "execution_timestamp_utc": "2026-09-09T12:28:03.642806Z",
+        "log_index": 0,
+        "new_owner_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+        "old_owner_id": "1csfundsadmin.sputnik-dao.near",
+        "receipt_id": "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL"
+      }
+    ],
+    "opaque_proposal_recipients": [
+      {
+        "account_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+        "verified_wallet_alias": null
+      },
+      {
+        "account_id": "c19da9ebe8e0c14892a98403fe6ae4bc4b81ac1fd83cb568b849ec685716c5e2",
+        "verified_wallet_alias": null
+      },
+      {
+        "account_id": "c6c1294fba977ddd14fc98e4f1de62b492d62a5d167ff3a43f0da8878a713819",
+        "verified_wallet_alias": null
+      }
+    ],
+    "proposal_link_count": 1,
+    "request_context_counts": {
+      "DIRECT_OBSERVED_CALL": 1,
+      "PROPOSAL_REQUEST_ONLY": 7
+    },
+    "request_record_count": 8,
+    "verified_exchange_purchases": null,
+    "verified_revenue": null
+  },
+  "network": "mainnet",
+  "pilot": {
+    "abi_reference": "https://github.com/near/NEPs/blob/master/neps/nep-0245.md",
+    "asset_id": "nep141:wrap.near",
+    "automatic_retries": 0,
+    "boundaries": {
+      "closing": {
+        "date": "2026-10-18",
+        "hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+        "height": 220581912,
+        "saved_timestamp_utc": "2026-10-18 23:59:59.997115 UTC"
+      },
+      "opening": {
+        "date": "2026-08-23",
+        "hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+        "height": 212636216,
+        "saved_timestamp_utc": "2026-08-23 23:59:59.540769 UTC"
+      }
+    },
+    "boundary_qualification": "SAVED_OBSERVED_DAY_CLOSES_MATCH_LEDGER_NOT_INDEPENDENT_CANONICAL_EDGE_PROOF",
+    "contract": "intents.near",
+    "denominator": {
+      "boundary_states": 2,
+      "complete_asset_pair_denominator": null,
+      "known_owner_asset_pairs_tested": 1,
+      "selected_wallets": 3
+    },
+    "endpoint": "https://archival-rpc.mainnet.near.org",
+    "historical_method_availability": "Must be established by each historical response; standard alone is insufficient",
+    "maximum_requests": 2,
+    "owner": "1csfundsadmin.sputnik-dao.near",
+    "requests": {
+      "closing": {
+        "id": "known-asset-closing",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "intents.near",
+          "args_base64": "ewogICJhY2NvdW50X2lkIjogIjFjc2Z1bmRzYWRtaW4uc3B1dG5pay1kYW8ubmVhciIsCiAgInRva2VuX2lkIjogIm5lcDE0MTp3cmFwLm5lYXIiCn0K",
+          "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+          "method_name": "mt_balance_of",
+          "request_type": "call_function"
+        }
+      },
+      "opening": {
+        "id": "known-asset-opening",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "intents.near",
+          "args_base64": "ewogICJhY2NvdW50X2lkIjogIjFjc2Z1bmRzYWRtaW4uc3B1dG5pay1kYW8ubmVhciIsCiAgInRva2VuX2lkIjogIm5lcDE0MTp3cmFwLm5lYXIiCn0K",
+          "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+          "method_name": "mt_balance_of",
+          "request_type": "call_function"
+        }
+      }
+    },
+    "response_cap_bytes": 8388608,
+    "scope": "One owner's known internal asset stocks, not complete discovery, flows, fee origin or purchases",
+    "spacing_seconds": 65,
+    "timeouts_seconds": [
+      15,
+      60
+    ]
+  },
+  "sources": [
+    {
+      "bytes": 3110417,
+      "path": "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json",
+      "sha256": "6cbad8621599a6570b0dd97717d8cbee816f73e3277e4842ac33dfd8b22de599"
+    },
+    {
+      "bytes": 6774,
+      "path": "results/77_three_wallet_historical_balance_request_plan.json",
+      "sha256": "256964dc467028984e2fedcd295de6d36341147c0ed741e83687fa9841d6a626"
+    },
+    {
+      "bytes": 14599,
+      "path": "analysis/46_known_asset_wallet_coverage.py",
+      "sha256": "2432ed0f5b00f7b0b193774b955996d6c1b550f03d82272e798be4449633e143"
+    },
+    {
+      "bytes": 16524,
+      "path": "analysis/42_trace_wx_cruce.py",
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    {
+      "bytes": 21427,
+      "path": "analysis/11_collect_canonical_validator_evidence.py",
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    }
+  ],
+  "window": {
+    "end_exclusive": "2026-10-19T00:00:00Z",
+    "start_inclusive": "2026-08-24T00:00:00Z"
+  }
+}

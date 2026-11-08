@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "label": "Illustrative weekly scenario; not observed economics or expected returns",
+  "assumptions": {
+    "horizon_weeks": "1",
+    "reward_mint_near_per_week": "618436.074970164323861118656646",
+    "additional_issuance_near_per_week": null,
+    "other_destruction_near_per_week": null,
+    "other_supply_adjustment_near_per_week": null,
+    "price_usd_per_near": "5",
+    "eligible_activity_usd_per_week": "100000000",
+    "fee_rate": "0.001",
+    "capture_fraction": "0.5",
+    "destruction_allocation": "0.25",
+    "custody_allocation": "0.25",
+    "retained_budget_hurdle_usd_per_week": "1000000"
+  },
+  "interpretation": "The reward default repeats only the dated 21–27 September 2026 reward-mint baseline. All other numerical defaults are illustrative assumptions, not NEAR or Intents rates, prices, volumes or policies. Null supply components are unavailable, not zero. Capture is the assumed eligible fee share after principal, pass-through settlements, rebates and refunds are excluded; operating costs and taxes are not modeled."
+}

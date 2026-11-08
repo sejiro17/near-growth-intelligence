@@ -1,0 +1,138 @@
+{
+  "accounting": {
+    "closing_observed_supply_yocto": "1307081317849848439910153252596139",
+    "complete_1000_height_segment_net_debit_yocto": null,
+    "complete_epoch_net_debit_yocto": null,
+    "cumulative_identity_discrepancy_yocto": "0",
+    "cumulative_net_debit_including_saved_pilot_yocto": "548661019681274200000000",
+    "gross_actual_burn_yocto": null,
+    "independent_week_net_debit_yocto": null,
+    "independently_summed_prefix_net_header_debit_yocto": "122074048141483800000000",
+    "missing_segment_heights": 956,
+    "opening_supply_yocto": "1307081317971922488051637052596139",
+    "prefix_identity_discrepancy_yocto": "0",
+    "prefix_net_debit_near": "0.1220740481414838",
+    "prefix_supply_movement_yocto": "-122074048141483800000000",
+    "separate_canonical_segment_tail_control": false,
+    "subsidies_yocto": null,
+    "validated_new_blocks": 44,
+    "validated_segment_prefix": [
+      216878034,
+      216878077
+    ]
+  },
+  "estimate_method": "Requests/rate/60 gives scheduling hours. Monetary values use integer yoctoNEAR; byte and timing ratios use Decimal. File projections use only successful attempt files. Remaining weekly slots conservatively subtract known prefix and epoch-closing captures; other saved headers reduce requests. Prefix byte sizes and 30/25 block-per-minute scenarios are not bounds or verified sustainable performance.",
+  "forecast_status": "CONDITIONAL_SCENARIOS_FROM_A_44_BLOCK_PREFIX_NOT_A_SUCCESSFUL_1000_HEIGHT_BENCHMARK",
+  "inputs": [
+    {
+      "bytes": 63022,
+      "path": "results/88_neardata_optimized_segment_validation_216878034_to_216879033.json",
+      "sha256": "a387e7fed1a12c1e24d1f65c63023ddacd0e6097dd411c5cf7fd1af0dab9d873"
+    },
+    {
+      "bytes": 684863,
+      "path": "results/87_neardata_optimized_segment_plan.json",
+      "sha256": "ae24076123b7997cd06b3b47eac174018493f5c1953515962fa0881bf2d92857"
+    },
+    {
+      "bytes": 208,
+      "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878078/01/request.http",
+      "sha256": "9edcc8cb0cd11cf7b84cbbda00b25c55c47bc1194aaadec441cc2ecbf1c3720d"
+    },
+    {
+      "bytes": 476,
+      "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878078/01/request.json",
+      "sha256": "3271fe8493ff243775911dcaa9b77e9f27a8260ec7d311ba73c85ab6848619ad"
+    },
+    {
+      "bytes": 137,
+      "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878078/01/response.body",
+      "sha256": "0973ab03c8820693808b65a69167bfe54929e875af383260885fa569897df40e"
+    },
+    {
+      "bytes": 1641,
+      "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878078/01/metadata.json",
+      "sha256": "abb6a2044dbdc2995d9ad980f0dae6c05264409b661a7f8caaecb393f503f94b"
+    }
+  ],
+  "limitations": [
+    "The observed approximately two starts per second ended in rate limiting and is rejected as a sustainable full-range throughput estimate.",
+    "The 1,000-height benchmark was not completed. No optimized-rate full-epoch or weekly performance was established.",
+    "At the sample mean, weekly volume exceeds the existing 2 GiB body and 8 GiB store caps. No cap was raised.",
+    "Other epochs, protocol/layout changes, routing, nulls, latency, response sizes, filesystem overhead and shared-IP usage remain unmeasured.",
+    "A separately reviewed slower recovery plan is required before another attempt; no recovery requests were executed."
+  ],
+  "live_execution": {
+    "connection_reuse_count": 41,
+    "downloaded_response_body_bytes_including_error": 857247,
+    "http_429": 1,
+    "http_error_body_bytes": 137,
+    "rate_audit": {
+      "cross_session_recent_starts_restored_on_resume": true,
+      "maximum_starts_in_any_session_rolling_60_seconds": 45,
+      "minimum_start_gap_ns": 500126125
+    },
+    "raw_store_logical_bytes_including_reports": 1748030,
+    "requests_with_no_recorded_response": [
+      "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878080/01",
+      "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878081/01",
+      "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878079/01"
+    ],
+    "responses_recorded": 45,
+    "retry_count": 0,
+    "scheduled_attempt_directories": 48,
+    "successful_header_body_bytes": 857110,
+    "successful_http_200": 44,
+    "transport_errors": 0,
+    "wall_elapsed_ns": 22665232459
+  },
+  "remaining_epoch_after_saved_prefix_and_canonical_closing": {
+    "allocated_file_bytes_on_sample_filesystem": "1426858356.36363636363636363636363636363636363636363636363636",
+    "body_bytes_at_four_times_prefix_mean": "3354806459.09090909090909090909090909090909090909090909090910",
+    "body_bytes_at_successful_prefix_mean": "838701614.772727272727272727272727272727272727272727272727274",
+    "body_bytes_at_twice_prefix_mean": "1677403229.54545454545454545454545454545454545454545454545455",
+    "numerical_request_slots": 43055,
+    "planning_hours_at_25_per_minute_unverified": "28.7033333333333333333333333333333333333333333333333333333333",
+    "raw_logical_file_bytes_at_prefix_proportions": "943244047.386363636363636363636363636363636363636363636363636",
+    "scheduling_floor_hours_at_observed_30_block_per_minute_restriction": "23.9194444444444444444444444444444444444444444444444444444445"
+  },
+  "remaining_week_after_known_prefix_and_epoch_closing_before_other_saved_reuse": {
+    "allocated_file_bytes_on_sample_filesystem": "33221259264",
+    "body_bytes_at_four_times_prefix_mean": "78109291410.0000000000000000000000000000000000000000000000000",
+    "body_bytes_at_successful_prefix_mean": "19527322852.5000000000000000000000000000000000000000000000000",
+    "body_bytes_at_twice_prefix_mean": "39054645705.0000000000000000000000000000000000000000000000000",
+    "numerical_request_slots": 1002441,
+    "planning_hours_at_25_per_minute_unverified": "668.294",
+    "raw_logical_file_bytes_at_prefix_proportions": "21961363514.25",
+    "scheduling_floor_hours_at_observed_30_block_per_minute_restriction": "556.911666666666666666666666666666666666666666666666666666667"
+  },
+  "restriction": {
+    "configured_limiter_exceeded": false,
+    "configured_shared_request_limit_per_minute": 120,
+    "failed_height": 216878078,
+    "http_status": 429,
+    "interpretation": "This response establishes that this attempt was rejected with a stated 30-block/minute rule. It does not establish a precise bucket model, burst capacity, IP sharing, or guaranteed sustainable rate.",
+    "no_automatic_retry_or_limit_change": true,
+    "public_documentation_and_actual_route_allowance_differ": true,
+    "raw_error": {
+      "error": "rate-limit exceeded of 30 blocks per minute",
+      "message": "Please get a plan from https://fastnear.com for higher rate limits"
+    },
+    "response_reported_blocks_per_minute": 30,
+    "retry_after_header": "0"
+  },
+  "sample_body_max_bytes": 21112,
+  "sample_body_mean_bytes": "19479.7727272727272727272727272727272727272727272727272727273",
+  "sample_body_min_bytes": 17931,
+  "status": "INCOMPLETE_SEGMENT_STOPPED_ON_OBSERVED_PROVIDER_RESTRICTION",
+  "whole_week_before_reuse": {
+    "allocated_file_bytes_on_sample_filesystem": "33226064616.7272727272727272727272727272727272727272727272727",
+    "body_bytes_at_four_times_prefix_mean": "78120589678.1818181818181818181818181818181818181818181818184",
+    "body_bytes_at_successful_prefix_mean": "19530147419.5454545454545454545454545454545454545454545454546",
+    "body_bytes_at_twice_prefix_mean": "39060294839.0909090909090909090909090909090909090909090909092",
+    "numerical_request_slots": 1002586,
+    "planning_hours_at_25_per_minute_unverified": "668.390666666666666666666666666666666666666666666666666666667",
+    "raw_logical_file_bytes_at_prefix_proportions": "21964540157.7727272727272727272727272727272727272727272727273",
+    "scheduling_floor_hours_at_observed_30_block_per_minute_restriction": "556.992222222222222222222222222222222222222222222222222222222"
+  }
+}

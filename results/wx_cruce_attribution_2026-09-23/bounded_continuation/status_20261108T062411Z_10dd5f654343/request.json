@@ -1,0 +1,10 @@
+{
+  "id": "wx-transaction-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "wx-cruce.near",
+    "tx_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+    "wait_until": "FINAL"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "export_rows": 21,
+  "fields": {
+    "blocks": {
+      "author_account_id": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_date": {
+        "data_type": "DATE",
+        "is_nullable": "YES",
+        "is_partitioning_column": "YES"
+      },
+      "block_hash": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_height": {
+        "data_type": "INT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_timestamp": {
+        "data_type": "INT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_timestamp_utc": {
+        "data_type": "TIMESTAMP",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "gas_price": {
+        "data_type": "FLOAT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "prev_block_hash": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "total_supply": {
+        "data_type": "FLOAT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      }
+    },
+    "chunks": {
+      "author_account_id": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_date": {
+        "data_type": "DATE",
+        "is_nullable": "YES",
+        "is_partitioning_column": "YES"
+      },
+      "block_hash": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_height": {
+        "data_type": "INT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_timestamp": {
+        "data_type": "INT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "block_timestamp_utc": {
+        "data_type": "TIMESTAMP",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "chunk_hash": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "gas_limit": {
+        "data_type": "FLOAT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "gas_used": {
+        "data_type": "FLOAT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "shard_id": {
+        "data_type": "INT64",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      },
+      "signature": {
+        "data_type": "STRING",
+        "is_nullable": "YES",
+        "is_partitioning_column": "NO"
+      }
+    }
+  },
+  "gross_actual_burn_yocto": null,
+  "historical_population_established": false,
+  "independent_epoch_mint_yocto": null,
+  "independent_weekly_net_header_debit_yocto": null,
+  "measurement_limits": {
+    "chunk_inclusion_and_debit": "No height_created/height_included/balance_burnt; flat chunk block identity does not establish supply-inclusion timing",
+    "epoch_boundary_fields": "No epoch_id/next_epoch_id or nested header is exposed in blocks/chunks",
+    "precision": "total_supply and gas_price are FLOAT64; chunks.gas_used/gas_limit are FLOAT64, not monetary burn fields. Casting cannot recover lost digits",
+    "predecessors": "blocks.prev_block_hash exists; field availability does not establish historical canonical completeness",
+    "scope": "Current visible dataset metadata only; other datasets/providers and historical field population remain unestablished"
+  },
+  "metadata_summary": {
+    "expected_export_rows": 21,
+    "inspected_tables": [
+      "blocks",
+      "chunks"
+    ],
+    "metadata_time_utc": "2026-11-07T08:58:00.904410Z",
+    "nested_rows": 0,
+    "source_dataset": "bigquery-public-data.crypto_near_mainnet_us",
+    "top_level_rows": 20,
+    "visible_tables": [
+      "account_changes",
+      "accounts",
+      "blocks",
+      "chunks",
+      "circulating_supply",
+      "execution_outcomes",
+      "ft_balances_daily",
+      "ft_events",
+      "ft_events_contracts_by_account",
+      "nft_events",
+      "nft_events_contracts_by_account",
+      "receipt_actions",
+      "receipt_details",
+      "receipt_origin_transaction",
+      "transaction_actions",
+      "transactions"
+    ]
+  },
+  "row_counts": {
+    "COLUMN": 20,
+    "SUMMARY": 1
+  },
+  "source_hashes": {
+    "analysis/11_collect_canonical_validator_evidence.py": {
+      "bytes": 21427,
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    "analysis/25_supply_source_inventory.py": {
+      "bytes": 15985,
+      "sha256": "91a13afb1a01036d9b9c1f3873514f452c7e4e8f13d20a88129d3d00a2f41e71"
+    },
+    "results/59_persistent_activity_initial_receipt_validation.json": {
+      "bytes": 26224,
+      "sha256": "d30a401e04393c3cf24aeef8dab789a1eaf7fbba6e2f6ac96ee005be15e9765e"
+    },
+    "results/64_supply_source_schema_inventory.json": {
+      "bytes": 6353,
+      "sha256": "8540fdb621046c37cd8343640f194634603ca5a0d3230937b096ae6778c29e38"
+    },
+    "sql/44_supply_source_schema_inventory.sql": {
+      "bytes": 4415,
+      "sha256": "0a459e13712d009f0588cd35d96e41d586cb504ac61c670a5b6fe12360e57183"
+    }
+  },
+  "sql43_comparison": {
+    "authoritative_path": "sql/43_persistent_activity_shared_week_initial_receipts.sql",
+    "authority": "Tracked file referenced by analysis 21/22 and results 59/61",
+    "byte_identical": true,
+    "cleanup_performed": false,
+    "duplicate_path": "sql/43_persistent_activity_shared_week_initial_receipts 2.sql",
+    "files": {
+      "sql/43_persistent_activity_shared_week_initial_receipts 2.sql": {
+        "bytes": 23662,
+        "sha256": "1b6add55a7a34c75d55d7da331a5e13a939cd7b8abab1f0df485b66fdc20dc98"
+      },
+      "sql/43_persistent_activity_shared_week_initial_receipts.sql": {
+        "bytes": 23662,
+        "sha256": "1b6add55a7a34c75d55d7da331a5e13a939cd7b8abab1f0df485b66fdc20dc98"
+      }
+    },
+    "historical_difference": "Current file has one extra space after its final semicolon, before LF; removing only that byte in memory reproduces result 59's fingerprint",
+    "references": [
+      "analysis/21_validate_initial_receipt_pilot.py: EXTENSION",
+      "analysis/22_validate_shared_week_receipts.py: SQL and preflight",
+      "tests/test_shared_week_receipts.py: validator report/preflight",
+      "results/59_persistent_activity_initial_receipt_validation.json: source_hashes",
+      "results/61_persistent_activity_shared_week_validation.json: source_hashes and prior_validation_provenance"
+    ],
+    "result59_recorded_sql": {
+      "bytes": 23661,
+      "sha256": "b1d0fd263f612360b3ea50a55321b78be68da5d412a3b8cadaa89e8b8525d658"
+    }
+  },
+  "status": "METADATA_EXPORT_COMPLETE_OBSERVED_SCHEMA_ONLY",
+  "subsidies_yocto": null
+}

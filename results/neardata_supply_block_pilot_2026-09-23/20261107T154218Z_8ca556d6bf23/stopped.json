@@ -1,0 +1,5 @@
+{
+  "attempts": 1,
+  "automatic_retry": false,
+  "error": "ValueError: Failed/incomplete HTTP transport/status: 302; evidence retained"
+}

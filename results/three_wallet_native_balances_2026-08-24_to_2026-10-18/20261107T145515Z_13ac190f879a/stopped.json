@@ -1,0 +1,6 @@
+{
+  "attempts": 3,
+  "automatic_retry": false,
+  "error": "ValueError: Failed/incomplete HTTP transport; evidence retained",
+  "request_id": "opening-3"
+}

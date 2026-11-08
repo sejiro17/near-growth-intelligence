@@ -1,0 +1,18 @@
+POST /v0/transactions HTTP/1.1
+Host: tx.main.fastnear.com
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: identity
+Connection: close
+User-Agent: near-growth-intelligence-bounded-wx-trace/1
+Content-Length: 284
+
+{
+  "tx_hashes": [
+    "Cmz2hH2cG1kqQyoZTfuGNcN7FYTniDMm5DARwuBab8y7",
+    "BjjiQY6XMfFLP3f4xqn9egRTFwZZPN2EUxbbwMavW4Hs",
+    "GkAGkZW7aTyfQoceLPnjV31FTsPKLc8B2HEUweNVWGhJ",
+    "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+    "74wKVKhaP6RghLEPvtcf2K9MMDsFE943HsPov7PiWgbb"
+  ]
+}

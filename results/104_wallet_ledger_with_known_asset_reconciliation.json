@@ -1,0 +1,468 @@
+{
+  "actual_native_supply_burn": null,
+  "closed_withdrawal_provenance": {
+    "additional_collection": "NONE",
+    "internal_burn_is_not_native_supply_destruction": true,
+    "mechanism": "SUCCESSFUL_SIGNED_INTERNAL_TRANSFER",
+    "native_action_position_in_result75": 1108,
+    "native_receipt_id": "5z6sNxeEzHdQuU1P8j7o5DiTcLxXJdHj9nbFvX5H1wFK",
+    "native_withdrawal_in_native_entries_not_added_again": true,
+    "source": {
+      "bytes": 12583,
+      "path": "results/54_internal_credit_trace_consolidation_2026-09-23.json",
+      "sha256": "089f6b6fe52d7814464ef4f2515db1fc8617fdd2c81e6dd2c4d1e103cb2cb3ef"
+    },
+    "status": {
+      "additional_collection": "NONE; agreed one-candidate boundary reached",
+      "fee_origin": "UNRESOLVED",
+      "single_candidate_trace": "COMPLETE"
+    }
+  },
+  "coverage": {
+    "complete_asset_pair_denominator": null,
+    "complete_multi_asset_coverage": null,
+    "known_asset_boundary_states": 2,
+    "known_owner_asset_pairs_reconciled": 1,
+    "native_boundary_states": 6,
+    "native_wallets": 3,
+    "weekly_multi_asset_stock_reconciliation": null
+  },
+  "known_owner_asset_reconciliations": [
+    {
+      "asset_id": "nep141:wrap.near",
+      "boundary_qualification": "SAVED_OBSERVED_DAY_CLOSES_MATCH_LEDGER_NOT_INDEPENDENT_CANONICAL_EDGE_PROOF",
+      "classification": "ONE_KNOWN_OWNER_ASSET_BALANCE_RECONCILIATION",
+      "closing": {
+        "asset_id": "nep141:wrap.near",
+        "balance_base_units": "1000100010001000100010",
+        "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+        "block_height": 220581912,
+        "contract": "intents.near",
+        "logs": [],
+        "owner": "1csfundsadmin.sputnik-dao.near",
+        "raw_result_utf8": "\"1000100010001000100010\""
+      },
+      "complete_flow_history": null,
+      "contract": "intents.near",
+      "economic_classification": "UNCLASSIFIED_INTERNAL_ASSET_TRANSFER",
+      "limitation": "One known owner\u2013asset stock reconciliation. Zero residual does not rule out offsetting movements or establish complete asset coverage, revenue origin or purchases.",
+      "opening": {
+        "asset_id": "nep141:wrap.near",
+        "balance_base_units": "990000000000000000000000000",
+        "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+        "block_height": 212636216,
+        "contract": "intents.near",
+        "logs": [],
+        "owner": "1csfundsadmin.sputnik-dao.near",
+        "raw_result_utf8": "\"990000000000000000000000000\""
+      },
+      "owner": "1csfundsadmin.sputnik-dao.near",
+      "recipient_is_verified_buyback_wallet_alias": null,
+      "selected_movement": {
+        "amount_base_units": "989998999899989998999899990",
+        "asset_id": "nep141:wrap.near",
+        "asset_index": 0,
+        "contract": "intents.near",
+        "data_index": 0,
+        "economic_classification": "UNCLASSIFIED_INTERNAL_ASSET_TRANSFER",
+        "execution_block_hash": "3PinDypYma8i74BHhpy5LjDjaTZ9wgmv9u949qdCv9da",
+        "execution_block_height": 214941383,
+        "execution_timestamp_utc": "2026-09-09T12:28:03.642806Z",
+        "log_index": 0,
+        "new_owner_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+        "old_owner_id": "1csfundsadmin.sputnik-dao.near",
+        "receipt_id": "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL"
+      },
+      "selected_observed_internal_flow_net_base_units": "-989998999899989998999899990",
+      "stock_change_base_units": "-989998999899989998999899990",
+      "stock_change_minus_selected_flow_base_units": "0",
+      "unit": "internal asset base units; no display conversion assumed"
+    }
+  ],
+  "model_calibration": "Context only: neither native inflows nor the internal balance decrease measures economic fee-bearing activity, capture, purchases or destruction. No scenario default is recalibrated.",
+  "native_coverage": {
+    "amount_scope": "OFFLINE_STRICT_JSON_INTEGER_DECODING_REQUIRED_NO_SQL_MONETARY_TOTAL",
+    "coverage_basis": "OBSERVED_RECORDS_NOT_INDEPENDENT_COMPLETENESS",
+    "duplicate_outcome_action_rows": 0,
+    "economic_scope": "UNCLASSIFIED_TRANSFER_UNTIL_INDEPENDENT_ATTRIBUTION",
+    "excluded_action_rows": 0,
+    "expected_export_rows": 2565,
+    "expected_lookup_days": 63,
+    "failed_action_rows": 3,
+    "function_call_rows": 19,
+    "internal_movement_rows": 2,
+    "lookup_end": "2026-10-24",
+    "lookup_start": "2026-08-23",
+    "observed_action_days": 63,
+    "origin_scope": "RECEIPT_ORIGIN_FIELDS_UNVERIFIED_NO_INITIAL_ONLY_SUBSTITUTE",
+    "output_action_rows": 2498,
+    "outside_execution_window_rows": 244,
+    "scope": "NATIVE_ACTION_CANDIDATES_NOT_COMPLETE_BALANCE_OR_MULTI_ASSET_LEDGER",
+    "successful_local_action_candidates": 2251,
+    "target_end": "2026-10-18",
+    "target_start": "2026-08-24",
+    "time_basis": "EXECUTION_DATE_FOR_ACCEPTED_FLOWS_SOURCE_DATE_RETAINED",
+    "transfer_action_rows": 2479,
+    "unavailable_selector_rows": 0,
+    "unmatched_outcome_action_rows": 0,
+    "unresolved_execution_date_rows": 0
+  },
+  "native_group": {
+    "group_closing_combined_yocto": "3928260793851419843131184048424",
+    "group_combined_balance_change_yocto": "956945107663038969491231387923",
+    "group_observed_external_native_net_yocto": "956945106578107785216431387923",
+    "group_observed_external_net_yocto": "956945106578107785216431387923",
+    "group_opening_combined_yocto": "2971315686188380873639952660501",
+    "group_unexplained_stock_flow_difference_yocto": "1084931184274800000000",
+    "group_valid_external_inflow_subtotal_yocto": "956945106578107785216431387924",
+    "group_valid_external_outflow_subtotal_yocto": "1"
+  },
+  "native_ledger_source": "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json",
+  "native_residual_allocation": "UNCHANGED_UNALLOCATED_NO_RESIDUAL_DRIVEN_COLLECTION",
+  "native_wallets": [
+    {
+      "account_id": "fefundsadmin.sputnik-dao.near",
+      "attributed_fees_yocto": null,
+      "closing": {
+        "account_id": "fefundsadmin.sputnik-dao.near",
+        "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+        "account_state": "PRESENT",
+        "amount": "1913463450661649657631982695779",
+        "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+        "block_height": 220581912,
+        "boundary": "closing",
+        "code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "combined_yocto": "1913463450661649657631982695779",
+        "evidence": {
+          "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01",
+          "endpoint": "https://archival-rpc.mainnet.near.org",
+          "finished_at": "2026-11-07T15:09:30.149909+00:00",
+          "http_status": 200,
+          "metadata": {
+            "bytes": 1345,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-1.metadata.json",
+            "sha256": "216c26801d5f89a3f1f005f5096c67cc0100320da1f3a92f6020e3053ce92fc8"
+          },
+          "request": {
+            "bytes": 234,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-1.request.json",
+            "sha256": "477bf5106eb060fd4adadee38e2174fe700110113cd6ac72058b5b53cdf4712e"
+          },
+          "response": {
+            "bytes": 288,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-1.response.body",
+            "sha256": "f6648282eafdfd89a21f00307709d606c7fe829e67abde691e65d75026886c9f"
+          },
+          "started_at": "2026-11-07T15:09:26.242758+00:00"
+        },
+        "locked": "0",
+        "storage_paid_at": 0,
+        "storage_usage": 550832
+      },
+      "combined_balance_change_near": "303194.134220968599240887798125",
+      "combined_balance_change_yocto": "303194134220968599240887798125",
+      "complete_balance_reconciliation": false,
+      "difference_allocation": "UNALLOCATED",
+      "flow_scopes": {
+        "BETWEEN_SELECTED_WALLETS": {
+          "inflow_yocto": "0",
+          "outflow_yocto": "0"
+        },
+        "EXTERNAL_COUNTERPARTY": {
+          "inflow_yocto": "303194134220968599240887798125",
+          "outflow_yocto": "0"
+        },
+        "SELF_MOVEMENT": {
+          "inflow_yocto": "0",
+          "outflow_yocto": "0"
+        }
+      },
+      "independent_additional_adjustments_yocto": null,
+      "measured_function_call_deposits_already_in_native_totals": {
+        "inflow_yocto": "0",
+        "outflow_yocto": "0"
+      },
+      "observed_native_action_net_yocto": "303194134220968599240887798125",
+      "opening": {
+        "account_id": "fefundsadmin.sputnik-dao.near",
+        "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+        "account_state": "PRESENT",
+        "amount": "1610269316440681058391094897654",
+        "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+        "block_height": 212636216,
+        "boundary": "opening",
+        "code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "combined_yocto": "1610269316440681058391094897654",
+        "evidence": {
+          "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a",
+          "endpoint": "https://archival-rpc.mainnet.near.org",
+          "finished_at": "2026-11-07T14:56:42.860646+00:00",
+          "http_status": 200,
+          "metadata": {
+            "bytes": 1345,
+            "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.metadata.json",
+            "sha256": "a0a5773e57719c026b4f336b07424c75b338ecb025f560a1352b34b8cc45b51b"
+          },
+          "request": {
+            "bytes": 234,
+            "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.request.json",
+            "sha256": "8163f6c9c20ba484acbec702bd56f795946844e010a9d58b6e2e744d2210c878"
+          },
+          "response": {
+            "bytes": 288,
+            "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.response.body",
+            "sha256": "6f84d1b23552b77ff927f986a2932b45e04270221aaf58dcc71ed2b4923fe4d5"
+          },
+          "started_at": "2026-11-07T14:56:20.271830+00:00"
+        },
+        "locked": "0",
+        "storage_paid_at": 0,
+        "storage_usage": 550832
+      },
+      "residual_driven_collection": "NONE",
+      "successful_native_inflow_yocto": "303194134220968599240887798125",
+      "successful_native_outflow_yocto": "0",
+      "unexplained_stock_flow_difference_near": "0.000000000000000000000000",
+      "unexplained_stock_flow_difference_yocto": "0"
+    },
+    {
+      "account_id": "1csfundsadmin.sputnik-dao.near",
+      "attributed_fees_yocto": null,
+      "closing": {
+        "account_id": "1csfundsadmin.sputnik-dao.near",
+        "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+        "account_state": "PRESENT",
+        "amount": "270875891412420848813311023",
+        "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+        "block_height": 220581912,
+        "boundary": "closing",
+        "code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "combined_yocto": "270875891412420848813311023",
+        "evidence": {
+          "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01",
+          "endpoint": "https://archival-rpc.mainnet.near.org",
+          "finished_at": "2026-11-07T15:10:42.111177+00:00",
+          "http_status": 200,
+          "metadata": {
+            "bytes": 1345,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-2.metadata.json",
+            "sha256": "ccc29fb38cf66b6b0ce5fe731771df4679a273585dd6b79fcf0bada1afd1737e"
+          },
+          "request": {
+            "bytes": 235,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-2.request.json",
+            "sha256": "5b666fc96ee71b0687e38002826398e1427e4a83fddada6fc3ee2c2a28831bd7"
+          },
+          "response": {
+            "bytes": 284,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-2.response.body",
+            "sha256": "c8189b8b252de19f7aa2311995b63cca78a1ea65cb662c8470ef96cad6b6cf03"
+          },
+          "started_at": "2026-11-07T15:10:35.168701+00:00"
+        },
+        "locked": "0",
+        "storage_paid_at": 0,
+        "storage_usage": 553750
+      },
+      "combined_balance_change_near": "-502528.062634587711999572284820",
+      "combined_balance_change_yocto": "-502528062634587711999572284820",
+      "complete_balance_reconciliation": false,
+      "difference_allocation": "UNALLOCATED",
+      "flow_scopes": {
+        "BETWEEN_SELECTED_WALLETS": {
+          "inflow_yocto": "0",
+          "outflow_yocto": "502794000000000000000000000000"
+        },
+        "EXTERNAL_COUNTERPARTY": {
+          "inflow_yocto": "265936280481103725627715181",
+          "outflow_yocto": "1"
+        },
+        "SELF_MOVEMENT": {
+          "inflow_yocto": "0",
+          "outflow_yocto": "0"
+        }
+      },
+      "independent_additional_adjustments_yocto": null,
+      "measured_function_call_deposits_already_in_native_totals": {
+        "inflow_yocto": "600000000000000000000000",
+        "outflow_yocto": "1"
+      },
+      "observed_native_action_net_yocto": "-502528063719518896274372284820",
+      "opening": {
+        "account_id": "1csfundsadmin.sputnik-dao.near",
+        "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+        "account_state": "PRESENT",
+        "amount": "502798938526000132848385595843",
+        "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+        "block_height": 212636216,
+        "boundary": "opening",
+        "code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+        "combined_yocto": "502798938526000132848385595843",
+        "evidence": {
+          "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a",
+          "endpoint": "https://archival-rpc.mainnet.near.org",
+          "finished_at": "2026-11-07T14:57:52.333779+00:00",
+          "http_status": 200,
+          "metadata": {
+            "bytes": 1345,
+            "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.metadata.json",
+            "sha256": "6a5bebf78e4a507d132568d17b2083b3c2ca0e39bc63cf5b49117f69636019ca"
+          },
+          "request": {
+            "bytes": 235,
+            "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.request.json",
+            "sha256": "c87bc59dc069c85e34bc8d4c49ed8c28278ca72b2ffa67ece57c525daf1d6381"
+          },
+          "response": {
+            "bytes": 287,
+            "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.response.body",
+            "sha256": "369c54e8dfff16f516c7b8540e37a5d9b26204f20ac1158d38dd82b61c492f36"
+          },
+          "started_at": "2026-11-07T14:57:47.883847+00:00"
+        },
+        "locked": "0",
+        "storage_paid_at": 0,
+        "storage_usage": 550056
+      },
+      "residual_driven_collection": "NONE",
+      "successful_native_inflow_yocto": "265936280481103725627715181",
+      "successful_native_outflow_yocto": "502794000000000000000000000001",
+      "unexplained_stock_flow_difference_near": "0.001084931184274800000000",
+      "unexplained_stock_flow_difference_yocto": "1084931184274800000000"
+    },
+    {
+      "account_id": "buybacks.multisignature.near",
+      "attributed_fees_yocto": null,
+      "closing": {
+        "account_id": "buybacks.multisignature.near",
+        "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+        "account_state": "PRESENT",
+        "amount": "2014526467298357764650388041622",
+        "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+        "block_height": 220581912,
+        "boundary": "closing",
+        "code_hash": "2v9kZJHN4sogHuKtKHaqYAqQBazkqH2cjY1rrjQYvNQa",
+        "combined_yocto": "2014526467298357764650388041622",
+        "evidence": {
+          "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01",
+          "endpoint": "https://archival-rpc.mainnet.near.org",
+          "finished_at": "2026-11-07T15:11:52.165542+00:00",
+          "http_status": 200,
+          "metadata": {
+            "bytes": 1345,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-3.metadata.json",
+            "sha256": "600ee275d3e597c8901baec1866da406e4e236d01254ae4f50fb91d79acd908b"
+          },
+          "request": {
+            "bytes": 233,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-3.request.json",
+            "sha256": "676374cdc89c4e52c126e6c889301b717533dcc38f317a0677f2d6a4bfd58bdc"
+          },
+          "response": {
+            "bytes": 288,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/closing-3.response.body",
+            "sha256": "75e1e00e6681d88dcfc13be94f1d432321501de95a7185d750bab6e7b89ebdc2"
+          },
+          "started_at": "2026-11-07T15:11:47.129649+00:00"
+        },
+        "locked": "0",
+        "storage_paid_at": 0,
+        "storage_usage": 356468
+      },
+      "combined_balance_change_near": "1156279.036076658082249915874618",
+      "combined_balance_change_yocto": "1156279036076658082249915874618",
+      "complete_balance_reconciliation": false,
+      "difference_allocation": "UNALLOCATED",
+      "flow_scopes": {
+        "BETWEEN_SELECTED_WALLETS": {
+          "inflow_yocto": "502794000000000000000000000000",
+          "outflow_yocto": "0"
+        },
+        "EXTERNAL_COUNTERPARTY": {
+          "inflow_yocto": "653485036076658082249915874618",
+          "outflow_yocto": "0"
+        },
+        "SELF_MOVEMENT": {
+          "inflow_yocto": "0",
+          "outflow_yocto": "0"
+        }
+      },
+      "independent_additional_adjustments_yocto": null,
+      "measured_function_call_deposits_already_in_native_totals": {
+        "inflow_yocto": "0",
+        "outflow_yocto": "0"
+      },
+      "observed_native_action_net_yocto": "1156279036076658082249915874618",
+      "opening": {
+        "account_id": "buybacks.multisignature.near",
+        "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+        "account_state": "PRESENT",
+        "amount": "858247431221699682400472167004",
+        "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+        "block_height": 212636216,
+        "boundary": "opening",
+        "code_hash": "2v9kZJHN4sogHuKtKHaqYAqQBazkqH2cjY1rrjQYvNQa",
+        "combined_yocto": "858247431221699682400472167004",
+        "evidence": {
+          "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01",
+          "endpoint": "https://archival-rpc.mainnet.near.org",
+          "finished_at": "2026-11-07T15:08:21.227612+00:00",
+          "http_status": 200,
+          "metadata": {
+            "bytes": 1345,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/opening-3.metadata.json",
+            "sha256": "60f0792fba6b504206984863f04bfd097ab3d86f854d2e58340dfbdce82d0485"
+          },
+          "request": {
+            "bytes": 233,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/opening-3.request.json",
+            "sha256": "ddce6d9918c61e73954f29792f675c02b135dafe194c479bdd068d6f7be328ab"
+          },
+          "response": {
+            "bytes": 287,
+            "path": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01/opening-3.response.body",
+            "sha256": "40e671c6fea986265f319ef4979efc0d9a8ac8382be0ad97b83d9fd959848ede"
+          },
+          "started_at": "2026-11-07T15:08:14.081047+00:00"
+        },
+        "locked": "0",
+        "storage_paid_at": 0,
+        "storage_usage": 356468
+      },
+      "residual_driven_collection": "NONE",
+      "successful_native_inflow_yocto": "1156279036076658082249915874618",
+      "successful_native_outflow_yocto": "0",
+      "unexplained_stock_flow_difference_near": "0.000000000000000000000000",
+      "unexplained_stock_flow_difference_yocto": "0"
+    }
+  ],
+  "schema_version": 1,
+  "sources": [
+    {
+      "bytes": 3110417,
+      "path": "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json",
+      "sha256": "6cbad8621599a6570b0dd97717d8cbee816f73e3277e4842ac33dfd8b22de599"
+    },
+    {
+      "bytes": 7635,
+      "path": "results/102_known_asset_wallet_coverage_2026-08-24_to_2026-10-18.json",
+      "sha256": "1436373f7636a3dbc925a794e9af0416768460e0e964a11488ac094e74ac6539"
+    },
+    {
+      "bytes": 6061,
+      "path": "results/103_known_internal_asset_stock_comparison_2026-08-24_to_2026-10-18.json",
+      "sha256": "4514f8e8bc973f46ef768e69aadc3e4b17369df9e4f3c9f8b152145f58c72258"
+    },
+    {
+      "bytes": 4452,
+      "path": "analysis/47_integrate_known_asset_ledger.py",
+      "sha256": "b36d7f73d471ffdb0114a10fc91bff5e65af29bd46b40b7cf8ebfc8e24532101"
+    }
+  ],
+  "verified_purchases": null,
+  "verified_revenue": null,
+  "window": {
+    "end_exclusive": "2026-10-19T00:00:00Z",
+    "start_inclusive": "2026-08-24T00:00:00Z"
+  }
+}

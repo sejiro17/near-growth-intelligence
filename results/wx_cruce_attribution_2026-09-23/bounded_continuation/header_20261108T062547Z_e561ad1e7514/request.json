@@ -1,0 +1,8 @@
+{
+  "id": "wx-submission-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "5g9o6GLjnU2r56PkRkVY92PQEFNQp82733mmULRDXFTW"
+  }
+}

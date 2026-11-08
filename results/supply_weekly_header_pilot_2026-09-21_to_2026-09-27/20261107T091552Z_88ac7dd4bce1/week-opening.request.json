@@ -1,0 +1,8 @@
+{
+  "id": "week-opening",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "5sUCEyrF5p3RZvx5DzE6zD4gtknwHf8kMmHnH7ViGPWk"
+  }
+}

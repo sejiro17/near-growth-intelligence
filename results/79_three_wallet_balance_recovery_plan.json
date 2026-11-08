@@ -1,0 +1,451 @@
+{
+  "automatic_retries": 0,
+  "complete_stock_flow_comparison": null,
+  "failed_capture": {
+    "captures": [
+      {
+        "bytes": 233,
+        "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-3.request.json",
+        "sha256": "ddce6d9918c61e73954f29792f675c02b135dafe194c479bdd068d6f7be328ab"
+      },
+      {
+        "bytes": 0,
+        "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-3.response.body",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 608,
+        "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-3.metadata.json",
+        "sha256": "c005434650a8840a777cae56c9ee2154c668afbfd99d70a02b7f20e2d58b8b0c"
+      }
+    ],
+    "item": {
+      "account_id": "buybacks.multisignature.near",
+      "boundary": "opening",
+      "request": {
+        "id": "opening-3",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "buybacks.multisignature.near",
+          "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+          "request_type": "view_account"
+        }
+      }
+    },
+    "transport": {
+      "body_complete": false,
+      "endpoint": "https://archival-rpc.mainnet.near.org",
+      "finished_at": "2026-11-07T14:59:17.237261+00:00",
+      "http_status": null,
+      "request_bytes": 233,
+      "request_http_method": "POST",
+      "request_path": "/",
+      "request_sha256": "ddce6d9918c61e73954f29792f675c02b135dafe194c479bdd068d6f7be328ab",
+      "response_bytes": 0,
+      "response_headers": [],
+      "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "started_at": "2026-11-07T14:58:57.347849+00:00",
+      "transport_error": "RemoteDisconnected: Remote end closed connection without response"
+    },
+    "validation_error": "ValueError: Failed/incomplete HTTP transport; evidence retained"
+  },
+  "fallback_endpoints": [],
+  "maximum_combined_attempts": 7,
+  "original_attempts": 3,
+  "original_file_hashes": {
+    "opening-1.metadata.json": {
+      "bytes": 1345,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.metadata.json",
+      "sha256": "a0a5773e57719c026b4f336b07424c75b338ecb025f560a1352b34b8cc45b51b"
+    },
+    "opening-1.request.json": {
+      "bytes": 234,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.request.json",
+      "sha256": "8163f6c9c20ba484acbec702bd56f795946844e010a9d58b6e2e744d2210c878"
+    },
+    "opening-1.response.body": {
+      "bytes": 288,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.response.body",
+      "sha256": "6f84d1b23552b77ff927f986a2932b45e04270221aaf58dcc71ed2b4923fe4d5"
+    },
+    "opening-2.metadata.json": {
+      "bytes": 1345,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.metadata.json",
+      "sha256": "6a5bebf78e4a507d132568d17b2083b3c2ca0e39bc63cf5b49117f69636019ca"
+    },
+    "opening-2.request.json": {
+      "bytes": 235,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.request.json",
+      "sha256": "c87bc59dc069c85e34bc8d4c49ed8c28278ca72b2ffa67ece57c525daf1d6381"
+    },
+    "opening-2.response.body": {
+      "bytes": 287,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.response.body",
+      "sha256": "369c54e8dfff16f516c7b8540e37a5d9b26204f20ac1158d38dd82b61c492f36"
+    },
+    "opening-3.metadata.json": {
+      "bytes": 608,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-3.metadata.json",
+      "sha256": "c005434650a8840a777cae56c9ee2154c668afbfd99d70a02b7f20e2d58b8b0c"
+    },
+    "opening-3.request.json": {
+      "bytes": 233,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-3.request.json",
+      "sha256": "ddce6d9918c61e73954f29792f675c02b135dafe194c479bdd068d6f7be328ab"
+    },
+    "opening-3.response.body": {
+      "bytes": 0,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-3.response.body",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "run.json": {
+      "bytes": 7198,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/run.json",
+      "sha256": "68b970c48b3903b5e38ff96063c5cc67c4749e2a8f2c318888cca0ff0daecee6"
+    },
+    "stopped.json": {
+      "bytes": 155,
+      "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/stopped.json",
+      "sha256": "23087d96107d8639c3480683c86c164ef962b9e10fc70e79cce862e1097ead76"
+    }
+  },
+  "original_plan": {
+    "automatic_retries": 0,
+    "boundaries": {
+      "closing": {
+        "date": "2026-10-18",
+        "hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+        "height": 220581912,
+        "saved_timestamp_utc": "2026-10-18 23:59:59.997115 UTC"
+      },
+      "opening": {
+        "date": "2026-08-23",
+        "hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+        "height": 212636216,
+        "saved_timestamp_utc": "2026-08-23 23:59:59.540769 UTC"
+      }
+    },
+    "boundary_precision": "Saved UTC timestamps have microsecond precision; view_account echoes height/hash, not timestamps",
+    "boundary_status": "SAVED_OBSERVED_DAY_CLOSES_MATCH_LEDGER_NOT_INDEPENDENT_CANONICAL_EDGE_PROOF",
+    "comparison": "(closing amount+locked - opening amount+locked) - (successful execution-dated native inflows-outflows)",
+    "connect_timeout_seconds": 15,
+    "endpoint": "https://archival-rpc.mainnet.near.org",
+    "fallback_endpoints": [],
+    "in_window_actions_checked": 2254,
+    "network": "mainnet",
+    "nonexistent_policy": "Exact structured UNKNOWN_ACCOUNT with matching account/hash/height is explicit absence; balances remain null pending lifecycle evidence",
+    "output_root": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18",
+    "references": [
+      "https://docs.near.org/api/rpc/providers",
+      "https://docs.near.org/api/rpc/contracts#view-account",
+      "https://raw.githubusercontent.com/near/nearcore/2.9.0/chain/jsonrpc-primitives/src/types/query.rs"
+    ],
+    "request_count": 6,
+    "request_timeout_seconds": 60,
+    "requests": [
+      {
+        "account_id": "fefundsadmin.sputnik-dao.near",
+        "boundary": "opening",
+        "request": {
+          "id": "opening-1",
+          "jsonrpc": "2.0",
+          "method": "query",
+          "params": {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+            "request_type": "view_account"
+          }
+        }
+      },
+      {
+        "account_id": "1csfundsadmin.sputnik-dao.near",
+        "boundary": "opening",
+        "request": {
+          "id": "opening-2",
+          "jsonrpc": "2.0",
+          "method": "query",
+          "params": {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+            "request_type": "view_account"
+          }
+        }
+      },
+      {
+        "account_id": "buybacks.multisignature.near",
+        "boundary": "opening",
+        "request": {
+          "id": "opening-3",
+          "jsonrpc": "2.0",
+          "method": "query",
+          "params": {
+            "account_id": "buybacks.multisignature.near",
+            "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+            "request_type": "view_account"
+          }
+        }
+      },
+      {
+        "account_id": "fefundsadmin.sputnik-dao.near",
+        "boundary": "closing",
+        "request": {
+          "id": "closing-1",
+          "jsonrpc": "2.0",
+          "method": "query",
+          "params": {
+            "account_id": "fefundsadmin.sputnik-dao.near",
+            "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+            "request_type": "view_account"
+          }
+        }
+      },
+      {
+        "account_id": "1csfundsadmin.sputnik-dao.near",
+        "boundary": "closing",
+        "request": {
+          "id": "closing-2",
+          "jsonrpc": "2.0",
+          "method": "query",
+          "params": {
+            "account_id": "1csfundsadmin.sputnik-dao.near",
+            "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+            "request_type": "view_account"
+          }
+        }
+      },
+      {
+        "account_id": "buybacks.multisignature.near",
+        "boundary": "closing",
+        "request": {
+          "id": "closing-3",
+          "jsonrpc": "2.0",
+          "method": "query",
+          "params": {
+            "account_id": "buybacks.multisignature.near",
+            "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+            "request_type": "view_account"
+          }
+        }
+      }
+    ],
+    "source_hashes": {
+      "analysis/11_collect_canonical_validator_evidence.py": {
+        "bytes": 21427,
+        "path": "analysis/11_collect_canonical_validator_evidence.py",
+        "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+      },
+      "analysis/14_decode_frontend_native_transfers.py": {
+        "bytes": 15196,
+        "path": "analysis/14_decode_frontend_native_transfers.py",
+        "sha256": "0998bb9ef520c47ce13a2e62fe70037472a17ebdff5caa748ade0ebb054c1c1d"
+      },
+      "analysis/29_wallet_native_flow_candidates.py": {
+        "bytes": 22877,
+        "path": "analysis/29_wallet_native_flow_candidates.py",
+        "sha256": "5dc7a29e5b4ee939049182799188c1cb316787faff954cca33e416cdd15642e2"
+      },
+      "analysis/30_wallet_saved_evidence_ledger.py": {
+        "bytes": 11555,
+        "path": "analysis/30_wallet_saved_evidence_ledger.py",
+        "sha256": "2e53ba38550d280c45e0e6b2231b8c4c2c08ac42040db70a8030bfcc5731743e"
+      },
+      "analysis/31_wallet_historical_balances.py": {
+        "bytes": 19244,
+        "path": "analysis/31_wallet_historical_balances.py",
+        "sha256": "ab5134e0316e5c161cb4429319bbd4c9200c549901ba096b58e7cd71ad5f1a95"
+      },
+      "results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv": {
+        "bytes": 16967,
+        "path": "results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv",
+        "sha256": "874e7d867e663dcb02c3e021c0fe37b9476b94de4212dc03bd3305b0f50fbe37"
+      },
+      "results/74_three_wallet_native_flow_candidates_2026-08-24_to_2026-10-18.json": {
+        "bytes": 10892456,
+        "path": "results/74_three_wallet_native_flow_candidates_2026-08-24_to_2026-10-18.json",
+        "sha256": "48015cf9e13629c4ce751b88b160d07779cf7820ad9517f745c69f7a436a2b67"
+      },
+      "results/75_three_wallet_native_flows_decoded_2026-08-24_to_2026-10-18.json": {
+        "bytes": 3270108,
+        "path": "results/75_three_wallet_native_flows_decoded_2026-08-24_to_2026-10-18.json",
+        "sha256": "b32bd48f35ef4adc7507ef6802458d723e5bd3642afe66141b6219979c71c5ec"
+      },
+      "results/76_three_wallet_saved_evidence_ledger_validation.json": {
+        "bytes": 57243,
+        "path": "results/76_three_wallet_saved_evidence_ledger_validation.json",
+        "sha256": "36cad11a7f133d3ad29c45ddbe3a12d3526aa0bbe90d7f81ee9f00f8661d5212"
+      },
+      "sql/28_daily_supply_checks.sql": {
+        "bytes": 3612,
+        "path": "sql/28_daily_supply_checks.sql",
+        "sha256": "b6eb75a135817bb996604df8d85de321e269c4cf636718a3e9db9011933ee613"
+      },
+      "sql/45_three_wallet_native_flow_candidates.sql": {
+        "bytes": 14533,
+        "path": "sql/45_three_wallet_native_flow_candidates.sql",
+        "sha256": "305e4a5568c9d101377ac08ebb7921b7b00c0a8e0ad6204a8c791e765ecc00cb"
+      }
+    },
+    "spacing_seconds": 65,
+    "window_end_exclusive": "2026-10-19T00:00:00Z",
+    "window_start_inclusive": "2026-08-24T00:00:00Z"
+  },
+  "original_run_dir": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a",
+  "pending_requests": [
+    {
+      "account_id": "buybacks.multisignature.near",
+      "boundary": "opening",
+      "request": {
+        "id": "opening-3",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "buybacks.multisignature.near",
+          "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+          "request_type": "view_account"
+        }
+      }
+    },
+    {
+      "account_id": "fefundsadmin.sputnik-dao.near",
+      "boundary": "closing",
+      "request": {
+        "id": "closing-1",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+          "request_type": "view_account"
+        }
+      }
+    },
+    {
+      "account_id": "1csfundsadmin.sputnik-dao.near",
+      "boundary": "closing",
+      "request": {
+        "id": "closing-2",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+          "request_type": "view_account"
+        }
+      }
+    },
+    {
+      "account_id": "buybacks.multisignature.near",
+      "boundary": "closing",
+      "request": {
+        "id": "closing-3",
+        "jsonrpc": "2.0",
+        "method": "query",
+        "params": {
+          "account_id": "buybacks.multisignature.near",
+          "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+          "request_type": "view_account"
+        }
+      }
+    }
+  ],
+  "recovery_directory": "results/three_wallet_native_balance_recovery_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a_recovery_01",
+  "recovery_request_count": 4,
+  "source_files": [
+    {
+      "bytes": 10486,
+      "path": "analysis/32_recover_wallet_historical_balances.py",
+      "sha256": "e18341b6d9bdba03b6c4d94a1ba3a566dead9ba4cbaba65d3173cbd09e217b45"
+    },
+    {
+      "bytes": 19244,
+      "path": "analysis/31_wallet_historical_balances.py",
+      "sha256": "ab5134e0316e5c161cb4429319bbd4c9200c549901ba096b58e7cd71ad5f1a95"
+    },
+    {
+      "bytes": 6774,
+      "path": "results/77_three_wallet_historical_balance_request_plan.json",
+      "sha256": "256964dc467028984e2fedcd295de6d36341147c0ed741e83687fa9841d6a626"
+    }
+  ],
+  "status": "PARTIAL_RUN_VALIDATED_RECOVERY_PREPARED_NOT_COLLECTED",
+  "unique_account_boundary_pairs": 6,
+  "validated_request_ids": [
+    "opening-1",
+    "opening-2"
+  ],
+  "validated_states": [
+    {
+      "account_id": "fefundsadmin.sputnik-dao.near",
+      "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+      "account_state": "PRESENT",
+      "amount": "1610269316440681058391094897654",
+      "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+      "block_height": 212636216,
+      "boundary": "opening",
+      "code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+      "combined_yocto": "1610269316440681058391094897654",
+      "evidence": {
+        "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a",
+        "endpoint": "https://archival-rpc.mainnet.near.org",
+        "finished_at": "2026-11-07T14:56:42.860646+00:00",
+        "http_status": 200,
+        "metadata": {
+          "bytes": 1345,
+          "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.metadata.json",
+          "sha256": "a0a5773e57719c026b4f336b07424c75b338ecb025f560a1352b34b8cc45b51b"
+        },
+        "request": {
+          "bytes": 234,
+          "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.request.json",
+          "sha256": "8163f6c9c20ba484acbec702bd56f795946844e010a9d58b6e2e744d2210c878"
+        },
+        "response": {
+          "bytes": 288,
+          "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-1.response.body",
+          "sha256": "6f84d1b23552b77ff927f986a2932b45e04270221aaf58dcc71ed2b4923fe4d5"
+        },
+        "started_at": "2026-11-07T14:56:20.271830+00:00"
+      },
+      "locked": "0",
+      "storage_paid_at": 0,
+      "storage_usage": 550832
+    },
+    {
+      "account_id": "1csfundsadmin.sputnik-dao.near",
+      "account_identity_basis": "Exact recorded request and JSON-RPC ID; account need not be echoed",
+      "account_state": "PRESENT",
+      "amount": "502798938526000132848385595843",
+      "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+      "block_height": 212636216,
+      "boundary": "opening",
+      "code_hash": "4zSoHkLjJWZm34Psd4Eq2WUXHELt6LxtKmUXpsZWAECp",
+      "combined_yocto": "502798938526000132848385595843",
+      "evidence": {
+        "directory": "/Users/USER/Documents/near-growth-intelligence/results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a",
+        "endpoint": "https://archival-rpc.mainnet.near.org",
+        "finished_at": "2026-11-07T14:57:52.333779+00:00",
+        "http_status": 200,
+        "metadata": {
+          "bytes": 1345,
+          "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.metadata.json",
+          "sha256": "6a5bebf78e4a507d132568d17b2083b3c2ca0e39bc63cf5b49117f69636019ca"
+        },
+        "request": {
+          "bytes": 235,
+          "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.request.json",
+          "sha256": "c87bc59dc069c85e34bc8d4c49ed8c28278ca72b2ffa67ece57c525daf1d6381"
+        },
+        "response": {
+          "bytes": 287,
+          "path": "results/three_wallet_native_balances_2026-08-24_to_2026-10-18/20261107T145515Z_13ac190f879a/opening-2.response.body",
+          "sha256": "369c54e8dfff16f516c7b8540e37a5d9b26204f20ac1158d38dd82b61c492f36"
+        },
+        "started_at": "2026-11-07T14:57:47.883847+00:00"
+      },
+      "locked": "0",
+      "storage_paid_at": 0,
+      "storage_usage": 550056
+    }
+  ]
+}

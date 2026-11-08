@@ -1,0 +1,1120 @@
+{
+  "between_wallet_paths": [
+    {
+      "direct_observed_parent_receipt_ids": [
+        "3Hgpk8ZQJauZwC4RjXLBi9XPpgHM9ES7v5zWE26fAGj5"
+      ],
+      "parent_function_calls": [
+        {
+          "action_index": 0,
+          "args": {
+            "action": "VoteApprove",
+            "id": 5,
+            "proposal": {
+              "Transfer": {
+                "amount": "1000000000000000000000000",
+                "msg": null,
+                "receiver_id": "buybacks.multisignature.near",
+                "token_id": ""
+              }
+            }
+          },
+          "args_base64": "eyJpZCI6NSwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiIxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwibXNnIjpudWxsLCJyZWNlaXZlcl9pZCI6ImJ1eWJhY2tzLm11bHRpc2lnbmF0dXJlLm5lYXIiLCJ0b2tlbl9pZCI6IiJ9fX0=",
+          "args_utf8": "{\"id\":5,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"1000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+          "attached_native_yocto": "0",
+          "child_receipt_ids": [
+            "AWa5AZv74ixovSe88AH34BphxAtxaf4mqsXX2c7YBLMv",
+            "FF2aq98Asa6AJtKrigaTGLUs21aQX3QaURJ2z2o8kKX6",
+            "AnW8vC8wdpS1EdJE6MJDWTM7hDqkYWCDtdeVD6V1RChM"
+          ],
+          "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+          "execution_block_hash": "BLPK1LuorHAS2AGeVjYBpdw4fhy8Bv27xxfMJtTqipsS",
+          "execution_block_height": 213254732,
+          "execution_timestamp_utc": "2026-08-28T09:01:21.229846Z",
+          "logs": [],
+          "method": "act_proposal",
+          "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+          "receipt_id": "3Hgpk8ZQJauZwC4RjXLBi9XPpgHM9ES7v5zWE26fAGj5",
+          "receiver": "1csfundsadmin.sputnik-dao.near",
+          "status": "SUCCESS_VALUE"
+        }
+      ],
+      "scope": "SUCCESSFUL_NATIVE_CHILD_NOT_COMPLETE_CHAIN_OR_VERIFIED_REVENUE_OR_BUYBACK",
+      "sibling_callbacks": [
+        {
+          "action_index": 0,
+          "args": {
+            "proposal_id": 5
+          },
+          "args_base64": "eyJwcm9wb3NhbF9pZCI6NX0=",
+          "args_utf8": "{\"proposal_id\":5}",
+          "attached_native_yocto": "0",
+          "child_receipt_ids": [
+            "BXjo3rSV3HcnDSxVUMYfy9pA2e7C3tBFpHdfSx4ALRd"
+          ],
+          "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+          "execution_block_hash": "4bggJnjgzcuVpUcppngSAiRsQRCXzfRpwvAFX5rJUwoD",
+          "execution_block_height": 213254734,
+          "execution_timestamp_utc": "2026-08-28T09:01:22.276276Z",
+          "logs": [],
+          "method": "on_proposal_callback",
+          "predecessor": "1csfundsadmin.sputnik-dao.near",
+          "receipt_id": "FF2aq98Asa6AJtKrigaTGLUs21aQX3QaURJ2z2o8kKX6",
+          "receiver": "1csfundsadmin.sputnik-dao.near",
+          "status": "FAILURE"
+        }
+      ],
+      "transfer": {
+        "accepted_local_native_amount": true,
+        "action_index": 0,
+        "action_kind": "TRANSFER",
+        "amount_basis": "OBSERVED_TRANSFER_NESTED_JSON_STRING",
+        "amount_near": "1.000000000000000000000000",
+        "amount_yocto": "1000000000000000000000000",
+        "delegation_flag": false,
+        "economic_classification": "UNCLASSIFIED_TRANSFER",
+        "execution_block_hash": "E2cr82aTP8Sk3EC5VGTDMK9FvqLCQXeuhCDsE7sbMJqT",
+        "execution_block_height": 213254733,
+        "execution_check": "SUCCESS_LOCAL_RECEIPT",
+        "execution_timestamp_utc": "2026-08-28T09:01:21.761524Z",
+        "execution_window": "IN_TARGET_WINDOW",
+        "movement_scope": "BETWEEN_SELECTED_WALLETS",
+        "origin_transaction_hash": null,
+        "predecessor": "1csfundsadmin.sputnik-dao.near",
+        "raw_args_json": "\"{\\\"deposit\\\":\\\"1000000000000000000000000\\\"}\"",
+        "receipt_id": "AWa5AZv74ixovSe88AH34BphxAtxaf4mqsXX2c7YBLMv",
+        "receiver": "buybacks.multisignature.near",
+        "signer_account_id": "sponsor.trezu.near",
+        "source_block_hash": "E2cr82aTP8Sk3EC5VGTDMK9FvqLCQXeuhCDsE7sbMJqT",
+        "source_block_height": 213254733,
+        "source_chunk_hash": "6uG9htVUfoKjBqm7u2jiVHc5SA4M5vt2dVL5GbEUKbqe",
+        "source_shard_id": 8,
+        "source_timestamp_utc": "2026-08-28T09:01:21.761524Z"
+      },
+      "unobserved_direct_children": [
+        "AnW8vC8wdpS1EdJE6MJDWTM7hDqkYWCDtdeVD6V1RChM"
+      ]
+    },
+    {
+      "direct_observed_parent_receipt_ids": [
+        "H3x3oiMHeeKRTwdSrzv4ULifZkCcYrVfyyPAZEZQUFur"
+      ],
+      "parent_function_calls": [
+        {
+          "action_index": 0,
+          "args": {
+            "action": "VoteApprove",
+            "id": 9,
+            "proposal": {
+              "Transfer": {
+                "amount": "502793000000000000000000000000",
+                "msg": null,
+                "receiver_id": "buybacks.multisignature.near",
+                "token_id": ""
+              }
+            }
+          },
+          "args_base64": "eyJpZCI6OSwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiI1MDI3OTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtc2ciOm51bGwsInJlY2VpdmVyX2lkIjoiYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciIsInRva2VuX2lkIjoiIn19fQ==",
+          "args_utf8": "{\"id\":9,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"502793000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+          "attached_native_yocto": "0",
+          "child_receipt_ids": [
+            "6bnALp1E4P2rLBDKcp3UA6YGzwpssQ1Xus2suXzYvtvH",
+            "AAdEnbk4NiXXdARxfkywiUp64KjnuEerX9c2bbUijUG1",
+            "FoDWcvsWW79wWLbw6TbFhG7fGB3QhtX615xUkd8Az3rC"
+          ],
+          "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+          "execution_block_hash": "HmcWYaeevfZbaRMaoWcCqJZbTsCTRK8oDURfzwPpYZeb",
+          "execution_block_height": 214930816,
+          "execution_timestamp_utc": "2026-09-09T10:39:09.955962Z",
+          "logs": [],
+          "method": "act_proposal",
+          "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+          "receipt_id": "H3x3oiMHeeKRTwdSrzv4ULifZkCcYrVfyyPAZEZQUFur",
+          "receiver": "1csfundsadmin.sputnik-dao.near",
+          "status": "SUCCESS_VALUE"
+        }
+      ],
+      "scope": "SUCCESSFUL_NATIVE_CHILD_NOT_COMPLETE_CHAIN_OR_VERIFIED_REVENUE_OR_BUYBACK",
+      "sibling_callbacks": [
+        {
+          "action_index": 0,
+          "args": {
+            "proposal_id": 9
+          },
+          "args_base64": "eyJwcm9wb3NhbF9pZCI6OX0=",
+          "args_utf8": "{\"proposal_id\":9}",
+          "attached_native_yocto": "0",
+          "child_receipt_ids": [
+            "C9nW89TrxZd9EmBAsU4hMfFcg4cBhLcadjKLJCn9tEFD"
+          ],
+          "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+          "execution_block_hash": "5dHpiEymKgq51C6p6S2vjhDPGi599JbbmA8iZMg1tDrS",
+          "execution_block_height": 214930818,
+          "execution_timestamp_utc": "2026-09-09T10:39:11.280005Z",
+          "logs": [],
+          "method": "on_proposal_callback",
+          "predecessor": "1csfundsadmin.sputnik-dao.near",
+          "receipt_id": "AAdEnbk4NiXXdARxfkywiUp64KjnuEerX9c2bbUijUG1",
+          "receiver": "1csfundsadmin.sputnik-dao.near",
+          "status": "FAILURE"
+        }
+      ],
+      "transfer": {
+        "accepted_local_native_amount": true,
+        "action_index": 0,
+        "action_kind": "TRANSFER",
+        "amount_basis": "OBSERVED_TRANSFER_NESTED_JSON_STRING",
+        "amount_near": "502793.000000000000000000000000",
+        "amount_yocto": "502793000000000000000000000000",
+        "delegation_flag": false,
+        "economic_classification": "UNCLASSIFIED_TRANSFER",
+        "execution_block_hash": "6WB5DsH3v64vNoFmFmBzBJgnMu84xnvA17ewisAWsjad",
+        "execution_block_height": 214930817,
+        "execution_check": "SUCCESS_LOCAL_RECEIPT",
+        "execution_timestamp_utc": "2026-09-09T10:39:10.545953Z",
+        "execution_window": "IN_TARGET_WINDOW",
+        "movement_scope": "BETWEEN_SELECTED_WALLETS",
+        "origin_transaction_hash": null,
+        "predecessor": "1csfundsadmin.sputnik-dao.near",
+        "raw_args_json": "\"{\\\"deposit\\\":\\\"502793000000000000000000000000\\\"}\"",
+        "receipt_id": "6bnALp1E4P2rLBDKcp3UA6YGzwpssQ1Xus2suXzYvtvH",
+        "receiver": "buybacks.multisignature.near",
+        "signer_account_id": "sponsor.trezu.near",
+        "source_block_hash": "6WB5DsH3v64vNoFmFmBzBJgnMu84xnvA17ewisAWsjad",
+        "source_block_height": 214930817,
+        "source_chunk_hash": "3pwDXuCaUU1hjHVRXrhooHDC1z1E82683E7HMeU2PvfH",
+        "source_shard_id": 8,
+        "source_timestamp_utc": "2026-09-09T10:39:10.545953Z"
+      },
+      "unobserved_direct_children": [
+        "FoDWcvsWW79wWLbw6TbFhG7fGB3QhtX615xUkd8Az3rC"
+      ]
+    }
+  ],
+  "derivation": [
+    {
+      "bytes": 11555,
+      "path": "analysis/30_wallet_saved_evidence_ledger.py",
+      "sha256": "2e53ba38550d280c45e0e6b2231b8c4c2c08ac42040db70a8030bfcc5731743e"
+    },
+    {
+      "bytes": 22877,
+      "path": "analysis/29_wallet_native_flow_candidates.py",
+      "sha256": "5dc7a29e5b4ee939049182799188c1cb316787faff954cca33e416cdd15642e2"
+    },
+    {
+      "bytes": 15196,
+      "path": "analysis/14_decode_frontend_native_transfers.py",
+      "sha256": "0998bb9ef520c47ce13a2e62fe70037472a17ebdff5caa748ade0ebb054c1c1d"
+    },
+    {
+      "bytes": 14533,
+      "path": "sql/45_three_wallet_native_flow_candidates.sql",
+      "sha256": "305e4a5568c9d101377ac08ebb7921b7b00c0a8e0ad6204a8c791e765ecc00cb"
+    }
+  ],
+  "function_calls": [
+    {
+      "action_index": 0,
+      "args": {
+        "proposal": {
+          "description": "",
+          "kind": {
+            "Transfer": {
+              "amount": "502793000000000000000000000000",
+              "msg": null,
+              "receiver_id": "buybacks.multisignature.near",
+              "token_id": ""
+            }
+          }
+        }
+      },
+      "args_base64": "eyJwcm9wb3NhbCI6eyJkZXNjcmlwdGlvbiI6IiIsImtpbmQiOnsiVHJhbnNmZXIiOnsidG9rZW5faWQiOiIiLCJyZWNlaXZlcl9pZCI6ImJ1eWJhY2tzLm11bHRpc2lnbmF0dXJlLm5lYXIiLCJhbW91bnQiOiI1MDI3OTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtc2ciOm51bGx9fX19",
+      "args_utf8": "{\"proposal\":{\"description\":\"\",\"kind\":{\"Transfer\":{\"token_id\":\"\",\"receiver_id\":\"buybacks.multisignature.near\",\"amount\":\"502793000000000000000000000000\",\"msg\":null}}}}",
+      "attached_native_yocto": "100000000000000000000000",
+      "child_receipt_ids": [
+        "2DZs9QShzCBQkA12EjZTVPrutNnFi4eDc9pXPmNKoGnF"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "FBAk8bHLpBVhNgJqUu29R6uwwZyXQSxYTPqjDUWhxMuN",
+      "execution_block_height": 213126423,
+      "execution_timestamp_utc": "2026-08-27T11:03:38.294882Z",
+      "logs": [],
+      "method": "add_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "2W3ZBaHEp5uZLftrMq2RpvUr2XLrzj6JPy6PAaSZWaHm",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal": {
+          "description": "* Proposal Action: payment-transfer <br>* Recipient: buybacks.multisignature.near <br>* Destination Network: nep141:wrap.near <br>* Deposit Address: c19da9ebe8e0c14892a98403fe6ae4bc4b81ac1fd83cb568b849ec685716c5e2 <br>* Signature: ed25519:5zhUycs7emV37F141Ro99D2Et2AfKgx31JUgXJ7HCXV29NJspag1VbG5DwKtCD9JETtpGk8Nr8W1xAXSGEuLY6YD",
+          "kind": {
+            "FunctionCall": {
+              "actions": [
+                {
+                  "args": "eyJyZWNlaXZlcl9pZCI6ImMxOWRhOWViZThlMGMxNDg5MmE5ODQwM2ZlNmFlNGJjNGI4MWFjMWZkODNjYjU2OGI4NDllYzY4NTcxNmM1ZTIiLCJhbW91bnQiOiI5OTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                  "deposit": "1",
+                  "gas": "150000000000000",
+                  "method_name": "mt_transfer"
+                }
+              ],
+              "receiver_id": "intents.near"
+            }
+          }
+        }
+      },
+      "args_base64": "eyJwcm9wb3NhbCI6eyJkZXNjcmlwdGlvbiI6IiogUHJvcG9zYWwgQWN0aW9uOiBwYXltZW50LXRyYW5zZmVyIDxicj4qIFJlY2lwaWVudDogYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciA8YnI+KiBEZXN0aW5hdGlvbiBOZXR3b3JrOiBuZXAxNDE6d3JhcC5uZWFyIDxicj4qIERlcG9zaXQgQWRkcmVzczogYzE5ZGE5ZWJlOGUwYzE0ODkyYTk4NDAzZmU2YWU0YmM0YjgxYWMxZmQ4M2NiNTY4Yjg0OWVjNjg1NzE2YzVlMiA8YnI+KiBTaWduYXR1cmU6IGVkMjU1MTk6NXpoVXljczdlbVYzN0YxNDFSbzk5RDJFdDJBZktneDMxSlVnWEo3SENYVjI5TkpzcGFnMVZiRzVEd0t0Q0Q5SkVUdHBHazhOcjhXMXhBWFNHRXVMWTZZRCIsImtpbmQiOnsiRnVuY3Rpb25DYWxsIjp7InJlY2VpdmVyX2lkIjoiaW50ZW50cy5uZWFyIiwiYWN0aW9ucyI6W3sibWV0aG9kX25hbWUiOiJtdF90cmFuc2ZlciIsImFyZ3MiOiJleUp5WldObGFYWmxjbDlwWkNJNkltTXhPV1JoT1dWaVpUaGxNR014TkRnNU1tRTVPRFF3TTJabE5tRmxOR0pqTkdJNE1XRmpNV1prT0ROallqVTJPR0k0TkRsbFl6WTROVGN4Tm1NMVpUSWlMQ0poYlc5MWJuUWlPaUk1T1RBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREFpTENKMGIydGxibDlwWkNJNkltNWxjREUwTVRwM2NtRndMbTVsWVhJaWZRPT0iLCJkZXBvc2l0IjoiMSIsImdhcyI6IjE1MDAwMDAwMDAwMDAwMCJ9XX19fX0=",
+      "args_utf8": "{\"proposal\":{\"description\":\"* Proposal Action: payment-transfer <br>* Recipient: buybacks.multisignature.near <br>* Destination Network: nep141:wrap.near <br>* Deposit Address: c19da9ebe8e0c14892a98403fe6ae4bc4b81ac1fd83cb568b849ec685716c5e2 <br>* Signature: ed25519:5zhUycs7emV37F141Ro99D2Et2AfKgx31JUgXJ7HCXV29NJspag1VbG5DwKtCD9JETtpGk8Nr8W1xAXSGEuLY6YD\",\"kind\":{\"FunctionCall\":{\"receiver_id\":\"intents.near\",\"actions\":[{\"method_name\":\"mt_transfer\",\"args\":\"eyJyZWNlaXZlcl9pZCI6ImMxOWRhOWViZThlMGMxNDg5MmE5ODQwM2ZlNmFlNGJjNGI4MWFjMWZkODNjYjU2OGI4NDllYzY4NTcxNmM1ZTIiLCJhbW91bnQiOiI5OTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\"}]}}}}",
+      "attached_native_yocto": "100000000000000000000000",
+      "child_receipt_ids": [
+        "CeikCizDCAk7gtLTnMzu4vvWsgYFQRN4ZMRN1gKaqZzB"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "HEzpKzPbUeQwzJXTVtf8gcPXwfoEL6dSPV6HVcGyQqKs",
+      "execution_block_height": 213126576,
+      "execution_timestamp_utc": "2026-08-27T11:05:13.604715Z",
+      "logs": [],
+      "method": "add_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "5a38ctPbTXs5ncyUREXZ7WA5PRipzbT22qv2qMrryr28",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 5,
+        "proposal": {
+          "Transfer": {
+            "amount": "1000000000000000000000000",
+            "msg": null,
+            "receiver_id": "buybacks.multisignature.near",
+            "token_id": ""
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6NSwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiIxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwibXNnIjpudWxsLCJyZWNlaXZlcl9pZCI6ImJ1eWJhY2tzLm11bHRpc2lnbmF0dXJlLm5lYXIiLCJ0b2tlbl9pZCI6IiJ9fX0=",
+      "args_utf8": "{\"id\":5,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"1000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "BpGT657AUEyjcj229rcaTCvV84sc4hLaDquMDQew2Qht"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "Bvw3gLv46s76QJ7aFTY4T6TkaFjvbgcYWStHwRKaoz5t",
+      "execution_block_height": 213126467,
+      "execution_timestamp_utc": "2026-08-27T11:04:06.221618Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "FhA29Vyody29BpvtofnGoZhg5xwz8erCgAN86nk2s33x",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal": {
+          "description": "",
+          "kind": {
+            "Transfer": {
+              "amount": "1000000000000000000000000",
+              "msg": null,
+              "receiver_id": "buybacks.multisignature.near",
+              "token_id": ""
+            }
+          }
+        }
+      },
+      "args_base64": "eyJwcm9wb3NhbCI6eyJkZXNjcmlwdGlvbiI6IiIsImtpbmQiOnsiVHJhbnNmZXIiOnsidG9rZW5faWQiOiIiLCJyZWNlaXZlcl9pZCI6ImJ1eWJhY2tzLm11bHRpc2lnbmF0dXJlLm5lYXIiLCJhbW91bnQiOiIxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwibXNnIjpudWxsfX19fQ==",
+      "args_utf8": "{\"proposal\":{\"description\":\"\",\"kind\":{\"Transfer\":{\"token_id\":\"\",\"receiver_id\":\"buybacks.multisignature.near\",\"amount\":\"1000000000000000000000000\",\"msg\":null}}}}",
+      "attached_native_yocto": "100000000000000000000000",
+      "child_receipt_ids": [
+        "B4U8Z8Md2ZtEF8tpHwmSetiHe7St1R2EydnZketuxnis"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "ChiDTMAWXP8vedNDE3XPGvTPUpmMGwpEqrtGqbD8FvcV",
+      "execution_block_height": 213126318,
+      "execution_timestamp_utc": "2026-08-27T11:02:31.464277Z",
+      "logs": [],
+      "method": "add_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "vC1yNMLBV6KrRZVQsAPLxM21UqU4btkw26Hc3SPKuzy",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 5,
+        "proposal": {
+          "Transfer": {
+            "amount": "1000000000000000000000000",
+            "msg": null,
+            "receiver_id": "buybacks.multisignature.near",
+            "token_id": ""
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6NSwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiIxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwibXNnIjpudWxsLCJyZWNlaXZlcl9pZCI6ImJ1eWJhY2tzLm11bHRpc2lnbmF0dXJlLm5lYXIiLCJ0b2tlbl9pZCI6IiJ9fX0=",
+      "args_utf8": "{\"id\":5,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"1000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "AWa5AZv74ixovSe88AH34BphxAtxaf4mqsXX2c7YBLMv",
+        "FF2aq98Asa6AJtKrigaTGLUs21aQX3QaURJ2z2o8kKX6",
+        "AnW8vC8wdpS1EdJE6MJDWTM7hDqkYWCDtdeVD6V1RChM"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "BLPK1LuorHAS2AGeVjYBpdw4fhy8Bv27xxfMJtTqipsS",
+      "execution_block_height": 213254732,
+      "execution_timestamp_utc": "2026-08-28T09:01:21.229846Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+      "receipt_id": "3Hgpk8ZQJauZwC4RjXLBi9XPpgHM9ES7v5zWE26fAGj5",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 6,
+        "proposal": {
+          "Transfer": {
+            "amount": "502793000000000000000000000000",
+            "msg": null,
+            "receiver_id": "buybacks.multisignature.near",
+            "token_id": ""
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6NiwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiI1MDI3OTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtc2ciOm51bGwsInJlY2VpdmVyX2lkIjoiYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciIsInRva2VuX2lkIjoiIn19fQ==",
+      "args_utf8": "{\"id\":6,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"502793000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "He1JTXnNQcna2sFSfAdw9iWyZMdx2roRkDXcSy9FGPAw"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "BTP9ZCFMyEv1k81kg2MtNt9wwWhkT4qsnoqzNjRSaWHf",
+      "execution_block_height": 213255352,
+      "execution_timestamp_utc": "2026-08-28T09:07:45.799103Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+      "receipt_id": "8wLHjQ73PP9aG9brqWRKhxuNnnxBW1QHyAmLNEbScyqz",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 7,
+        "proposal": {
+          "FunctionCall": {
+            "actions": [
+              {
+                "args": "eyJyZWNlaXZlcl9pZCI6ImMxOWRhOWViZThlMGMxNDg5MmE5ODQwM2ZlNmFlNGJjNGI4MWFjMWZkODNjYjU2OGI4NDllYzY4NTcxNmM1ZTIiLCJhbW91bnQiOiI5OTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                "deposit": "1",
+                "gas": "150000000000000",
+                "method_name": "mt_transfer"
+              }
+            ],
+            "receiver_id": "intents.near"
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6NywiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJGdW5jdGlvbkNhbGwiOnsiYWN0aW9ucyI6W3siYXJncyI6ImV5SnlaV05sYVhabGNsOXBaQ0k2SW1NeE9XUmhPV1ZpWlRobE1HTXhORGc1TW1FNU9EUXdNMlpsTm1GbE5HSmpOR0k0TVdGak1XWmtPRE5qWWpVMk9HSTRORGxsWXpZNE5UY3hObU0xWlRJaUxDSmhiVzkxYm5RaU9pSTVPVEF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQWlMQ0owYjJ0bGJsOXBaQ0k2SW01bGNERTBNVHAzY21Gd0xtNWxZWElpZlE9PSIsImRlcG9zaXQiOiIxIiwiZ2FzIjoiMTUwMDAwMDAwMDAwMDAwIiwibWV0aG9kX25hbWUiOiJtdF90cmFuc2ZlciJ9XSwicmVjZWl2ZXJfaWQiOiJpbnRlbnRzLm5lYXIifX19",
+      "args_utf8": "{\"id\":7,\"action\":\"VoteApprove\",\"proposal\":{\"FunctionCall\":{\"actions\":[{\"args\":\"eyJyZWNlaXZlcl9pZCI6ImMxOWRhOWViZThlMGMxNDg5MmE5ODQwM2ZlNmFlNGJjNGI4MWFjMWZkODNjYjU2OGI4NDllYzY4NTcxNmM1ZTIiLCJhbW91bnQiOiI5OTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\",\"method_name\":\"mt_transfer\"}],\"receiver_id\":\"intents.near\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "5hMezR7arzozuQFUTjfPJyEaLntwGMYhfy31BKJP2782"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "9V9Mn4gtQ5fyiR98dZksZ8qXxgwdjSqVTK7EVPpPnoFb",
+      "execution_block_height": 213255699,
+      "execution_timestamp_utc": "2026-08-28T09:11:19.990441Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+      "receipt_id": "E9xLvSireJmmMpbFbxryTioCBG3R9DcEPiggT9X1h66z",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal_id": 5
+      },
+      "args_base64": "eyJwcm9wb3NhbF9pZCI6NX0=",
+      "args_utf8": "{\"proposal_id\":5}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "BXjo3rSV3HcnDSxVUMYfy9pA2e7C3tBFpHdfSx4ALRd"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "4bggJnjgzcuVpUcppngSAiRsQRCXzfRpwvAFX5rJUwoD",
+      "execution_block_height": 213254734,
+      "execution_timestamp_utc": "2026-08-28T09:01:22.276276Z",
+      "logs": [],
+      "method": "on_proposal_callback",
+      "predecessor": "1csfundsadmin.sputnik-dao.near",
+      "receipt_id": "FF2aq98Asa6AJtKrigaTGLUs21aQX3QaURJ2z2o8kKX6",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "FAILURE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "amount": "989998999899989998999899990",
+        "receiver_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+        "token_id": "nep141:wrap.near"
+      },
+      "args_base64": "eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+      "args_utf8": "{\"receiver_id\":\"c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c\",\"amount\":\"989998999899989998999899990\",\"token_id\":\"nep141:wrap.near\"}",
+      "attached_native_yocto": "1",
+      "child_receipt_ids": [
+        "3aSFZh9Ubr21oirn6wes4ohxTU4ByL3vCxgwnXcnS3ZU"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "3PinDypYma8i74BHhpy5LjDjaTZ9wgmv9u949qdCv9da",
+      "execution_block_height": 214941383,
+      "execution_timestamp_utc": "2026-09-09T12:28:03.642806Z",
+      "logs": [
+        "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_transfer\",\"data\":[{\"old_owner_id\":\"1csfundsadmin.sputnik-dao.near\",\"new_owner_id\":\"c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"989998999899989998999899990\"]}]}"
+      ],
+      "method": "mt_transfer",
+      "predecessor": "1csfundsadmin.sputnik-dao.near",
+      "receipt_id": "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL",
+      "receiver": "intents.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal_id": 10
+      },
+      "args_base64": "eyJwcm9wb3NhbF9pZCI6MTB9",
+      "args_utf8": "{\"proposal_id\":10}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "DGymxR4BbNC7NoR1AH64nzBeVeKQz2quzajSKhfMrLkh"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "DBcaTBvY2i8LUes7ncjqrRGpuFypiXM2DaVd49GpWn3E",
+      "execution_block_height": 214941384,
+      "execution_timestamp_utc": "2026-09-09T12:28:04.010488Z",
+      "logs": [],
+      "method": "on_proposal_callback",
+      "predecessor": "1csfundsadmin.sputnik-dao.near",
+      "receipt_id": "4sN3udXMBzec4mr33nrxXUxy5GqHzR9TZ6NyGf2M3oBH",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "FAILURE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 10,
+        "proposal": {
+          "FunctionCall": {
+            "actions": [
+              {
+                "args": "eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                "deposit": "1",
+                "gas": "150000000000000",
+                "method_name": "mt_transfer"
+              }
+            ],
+            "receiver_id": "intents.near"
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6MTAsImFjdGlvbiI6IlZvdGVBcHByb3ZlIiwicHJvcG9zYWwiOnsiRnVuY3Rpb25DYWxsIjp7ImFjdGlvbnMiOlt7ImFyZ3MiOiJleUp5WldObGFYWmxjbDlwWkNJNkltTXdZV1JrWVdNNU16Vm1ORGxpWVdWbE1Ua3dPV0UyWm1JMFpqQTRZalUzTXpVeVlUWmtPR000WTJVM1pHRXlOMk0xT1RVME5XWmxORFZqTlRnek9HTWlMQ0poYlc5MWJuUWlPaUk1T0RrNU9UZzVPVGs0T1RrNU9EazVPVGc1T1RrNE9UazVPVEFpTENKMGIydGxibDlwWkNJNkltNWxjREUwTVRwM2NtRndMbTVsWVhJaWZRPT0iLCJkZXBvc2l0IjoiMSIsImdhcyI6IjE1MDAwMDAwMDAwMDAwMCIsIm1ldGhvZF9uYW1lIjoibXRfdHJhbnNmZXIifV0sInJlY2VpdmVyX2lkIjoiaW50ZW50cy5uZWFyIn19fQ==",
+      "args_utf8": "{\"id\":10,\"action\":\"VoteApprove\",\"proposal\":{\"FunctionCall\":{\"actions\":[{\"args\":\"eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\",\"method_name\":\"mt_transfer\"}],\"receiver_id\":\"intents.near\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "DguDkXDXXsMhnoQ2fyr2amWXQWqYMivPzzwR5tnR5Thq"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "7iFKWJ13ef1ANuVmRqPeR3BFupHQ9atWSTwgDXFf8AaP",
+      "execution_block_height": 214939627,
+      "execution_timestamp_utc": "2026-09-09T12:10:00.132141Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "5M22MZT2mFySBC1btvFcjEiJ4wsHssh8AaTkWpu3D8EU",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 9,
+        "proposal": {
+          "Transfer": {
+            "amount": "502793000000000000000000000000",
+            "msg": null,
+            "receiver_id": "buybacks.multisignature.near",
+            "token_id": ""
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6OSwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiI1MDI3OTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtc2ciOm51bGwsInJlY2VpdmVyX2lkIjoiYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciIsInRva2VuX2lkIjoiIn19fQ==",
+      "args_utf8": "{\"id\":9,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"502793000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "4FCJ1QatpExHuvdmB6SneDSe52pG3uLNj37QBsgQ3m8k"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "2MZKWUDZukGc5xq9Gz4PCgbgVmaqSmfZ76A8SX7RNG8k",
+      "execution_block_height": 214930026,
+      "execution_timestamp_utc": "2026-09-09T10:31:02.645448Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "9MrUuA9EAjY3rr6VxZmUWmQmMuSzsK7WWcjQYd6DE91E",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 10,
+        "proposal": {
+          "FunctionCall": {
+            "actions": [
+              {
+                "args": "eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                "deposit": "1",
+                "gas": "150000000000000",
+                "method_name": "mt_transfer"
+              }
+            ],
+            "receiver_id": "intents.near"
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6MTAsImFjdGlvbiI6IlZvdGVBcHByb3ZlIiwicHJvcG9zYWwiOnsiRnVuY3Rpb25DYWxsIjp7ImFjdGlvbnMiOlt7ImFyZ3MiOiJleUp5WldObGFYWmxjbDlwWkNJNkltTXdZV1JrWVdNNU16Vm1ORGxpWVdWbE1Ua3dPV0UyWm1JMFpqQTRZalUzTXpVeVlUWmtPR000WTJVM1pHRXlOMk0xT1RVME5XWmxORFZqTlRnek9HTWlMQ0poYlc5MWJuUWlPaUk1T0RrNU9UZzVPVGs0T1RrNU9EazVPVGc1T1RrNE9UazVPVEFpTENKMGIydGxibDlwWkNJNkltNWxjREUwTVRwM2NtRndMbTVsWVhJaWZRPT0iLCJkZXBvc2l0IjoiMSIsImdhcyI6IjE1MDAwMDAwMDAwMDAwMCIsIm1ldGhvZF9uYW1lIjoibXRfdHJhbnNmZXIifV0sInJlY2VpdmVyX2lkIjoiaW50ZW50cy5uZWFyIn19fQ==",
+      "args_utf8": "{\"id\":10,\"action\":\"VoteApprove\",\"proposal\":{\"FunctionCall\":{\"actions\":[{\"args\":\"eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\",\"method_name\":\"mt_transfer\"}],\"receiver_id\":\"intents.near\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL",
+        "4sN3udXMBzec4mr33nrxXUxy5GqHzR9TZ6NyGf2M3oBH",
+        "7z97XNLe2iiNLmez17yzBTaL811UNi8MNh4V2spcbA2y"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "AGQDzWPHKx6ZPeW7oXYsDZrbcyJyTQQqstriWzyGrDns",
+      "execution_block_height": 214941382,
+      "execution_timestamp_utc": "2026-09-09T12:28:02.926800Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+      "receipt_id": "9xWS4KCs7dEJQeC5wGeM6ETpXoNDpzjUrXJtmjeTt3Kc",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal_id": 9
+      },
+      "args_base64": "eyJwcm9wb3NhbF9pZCI6OX0=",
+      "args_utf8": "{\"proposal_id\":9}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "C9nW89TrxZd9EmBAsU4hMfFcg4cBhLcadjKLJCn9tEFD"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "5dHpiEymKgq51C6p6S2vjhDPGi599JbbmA8iZMg1tDrS",
+      "execution_block_height": 214930818,
+      "execution_timestamp_utc": "2026-09-09T10:39:11.280005Z",
+      "logs": [],
+      "method": "on_proposal_callback",
+      "predecessor": "1csfundsadmin.sputnik-dao.near",
+      "receipt_id": "AAdEnbk4NiXXdARxfkywiUp64KjnuEerX9c2bbUijUG1",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "FAILURE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteReject",
+        "id": 8,
+        "proposal": {
+          "FunctionCall": {
+            "actions": [
+              {
+                "args": "eyJyZWNlaXZlcl9pZCI6ImM2YzEyOTRmYmE5NzdkZGQxNGZjOThlNGYxZGU2MmI0OTJkNjJhNWQxNjdmZjNhNDNmMGRhODg3OGE3MTM4MTkiLCJhbW91bnQiOiI5OTAwOTkwMDk5MDA5OTAwOTkwMDk5MDA5OTEiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                "deposit": "1",
+                "gas": "150000000000000",
+                "method_name": "mt_transfer"
+              }
+            ],
+            "receiver_id": "intents.near"
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6OCwiYWN0aW9uIjoiVm90ZVJlamVjdCIsInByb3Bvc2FsIjp7IkZ1bmN0aW9uQ2FsbCI6eyJhY3Rpb25zIjpbeyJhcmdzIjoiZXlKeVpXTmxhWFpsY2w5cFpDSTZJbU0yWXpFeU9UUm1ZbUU1Tnpka1pHUXhOR1pqT1RobE5HWXhaR1UyTW1JME9USmtOakpoTldReE5qZG1aak5oTkRObU1HUmhPRGczT0dFM01UTTRNVGtpTENKaGJXOTFiblFpT2lJNU9UQXdPVGt3TURrNU1EQTVPVEF3T1Rrd01EazVNREE1T1RFaUxDSjBiMnRsYmw5cFpDSTZJbTVsY0RFME1UcDNjbUZ3TG01bFlYSWlmUT09IiwiZGVwb3NpdCI6IjEiLCJnYXMiOiIxNTAwMDAwMDAwMDAwMDAiLCJtZXRob2RfbmFtZSI6Im10X3RyYW5zZmVyIn1dLCJyZWNlaXZlcl9pZCI6ImludGVudHMubmVhciJ9fX0=",
+      "args_utf8": "{\"id\":8,\"action\":\"VoteReject\",\"proposal\":{\"FunctionCall\":{\"actions\":[{\"args\":\"eyJyZWNlaXZlcl9pZCI6ImM2YzEyOTRmYmE5NzdkZGQxNGZjOThlNGYxZGU2MmI0OTJkNjJhNWQxNjdmZjNhNDNmMGRhODg3OGE3MTM4MTkiLCJhbW91bnQiOiI5OTAwOTkwMDk5MDA5OTAwOTkwMDk5MDA5OTEiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\",\"method_name\":\"mt_transfer\"}],\"receiver_id\":\"intents.near\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "23pByyvhcfXiYY4BRkvysg9KQLx1hzK3PUEq9bvEoNMD"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "CrjjGB9CSwiyeyyZftF28xi4kxBNf3q1rpxH1wBK1bAq",
+      "execution_block_height": 214939441,
+      "execution_timestamp_utc": "2026-09-09T12:08:05.938993Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "AEosWgmSWCkEVHH9rNPEsWcM6MYE2kkseRDAhXiQrHgp",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal": {
+          "description": "",
+          "kind": {
+            "Transfer": {
+              "amount": "502793000000000000000000000000",
+              "msg": null,
+              "receiver_id": "buybacks.multisignature.near",
+              "token_id": ""
+            }
+          }
+        }
+      },
+      "args_base64": "eyJwcm9wb3NhbCI6eyJkZXNjcmlwdGlvbiI6IiIsImtpbmQiOnsiVHJhbnNmZXIiOnsidG9rZW5faWQiOiIiLCJyZWNlaXZlcl9pZCI6ImJ1eWJhY2tzLm11bHRpc2lnbmF0dXJlLm5lYXIiLCJhbW91bnQiOiI1MDI3OTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtc2ciOm51bGx9fX19",
+      "args_utf8": "{\"proposal\":{\"description\":\"\",\"kind\":{\"Transfer\":{\"token_id\":\"\",\"receiver_id\":\"buybacks.multisignature.near\",\"amount\":\"502793000000000000000000000000\",\"msg\":null}}}}",
+      "attached_native_yocto": "100000000000000000000000",
+      "child_receipt_ids": [
+        "Ewp7azxz3ciokH5JCWWb3qR96RQfaWb7U1VuKnU7qf8A"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "361Rp4KC79rvryHENmsj22PNhCV79HvdFEqF2aseWvJa",
+      "execution_block_height": 214929229,
+      "execution_timestamp_utc": "2026-09-09T10:22:43.083684Z",
+      "logs": [],
+      "method": "add_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "AVjAXGRmDqWUh7WrdMfBr5edG6P95A9E1bryvBKajf2a",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal": {
+          "description": "* Proposal Action: payment-transfer <br>* Recipient: buybacks.multisignature.near <br>* Destination Network: nep141:wrap.near <br>* Network Fee: 0.09899989998999899989999 <br>* Deposit Address: c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c <br>* Signature: ed25519:4SD4NrBuzChUpfmHFDXFScgieZ9iipLAPdtPwuBdfBSCFe3PVLkjum1T2TtuEyPZA92JR3xpK9ZvDf6v763vGdfo",
+          "kind": {
+            "FunctionCall": {
+              "actions": [
+                {
+                  "args": "eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                  "deposit": "1",
+                  "gas": "150000000000000",
+                  "method_name": "mt_transfer"
+                }
+              ],
+              "receiver_id": "intents.near"
+            }
+          }
+        }
+      },
+      "args_base64": "eyJwcm9wb3NhbCI6eyJkZXNjcmlwdGlvbiI6IiogUHJvcG9zYWwgQWN0aW9uOiBwYXltZW50LXRyYW5zZmVyIDxicj4qIFJlY2lwaWVudDogYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciA8YnI+KiBEZXN0aW5hdGlvbiBOZXR3b3JrOiBuZXAxNDE6d3JhcC5uZWFyIDxicj4qIE5ldHdvcmsgRmVlOiAwLjA5ODk5OTg5OTk4OTk5ODk5OTg5OTk5IDxicj4qIERlcG9zaXQgQWRkcmVzczogYzBhZGRhYzkzNWY0OWJhZWUxOTA5YTZmYjRmMDhiNTczNTJhNmQ4YzhjZTdkYTI3YzU5NTQ1ZmU0NWM1ODM4YyA8YnI+KiBTaWduYXR1cmU6IGVkMjU1MTk6NFNENE5yQnV6Q2hVcGZtSEZEWEZTY2dpZVo5aWlwTEFQZHRQd3VCZGZCU0NGZTNQVkxranVtMVQyVHR1RXlQWkE5MkpSM3hwSzladkRmNnY3NjN2R2RmbyIsImtpbmQiOnsiRnVuY3Rpb25DYWxsIjp7InJlY2VpdmVyX2lkIjoiaW50ZW50cy5uZWFyIiwiYWN0aW9ucyI6W3sibWV0aG9kX25hbWUiOiJtdF90cmFuc2ZlciIsImFyZ3MiOiJleUp5WldObGFYWmxjbDlwWkNJNkltTXdZV1JrWVdNNU16Vm1ORGxpWVdWbE1Ua3dPV0UyWm1JMFpqQTRZalUzTXpVeVlUWmtPR000WTJVM1pHRXlOMk0xT1RVME5XWmxORFZqTlRnek9HTWlMQ0poYlc5MWJuUWlPaUk1T0RrNU9UZzVPVGs0T1RrNU9EazVPVGc1T1RrNE9UazVPVEFpTENKMGIydGxibDlwWkNJNkltNWxjREUwTVRwM2NtRndMbTVsWVhJaWZRPT0iLCJkZXBvc2l0IjoiMSIsImdhcyI6IjE1MDAwMDAwMDAwMDAwMCJ9XX19fX0=",
+      "args_utf8": "{\"proposal\":{\"description\":\"* Proposal Action: payment-transfer <br>* Recipient: buybacks.multisignature.near <br>* Destination Network: nep141:wrap.near <br>* Network Fee: 0.09899989998999899989999 <br>* Deposit Address: c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c <br>* Signature: ed25519:4SD4NrBuzChUpfmHFDXFScgieZ9iipLAPdtPwuBdfBSCFe3PVLkjum1T2TtuEyPZA92JR3xpK9ZvDf6v763vGdfo\",\"kind\":{\"FunctionCall\":{\"receiver_id\":\"intents.near\",\"actions\":[{\"method_name\":\"mt_transfer\",\"args\":\"eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\"}]}}}}",
+      "attached_native_yocto": "100000000000000000000000",
+      "child_receipt_ids": [
+        "7cExoZXsJPRLyge9Pp4RG5KTCdWLqrKe6SG17CwrwxMk"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "4S1dWUZoWKXuwAuiU5bjbMb1b5t3LZvP3SEnNp5a581C",
+      "execution_block_height": 214939565,
+      "execution_timestamp_utc": "2026-09-09T12:09:22.109864Z",
+      "logs": [],
+      "method": "add_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "GgwZpZ8NebEdaD1SJsLkuqVif3c3jHWHBewYQNLNz9WC",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "action": "VoteApprove",
+        "id": 9,
+        "proposal": {
+          "Transfer": {
+            "amount": "502793000000000000000000000000",
+            "msg": null,
+            "receiver_id": "buybacks.multisignature.near",
+            "token_id": ""
+          }
+        }
+      },
+      "args_base64": "eyJpZCI6OSwiYWN0aW9uIjoiVm90ZUFwcHJvdmUiLCJwcm9wb3NhbCI6eyJUcmFuc2ZlciI6eyJhbW91bnQiOiI1MDI3OTMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtc2ciOm51bGwsInJlY2VpdmVyX2lkIjoiYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciIsInRva2VuX2lkIjoiIn19fQ==",
+      "args_utf8": "{\"id\":9,\"action\":\"VoteApprove\",\"proposal\":{\"Transfer\":{\"amount\":\"502793000000000000000000000000\",\"msg\":null,\"receiver_id\":\"buybacks.multisignature.near\",\"token_id\":\"\"}}}",
+      "attached_native_yocto": "0",
+      "child_receipt_ids": [
+        "6bnALp1E4P2rLBDKcp3UA6YGzwpssQ1Xus2suXzYvtvH",
+        "AAdEnbk4NiXXdARxfkywiUp64KjnuEerX9c2bbUijUG1",
+        "FoDWcvsWW79wWLbw6TbFhG7fGB3QhtX615xUkd8Az3rC"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "HmcWYaeevfZbaRMaoWcCqJZbTsCTRK8oDURfzwPpYZeb",
+      "execution_block_height": 214930816,
+      "execution_timestamp_utc": "2026-09-09T10:39:09.955962Z",
+      "logs": [],
+      "method": "act_proposal",
+      "predecessor": "745def2beee571628e35743e564687bb11ae1cf312efd3c1e079d679e46e011b",
+      "receipt_id": "H3x3oiMHeeKRTwdSrzv4ULifZkCcYrVfyyPAZEZQUFur",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    },
+    {
+      "action_index": 0,
+      "args": {
+        "proposal": {
+          "description": "* Proposal Action: payment-transfer <br>* Recipient: buybacks.multisignature.near <br>* Destination Network: nep141:wrap.near <br>* Network Fee: 0.099009900990099009900991 <br>* Deposit Address: c6c1294fba977ddd14fc98e4f1de62b492d62a5d167ff3a43f0da8878a713819 <br>* Signature: ed25519:2XFWiFqY4Wso4UaJ5yGZqq7FiVBqbfJ6iSzCRzCNcZWUFLnfGRSg365HZevmXzmnvBdsnhknqyoPApFkbKxRHcKe",
+          "kind": {
+            "FunctionCall": {
+              "actions": [
+                {
+                  "args": "eyJyZWNlaXZlcl9pZCI6ImM2YzEyOTRmYmE5NzdkZGQxNGZjOThlNGYxZGU2MmI0OTJkNjJhNWQxNjdmZjNhNDNmMGRhODg3OGE3MTM4MTkiLCJhbW91bnQiOiI5OTAwOTkwMDk5MDA5OTAwOTkwMDk5MDA5OTEiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+                  "deposit": "1",
+                  "gas": "150000000000000",
+                  "method_name": "mt_transfer"
+                }
+              ],
+              "receiver_id": "intents.near"
+            }
+          }
+        }
+      },
+      "args_base64": "eyJwcm9wb3NhbCI6eyJkZXNjcmlwdGlvbiI6IiogUHJvcG9zYWwgQWN0aW9uOiBwYXltZW50LXRyYW5zZmVyIDxicj4qIFJlY2lwaWVudDogYnV5YmFja3MubXVsdGlzaWduYXR1cmUubmVhciA8YnI+KiBEZXN0aW5hdGlvbiBOZXR3b3JrOiBuZXAxNDE6d3JhcC5uZWFyIDxicj4qIE5ldHdvcmsgRmVlOiAwLjA5OTAwOTkwMDk5MDA5OTAwOTkwMDk5MSA8YnI+KiBEZXBvc2l0IEFkZHJlc3M6IGM2YzEyOTRmYmE5NzdkZGQxNGZjOThlNGYxZGU2MmI0OTJkNjJhNWQxNjdmZjNhNDNmMGRhODg3OGE3MTM4MTkgPGJyPiogU2lnbmF0dXJlOiBlZDI1NTE5OjJYRldpRnFZNFdzbzRVYUo1eUdacXE3RmlWQnFiZko2aVN6Q1J6Q05jWldVRkxuZkdSU2czNjVIWmV2bVh6bW52QmRzbmhrbnF5b1BBcEZrYkt4UkhjS2UiLCJraW5kIjp7IkZ1bmN0aW9uQ2FsbCI6eyJyZWNlaXZlcl9pZCI6ImludGVudHMubmVhciIsImFjdGlvbnMiOlt7Im1ldGhvZF9uYW1lIjoibXRfdHJhbnNmZXIiLCJhcmdzIjoiZXlKeVpXTmxhWFpsY2w5cFpDSTZJbU0yWXpFeU9UUm1ZbUU1Tnpka1pHUXhOR1pqT1RobE5HWXhaR1UyTW1JME9USmtOakpoTldReE5qZG1aak5oTkRObU1HUmhPRGczT0dFM01UTTRNVGtpTENKaGJXOTFiblFpT2lJNU9UQXdPVGt3TURrNU1EQTVPVEF3T1Rrd01EazVNREE1T1RFaUxDSjBiMnRsYmw5cFpDSTZJbTVsY0RFME1UcDNjbUZ3TG01bFlYSWlmUT09IiwiZGVwb3NpdCI6IjEiLCJnYXMiOiIxNTAwMDAwMDAwMDAwMDAifV19fX19",
+      "args_utf8": "{\"proposal\":{\"description\":\"* Proposal Action: payment-transfer <br>* Recipient: buybacks.multisignature.near <br>* Destination Network: nep141:wrap.near <br>* Network Fee: 0.099009900990099009900991 <br>* Deposit Address: c6c1294fba977ddd14fc98e4f1de62b492d62a5d167ff3a43f0da8878a713819 <br>* Signature: ed25519:2XFWiFqY4Wso4UaJ5yGZqq7FiVBqbfJ6iSzCRzCNcZWUFLnfGRSg365HZevmXzmnvBdsnhknqyoPApFkbKxRHcKe\",\"kind\":{\"FunctionCall\":{\"receiver_id\":\"intents.near\",\"actions\":[{\"method_name\":\"mt_transfer\",\"args\":\"eyJyZWNlaXZlcl9pZCI6ImM2YzEyOTRmYmE5NzdkZGQxNGZjOThlNGYxZGU2MmI0OTJkNjJhNWQxNjdmZjNhNDNmMGRhODg3OGE3MTM4MTkiLCJhbW91bnQiOiI5OTAwOTkwMDk5MDA5OTAwOTkwMDk5MDA5OTEiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==\",\"deposit\":\"1\",\"gas\":\"150000000000000\"}]}}}}",
+      "attached_native_yocto": "100000000000000000000000",
+      "child_receipt_ids": [
+        "8ijnesFK6iWWKrFUkjaW4VA77Jxp7GncXkYwAymji9CG"
+      ],
+      "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+      "execution_block_hash": "AYu547KZZNrJEg4DaiTTn9hYBy3ezjCTJLmaRFp3FP5X",
+      "execution_block_height": 214928722,
+      "execution_timestamp_utc": "2026-09-09T10:17:24.778770Z",
+      "logs": [],
+      "method": "add_proposal",
+      "predecessor": "f7e23b5d988c35bd9a598671dcdb231e9763b47ac5105eb5d0c9e1427040d6c6",
+      "receipt_id": "juBbUFrCSemhkXqqq9Y69r53YtMy3uuCoEvGF3TFt24",
+      "receiver": "1csfundsadmin.sputnik-dao.near",
+      "status": "SUCCESS_VALUE"
+    }
+  ],
+  "limitations": [
+    "Selected receipt graph is incomplete; unobserved children remain unresolved",
+    "Proposal creation is not linked to numeric proposal IDs by amount resemblance",
+    "Failed sibling callbacks do not undo a separately successful native child",
+    "No historical account-balance bridge or complete multi-asset ledger",
+    "Economic origin, ultimate ownership and completed buybacks remain unverified"
+  ],
+  "logged_internal_asset_transfers": [
+    {
+      "amount_base_units": "989998999899989998999899990",
+      "asset_id": "nep141:wrap.near",
+      "asset_index": 0,
+      "data_index": 0,
+      "economic_classification": "UNCLASSIFIED_INTERNAL_ASSET_TRANSFER",
+      "log_index": 0,
+      "matching_call": {
+        "action_index": 0,
+        "args": {
+          "amount": "989998999899989998999899990",
+          "receiver_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+          "token_id": "nep141:wrap.near"
+        },
+        "args_base64": "eyJyZWNlaXZlcl9pZCI6ImMwYWRkYWM5MzVmNDliYWVlMTkwOWE2ZmI0ZjA4YjU3MzUyYTZkOGM4Y2U3ZGEyN2M1OTU0NWZlNDVjNTgzOGMiLCJhbW91bnQiOiI5ODk5OTg5OTk4OTk5ODk5OTg5OTk4OTk5OTAiLCJ0b2tlbl9pZCI6Im5lcDE0MTp3cmFwLm5lYXIifQ==",
+        "args_utf8": "{\"receiver_id\":\"c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c\",\"amount\":\"989998999899989998999899990\",\"token_id\":\"nep141:wrap.near\"}",
+        "attached_native_yocto": "1",
+        "child_receipt_ids": [
+          "3aSFZh9Ubr21oirn6wes4ohxTU4ByL3vCxgwnXcnS3ZU"
+        ],
+        "economic_classification": "UNCLASSIFIED_ACTION_CANDIDATE",
+        "execution_block_hash": "3PinDypYma8i74BHhpy5LjDjaTZ9wgmv9u949qdCv9da",
+        "execution_block_height": 214941383,
+        "execution_timestamp_utc": "2026-09-09T12:28:03.642806Z",
+        "logs": [
+          "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_transfer\",\"data\":[{\"old_owner_id\":\"1csfundsadmin.sputnik-dao.near\",\"new_owner_id\":\"c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"989998999899989998999899990\"]}]}"
+        ],
+        "method": "mt_transfer",
+        "predecessor": "1csfundsadmin.sputnik-dao.near",
+        "receipt_id": "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL",
+        "receiver": "intents.near",
+        "status": "SUCCESS_VALUE"
+      },
+      "new_owner_id": "c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c",
+      "old_owner_id": "1csfundsadmin.sputnik-dao.near",
+      "raw_log": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_transfer\",\"data\":[{\"old_owner_id\":\"1csfundsadmin.sputnik-dao.near\",\"new_owner_id\":\"c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"989998999899989998999899990\"]}]}",
+      "receipt_id": "4sBxF4Uut6w9Kv6kgcwzLBVKk8MTgEEu6yaETfDNN3QL",
+      "separate_from_native_flow_totals": true
+    }
+  ],
+  "method_counts": {
+    "act_proposal": 9,
+    "add_proposal": 6,
+    "mt_transfer": 1,
+    "on_proposal_callback": 3
+  },
+  "observed_distinct_receipts": 2498,
+  "source_summary": {
+    "amount_scope": "OFFLINE_STRICT_JSON_INTEGER_DECODING_REQUIRED_NO_SQL_MONETARY_TOTAL",
+    "coverage_basis": "OBSERVED_RECORDS_NOT_INDEPENDENT_COMPLETENESS",
+    "duplicate_outcome_action_rows": 0,
+    "economic_scope": "UNCLASSIFIED_TRANSFER_UNTIL_INDEPENDENT_ATTRIBUTION",
+    "excluded_action_rows": 0,
+    "expected_export_rows": 2565,
+    "expected_lookup_days": 63,
+    "failed_action_rows": 3,
+    "function_call_rows": 19,
+    "internal_movement_rows": 2,
+    "lookup_end": "2026-10-24",
+    "lookup_start": "2026-08-23",
+    "observed_action_days": 63,
+    "origin_scope": "RECEIPT_ORIGIN_FIELDS_UNVERIFIED_NO_INITIAL_ONLY_SUBSTITUTE",
+    "output_action_rows": 2498,
+    "outside_execution_window_rows": 244,
+    "scope": "NATIVE_ACTION_CANDIDATES_NOT_COMPLETE_BALANCE_OR_MULTI_ASSET_LEDGER",
+    "successful_local_action_candidates": 2251,
+    "target_end": "2026-10-18",
+    "target_start": "2026-08-24",
+    "time_basis": "EXECUTION_DATE_FOR_ACCEPTED_FLOWS_SOURCE_DATE_RETAINED",
+    "transfer_action_rows": 2479,
+    "unavailable_selector_rows": 0,
+    "unmatched_outcome_action_rows": 0,
+    "unresolved_execution_date_rows": 0
+  },
+  "sources": [
+    {
+      "bytes": 10892456,
+      "path": "results/74_three_wallet_native_flow_candidates_2026-08-24_to_2026-10-18.json",
+      "sha256": "48015cf9e13629c4ce751b88b160d07779cf7820ad9517f745c69f7a436a2b67"
+    },
+    {
+      "bytes": 3270108,
+      "path": "results/75_three_wallet_native_flows_decoded_2026-08-24_to_2026-10-18.json",
+      "sha256": "b32bd48f35ef4adc7507ef6802458d723e5bd3642afe66141b6219979c71c5ec"
+    }
+  ],
+  "status": "VALIDATED_SAVED_NATIVE_ACTION_LAYER_AND_BOUNDED_MECHANISMS",
+  "verified_buyback_yocto": null,
+  "verified_revenue_yocto": null,
+  "wallets": [
+    {
+      "account_id": "fefundsadmin.sputnik-dao.near",
+      "complete_native_balance_net_yocto": null,
+      "observed_action_layer_net_yocto": "303194134220968599240887798125",
+      "valid_inflow_subtotal_yocto": "303194134220968599240887798125",
+      "valid_outflow_subtotal_yocto": "0"
+    },
+    {
+      "account_id": "1csfundsadmin.sputnik-dao.near",
+      "complete_native_balance_net_yocto": null,
+      "observed_action_layer_net_yocto": "-502528063719518896274372284820",
+      "valid_inflow_subtotal_yocto": "265936280481103725627715181",
+      "valid_outflow_subtotal_yocto": "502794000000000000000000000001"
+    },
+    {
+      "account_id": "buybacks.multisignature.near",
+      "complete_native_balance_net_yocto": null,
+      "observed_action_layer_net_yocto": "1156279036076658082249915874618",
+      "valid_inflow_subtotal_yocto": "1156279036076658082249915874618",
+      "valid_outflow_subtotal_yocto": "0"
+    }
+  ],
+  "weekly_native_flows": [
+    {
+      "accepted_action_count": 162,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "35589558492045410583929124811",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "1311600000000000000000000",
+          "observed_outflow_yocto": "1000000000000000000000000"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "74058329583837601624260211735",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-08-30",
+      "week_start": "2026-08-24"
+    },
+    {
+      "accepted_action_count": 241,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "45727241880581489521279030205",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "0",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "119802048975740655380782604811",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-09-06",
+      "week_start": "2026-08-31"
+    },
+    {
+      "accepted_action_count": 198,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "23259921561429270957416608654",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "1418620000000000000000000",
+          "observed_outflow_yocto": "502793000000000000000000000001"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "571195727894400902941455068560",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-09-13",
+      "week_start": "2026-09-07"
+    },
+    {
+      "accepted_action_count": 299,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "37032197765503493110203990197",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "263107004321113754467715181",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "101115736406384223233693058296",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-09-20",
+      "week_start": "2026-09-14"
+    },
+    {
+      "accepted_action_count": 434,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "44207102703967330195024647557",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "99056159989971160000000",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "88564157514314172036671154012",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-09-27",
+      "week_start": "2026-09-21"
+    },
+    {
+      "accepted_action_count": 294,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "48306461046755092044827340006",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "0",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "61489062486333780543974850602",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-10-04",
+      "week_start": "2026-09-28"
+    },
+    {
+      "accepted_action_count": 353,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "35190269289567434523878666340",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "0",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "77433728146389448373588365469",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-10-11",
+      "week_start": "2026-10-05"
+    },
+    {
+      "accepted_action_count": 270,
+      "wallets": [
+        {
+          "account_id": "fefundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "33881381481119078304328390355",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "1csfundsadmin.sputnik-dao.near",
+          "observed_inflow_yocto": "0",
+          "observed_outflow_yocto": "0"
+        },
+        {
+          "account_id": "buybacks.multisignature.near",
+          "observed_inflow_yocto": "62620245069257298115490561133",
+          "observed_outflow_yocto": "0"
+        }
+      ],
+      "week_end": "2026-10-18",
+      "week_start": "2026-10-12"
+    }
+  ]
+}

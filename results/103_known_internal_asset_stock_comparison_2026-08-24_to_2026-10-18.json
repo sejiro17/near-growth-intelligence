@@ -1,0 +1,136 @@
+{
+  "boundary_qualification": "SAVED_OBSERVED_DAY_CLOSES_MATCH_LEDGER_NOT_INDEPENDENT_CANONICAL_EDGE_PROOF",
+  "classification": "KNOWN_INTERNAL_ASSET_STOCK_COMPARISON_INCOMPLETE_FLOW_COVERAGE",
+  "complete_asset_universe": null,
+  "coverage": {
+    "boundary_states": 2,
+    "complete_asset_pair_denominator": null,
+    "known_owner_asset_pairs_tested": 1,
+    "selected_wallets": 3
+  },
+  "interpretation": "Difference is unmeasured net movements relative to a selected flow subset, not fees, revenue, a balancing transfer or proof of complete history. Native NEAR and its internal representation are separate ledgers, not additive value capture.",
+  "selected_observed_internal_flow_net_base_units": "-989998999899989998999899990",
+  "sources": [
+    {
+      "bytes": 3110417,
+      "path": "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json",
+      "sha256": "6cbad8621599a6570b0dd97717d8cbee816f73e3277e4842ac33dfd8b22de599"
+    },
+    {
+      "bytes": 6774,
+      "path": "results/77_three_wallet_historical_balance_request_plan.json",
+      "sha256": "256964dc467028984e2fedcd295de6d36341147c0ed741e83687fa9841d6a626"
+    },
+    {
+      "bytes": 14599,
+      "path": "analysis/46_known_asset_wallet_coverage.py",
+      "sha256": "2432ed0f5b00f7b0b193774b955996d6c1b550f03d82272e798be4449633e143"
+    },
+    {
+      "bytes": 16524,
+      "path": "analysis/42_trace_wx_cruce.py",
+      "sha256": "29982ceda68c4561b189d62ec42c6c3f8838082c1dc3fd22cb0a07a693a56e8e"
+    },
+    {
+      "bytes": 21427,
+      "path": "analysis/11_collect_canonical_validator_evidence.py",
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    {
+      "bytes": 14599,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/collector.py",
+      "sha256": "2432ed0f5b00f7b0b193774b955996d6c1b550f03d82272e798be4449633e143"
+    },
+    {
+      "bytes": 1313,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/metadata.json",
+      "sha256": "7e389d24055138fe8cb85f98dcc79a782a7d7a564047c303650237981118949d"
+    },
+    {
+      "bytes": 641,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/request.http",
+      "sha256": "f60e1ba57a47ab2adf8a4bdcf90c587e468143e360e6ab38336cc9f45d62bb0a"
+    },
+    {
+      "bytes": 403,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/request.json",
+      "sha256": "bcc30ba9e3ccc14b6f4192c8f442ea17c0fb397383a5d43d3eeee55833735c51"
+    },
+    {
+      "bytes": 248,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/response.body",
+      "sha256": "18b540ff9e19f52b8c4453ea792eef80c451e569be6c428712ed475c43f2e3e0"
+    },
+    {
+      "bytes": 259,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/run.json",
+      "sha256": "d655f94ba561dea13526daf0409fded694136f56cd6f87b11e3861f08d0aee04"
+    },
+    {
+      "bytes": 330,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/opening_20261108T074541Z_fd6bdbd9d2f7/validation.json",
+      "sha256": "cf3277e8759d7ee81c50a3e110c602af015b89195313d4fd253f4ad2da3885ec"
+    },
+    {
+      "bytes": 14599,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/collector.py",
+      "sha256": "2432ed0f5b00f7b0b193774b955996d6c1b550f03d82272e798be4449633e143"
+    },
+    {
+      "bytes": 1313,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/metadata.json",
+      "sha256": "206154b7365d5405ff9db2052b2ae8fcd581356b17dbb157c2843d8a86bbd3d7"
+    },
+    {
+      "bytes": 641,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/request.http",
+      "sha256": "1af072c2bb013b167ff27c964799ee9c4ddfc8c320c4bf07a04ca3ef7c89d65f"
+    },
+    {
+      "bytes": 403,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/request.json",
+      "sha256": "47e652d6a2c0ba417ad7d95fe6268c89e049ee38120e972fda3c0c40b6bdabc7"
+    },
+    {
+      "bytes": 233,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/response.body",
+      "sha256": "7a99ab5ba5244de7129fcca0d3adad5941e998e51ff80432f427c89fc08bfec1"
+    },
+    {
+      "bytes": 259,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/run.json",
+      "sha256": "d655f94ba561dea13526daf0409fded694136f56cd6f87b11e3861f08d0aee04"
+    },
+    {
+      "bytes": 320,
+      "path": "results/known_asset_wallet_stocks_2026-08-24_to_2026-10-18/closing_20261108T074652Z_12819f4e5335/validation.json",
+      "sha256": "b224fcb6f10658f9d93d5200d93aa12db862d09d4454189ce19108739f019d81"
+    }
+  ],
+  "states": {
+    "closing": {
+      "asset_id": "nep141:wrap.near",
+      "balance_base_units": "1000100010001000100010",
+      "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+      "block_height": 220581912,
+      "contract": "intents.near",
+      "logs": [],
+      "owner": "1csfundsadmin.sputnik-dao.near",
+      "raw_result_utf8": "\"1000100010001000100010\""
+    },
+    "opening": {
+      "asset_id": "nep141:wrap.near",
+      "balance_base_units": "990000000000000000000000000",
+      "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+      "block_height": 212636216,
+      "contract": "intents.near",
+      "logs": [],
+      "owner": "1csfundsadmin.sputnik-dao.near",
+      "raw_result_utf8": "\"990000000000000000000000000\""
+    }
+  },
+  "stock_change_base_units": "-989998999899989998999899990",
+  "stock_change_minus_selected_flow_base_units": "0",
+  "verified_purchases": null,
+  "verified_revenue": null
+}

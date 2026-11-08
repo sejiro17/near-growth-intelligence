@@ -1,0 +1,67 @@
+{
+  "automatic_retries": 0,
+  "does_not_establish": "Last canonical block of each UTC day, intervening predecessor/epoch coverage, weekly independent issuance/debit, gross burn or subsidies",
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "fallback_endpoints": [],
+  "network": "mainnet",
+  "output_root": "results/supply_weekly_header_pilot_2026-09-21_to_2026-09-27",
+  "request_count": 2,
+  "source_hashes": {
+    "analysis/11_collect_canonical_validator_evidence.py": {
+      "bytes": 21427,
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    "analysis/25_supply_source_inventory.py": {
+      "bytes": 15985,
+      "sha256": "91a13afb1a01036d9b9c1f3873514f452c7e4e8f13d20a88129d3d00a2f41e71"
+    },
+    "results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv": {
+      "bytes": 16967,
+      "sha256": "874e7d867e663dcb02c3e021c0fe37b9476b94de4212dc03bd3305b0f50fbe37"
+    },
+    "results/64_supply_source_schema_inventory.json": {
+      "bytes": 6353,
+      "sha256": "8540fdb621046c37cd8343640f194634603ca5a0d3230937b096ae6778c29e38"
+    },
+    "sql/44_supply_source_schema_inventory.sql": {
+      "bytes": 4415,
+      "sha256": "0a459e13712d009f0588cd35d96e41d586cb504ac61c670a5b6fe12360e57183"
+    }
+  },
+  "spacing_seconds": 65,
+  "supports": "Exact supplies at two saved observed weekly endpoints, plus epoch-ID seeds and ordered chunk manifests",
+  "targets": [
+    {
+      "date": "2026-09-20",
+      "hash": "5sUCEyrF5p3RZvx5DzE6zD4gtknwHf8kMmHnH7ViGPWk",
+      "height": 216553375,
+      "id": "week-opening",
+      "request": {
+        "id": "week-opening",
+        "jsonrpc": "2.0",
+        "method": "block",
+        "params": {
+          "block_id": "5sUCEyrF5p3RZvx5DzE6zD4gtknwHf8kMmHnH7ViGPWk"
+        }
+      },
+      "saved_timestamp_utc": "2026-09-20 23:59:59.381027 UTC"
+    },
+    {
+      "date": "2026-09-27",
+      "hash": "5VLWBqYvC98Q5qUzbQ8nHN1wcGZ9CnLxShZgojz4ohUa",
+      "height": 217555961,
+      "id": "week-closing",
+      "request": {
+        "id": "week-closing",
+        "jsonrpc": "2.0",
+        "method": "block",
+        "params": {
+          "block_id": "5VLWBqYvC98Q5qUzbQ8nHN1wcGZ9CnLxShZgojz4ohUa"
+        }
+      },
+      "saved_timestamp_utc": "2026-09-27 23:59:59.588158 UTC"
+    }
+  ],
+  "week_end": "2026-09-27",
+  "week_start": "2026-09-21"
+}

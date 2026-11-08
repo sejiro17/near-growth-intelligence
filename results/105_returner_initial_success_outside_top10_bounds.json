@@ -1,0 +1,142 @@
+{
+  "classification": "TRANSACTION_LEVEL_INITIAL_SUCCESS_BOUNDS_NOT_ACCOUNT_RATES",
+  "display_rounding": "Lower percentages rounded down and upper percentages up to two decimals using integer division. Exact counts and rational numerators/denominators are authoritative. Zero outside denominator has no percentage.",
+  "formula": {
+    "B": "N-T",
+    "N": "population transactions",
+    "S": "successful assessed initial receipts",
+    "T": "transactions from this population's own ten leading returners",
+    "lower": "max(0,S-T)",
+    "upper": "min(S,B)"
+  },
+  "limitations": [
+    "Proves minimum successful initial receipts beyond each population's own ten leading signers within observed coverage, not measured account-level success rates, independent humans, revenue or complete-chain settlement.",
+    "Cohorts overlap and use different submission weeks; never sum their bounds or interpret differences causally.",
+    "Complete membership and receipt lists are not exported. Alignment uses reviewed, hashed SQL definitions and validated aggregate controls; no independent row-level set-equality or ingestion-completeness proof is available.",
+    "Six-day initial-execution tails and observed receipt-owner uniqueness windows remain unchanged. Spending is not allocated outside the top ten by these counts."
+  ],
+  "membership_and_unit_review": {
+    "SQL41": "Starting-week signer membership intersected with exact follow-up-week activity; own ranking by transactions DESC, signer ID; top-ten transactions summed once per account.",
+    "SQL42": "17 August members active in 12\u201318 October; all selected submission-week transactions; EXACT_WEEK_8_RETURNERS excludes no account for missing +1/+4 activity.",
+    "SQL43": "10 August members active in 5\u201311 October; AUG10_EXACT_WEEK8 distinct from repeated-checkpoint subset. Counts and frozen expected membership controls match SQL41.",
+    "unit": "Submitted transactions, each with one assessed initial receipt; actions and descendant receipts are not denominators."
+  },
+  "populations": [
+    {
+      "bounds": {
+        "outside_initial_success_pct_lower_display": "67.81",
+        "outside_initial_success_pct_upper_display": "100.00",
+        "outside_success_fraction_lower": {
+          "denominator": 1011853,
+          "numerator": 686154
+        },
+        "outside_success_fraction_upper": {
+          "denominator": 1011853,
+          "numerator": 1011853
+        },
+        "outside_top10_transactions": 1011853,
+        "successful_initial_receipts_outside_top10_lower": 686154,
+        "successful_initial_receipts_outside_top10_upper": 1011853
+      },
+      "cohort_week": "2026-08-10",
+      "membership_verification": "Reviewed SQL definitions plus matching exported cohort/group controls; complete membership lists are not exported",
+      "one_assessed_initial_receipt_per_transaction": true,
+      "own_top10_transactions": 2877112,
+      "population": "AUG10_EXACT_WEEK8",
+      "returning_accounts": 66309,
+      "status": "AVAILABLE_OBSERVED_INITIAL_RECEIPT_BOUNDS",
+      "submission_week": "2026-10-05",
+      "suppression_reason": null,
+      "total_failed_initial_receipts": 325699,
+      "total_successful_initial_receipts": 3563266,
+      "total_transactions": 3888965,
+      "unit": "one assessed initial receipt per submitted transaction"
+    },
+    {
+      "bounds": {
+        "outside_initial_success_pct_lower_display": "71.81",
+        "outside_initial_success_pct_upper_display": "100.00",
+        "outside_success_fraction_lower": {
+          "denominator": 877862,
+          "numerator": 630408
+        },
+        "outside_success_fraction_upper": {
+          "denominator": 877862,
+          "numerator": 877862
+        },
+        "outside_top10_transactions": 877862,
+        "successful_initial_receipts_outside_top10_lower": 630408,
+        "successful_initial_receipts_outside_top10_upper": 877862
+      },
+      "cohort_week": "2026-08-17",
+      "membership_verification": "Reviewed SQL definitions plus matching exported cohort/group controls; complete membership lists are not exported",
+      "one_assessed_initial_receipt_per_transaction": true,
+      "own_top10_transactions": 2650181,
+      "population": "EXACT_WEEK_8_RETURNERS",
+      "returning_accounts": 65251,
+      "status": "AVAILABLE_OBSERVED_INITIAL_RECEIPT_BOUNDS",
+      "submission_week": "2026-10-12",
+      "suppression_reason": null,
+      "total_failed_initial_receipts": 247454,
+      "total_successful_initial_receipts": 3280589,
+      "total_transactions": 3528043,
+      "unit": "one assessed initial receipt per submitted transaction"
+    }
+  ],
+  "schema_version": 1,
+  "source_requests": 0,
+  "sources": {
+    "analysis/19_persistent_activity_plan.py": {
+      "bytes": 23965,
+      "sha256": "d3e5438daf0d48f83e279bd04a766fe42b276cfc26fd84445bead8c885ead470"
+    },
+    "analysis/21_validate_initial_receipt_pilot.py": {
+      "bytes": 30131,
+      "sha256": "dbfafec7bdf0ed3f70de9461ba739f2eaa5b2026da6e385e4c195ca8f57ba2a0"
+    },
+    "analysis/22_validate_shared_week_receipts.py": {
+      "bytes": 22964,
+      "sha256": "e5d2e2dde64935e52603dbf072192457e8ee7895ebfefec1167f31b8090f2fb9"
+    },
+    "analysis/48_returner_execution_bounds.py": {
+      "bytes": 12874,
+      "sha256": "f3f5c2466ad852506fca455687b9cccf906a4a2023e9c427d8a5d0a28f62a13a"
+    },
+    "results/56_persistent_activity_pilot.json": {
+      "bytes": 15557,
+      "sha256": "6dbc05ee3c0deea1c4bfd2c1ad955da2f236cb0b1b580b1fd5cbea97c0cd6c09"
+    },
+    "results/57_persistent_activity_pilot_validation.json": {
+      "bytes": 32493,
+      "sha256": "f97751577e60bfdb9edbfa5ba28731768a6cd7e431a67c6c89733ffdb5935a83"
+    },
+    "results/58_persistent_activity_initial_receipt_pilot.json": {
+      "bytes": 96495,
+      "sha256": "ede4a0c74d3db9d1910d118bb8e9e104a035e9b2033290c0d8f26d07b50a9f54"
+    },
+    "results/59_persistent_activity_initial_receipt_validation.json": {
+      "bytes": 26224,
+      "sha256": "d30a401e04393c3cf24aeef8dab789a1eaf7fbba6e2f6ac96ee005be15e9765e"
+    },
+    "results/60_persistent_activity_shared_week_initial_receipts.json": {
+      "bytes": 144072,
+      "sha256": "7ef17d5ff401ece94eba4e7c29989ad1dba3e633438372983f5c624712b4b951"
+    },
+    "results/61_persistent_activity_shared_week_validation.json": {
+      "bytes": 28536,
+      "sha256": "00ed69474ff6cea7368241d23f37b25c623c47032751a3b8fa634216aabbf0dd"
+    },
+    "sql/41_persistent_activity_transaction_pilot.sql": {
+      "bytes": 10982,
+      "sha256": "c0f42f4f0e4e99ab216db83a783378cd1a6e3f7655a862943356846996f18060"
+    },
+    "sql/42_persistent_activity_initial_receipt_pilot.sql": {
+      "bytes": 22140,
+      "sha256": "7abac312aab63d910d92b9ade5ef9c41002fceaed9f65a5a178b8e981d2a9dea"
+    },
+    "sql/43_persistent_activity_shared_week_initial_receipts.sql": {
+      "bytes": 23662,
+      "sha256": "1b6add55a7a34c75d55d7da331a5e13a939cd7b8abab1f0df485b66fdc20dc98"
+    }
+  }
+}

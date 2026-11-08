@@ -1,0 +1,548 @@
+{
+  "error": "ValueError: epoch-053-block: incomplete transport; evidence retained, stop",
+  "independent_weekly_debit_yocto": null,
+  "new_requests_attempted": 53,
+  "status": "INCOMPLETE_STOPPED_NOT_ZERO",
+  "used_responses": [
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "5sUCEyrF5p3RZvx5DzE6zD4gtknwHf8kMmHnH7ViGPWk"
+      },
+      "saved_request": "results/supply_weekly_header_pilot_2026-09-21_to_2026-09-27/20261107T091552Z_88ac7dd4bce1/week-opening.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "5VLWBqYvC98Q5qUzbQ8nHN1wcGZ9CnLxShZgojz4ohUa"
+      },
+      "saved_request": "results/supply_weekly_header_pilot_2026-09-21_to_2026-09-27/20261107T091552Z_88ac7dd4bce1/week-closing.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-001-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217525934
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-002-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "6BnXKEWs1VGEdZFhRE6v3dMnzpnNH8Pz2qFyVJ7sfaRT"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-003-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "6BnXKEWs1VGEdZFhRE6v3dMnzpnNH8Pz2qFyVJ7sfaRT"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-004-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "DwbKYp68HFTZe7XJCuuWEUVcnWz6uY1HqKYiVSdi3bMD"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-005-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217482734
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-006-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-007-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-001-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "9fEVASpG2s18xs231UMKSTG1q9MsNGb1PoGDD6iwntLY"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-008-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217439534
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-009-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "DwbKYp68HFTZe7XJCuuWEUVcnWz6uY1HqKYiVSdi3bMD"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-010-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "DwbKYp68HFTZe7XJCuuWEUVcnWz6uY1HqKYiVSdi3bMD"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-005-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-011-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217396334
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-012-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "9fEVASpG2s18xs231UMKSTG1q9MsNGb1PoGDD6iwntLY"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-013-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "9fEVASpG2s18xs231UMKSTG1q9MsNGb1PoGDD6iwntLY"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-008-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "GV7JSH25kUd5wMGMK4VWJG7GWBFWGCUek1sPFbn2biV2"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-014-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217353134
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-015-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-016-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-011-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "Br6zrDfFWTSfk34co6X7mNzqMYwdhneBrVu64g3XHzzp"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-017-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217309934
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-018-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "GV7JSH25kUd5wMGMK4VWJG7GWBFWGCUek1sPFbn2biV2"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-019-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "GV7JSH25kUd5wMGMK4VWJG7GWBFWGCUek1sPFbn2biV2"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-014-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "3Zj4W1BbL7Sac5iNnnRPHMBwcZ4J8XUJDbhqbE6RiUys"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-020-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217266734
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-021-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "Br6zrDfFWTSfk34co6X7mNzqMYwdhneBrVu64g3XHzzp"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-022-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "Br6zrDfFWTSfk34co6X7mNzqMYwdhneBrVu64g3XHzzp"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-017-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "2rHsEYkGT3uQ7eL2ftitG1PNdDTDUeqjhu35EyUWfnmu"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-023-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217223534
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-024-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "3Zj4W1BbL7Sac5iNnnRPHMBwcZ4J8XUJDbhqbE6RiUys"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-025-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "3Zj4W1BbL7Sac5iNnnRPHMBwcZ4J8XUJDbhqbE6RiUys"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-020-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "3iDjd5DLeJsw6fAjwnTMXG2hJWwM9rMPqqyQDUrKqwMq"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-026-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217180334
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-027-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "2rHsEYkGT3uQ7eL2ftitG1PNdDTDUeqjhu35EyUWfnmu"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-028-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "2rHsEYkGT3uQ7eL2ftitG1PNdDTDUeqjhu35EyUWfnmu"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-023-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "39g2u6MA7jZcPE9keWTZjnX26AKp6Dzx4vcpnaQVqc2i"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-029-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217137134
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-030-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "3iDjd5DLeJsw6fAjwnTMXG2hJWwM9rMPqqyQDUrKqwMq"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-031-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "3iDjd5DLeJsw6fAjwnTMXG2hJWwM9rMPqqyQDUrKqwMq"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-026-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "6FUxwodPXrWE1shro7U695urTcXAvfkv2nA8nPHHQ9cD"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-032-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217093934
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-033-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "39g2u6MA7jZcPE9keWTZjnX26AKp6Dzx4vcpnaQVqc2i"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-034-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "39g2u6MA7jZcPE9keWTZjnX26AKp6Dzx4vcpnaQVqc2i"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-029-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "AfBZkMZhFPjGPHXPqK3YoDHFHA58zGHMaBEdzUoRtP3q"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-035-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217050734
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-036-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "6FUxwodPXrWE1shro7U695urTcXAvfkv2nA8nPHHQ9cD"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-037-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "6FUxwodPXrWE1shro7U695urTcXAvfkv2nA8nPHHQ9cD"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-032-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "GeeuRqH4mz7mvZF2WtHkiAC3eRxeGcE3mriYXM3ujEjx"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-038-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 217007534
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-039-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "AfBZkMZhFPjGPHXPqK3YoDHFHA58zGHMaBEdzUoRtP3q"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-040-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "AfBZkMZhFPjGPHXPqK3YoDHFHA58zGHMaBEdzUoRtP3q"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-035-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-041-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 216964334
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-042-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "GeeuRqH4mz7mvZF2WtHkiAC3eRxeGcE3mriYXM3ujEjx"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-043-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "GeeuRqH4mz7mvZF2WtHkiAC3eRxeGcE3mriYXM3ujEjx"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-038-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+      },
+      "saved_request": "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-next-epoch-rewards.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 216921134
+      },
+      "saved_request": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/B-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-044-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-041-validators.request.json"
+    },
+    {
+      "method": "EXPERIMENTAL_protocol_config",
+      "requested_params": {
+        "block_id": "J6jyjUSFFatXnCKEG3nKaD9qQLzQrY4xWyFkB5a5mJHB"
+      },
+      "saved_request": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/B-protocol.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-045-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 216877934
+      },
+      "saved_request": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+      },
+      "saved_request": "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-parent-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+      },
+      "saved_request": "results/supply_epoch_pilot_2026-09-23/20261107T075015Z_18b7f0e7ee4f/A-next-epoch-rewards.request.json"
+    },
+    {
+      "method": "EXPERIMENTAL_protocol_config",
+      "requested_params": {
+        "block_id": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG"
+      },
+      "saved_request": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-protocol.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-046-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 216834734
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-047-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-048-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-045-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "3hUKjBchXMc6njam49hGdkSbZMaaLXQaEsVoD99TFGiZ"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-049-validators.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": 216791534
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-050-block.request.json"
+    },
+    {
+      "method": "block",
+      "requested_params": {
+        "block_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-051-block.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-046-validators.request.json"
+    },
+    {
+      "method": "validators",
+      "requested_params": {
+        "epoch_id": "55CcPVQW8P32NisgNq6d4xqViXnXPmif13sm4Rjq52ms"
+      },
+      "saved_request": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-052-validators.request.json"
+    }
+  ],
+  "weekly_issuance_yocto": null
+}

@@ -28,7 +28,8 @@ def table(frame, *, near_places=2, **kwargs):
     for name in display.columns:
         series = display[name]
         label = column_label(str(name))
-        monetary = "near" in str(name).lower()
+        # Integer base-unit columns remain strings through the frontend/export.
+        monetary = "near" in str(name).lower() and "yocto" not in str(name).lower()
         if monetary and not pd.api.types.is_numeric_dtype(series):
             values = series.dropna()
             if len(values) and all(isinstance(x, (str, Decimal)) for x in values):

@@ -1,0 +1,545 @@
+{
+  "assumption_status": {
+    "additional_issuance_near_per_week": "UNAVAILABLE",
+    "capture_fraction": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "custody_allocation": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "destruction_allocation": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "eligible_activity_usd_per_week": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "fee_rate": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "horizon_weeks": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "other_destruction_near_per_week": "UNAVAILABLE",
+    "other_supply_adjustment_near_per_week": "UNAVAILABLE",
+    "price_usd_per_near": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "retained_budget_hurdle_usd_per_week": "EXPLICIT_SCENARIO_ASSUMPTION",
+    "reward_mint_near_per_week": "DATED_BASELINE_REPEATED_AS_SCENARIO"
+  },
+  "assumption_units": {
+    "additional_issuance_near_per_week": "NEAR/week",
+    "capture_fraction": "fraction",
+    "custody_allocation": "fraction",
+    "destruction_allocation": "fraction",
+    "eligible_activity_usd_per_week": "USD/week",
+    "fee_rate": "fraction",
+    "horizon_weeks": "weeks",
+    "other_destruction_near_per_week": "NEAR/week",
+    "other_supply_adjustment_near_per_week": "NEAR/week",
+    "price_usd_per_near": "USD/NEAR",
+    "retained_budget_hurdle_usd_per_week": "USD/week",
+    "reward_mint_near_per_week": "NEAR/week"
+  },
+  "assumptions": {
+    "additional_issuance_near_per_week": null,
+    "capture_fraction": "0.5",
+    "custody_allocation": "0.25",
+    "destruction_allocation": "0.25",
+    "eligible_activity_usd_per_week": "100000000",
+    "fee_rate": "0.001",
+    "horizon_weeks": "1",
+    "other_destruction_near_per_week": null,
+    "other_supply_adjustment_near_per_week": null,
+    "price_usd_per_near": "5",
+    "retained_budget_hurdle_usd_per_week": "1000000",
+    "reward_mint_near_per_week": "618436.074970164323861118656646"
+  },
+  "change_of_mind_conditions": [
+    {
+      "basis": "Analyst-selected adoption hurdle, not an observed result or independent-cohort assumption.",
+      "direction": "Strengthen",
+      "test": "At least three starting-week cohorts with complete +8 follow-up each show >=40% exact +8 return and <=50% top-ten share of returner transactions; disclose membership overlap."
+    },
+    {
+      "basis": "Analyst-selected contrary-evidence rule; missing follow-up is unavailable, not failure.",
+      "direction": "Weaken",
+      "test": "At least three complete +8 cohorts show <25% exact returns or >80% top-ten returner transaction concentration."
+    },
+    {
+      "basis": "Analyst-selected scoped execution hurdle; transaction groups may overlap.",
+      "direction": "Execution evidence",
+      "test": "At least three comparable complete checkpoint weeks show >=95% initial-receipt success with >=99.9% unique link/cost coverage; descendant settlement must be separately established before any complete-chain claim."
+    },
+    {
+      "basis": "Measured capture is currently unavailable. Meeting a scenario threshold alone is insufficient.",
+      "direction": "Economic capture",
+      "test": "Eight complete weekly asset ledgers independently classify fee origin and settlement, reconcile balances and avoid principal/refund/internal-transfer double counting; compare measured capture with the explicitly chosen model hurdle."
+    },
+    {
+      "basis": "No extrapolation of sampled header debit, and no substitution of validator changes or spending.",
+      "direction": "Supply conclusion",
+      "test": "Eight weekly canonical identities independently identify issuance, gross burn, subsidies and other adjustments with zero integer arithmetic discrepancy and complete inclusion coverage."
+    },
+    {
+      "basis": "A falsification test for a specified capture/deployment claim, not proof of absent distributions today.",
+      "direction": "Weaken economic mechanism",
+      "test": "Across eight independently attributed weeks, capture remains below the declared hurdle or claimed purchase/destruction deployments are not verified."
+    }
+  ],
+  "conclusion": "Persistent signing accounts generated successful initial execution and recorded NEAR expenditure. Growth is sensitive to the comparison window and returner transactions remain concentrated. The saved evidence does not establish attributable product revenue, implemented buybacks, actual gross burn or holder cash flows. A token investment case remains conditional on verified economic capture and its scale; no fair value, price target or expected investment return is established.",
+  "evidence": {
+    "activity": {
+      "cohorts": [
+        {
+          "checkpoint_return_shares_pct": {
+            "1": "81.7219139686534721427754261526141173778743850817984212332685",
+            "4": "71.9640201349959958814780917515158448690081226404301567326393",
+            "8": "47.4123384052167944171147465964992563779887884681386569042444"
+          },
+          "checkpoint_returners": {
+            "1": 114293,
+            "4": 100646,
+            "8": 66309
+          },
+          "cohort_accounts": 139856,
+          "cohort_week": "2026-08-10",
+          "repeated_checkpoint_return_share_pct": "37.4835545132135911222972199977119322731952865804827822903558",
+          "repeated_checkpoint_returners_accounts": 52423
+        },
+        {
+          "checkpoint_return_shares_pct": {
+            "1": "79.3878056548356275876711844014296330372624650553805867157366",
+            "4": "60.4741852153296294985668282671007466647793623270462507519728",
+            "8": "46.1806857992144095686330018755086874977883152270073250999682"
+          },
+          "checkpoint_returners": {
+            "1": 112171,
+            "4": 85447,
+            "8": 65251
+          },
+          "cohort_accounts": 141295,
+          "cohort_week": "2026-08-17",
+          "repeated_checkpoint_return_share_pct": "37.8321950529034997699847836087618103966877808839661700697123",
+          "repeated_checkpoint_returners_accounts": 53455
+        },
+        {
+          "checkpoint_return_shares_pct": {
+            "1": "77.9599167137715639064389413204158587282393262687912764115370",
+            "4": "51.6517719789065462689343798968223871092380454925979722236135",
+            "8": null
+          },
+          "checkpoint_returners": {
+            "1": 108956,
+            "4": 72188,
+            "8": null
+          },
+          "cohort_accounts": 139759,
+          "cohort_week": "2026-08-24",
+          "repeated_checkpoint_return_share_pct": null,
+          "repeated_checkpoint_returners_accounts": null
+        },
+        {
+          "checkpoint_return_shares_pct": {
+            "1": "18.1395379318781566208210272452421313853305604585729015571206",
+            "4": null,
+            "8": null
+          },
+          "checkpoint_returners": {
+            "1": 83037,
+            "4": null,
+            "8": null
+          },
+          "cohort_accounts": 457768,
+          "cohort_week": "2026-09-28",
+          "repeated_checkpoint_return_share_pct": null,
+          "repeated_checkpoint_returners_accounts": null
+        }
+      ],
+      "growth_comparison": [
+        {
+          "absolute_change": "840964.0000",
+          "absolute_change_unit": "transactions per week",
+          "definition": "Total transactions divided by four weeks.",
+          "final_period_end": "2026-10-18",
+          "final_period_start": "2026-09-21",
+          "final_period_value": "5973048.5000",
+          "first_period_end": "2026-08-02",
+          "first_period_start": "2026-07-06",
+          "first_period_value": "5132084.5000",
+          "metric": "average_weekly_transactions",
+          "relative_change_pct": "16.3864",
+          "unit": "transactions per week",
+          "weeks_per_period": "4"
+        },
+        {
+          "absolute_change": "124558.5000",
+          "absolute_change_unit": "signing accounts per week",
+          "definition": "Sum of weekly distinct signing-account counts divided by four; not distinct accounts across the four-week period.",
+          "final_period_end": "2026-10-18",
+          "final_period_start": "2026-09-21",
+          "final_period_value": "281297.0000",
+          "first_period_end": "2026-08-02",
+          "first_period_start": "2026-07-06",
+          "first_period_value": "156738.5000",
+          "metric": "average_weekly_active_signing_accounts",
+          "relative_change_pct": "79.4690",
+          "unit": "signing accounts per week",
+          "weeks_per_period": "4"
+        },
+        {
+          "absolute_change": "-2.1251",
+          "absolute_change_unit": "days per active account-week",
+          "definition": "Signing-account-days divided by the sum of weekly active signing accounts; weighted across account-weeks.",
+          "final_period_end": "2026-10-18",
+          "final_period_start": "2026-09-21",
+          "final_period_value": "1.9158",
+          "first_period_end": "2026-08-02",
+          "first_period_start": "2026-07-06",
+          "first_period_value": "4.0409",
+          "metric": "active_days_per_active_account_week",
+          "relative_change_pct": "-52.5906",
+          "unit": "days per active account-week",
+          "weeks_per_period": "4"
+        },
+        {
+          "absolute_change": "-14.9200",
+          "absolute_change_unit": "percentage points",
+          "definition": "Transactions from each week's top ten divided by all transactions across the four weeks; membership varies weekly.",
+          "final_period_end": "2026-10-18",
+          "final_period_start": "2026-09-21",
+          "final_period_value": "52.3887",
+          "first_period_end": "2026-08-02",
+          "first_period_start": "2026-07-06",
+          "first_period_value": "67.3087",
+          "metric": "weekly_top_10_transaction_share_pct",
+          "relative_change_pct": "-22.1665",
+          "unit": "percent",
+          "weeks_per_period": "4"
+        }
+      ],
+      "initial_receipt_scope": "Selected initial receipts only, overlapping populations, six-day execution tails, FLOAT-derived spending; no complete-chain or revenue inference.",
+      "initial_success_share_pct": [
+        "91.6250467669418469952802352296819333678755144363603169480826",
+        "91.5206238906677641786393861518799633687110436968267584832517",
+        "82.3458298372469532356013738798191400922232481273795449283977",
+        "92.9860832195072452348228182026126098803217534480163648799065",
+        "92.9121452597852745994797762214740939896283297789408649044055"
+      ],
+      "returner_concentration": [
+        {
+          "cohort_week": "2026-08-10",
+          "top_ten_transaction_share_pct": "73.9814320776864795646142354071070323337957528545512752107566"
+        },
+        {
+          "cohort_week": "2026-08-17",
+          "top_ten_transaction_share_pct": "75.1175935213941553433447381451983436709813344111735599594449"
+        }
+      ],
+      "shared_week_overlap": {
+        "august_and_september_accounts": 58957,
+        "august_and_september_transactions": 3871009,
+        "august_transactions_also_in_september_share_pct": "99.5382833221692661157917337903529602349211165438619272737091",
+        "basis": "SQL 43's unique selected union includes August exact +8 and September exact +1; the repeated group is a subset of the former. Inclusion-exclusion uses saved aggregate counts, not independently reconstructed IDs.",
+        "repeated_and_september_exact_membership": null,
+        "repeated_transactions_share_of_august_exact_pct": "98.5274231061477796791691362611903167038016541676255764708605",
+        "union_accounts": 90389,
+        "union_or_intersection_receipt_spending_near": null,
+        "union_transactions": 5192790
+      }
+    },
+    "measured_unavailable": {
+      "actual_gross_supply_burn_near": null,
+      "attributed_product_revenue_usd": null,
+      "eligible_economic_activity_usd": null,
+      "expected_investment_return": null,
+      "full_window_independent_issuance_near": null,
+      "historical_capture_fraction": null,
+      "historical_fee_rate": null,
+      "holder_cash_flows_usd": null,
+      "independent_full_week_net_debit_near": null,
+      "subsidies_near": null,
+      "verified_purchase_and_custody_near": null
+    },
+    "native_wallet_context": {
+      "classification": "UNCLASSIFIED_NATIVE_FLOWS_NOT_REVENUE_OR_PURCHASES",
+      "closed_provenance": "Successful signed internal transfer and native withdrawal; revenue origin unverified. Investigation stays closed.",
+      "external_native_net_near": "956945.106578107785216431387923",
+      "unallocated_difference_near": "0.0010849311842748",
+      "window": {
+        "end_exclusive": "2026-10-19T00:00:00Z",
+        "start_inclusive": "2026-08-24T00:00:00Z"
+      }
+    },
+    "neardata": {
+      "full_epoch_accounting_complete": false,
+      "full_week_accounting_complete": false,
+      "observed_error_blocks_per_minute": 30,
+      "sample_extrapolation": "NONE; sampled debit is never extrapolated to an epoch or week",
+      "sampled_net_header_debit_near": "0.5486610196812742",
+      "status": "BULK_COLLECTION_PAUSED_NO_RETRY_HOST_IP_ROTATION_CAP_INCREASE_OR_SLOWER_RECOVERY",
+      "validated_blocks": 144,
+      "validated_height_interval": [
+        216877934,
+        216878077
+      ]
+    },
+    "reward_baseline": {
+      "application_events": 23,
+      "exact_supply_movement_near": "611555.974235517852937718656646",
+      "implied_weekly_net_debit_near": "6880.100734646470923400000000",
+      "qualification": "21–27 September 2026 only. Subsidies/additional issuance are separately unavailable. Repeating this amount for a hypothetical horizon is a scenario, not a forecast or eight-week issuance measurement.",
+      "reward_mint_near": "618436.074970164323861118656646",
+      "reward_mint_yocto": "618436074970164323861118656646",
+      "status": "PROTOCOL_VALIDATED_DATED_REWARD_MINTING_ONLY",
+      "week": "2026-09-21/2026-09-27"
+    }
+  },
+  "evidence_assessment": [
+    {
+      "Direction": "Supporting",
+      "Finding": "Exact +8 returns of 47.41% and 46.18% for the 10/17 August activity cohorts.",
+      "Qualification": "Overlapping signing-account cohorts, not acquired users or continuous weekly activity. Sources 56–62."
+    },
+    {
+      "Direction": "Supporting",
+      "Finding": "Selected initial-receipt success spans 82.35%–92.99% with recorded execution spending.",
+      "Qualification": "Initial receipts only; overlapping groups, six-day tails and FLOAT-derived spending. No complete-chain or fee-origin inference. Sources 58–62."
+    },
+    {
+      "Direction": "Supporting",
+      "Finding": "Four-week average transactions increased 16.39%.",
+      "Qualification": "Selected comparison periods; final four weeks contain the account spike. Sources 39 and 62."
+    },
+    {
+      "Direction": "Contrary",
+      "Finding": "Active days per active account-week changed -52.59%.",
+      "Qualification": "Composition-sensitive participation measure. Fifteen-week transaction/account endpoints also declined 10.63%/24.65%; growth is baseline-sensitive. Sources 39 and 62."
+    },
+    {
+      "Direction": "Contrary",
+      "Finding": "Top ten returners generated 73.98% and 75.12% of exact +8 transactions.",
+      "Qualification": "Signing concentration does not identify independent people, applications or fee payers. Sources 56–62."
+    },
+    {
+      "Direction": "Economic gap",
+      "Finding": "Revenue origin, verified purchases, gross burn and holder cash flows remain unavailable.",
+      "Qualification": "Native flows and sampled net header debits cannot fill these inputs. Full-epoch/week accounting is incomplete; Neardata bulk collection is paused. Sources 72, 80, 85, 88–89."
+    }
+  ],
+  "formulas": {
+    "captured_fee_revenue_usd_per_week": "R = V * f * c",
+    "conditional_supply_change_near_per_week": "I_reward + I_additional + A_other - B_other - D; unavailable if any required component is null",
+    "custody_purchase_budget_usd_per_week": "R * a_h",
+    "full_supply_neutral_activity_threshold_usd_per_week": "max(0, I_reward + I_additional + A_other - B_other) * P / (f * c * a_d); requires all supply assumptions",
+    "gross_eligible_fees_usd_per_week": "V * f",
+    "horizon_totals": "weekly scenario flows * assumed weeks; constant inputs throughout, no forecast, compounding or discounting",
+    "purchase_and_destruction_budget_usd_per_week": "R * a_d",
+    "purchased_and_destroyed_near_per_week": "D = R * a_d / P",
+    "purchased_and_held_near_per_week": "H = R * a_h / P; H does not reduce total supply",
+    "retained_budget_activity_threshold_usd_per_week": "chosen hurdle / (f * c * (1 - a_d - a_h))",
+    "retained_budget_before_operating_costs_usd_per_week": "R * (1 - a_d - a_h)",
+    "retained_budget_required_capture_fraction": "chosen hurdle / (V * f * (1 - a_d - a_h))",
+    "reward_only_activity_threshold_usd_per_week": "I_reward * P / (f * c * a_d); offsets reward baseline only, excludes missing supply components",
+    "reward_only_required_capture_fraction": "I_reward * P / (V * f * a_d); values above 1 are infeasible at this activity/price/allocation"
+  },
+  "numerical_method": "Decimal inputs parsed from strings; finite funding-budget products use 320 significant digits and conserve allocations exactly. Scenario quantities/ratios use 80 significant digits; repeating ratios are rounded at that precision. Saved integer yoctoNEAR amounts remain exact. Continuous scenario quantities are not executable transfer instructions.",
+  "scenario": {
+    "allocation_rule": "Revenue is the parent funding flow: destruction budget + custody budget + remaining budget = captured revenue. Do not add parent revenue to these uses. Held purchases never reduce supply; purchase-and-destruction quantities are one use counted once.",
+    "budget_discrepancy_usd": "0",
+    "classification": "SCENARIO_NOT_OBSERVED_OR_EXPECTED_RETURN",
+    "cost_boundary": "Captured eligible fees exclude principal, pass-through settlements, rebates and refunds by assumption. Remaining budget is before unspecified operating costs and taxes, not profit or holder distribution. Effective price includes assumed purchase costs; realized execution and destruction are unverified. Held purchases assume no resale or release during the horizon; their cumulative total is not a measured wallet closing balance or a supply reduction.",
+    "horizon_totals": {
+      "captured_fee_revenue_usd": "50000.0000",
+      "conditional_supply_change_near": null,
+      "conditional_total_destruction_near": null,
+      "custody_purchase_budget_usd": "12500.000000",
+      "gross_eligible_fees_usd": "100000.000",
+      "purchase_and_destruction_budget_usd": "12500.000000",
+      "purchased_and_destroyed_near": "2500.000000",
+      "purchased_and_held_near": "2500.000000",
+      "retained_budget_before_operating_costs_usd": "25000.000000"
+    },
+    "horizon_weeks": "1",
+    "missing_supply_assumptions": [
+      "additional_issuance_near_per_week",
+      "other_destruction_near_per_week",
+      "other_supply_adjustment_near_per_week"
+    ],
+    "thresholds": {
+      "full_supply_neutral_activity_threshold": {
+        "status": "UNAVAILABLE_MISSING_SUPPLY_ASSUMPTIONS",
+        "unit": "USD/week",
+        "value": null
+      },
+      "retained_budget_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "4000000000"
+      },
+      "retained_budget_capture_threshold": {
+        "status": "EXCEEDS_FEASIBLE_FRACTION",
+        "unit": "fraction",
+        "value": "20"
+      },
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "24737442998.80657295444474626584"
+      },
+      "reward_only_capture_threshold": {
+        "status": "EXCEEDS_FEASIBLE_FRACTION",
+        "unit": "fraction",
+        "value": "123.6872149940328647722237313292"
+      }
+    },
+    "weekly": {
+      "captured_fee_revenue_usd_per_week": "50000.0000",
+      "conditional_supply_change_near_per_week": null,
+      "conditional_total_destruction_near_per_week": null,
+      "custody_purchase_budget_usd_per_week": "12500.000000",
+      "gross_eligible_fees_usd_per_week": "100000.000",
+      "purchase_and_destruction_budget_usd_per_week": "12500.000000",
+      "purchased_and_destroyed_near_per_week": "2500.000000",
+      "purchased_and_held_near_per_week": "2500.000000",
+      "retained_budget_before_operating_costs_usd_per_week": "25000.000000"
+    }
+  },
+  "schema_version": 1,
+  "sensitivity": [
+    {
+      "capture_fraction": "0.0",
+      "captured_fee_revenue_usd_per_week": "0.0000",
+      "price_usd_per_near": "2.5",
+      "purchased_and_destroyed_near_per_week": "0.00000",
+      "purchased_and_held_near_per_week": "0.00000",
+      "reward_only_activity_threshold": {
+        "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+        "unit": "USD/week",
+        "value": null
+      }
+    },
+    {
+      "capture_fraction": "0.25",
+      "captured_fee_revenue_usd_per_week": "25000.00000",
+      "price_usd_per_near": "2.5",
+      "purchased_and_destroyed_near_per_week": "2500.000000",
+      "purchased_and_held_near_per_week": "2500.000000",
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "24737442998.80657295444474626584"
+      }
+    },
+    {
+      "capture_fraction": "0.5",
+      "captured_fee_revenue_usd_per_week": "50000.0000",
+      "price_usd_per_near": "2.5",
+      "purchased_and_destroyed_near_per_week": "5000.00000",
+      "purchased_and_held_near_per_week": "5000.00000",
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "12368721499.40328647722237313292"
+      }
+    },
+    {
+      "capture_fraction": "0.0",
+      "captured_fee_revenue_usd_per_week": "0.0000",
+      "price_usd_per_near": "5",
+      "purchased_and_destroyed_near_per_week": "0.000000",
+      "purchased_and_held_near_per_week": "0.000000",
+      "reward_only_activity_threshold": {
+        "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+        "unit": "USD/week",
+        "value": null
+      }
+    },
+    {
+      "capture_fraction": "0.25",
+      "captured_fee_revenue_usd_per_week": "25000.00000",
+      "price_usd_per_near": "5",
+      "purchased_and_destroyed_near_per_week": "1250.0000000",
+      "purchased_and_held_near_per_week": "1250.0000000",
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "49474885997.61314590888949253168"
+      }
+    },
+    {
+      "capture_fraction": "0.5",
+      "captured_fee_revenue_usd_per_week": "50000.0000",
+      "price_usd_per_near": "5",
+      "purchased_and_destroyed_near_per_week": "2500.000000",
+      "purchased_and_held_near_per_week": "2500.000000",
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "24737442998.80657295444474626584"
+      }
+    },
+    {
+      "capture_fraction": "0.0",
+      "captured_fee_revenue_usd_per_week": "0.0000",
+      "price_usd_per_near": "10",
+      "purchased_and_destroyed_near_per_week": "0.000000",
+      "purchased_and_held_near_per_week": "0.000000",
+      "reward_only_activity_threshold": {
+        "status": "UNREACHABLE_WITH_ZERO_COEFFICIENT",
+        "unit": "USD/week",
+        "value": null
+      }
+    },
+    {
+      "capture_fraction": "0.25",
+      "captured_fee_revenue_usd_per_week": "25000.00000",
+      "price_usd_per_near": "10",
+      "purchased_and_destroyed_near_per_week": "625.0000000",
+      "purchased_and_held_near_per_week": "625.0000000",
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "98949771995.22629181777898506336"
+      }
+    },
+    {
+      "capture_fraction": "0.5",
+      "captured_fee_revenue_usd_per_week": "50000.0000",
+      "price_usd_per_near": "10",
+      "purchased_and_destroyed_near_per_week": "1250.000000",
+      "purchased_and_held_near_per_week": "1250.000000",
+      "reward_only_activity_threshold": {
+        "status": "CONDITIONAL_THRESHOLD",
+        "unit": "USD/week",
+        "value": "49474885997.61314590888949253168"
+      }
+    }
+  ],
+  "source_requests": 0,
+  "sources": {
+    "analysis/38_conditional_investment_model.py": {
+      "bytes": 2383,
+      "sha256": "d5b40924f0fff18edf5259c7974b8b13d3e733646635199bf3e61780459660e7"
+    },
+    "config/conditional_model_assumptions.json": {
+      "bytes": 1074,
+      "sha256": "c9b3bdbdbc655b84e2b4598dfd6f47a325476985eaa6e88649f6a0b90387c05c"
+    },
+    "dashboard/conditional_model.py": {
+      "bytes": 22973,
+      "sha256": "f4895aa10cd85683e0c45d4d8c96e3c1870efd26c56b551d9ad6bc8467a6ce75"
+    },
+    "results/62_integrated_research_evidence.json": {
+      "bytes": 68043,
+      "sha256": "5071a88dcd06b683aa689efeae28afdf7a1e196fb34bf2fd9cc3164e54a6659b"
+    },
+    "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json": {
+      "bytes": 105002,
+      "sha256": "a4926883771da888baca6938cd5995509c0c667d993e3e364819b2c5692fb53a"
+    },
+    "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json": {
+      "bytes": 3110417,
+      "sha256": "6cbad8621599a6570b0dd97717d8cbee816f73e3277e4842ac33dfd8b22de599"
+    },
+    "results/85_neardata_header_pilot_validation_216877934_to_216878033.json": {
+      "bytes": 671919,
+      "sha256": "4a2711e3049ddd83ed0912db71465b0045cbd09ce23627073cced3c06006868b"
+    },
+    "results/88_neardata_optimized_segment_validation_216878034_to_216879033.json": {
+      "bytes": 63022,
+      "sha256": "a387e7fed1a12c1e24d1f65c63023ddacd0e6097dd411c5cf7fd1af0dab9d873"
+    },
+    "results/89_neardata_optimized_prefix_rate_limit_assessment.json": {
+      "bytes": 8491,
+      "sha256": "a7f8389a6886e17f91c8ed9b8bdb99f053568cd08023511c364ad48d7263a12a"
+    }
+  },
+  "status": "IMPLEMENTED_CONDITIONAL_MODEL_NOT_VALUATION_OR_RETURN_FORECAST"
+}

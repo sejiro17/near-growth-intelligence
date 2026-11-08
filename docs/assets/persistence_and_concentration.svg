@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+<title id="title">Persistence was real, but transactions were concentrated</title>
+<desc id="desc">Two August activity cohorts: about 47 and 46 percent returned at exact week eight. Their top ten returners produced about 74 and 75 percent of returner transactions. Different denominators; cohorts overlap.</desc>
+<rect width="960" height="300" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#172033"><text x="28" y="35" font-size="22" font-weight="bold">Persistence was real. Transactions were concentrated.</text>
+<text x="28" y="59" font-size="13">NEAR mainnet · 2026 · exact +8 weeks · overlapping starting-week activity cohorts</text>
+<text x="28" y="96" font-size="17" font-weight="bold">Accounts returning at +8</text>
+<text x="28" y="117" font-size="12">% of accounts active in the starting week</text>
+<text x="28" y="168" font-size="14">10 Aug</text>
+<rect x="93" y="153" width="280" height="24" fill="#e2e8f0"/>
+<rect x="93" y="153" width="132.7545" height="24" fill="#137c8b"/>
+<text x="383" y="170" font-size="15" font-weight="bold">47.41%</text>
+<text x="28" y="224" font-size="14">17 Aug</text>
+<rect x="93" y="209" width="280" height="24" fill="#e2e8f0"/>
+<rect x="93" y="209" width="129.3059" height="24" fill="#137c8b"/>
+<text x="383" y="226" font-size="15" font-weight="bold">46.18%</text>
+<text x="498" y="96" font-size="17" font-weight="bold">Top ten returners’ transaction share</text>
+<text x="498" y="117" font-size="12">% of returning accounts’ +8 transactions</text>
+<text x="498" y="168" font-size="14">10 Aug</text>
+<rect x="563" y="153" width="280" height="24" fill="#e2e8f0"/>
+<rect x="563" y="153" width="207.1480" height="24" fill="#9a4e12"/>
+<text x="853" y="170" font-size="15" font-weight="bold">73.98%</text>
+<text x="498" y="224" font-size="14">17 Aug</text>
+<rect x="563" y="209" width="280" height="24" fill="#e2e8f0"/>
+<rect x="563" y="209" width="210.3293" height="24" fill="#9a4e12"/>
+<text x="853" y="226" font-size="15" font-weight="bold">75.12%</text>
+<text x="28" y="277" font-size="12">Account return is not verified user retention. Returner concentration limits claims of broad demand. Source: saved results 57 and 62.</text></g></svg>

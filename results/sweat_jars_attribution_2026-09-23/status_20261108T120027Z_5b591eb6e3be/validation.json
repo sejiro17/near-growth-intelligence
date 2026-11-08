@@ -1,0 +1,11 @@
+{
+  "indexed_receiver_and_ordered_actions_match_canonical": true,
+  "initial_outcome_status": {
+    "SuccessValue": ""
+  },
+  "initial_receipt_id": "9bLGRCP2dUAMbghFMMjBgk9scXm5rswjDEc8ZdgbyvyK",
+  "network_signer": "sweat-relayer.near",
+  "receiver": "jars-oracle.sweat",
+  "submission_block_hash": "EfqWgHidykoyeXWxuD9Zf5NUhGqvRnP8ezo4BGBVAXwQ",
+  "transaction_hash": "5WPinUvUZgj9hETPGEHooRNUSVW56g7cAeagLSk5vPug"
+}
