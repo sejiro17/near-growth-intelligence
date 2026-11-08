@@ -1,0 +1,300 @@
+{
+  "capture_inputs": {
+    "results/supply_epoch_discovery_recovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4_recovery_01/failed/epoch-053-block.metadata.json": {
+      "bytes": 1349,
+      "sha256": "9c683791ec0df63791006a341181de0c80bc9c61ce0cec013aba58b3429ee540"
+    },
+    "results/supply_epoch_discovery_recovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4_recovery_01/failed/epoch-053-block.request.json": {
+      "bytes": 116,
+      "sha256": "8da40fcdcbbb9eb2637d8666a662d60e9b31d37d22fb0e812c452873a78ef9de"
+    },
+    "results/supply_epoch_discovery_recovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4_recovery_01/failed/epoch-053-block.response.body": {
+      "bytes": 20479,
+      "sha256": "7dfe8a2a113d86b4bf5b3b54c9c91268096c99af8745c878d7cc0b3df5045564"
+    },
+    "results/supply_epoch_discovery_recovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4_recovery_01/run.json": {
+      "bytes": 56024,
+      "sha256": "3df48c1dd9c473d29db6df5e432cac61a5b4c61a29a0e0bbd169e601478b8ecf"
+    }
+  },
+  "cumulative_attempts": 54,
+  "next_missing_request": {
+    "method": "block",
+    "params": {
+      "block_id": "3hUKjBchXMc6njam49hGdkSbZMaaLXQaEsVoD99TFGiZ"
+    }
+  },
+  "recovered_request": {
+    "id": "epoch-053-block",
+    "jsonrpc": "2.0",
+    "method": "block",
+    "params": {
+      "block_id": 216748334
+    }
+  },
+  "remaining_attempt_budget": 43,
+  "returned_header": {
+    "epoch_id": "55CcPVQW8P32NisgNq6d4xqViXnXPmif13sm4Rjq52ms",
+    "hash": "AJhb8NsKJVBzUKVDKghvFp4796yKrjTNPvu3pB8vNBAx",
+    "height": 216748334,
+    "next_epoch_id": "3hUKjBchXMc6njam49hGdkSbZMaaLXQaEsVoD99TFGiZ",
+    "prev_hash": "3hUKjBchXMc6njam49hGdkSbZMaaLXQaEsVoD99TFGiZ",
+    "timestamp_nanosec": "1790067539295889307"
+  },
+  "status": "RECOVERED_RESPONSE_VALIDATED_NOT_COMPLETE_WEEK",
+  "validated_prefix": {
+    "boundaries_descending": [
+      {
+        "application_timestamp_nanosec": "1790535764421544455",
+        "boundary_hash": "6sSMpjdQyZBymCk9pCu9vTToUsxMtv22VFEB3LMa8CDB",
+        "boundary_height": 217525934,
+        "epoch_height": 4808,
+        "epoch_id": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8",
+        "parent_hash": "6BnXKEWs1VGEdZFhRE6v3dMnzpnNH8Pz2qFyVJ7sfaRT",
+        "parent_height": 217525933,
+        "recorded_reward_map_sum_yocto": "26542992356093462814867209888",
+        "reward_map_payees": 396,
+        "reward_response_epoch_height": 4809,
+        "reward_response_epoch_id": "6BnXKEWs1VGEdZFhRE6v3dMnzpnNH8Pz2qFyVJ7sfaRT"
+      },
+      {
+        "application_timestamp_nanosec": "1790510100645964818",
+        "boundary_hash": "An4iURrffdJz9H6xFvukbssNFDYMRaqVY5EWhrtLkik7",
+        "boundary_height": 217482734,
+        "epoch_height": 4807,
+        "epoch_id": "DwbKYp68HFTZe7XJCuuWEUVcnWz6uY1HqKYiVSdi3bMD",
+        "parent_hash": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8",
+        "parent_height": 217482733,
+        "recorded_reward_map_sum_yocto": "26437872568386185067818922267",
+        "reward_map_payees": 396,
+        "reward_response_epoch_height": 4808,
+        "reward_response_epoch_id": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8"
+      },
+      {
+        "application_timestamp_nanosec": "1790484528087873497",
+        "boundary_hash": "8cwzvvyhFY9X8wLaGuw1WZgKK3UwDemZF5GUnqA8kZfe",
+        "boundary_height": 217439534,
+        "epoch_height": 4806,
+        "epoch_id": "9fEVASpG2s18xs231UMKSTG1q9MsNGb1PoGDD6iwntLY",
+        "parent_hash": "DwbKYp68HFTZe7XJCuuWEUVcnWz6uY1HqKYiVSdi3bMD",
+        "parent_height": 217439533,
+        "recorded_reward_map_sum_yocto": "26335803020606858531612866301",
+        "reward_map_payees": 396,
+        "reward_response_epoch_height": 4807,
+        "reward_response_epoch_id": "DwbKYp68HFTZe7XJCuuWEUVcnWz6uY1HqKYiVSdi3bMD"
+      },
+      {
+        "application_timestamp_nanosec": "1790459075188416227",
+        "boundary_hash": "DCAC8hrMb2efpeBYTr83fg5qExTcAoLnhRCEwwNesTSw",
+        "boundary_height": 217396334,
+        "epoch_height": 4805,
+        "epoch_id": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1",
+        "parent_hash": "9fEVASpG2s18xs231UMKSTG1q9MsNGb1PoGDD6iwntLY",
+        "parent_height": 217396333,
+        "recorded_reward_map_sum_yocto": "26425791556611003765804991618",
+        "reward_map_payees": 398,
+        "reward_response_epoch_height": 4806,
+        "reward_response_epoch_id": "9fEVASpG2s18xs231UMKSTG1q9MsNGb1PoGDD6iwntLY"
+      },
+      {
+        "application_timestamp_nanosec": "1790433544686169118",
+        "boundary_hash": "JC51ZtmWGKnsgEeKaZzcv6hvEyzpUnVvADYhqYPptrGw",
+        "boundary_height": 217353134,
+        "epoch_height": 4804,
+        "epoch_id": "GV7JSH25kUd5wMGMK4VWJG7GWBFWGCUek1sPFbn2biV2",
+        "parent_hash": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1",
+        "parent_height": 217353133,
+        "recorded_reward_map_sum_yocto": "26398643520118352413822592370",
+        "reward_map_payees": 398,
+        "reward_response_epoch_height": 4805,
+        "reward_response_epoch_id": "A52GTUaKTw52HfkHiwn43x1kh9Yt2sCvHgG5kNDABjJ1"
+      },
+      {
+        "application_timestamp_nanosec": "1790408020620611895",
+        "boundary_hash": "5fxaigopYS6VVHPJBJ1cn6WtMYUfLSYrheY25NmmFnSe",
+        "boundary_height": 217309934,
+        "epoch_height": 4803,
+        "epoch_id": "Br6zrDfFWTSfk34co6X7mNzqMYwdhneBrVu64g3XHzzp",
+        "parent_hash": "GV7JSH25kUd5wMGMK4VWJG7GWBFWGCUek1sPFbn2biV2",
+        "parent_height": 217309933,
+        "recorded_reward_map_sum_yocto": "26397377324669380034537417966",
+        "reward_map_payees": 399,
+        "reward_response_epoch_height": 4804,
+        "reward_response_epoch_id": "GV7JSH25kUd5wMGMK4VWJG7GWBFWGCUek1sPFbn2biV2"
+      },
+      {
+        "application_timestamp_nanosec": "1790382485006999982",
+        "boundary_hash": "2QmdYbbBjz2E2uPQM57DmGKKX6xgyWJ4unA8iJU1FdmV",
+        "boundary_height": 217266734,
+        "epoch_height": 4802,
+        "epoch_id": "3Zj4W1BbL7Sac5iNnnRPHMBwcZ4J8XUJDbhqbE6RiUys",
+        "parent_hash": "Br6zrDfFWTSfk34co6X7mNzqMYwdhneBrVu64g3XHzzp",
+        "parent_height": 217266733,
+        "recorded_reward_map_sum_yocto": "26596118882504599722023524835",
+        "reward_map_payees": 399,
+        "reward_response_epoch_height": 4803,
+        "reward_response_epoch_id": "Br6zrDfFWTSfk34co6X7mNzqMYwdhneBrVu64g3XHzzp"
+      },
+      {
+        "application_timestamp_nanosec": "1790356777306499831",
+        "boundary_hash": "6tUZNg7fZ8Zf76bkLuYv8bY3jhuEmzZcCyTjbN9v4erF",
+        "boundary_height": 217223534,
+        "epoch_height": 4801,
+        "epoch_id": "2rHsEYkGT3uQ7eL2ftitG1PNdDTDUeqjhu35EyUWfnmu",
+        "parent_hash": "3Zj4W1BbL7Sac5iNnnRPHMBwcZ4J8XUJDbhqbE6RiUys",
+        "parent_height": 217223533,
+        "recorded_reward_map_sum_yocto": "26614877124989185166250880568",
+        "reward_map_payees": 400,
+        "reward_response_epoch_height": 4802,
+        "reward_response_epoch_id": "3Zj4W1BbL7Sac5iNnnRPHMBwcZ4J8XUJDbhqbE6RiUys"
+      },
+      {
+        "application_timestamp_nanosec": "1790331073901623738",
+        "boundary_hash": "6GjSWGZrTL45edvTmXJNAwLMZqxsumzsQCs9usrCu9YY",
+        "boundary_height": 217180334,
+        "epoch_height": 4800,
+        "epoch_id": "3iDjd5DLeJsw6fAjwnTMXG2hJWwM9rMPqqyQDUrKqwMq",
+        "parent_hash": "2rHsEYkGT3uQ7eL2ftitG1PNdDTDUeqjhu35EyUWfnmu",
+        "parent_height": 217180333,
+        "recorded_reward_map_sum_yocto": "26756299752219003740667921522",
+        "reward_map_payees": 401,
+        "reward_response_epoch_height": 4801,
+        "reward_response_epoch_id": "2rHsEYkGT3uQ7eL2ftitG1PNdDTDUeqjhu35EyUWfnmu"
+      },
+      {
+        "application_timestamp_nanosec": "1790305214907513864",
+        "boundary_hash": "Cv6xj93ZHDgm39BRuX1yhNrs2gQFoQdXXK3GQoRv88j9",
+        "boundary_height": 217137134,
+        "epoch_height": 4799,
+        "epoch_id": "39g2u6MA7jZcPE9keWTZjnX26AKp6Dzx4vcpnaQVqc2i",
+        "parent_hash": "3iDjd5DLeJsw6fAjwnTMXG2hJWwM9rMPqqyQDUrKqwMq",
+        "parent_height": 217137133,
+        "recorded_reward_map_sum_yocto": "26621642906793117543561136853",
+        "reward_map_payees": 400,
+        "reward_response_epoch_height": 4800,
+        "reward_response_epoch_id": "3iDjd5DLeJsw6fAjwnTMXG2hJWwM9rMPqqyQDUrKqwMq"
+      },
+      {
+        "application_timestamp_nanosec": "1790279465521114841",
+        "boundary_hash": "9uN1gt7q2TtVc471hpGdyDJw3n9YfyfL2ZgAgsPk6Ynm",
+        "boundary_height": 217093934,
+        "epoch_height": 4798,
+        "epoch_id": "6FUxwodPXrWE1shro7U695urTcXAvfkv2nA8nPHHQ9cD",
+        "parent_hash": "39g2u6MA7jZcPE9keWTZjnX26AKp6Dzx4vcpnaQVqc2i",
+        "parent_height": 217093933,
+        "recorded_reward_map_sum_yocto": "27400571302689259261170904866",
+        "reward_map_payees": 401,
+        "reward_response_epoch_height": 4799,
+        "reward_response_epoch_id": "39g2u6MA7jZcPE9keWTZjnX26AKp6Dzx4vcpnaQVqc2i"
+      },
+      {
+        "application_timestamp_nanosec": "1790252843227393081",
+        "boundary_hash": "2g2rSxHWkYaQYAo4bEkj5jQdgTGDkWgpPDzH3gwt7L2w",
+        "boundary_height": 217050734,
+        "epoch_height": 4797,
+        "epoch_id": "AfBZkMZhFPjGPHXPqK3YoDHFHA58zGHMaBEdzUoRtP3q",
+        "parent_hash": "6FUxwodPXrWE1shro7U695urTcXAvfkv2nA8nPHHQ9cD",
+        "parent_height": 217050733,
+        "recorded_reward_map_sum_yocto": "27200219375109315616498762382",
+        "reward_map_payees": 400,
+        "reward_response_epoch_height": 4798,
+        "reward_response_epoch_id": "6FUxwodPXrWE1shro7U695urTcXAvfkv2nA8nPHHQ9cD"
+      },
+      {
+        "application_timestamp_nanosec": "1790226434188211593",
+        "boundary_hash": "7Jnfuj1Fja8DP9tPjicSymmhGzeLh9rS3vXJwPoTtFLt",
+        "boundary_height": 217007534,
+        "epoch_height": 4796,
+        "epoch_id": "GeeuRqH4mz7mvZF2WtHkiAC3eRxeGcE3mriYXM3ujEjx",
+        "parent_hash": "AfBZkMZhFPjGPHXPqK3YoDHFHA58zGHMaBEdzUoRtP3q",
+        "parent_height": 217007533,
+        "recorded_reward_map_sum_yocto": "26302007529760496122276684423",
+        "reward_map_payees": 399,
+        "reward_response_epoch_height": 4797,
+        "reward_response_epoch_id": "AfBZkMZhFPjGPHXPqK3YoDHFHA58zGHMaBEdzUoRtP3q"
+      },
+      {
+        "application_timestamp_nanosec": "1790201012618244123",
+        "boundary_hash": "6hHFmjuyAeiB2y9VfgRiSqgjKLKX16wxQUvYg82kq4r9",
+        "boundary_height": 216964334,
+        "epoch_height": 4795,
+        "epoch_id": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+        "parent_hash": "GeeuRqH4mz7mvZF2WtHkiAC3eRxeGcE3mriYXM3ujEjx",
+        "parent_height": 216964333,
+        "recorded_reward_map_sum_yocto": "27089554352467778648785987503",
+        "reward_map_payees": 395,
+        "reward_response_epoch_height": 4796,
+        "reward_response_epoch_id": "GeeuRqH4mz7mvZF2WtHkiAC3eRxeGcE3mriYXM3ujEjx"
+      },
+      {
+        "application_timestamp_nanosec": "1790174670972731269",
+        "boundary_hash": "J6jyjUSFFatXnCKEG3nKaD9qQLzQrY4xWyFkB5a5mJHB",
+        "boundary_height": 216921134,
+        "epoch_height": 4794,
+        "epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+        "parent_hash": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+        "parent_height": 216921133,
+        "recorded_reward_map_sum_yocto": "27945686414055864515645384821",
+        "reward_map_payees": 399,
+        "reward_response_epoch_height": 4795,
+        "reward_response_epoch_id": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi"
+      },
+      {
+        "application_timestamp_nanosec": "1790147486203722296",
+        "boundary_hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+        "boundary_height": 216877934,
+        "epoch_height": 4793,
+        "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+        "parent_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+        "parent_height": 216877933,
+        "recorded_reward_map_sum_yocto": "26971051860538713462297967723",
+        "reward_map_payees": 394,
+        "reward_response_epoch_height": 4794,
+        "reward_response_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+      },
+      {
+        "application_timestamp_nanosec": "1790121261803647605",
+        "boundary_hash": "6sgPLHX1CPZg4cn9WZjmPEN2qoX8H2xPTXUkfb119aD2",
+        "boundary_height": 216834734,
+        "epoch_height": 4792,
+        "epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7",
+        "parent_hash": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+        "parent_height": 216834733,
+        "recorded_reward_map_sum_yocto": "26950282736913109981613798196",
+        "reward_map_payees": 400,
+        "reward_response_epoch_height": 4793,
+        "reward_response_epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ"
+      },
+      {
+        "application_timestamp_nanosec": "1790095188488113243",
+        "boundary_hash": "FfcKvRYJwdq8ewxG1Hh5yh6MHqbEhXyBXUioQWAKJRQZ",
+        "boundary_height": 216791534,
+        "epoch_height": 4791,
+        "epoch_id": "3hUKjBchXMc6njam49hGdkSbZMaaLXQaEsVoD99TFGiZ",
+        "parent_hash": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7",
+        "parent_height": 216791533,
+        "recorded_reward_map_sum_yocto": "28271229350602647899944655281",
+        "reward_map_payees": 398,
+        "reward_response_epoch_height": 4792,
+        "reward_response_epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7"
+      }
+    ],
+    "gross_actual_burn_yocto": null,
+    "independent_weekly_net_debit_yocto": null,
+    "opening_epoch_reached": false,
+    "pending_epoch": {
+      "boundary_height": 216748334,
+      "epoch_height": 4790,
+      "epoch_id": "55CcPVQW8P32NisgNq6d4xqViXnXPmif13sm4Rjq52ms",
+      "missing_phase": "parent_block"
+    },
+    "saved_AB_controls_observed": [
+      216877934,
+      216921134
+    ],
+    "status": "INCOMPLETE_VALIDATED_PREFIX_NOT_WEEKLY_ISSUANCE",
+    "subsidies_yocto": null,
+    "validated_application_boundaries": 18,
+    "weekly_issuance_yocto": null
+  }
+}

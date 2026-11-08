@@ -1,0 +1,15 @@
+{
+  "body_cap_bytes": 8388608,
+  "credentials": false,
+  "endpoint": "https://tx.main.fastnear.com/v0/account",
+  "fallbacks": [],
+  "redirects": false,
+  "request_count": 1,
+  "retries": 0,
+  "spacing_seconds": 65,
+  "stage": "history",
+  "timeouts_seconds": [
+    15,
+    60
+  ]
+}

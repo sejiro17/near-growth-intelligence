@@ -1,0 +1,8 @@
+{
+  "id": "A-parent-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+  }
+}

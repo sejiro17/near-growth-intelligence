@@ -1,0 +1,8 @@
+{
+  "account_id": "wx-cruce.near",
+  "desc": false,
+  "from_tx_block_height": 216835292,
+  "is_signer": true,
+  "limit": 1,
+  "to_tx_block_height": 216976125
+}

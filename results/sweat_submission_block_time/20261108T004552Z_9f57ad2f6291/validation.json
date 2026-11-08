@@ -1,0 +1,9 @@
+{
+  "canonical_successor_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+  "hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+  "height": 216877932,
+  "identity_basis": "Exact transaction-outcome block hash and saved canonical successor prev_hash; heights are not assumed consecutive",
+  "timestamp_nanosec": "1790147484906615725",
+  "timestamp_utc": "2026-09-23T07:11:24.906615725Z",
+  "within_original_window": true
+}

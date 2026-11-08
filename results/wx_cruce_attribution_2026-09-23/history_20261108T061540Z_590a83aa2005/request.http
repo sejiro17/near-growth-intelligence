@@ -1,0 +1,17 @@
+POST /v0/account HTTP/1.1
+Host: tx.main.fastnear.com
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: identity
+Connection: close
+User-Agent: near-growth-intelligence-bounded-wx-trace/1
+Content-Length: 160
+
+{
+  "account_id": "wx-cruce.near",
+  "desc": false,
+  "from_tx_block_height": 216835292,
+  "is_signer": true,
+  "limit": 1,
+  "to_tx_block_height": 216976125
+}

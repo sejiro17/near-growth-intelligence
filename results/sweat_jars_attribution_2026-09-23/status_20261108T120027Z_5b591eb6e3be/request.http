@@ -1,0 +1,19 @@
+POST / HTTP/1.1
+Host: archival-rpc.mainnet.near.org
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: identity
+Connection: close
+User-Agent: near-growth-intelligence-bounded-wx-trace/1
+Content-Length: 251
+
+{
+  "id": "jars-transaction-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "sweat-relayer.near",
+    "tx_hash": "5WPinUvUZgj9hETPGEHooRNUSVW56g7cAeagLSk5vPug",
+    "wait_until": "FINAL"
+  }
+}

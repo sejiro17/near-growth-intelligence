@@ -1,0 +1,71 @@
+{
+  "account_id": "wx-cruce.near",
+  "eligible_saved_identifiers": [],
+  "history_request": {
+    "account_id": "wx-cruce.near",
+    "desc": false,
+    "from_tx_block_height": 216835292,
+    "is_signer": true,
+    "limit": 1,
+    "to_tx_block_height": 216976125
+  },
+  "limits": {
+    "account_history_requests": 1,
+    "bulk": false,
+    "canonical_status_requests": 1,
+    "credentials": false,
+    "pagination": false,
+    "response_body_cap_bytes": 8388608,
+    "retries": 0,
+    "spacing_seconds": 65,
+    "submission_header_requests_if_not_saved": 1
+  },
+  "matching_saved_result_files": [
+    {
+      "bytes": 3675,
+      "path": "results/24_growth_account_outcomes_2026-08-24_to_2026-10-18.csv",
+      "sha256": "923278c5c1c92a5293201fc83dbf06f303d8e5c734aac18ab126a31305ffa04a"
+    },
+    {
+      "bytes": 49908,
+      "path": "results/18_weekly_leading_signing_accounts_2026-08-24_to_2026-10-18.csv",
+      "sha256": "75c2c74c07a9f5d5e3f67bc83c403c34f400887a24d6047e9b0784b1a147b7c7"
+    },
+    {
+      "bytes": 5716,
+      "path": "results/22_account_growth_contributions_2026-08-24_to_2026-10-18.csv",
+      "sha256": "5da06232a6a68fe83c2abb6b8003de0f1577025a227c27ce299a588b6e45cef4"
+    },
+    {
+      "bytes": 12550,
+      "path": "results/23_growth_account_activity_2026-08-24_to_2026-10-18.csv",
+      "sha256": "de6f843713c2c9e38bf25a6de9fb9b74a67895aaadef38531ab350f4014dd985"
+    },
+    {
+      "bytes": 39003,
+      "path": "results/97_priority4_attribution_coverage.json",
+      "sha256": "9e75165ee30995443eb29b43701f559de1a7bf7b0fb94708aecd40bc7d3dda25"
+    },
+    {
+      "bytes": 20112,
+      "path": "results/92_priority4_saved_attribution_assessment.json",
+      "sha256": "c4a6ee0883fbc730748a386c0a6b93d2993b8615c1ca9342a7a3c6d488db8ed0"
+    },
+    {
+      "bytes": 6237,
+      "path": "results/27_growth_account_execution_costs_2026-08-24_to_2026-10-18.csv",
+      "sha256": "2b7c622da5e638153ea147fd1ce84ad2f149455968db31b5d4543e200989ee23"
+    }
+  ],
+  "method": "Search pre-existing result bytes for exact account ID; inspect matching CSV/JSON records for associated transaction/receipt identities. Matching files contain aggregate populations, methods and coverage only. Existing header-only prefixes cannot supply transaction identity.",
+  "qualification": "An empty/error response does not establish absent account activity or nonexistent history. Canonical signer/receiver/initial SUCCESS_RECEIPT_ID and submission timestamp must pass before descendant interpretation.",
+  "saved_result_files_inspected": 512,
+  "selected_date": "2026-09-23",
+  "selection": "One oldest indexed signer transaction in the bounded day, without a success filter. No pagination or candidate replacement. Index is_success is not initial-receipt evidence.",
+  "source_documentation": {
+    "implementation": "https://github.com/fastnear/explorer-api/blob/7dcbdb449eb400a9a78883b3ae9d53fa42282fbe/src/api.rs",
+    "public_endpoint": "https://tx.main.fastnear.com/",
+    "schema": "https://github.com/fastnear/explorer-api/blob/7dcbdb449eb400a9a78883b3ae9d53fa42282fbe/openapi/openapi.yaml",
+    "source_commit": "7dcbdb449eb400a9a78883b3ae9d53fa42282fbe"
+  }
+}

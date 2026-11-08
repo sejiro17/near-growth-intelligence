@@ -1,0 +1,56 @@
+{
+  "body_cap_bytes": 8388608,
+  "body_complete": true,
+  "endpoint": "https://tx.main.fastnear.com/v0/transactions",
+  "finished_at": "2026-11-08T12:00:27.163482+00:00",
+  "http_status": 200,
+  "request_bytes": 284,
+  "request_http_sha256": "479d8b6acad867ef14f27aa6d3277c99f5f1d39095023fc0382d83db951759b7",
+  "request_sha256": "e806d800414a26b454ba7f138203a830ad5d41cbb2dc1f972b44751b716b06ac",
+  "response_bytes": 41646,
+  "response_headers": [
+    [
+      "Date",
+      "Sun, 08 Nov 2026 12:00:27 GMT"
+    ],
+    [
+      "Content-Type",
+      "application/json"
+    ],
+    [
+      "Content-Length",
+      "41646"
+    ],
+    [
+      "Connection",
+      "close"
+    ],
+    [
+      "CF-Ray",
+      "a5746ada2ea791f2-AMS"
+    ],
+    [
+      "CF-Cache-Status",
+      "DYNAMIC"
+    ],
+    [
+      "Server",
+      "cloudflare"
+    ],
+    [
+      "Vary",
+      "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    ],
+    [
+      "access-control-allow-credentials",
+      "true"
+    ],
+    [
+      "alt-svc",
+      "h3=\":443\"; ma=86400"
+    ]
+  ],
+  "response_sha256": "e0bdc4b565b95ba1ee32402397ba7c284207bb66a5a351867187492544e8fcb2",
+  "started_at": "2026-11-08T12:00:26.270009+00:00",
+  "transport_error": null
+}

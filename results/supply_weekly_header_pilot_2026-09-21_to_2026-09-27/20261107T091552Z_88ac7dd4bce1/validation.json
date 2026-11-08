@@ -1,0 +1,34 @@
+{
+  "endpoints": [
+    {
+      "epoch_id": "QfvBtUDeixTQpGVPh8cXVpBoJnUtzeJj9fYFNveHiTX",
+      "expected_protocol_shard_coverage_verified": false,
+      "hash": "5sUCEyrF5p3RZvx5DzE6zD4gtknwHf8kMmHnH7ViGPWk",
+      "height": 216553375,
+      "new_headers_with_earlier_creation_predecessor_unchecked": 0,
+      "next_epoch_id": "BN76oRhc5DBiwCMecb5LcHC2mENr6R6saCGxMLk5Stvp",
+      "observed_chunk_headers": 10,
+      "prev_hash": "BjoawBs41uTKpan73ZZUFuSGxLkVD68qJduUaGd1oFps",
+      "timestamp_nanosec": "1789948799381027575",
+      "total_supply_yocto": "1306866141585722960764833879127676"
+    },
+    {
+      "epoch_id": "8sJjEAeKkjwYRCLVGVf5usUt8tPZh3TkWT1YrBp345u8",
+      "expected_protocol_shard_coverage_verified": false,
+      "hash": "5VLWBqYvC98Q5qUzbQ8nHN1wcGZ9CnLxShZgojz4ohUa",
+      "height": 217555961,
+      "new_headers_with_earlier_creation_predecessor_unchecked": 0,
+      "next_epoch_id": "6BnXKEWs1VGEdZFhRE6v3dMnzpnNH8Pz2qFyVJ7sfaRT",
+      "observed_chunk_headers": 10,
+      "prev_hash": "3KGXRxYqxqSRjk4mM2nVkvnsvFZzbEBxR7vnWoLT5NU2",
+      "timestamp_nanosec": "1790553599588158182",
+      "total_supply_yocto": "1307477697559958478617771597784322"
+    }
+  ],
+  "gross_actual_burn_yocto": null,
+  "independent_weekly_mint_yocto": null,
+  "independent_weekly_net_header_debit_yocto": null,
+  "net_supply_movement_yocto": "611555974235517852937718656646",
+  "status": "OBSERVED_ENDPOINTS_CONSISTENT_NOT_WEEKLY_RECONCILIATION",
+  "subsidies_yocto": null
+}

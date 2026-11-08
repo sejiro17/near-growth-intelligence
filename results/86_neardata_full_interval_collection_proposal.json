@@ -1,0 +1,280 @@
+{
+  "accounting": {
+    "closing_supply_yocto": "1307080972134748123637829352596139",
+    "eight_week_complete": false,
+    "exact_supply_movement_yocto": "26624788099202759864197967723",
+    "full_interval_identity_discrepancy_yocto": null,
+    "full_week_complete": false,
+    "gross_actual_burn_yocto": null,
+    "implied_interval_net_debit_yocto": "346263761335953598100000000",
+    "independently_measured_full_interval_net_debit_yocto": null,
+    "opening_supply_yocto": "1307054347346648920877965154628416",
+    "protocol_validated_A_reward_mint_yocto": "26971051860538713462297967723",
+    "required_identity": "closing_supply = opening_supply + independently_recorded_protocol_validated_A_reward_mint - independently_summed_inclusion_timed_net_debits",
+    "subsidies_yocto": null,
+    "tolerance_yocto": "0"
+  },
+  "alternative_archive_path": {
+    "blockers": [
+      "Client archive routing constants do not reproduce verified a3 routing",
+      "Deployed archive grouping and public raw hosting not verified",
+      "Compressed and expanded volume and current limits unknown",
+      "Stock client retries until success and accepts null as skip; incompatible without changes"
+    ],
+    "intersecting_archive_count_full_range_if_same_layout": 4321,
+    "intersecting_archive_count_remaining_range_if_same_layout": 4311,
+    "payload": "FULL_BLOCK_DOCUMENTS_NOT_HEADERS_ONLY",
+    "reviewed_fetcher_heights_per_archive": 10,
+    "status": "SOURCE_IMPLEMENTATION_ONLY_CURRENT_RANGE_AVAILABILITY_AND_SIZE_UNVERIFIED"
+  },
+  "closing_control_sources": [
+    {
+      "bytes": 153,
+      "path": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-044-block.request.json",
+      "sha256": "2548807c05ef213648b0d6e447be6f1fb3b9dd2805f5f40be647c8416481c7a2"
+    },
+    {
+      "bytes": 20056,
+      "path": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-044-block.response.body",
+      "sha256": "c7192b4a9aaa04e937cd8e2024470be70cd36d00208ddf5da97be647302fd2af"
+    },
+    {
+      "bytes": 1349,
+      "path": "results/supply_epoch_discovery_2026-09-21_to_2026-09-27/20261107T094028Z_f5df2c194ab4/epoch-044-block.metadata.json",
+      "sha256": "eb5df8051cf99d702e9f8bbff65613ac84a8f87fcdb7f616825550d456f497eb"
+    }
+  ],
+  "controls": {
+    "A": {
+      "chunk_mask": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "chunks_included": 5,
+      "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+      "hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+      "height": 216877934,
+      "next_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+      "prev_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+      "prev_height": 216877933,
+      "timestamp_nanosec": "1790147486203722296",
+      "total_supply": "1307081318396302606160667252596139"
+    },
+    "closing": {
+      "chunk_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "chunks_included": 10,
+      "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+      "hash": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+      "height": 216921133,
+      "next_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+      "prev_hash": "DKmCapQDAJHTv4S1CnsZYsLGyPkdmTbJ5CeTs8VjAPW",
+      "prev_height": 216921132,
+      "timestamp_nanosec": "1790174670307780019",
+      "total_supply": "1307080972134748123637829352596139"
+    },
+    "following_B": {
+      "hash": "J6jyjUSFFatXnCKEG3nKaD9qQLzQrY4xWyFkB5a5mJHB",
+      "height": 216921134,
+      "parent": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+      "saved_records": 390
+    },
+    "opening_parent": {
+      "chunk_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "chunks_included": 10,
+      "epoch_id": "9eBwsdbVdWMbU8jQDGkq8kG2EU3ixw62LYefotB1icS7",
+      "hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+      "height": 216877933,
+      "next_epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+      "prev_hash": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63",
+      "prev_height": 216877932,
+      "timestamp_nanosec": "1790147485548163769",
+      "total_supply": "1307054347346648920877965154628416"
+    }
+  },
+  "derivation_formulas": {
+    "allocated_file_bytes": "remaining * archive_hop_allocated_file_bytes / 99; excludes directory overhead",
+    "body_bytes_at_mean": "remaining * archive_response_bytes / 99",
+    "direct_serial_hours": "remaining * (1 + archive_transport_ns / 1e9 / 99) / 3600",
+    "implied_interval_debit": "validated_A_reward_mint - (canonical_closing_supply - canonical_opening_parent_supply); NOT independently measured",
+    "raw_logical_bytes": "remaining * archive_hop_raw_logical_file_bytes / 99",
+    "scheduling_floor_hours": "requests / requests_per_minute / 60",
+    "two_hop_serial_hours": "remaining * pilot_wall_ns / 1e9 / 99 / 3600"
+  },
+  "estimates": {
+    "recommended_wall_time_planning_hours_unmeasured": [
+      6,
+      8
+    ],
+    "remaining_bodies_at_four_times_pilot_mean_bytes": "3374059632.92929292929292929292929292929292929292929292929294",
+    "remaining_bodies_at_pilot_mean_bytes": "843514908.232323232323232323232323232323232323232323232323234",
+    "remaining_bodies_at_twice_pilot_mean_bytes": "1687029816.46464646464646464646464646464646464646464646464647",
+    "remaining_bodies_if_every_response_equals_pilot_maximum_bytes": 920810135,
+    "remaining_bodies_if_every_response_equals_pilot_p95_bytes": 904518713,
+    "remaining_direct_120rpm_scheduling_floor_hours": "5.98597222222222222222222222222222222222222222222222222222222",
+    "remaining_direct_180rpm_ceiling_floor_hours_not_recommended": "3.99064814814814814814814814814814814814814814814814814814815",
+    "remaining_direct_allocated_file_bytes_on_pilot_filesystem": "1435449199.19191919191919191919191919191919191919191919191919",
+    "remaining_direct_raw_logical_bytes_at_pilot_file_proportions": "943255136.444444444444444444444444444444444444444444444444444",
+    "remaining_direct_sequential_hours_with_one_second_pause": "22.7927151320636672278338945005611672278338945005611672278339",
+    "remaining_raw_file_count_with_four_files_per_attempt": 172396,
+    "remaining_two_hop_120rpm_scheduling_floor_hours": "11.9719444444444444444444444444444444444444444444444444444444",
+    "remaining_two_hop_sequential_hours": "46.6650300694967957351290684624017957351290684624017957351292",
+    "status": "SCENARIOS_NOT_BOUNDS_OR_MEASURED_FULL_RANGE_PERFORMANCE",
+    "verbose_derived_report_bytes_if_pilot_shape_repeated_for_whole_interval": "290269008"
+  },
+  "input_hashes": [
+    {
+      "bytes": 671919,
+      "path": "results/85_neardata_header_pilot_validation_216877934_to_216878033.json",
+      "sha256": "4a2711e3049ddd83ed0912db71465b0045cbd09ce23627073cced3c06006868b"
+    },
+    {
+      "bytes": 13736,
+      "path": "results/84_neardata_contiguous_header_pilot_plan.json",
+      "sha256": "2bb63da7362e6defb894a49996a02832a413bcf06aa8d422310eb4b32cf2b117"
+    },
+    {
+      "bytes": 105002,
+      "path": "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json",
+      "sha256": "a4926883771da888baca6938cd5995509c0c667d993e3e364819b2c5692fb53a"
+    },
+    {
+      "bytes": 14494,
+      "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/pilot_216877934_216878033/manifest.json",
+      "sha256": "f86470798e74b8e38b382c4a0ff7f3400e2d214082d4c32ed384bc2e81519118"
+    }
+  ],
+  "measured": {
+    "archive_hop_allocated_file_bytes": 3297280,
+    "archive_hop_raw_logical_file_bytes": 2166692,
+    "header_response_body_bytes": 1937585,
+    "mean_archive_transport_seconds": "0.903844044535353535353535353535353535353535353535353535353535",
+    "mean_header_body_bytes": "19571.5656565656565656565656565656565656565656565656565656566",
+    "new_header_responses": 99,
+    "performance": {
+      "downloaded_body_bytes_all_attempts": 1937585,
+      "full_interval_volume_or_throughput_projection": null,
+      "http200_body_size_max": 21365,
+      "http200_body_size_min": 17444,
+      "http200_body_size_p95": 20987,
+      "new_http_responses_recorded": 198,
+      "observed_body_bytes_per_transport_second": "10829.33065023721263854967434206229113349",
+      "observed_http_status_counts": {
+        "200": 99,
+        "302": 99
+      },
+      "raw_store_logical_bytes_excluding_validation_reports": 2395523,
+      "retained_unpublished_body_draft_bytes": 0,
+      "reused_seed_download_bytes": 0,
+      "session_records": [
+        {
+          "downloaded_body_bytes": 1937585,
+          "downloaded_body_bytes_per_wall_second": "5021.098162419496237500862753385359996635",
+          "finished_at": "2026-11-07T20:26:20.519561+00:00",
+          "new_http_requests": 198,
+          "new_http_requests_per_wall_second": "0.5131013277657807296325946088405418494330",
+          "started_at": "2026-11-07T20:19:54.643591+00:00",
+          "status": "COMPLETE",
+          "wall_elapsed_ns": 385888691542
+        }
+      ],
+      "summed_transport_elapsed_ns": 178920107122
+    },
+    "redirect_response_body_bytes": 0,
+    "redirect_responses": 99,
+    "wall_seconds_per_uncached_height_two_hop": "3.89786557113131313131313131313131313131313131313131313131313"
+  },
+  "method": "Offline exact integer and Decimal arithmetic from result 85, its retained HTTP metadata and revalidated canonical RPC controls. No chain data fetched; latencies and sizes extrapolated only as explicitly labelled scenarios. Public documentation and fetcher source reviewed 2026-11-07; main links are mutable.",
+  "proposed_new_limits_not_applied_to_existing_pilot": {
+    "caps_reserve_for_all_inflight_responses": true,
+    "checkpoint_every_accepted_heights_at_most": 1000,
+    "connect_timeout_seconds": 15,
+    "first_pass_new_requests": 43099,
+    "initial_optimized_segment_new_heights": 1000,
+    "large_raw_files_in_git": false,
+    "lifetime_new_requests": 86198,
+    "max_ahead_of_validated_prefix_results": 16,
+    "max_manually_initiated_attempts_per_missing_height": 2,
+    "max_requests_per_invocation": 4096,
+    "maximum_combined_with_completed_pilot_requests": 86396,
+    "minimum_free_bytes_before_start": 10737418240,
+    "new_store_cap_bytes_including_metadata_reports_and_drafts": 8589934592,
+    "per_response_cap_bytes": 33554432,
+    "raw_store_outside_checkout": true,
+    "request_timeout_seconds": 60,
+    "retained_response_body_cap_bytes_all_new_attempts": 2147483648,
+    "stop_scheduling_below_free_bytes": 2147483648
+  },
+  "recommended_option": {
+    "automatic_redirects": false,
+    "automatic_retries": 0,
+    "burst_allowance": 0,
+    "endpoint": "https://a3.mainnet.neardata.xyz/v0/block/{height}/headers",
+    "global_maximum_starts_in_any_60_seconds": 120,
+    "maximum_concurrent_requests": 4,
+    "minimum_seconds_between_request_starts": "0.5",
+    "no_authentication": true,
+    "pooled_connections_if_supported": true,
+    "routing_basis": "99 retained official redirects and documented archive routing; unexpected redirect stops",
+    "scope_authorization": "Proposal requires implementation/review and authorization before full collection"
+  },
+  "references": [
+    "https://github.com/fastnear/neardata-server/blob/7324d9131e7e8285306606ba05822b007e44c53a/README.md",
+    "https://github.com/fastnear/neardata-server/blob/7324d9131e7e8285306606ba05822b007e44c53a/src/api.rs",
+    "https://github.com/fastnear/neardata-server/blob/7324d9131e7e8285306606ba05822b007e44c53a/src/main.rs",
+    "https://github.com/fastnear/libs/blob/main/neardata-fetcher/src/fetcher.rs",
+    "https://github.com/fastnear/libs/blob/main/neardata-fetcher/src/utils.rs",
+    "https://github.com/fastnear/libs/blob/main/neardata-fetcher/src/types.rs"
+  ],
+  "scope": {
+    "epoch_height": 4793,
+    "included_height_interval": [
+      216877934,
+      216921133
+    ],
+    "network": "mainnet",
+    "numerical_height_slots": 43200,
+    "produced_block_count_for_full_interval": null,
+    "remaining_first_pass_heights": 43099,
+    "remaining_height_interval": [
+      216878034,
+      216921132
+    ],
+    "reused_closing_height": 216921133,
+    "reused_pilot_height_interval": [
+      216877934,
+      216878033
+    ]
+  },
+  "chain_data_requests_executed_this_step": 0,
+  "status": "PROPOSAL_ONLY_FULL_COLLECTION_NOT_IMPLEMENTED_OR_EXECUTED"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "jars-transaction-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "sweat-relayer.near",
+    "tx_hash": "5WPinUvUZgj9hETPGEHooRNUSVW56g7cAeagLSk5vPug",
+    "wait_until": "FINAL"
+  }
+}

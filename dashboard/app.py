@@ -9,6 +9,8 @@ import plotly.express as px
 import streamlit as st
 import research_views
 import presentation
+import model_views
+import review_views
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -205,6 +207,7 @@ def download_csv(label, frame, filename, *, source=None, filters=None):
 
 try:
     research = research_views.load_evidence(research_views.signature())
+    review = review_views.load_evidence(review_views.signature())
     weekly = load_csv(
         f"14_weekly_growth_and_costs_{PERIOD}.csv",
         ["week_start", "week_end"],
@@ -696,6 +699,7 @@ top_ten_max = weekly["top_10_accounts_transaction_share_pct"].max()
 
 st.title("NEAR Growth Intelligence")
 research_views.overview(research)
+review_views.opening(review)
 
 st.markdown(
     "**Reading the comparisons · 2026 (UTC)**\n\n"
@@ -1096,7 +1100,7 @@ with drivers_tab:
                 )
                 st.caption(
                     "Transactions can overlap across action categories. "
-                    "DELEGATE_ACTION payloads have not been expanded. "
+                    "These aggregate profiles do not expand DELEGATE_ACTION payloads; selected mechanisms are shown below. "
                     "Action records alone do not establish success."
                 )
 
@@ -1240,8 +1244,11 @@ with drivers_tab:
     )
 
 
+    review_views.attribution(review)
+
+
 with returns_tab:
-    research_views.persistent_activity(research)
+    research_views.persistent_activity(research, review["returner_execution_bounds"])
     st.caption("Original eight-week cohort series · 24 August–18 October 2026")
     st.subheader("Did accounts participate in later weeks?")
     st.write(
@@ -1600,6 +1607,7 @@ with costs_tab:
     )
 
     research_views.supply_and_trace(research)
+    review_views.supply_and_wallets(review)
 
     with st.expander("Inspect and download the weekly economic comparison"):
         presentation.table(economics, hide_index=True, width="stretch")
@@ -1657,6 +1665,8 @@ with costs_tab:
 
 with decisions_tab:
     st.info("The published persistence measurements and bounded withdrawal-provenance investigation are complete within their stated limits. Supply reconciliation is ongoing. Full-window issuance, actual burn, revenue origin and holder cash flows remain unresolved investment inputs; no valuation or causal cohort effect is established.")
+    model_views.render()
+    review_views.deliverables(review)
     st.caption("Eight-week research · 24 August–18 October 2026")
     st.subheader("Turn the evidence into investigation priorities")
     st.write(
@@ -1761,7 +1771,7 @@ with decisions_tab:
             "Evidence boundary":
                 "Validator-update balances remain incompletely "
                 "reconciled with supply. No complete valuation "
-                "or token-value model is provided.",
+                "is provided. The conditional scenario model tests explicit assumptions; it does not resolve these missing inputs.",
             "Sources": "Results 28–34, 36 and 37",
         },
     ]

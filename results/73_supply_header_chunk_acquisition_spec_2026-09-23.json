@@ -1,0 +1,144 @@
+{
+  "block_required_fields": [
+    "network",
+    "header.height",
+    "header.hash",
+    "header.prev_hash",
+    "header.prev_height",
+    "header.timestamp_nanosec",
+    "header.epoch_id",
+    "header.next_epoch_id",
+    "header.total_supply",
+    "header.chunk_mask",
+    "header.chunks_included"
+  ],
+  "controls": [
+    {
+      "hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+      "height": 216877933,
+      "role": "opening_baseline_excluded_from_debit_sum"
+    },
+    {
+      "hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+      "height": 216877934,
+      "role": "first_included_epoch_boundary",
+      "timestamp_nanosec": "1790147486203722296"
+    },
+    {
+      "hash": "2Q7yUNdaLfnTkWduSkMYJfueFFg7dgHYpMb4chiS5MZi",
+      "height": 216921133,
+      "role": "last_included_block",
+      "timestamp_nanosec": "1790174670307780019"
+    },
+    {
+      "hash": "J6jyjUSFFatXnCKEG3nKaD9qQLzQrY4xWyFkB5a5mJHB",
+      "height": 216921134,
+      "role": "following_epoch_boundary_excluded_from_debit_sum",
+      "timestamp_nanosec": "1790174670972731269"
+    }
+  ],
+  "eight_week_extension": {
+    "bulk_dependent": [
+      "all inclusion-timed net debits",
+      "full-week independent net accounting"
+    ],
+    "epoch_method": "Reuse saved closing hashes, lossless endpoints, backwards actual-start/parent walk, successor-epoch reward maps and active configuration checks per complete week; cache across weeks, retain edge responses outside application dates",
+    "independently_extendable": [
+      "exact endpoint supply movement",
+      "actual epoch application census",
+      "protocol-validated reward minting"
+    ],
+    "no_automatic_collection": true,
+    "separately_unavailable": [
+      "gross burn breakdown",
+      "subsidies"
+    ]
+  },
+  "historical_implementation": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/core/primitives/src/block.rs#L145",
+  "identity": "S_last - S_baseline = independently recorded epoch_reward_mint_at_A - SUM(newly_included_header_net_debits), under the verified historical protocol path",
+  "manifest_required": [
+    "source/export implementation and version",
+    "network and canonical selection rule",
+    "declared range and edge controls",
+    "retrieval/export UTC times",
+    "actual record counts",
+    "file names, lengths and SHA-256",
+    "schema/encoding/units",
+    "access permissions",
+    "retention statement",
+    "verified bounded acquisition cost or explicit unavailable cost"
+  ],
+  "network": "mainnet",
+  "ordered_chunk_required_fields": [
+    "array_index",
+    "shard_id",
+    "chunk_hash",
+    "prev_block_hash",
+    "height_created",
+    "height_included",
+    "balance_burnt"
+  ],
+  "precision": {
+    "float_casts_acceptable": false,
+    "money": "Original unsigned integer yoctoNEAR strings, no upstream FLOAT conversion",
+    "timestamps": "Original integer nanoseconds",
+    "tolerance_yocto": "0"
+  },
+  "range": {
+    "end_exclusive_height": 216921134,
+    "first_included_height": 216877934,
+    "last_included_height": 216921133,
+    "numeric_height_slots": 43200,
+    "produced_block_count": "Must be established by canonical predecessor coverage; skipped heights allowed"
+  },
+  "retrieval_options": [
+    {
+      "access_status": "No operator export or granted path established; no provisioning/provider contact performed",
+      "option": "Read-only local export from an ALREADY retained canonical archive",
+      "technical_capability": "Retained blocks with ordered chunk-header manifests can provide the required fields"
+    },
+    {
+      "access_status": "No suitable accessible object path established",
+      "option": "Existing lossless object-store/NDJSON/Parquet export",
+      "technical_capability": "Accept only after schema, lineage, permission, cost and retained interval validation"
+    },
+    {
+      "access_status": "Insufficient schema: no inclusion heights/mask/balance_burnt; supply FLOAT64",
+      "option": "Verified public BigQuery blocks/chunks"
+    },
+    {
+      "access_status": "Selected fields omit inclusion/debit data; permissions, retention, cost and precision unverified",
+      "option": "Documented near-lakehouse-public Avro block_chunks export"
+    },
+    {
+      "access_status": "Suitable for already saved point controls; individual-block scans are excluded from this acquisition",
+      "option": "Public archival block RPC"
+    }
+  ],
+  "scope": "Epoch 4793 canonical inclusion blocks; independent NET header debit, not gross burn/subsidy",
+  "source_hashes": {
+    "results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json": {
+      "bytes": 105002,
+      "sha256": "a4926883771da888baca6938cd5995509c0c667d993e3e364819b2c5692fb53a"
+    }
+  },
+  "specification_version": 1,
+  "status": "ACQUISITION_SPEC_ONLY_NO_CONFIRMED_BULK_ACCESS",
+  "validation": [
+    "Validate both range edges and predecessor baseline against saved canonical captures",
+    "Unique block hashes/heights; every nonfirst produced block prev_hash links to the preceding exported block; legal height skips allowed",
+    "One epoch ID throughout the included interval; active protocol/layout from saved A configuration; check claimed source implementation against reviewed protocol 86",
+    "Unique shard IDs and chunk keys within each manifest; ordered mask and chunks_included counts agree with configured shard coverage",
+    "Count balance_burnt only when height_included equals the inclusion block height; do not deduplicate carried-forward headers by global chunk hash alone",
+    "Preserve creation predecessors for delayed chunks; never force every newly included header to reference the inclusion block immediate parent",
+    "Independently sum inclusion-timed exact net debits; compare with exact endpoint movement and separately recorded epoch mint; preserve any residual rather than fill it",
+    "Missing records, partial manifests or lossy monetary fields invalidate a complete debit total; no zero filling"
+  ],
+  "volume": {
+    "actual_bytes": null,
+    "block_records_upper_bound": 43200,
+    "cost": null,
+    "ten_shard_manifest_entries_upper_bound": 432000,
+    "zero_cost_established": false
+  }
+}

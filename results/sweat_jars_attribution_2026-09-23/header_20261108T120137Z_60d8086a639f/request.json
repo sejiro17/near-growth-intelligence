@@ -1,0 +1,8 @@
+{
+  "id": "jars-submission-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "EfqWgHidykoyeXWxuD9Zf5NUhGqvRnP8ezo4BGBVAXwQ"
+  }
+}

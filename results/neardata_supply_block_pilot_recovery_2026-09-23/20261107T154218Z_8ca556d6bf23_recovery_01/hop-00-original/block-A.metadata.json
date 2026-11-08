@@ -1,0 +1,63 @@
+{
+  "body_complete": true,
+  "endpoint": "https://mainnet.neardata.xyz/v0/block/216877934",
+  "finished_at": "2026-11-07T15:43:31.032825+00:00",
+  "http_reason": "Found",
+  "http_status": 302,
+  "http_version": 11,
+  "request_bytes": 195,
+  "request_description_sha256": "10dc315f2c4695cc27ad48d2994b834a68408c986ddc1455324982bdf424bd53",
+  "request_http_method": "GET",
+  "request_path": "/v0/block/216877934",
+  "request_sha256": "43ff417c11c3f0502bf2dbe0a33e0186ad586451493c83e690ea67e2ced7f065",
+  "response_bytes": 0,
+  "response_headers": [
+    [
+      "Date",
+      "Sat, 07 Nov 2026 15:43:31 GMT"
+    ],
+    [
+      "Content-Length",
+      "0"
+    ],
+    [
+      "Connection",
+      "close"
+    ],
+    [
+      "Location",
+      "https://a3.mainnet.neardata.xyz/v0/block/216877934"
+    ],
+    [
+      "CF-Ray",
+      "a56d7439fc5a9817-LIS"
+    ],
+    [
+      "CF-Cache-Status",
+      "DYNAMIC"
+    ],
+    [
+      "Cache-Control",
+      "public, max-age=86400"
+    ],
+    [
+      "Server",
+      "cloudflare"
+    ],
+    [
+      "Vary",
+      "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    ],
+    [
+      "access-control-allow-credentials",
+      "true"
+    ],
+    [
+      "alt-svc",
+      "h3=\":443\"; ma=86400"
+    ]
+  ],
+  "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "started_at": "2026-11-07T15:43:23.311833+00:00",
+  "transport_error": null
+}

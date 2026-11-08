@@ -68,18 +68,21 @@ def overview(data):
                 "Fresh purchases, durable holdings and holder value capture are unmeasured; "
                 "eight-week supply reconciliation and revenue attribution remain unresolved.")
     st.caption("NEAR mainnet · UTC 2026 · starting-week signing accounts, not verified people or newly acquired users. "
-               "The current published checkpoint uses saved results 39, 46, 54, 57, 59 and 61. "
+               "The population/cohort checkpoint uses saved results 39, 46, 54, 57, 59 and 61; the current review adds results through 106. "
                "Named evidence downloads preserve saved precision; table-toolbar exports contain presentation data.")
     with st.expander("Opening evidence and measurement scope"):
         for item in data["opening"]:
-            st.markdown(f"**{item['question']}** {item['answer']}")
+            answer = item["answer"].replace("Independent issuance and actual supply burn remain unavailable.",
+                "Full-window independent issuance and actual supply burn remain unavailable; the dated reward week is shown separately.")
+            answer = answer.replace("Descendant outcomes remain unavailable.", "For these cohort populations, descendant outcomes remain unavailable.")
+            st.markdown(f"**{item['question']}** {answer}")
         st.caption("Economic unavailability in this checkpoint refers to the full eight-week accounting. "
                    "The ongoing supply investigation does not change these published window totals.")
         st.download_button("Download integrated research evidence (JSON)", data=ARTIFACT.read_bytes(),
                            file_name=ARTIFACT.name, mime="application/json", key="integrated_evidence_download")
 
 
-def persistent_activity(data):
+def persistent_activity(data, execution_bounds):
     st.subheader("Persistence and scoped execution")
     st.caption("Starting-week activity cohorts · UTC · exact-week returns and all-three-checkpoint intersections")
     cohort_rows = []
@@ -109,7 +112,9 @@ def persistent_activity(data):
     presentation.table(populations[["Group", "Submission week", "Accounts", "Transactions", "Week transaction share", "Initial success"]],
                        hide_index=True, width="stretch", alt="Overlapping returner groups with transaction contribution and initial-receipt success")
     overlap = data["shared_week"]["overlap"]
-    st.warning(f"These groups overlap. The shared 5–11 October week contains {overlap['august_and_september_accounts']:,} accounts and {overlap['august_and_september_transactions']:,} transactions in both exact-return groups. The August repeated-checkpoint population is a subset. Do not add totals or infer causal differences between horizons. Union/intersection spending is unavailable.")
+    st.warning("Some accounts belong to more than one returner group, so the group totals cannot be combined. "
+               "Differences between groups are descriptive; they do not establish why accounts returned. "
+               "Spending for the combined, deduplicated population is unavailable.")
     st.markdown("**Recorded spending for the same overlapping groups**")
     presentation.table(populations[["Group", "Submission week", "Conversion NEAR", "Initial receipt NEAR"]],
                        near_places=4, hide_index=True, width="stretch", alt="Separate recorded conversion and initial-receipt spending for overlapping groups")
@@ -118,7 +123,27 @@ def persistent_activity(data):
     st.markdown("**Concentration and contrary evidence.** The top ten returners contributed 73.98% and 75.12% of the August cohorts’ +8 transactions. The September +1 group’s top ten contributed 59.59%. Its initial-receipt failure rate was 17.65%; the August shared-week groups were 8.37% and 8.48%. The September account spike also has separately measured self-deletion context; low account return is not verified user churn.")
     st.caption("All selected initial receipts have one observed outcome and valid attribution/costs. "
                "This is observed-record consistency, not independent ingestion completeness or complete-chain success.")
-    with st.expander("Execution dates, statuses and coverage"):
+    st.markdown("**Successful initial execution beyond the ten leading signers**")
+    bound_rows = []
+    for row in execution_bounds["populations"]:
+        values = row["bounds"]
+        bound_rows.append({"Starting cohort": row["cohort_week"], "Submission week": row["submission_week"],
+            "Transactions outside own top ten": values["outside_top10_transactions"] if values else None,
+            "Minimum successful initial receipts": values["successful_initial_receipts_outside_top10_lower"] if values else None,
+            "Maximum successful initial receipts": values["successful_initial_receipts_outside_top10_upper"] if values else None,
+            "Outside transaction success bounds": values["outside_initial_success_pct_lower_display"]+"%–"+values["outside_initial_success_pct_upper_display"]+"%" if values and values["outside_initial_success_pct_lower_display"] is not None else "Unavailable"})
+    presentation.table(pd.DataFrame(bound_rows), hide_index=True, width="stretch",
+                       alt="Separate August +8 populations: bounds on successful initial receipts outside each population's own top ten signers")
+    st.caption("Where coverage controls pass, the lower counts establish a minimum number of successful initial receipts beyond each population’s own ten leading signers within observed coverage. "
+               "These are bounds on transactions, not measured account-level success rates, broad human adoption or complete-chain settlement. "
+               "The cohorts overlap and are not added. Missing or ambiguous coverage suppresses the bounds.")
+    with st.expander("Methodology: overlap, execution dates and coverage"):
+        st.markdown(f"During 5–11 October, {overlap['august_and_september_accounts']:,} accounts and "
+                    f"{overlap['august_and_september_transactions']:,} transactions belong to both exact-return groups. "
+                    "The August repeated-checkpoint group is a subset of the August +8 group. "
+                    "Totals therefore overlap, and the different cohort starting dates and return horizons "
+                    "do not support a causal comparison. Spending for either the union or the intersection "
+                    "of the groups was not separately measured.")
         presentation.table(populations[["Group", "Submission week", "Failed initial receipts", "Unassessed receipts"]],
                            hide_index=True, width="stretch", alt="Failed and unassessed initial-receipt counts for each overlapping group")
         rows = []
@@ -137,6 +162,15 @@ def persistent_activity(data):
         st.caption("Receipt-owner uniqueness covers four/five selected source transaction weeks. Initial success includes SUCCESS_VALUE and SUCCESS_RECEIPT_ID. "
                    "Zero link exclusions were reported. Source costs are FLOAT-derived; extra saved digits do not establish source accuracy.")
         st.caption("The exports contain aggregates and up to three diagnostic examples per bucket; complete account memberships, submission timestamps and every executor/height comparison cannot be independently reconstructed offline. Monetary totals become unavailable if matching/cost coverage fails.")
+        st.write("For N population transactions, T transactions from that population's own top ten and S successful initial receipts, "
+                 "outside success lies between max(0, S−T) and min(S, N−T). The denominator is N−T. "
+                 "Lower percentages round down and upper percentages round up to two decimals. "
+                 "Membership alignment uses reviewed, hashed SQL definitions and matching cohort/group controls; full row-level sets are not exported. "
+                 "Spending outside the top ten is not estimated from these counts.")
+        st.json(execution_bounds["populations"])
+        bounds_file = ROOT/"results/105_returner_initial_success_outside_top10_bounds.json"
+        st.download_button("Download exact outside-top-ten bounds (JSON)", data=bounds_file.read_bytes(),
+                           file_name=bounds_file.name, mime="application/json", key="returner_bounds_download")
 
 
 def supply_and_trace(data):
@@ -182,4 +216,4 @@ def supply_and_trace(data):
         {"Investment input": "Revenue origin and holder distributions", "Status": "Unverified", "Implication": "No attributable revenue yield, buyback return or holder cash-flow valuation"},
         {"Investment input": "Persistent purchases and balance commitments", "Status": "Unmeasured", "Implication": "Recorded spending alone does not establish net buying or durable holdings"}
     ]), hide_index=True, width="stretch", alt="Unavailable investment-model inputs and the conclusions they prevent")
-    st.caption("The revenue/buyback ledger, full issuance/burn reconciliation, broad relayer attribution and conditional investment model remain incomplete. The input summary is not an implemented valuation model.")
+    st.caption("The revenue/buyback ledger, full issuance/burn reconciliation and broad relayer attribution remain incomplete. The Decision priorities view implements a separate conditional scenario model; it does not establish valuation or expected returns.")

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="486" viewBox="0 0 800 486" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative scenario: required weekly activity versus assumed capture</title>
+<desc id="desc">At fixed price, fee rate and destruction allocation, raising assumed fee capture from 25 to 50 to 100 percent lowers required eligible activity from 49.47 to 24.74 to 12.37 billion US dollars per week. The target is dated epoch rewards, not total issuance or investment break-even.</desc>
+<rect width="800" height="486" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#172033">
+<text x="24" y="31" font-size="24" font-weight="bold">Illustrative scenario</text>
+<text x="24" y="56" font-size="17">Activity required to offset the dated epoch-reward baseline</text>
+<text x="24" y="80" font-size="14">Baseline: 618,436.07 NEAR/week · 21–27 September 2026</text>
+<text x="24" y="108" font-size="14">Required eligible activity (USD billions/week)</text>
+<line x1="90" y1="330.0000" x2="740" y2="330.0000" stroke="#dce2e9"/>
+<text x="75" y="335.0000" text-anchor="end" font-size="14">0</text>
+<line x1="90" y1="292.7273" x2="740" y2="292.7273" stroke="#dce2e9"/>
+<text x="75" y="297.7273" text-anchor="end" font-size="14">10</text>
+<line x1="90" y1="255.4545" x2="740" y2="255.4545" stroke="#dce2e9"/>
+<text x="75" y="260.4545" text-anchor="end" font-size="14">20</text>
+<line x1="90" y1="218.1818" x2="740" y2="218.1818" stroke="#dce2e9"/>
+<text x="75" y="223.1818" text-anchor="end" font-size="14">30</text>
+<line x1="90" y1="180.9091" x2="740" y2="180.9091" stroke="#dce2e9"/>
+<text x="75" y="185.9091" text-anchor="end" font-size="14">40</text>
+<line x1="90" y1="143.6364" x2="740" y2="143.6364" stroke="#dce2e9"/>
+<text x="75" y="148.6364" text-anchor="end" font-size="14">50</text>
+<text x="90.0000" y="353" text-anchor="middle" font-size="14">25%</text>
+<text x="306.6667" y="353" text-anchor="middle" font-size="14">50%</text>
+<text x="523.3333" y="353" text-anchor="middle" font-size="14">75%</text>
+<text x="740.0000" y="353" text-anchor="middle" font-size="14">100%</text>
+<polyline points="90.0000,145.5936 98.6667,152.6862 107.3333,159.2533 116.0000,165.3514 124.6667,171.0290 133.3333,176.3280 142.0000,181.2852 150.6667,185.9325 159.3333,190.2982 168.0000,194.4071 176.6667,198.2811 185.3333,201.9400 194.0000,205.4011 202.6667,208.6800 211.3333,211.7908 220.0000,214.7460 228.6667,217.5571 237.3333,220.2343 246.0000,222.7870 254.6667,225.2236 263.3333,227.5520 272.0000,229.7791 280.6667,231.9115 289.3333,233.9550 298.0000,235.9151 306.6667,237.7968 315.3333,239.6047 324.0000,241.3431 332.6667,243.0159 341.3333,244.6267 350.0000,246.1789 358.6667,247.6757 367.3333,249.1200 376.0000,250.5145 384.6667,251.8617 393.3333,253.1640 402.0000,254.4236 410.6667,255.6426 419.3333,256.8229 428.0000,257.9663 436.6667,259.0745 445.3333,260.1491 454.0000,261.1916 462.6667,262.2035 471.3333,263.1861 480.0000,264.1406 488.6667,265.0682 497.3333,265.9700 506.0000,266.8471 514.6667,267.7005 523.3333,268.5312 532.0000,269.3400 540.6667,270.1278 549.3333,270.8954 558.0000,271.6435 566.6667,272.3730 575.3333,273.0844 584.0000,273.7785 592.6667,274.4559 601.3333,275.1171 610.0000,275.7628 618.6667,276.3935 627.3333,277.0097 636.0000,277.6118 644.6667,278.2005 653.3333,278.7760 662.0000,279.3389 670.6667,279.8896 679.3333,280.4284 688.0000,280.9557 696.6667,281.4720 705.3333,281.9775 714.0000,282.4726 722.6667,282.9576 731.3333,283.4327 740.0000,283.8984" fill="none" stroke="#137c8b" stroke-width="3"/>
+<circle cx="90.0000" cy="145.5936" r="5" fill="#137c8b"/>
+<text x="102.0000" y="133.5936" text-anchor="start" font-size="15" font-weight="bold" fill="#137c8b">49.47</text>
+<circle cx="306.6667" cy="237.7968" r="5" fill="#9a4e12"/>
+<text x="318.6667" y="225.7968" text-anchor="start" font-size="15" font-weight="bold" fill="#9a4e12">24.74 (default)</text>
+<circle cx="740.0000" cy="283.8984" r="5" fill="#137c8b"/>
+<text x="728.0000" y="271.8984" text-anchor="end" font-size="15" font-weight="bold" fill="#137c8b">12.37</text>
+<text x="415" y="379" text-anchor="middle" font-size="15">Assumed share of eligible fees captured (%)</text>
+<text x="24" y="408" font-size="14">Fixed: $5/NEAR price · 0.1% fee · 25% purchase-and-destruction allocation.</text>
+<text x="24" y="431" font-size="14">Custody allocation 25%; 1-week horizon. Neither sets this weekly threshold.</text>
+<text x="24" y="454" font-size="14">0% capture: unreachable, not zero. Subsidies remain unavailable.</text>
+<text x="24" y="477" font-size="14">Not observed revenue, a forecast or investment break-even.</text>
+</g></svg>

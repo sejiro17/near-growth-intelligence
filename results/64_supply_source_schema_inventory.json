@@ -1,0 +1,233 @@
+[
+  {
+    "row_kind": "SUMMARY",
+    "table_name": null,
+    "column_name": null,
+    "field_path": null,
+    "data_type": null,
+    "is_nullable": null,
+    "is_partitioning_column": null,
+    "description": null,
+    "metadata_summary": "{\"metadata_time_utc\":\"2026-11-07T08:58:00.904410Z\",\"source_dataset\":\"bigquery-public-data.crypto_near_mainnet_us\",\"expected_export_rows\":21,\"top_level_rows\":20,\"nested_rows\":0,\"visible_tables\":[\"account_changes\",\"accounts\",\"blocks\",\"chunks\",\"circulating_supply\",\"execution_outcomes\",\"ft_balances_daily\",\"ft_events\",\"ft_events_contracts_by_account\",\"nft_events\",\"nft_events_contracts_by_account\",\"receipt_actions\",\"receipt_details\",\"receipt_origin_transaction\",\"transaction_actions\",\"transactions\"],\"inspected_tables\":[\"blocks\",\"chunks\"]}"
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "author_account_id",
+    "field_path": "author_account_id",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "block_date",
+    "field_path": "block_date",
+    "data_type": "DATE",
+    "is_nullable": "YES",
+    "is_partitioning_column": "YES",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "block_hash",
+    "field_path": "block_hash",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "block_height",
+    "field_path": "block_height",
+    "data_type": "INT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "block_timestamp",
+    "field_path": "block_timestamp",
+    "data_type": "INT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "block_timestamp_utc",
+    "field_path": "block_timestamp_utc",
+    "data_type": "TIMESTAMP",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "gas_price",
+    "field_path": "gas_price",
+    "data_type": "FLOAT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "prev_block_hash",
+    "field_path": "prev_block_hash",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "blocks",
+    "column_name": "total_supply",
+    "field_path": "total_supply",
+    "data_type": "FLOAT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "author_account_id",
+    "field_path": "author_account_id",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "block_date",
+    "field_path": "block_date",
+    "data_type": "DATE",
+    "is_nullable": "YES",
+    "is_partitioning_column": "YES",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "block_hash",
+    "field_path": "block_hash",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "block_height",
+    "field_path": "block_height",
+    "data_type": "INT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "block_timestamp",
+    "field_path": "block_timestamp",
+    "data_type": "INT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "block_timestamp_utc",
+    "field_path": "block_timestamp_utc",
+    "data_type": "TIMESTAMP",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "chunk_hash",
+    "field_path": "chunk_hash",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "gas_limit",
+    "field_path": "gas_limit",
+    "data_type": "FLOAT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "gas_used",
+    "field_path": "gas_used",
+    "data_type": "FLOAT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "shard_id",
+    "field_path": "shard_id",
+    "data_type": "INT64",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  },
+  {
+    "row_kind": "COLUMN",
+    "table_name": "chunks",
+    "column_name": "signature",
+    "field_path": "signature",
+    "data_type": "STRING",
+    "is_nullable": "YES",
+    "is_partitioning_column": "NO",
+    "description": null,
+    "metadata_summary": null
+  }
+]

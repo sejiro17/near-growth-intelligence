@@ -1,0 +1,1264 @@
+{
+  "attempted_height_requests": 48,
+  "capture_index": [
+    {
+      "height": 216878034,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878034/01/request.http",
+          "sha256": "ee5dcb99910509e15a51f9b3f8f2f08a211550ff5036dba523ebf225a5fc485b"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878034/01/request.json",
+          "sha256": "948160fc4c0f7aabe54f7b0c84cea3f88b88b82d3c92c9ed861ce8ad704ce3f3"
+        },
+        {
+          "bytes": 19971,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878034/01/response.body",
+          "sha256": "4a267aa31c9bed46454c9b002921ccaf2b7aa1cedda514ed02deebd8d92d9653"
+        },
+        {
+          "bytes": 1746,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878034/01/metadata.json",
+          "sha256": "708078016edd5a6628ebab9d56e266a5c2a1a4185520eb8d2338548dffcfcf37"
+        }
+      ]
+    },
+    {
+      "height": 216878035,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878035/01/request.http",
+          "sha256": "14da70d0a8fe11f7b115f2cf34006a3d2b987ee21bc1afafb43a63f31552e0ba"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878035/01/request.json",
+          "sha256": "7de10f28d56f9a585707f72b390fc691a6250386969b867995df4e3595cae9cb"
+        },
+        {
+          "bytes": 19292,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878035/01/response.body",
+          "sha256": "2c90160a711d81f71fbc033ac1eb90d239914a4058095626db7919543d4281fa"
+        },
+        {
+          "bytes": 1745,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878035/01/metadata.json",
+          "sha256": "1f560d87515d0185cec422332695b5a78202f4e1ba9d69f5fea991b1ef7093fc"
+        }
+      ]
+    },
+    {
+      "height": 216878036,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878036/01/request.http",
+          "sha256": "969689ab382ed83be822a39fdf8f49b3a3d190246e2e69ebb2b644911980ddfa"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878036/01/request.json",
+          "sha256": "53e737c763bce2a17459bac54354a0be10ef383118c56f4e48c103fed8e42349"
+        },
+        {
+          "bytes": 21112,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878036/01/response.body",
+          "sha256": "5485278ae0cd3a63ca0741dcc6b5f2cbda69656d7d3258a263ca6abe8d053674"
+        },
+        {
+          "bytes": 1745,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878036/01/metadata.json",
+          "sha256": "723dc1a8dc6400c55ae4797a87ac8250dcd32fc7fb4a652d8bfc3a9257677f9d"
+        }
+      ]
+    },
+    {
+      "height": 216878037,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878037/01/request.http",
+          "sha256": "feeccc773a734d28366ba1a001a33cb019bad60919ba1841370ce50f3c6f78ca"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878037/01/request.json",
+          "sha256": "d1756ee2f16909ed26cd91f44ffaffcb83d448721a656e0d7ae56da5c28d68d4"
+        },
+        {
+          "bytes": 19871,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878037/01/response.body",
+          "sha256": "faff477dc79109cf4144c5a6d94e8c06e58e16079d38046d78daec4026787c97"
+        },
+        {
+          "bytes": 1745,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878037/01/metadata.json",
+          "sha256": "9e2124f681d8ec1f59ada468253f39d4f5a4b14ee1aaa76943a432c98c0cce14"
+        }
+      ]
+    },
+    {
+      "height": 216878038,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878038/01/request.http",
+          "sha256": "d318ee0e006aecf184a4a1b878445ed63f8c357dd11868e23a32387d4f300b7b"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878038/01/request.json",
+          "sha256": "4f2d6cb47f744a84edd9ac334784313956dad15d815217815394c589490470af"
+        },
+        {
+          "bytes": 19941,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878038/01/response.body",
+          "sha256": "4b55ba5eb10dfb3c5fc1562ec14fa3fe3a9e8c4ceea930e10cf764524c0b2369"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878038/01/metadata.json",
+          "sha256": "38128466c110d6bc8cc67c2ad35f00f61cd548ed4e89374bc5678f67d5a09b4c"
+        }
+      ]
+    },
+    {
+      "height": 216878039,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878039/01/request.http",
+          "sha256": "246b68bb4324a6e29229fa0fab9a10300d2157540e7928296088442cbd45f0a3"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878039/01/request.json",
+          "sha256": "319097380a142eea6620d0748801e8d461d072969c5c8d6dc432dcb411a90244"
+        },
+        {
+          "bytes": 19594,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878039/01/response.body",
+          "sha256": "97d8e98b53c6279239fe2f28014c3c31c8ddc09ec637c13a671106307ebe0491"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878039/01/metadata.json",
+          "sha256": "397c26feb4c414486539003f7e554a3092016dbb7dc55d13a530a888db5fcf43"
+        }
+      ]
+    },
+    {
+      "height": 216878040,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878040/01/request.http",
+          "sha256": "22430ecc807b6a30e82ff46e0498710d7c5a219b682be82585aeeba26b742599"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878040/01/request.json",
+          "sha256": "d5a2d4aaa1549f98bcd05daef1bca3593e33b90d5bae7b8155038ffd57be6631"
+        },
+        {
+          "bytes": 20725,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878040/01/response.body",
+          "sha256": "dbd3a2c7f1888d69ae514f383af47cb5193ab1cd1c8f8303d4ecc913d9dc5b0c"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878040/01/metadata.json",
+          "sha256": "67c7d9c742bf4e6568c755e868dd07cee46c53e422b9917423e94401f26746a7"
+        }
+      ]
+    },
+    {
+      "height": 216878041,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878041/01/request.http",
+          "sha256": "3d45382921b427a0f5a82ba2a91b295e4b22629ec96b05fe1ebc339ebe816455"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878041/01/request.json",
+          "sha256": "3b10e224565197530e56abfb210d1987443c7f40d90c953d2a94e893ce69f670"
+        },
+        {
+          "bytes": 19556,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878041/01/response.body",
+          "sha256": "5fc3678fa66488a5c26c6c2b242f29af0fe317ea2adc236bf7f7d4ea5d6cfb15"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878041/01/metadata.json",
+          "sha256": "09b9f485d7bc6e9765e5b3c445981d1324ae1c34de9e2550b1d0a58d276273dd"
+        }
+      ]
+    },
+    {
+      "height": 216878042,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878042/01/request.http",
+          "sha256": "7192dc8f417311b5cc240059944f0da104e7425a261fade0d283fc253646efc3"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878042/01/request.json",
+          "sha256": "ec1df05f6fab769e7098c2fbfe76d466eae5689b97032a25bb8c7ed7fad6754c"
+        },
+        {
+          "bytes": 18894,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878042/01/response.body",
+          "sha256": "ada71d5b9dc4a9fe9c2a2a025e7f4af0a2dade78f092004c172cc842f47d838f"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878042/01/metadata.json",
+          "sha256": "dbcee5cf8dd4c1bed5466aa836d78c7c55a976882e289bd31f0c1adb8a8f40e4"
+        }
+      ]
+    },
+    {
+      "height": 216878043,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878043/01/request.http",
+          "sha256": "f738ed5731e95a37395a00f2f7845d9fa2e7ac8d2d2c6ab082ea414e00d9e0ce"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878043/01/request.json",
+          "sha256": "b5150539a7e4a65b0412a0e1a9b40ce94694bb996a35f9bb75efebd219541f9a"
+        },
+        {
+          "bytes": 20564,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878043/01/response.body",
+          "sha256": "8dbda858caa732e7eebeb2f331d38b94205d0aab8d3e7d8ce108fdd3b0b489f3"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878043/01/metadata.json",
+          "sha256": "1e40b38e7b8d3f059e10effa2e45c276316cd6ed4ab5edbaccc004c98ba8f461"
+        }
+      ]
+    },
+    {
+      "height": 216878044,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878044/01/request.http",
+          "sha256": "40d707d7e71041772d4b91833c9b17e2ac17ac8fd2dbc0e77c4a42551911be3f"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878044/01/request.json",
+          "sha256": "bb1c19f2899e5a3af685bbc4244ef985f604b9acb1a0c69c38875ace4cf5e6a9"
+        },
+        {
+          "bytes": 19091,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878044/01/response.body",
+          "sha256": "e73d73671ffbf1fbdbfb7209dbc64d5f09641d952e37f520e3fc5a32051c2ec6"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878044/01/metadata.json",
+          "sha256": "3d94cb88787d9ff8e51475ae4774f73f6ee346eab1684d4656792fd765d6cec9"
+        }
+      ]
+    },
+    {
+      "height": 216878045,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878045/01/request.http",
+          "sha256": "d7862f8ca0fe01c6d07cdcf7d08774e043dec0b5341a28fcd574e7adbde44740"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878045/01/request.json",
+          "sha256": "82068d3c175fd1fa0bcdc8c15df23b569c462f43013c071a508a0ecebed569b5"
+        },
+        {
+          "bytes": 19550,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878045/01/response.body",
+          "sha256": "97345f432a8164db15f7d0aea1501ac4bb4d2c1223d01b7c104a0a37f3727a52"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878045/01/metadata.json",
+          "sha256": "8591520150cd0bf9657801d7280356ccb79d1467316d86166f4f7c76b7ebab77"
+        }
+      ]
+    },
+    {
+      "height": 216878046,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878046/01/request.http",
+          "sha256": "06c5b699f947a28ba73b9803f3f7c241d29e92fd95b1b55af6d6731a05ef53b4"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878046/01/request.json",
+          "sha256": "d760b568cfb4858e0875a5053496f9c5c0c847bba5d2009b7f273d8d08541991"
+        },
+        {
+          "bytes": 19788,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878046/01/response.body",
+          "sha256": "4f460c9cfdb1dea0e9d0ec2e7f34b1313be314bedc14e436c643931972f3b4b8"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878046/01/metadata.json",
+          "sha256": "4367d3c13e71e9e7caa01af502b7aecbbfe17dfd177cced1f6f6ff8ed44bd6da"
+        }
+      ]
+    },
+    {
+      "height": 216878047,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878047/01/request.http",
+          "sha256": "f5297d8b9f28d23678a5f29c5156bd5a4214fb053d045168604257dd8b992575"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878047/01/request.json",
+          "sha256": "490062043d6ead3fd45b66d9cb01d90f956949fac07fd01a986d6dcf7a4876a8"
+        },
+        {
+          "bytes": 18968,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878047/01/response.body",
+          "sha256": "db70d47306badc9216840a20e6a5f082c8be800ea016ff0a70dcb150e23a013e"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878047/01/metadata.json",
+          "sha256": "96c2ae591424c9d28139ea3d7d7dc1927b919e73bdf505ecd1c80615593ab822"
+        }
+      ]
+    },
+    {
+      "height": 216878048,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878048/01/request.http",
+          "sha256": "b1dbc13520d8b21b689fd37c15cd5264473dd8e621560d653a22f4cb98eadfd7"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878048/01/request.json",
+          "sha256": "3dfae4f45952fb1fd0d5268d7a0023b42edcdc506b430e50c60688e8d2e0c001"
+        },
+        {
+          "bytes": 19365,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878048/01/response.body",
+          "sha256": "89e04634faf04b34a68ee1586f6e834a7b0375d672a749e5545011a7d8483b10"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878048/01/metadata.json",
+          "sha256": "e0b95a5f2f2baf0a678940984f6036f187d03e9959b6d7ce2050b56e384ad278"
+        }
+      ]
+    },
+    {
+      "height": 216878049,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878049/01/request.http",
+          "sha256": "7f711df682e1544fe52c04e0358ca2e8bd6d30fe07fbc81b8d909843ad660b1d"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878049/01/request.json",
+          "sha256": "a77bb4ae62f6a1bc21d204fbcadc041803d9a2cfa9f61bb684fe967c591bea9f"
+        },
+        {
+          "bytes": 19996,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878049/01/response.body",
+          "sha256": "6a00f3390a53143daa9267905ffd3cb40476ea0875686e5ef798197648a7caeb"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878049/01/metadata.json",
+          "sha256": "a1ce560cccfb56f72039c71bad8273259c04636cc6dbfd5421bf84a342293aec"
+        }
+      ]
+    },
+    {
+      "height": 216878050,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878050/01/request.http",
+          "sha256": "84bebd2cb579a7b449de01d83c49da93058eea3f5a03b09664602d3f3f143f0a"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878050/01/request.json",
+          "sha256": "524265cd47cd514012e1c846098cc39ffe28173730eb571b03c9d621fc2ca7d3"
+        },
+        {
+          "bytes": 18380,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878050/01/response.body",
+          "sha256": "6822b58035da447f729d44d94ae65519f8c07335f4b9f0b769b009d66457a8bb"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878050/01/metadata.json",
+          "sha256": "f89c92e7e439a8e65be29244429b3c1237f58720f3dbe19496d45c99527efecb"
+        }
+      ]
+    },
+    {
+      "height": 216878051,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878051/01/request.http",
+          "sha256": "fa0d91e64b1b0af5b211eddf88416aafad854803f2c4972fd300137ec2c5a40a"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878051/01/request.json",
+          "sha256": "c4481e6bb8fc1362320daf05356d629d9082d44dd2ccb8a7db9363724f8604b3"
+        },
+        {
+          "bytes": 18540,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878051/01/response.body",
+          "sha256": "51ecc24aff4e48cce7048d9bfeb4ec13ae7d6823ac012b9671f3ab41870d24af"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878051/01/metadata.json",
+          "sha256": "c251b13f76a408c6cce8012990ca6d2a2cc3cf1ffd2cfc5922c9f6ed2bf7ee49"
+        }
+      ]
+    },
+    {
+      "height": 216878052,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878052/01/request.http",
+          "sha256": "48ffad64548af07f79a960510048763446f2f33398a14078fa515ec1553d430d"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878052/01/request.json",
+          "sha256": "983246fb76a5ef2ad28e32c111f48601c6b85ea7f17ebe3b19f8a7d38d6dbcb3"
+        },
+        {
+          "bytes": 20245,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878052/01/response.body",
+          "sha256": "66b41ba1f27775acea3c2138b929a257a434b213f525412cde4f44e630b4b2e3"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878052/01/metadata.json",
+          "sha256": "55bca55c26ed52224bb358c0a6be4e8ed64e9b203164e8e7341b0f07819eb7a4"
+        }
+      ]
+    },
+    {
+      "height": 216878053,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878053/01/request.http",
+          "sha256": "876166f855e8de4e5b5d55bc38e33d56f1ec773c59288a4f8d34ff0a48f8b923"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878053/01/request.json",
+          "sha256": "17e2967622260d5e6f4cdedc7ac9b1079dee0d14a06beb79730887419a14b4cb"
+        },
+        {
+          "bytes": 19030,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878053/01/response.body",
+          "sha256": "4e5612558c12bc0ed8add89b2c73217b8a0cf03d071ecc325f56da4bcbb7dfc2"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878053/01/metadata.json",
+          "sha256": "df2b63f9a66cc769f134cab1558d0364b7853d06d7d558e0fcabc6d81508cf99"
+        }
+      ]
+    },
+    {
+      "height": 216878054,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878054/01/request.http",
+          "sha256": "11698b9e425fa01c611abdfe988b9dfc7c25af320127b07cc2cf4128caebc14b"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878054/01/request.json",
+          "sha256": "047ea1beadaeb575d41928ae2711506e1b2a270e4d54861394786f0f4c10b9e5"
+        },
+        {
+          "bytes": 18004,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878054/01/response.body",
+          "sha256": "be94a6958656815813a06f5e3a3230a6bc774ba3a11dd1e88f7ff6da3e856ab0"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878054/01/metadata.json",
+          "sha256": "6308c6e2a3bbcd865a9a68c5a252aa22f5f8f779c2ffe141dd127a458c9a662c"
+        }
+      ]
+    },
+    {
+      "height": 216878055,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878055/01/request.http",
+          "sha256": "3b06ce221da0bc0faa6d5706de3893863f030c850f732d9756b4870319757a1e"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878055/01/request.json",
+          "sha256": "22bf3b10ef63129b521ed85dbbce23a29cff72b3b3ce9a98ccc95db8d40919d5"
+        },
+        {
+          "bytes": 19979,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878055/01/response.body",
+          "sha256": "122e9a11e06ae2a13dacc148a3c23ed6a121e7d6c47ec0273803d27fa3e164d9"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878055/01/metadata.json",
+          "sha256": "19a310b23de76e77ffa63028fecac7c241fc91059236ff94cd47eefe18f16a17"
+        }
+      ]
+    },
+    {
+      "height": 216878056,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878056/01/request.http",
+          "sha256": "6a8d184f6d44298116970959f08b69f22f9bc0026ea3193bf805505bc7fcb61b"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878056/01/request.json",
+          "sha256": "08bbda2fd10c62bf9dcb6c57fe5ea481cbaf0f0561096f1bf14d4274d971fdf1"
+        },
+        {
+          "bytes": 18606,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878056/01/response.body",
+          "sha256": "6b23625a87af523f0a65813885b864d78eea50008d068f73c6d1c97f2723d9fc"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878056/01/metadata.json",
+          "sha256": "2312932933c7a92d23fbfb937c3cb5e33eb4da31636087c6406197801bf299dc"
+        }
+      ]
+    },
+    {
+      "height": 216878057,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878057/01/request.http",
+          "sha256": "f1f6fbf2d60add4779a6263cfd07b9246c3d8854e7a2f425d4a035f2e0988c95"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878057/01/request.json",
+          "sha256": "0bce5b413250531793c5ecc8b664350d725b6914985ec81222abeab339e232a4"
+        },
+        {
+          "bytes": 18644,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878057/01/response.body",
+          "sha256": "0864f454cce123a1763c8b4ed36e842154357fa42df53e1dbe003bad8c1422f7"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878057/01/metadata.json",
+          "sha256": "a9a8999bcb9177777722c83bc54071f3693e766cc8eaf0fc0cb4065307117ef2"
+        }
+      ]
+    },
+    {
+      "height": 216878058,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878058/01/request.http",
+          "sha256": "0200392cb13bc8816b36d166eb22c78ea1faa1ea23097602f1b883859969d822"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878058/01/request.json",
+          "sha256": "635c744a772ae0ce239e04e162ca2e94e8ff9b024b6c84dc917d7e511f57627d"
+        },
+        {
+          "bytes": 20448,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878058/01/response.body",
+          "sha256": "efdcf8d5e84b822af8bc2f4f0ef9e8c3cb8d1611bf3c0d69f2f301e75e2aa75a"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878058/01/metadata.json",
+          "sha256": "6aa72ba43c50fd2e8b76d63f9aef5155a04cea4a306cc4d5e80c9a5b5a048037"
+        }
+      ]
+    },
+    {
+      "height": 216878059,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878059/01/request.http",
+          "sha256": "a4bbeebd20d032937f6f005f5ece457c767c7d94cd3f9172511fcca6553df7d2"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878059/01/request.json",
+          "sha256": "ff09b81f2ed768fbbdfb70eded9567812aa9cda868cbc8698c04c36a000bb75c"
+        },
+        {
+          "bytes": 19874,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878059/01/response.body",
+          "sha256": "77c72ad1f5c2ec1cb67dcdbc0a13927e00a5a496dc8e4358867f04cca47baee2"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878059/01/metadata.json",
+          "sha256": "831acfd307da0f1fbfcee7d6ddc0d2605615c8504f484e5cce04c93df42f8569"
+        }
+      ]
+    },
+    {
+      "height": 216878060,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878060/01/request.http",
+          "sha256": "7317e2b9e7dc702c668318441a4727678f641d56409a2b0593eede3055ebab15"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878060/01/request.json",
+          "sha256": "5510df2360a1d0051e7059a12e3833dcb99448dd7fbf21d5574b88ee5c2e5452"
+        },
+        {
+          "bytes": 17931,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878060/01/response.body",
+          "sha256": "31ff919d44072b40099ac8d5644e2c20c6d80bacf4135d6d56db284df11c9ce2"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878060/01/metadata.json",
+          "sha256": "95f811a052d38ca576c0e0d85a8571a5f103cd774974e44aa9061ea49e3dbb00"
+        }
+      ]
+    },
+    {
+      "height": 216878061,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878061/01/request.http",
+          "sha256": "b8df505c5624603f909c503aecc2ca1e750c4b054f02d222ab3f52fb82e0d3f4"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878061/01/request.json",
+          "sha256": "933575f8270cae4fa77fa27fcfbfe08d17e5722d3e5f99490c03b052afd9f32f"
+        },
+        {
+          "bytes": 18538,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878061/01/response.body",
+          "sha256": "a9ea5f04056bd86d29daa504ff3394443b7caaa898ecd53568556df9d91b166f"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878061/01/metadata.json",
+          "sha256": "4bee4d8f18d56e1c45d45b48c52eb9a84168ca830e88c55953081b8987b8788e"
+        }
+      ]
+    },
+    {
+      "height": 216878062,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878062/01/request.http",
+          "sha256": "59d9dc05912e176e9a16991f35d221adac6c3cc0dae4111d08f978a97b914dce"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878062/01/request.json",
+          "sha256": "89923437b4f26492e22a419cf8efb5b168e71baa67ea1381bb24d12cdc149034"
+        },
+        {
+          "bytes": 19811,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878062/01/response.body",
+          "sha256": "0f70936e647280ba74204dda56642927ae2d64823cd6d1e00717e7f1f8e93b7f"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878062/01/metadata.json",
+          "sha256": "a33d4999828b5c4f93444767260df2887676b584cbbf0011bd94f821db26707a"
+        }
+      ]
+    },
+    {
+      "height": 216878063,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878063/01/request.http",
+          "sha256": "93ce24b907a6bd4968c2d5a2144635d4a12b0f35e621e01a503bb312e7aeda80"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878063/01/request.json",
+          "sha256": "e1959de2dc3c1b3df96e656c4f7abbd99cf315e138786cea235f452b9a6b2d75"
+        },
+        {
+          "bytes": 18013,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878063/01/response.body",
+          "sha256": "1e61e307170c462af39164e32b2f47b6e94beb6cedc7160385cf46cde82e165c"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878063/01/metadata.json",
+          "sha256": "1552ccc63bd91acde39bd2cd6b271a850ca865e340626cbf698f07a20fdb18d5"
+        }
+      ]
+    },
+    {
+      "height": 216878064,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878064/01/request.http",
+          "sha256": "d2b0a131c00aaff343624ad6a31333ec46ad7acef698a907a1eb87437aa5a550"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878064/01/request.json",
+          "sha256": "168fe02c33134021b80e747e1af3ec827f5a8298b0f9cc47d42c92a1a5df1880"
+        },
+        {
+          "bytes": 20237,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878064/01/response.body",
+          "sha256": "dabdb874a3e32d2837e87f9e570909ace28ac9a34f463f36d010809357ce14cd"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878064/01/metadata.json",
+          "sha256": "f182fd6bb773714045513bc0680222a3fef82f3765b455e9ff5c45d893016765"
+        }
+      ]
+    },
+    {
+      "height": 216878065,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878065/01/request.http",
+          "sha256": "41aa4635c942317732ad2c216f1b0fa34b9c53a547010c9e2b914b305864ce4c"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878065/01/request.json",
+          "sha256": "7e9cbceef2595874c10e905cf3eeaef3c701eafe8188b936451d4d25a337c508"
+        },
+        {
+          "bytes": 19981,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878065/01/response.body",
+          "sha256": "c1bb53e26c35c47a4ae35ee8318a481c71bd8f0ec3a5a03c0bffb8716d796c56"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878065/01/metadata.json",
+          "sha256": "1691a4d7f7c92cc691e6671c6fd320871b999964a7082294a2cbbcd20323ae82"
+        }
+      ]
+    },
+    {
+      "height": 216878066,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878066/01/request.http",
+          "sha256": "0b2acff862482dc5c0482d986e179488912722fa8af87763c98bee7f647265c0"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878066/01/request.json",
+          "sha256": "58389b4906178b07a8d9d3c2ae27edd5008c486e103e2269e313785e87175ebc"
+        },
+        {
+          "bytes": 21110,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878066/01/response.body",
+          "sha256": "586099fe426d897ec03db49b419d86adf0b840dfe7866df7a1efdd78e4ed99f1"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878066/01/metadata.json",
+          "sha256": "3e74aded6a548227174e993814e4c0729cf677b9667b7b940428182bcf92ec7d"
+        }
+      ]
+    },
+    {
+      "height": 216878067,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878067/01/request.http",
+          "sha256": "6844621016c8a600e5480ac57fcee12dde022217f25bb6375caaff1146a1bd86"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878067/01/request.json",
+          "sha256": "eb204bfa16289d38d92b9692b090e42f118e07ddda224a1284ca46bcb725fa7d"
+        },
+        {
+          "bytes": 20319,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878067/01/response.body",
+          "sha256": "bd4a305e3ae2df15c6b31d3b45cbc6db581d8aa218cf777f5661baad15e1e4f9"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878067/01/metadata.json",
+          "sha256": "80577b2bb9312a1916b14f353760e8859b08341efea443e2e246a5c181429354"
+        }
+      ]
+    },
+    {
+      "height": 216878068,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878068/01/request.http",
+          "sha256": "b2838a3e058cb5d456af29096c102abc9d954e28c9c00bf85a50718e94a91c7a"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878068/01/request.json",
+          "sha256": "733da115ab553fdb7a5b8d2d3be5cdc9fa2febcba4ea4a732be768c6cc65e2f7"
+        },
+        {
+          "bytes": 19476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878068/01/response.body",
+          "sha256": "e9a12ab223c6856d0f48ebf87a8947f28bf43fc37f3344e83dccd2af2bb11bfc"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878068/01/metadata.json",
+          "sha256": "5ed06e342b41924b4436931b9a718c04c1403ed3a30ab763dd5fe1d4f05cb81c"
+        }
+      ]
+    },
+    {
+      "height": 216878069,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878069/01/request.http",
+          "sha256": "c0c12bfff5f81c3c01373df94f74d6fff299d95bf6cdb0daf5128531bbf7609f"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878069/01/request.json",
+          "sha256": "79a9c24ffe4b40a40ca7b01f3c7755e067ab1a88675a91691f69b78d40266d9a"
+        },
+        {
+          "bytes": 20163,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878069/01/response.body",
+          "sha256": "1c8098e0cc8306a6916a7b2cd53d1160bc6d8454d338745dea689fac2fbfc142"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878069/01/metadata.json",
+          "sha256": "094927b2faad1d3e20b422ba4001e634f15fada2cf905093befc58b9dddea6bb"
+        }
+      ]
+    },
+    {
+      "height": 216878070,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878070/01/request.http",
+          "sha256": "5279aaa5709b68cad403e4b4382bc2578d41f01c83dbcb2754e80dab00a5b64b"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878070/01/request.json",
+          "sha256": "35a84a0a7318484f4cb3f67bcc1a8635de3b62f0154d677ec8034320f8ad12d9"
+        },
+        {
+          "bytes": 19595,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878070/01/response.body",
+          "sha256": "63b98866558431b7352c69e062982af44aaf592c2f42f0f74b35965d08573cec"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878070/01/metadata.json",
+          "sha256": "34a88a00a3d713e81c3de7119af5899875abebea76dfa748775eaeeeac0d2d76"
+        }
+      ]
+    },
+    {
+      "height": 216878071,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878071/01/request.http",
+          "sha256": "78434ae2da7e5c22c168294666cb892a03900432a82ee5126caa0a03db85c7e9"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878071/01/request.json",
+          "sha256": "9c1096f6ea116de6354e43fc15298cd30cbac41c4748f17dab2795e775029301"
+        },
+        {
+          "bytes": 18799,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878071/01/response.body",
+          "sha256": "745847ecdbce312089162fe6c52f286e56f33cbba150f0656e39c7093932f670"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878071/01/metadata.json",
+          "sha256": "34ecf545b877ab9efced13164ef107dcb2ac5a1d5f666b9b8f1e00397cc988f6"
+        }
+      ]
+    },
+    {
+      "height": 216878072,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878072/01/request.http",
+          "sha256": "9838c80766b41e0f68310863d6df1e400016df01b9e1ee1bd5dddf1d41a3c1dc"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878072/01/request.json",
+          "sha256": "cddd3b8b2d5298dc7f32e3eccb09074243a761a479a94e944e5af78f4d9cd1cf"
+        },
+        {
+          "bytes": 19136,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878072/01/response.body",
+          "sha256": "514464d08b3722f7b46231243a23dac4b316f2bb20a747d420398192964aae9f"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878072/01/metadata.json",
+          "sha256": "02bb65638804b3fd76c8ae54491d5d0238359e2fe4dfbe9c7f1f2120bcd4ca58"
+        }
+      ]
+    },
+    {
+      "height": 216878073,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878073/01/request.http",
+          "sha256": "aaf76af7a3fb4d52538150671e05aa5b6fbb501fcccf4f304f68165e38d2aa34"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878073/01/request.json",
+          "sha256": "5f0c0809bc4f566c57e03a792aa14e3d4b86a8777ea4f21d019bc0f7e1dee9fb"
+        },
+        {
+          "bytes": 19441,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878073/01/response.body",
+          "sha256": "93d498ae553d7148104633b3d2aac731155eea32134181df7bfdfa53bac66429"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878073/01/metadata.json",
+          "sha256": "10394c8dbdf6a6c45d63a89b2538c7e88ef8ba912cddd47b3975f25d0b3e3e27"
+        }
+      ]
+    },
+    {
+      "height": 216878074,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878074/01/request.http",
+          "sha256": "b2b35394ea2f40f261ab64c38bafcd766abe2d0bfa2a9047981f035b128ce2db"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878074/01/request.json",
+          "sha256": "a49d465658df230f6e93acc737cc47dccb055ce85871471f547e88328752d326"
+        },
+        {
+          "bytes": 19084,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878074/01/response.body",
+          "sha256": "a28c6a7d3b0a776b58e89c0579a7caf8a201aab44d5e2db8eb0bc82b59f8f55e"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878074/01/metadata.json",
+          "sha256": "8e626f5a297d063d70bc02012276fcce9487251f553210093c18eb3a06d4c9c9"
+        }
+      ]
+    },
+    {
+      "height": 216878075,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878075/01/request.http",
+          "sha256": "cea157ac63216d21bd52226b5fa7d3213d635be44cab8ff8ccf20bbfba2c93ee"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878075/01/request.json",
+          "sha256": "8de4caf89bcf5cdc145f0540f5d3e3c16930d4e85aa37e85dceb85380a47f660"
+        },
+        {
+          "bytes": 18558,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878075/01/response.body",
+          "sha256": "dae9df039b5b571582a79777427f7c4a5c35d57113b18c30147ab12015125fec"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878075/01/metadata.json",
+          "sha256": "fd64bcb4fa07a909dd4127b5a54b95f905428f02611b4aa1dfe70d95b3e4b3db"
+        }
+      ]
+    },
+    {
+      "height": 216878076,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878076/01/request.http",
+          "sha256": "08c35d1dbe209b08c188d9124f19a9f391eceb67ac55c349791bdb123a43c884"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878076/01/request.json",
+          "sha256": "2417668c1ae9b34c2c28ece563653f42022e093aa98ad021429c7ca7129e0531"
+        },
+        {
+          "bytes": 19246,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878076/01/response.body",
+          "sha256": "2f0fffa2592b47717d0ab504b07dfa9587f9c6a4bd7dcc14dcf49c348f443147"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878076/01/metadata.json",
+          "sha256": "dc19b06e0b1fc8814339302bf1764be3a57fe26e29ccacdca2f16f3f65a5ece8"
+        }
+      ]
+    },
+    {
+      "height": 216878077,
+      "kind": "BLOCK",
+      "sources": [
+        {
+          "bytes": 208,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878077/01/request.http",
+          "sha256": "e837c7f51486ebf43e5a8d7eff930b7330c9677183436e5a7e03c7529acffb4a"
+        },
+        {
+          "bytes": 476,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878077/01/request.json",
+          "sha256": "06326c60fe3cc3c0eb80aa5e0b7cf1a1f1fe85dc238d5d263dfe25523328a095"
+        },
+        {
+          "bytes": 19644,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878077/01/response.body",
+          "sha256": "15609915c89852a8e2ebdc5f0e8398e90c551fbb83f909530ba0c653da43e997"
+        },
+        {
+          "bytes": 1744,
+          "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/attempts/216878077/01/metadata.json",
+          "sha256": "a15ba7be698bfefa38b5889f2ebce548cb8632c0b5e192a2511f8ed76f1005ca"
+        }
+      ]
+    }
+  ],
+  "closing_observed_header": {
+    "chunk_mask": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "chunks_included": 10,
+    "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+    "hash": "8pPiXFt96nCHFYjhqVKahi86coXvtzhwYSY8dxbLosUZ",
+    "height": 216878077,
+    "next_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+    "prev_hash": "9bbQRtQr6z7yJc7KmmGP2FLySSF4iZPH3w8akisrAHZz",
+    "prev_height": 216878076,
+    "timestamp_nanosec": "1790147577007524640",
+    "total_supply": "1307081317849848439910153252596139"
+  },
+  "complete": false,
+  "coverage": "Observed chain anchored at saved canonical A; segment tail has no separate canonical tip control",
+  "cumulative_carried_headers_excluded": 14,
+  "cumulative_net_debit_including_pilot_yocto": "548661019681274200000000",
+  "cumulative_new_inclusions": 1426,
+  "cumulative_produced_blocks_including_pilot": 144,
+  "cumulative_supply_identity_discrepancy_yocto": "0",
+  "full_interval_closing_control_reached": false,
+  "gross_actual_burn_yocto": null,
+  "http_responses": 45,
+  "http_status_counts": {
+    "200": 44,
+    "429": 1
+  },
+  "independent_complete_segment_net_debit_yocto": null,
+  "independent_full_epoch_net_debit_yocto": null,
+  "independent_weekly_net_debit_yocto": null,
+  "last_validated_height": 216878077,
+  "manifest": {
+    "bytes": 715963,
+    "path": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033/manifest.json",
+    "sha256": "611bfd535fc182453bb2acaeeddeda642ba56eb780652b5090be4051a37beb73"
+  },
+  "next_unvalidated_height": 216878078,
+  "observed_segment_prefix_net_debit_yocto": "122074048141483800000000",
+  "opening_header": {
+    "chunk_mask": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "chunks_included": 10,
+    "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+    "hash": "4Uyi9g22QYaxGgE8YBe5Y3SbmipqLRJa8CMHoExv2sEs",
+    "height": 216878033,
+    "next_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+    "prev_hash": "68pAJxWz21o8hi4pkKgSBiJ8fr9yEwegkHfw2F8Whrz5",
+    "prev_height": 216878032,
+    "timestamp_nanosec": "1790147550200551271",
+    "total_supply": "1307081317971922488051637052596139"
+  },
+  "outside_scope_creation_predecessors": [],
+  "protocol_validated_mint_at_A_yocto": "26971051860538713462297967723",
+  "rate_audit": {
+    "cross_session_recent_starts_restored_on_resume": true,
+    "maximum_starts_in_any_session_rolling_60_seconds": 45,
+    "minimum_start_gap_ns": 500126125
+  },
+  "raw_file_allocated_bytes_excluding_session_reports": 1499136,
+  "raw_file_logical_bytes_excluding_session_reports": 968461,
+  "raw_store": "/Users/USER/Documents/near-growth-intelligence-evidence/neardata_headers_216877934_216921133/optimized_216878034_216879033",
+  "response_body_bytes": 857247,
+  "response_body_max_bytes": 21112,
+  "response_body_min_bytes": 137,
+  "retained_body_bytes_including_drafts": 857247,
+  "reused_connections": 41,
+  "sample_extrapolations": null,
+  "scope": "1000_HEIGHT_OPTIMIZED_SEGMENT_NOT_FULL_EPOCH",
+  "segment": [
+    216878034,
+    216879033
+  ],
+  "segment_produced_blocks": 44,
+  "segment_supply_identity_discrepancy_yocto": null,
+  "segment_supply_movement_yocto": null,
+  "sessions": [
+    {
+      "automatic_retries": 0,
+      "errors": [
+        "height 216878078: ValueError: HTTP/transport/routing unavailable; no automatic retry",
+        "ValueError: height 216878078: ValueError: HTTP/transport/routing unavailable; no automatic retry"
+      ],
+      "finished_at": "2026-11-07T20:56:12.526623+00:00",
+      "new_requests": 48,
+      "response_body_bytes": 857247,
+      "session_id": "0001",
+      "started_at": "2026-11-07T20:55:49.861139+00:00",
+      "status": "STOPPED",
+      "wall_elapsed_ns": 22665232459
+    }
+  ],
+  "subsidies_yocto": null,
+  "supported_skips": [],
+  "transport_or_http_errors": 1,
+  "unresolved_null_heights": []
+}

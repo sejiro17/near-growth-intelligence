@@ -1,0 +1,12 @@
+{
+  "id": "known-asset-opening",
+  "jsonrpc": "2.0",
+  "method": "query",
+  "params": {
+    "account_id": "intents.near",
+    "args_base64": "ewogICJhY2NvdW50X2lkIjogIjFjc2Z1bmRzYWRtaW4uc3B1dG5pay1kYW8ubmVhciIsCiAgInRva2VuX2lkIjogIm5lcDE0MTp3cmFwLm5lYXIiCn0K",
+    "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+    "method_name": "mt_balance_of",
+    "request_type": "call_function"
+  }
+}

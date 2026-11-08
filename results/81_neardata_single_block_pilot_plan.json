@@ -1,0 +1,123 @@
+{
+  "active_protocol_version_from_saved_configuration": 86,
+  "automatic_retries": 0,
+  "availability": "Anonymous documented operation; historical retention, access and returned monetary fields remain untested",
+  "connect_timeout_seconds": 15,
+  "credentials": "NONE",
+  "does_not_establish": "Bulk access/volume/cost, canonical predecessor census, complete receipt/state-change retention, gross burn/subsidies or weekly debit",
+  "expected_fields": {
+    "chunks": [
+      "shard_id",
+      "chunk_hash",
+      "prev_block_hash",
+      "height_created",
+      "height_included",
+      "balance_burnt"
+    ],
+    "header": [
+      "hash",
+      "height",
+      "prev_hash",
+      "epoch_id",
+      "next_epoch_id",
+      "timestamp_nanosec",
+      "total_supply"
+    ]
+  },
+  "fallback_endpoints": [],
+  "network": "mainnet",
+  "output_root": "results/neardata_supply_block_pilot_2026-09-23",
+  "references": [
+    "https://docs.fastnear.com/neardata",
+    "https://docs.fastnear.com/neardata/block",
+    "https://docs.fastnear.com/assets/files/neardata-3ad3f0506033a28203f9dec32a5664c8.json"
+  ],
+  "request": {
+    "body_bytes": 0,
+    "headers": [
+      [
+        "Host",
+        "mainnet.neardata.xyz"
+      ],
+      [
+        "Accept",
+        "application/json"
+      ],
+      [
+        "Accept-Encoding",
+        "identity"
+      ],
+      [
+        "Connection",
+        "close"
+      ],
+      [
+        "User-Agent",
+        "near-growth-intelligence-single-block-pilot/1"
+      ]
+    ],
+    "method": "GET",
+    "path": "/v0/block/216877934",
+    "url": "https://mainnet.neardata.xyz/v0/block/216877934"
+  },
+  "request_count": 1,
+  "request_timeout_seconds": 60,
+  "response_body_cap_bytes": 33554432,
+  "saved_header": {
+    "epoch_id": "BG2xjsQsu7M42vtinc8VeHCAPa23ecWRyCUWLNTXyHCQ",
+    "hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+    "height": 216877934,
+    "next_epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+    "prev_hash": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2",
+    "timestamp_nanosec": "1790147486203722296",
+    "total_supply": "1307081318396302606160667252596139"
+  },
+  "source_files": [
+    {
+      "bytes": 16533,
+      "path": "analysis/34_neardata_single_block_pilot.py",
+      "sha256": "bd1f1e33adc7bb23938e1eadaadc157c507bd4578372e3126dd49bcb11963e9d"
+    },
+    {
+      "bytes": 21427,
+      "path": "analysis/11_collect_canonical_validator_evidence.py",
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    {
+      "bytes": 108,
+      "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.request.json",
+      "sha256": "7b940e4a8f46db3b1557e1e4411662d6ee2453250b2aea78aa475daf84adf44f"
+    },
+    {
+      "bytes": 21511,
+      "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.response.body",
+      "sha256": "0827bdeeb88fd216766d8902d48098c3e28161f3775eead151058955db1eefae"
+    },
+    {
+      "bytes": 1349,
+      "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-block.metadata.json",
+      "sha256": "dc09796333f6ff40ded5be428af466463e97c41eedfc44bb425e63a7a402f9a9"
+    },
+    {
+      "bytes": 171,
+      "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-protocol.request.json",
+      "sha256": "0c84d2e1d55436d1db02ff750e3002036e7ab685d87755beb0f08d56c9492535"
+    },
+    {
+      "bytes": 9637,
+      "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-protocol.response.body",
+      "sha256": "f2bdc8f7f542c5cfb657e31516fff90e1317b2edfaf51a3eeacb1d6420b6246b"
+    },
+    {
+      "bytes": 1347,
+      "path": "results/canonical_rpc_2026-09-23/20261106T133436Z_2e1218e30fbc/stage1/A-protocol.metadata.json",
+      "sha256": "1bbaf8d90fc25f47794821997da6195a56c0ee6aaf89b84f97de18d83226656a"
+    }
+  ],
+  "spacing_seconds": 65,
+  "target": {
+    "hash": "HezadGLh22Yco1SLiakvzQ5ftw6F8pAf7zej4rn8BaVG",
+    "height": 216877934,
+    "parent": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+  }
+}

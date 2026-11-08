@@ -1,0 +1,17 @@
+POST / HTTP/1.1
+Host: archival-rpc.mainnet.near.org
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: identity
+Connection: close
+User-Agent: near-growth-intelligence-bounded-sweat-trace/1
+Content-Length: 160
+
+{
+  "id": "sweat-submission-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "F14YmYFQmFAjgy4DYqg4dK8o2NizhPQbm12VUWuNrz63"
+  }
+}

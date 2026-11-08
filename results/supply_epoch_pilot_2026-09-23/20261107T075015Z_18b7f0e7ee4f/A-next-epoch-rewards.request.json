@@ -1,0 +1,8 @@
+{
+  "id": "A-next-epoch-rewards",
+  "jsonrpc": "2.0",
+  "method": "validators",
+  "params": {
+    "epoch_id": "FVHyDPzSZRgtcicYP665D2gBhapxALLYQktzu6S3P9n2"
+  }
+}

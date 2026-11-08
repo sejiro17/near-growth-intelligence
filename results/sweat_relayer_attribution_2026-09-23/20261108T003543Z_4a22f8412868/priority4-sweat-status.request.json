@@ -1,0 +1,10 @@
+{
+  "id": "priority4-sweat-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "sweat-relayer.near",
+    "tx_hash": "4Hy1wk5EDGHDwAVd4FvFkUPALcsracRWZAW8Z8aB8gB4",
+    "wait_until": "FINAL"
+  }
+}

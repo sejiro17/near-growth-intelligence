@@ -1,0 +1,10 @@
+{
+  "id": "closing-3",
+  "jsonrpc": "2.0",
+  "method": "query",
+  "params": {
+    "account_id": "buybacks.multisignature.near",
+    "block_id": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+    "request_type": "view_account"
+  }
+}

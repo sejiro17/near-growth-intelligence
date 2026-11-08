@@ -1,0 +1,17 @@
+POST / HTTP/1.1
+Host: archival-rpc.mainnet.near.org
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: identity
+Connection: close
+User-Agent: near-growth-intelligence-bounded-sweat-trace/1
+Content-Length: 183
+
+{
+  "id": "priority4-sweat-origin",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_receipt_to_tx",
+  "params": {
+    "receipt_id": "2iLefvugZmJmpNn52hcyMBjxcfYGGz5d6R8h4W1dXaDS"
+  }
+}

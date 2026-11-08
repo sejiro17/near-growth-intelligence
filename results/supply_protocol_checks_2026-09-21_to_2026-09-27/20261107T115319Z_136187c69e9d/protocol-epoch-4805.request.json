@@ -1,0 +1,8 @@
+{
+  "id": "protocol-epoch-4805",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_protocol_config",
+  "params": {
+    "block_id": "DCAC8hrMb2efpeBYTr83fg5qExTcAoLnhRCEwwNesTSw"
+  }
+}

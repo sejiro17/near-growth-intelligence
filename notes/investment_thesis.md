@@ -1,322 +1,352 @@
-# NEAR: Growth Quality and Investment Thesis
+# NEAR: growth quality and conditional investment thesis
 
-## Investment Argument
+## Current conclusion
 
-**What grew?** First-four-week versus final-four-week averages increased 16.39% for transactions and 79.47% for active signing accounts. Fifteen-week endpoints instead declined 10.63% and 24.65%. The final four weeks include the account spike, while active days per account-week fell 52.59%. Growth depends on the comparison period.
+**What grew?** First-four-week versus final-four-week averages increased 16.39%
+for transactions and 79.47% for active signing accounts. Fifteen-week endpoints
+instead declined 10.63% and 24.65%. The final four weeks include the account spike;
+active days per account-week fell 52.59%. Growth depends on the baseline.
 
-**How much persisted?** Of the accounts active in the 10 and 17 August starting weeks, 47.41% and 46.18% returned in the exact +8 week. The shares active at all three +1/+4/+8 checkpoints were 37.48% and 37.83%. These are overlapping activity cohorts, not newly acquired users, and checkpoint persistence does not require continuous weekly activity. The top ten returners contributed 73.98% and 75.12% of their +8 transactions.
+**How much persisted?** Of accounts active in the 10 and 17 August starting weeks,
+47.41% and 46.18% returned at exact week +8; 37.48% and 37.83% were active at all
+three +1/+4/+8 checkpoints. These overlapping activity cohorts are not newly
+acquired or verified users. Their top ten returners produced 73.98% and 75.12%
+of +8 transactions: persistence was material, but concentrated.
 
-**What executed successfully?** During 5–11 October, 91.63% of the August +8 group's initial receipts and 82.35% of the September +1 group's initial receipts succeeded. The groups share 3,871,009 transactions; these are descriptive rates at different horizons, not causal cohort effects. The 17 August cohort's +8 group had 92.99% initial-receipt success during 12–18 October. Observed initial-receipt matching and cost coverage were complete in these pilots; descendant outcomes remain unavailable.
+**What executed successfully?** Three exact-return initial-receipt pilots recorded
+82.35–92.99% success, with complete observed matching/cost controls and explicit
+six-day lookup tails. Initial success does not establish descendant success.
+Separate selected Sweat and wx graphs are covered and successful; 18 selected
+tinykoala graphs each contain failure. Those examples do not estimate population
+settlement rates.
 
-**What economic demand or value capture is demonstrated?** Recorded NEAR-denominated conversion and receipt execution spending establishes measured execution use associated with persistent signing accounts. It does not establish fresh purchases, durable holdings, net market demand or holder value capture. The supply comparison retains a +16,599.51437846169 NEAR residual; a verified 1,252.862790024676320487808800 NEAR withdrawal has unverified revenue origin. Full-window independent issuance and actual native supply burn remain unavailable. A holder cash-flow valuation cannot be derived from these observations.
+**What economic demand or value capture is demonstrated?** Recorded execution
+spending establishes use of execution capacity. A dated week of epoch reward
+minting and a native wallet ledger improve the economic evidence, but full-window
+issuance/burn reconciliation, fee-origin attribution, actual purchase execution
+and holder value capture remain incomplete. The reviewed model tests hypothetical
+capture thresholds; it does not establish a fair value, expected return or price target.
 
-The investment argument remains conditional: sustained useful activity could support recurring expenditure or balance requirements, but the route from these requirements to durable token demand must be measured separately. Funding sources, economic beneficiaries, supply adjustments and potential selling pressure remain material missing inputs. No fair value, expected return or attractive entry price is established.
+The current conclusion is conditional: persistent useful execution is supported
+within the measured scope, while a durable holder-value mechanism is unproven.
+Unverified mechanisms are not evidence that distributions or economic effects
+did not occur. The [five-deliverable review](deliverable_status.md) distinguishes
+validated outputs from the remaining completion criteria.
 
-The revenue/buyback ledger, full issuance/burn reconciliation, broad relayer attribution and conditional investment model remain incomplete. The conditional-input table below records evidence gaps; it is not an implemented valuation model.
+## Scope and contrary activity evidence
 
-## Scope
-
-The primary analysis covers 24 August–18 October 2026: eight complete UTC weeks containing 44,284,794 transactions.
-
-It examines participation, concentration, growth contributions, selected execution outcomes, recorded execution spending and observed supply movement.
-
-An extended transaction comparison covers 6 July–18 October 2026: fifteen complete UTC weeks containing 79,171,891 transactions.
-
-The extension tests whether activity patterns persist across a longer window and different comparison periods. It does not extend receipt execution costs, supply measurements or receipt-matching conclusions into the earlier period.
-
-Signing accounts are identifiers, not verified people. Transactions, actions and receipt executions measure different units.
-
-The completed persistence phase adds starting-week activity cohorts from 10 August, nine complete transaction checkpoints through 18 October, and three exact-return execution measurements across 5–11 and 12–18 October. Two corresponding repeated-checkpoint subsets are measured in those same follow-up weeks. Initial-receipt lookups end on 17 and 24 October respectively; these six-day tails extend beyond each submission week. Other checkpoint execution results and incomplete transaction follow-ups remain unavailable. Sources: results 56–62.
-
-## What Supports the Argument?
-
-### Four-week averages showed higher activity
-
-Comparing 6 July–2 August with 21 September–18 October:
+Transaction research covers **6 July–18 October 2026**, fifteen complete UTC weeks
+and 79,171,891 transactions. Network calendar-period economics cover **24 August–18
+October**, eight weeks and 44,284,794 transactions. Selected cohorts start on
+10 August, with initial-receipt lookups through 24 October. The earlier unmatched
+outcome coverage is not resolved by the transaction-only extension.
 
 | Measure | First four weeks | Final four weeks | Change |
-|---|---:|---:|---:|
+| --- | ---: | ---: | ---: |
 | Average weekly transactions | 5,132,084.50 | 5,973,048.50 | +16.39% |
 | Average weekly active signing accounts | 156,738.50 | 281,297.00 | +79.47% |
 | Active days per active account-week | 4.0409 | 1.9158 | −52.59% |
 | Weekly top-ten transaction share | 67.3087% | 52.3887% | −14.9200 percentage points |
 
-The final four weeks contained more transactions and higher average weekly account counts. Activity was also less concentrated among each week's ten busiest signing accounts.
-
-These observations support investigating activity beyond the original leaders. However, the final comparison period includes the account spike. Higher account counts and lower concentration do not independently establish sustained adoption or diverse underlying demand.
-
-Average weekly active accounts are not unique accounts across four weeks. Participation frequency is weighted across account-weeks, and concentration is weighted by transactions with accounts ranked separately each week.
-
-Evidence: results 38 and 39.
-
-### Growth extended beyond the original leaders
-
-Within the original eight-week period, weekly transactions increased 3.69% between the first and final weeks.
-
-The first week's ten busiest signing accounts, held fixed across the period, recorded a 19.83% decline in transactions. All other accounts combined recorded a 52.50% increase.
-
-Their increase of 808,409 transactions offset the original leaders' decline of 633,693, leaving a network-wide net increase of 174,716.
-
-This shows that growth was not confined to the original leaders. It does not establish additional independent users or successful application demand.
-
-Evidence: results 14, 18, 21 and 22.
-
-### Checkpoint persistence included successful initial execution
-
-| Starting activity week | Accounts | Exact +1 | Exact +4 | Exact +8 | All +1/+4/+8 |
-|---|---:|---:|---:|---:|---:|
-| 10 August | 139,856 | 81.72% | 71.96% | 47.41% | 52,423 (37.48%) |
-| 17 August | 141,295 | 79.39% | 60.47% | 46.18% | 53,455 (37.83%) |
-| 24 August | 139,759 | 77.96% | 51.65% | Unavailable | Unavailable |
-| 28 September | 457,768 | 18.14% | Unavailable | Unavailable | Unavailable |
-
-Exact-week return requires membership in the starting week and activity in that exact follow-up week. Repeated return requires all three selected checkpoints, not every intervening week. Any-return-within-period is a separate union. Three incomplete checkpoints remain unavailable, including the week missing 25 October.
-
-The September +1 returners contributed 80.84% of transactions in the follow-up week. This differs from the earlier finding that they generated 87.84% of their **starting-week** transactions; the denominators and date bases differ.
-
-| Group | Submission week | Transactions | Share of observed week | Initial success | Conversion NEAR | Initial-receipt NEAR |
-|---|---|---:|---:|---:|---:|---:|
-| 10 August exact +8 | 5 October | 3,888,965 | 60.75% | 91.63% | 178.09129530 | 1,449.81277262 |
-| 10 August all checkpoints | 5 October | 3,831,697 | 59.86% | 91.52% | 176.09711249 | 1,430.08964496 |
-| 28 September exact +1 | 5 October | 5,174,834 | 80.84% | 82.35% | 224.11412340 | 2,316.49986074 |
-| 17 August exact +8 | 12 October | 3,528,043 | 71.86% | 92.99% | 163.70758505 | 1,312.24525169 |
-| 17 August all checkpoints | 12 October | 3,475,043 | 70.78% | 92.91% | 161.91744775 | 1,286.26544448 |
-
-These rows overlap and must not be added. During the shared week, the exact August and September groups have 58,957 accounts and 3,871,009 transactions in common, inferred from the saved unique union and inclusion-exclusion. The repeated August group is a subset of its exact +8 group. Spending for the union or intersection is unavailable. Different horizons, membership composition and shared transactions prevent causal comparisons of the rates.
-
-The shared-week groups have 325,699, 324,904 and 913,574 failed initial receipts respectively. Their failure rates are 8.37%, 8.48% and 17.65%. Returner transaction concentration remains material; spending does not independently establish broad economic demand.
-
-Conversion is allocated by submission week. Initial-receipt spending is allocated using uniquely matched execution blocks and actual execution dates; it includes failed receipts and excludes descendants. Each pilot has one distinct selected receipt in its six-day tail, also present in overlapping groups. The tail costs are 0.000322185534419199983616 NEAR on 12 October and 0.00064349229576029995008 NEAR on 19 October. Neither tail is a complete UTC week, and elapsed follow-up varies by submission date.
-
-The saved controls report one observed outcome and valid attribution/costs for every selected initial receipt, with zero exclusions. This establishes consistency of selected records, not independent ingestion completeness. Receipt-owner uniqueness is bounded to four/five selected transaction weeks. Aggregate exports and limited diagnostic examples do not independently reconstruct all account IDs, links, executor checks or execution lags. Costs originate as FLOAT; displayed decimals preserve saved arithmetic, not integer source accuracy. Initial success includes SUCCESS_RECEIPT_ID and does not establish complete-chain settlement.
-
-Evidence: results 56–61; the reproducible dashboard evidence is result 62. Exact saved amounts and execution-date/status distributions remain in the validation reports.
-
-### Execution created measurable expenditure in NEAR
-
-| Component | Eight-week recorded spending |
-|---|---:|
-| Transaction receipt conversion | 2,110.82 NEAR |
-| Receipt execution | 65,878.09 NEAR |
-| Combined | 67,988.91 NEAR |
-
-Transaction conversion contributed 3.10% of the combined amount. Combined weekly spending increased 83.13% between the endpoints.
-
-Receipt execution outcomes increased 66.85%, while average recorded cost per receipt increased 9.52%. Together, these account arithmetically for the 82.73% increase in receipt execution spending.
-
-This quantifies a use for NEAR in network execution. It does not identify the underlying causes of the spending increase.
-
-Conversion uses transaction submission dates; receipt execution uses execution dates. The combined figure measures calendar-period spending, not the complete lifetime fees of a matched transaction cohort.
-
-Evidence: results 13, 14, 34, 36 and 37.
-
-## What Challenges the Argument?
-
-### The growth conclusion depends on the comparison period
-
-The fifteen-week endpoint comparison shows a different direction from the four-week averages.
-
-Between 6–12 July and 12–18 October:
-
-- Weekly transactions declined from 5,493,485 to 4,909,532: −10.63%.
-- Weekly active signing accounts declined from 171,800 to 129,446: −24.65%.
-- The top-ten signing accounts' transaction share fell from 66.19% to 57.97%.
-
-In contrast, the first-four-week versus final-four-week comparison shows higher average transactions and account counts.
-
-Both comparisons describe the data correctly. Together, they show that activity fluctuated and that the direction of a growth claim depends on the baseline and aggregation period.
-
-The four-week averages reduce reliance on individual endpoint weeks, but the final period includes the spike. Neither comparison alone establishes a sustained trend.
-
-Within the original eight-week window, final-week transactions increased 3.69% while weekly active signing accounts declined 7.38%. Final-week transactions were also 23.31% below the preceding week.
-
-Evidence: results 09, 10, 14, 38 and 39.
-
-### More account activity came with lower participation frequency
-
-Active days per active account-week declined from 4.0409 in the first four weeks to 1.9158 in the final four weeks, a decrease of 52.59%.
-
-Higher average weekly account counts therefore did not come with more frequent participation per account-week.
-
-This is an aggregate comparison, not a measure of behavioural change among the same accounts. Changes in account composition and lifecycle activity can affect the result.
-
-It does not establish user retention, engagement quality or the cause of the decline.
-
-Evidence: results 38 and 39.
-
-### Account lifecycle events complicated return rates
-
-The spike week contained 457,768 active signing accounts. Of these, 82.31% were active on only one day.
-
-Among accounts absent the following week, 309,280 had successful receipt executions containing self-deletion actions during the starting week. They represented 82.53% of the absent group.
-
-The spike is not a direct measure of user acquisition, and the low return share is not a verified user-churn rate. Deletion motives, ownership and later recreation remain unverified.
-
-This finding provides context for the extended comparison, but it has not been used to adjust the fifteen-week series. It does not explain every change in account counts or participation frequency.
-
-Evidence: results 10, 11, 16 and 17.
-
-### Major accounts strongly influenced network activity
-
-Within the primary eight-week period, the ten busiest signing accounts generated 48.17%–67.76% of weekly transactions. The ten busiest original receivers accounted for 60.85%–70.22%.
-
-Activity could change materially if major contributors reduce their submissions. However, concentrated signers may be relayers serving many participants rather than individual end users.
-
-Delegated actions were prevalent in the records of sweat-relayer.near and meteor-relayer.near. Their inner actions have not been expanded.
-
-The Account Explorer distinguishes documented roles from unverified service attribution. Its profiles do not establish complete application coverage or application user counts.
-
-The extended comparison shows a lower transaction share for weekly top-ten signers in the final four weeks. That finding does not independently verify broader ownership or independent demand.
-
-Evidence: results 10, 12, 18–20, 35, 38 and 39.
-
-Sources: [account_attribution.md](account_attribution.md).
-
-### Selected growth included substantial failed execution
-
-tinykoala595.near contributed 18.43% of the outside group's net transaction increase. Across the primary period, 91.90% of its 778,588 transactions had failed initial receipts.
-
-Those failures incurred approximately 211.1629 NEAR in recorded initial-receipt costs.
-
-Eighteen sampled failed receipts executed on v2.ref-finance.near: seventeen reported slippage errors and one reported insufficient deposited tokens. The sample does not establish population error frequencies or operational causes.
-
-Another selected contributor, wx-cruce.near, had a 1.56% initial-receipt failure rate. Most of its initial receipts returned SUCCESS_RECEIPT_ID, which does not establish successful downstream execution.
-
-These accounts show why submissions and expenditure cannot automatically be classified as successful application demand. They do not represent network-wide failure rates.
-
-Selected-account costs are already part of the relevant network records; they must not be added again to the network spending total.
-
-Evidence: results 22–27.
-
-## What Does the Economic Evidence Mean?
-
-Execution expenditure demonstrates token use, but spending is a flow, not a persistent holding requirement.
-
-Participants may pay from existing balances, acquire tokens shortly before execution or receive sponsored transactions. The project does not measure external purchases, holding periods or net market demand.
-
-Storage and staking provide additional uses for NEAR balances. Their network-wide changes have not been measured here. Staking is not permanent token destruction.
-
-The economic mechanisms note reviews NEAR's documented Intents revenue-sharing and governance-controlled uses of revenue. These mechanisms are separate from the execution spending measured in this project. Product fees have not been independently reconciled. This research has not established historically attributable distributions or implemented buybacks during 24 August–18 October 2026; this does not establish that distributions did not occur. Documented mechanisms do not establish guaranteed benefits to NEAR holders.
-
-The investment question is whether persistent useful activity produces economic effects of sufficient scale after supply changes, distributions and potential selling pressure are considered. That relationship remains partly unmeasured.
-
-The extended activity results strengthen the need to examine persistence and composition before extrapolating economic demand. They do not extend the eight-week spending measurements.
-
-Sources: [economic_mechanisms.md](economic_mechanisms.md).
-
-## Supply Movement
-
-Observed total supply increased approximately 4,935,983.98 NEAR, or 0.3784%, between closing observations on 23 August and 18 October.
-
-The net supply movement of 4,935,983.9798346 NEAR exceeds raw validator balance change of 4,919,384.46545613831 NEAR by **16,599.51437846169 NEAR**. This residual is 0.336296% of net movement and 0.00127259% of opening supply. Absolute daily residuals sum to 84,284.66902631883 NEAR, making cancellation material. The 23 September residual remains +11,427.31386968814 NEAR.
-
-At two exact canonical block hashes, 231 RPC validator updates were absent from selected BigQuery evidence, across 160 distinct accounts. All 449 blank-chunk validator observations in that selected evidence were valid RPC updates. A parent/post witness for one omitted account measures exactly +1,128.147246190549662124317432 NEAR. This measures an account balance change, not independently measured issuance.
-
-An ingestion collision involving blank chunks and reused indices remains a hypothesis; the responsible ingestion key/ETL step is unconfirmed. This two-block discrepancy does not establish the same problem elsewhere or invalidate unrelated transaction findings. Recovered changes cannot simply be added to the original daily total, because later predecessor comparisons may already include omitted movements and other intervening causes can change the comparison interval.
-
-This establishes observed net supply growth, not a complete decomposition of issuance and permanent burning.
-
-Recorded execution spending must not be subtracted from net supply growth to infer issuance. Fee allocation and offsetting supply effects have not been fully reconciled.
-
-The results also do not establish what supply would have been without execution activity. Total supply is different from circulating supply.
-
-Full-window independent issuance and actual native supply burn remain unavailable, not zero. The ongoing supply investigation is separate from this published eight-week comparison. The 0.00001 NEAR threshold checks saved arithmetic only; it is not a source-accuracy or economic-reconciliation tolerance. Detailed evidence: results 43, 45 and 46 and [data_checks.md](data_checks.md).
-
-### A verified withdrawal did not establish revenue origin
-
-The one-day native diagnostic found 22 successful transfers to `fefundsadmin.sputnik-dao.near`, totalling 8,000.969220749197522847764034 NEAR. All remain economically unclassified. Native-only coverage excludes token transfers and internal Verifier balances; this is not a complete revenue or buyback ledger.
-
-One trace validates a signed internal transfer followed five blocks later by the debit underlying a 1,252.862790024676320487808800 NEAR native withdrawal after unwrapping. The traced credit is a successful generic signed transfer with `memo: null`; it does not establish a fee calculation or the internal account's historical fee-collection role. Prior funding, opening balances and commingled-balance allocation remain unresolved. A named recipient, matching amount or successful withdrawal is insufficient evidence of revenue origin. Internal mt_burn is not native NEAR destruction. Unverified attribution does not establish that distributions did not occur.
-
-Evidence: results 47–54. The agreed one-credit provenance investigation is closed.
-
-## Conditional Investment Inputs
-
-| Channel | Demonstrated | Missing input and implication |
-|---|---|---|
-| Persistent execution | Starting-week accounts returned at selected checkpoints and incurred measured conversion/initial-receipt spending, including successful initial execution. | Independent uses, funding sources, purchase flows and holding periods are unmeasured; spending cannot be converted into net buying or holder returns. |
-| Balance commitments | Execution alone does not measure durable storage/security balances. | Persistent economically attributable balance requirements remain unquantified in this phase. |
-| Revenue deployment | One successful internal credit and native withdrawal are traced. | Revenue origin, distributions, beneficiaries and any implemented buybacks remain unverified; attributable revenue yield is unavailable. |
-| Supply effects | Saved supply movement, raw validator changes, residuals and a bounded ingestion discrepancy are documented. | Full-window independent issuance and actual supply burn remain unavailable; no reconciled fee-offset inflation estimate is supported. |
-| Valuation | No verified holder cash-flow series or valuation model is established. | Do not substitute spending, transfers, balancing figures or assumed protocol percentages for missing cash flows. |
-
-The conditional case would strengthen if economically identifiable activity supports recurring expenditure or durable balance commitments at a meaningful scale, with supply and beneficiary flows independently reconciled. The current data do not establish that these conditions hold or that supply effects and selling pressure outweigh them. No price target or expected return is assigned.
-
-## Conditions That Would Strengthen or Weaken the Thesis
-
-| Strengthen | Weaken |
-|---|---|
-| Successful activity persists across longer periods and identifiable uses. | Apparent growth repeatedly depends on brief spikes, unsuccessful execution or temporary lifecycle activity. |
-| Participation remains durable after account roles, composition and lifecycle events are examined. | Higher account counts repeatedly coincide with weaker participation frequency without evidence of durable underlying use. |
-| Concentrated infrastructure can be linked to diverse underlying demand. | Activity remains dependent on poorly understood participants or major contributors decline without replacement. |
-| Growth conclusions remain reasonably consistent across transparent comparison periods. | Claims rely on favourable endpoints while broader comparisons contradict them. |
-| Verified economic flows demonstrate meaningful expenditure, balance commitments or implemented revenue deployment. | Usage grows without meaningful additional economic demand, or assumed revenue mechanisms do not operate as expected. |
-
-These are test conditions, not outcomes already established.
-
-Concentration, failures or supply growth do not individually invalidate the thesis; their scale, persistence and context matter.
-
-## Decision Implications
-
-The extended comparison makes baseline selection part of the investment assessment. Both endpoint changes and four-week averages should be shown rather than selecting only the comparison that supports a preferred conclusion.
-
-Higher account counts should be considered alongside participation frequency, lifecycle events and account roles. Lower signer concentration needs evidence about the underlying participants before it is interpreted as broader demand.
-
-Execution outcomes should inform whether submissions represent successful interactions. Economic claims should distinguish measured expenditure from permanent burning, product revenue and holder returns.
-
-Practical investigation priorities are documented in [decision_priorities.md](decision_priorities.md).
-
-## Limits of the Assessment
-
-Fifteen weeks of transaction observations cannot establish long-term adoption. Network calendar-period economics remain scoped to the original eight weeks; selected cohort execution lookups add explicitly labelled tails through 24 October. Other checkpoint execution coverage is not assumed from these pilots.
-
-The four-week comparison uses two selected periods, with the final period including the spike. It is a descriptive comparison rather than a causal model or a statistical test of a persistent trend.
-
-Weekly active accounts are not unique accounts across four weeks. Active days per account-week do not measure retention among a fixed cohort.
-
-Selected contributors and diagnostic samples do not represent the entire network, and initial receipt outcomes do not establish complete execution-chain results.
-
-Earlier unmatched outcomes, action-record coverage gaps and unresolved supply differences remain documented. Source cost and supply fields use floating-point storage, so reported amounts are approximate.
-
-The project does not estimate fair value, expected returns or a margin of safety. A useful network is not automatically an attractive investment at every price.
-
-## Conclusion
-
-The measured case includes checkpoint persistence, successful initial execution and NEAR-denominated expenditure. It remains conditional for durable economic demand and holder value: fifteen-week endpoints declined, participation frequency fell, concentration is high among returners, and meaningful failed activity persists. Cohort overlap prevents interpreting the descriptive success-rate differences as causal effects. The final four-week comparison includes the account spike.
-
-Long-term value remains conditional on useful activity persisting and creating economic demand of meaningful scale after supply effects and potential selling pressure. Storage requirements remain unmeasured, the weekly staking extension is inconclusive, revenue distributions and buybacks remain historically unverified, and supply reconciliation is incomplete. None of these gaps establishes that the mechanisms have no economic effect, but they prevent a demonstrated claim of value accruing to holders.
-
-Persistent evidence of growth without meaningful economic demand, or economic effects consistently outweighed by supply changes and selling pressure, would invalidate the proposed value mechanism. Repeated dependence on temporary lifecycle activity or unsuccessful execution without durable useful demand would undermine its adoption premise. The saved observations raise these risks without establishing either long-term outcome; they support a conditional investment argument, not a buying recommendation or valuation.
-
-## Evidence and Reproducibility
-
-The repository includes SQL queries, exported results, diagnostic responses and Python scripts.
-
-The published persistence phase and bounded withdrawal-provenance trace are complete within their stated limits; supply reconciliation remains ongoing. Rebuild and reconcile the published derived evidence from saved inputs only:
+The comparison is 6 July–2 August versus 21 September–18 October. Average weekly
+accounts are not four-week unique accounts; account-week participation and
+transaction-weighted concentration have different denominators. Lower signer
+concentration does not establish diverse independent owners or economic demand.
+
+In the original eight weeks, endpoint transactions rose 3.69% while active
+signers fell 7.38%. Transactions outside the fixed first-week top ten increased
+52.50%; that original leading group's transactions fell 19.83%. Largest named
+endpoint increases included tinykoala +148,950, wx +137,767 and 0here.tg +137,531.
+They are changes, not period totals or newly acquired users. Sources: results
+18–24, 38–39 and [attribution coverage](priority4_attribution_plan.md).
+
+## Persistence and initial execution
+
+The cohort layer measures four starting-week activity cohorts and nine complete
+exact-week checkpoints. Three incomplete checkpoints stay unavailable. Repeated
+return means all three selected +1/+4/+8 checkpoints, not every intervening week;
+any-return unions are separate measures. Initial-receipt execution coverage is
+limited to the following three exact-return groups and their two overlapping
+repeated-checkpoint subsets:
+
+| Population | Submission week | Transactions | Initial success | Conversion NEAR | Initial-receipt NEAR |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 10 Aug +8 | 2026-10-05 | 3,888,965 | 91.63% | 178.09129530 | 1,449.81277262 |
+| 10 Aug all checkpoints | 2026-10-05 | 3,831,697 | 91.52% | 176.09711249 | 1,430.08964496 |
+| 28 Sep +1 | 2026-10-05 | 5,174,834 | 82.35% | 224.11412340 | 2,316.49986074 |
+| 17 Aug +8 | 2026-10-12 | 3,528,043 | 92.99% | 163.70758505 | 1,312.24525169 |
+| 17 Aug all checkpoints | 2026-10-12 | 3,475,043 | 92.91% | 161.91744775 | 1,286.26544448 |
+
+These rows overlap and cannot be added. During 5–11 October, the August +8 and
+September +1 groups share **58,957 accounts and 3,871,009 transactions**. The
+August repeated-checkpoint group is a subset of its +8 group. Spending for the
+union/intersection is unavailable. Different starting weeks, horizons and
+shared membership prevent a causal comparison of success rates.
+
+Conversion follows submission weeks. Initial-receipt spending follows unique
+execution blocks/dates, includes failed receipts and excludes descendants.
+The six-day tails are 12–17 and 19–24 October, with one distinct selected receipt
+in each tail. Those partial weeks do not provide equal elapsed follow-up for
+every submission. Zero observed link/cost exclusions and matching executors do
+not prove independently complete ingestion. Costs are FLOAT-derived; decimal
+summation preserves saved arithmetic, not original integer precision. Sources:
+results 56–62 and [data checks](data_checks.md).
+
+Concentration and lifecycle context remain contrary evidence. Only 18.14% of
+spike-week accounts returned the next week; 309,280 absent accounts had successful
+receipts containing self-deletion actions, 82.53% of the absent group. Absence
+is not automatically user churn. Three execution pilots below 95% initial
+success and returner concentration above 70% limit a claim of broad, reliable use.
+
+Successful initial execution nevertheless extends beyond each +8 population's
+own ten leading signers. [Result 105](../results/105_returner_initial_success_outside_top10_bounds.json)
+uses matching cohort, submission-week and transaction definitions with one
+assessed initial receipt per transaction:
+
+| Starting cohort → +8 submission week | Transactions outside own top ten | Successful initial receipts outside top ten: lower–upper bound | Transaction success fraction: outward-rounded bounds |
+| --- | ---: | ---: | ---: |
+| 10 August → 5–11 October | 1,011,853 | 686,154–1,011,853 | 67.81%–100.00% |
+| 17 August → 12–18 October | 877,862 | 630,408–877,862 | 71.81%–100.00% |
+
+For N population transactions, T own-top-ten transactions and S successful
+initial receipts, the bounds are `max(0, S−T)` and `min(S, N−T)`, with denominator
+`N−T`. Lower percentages round down, upper percentages up; exact integer counts
+and rational fractions are retained. These prove minimum numbers of successful
+initial receipts beyond the ten leading signers, **not measured account-level
+success rates, broad human adoption or complete-chain settlement**. The cohorts
+overlap and remain separate. The result strengthens evidence of execution use
+beyond the leading group without removing concentration or establishing value
+capture. Membership alignment rests on reviewed SQL and matching exported
+controls; full row-level membership sets and independent ingestion completeness
+remain unavailable. Missing or ambiguous receipt coverage suppresses the bounds.
+Spending outside the top ten is not inferred. See [bounds methodology](returner_execution_bounds.md).
+
+## Population execution and selected mechanisms
+
+Tinykoala's 715,518 failed initial receipts are 91.90% of its 778,588 signed
+transactions, with approximately 211.1629 NEAR of recorded failed-initial-receipt
+costs. Wx has 6,441 failures, 7,872 SUCCESS_VALUE and 398,968 SUCCESS_RECEIPT_ID
+initial outcomes among 413,281 transactions. The forwarding status alone does
+not establish successful descendants. These are selected contributor populations,
+not network-wide failure rates.
+
+| Signer | Selected mechanism | Coverage of signed population | Selection denominator | Returned graph evidence |
+| --- | --- | --- | --- | --- |
+| sweat-relayer.near | Delegated claim | 1 / 13,704,363 (0.0000072969%) | 13,246,938 DELEGATE_ACTION transactions: 0.0000075489% selected | 8 receipt outcomes; 0 selected graphs with failure |
+| wx-cruce.near | Accepted transfer-call | 1 / 413,281 (0.0002419661%) | 398,968 Initial SUCCESS_RECEIPT_ID outcomes: 0.0002506467% selected | 6 receipt outcomes; 0 selected graphs with failure |
+| tinykoala595.near | Failed execution controls | 18 / 778,588 (0.0023118774%) | 715,518 Failed initial receipts: 0.0025156600% selected | 54 receipt outcomes; 18 selected graphs with failure |
+| sweat-relayer.near → jars-oracle.sweat | Delegated jar deposit | 1 / 13,704,363 (0.0000072969%) | 3,039,759 saved destination-bucket transactions: 0.0000328973% selected | 8 successful receipt outcomes; booster application rejected |
+
+Sweat's explicit Delegate authorizes a distinct on-chain sender into claim.sweat,
+then token.sweat and a claim callback. It has eight successful receipt outcomes
+and 0.0007690267153439 NEAR of recorded transaction/receipt charges. Submission
+is exactly 23 September, 07:11:24.906615725 UTC. Declared authority is not verified
+human identity, ownership, service affiliation or an economic funding source.
+
+A separate selected Sweat case, submitted at **23 September,
+00:00:02.273417299 UTC**, explicitly delegates from `jars-oracle.sweat` to
+`token.sweat.ft_transfer_call`, then `v2.jars.sweat.ft_on_transfer` and the token
+resolver. A transfer and jar deposit are recorded for exactly
+`3000000000000000000` token base units; the receiver returns unused amount
+`"0"` and the resolver returns the full amount. All eight returned receipt
+outcomes succeed, with no missing children and one matched callback dependency.
+Nevertheless, the application's `apply_booster` event rejects the beneficiary.
+Receipt success therefore does not establish every requested application effect.
+The payload type is `airdrop`; its economic purpose, beneficiary ownership and
+human adoption are not independently established. Recorded charges are exactly
+**0.0012424938755553 NEAR**, not revenue or actual burn.
+
+This one case covers **0.000032897344822402…%** of the saved 3,039,759-transaction
+destination bucket, not a representative sample or success rate. Its underlying
+delegated actor is a named account rather than proof of an independent user.
+Neither this mechanism nor its outcome is assigned to the rest of that bucket.
+The two Sweat rows share a signer population and are not added. Sources:
+[result 106](../results/106_sweat_jars_selected_mechanism_2026-09-23.json) and
+[selected jars case](sweat_jars_case_study.md).
+
+Wx's direct-signed transfer-call goes wrap.near → v2.ref-finance.near → resolver.
+Its six returned receipt outcomes succeed, with matched callback data and
+0.0007174786101312 NEAR of recorded charges. Submission is exactly 23 September,
+16:17:16.824648967 UTC. The amount is `2041882904280066641796431` raw wrap.near
+token units with empty msg. Receiver return is "0" and resolver return is the full
+amount: an accepted transfer-and-callback, consistent with funding/deposit.
+There is no swap/output-asset evidence or independently verified internal exchange
+credit. No explicit Delegate action appears; a differing predecessor alone would
+not establish delegation.
+
+The 18 tinykoala controls were selected from failures: each has one failed and
+two successful receipt outcomes. Seventeen sampled slippage errors and one
+insufficient-deposit error do not establish population error-cause frequencies.
+All three case sets have covered returned graphs without missing emitted action
+outcomes or unresolved callback dependencies. A covered graph may contain failure;
+coverage is not independent proof of historical completeness or business purpose.
+Selected charges are already within their respective network records and are not
+added again to network spending. Sources: results 26, 95–99,
+[Sweat/coverage](priority4_attribution_plan.md) and [wx case](wx_cruce_case_study.md).
+
+## Supply: measured components and remaining accounting
+
+| Measurement | Scope | Result / limitation |
+| --- | --- | --- |
+| Observed net supply movement | Closing 23 August to closing 18 October | +4,935,983.9798346 NEAR, FLOAT-derived; total supply is not circulating supply. |
+| Supply minus raw validator balance change | Same eight weeks | +16,599.51437846169 NEAR; 0.336296% of net movement and 0.00127259% of opening supply. |
+| Sum of absolute daily residuals | Same eight weeks | 84,284.66902631883 NEAR; netting hides cancellation. 23 September remains +11,427.31386968814 NEAR. |
+| Protocol-validated epoch reward minting | 21–27 September only, 23 applications | Exact 618,436.074970164323861118656646 NEAR. Separately unavailable subsidies are excluded. |
+| Exact endpoint supply movement | Same dated week | +611,555.974235517852937718656646 NEAR. |
+| Implied weekly net debit | Reward minting minus exact movement | 6,880.1007346464709234 NEAR; not independently measured weekly debit or gross burn. |
+| Independently summed header net debits | 23 application blocks; separately a 144-block prefix | Boundary-only 0.1041228119233375 NEAR; prefix 0.5486610196812742 NEAR. Scopes overlap and are not added or extrapolated. |
+| Full-window issuance, full-week independent debit, gross burn and subsidies | Original target | Unavailable, not zero. Eight weekly gross-component identities remain open. |
+
+At two exact block hashes, 231 validator update records were absent from selected
+BigQuery evidence; all 449 blank-chunk observations examined were valid RPC
+updates. One omitted account's exact parent/post change was
++1,128.147246190549662124317432 NEAR. This is an account balance change, not issuance.
+The ingestion-collision explanation remains unconfirmed and cannot be generalized
+to other dates or unrelated transaction findings. Recovered updates cannot simply
+be added to daily totals because later predecessor comparisons may already include
+their effects. This is not a balancing adjustment.
+
+Exact RPC integer identities are distinguished from original FLOAT-derived
+observations. The 0.00001 NEAR tolerance checks saved arithmetic only. Validator
+balance changes are not issuance; spending, negative supply movements and named
+account transfers are not measured destruction. The 144-block prefix has zero
+integer identity discrepancy but no separate canonical tail control; bulk
+collection is paused. Sources: results 42–46, 72, 85, 88–89 and
+[supply protocol/source limits](supply_protocol_assessment.md).
+
+## Native wallet ledger and revenue attribution
+
+The native layer covers successful execution-dated flows during 24 August–18
+October and exact opening/closing liquid-plus-locked states for three accounts.
+All flows remain economically unclassified; account names do not establish fees,
+revenue, buybacks or ownership. Displayed stock/flow values below are rounded;
+[result 80](../results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json)
+preserves every exact integer.
+
+| Account | Opening NEAR | Closing NEAR | Native net flow NEAR | Unallocated stock-flow difference NEAR |
+| --- | ---: | ---: | ---: | ---: |
+| fefundsadmin.sputnik-dao.near | 1,610,269.316441 | 1,913,463.450662 | 303,194.134221 | 0 |
+| 1csfundsadmin.sputnik-dao.near | 502,798.938526 | 270.875891 | -502,528.063720 | 0.0010849311842748 |
+| buybacks.multisignature.near | 858,247.431222 | 2,014,526.467298 | 1,156,279.036077 | 0 |
+
+Two internal transfers totalling **502,794 NEAR** cancel between the selected
+wallets; they are excluded from external net inflow of exactly
+**956,945.106578107785216431387923 NEAR**. The **0.0010849311842748 NEAR** difference
+is entirely unallocated at 1csfundsadmin. A zero difference elsewhere does not
+prove a complete reconciliation. Fees, function-call deposits, refunds, rewards,
+deletion proceeds, receipt-funding timing or missing coverage may affect balances;
+none is assigned as an unexplained balancing amount. Weekly flows are saved;
+weekly opening/closing stocks are unavailable.
+
+The separate one-day diagnostic found 22 successful native transfers totalling
+8,000.969220749197522847764034 NEAR to fefundsadmin. A bounded trace validates a
+successful signed internal transfer followed by a 1,252.862790024676320487808800
+NEAR withdrawal after unwrapping. Its generic signed credit, memo=null, does not
+establish fee origin, historical fee-role configuration or allocation from
+commingled balances. This withdrawal is already in the native ledger and is not
+added again. The one-credit provenance investigation remains closed; internal
+mt_burn is not native supply destruction.
+
+One separate **known owner–asset balance reconciliation** now supplements the
+native ledger. For `1csfundsadmin.sputnik-dao.near`, the `nep141:wrap.near`
+balance inside `intents.near` was exactly `990000000000000000000000000` base
+units at the saved 23 August close and `1000100010001000100010` at the saved
+18 October close. The decrease, `989998999899989998999899990` base units,
+equals the one saved successful internal transfer to
+`c0addac935f49baee1909a6fb4f08b57352a6d8c8ce7da27c59545fe45c5838c`.
+The difference is zero using integer arithmetic. This links known holdings
+to an observed movement; it does not establish recipient ownership, a purchase
+or fee origin. It covers **one known pair for one of three wallets**; the total
+asset-pair denominator is unknown. Other offsetting movements could exist.
+The saved day-close anchors are not independent canonical midnight-edge proofs.
+No amounts are added to native flows, no native residual is allocated, and no
+model capture assumption is calibrated from this balance decrease. Sources:
+[exact comparison 103](../results/103_known_internal_asset_stock_comparison_2026-08-24_to_2026-10-18.json)
+and [current layered ledger 104](../results/104_wallet_ledger_with_known_asset_reconciliation.json).
+
+Complete token/internal Verifier balances and transfers, historical role/source-policy
+matches and explicit purchase settlement remain incomplete. Native flows cannot
+supply a complete multi-asset revenue/buyback ledger. Unverified distributions
+do not prove nonoccurrence. Sources: results 47–54, 74–80 and
+[ledger limits](three_wallet_ledger_consolidation.md) and
+[known-asset coverage](known_asset_wallet_coverage.md). Complete discovery needs
+retained historical token events indexed by owners/recipients and verified
+internal-account associations; no accessible complete index is established by
+the saved evidence. Missing assets remain unavailable, not zero balances or flows.
+
+## Reviewed conditional model
+
+The [editable model](conditional_investment_model.md) in Decision priorities is
+an arithmetic scenario tool, not an investment return forecast. For eligible
+fee-bearing activity V (USD/week), fee fraction f, captured share c and effective
+purchase price P (USD/NEAR):
+
+- Hypothetical captured fee revenue: **R = V × f × c**, USD/week.
+- Purchase-and-destruction: **D = R × a_d / P**, NEAR/week.
+- Purchases held in custody: **H = R × a_h / P**, NEAR/week; holdings do not reduce supply.
+- Remaining budget before costs/taxes: **R × (1 − a_d − a_h)**, USD/week.
+
+Allocations are nonnegative and a_d + a_h ≤ 1. Revenue funds these disjoint uses;
+adding revenue to its uses double counts. Custody assumes no release during the
+hypothetical horizon, without establishing observed closing balances or circulating
+supply effects. Horizon totals multiply weekly flows by an explicit number of
+weeks; the dated reward baseline's repetition is an assumption. Price is an
+editable hypothetical execution price, not a live quote or valuation input.
+
+**Illustrative defaults:** $100 million/week of eligible activity × 0.1% fee ×
+50% capture = $50,000/week captured revenue. At $5/NEAR and 25% allocation to each
+purchase channel, this gives 2,500 NEAR/week destroyed, 2,500 NEAR/week held and
+$25,000/week remaining budget. These are illustrative scenario outputs, not
+observed fees, trades, burn, revenue or expected investment returns.
+
+The **illustrative default reward-offset threshold** is
+618,436.074970164323861118656646 NEAR/week × $5/NEAR ÷
+(0.001 × 0.5 × 0.25) = approximately **$24.74 billion/week** of eligible activity.
+It covers only the dated epoch-reward baseline, not independently measured total
+issuance including subsidies. Required capture at the default $100 million volume
+exceeds 100%, so that target is infeasible under those assumptions. It is not an
+investment break-even price. Zero capture can make targets unreachable; missing
+supply inputs keep full conditional neutrality unavailable. Implied debit, wallet
+flows and spending never fill those missing components. Sources: preserved result
+90, reviewed result 91 and [formula/sensitivity review](conditional_model_review.md).
+
+## Conditions that would change the thesis
+
+These are analyst-selected decision rules, not protocol requirements or tests of
+statistical significance. They remain editable and are not outcomes already met.
+
+| Premise | Evidence that would strengthen it | Evidence that would weaken it / current limit |
+| --- | --- | --- |
+| Persistence and breadth | Three complete cohorts with ≥40% exact +8 returns and ≤50% top-ten returner transaction share. | Three below 25% returns or above 80% concentration. Only two complete +8 cohorts are measured here, with concentration above 70%. |
+| Reliable execution | ≥95% initial-receipt success and ≥99.9% unique link/cost coverage across three comparable checkpoints; descendant evidence for chain-level claims. | Pilot initial success is 82.35–92.99%. Observed matching is complete, but wider descendants and ingestion remain unverified. |
+| Revenue and deployment | Eight historically attributed, classified and reconciled weekly multi-asset ledgers; verified purchases/destruction and capture meeting the explicitly chosen hurdle. | Capture below that hurdle over eight independently attributed weeks, or unverified deployment behind a purchase/destruction claim. Native inflows and a successful withdrawal do not meet the test. |
+| Supply account | Eight complete weekly independent issuance/burn/adjustment identities with zero integer discrepancies and canonical coverage. | Missing gross components, unverified historical semantics or incomplete coverage keep that claim unavailable. Current one-week/prefix evidence is partial. |
+| Underlying demand | Population attribution links concentrated infrastructure to durable independent uses and funders. | Selected successful cases coexist with substantial failed activity and unknown actor ownership; no population extrapolation follows. |
+
+Useful execution, concentration and supply growth do not alone determine an
+investment outcome. The evidence supports continued conditional evaluation of a
+value mechanism; it does not establish whether that mechanism is attractive at
+any price. Fresh purchases, durable holdings, holder distributions and net selling
+pressure remain unmeasured.
+
+## Completion status and reproduction
+
+The [five-deliverable table](deliverable_status.md) records original criteria,
+validated outputs, remaining gaps and concrete work possible from saved inputs.
+The revenue/buyback ledger, full issuance/burn reconciliation and broad relayer
+attribution remain incomplete. Cohort measurements are validated within their
+scope; wider execution coverage remains partial. Conditional-model implementation
+is validated, while its empirical economic calibration remains incomplete.
 
 ```bash
-python3 -B analysis/23_rebuild_published_results.py
+.venv/bin/python -B analysis/44_rebuild_integrated_research.py --check
 ```
 
-The command runs legacy builders in an isolated temporary copy, validates canonical and withdrawal evidence, revalidates persistence, and reproduces the dashboard artifact. Existing outputs must match and are never overwritten; source requests are disabled. Results 57 and 59 retain their recorded SQL fingerprints and documented whitespace differences.
-
-- [Project overview and dashboard instructions](../README.md)
-- [Validation, coverage and investigation history](data_checks.md)
-- [Economic mechanisms and official references](economic_mechanisms.md)
-- [Account attribution evidence](account_attribution.md)
-- [Decision priorities](decision_priorities.md)
-
-`analysis/08_execution_spending.py` combines saved results 34 and 36 to produce result 37.
-
-`sql/35_extended_weekly_signing_activity.sql` produces the fifteen-week transaction export, result 38.
-
-`analysis/09_extended_activity_comparison.py` validates result 38 and produces the four-week comparison, result 39.
-
-Official economic references are recorded in [economic_mechanisms.md](economic_mechanisms.md), including:
-
-- [Gas and execution fees](https://docs.near.org/protocol/transactions/gas)
-- [Storage staking](https://docs.near.org/protocol/storage/storage-staking)
-- [Validators](https://docs.near.org/protocol/network/validators)
-- [Evolving NEAR Tokenomics](https://near.org/blog/evolving-near-tokenomics)
-
-Current documentation does not independently establish historical parameters. No fixed inflation, burning or buyback assumption has been applied to the results.
+The unified rebuild disables network/subprocess operations, reproduces current
+published artifacts and checks that existing files match without overwriting
+raw evidence. Large external raw header revalidation requires retained external
+paths; integrated prefix arithmetic uses saved validated summaries. Source
+precision, lookup tails and historical manifests remain qualified. See
+[integration validation](integration_validation.md), [data checks](data_checks.md),
+[original research plan](research_plan.md) and [economic mechanisms](economic_mechanisms.md).
+The submission tag and original history are preserved.

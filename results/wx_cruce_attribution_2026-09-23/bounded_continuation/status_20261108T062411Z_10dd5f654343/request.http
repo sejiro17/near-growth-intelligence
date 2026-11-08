@@ -1,0 +1,19 @@
+POST / HTTP/1.1
+Host: archival-rpc.mainnet.near.org
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: identity
+Connection: close
+User-Agent: near-growth-intelligence-bounded-wx-trace/1
+Content-Length: 244
+
+{
+  "id": "wx-transaction-status",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_tx_status",
+  "params": {
+    "sender_account_id": "wx-cruce.near",
+    "tx_hash": "9KwjactRhTarKjtjGYTZK9igXwub963qhS5anWFXP9NN",
+    "wait_until": "FINAL"
+  }
+}

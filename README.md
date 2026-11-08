@@ -1,159 +1,155 @@
 # NEAR Growth Intelligence
 
-An interactive research dashboard for investigating the quality of NEAR's activity growth.
+**A reproducible investment thesis connecting NEAR’s network growth, returning accounts, execution quality and token economics.**
 
-I built this project to help analysts, ecosystem teams and developers examine what headline figures leave out: who contributes to activity, whether accounts return, how concentrated transactions are, and whether additional submissions translate into successful execution.
+NEAR demonstrates persistent execution use, concentrated among leading accounts.
+Whether that usage produces durable token value capture remains unproven. This
+project tests that gap with onchain evidence, a native-wallet ledger and an
+editable economic scenario model.
 
-Fixed transaction research observations cover **6 July–18 October 2026: fifteen complete UTC weeks**, containing **79,171,891 transactions**. Network calendar-period economics cover **24 August–18 October 2026: eight complete UTC weeks**, containing **44,284,794 transactions**. Selected activity cohorts start on 10 August; bounded initial-receipt lookups include six-day execution tails through 24 October.
+**[Dashboard](https://near-growth-intelligence.streamlit.app)** ·
+**[Investment thesis](THESIS.md)** ·
+**[Conditional model](notes/conditional_investment_model.md)** ·
+**[Demo post](https://x.com/insightX01/status/2117243839995855107)**
 
-Across fifteen-week endpoints, transactions declined **10.63%** and weekly active signing accounts declined **24.65%**. First-four-week versus final-four-week averages increased **16.39%** and **79.47%**, respectively. Growth direction depends on the comparison period; the final four weeks include the account spike.
+## Check it in 60 seconds
 
-The completed persistence phase finds exact +8 returns of **47.41%** and **46.18%** for the 10 and 17 August activity cohorts, with **37.48%** and **37.83%** active at all three selected checkpoints. Their top ten returners generated **73.98%** and **75.12%** of +8 transactions. Initial-receipt success ranged from **82.35% to 92.99%** across the three exact-return execution pilots. These overlapping groups also include failed receipts; complete-chain success remains unavailable.
+Open the dashboard tabs, or inspect the linked saved evidence. Each row gives a
+specific observation to check.
 
-The supply residual remains **+16,599.51437846169 NEAR**. Two exact blocks establish 231 validator updates absent from selected BigQuery evidence; an ingestion-collision explanation remains unconfirmed. A verified native withdrawal has **unverified revenue origin**. Full-window independent issuance, actual native burn and holder value capture remain unresolved. The dashboard and [investment thesis](notes/investment_thesis.md) present these qualifications beside the findings.
+| Check | Where | What to observe |
+| --- | --- | --- |
+| Growth depends on the baseline | **Growth** → Four-week averages; [comparison](results/39_extended_activity_comparison_2026-07-06_to_2026-10-18.csv) | Four-week averages rise; fifteen-week endpoints fall. |
+| Persistence has limits | **Account returns** → Persistence and scoped execution; [thesis table](notes/investment_thesis.md#persistence-and-initial-execution) | Exact +8 returns near 47% and 46%, concentrated transactions, overlapping groups and scoped initial success. |
+| Supply components differ | **Economics** → One exact reward week; [reward evidence](results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json) | 23 validated reward applications; implied debit remains distinct from independently measured burn. |
+| Wallet inflow is not revenue | **Economics** → Three-wallet native ledger; [ledger](notes/three_wallet_ledger_consolidation.md) | Native stocks/flows, internal-transfer cancellation and an unallocated difference. |
+| Follow actual execution | **Growth drivers** → Inspect a selected mechanism; [cases and coverage](notes/priority4_attribution_plan.md) | Sweat delegation, wx transfer-and-callback, and failed tinykoala controls; selected examples have explicit population denominators. |
+| Challenge the investment assumptions | **Decision priorities** → Conditional investment model; [formula review](notes/conditional_model_review.md) | Edit price, fee/capture and allocations. Revenue, destruction and custody remain separate; missing measurements stay unavailable. |
 
-The revenue/buyback ledger, full issuance/burn reconciliation, broad relayer attribution and conditional investment model remain incomplete. The current thesis organizes evidence and unresolved inputs; it does not implement a valuation model.
+## What this research adds
 
-## Explore the Dashboard
+1. **Persistence measured alongside execution and concentration.** The 10 and
+   17 August 2026 activity cohorts have exact +8 returns of **47.41% / 46.18%**
+   of starting-week accounts. Their top ten returners produce **73.98% / 75.12%**
+   of returning accounts’ +8 transactions. Three initial-receipt pilots for the
+   5–11 and 12–18 October 2026 submission weeks show **82.35–92.99%** initial-receipt
+   success among the selected returner populations, with six-day execution tails. Cohorts overlap;
+   initial success is not complete-chain success. [Validated cohort evidence](results/62_integrated_research_evidence.json).
 
-**[Open NEAR Growth Intelligence](https://near-growth-intelligence.streamlit.app)**
+   ![Exact +8 account returns and top-ten returner transaction shares for two August 2026 cohorts.](docs/assets/persistence_and_concentration.svg)
 
-The dashboard uses saved, dated research exports. Interactions do not query external data sources.
+   *Nearly half returned at +8, while leading returners dominated transactions; the denominators differ and cohorts overlap. [Evidence](results/62_integrated_research_evidence.json).*
 
-See [product requirements](docs/product_requirements.md) for scope, interpretation boundaries and acceptance criteria.
+2. **Independent economic observations, with the gaps preserved.** During
+   **21–27 September 2026**, 23 epoch applications record **618,436.07 NEAR of
+   protocol-validated reward minting**. Across **24 August–18 October**, three
+   wallets receive **956,945.11 NEAR of external net native inflow**; two internal
+   transfers cancel. The **0.0010849311842748 NEAR** stock-flow difference remains
+   unallocated. Native inflows are unclassified, not revenue; reward minting
+   excludes separately unavailable subsidies. [Supply evidence](results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json) · [Native ledger](results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json).
+3. **Mechanisms connected to a testable investment model.** Two selected Sweat
+   cases each have **eight successful receipt outcomes**; the jar-deposit case
+   nevertheless reports a **rejected booster application**. Other controls retain **six successful wx receipt
+   outcomes**, and **18 tinykoala graphs containing failure**. They are not
+   population success estimates; [coverage percentages and denominators](notes/priority4_attribution_plan.md)
+   are disclosed. The implemented model converts explicit assumptions into
+   capture thresholds. Its **illustrative default** reward-only threshold is
+   **$24.74 billion/week** of eligible activity at a 0.1% fee, 50% capture,
+   25% destruction allocation and $5/NEAR effective price. This covers the dated
+   reward baseline, not total issuance including subsidies, observed revenue or
+   expected returns. [Selected jars case](notes/sweat_jars_case_study.md) · [Selected wx graph](notes/wx_cruce_case_study.md) · [Model derivation](notes/conditional_model_review.md#exact-illustrative-default-calculation).
 
-## Three Findings Behind the Project — 24 August–18 October 2026
+   ![Illustrative scenario: required weekly eligible activity falls as assumed fee capture rises.](docs/assets/model_capture_sensitivity.svg)
 
-### More transactions did not mean broader account participation
+   *Higher assumed capture lowers the required eligible activity with other assumptions fixed. [Model](notes/model_sensitivity_chart.md) · [Exact scenario data](results/101_model_capture_sensitivity.json).*
 
-Compared with the first week, the final week recorded **3.69% more transactions** but **7.38% fewer weekly active signing accounts**.
+## The investment case
 
-Transactions outside the first week's ten leading signing accounts increased **52.50%**, while those original leaders' transactions declined **19.83%**.
+**Supporting evidence:** repeat account activity, successful initial execution
+and recorded NEAR spending demonstrate execution use. The dated reward week,
+native balance bridge and selected downstream graphs make parts of the economic
+account auditable. They do not establish fresh purchases or holder cash flows.
 
-### Low account returns needed lifecycle context
+**Contrary evidence:** across **6 July–18 October 2026**, endpoint transactions
+fell **10.63%** and active signing accounts **24.65%**, despite higher four-week
+averages. Returner transactions are concentrated; **91.90%** of tinykoala’s
+778,588 primary-window transactions had failed initial receipts. Selected
+successes do not remove those population findings. [Evidence and interpretation](notes/investment_thesis.md).
 
-Only **18.14%** of accounts active during the spike week participated the following week. However, **309,280 absent accounts** had successfully executed receipts containing self-deletion actions during the starting week.
+**What would change the conclusion:** three complete cohorts with ≥40% exact
++8 returns and ≤50% top-ten transaction concentration would strengthen the
+persistence premise; three below 25% returns or above 80% concentration would
+weaken it. Economic strengthening requires eight classified, reconciled weekly
+asset ledgers and attributed capture meeting the chosen model hurdle, alongside
+independent supply accounting. These are analyst-selected tests, not outcomes
+already met. [Execution, supply and economic revision conditions](notes/investment_thesis.md#conditions-that-would-change-the-thesis).
 
-They represented **82.53% of the absent group**. The low return share therefore cannot simply be interpreted as ordinary user churn.
+## Verify it locally
 
-### Transaction growth could include failed execution
-
-One selected growth-contributing account, `tinykoala595.near`, signed **778,588 transactions**, of which **91.90%** had failed initial receipts.
-
-Eighteen sampled failed receipts reported specific contract errors: seventeen slippage errors and one insufficient-deposit error. This diagnostic sample does not establish error frequencies across all failures.
-
-These findings show why activity counts need account, lifecycle and execution context.
-
-## What You Can Explore
-
-| View | What it helps investigate |
-|---|---|
-| Growth | Whether transactions, signing-account participation and combined recorded execution spending moved together. |
-| Growth drivers | Which accounts contributed to changes, including selected execution outcomes, costs and diagnostic errors. |
-| Account returns | Exact +1/+4/+8 activity returns, repeated-checkpoint intersections, concentration and scoped initial-receipt outcomes/spending; lifecycle context for the spike. |
-| Concentration | How much activity depended on leading signing accounts and original transaction receivers. |
-| Economics | Recorded spending, the eight-week observational supply residual, bounded canonical evidence and the withdrawal trace's unresolved revenue origin. |
-| Decision priorities | What needs investigation before findings inform adoption, support or economic claims. |
-| Account explorer | Five selected signing accounts, with weekly trends, destinations, actions and attribution evidence. |
-
-Account profiles distinguish documented roles from unverified service attribution. They describe selected signing-account activity, not complete applications or application user counts.
-
-## Run Locally
-
-Use Python 3.12. From the repository root:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m streamlit run dashboard/app.py
-```
-
-Open the local URL printed in the terminal. Keep that terminal running while using the dashboard; press **Ctrl + C** to stop it.
-
-Saved CSV and JSON exports are included, so launching the dashboard does not require BigQuery credentials.
-
-## Data, Methods and Validation
-
-**Source:** `bigquery-public-data.crypto_near_mainnet_us`
-
-The workflow combines SQL extraction and validation, saved results, Python-derived tables and a Streamlit dashboard.
-
-Transactions and their receipt-conversion costs are grouped by submission date. Network receipt outcomes and execution costs are grouped by execution date. Account cohorts, weekly rankings and a fixed first-week account group provide different views of participation and concentration.
-
-Validation includes transaction uniqueness, outcome matching, cost-field checks, cohort reconciliation, diagnostic response identities, account-profile totals, spending reconciliation and supply comparisons.
-
-During **24 August–18 October 2026**, combined recorded execution spending totalled approximately **67,988.91 NEAR**:
-
-| Component | Recorded spending |
-|---|---:|
-| Transaction receipt conversion | 2,110.82 NEAR |
-| Receipt execution | 65,878.09 NEAR |
-| **Combined** | **67,988.91 NEAR** |
-
-Transaction conversion contributed **3.10%** of combined spending. Weekly combined spending increased **83.13%** between the first and final weeks.
-
-This is a calendar-period comparison, not a matched transaction-chain fee calculation. Execution expenditure measures token use during the period; it does not establish persistent holdings or net market buying.
-
-Observed total supply increased approximately **4,935,983.98 NEAR** during **24 August–18 October 2026**, using closing supply on 23 August as the opening baseline. Supply movement and execution spending are separate measurements. Validator-update balances and supply movements remain incompletely reconciled.
-
-The detailed evidence is available in:
-
-- [Data checks, coverage and findings](notes/data_checks.md)
-- [Growth quality and investment thesis](notes/investment_thesis.md)
-- [Economic mechanisms and measurement boundaries](notes/economic_mechanisms.md)
-- [Account attribution and sources](notes/account_attribution.md)
-- [Decision priorities](notes/decision_priorities.md)
-- [Research plan](notes/research_plan.md)
-
-## Interpretation Boundaries
-
-- Fifteen weeks of transactions cannot establish long-term adoption. Network calendar-period economics cover eight weeks; selected initial-receipt pilots have explicit six-day tails through 24 October.
-- Starting-week activity cohorts overlap and are not newly acquired users. Repeated return means activity at all exact +1/+4/+8 checkpoints, not continuous weekly activity. Incomplete follow-ups remain unavailable.
-- Signing accounts are identifiers, not verified people. Relayers can submit transactions for other participants.
-- Account absence is not automatically user churn, and documented service associations do not prove historical ownership.
-- Transactions, actions and receipt executions measure different units. An initial receipt outcome does not establish complete downstream success.
-- Selected account investigations and diagnostic samples do not represent the whole network.
-- Recorded execution spending is not protocol revenue, permanent token burning or holder returns. The supply analysis is not a complete economic-flow or valuation model.
-
-Earlier unmatched outcomes, action-record coverage gaps and unresolved economic differences are documented in the data-check notes.
-
-## Reproduce the Derived Results
-
-After activating the environment, one command rebuilds and reconciles the published derived evidence from saved inputs and provenance manifests:
+Use Python 3.12 from the repository root. One-time setup:
 
 ```bash
-python3 -B analysis/23_rebuild_published_results.py
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
-The command runs legacy builders in an isolated temporary copy, revalidates saved canonical and withdrawal captures, validates the cohort exports, and reproduces results 61–62. It verifies 17 derived artifacts. Missing named derived outputs are created exclusively; an existing output must match byte-for-byte and is never overwritten. Raw exports/captures and historical provenance remain unchanged. Network operations are disabled; no BigQuery query, dry run or RPC collector is invoked.
-
-Use `--check` for verification without creating missing outputs:
+Run the unified offline verification:
 
 ```bash
-python3 -B analysis/23_rebuild_published_results.py --check
+.venv/bin/python -B analysis/44_rebuild_integrated_research.py --check
 ```
 
-Results 57 and 59 retain their recorded SQL identities. Proven trailing-whitespace differences in current SQL 42/43 are documented in the validation reports and verified in memory, without rewriting historical reports. A mismatch beyond those verified differences stops validation.
+Expect exit code **0**, `source_requests: 0`, and verification of the original
+published results, reviewed model, saved reward/wallet/case evidence,
+[result 100](results/100_integrated_research_review.json), this figure and the
+[five-deliverable status table](notes/deliverable_status.md). Network operations
+and subprocess launches are disabled; existing evidence is never overwritten.
+Header-prefix arithmetic uses saved validated summaries; full raw-header
+revalidation requires the retained external files. [Rebuild details and checks](notes/integration_validation.md).
 
-Run the offline analysis and dashboard smoke tests in the installed environment:
+Launch the saved-data dashboard with
+`.venv/bin/python -m streamlit run dashboard/app.py`. No BigQuery credentials or
+custom `PYTHONPATH` are required. The conditional model is editable in
+**Decision priorities**; its assumptions are illustrative, not measured fee capture.
 
-```bash
-python3 -B -m unittest discover -s tests -v
-```
+## Coverage and material limitations
 
-Dashboard checks include in-process Streamlit AppTest interactions and a separate console-launch regression that starts a temporary local server without a custom PYTHONPATH. Named source CSV downloads preserve saved bytes, or exact original cell strings for filtered selections; table-toolbar exports contain presentation data. Source collection remains a separate manual workflow.
+NEAR mainnet, UTC: transaction context covers **6 July–18 October 2026**
+(**79,171,891 transactions**, fifteen complete weeks); network economics cover
+**24 August–18 October** (**44,284,794 transactions**, eight weeks). Selected
+cohorts begin on 10 August; initial-receipt lookup tails end on 24 October.
 
-Running the SQL queries requires BigQuery access and may incur query charges.
+- Accounts are identifiers, not verified people or new users. Exact-week returns
+  differ from any-return unions; repeated return means all +1/+4/+8 checkpoints,
+  not continuous weekly activity. Incomplete follow-ups remain unavailable.
+- The eight-week supply-versus-validator residual remains **+16,599.51 NEAR**.
+  Validator changes are not issuance. Full-window issuance, full-week independent
+  debit, gross burn and subsidies remain incomplete; the 144-block header prefix
+  is not extrapolated. Spending is not actual burn.
+- Native flows are one asset layer. Fee origin, complete token/internal balances
+  and purchase execution remain unverified. The bounded withdrawal-provenance
+  investigation is closed; missing attribution does not prove nonoccurrence.
+- Original BigQuery cost/supply fields are FLOAT-derived. Exact RPC integers and
+  saved decimal strings are preserved; rounding is for display. The model is
+  implemented, while empirical calibration remains incomplete. No fair value,
+  price target or expected investment return is established.
 
-## Repository Structure
+Full-window supply, the multi-asset revenue/buyback ledger and broad attribution
+remain partial; validated cohort outputs do not complete wider execution
+coverage. [Original criteria and current status](notes/deliverable_status.md) ·
+[Detailed methodology and checks](notes/data_checks.md).
 
-| Directory | Contents |
-|---|---|
-| `sql/` | Extraction, validation and analytical queries. |
-| `analysis/` | Derived-table, account-profile and diagnostic retrieval scripts. |
-| `results/` | Query exports, derived tables, account profiles and RPC evidence. |
-| `dashboard/` | Interactive Streamlit application. |
-| `notes/` | Research methods, findings, attribution evidence and interpretation boundaries. |
+## Repository map
 
-**Built with:** SQL, Google BigQuery, Python, pandas, Plotly and Streamlit.
+| Path | Contents |
+| --- | --- |
+| [THESIS.md](THESIS.md) | Entry point to the maintained investment argument and revision conditions. |
+| [dashboard/](dashboard/) | Interactive views and reviewed conditional model. |
+| [sql/](sql/) · [analysis/](analysis/) | Source-query definitions, offline validators and rebuild tooling. |
+| [results/](results/) | Saved exports, derived evidence and bounded captures. |
+| [notes/](notes/) · [docs/](docs/) | Methods, accounting investigations, research status and visual assets. |
+
+The annotated tag **submission-2026-11-02**, at
+`7c8beb4c320be0a506bf955a1cb9e79c91001389`, preserves the repository version
+associated with the 2 November submission; organiser snapshot verification is
+not claimed. Subsequent research preserves that history.

@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-11-08T00:35:43.820859+00:00",
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "inputs": {
+    "analysis/11_collect_canonical_validator_evidence.py": {
+      "bytes": 21427,
+      "sha256": "051043b5a3cbc43da3c24d70403a632e25ac5670d2637dabdfbca7409c1a0846"
+    },
+    "analysis/15_trace_frontend_transfer_origin.py": {
+      "bytes": 12129,
+      "sha256": "957e69289f484903c2bd93f4d4020a3ea83e2569f51aa19db9795f4556107840"
+    },
+    "analysis/40_trace_sweat_relayer.py": {
+      "bytes": 28205,
+      "sha256": "8731409db1e775b96b38b32ff4c3e87c7fb6eb80449fde1f15c4ce6e203d1cf6"
+    },
+    "results/26_growth_account_failure_details_2026-08-24_to_2026-10-18.json": {
+      "bytes": 337007,
+      "sha256": "14920d5761066a81fbab3d2e4765e4713d2fc2eb0b2a3eaef636a656917d2df2"
+    },
+    "results/85_neardata_header_pilot_validation_216877934_to_216878033.json": {
+      "bytes": 671919,
+      "sha256": "4a2711e3049ddd83ed0912db71465b0045cbd09ce23627073cced3c06006868b"
+    },
+    "results/92_priority4_saved_attribution_assessment.json": {
+      "bytes": 20112,
+      "sha256": "c4a6ee0883fbc730748a386c0a6b93d2993b8615c1ca9342a7a3c6d488db8ed0"
+    },
+    "results/93_priority4_sweat_receipt_origin_request.json": {
+      "bytes": 183,
+      "sha256": "567ecd7bc572d989a4584e60adb15bc45b83c6d39a4b134d82770b4d5831747b"
+    },
+    "results/94_sweat_relayer_bounded_trace_plan.json": {
+      "bytes": 3675,
+      "sha256": "ee7e9cade22c00aa0ec022b0993942faaa9e812c105f69a86566eeaf67e7a0ab"
+    },
+    "results/neardata_supply_block_pilot_recovery_2026-09-23/20261107T154218Z_8ca556d6bf23_recovery_01/hop-01-archive/block-A.metadata.json": {
+      "bytes": 1583,
+      "sha256": "321ddd3fc48d76158403fd6664f6082d5b54949506064c5bd687bee9b2c608b2"
+    },
+    "results/neardata_supply_block_pilot_recovery_2026-09-23/20261107T154218Z_8ca556d6bf23_recovery_01/hop-01-archive/block-A.response.body": {
+      "bytes": 191778,
+      "sha256": "42338102d2847e49473bd76d760d6d3bab7fafa1f660a0db8f8651725c2611ba"
+    }
+  },
+  "request": {
+    "id": "priority4-sweat-status",
+    "jsonrpc": "2.0",
+    "method": "EXPERIMENTAL_tx_status",
+    "params": {
+      "sender_account_id": "sweat-relayer.near",
+      "tx_hash": "4Hy1wk5EDGHDwAVd4FvFkUPALcsracRWZAW8Z8aB8gB4",
+      "wait_until": "FINAL"
+    }
+  },
+  "request_count": 1,
+  "response_body_cap_bytes": 8388608,
+  "stage": "status"
+}

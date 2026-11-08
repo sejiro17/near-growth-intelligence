@@ -1,0 +1,10 @@
+{
+  "id": "opening-2",
+  "jsonrpc": "2.0",
+  "method": "query",
+  "params": {
+    "account_id": "1csfundsadmin.sputnik-dao.near",
+    "block_id": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+    "request_type": "view_account"
+  }
+}
