@@ -1,0 +1,78 @@
+{
+  "anchors": [
+    {
+      "date": "2026-08-23",
+      "hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+      "height": 212636216
+    },
+    {
+      "date": "2026-08-30",
+      "hash": "E1xdYKytVzbn374dnKUKH1DR9KiM1UsJYrQY5uqiFsqq",
+      "height": 213622038
+    },
+    {
+      "date": "2026-09-06",
+      "hash": "5XGLmnkqpVvKz8rTmx5RDCmn8XcBHNKENMmbnMJJovRx",
+      "height": 214589586
+    },
+    {
+      "date": "2026-09-13",
+      "hash": "GoUAjmqsUcvDXSeeptjqvYYmn4JijcRY8wrxr9w9hRqv",
+      "height": 215566609
+    },
+    {
+      "date": "2026-09-20",
+      "hash": "5sUCEyrF5p3RZvx5DzE6zD4gtknwHf8kMmHnH7ViGPWk",
+      "height": 216553375
+    },
+    {
+      "date": "2026-09-27",
+      "hash": "5VLWBqYvC98Q5qUzbQ8nHN1wcGZ9CnLxShZgojz4ohUa",
+      "height": 217555961
+    },
+    {
+      "date": "2026-10-04",
+      "hash": "AkPEEMfGUP9KS7BqNFyUZmuhVtBecLyNq47QG6kuXydT",
+      "height": 218567716
+    },
+    {
+      "date": "2026-10-11",
+      "hash": "HVrTW2zAZJuvxAeRazkRcvkYMR2iTErUZd4WTKJQoXoJ",
+      "height": 219594856
+    },
+    {
+      "date": "2026-10-18",
+      "hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+      "height": 220581912
+    }
+  ],
+  "authoritative_sources": {
+    "epoch_total_reward": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/chain/epoch-manager/src/reward_calculator.rs#L51-L130",
+    "finalize_epoch_duration_and_supply": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/chain/epoch-manager/src/lib.rs#L797-L857",
+    "minted_amount_application": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/chain/chain/src/chain.rs#L2520-L2531",
+    "protocol_version_voting": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/chain/epoch-manager/src/lib.rs#L562-L580",
+    "seconds_per_year": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/chain/epoch-manager/src/reward_calculator.rs#L10",
+    "supply_update": "https://github.com/near/nearcore/blob/5af9ca74631e6cf0dae33e77d1a632e94d2952ce/core/primitives/src/block.rs#L140-L198"
+  },
+  "automatic_retries": 0,
+  "connect_timeout_seconds": 15,
+  "endpoint": "https://archival-rpc.mainnet.near.org",
+  "fallback_endpoints": [],
+  "historical_commit": "5af9ca74631e6cf0dae33e77d1a632e94d2952ce",
+  "max_requests": 45,
+  "network": "mainnet",
+  "request_timeout_seconds": 60,
+  "scope": "Point requests at saved weekly closing anchors only. No header ranges, reward-map walk, chunk scan or BigQuery.",
+  "source_hashes": {
+    "results/28_daily_supply_checks_2026-08-23_to_2026-10-18.csv": "874e7d867e663dcb02c3e021c0fe37b9476b94de4212dc03bd3305b0f50fbe37"
+  },
+  "spacing_seconds": 65,
+  "status": "MANUAL_EIGHT_WEEK_ISSUANCE_BOUND_ANCHORS",
+  "steps_per_anchor": [
+    "block",
+    "validators",
+    "first",
+    "parent",
+    "config"
+  ]
+}

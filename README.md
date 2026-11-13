@@ -22,6 +22,7 @@ specific observation to check.
 | Growth depends on the baseline | **Growth** → Four-week averages; [comparison](results/39_extended_activity_comparison_2026-07-06_to_2026-10-18.csv) | Four-week averages rise; fifteen-week endpoints fall. |
 | Persistence has limits | **Account returns** → Persistence and scoped execution; [thesis table](notes/investment_thesis.md#persistence-and-initial-execution) | Exact +8 returns near 47% and 46%, concentrated transactions, overlapping groups and scoped initial success. |
 | Supply components differ | **Economics** → One exact reward week; [reward evidence](results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json) | 23 validated reward applications; implied debit remains distinct from independently measured burn. |
+| Net supply debit barely offsets issuance | **Economics** → Eight-week issuance is bounded; [bounds](notes/eight_week_issuance_bounds.md) | Across 184 reward applications, net supply debit is at most 1.62% of issuance; the measured control week lies inside its bounds. |
 | Wallet inflow is not revenue | **Economics** → Three-wallet native ledger; [ledger](notes/three_wallet_ledger_consolidation.md) | Native stocks/flows, internal-transfer cancellation and an unallocated difference. |
 | Follow actual execution | **Growth drivers** → Inspect a selected mechanism; [cases and coverage](notes/priority4_attribution_plan.md) | Sweat delegation, wx transfer-and-callback, and failed tinykoala controls; selected examples have explicit population denominators. |
 | Challenge the investment assumptions | **Decision priorities** → Conditional investment model; [formula review](notes/conditional_model_review.md) | Edit price, fee/capture and allocations. Revenue, destruction and custody remain separate; missing measurements stay unavailable. |
@@ -47,6 +48,17 @@ specific observation to check.
    transfers cancel. The **0.0010849311842748 NEAR** stock-flow difference remains
    unallocated. Native inflows are unclassified, not revenue; reward minting
    excludes separately unavailable subsidies. [Supply evidence](results/72_supply_protocol_validated_week_2026-09-21_to_2026-09-27.json) · [Native ledger](results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json).
+
+   **The full eight weeks are now bounded.** Exact supply at nine weekly anchors
+   rose **4,935,983.98 NEAR**. Nearcore's supply identity and reward ceiling put
+   epoch-reward issuance at **4.94–5.02 million NEAR** and net supply debit at
+   **0–80,060 NEAR: at most 1.62% of issuance**. Supply grew at essentially the
+   2.47–2.51% annualised reward rate. At observed activity, the net debit (fee
+   burning net of subsidies) does not materially offset issuance. That
+   constrains a supply-based argument; other value-capture mechanisms remain
+   incompletely attributed, not ruled out. The measured control week lies
+   inside its derived range at 99.51% of the ceiling. These are
+   protocol-derived bounds, not measured gross burn; subsidies stay unseparated. [Bounds and method](notes/eight_week_issuance_bounds.md) · [Result 107](results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json).
 3. **Mechanisms connected to a testable investment model.** Two selected Sweat
    cases each have **eight successful receipt outcomes**; the jar-deposit case
    nevertheless reports a **rejected booster application**. Other controls retain **six successful wx receipt
@@ -123,9 +135,11 @@ cohorts begin on 10 August; initial-receipt lookup tails end on 24 October.
   differ from any-return unions; repeated return means all +1/+4/+8 checkpoints,
   not continuous weekly activity. Incomplete follow-ups remain unavailable.
 - The eight-week supply-versus-validator residual remains **+16,599.51 NEAR**.
-  Validator changes are not issuance. Full-window issuance, full-week independent
-  debit, gross burn and subsidies remain incomplete; the 144-block header prefix
-  is not extrapolated. Spending is not actual burn.
+  Validator changes are not issuance. Full-window issuance and net debit are
+  protocol-bounded, not measured. Protocol parameters are verified at anchor
+  epochs, not at every epoch. Independent full-week debit, gross burn and
+  subsidies remain unavailable; the 144-block header prefix is not
+  extrapolated. Spending is not actual burn.
 - Native flows are one asset layer. Fee origin, complete token/internal balances
   and purchase execution remain unverified. The bounded withdrawal-provenance
   investigation is closed; missing attribution does not prove nonoccurrence.

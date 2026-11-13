@@ -21,9 +21,17 @@ tinykoala graphs each contain failure. Those examples do not estimate population
 settlement rates.
 
 **What economic demand or value capture is demonstrated?** Recorded execution
-spending establishes use of execution capacity. A dated week of epoch reward
-minting and a native wallet ledger improve the economic evidence, but full-window
-issuance/burn reconciliation, fee-origin attribution, actual purchase execution
+spending establishes use of execution capacity. The protocol's net supply debit
+(fee burning net of subsidies) does not offset issuance materially. Across all
+eight weeks of 24 August–18 October, exact supply movement plus nearcore's
+reward rules put that debit at **0–80,060.08 NEAR**: at most **1.62% of 4.94–5.02
+million NEAR of epoch-reward issuance**. Supply therefore grew at essentially
+the 2.47–2.51% annualised reward rate. These are protocol-derived bounds, not
+measured gross burn; subsidies stay unseparated. The measured net supply
+increase constrains a supply-based argument. Other value-capture mechanisms
+remain incompletely attributed, not ruled out: product revenue,
+governance-directed purchases, staking or locking demand. With a dated measured reward week and a native wallet ledger, the
+economic evidence is stronger. Fee-origin attribution, actual purchase execution
 and holder value capture remain incomplete. The reviewed model tests hypothetical
 capture thresholds; it does not establish a fair value, expected return or price target.
 
@@ -195,7 +203,11 @@ added again to network spending. Sources: results 26, 95–99,
 | Exact endpoint supply movement | Same dated week | +611,555.974235517852937718656646 NEAR. |
 | Implied weekly net debit | Reward minting minus exact movement | 6,880.1007346464709234 NEAR; not independently measured weekly debit or gross burn. |
 | Independently summed header net debits | 23 application blocks; separately a 144-block prefix | Boundary-only 0.1041228119233375 NEAR; prefix 0.5486610196812742 NEAR. Scopes overlap and are not added or extrapolated. |
-| Full-window issuance, full-week independent debit, gross burn and subsidies | Original target | Unavailable, not zero. Eight weekly gross-component identities remain open. |
+| Exact supply movement, nine weekly anchors | Closing 23 August to closing 18 October | +4,935,983.979834754311012798611813 NEAR, exact integer headers; matches the FLOAT-derived observation above. |
+| Epoch-reward issuance bounds | Same eight weeks, 184 applications | 4,935,983.98–5,016,044.06 NEAR. Lower bound: unsigned net header debit. Upper bound: nearcore reward ceiling. Protocol-derived, not measured outside 21–27 September. |
+| Net header debit bounds | Same eight weeks | 0–80,060.076856675035903096374704 NEAR, at most 1.6220% of issuance; at most 7,336–13,420 NEAR in each week. Not gross burn; subsidies not separated. |
+| Bound control | 21–27 September | Measured 618,436.07 NEAR lies within the derived 611,555.97–621,464.57 NEAR, at 99.51% of the ceiling. |
+| Independent full-week debit, gross burn and subsidies | Original target | Unavailable, not zero. Eight weekly gross-component identities remain open. |
 
 At two exact block hashes, 231 validator update records were absent from selected
 BigQuery evidence; all 449 blank-chunk observations examined were valid RPC
@@ -213,6 +225,19 @@ account transfers are not measured destruction. The 144-block prefix has zero
 integer identity discrepancy but no separate canonical tail control; bulk
 collection is paused. Sources: results 42–46, 72, 85, 88–89 and
 [supply protocol/source limits](supply_protocol_assessment.md).
+
+The eight-week bounds come from 45 archival point requests at the nine saved
+weekly closing anchors: exact supply, epoch boundaries and protocol
+configuration. Nearcore's supply identity mints only at epoch starts and
+subtracts an unsigned net header debit, so issuance is at least the exact supply
+movement. Its reward formula caps each epoch at total supply × 1/40 × epoch
+duration ÷ 365 days, and withheld validator rewards are never minted. Protocol
+86 and the 1/40 rate are verified at every anchor epoch and in the control week.
+The other intervening epochs are not individually checked, and version voting
+is not assumed monotonic. The bounds use no execution spending, implied debit
+or sampled header debit, and neither subsidies nor other adjustments are set to
+zero. Sources: [result 107](../results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json)
+and [bound method and qualifications](eight_week_issuance_bounds.md).
 
 ## Native wallet ledger and revenue attribution
 
@@ -310,6 +335,17 @@ supply inputs keep full conditional neutrality unavailable. Implied debit, walle
 flows and spending never fill those missing components. Sources: preserved result
 90, reviewed result 91 and [formula/sensitivity review](conditional_model_review.md).
 
+**Eight-week evidence check.** Supply neutrality before purchases means
+destroying the net supply growth itself, which already includes every term in
+the protocol supply identity. Over the eight weeks that growth was exactly
+4,935,983.98 NEAR, about **616,998 NEAR/week**. At the illustrative defaults,
+destroying it needs about **$24.68 billion/week** of eligible activity, against
+$24.74 billion/week for reward minting alone. The bounded net debit lowers the
+requirement by less than 1%. Repeating past growth is a scenario, and no
+default, result 90 or result 91 is changed. Fee capture, purchases and
+destruction remain unmeasured. The dashboard model shows this check under the
+applied assumptions.
+
 ## Conditions that would change the thesis
 
 These are analyst-selected decision rules, not protocol requirements or tests of
@@ -320,7 +356,7 @@ statistical significance. They remain editable and are not outcomes already met.
 | Persistence and breadth | Three complete cohorts with ≥40% exact +8 returns and ≤50% top-ten returner transaction share. | Three below 25% returns or above 80% concentration. Only two complete +8 cohorts are measured here, with concentration above 70%. |
 | Reliable execution | ≥95% initial-receipt success and ≥99.9% unique link/cost coverage across three comparable checkpoints; descendant evidence for chain-level claims. | Pilot initial success is 82.35–92.99%. Observed matching is complete, but wider descendants and ingestion remain unverified. |
 | Revenue and deployment | Eight historically attributed, classified and reconciled weekly multi-asset ledgers; verified purchases/destruction and capture meeting the explicitly chosen hurdle. | Capture below that hurdle over eight independently attributed weeks, or unverified deployment behind a purchase/destruction claim. Native inflows and a successful withdrawal do not meet the test. |
-| Supply account | Eight complete weekly independent issuance/burn/adjustment identities with zero integer discrepancies and canonical coverage. | Missing gross components, unverified historical semantics or incomplete coverage keep that claim unavailable. Current one-week/prefix evidence is partial. |
+| Supply account | Eight complete weekly independent issuance/burn/adjustment identities with zero integer discrepancies and canonical coverage. | Missing gross components, unverified historical semantics or incomplete coverage keep that claim unavailable. Eight weekly issuance/net-debit ranges are now protocol-bounded (net debit ≤1.62% of issuance), with one measured reward week and a 144-block prefix; gross components remain unmeasured. |
 | Underlying demand | Population attribution links concentrated infrastructure to durable independent uses and funders. | Selected successful cases coexist with substantial failed activity and unknown actor ownership; no population extrapolation follows. |
 
 Useful execution, concentration and supply growth do not alone determine an

@@ -1,0 +1,8 @@
+{
+  "id": "a3-2026-09-13-first",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": 215538734
+  }
+}

@@ -12,9 +12,12 @@ import research_views
 import presentation
 import model_views
 import review_views
+import issuance_views
 
 # A running Streamlit server can retain imported views across script upgrades.
 research_views = importlib.reload(research_views)
+issuance_views = importlib.reload(issuance_views)
+model_views = importlib.reload(model_views)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1612,6 +1615,7 @@ with costs_tab:
 
     research_views.supply_and_trace(research)
     review_views.supply_and_wallets(review)
+    issuance_views.economics()
 
     with st.expander("Inspect and download the weekly economic comparison"):
         presentation.table(economics, hide_index=True, width="stretch")

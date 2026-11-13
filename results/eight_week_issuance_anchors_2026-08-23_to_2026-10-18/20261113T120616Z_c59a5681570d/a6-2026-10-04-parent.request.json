@@ -1,0 +1,8 @@
+{
+  "id": "a6-2026-10-04-parent",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "HemJ3VtN2FegMysso8BCFCW62jWmWZBJq9jzijCgRear"
+  }
+}

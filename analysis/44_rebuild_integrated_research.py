@@ -279,7 +279,28 @@ def status_markdown(data):
     lines += ["", "## Completion criteria", ""]
     lines += [f"- **{row['deliverable']}:** {row['criterion']}" for row in data["deliverables"]]
     lines += ["", "Sources: [integrated review](../results/100_integrated_research_review.json), [research plan](research_plan.md), [thesis](investment_thesis.md). All amounts absent from source evidence remain unavailable, not zero. No new collection is part of this integration.", ""]
+    lines += issuance_status_lines()
     return "\n".join(lines).encode()
+
+
+def issuance_status_lines():
+    """Evidence added after result 100; result 100 itself is unchanged."""
+    bounds = read(107)
+    total, control = bounds["window_total"], bounds["control"]
+    require(bounds["status"] == "VALIDATED_PROTOCOL_DERIVED_BOUNDS" and control["measured_within_bounds"]
+            and all(v is None for v in bounds["unavailable"].values()), "Result 107 scope changed")
+    share = Decimal(int(total["net_debit_share_of_issuance_upper_bound"]["exact"].split("/")[0])) * 100 / Decimal(int(total["net_debit_share_of_issuance_upper_bound"]["exact"].split("/")[1]))
+    def n(value, places=2):
+        return f"{Decimal(value):,.{places}f}"
+    return ["## Supply evidence added after the integrated review", "",
+            f"[Result 107](../results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json) adds exact supplies, epoch boundaries and protocol configuration at the nine weekly anchors "
+            f"(45 archival point requests). Across {total['epoch_reward_applications']} epoch-reward applications, 24 August–18 October, exact supply movement is "
+            f"{n(total['exact_supply_movement_near'])} NEAR; protocol-derived epoch-reward issuance lies between {n(total['issuance_lower_bound_near'])} and "
+            f"{n(total['issuance_upper_bound_near'])} NEAR; net header debit lies between 0 and {n(total['net_header_debit_upper_bound_near'])} NEAR, at most {share:.2f}% of issuance. "
+            f"The measured {control['week'].replace('/', '–')} reward minting lies inside its week's bounds.", "",
+            "Deliverable 1 remains **Partial**: these are protocol-derived bounds, not measured minting outside the control week, independently measured debit, gross burn or a subsidy split. "
+            "Protocol version 86 and the 1/40 inflation parameter are verified at the anchor epochs and the control week, not at every intervening epoch. "
+            "Deliverable 5 gains a measured eight-week net-supply-growth target; fee capture, purchases and destruction remain unavailable.", ""]
 
 
 def validate_new_evidence():
@@ -304,6 +325,8 @@ def validate_new_evidence():
     checks[path(105)] = bounds.b.json_bytes(bounds.report())
     jars = module("49_trace_sweat_jars.py")
     checks[path(106)] = jars.c.json_bytes(jars.report())
+    issuance = module("50_eight_week_issuance_bounds.py")
+    checks[path(107)] = issuance.cap.json_bytes(issuance.validate(issuance.single_capture()))
     for p, raw in checks.items():
         require(p.read_bytes() == raw, f"Generated-file mismatch: {p.name}")
     return len(checks)

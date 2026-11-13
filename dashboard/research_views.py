@@ -211,7 +211,7 @@ def supply_and_trace(data):
         st.caption("A successful internal transfer and withdrawal establish a mechanism, not the withdrawn funds' revenue origin. "
                    "Internal mt_burn does not establish native NEAR destruction.")
     presentation.table(pd.DataFrame([
-        {"Investment input": "Full-window issuance", "Status": "Unavailable", "Implication": "No reconciled issuance or fee-offset inflation estimate"},
+        {"Investment input": "Full-window issuance", "Status": "Protocol-bounded (result 107)", "Implication": "4.94–5.02 million NEAR; net debit offsets at most 1.62% of issuance. Not measured minting or gross burn"},
         {"Investment input": "Actual supply burn", "Status": "Unavailable", "Implication": "No measured permanent destruction or burn-based valuation"},
         {"Investment input": "Revenue origin and holder distributions", "Status": "Unverified", "Implication": "No attributable revenue yield, buyback return or holder cash-flow valuation"},
         {"Investment input": "Persistent purchases and balance commitments", "Status": "Unmeasured", "Implication": "Recorded spending alone does not establish net buying or durable holdings"}
