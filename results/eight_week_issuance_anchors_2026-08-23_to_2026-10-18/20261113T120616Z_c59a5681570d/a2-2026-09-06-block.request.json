@@ -1,0 +1,8 @@
+{
+  "id": "a2-2026-09-06-block",
+  "jsonrpc": "2.0",
+  "method": "block",
+  "params": {
+    "block_id": "5XGLmnkqpVvKz8rTmx5RDCmn8XcBHNKENMmbnMJJovRx"
+  }
+}

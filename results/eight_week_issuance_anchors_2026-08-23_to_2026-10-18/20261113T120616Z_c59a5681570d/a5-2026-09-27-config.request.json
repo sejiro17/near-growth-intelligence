@@ -1,0 +1,8 @@
+{
+  "id": "a5-2026-09-27-config",
+  "jsonrpc": "2.0",
+  "method": "EXPERIMENTAL_protocol_config",
+  "params": {
+    "block_id": "5VLWBqYvC98Q5qUzbQ8nHN1wcGZ9CnLxShZgojz4ohUa"
+  }
+}

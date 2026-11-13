@@ -5,9 +5,10 @@ import streamlit as st
 from decimal import Decimal
 
 if __package__:
-    from . import conditional_model as model, model_review as review, presentation
+    from . import conditional_model as model, issuance_views, model_review as review, presentation
 else:
     import conditional_model as model
+    import issuance_views
     import model_review as review
     import presentation
 
@@ -104,6 +105,7 @@ def render():
     rows = [{"Conditional threshold": labels[key],"Value":fmt(item["value"],4 if item["unit"]=="fraction" else 2),"Unit":item["unit"],"Status":item["status"].replace("_"," ").capitalize(),"Basis":mode+" scenario"} for key,item in scenario["thresholds"].items()]
     presentation.table(pd.DataFrame(rows),hide_index=True,width="stretch",alt="Economic activity and capture thresholds, including infeasible and unavailable cases")
     st.caption("These are arithmetic coverage hurdles, not investment break-even prices or expected returns. A required capture fraction above 1 is infeasible at the applied activity/price/allocation. Zero-coefficient targets can be unreachable; unavailable does not mean zero.")
+    issuance_views.model_context(result["assumptions"])
     with st.expander("Sensitivity, equations and exact reproducibility"):
         st.caption(f"{mode} scenario · formula walkthrough. The target is dated epoch-reward minting only; total issuance including subsidies is unavailable.")
         walkthrough=[{**row,"Value":fmt(row["Value"],6),"Basis":mode+" scenario"} for row in result["formula_review"]["walkthrough"]]

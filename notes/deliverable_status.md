@@ -19,3 +19,9 @@ The submission is an intermediate checkpoint. Completion is assessed against the
 - **5. Conditional investment model:** Editable assumptions, units/formulas, disjoint revenue/destruction/custody outputs, thresholds, sensitivity and measurable revision conditions.
 
 Sources: [integrated review](../results/100_integrated_research_review.json), [research plan](research_plan.md), [thesis](investment_thesis.md). All amounts absent from source evidence remain unavailable, not zero. No new collection is part of this integration.
+
+## Supply evidence added after the integrated review
+
+[Result 107](../results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json) adds exact supplies, epoch boundaries and protocol configuration at the nine weekly anchors (45 archival point requests). Across 184 epoch-reward applications, 24 August–18 October, exact supply movement is 4,935,983.98 NEAR; protocol-derived epoch-reward issuance lies between 4,935,983.98 and 5,016,044.06 NEAR; net header debit lies between 0 and 80,060.08 NEAR, at most 1.62% of issuance. The measured 2026-09-21–2026-09-27 reward minting lies inside its week's bounds.
+
+Deliverable 1 remains **Partial**: these are protocol-derived bounds, not measured minting outside the control week, independently measured debit, gross burn or a subsidy split. Protocol version 86 and the 1/40 inflation parameter are verified at the anchor epochs and the control week, not at every intervening epoch. Deliverable 5 gains a measured eight-week net-supply-growth target; fee capture, purchases and destruction remain unavailable.
