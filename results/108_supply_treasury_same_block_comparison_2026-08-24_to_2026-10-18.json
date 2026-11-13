@@ -1,0 +1,290 @@
+{
+  "definitions": {
+    "balance_change": "Closing minus opening liquid-plus-locked native balance at the anchor blocks; equals net flow plus the unallocated stock-flow difference.",
+    "between_wallet": "Native transfers among the three wallets; they cancel at group level.",
+    "external_net_inflow": "Successful native NEAR received from accounts outside the three wallets, minus native NEAR sent to them.",
+    "gross_successful_inflow": "All successful native NEAR received by the wallet, including transfers from the other two wallets."
+  },
+  "denominators": {
+    "basis": "Protocol-derived epoch-reward issuance bounds from result 107 over the same anchor blocks. The lower bound equals the exact total-supply movement. Dividing by the upper bound gives the smaller share.",
+    "issuance_lower_bound_near": "4935983.979834754311012798611813",
+    "issuance_lower_bound_yocto": "4935983979834754311012798611813",
+    "issuance_upper_bound_near": "5016044.056691429346915894986517",
+    "issuance_upper_bound_yocto": "5016044056691429346915894986517"
+  },
+  "interpretation_limits": [
+    "Inflows are unclassified. None is classified as revenue, a buyback, profit or a holder return; account names do not establish purpose.",
+    "Balances held by these accounts remain part of total supply. Nothing here measures circulating supply or establishes that balances are withheld from the market.",
+    "Coverage is three named accounts on the native NEAR layer only: not the complete treasury system, internal Intents balances, other tokens or other accounts.",
+    "Percentages compare scale over identical blocks. They are not measured value capture, an issuance offset or an investment return."
+  ],
+  "network_requests": 0,
+  "same_block_reconciliation": {
+    "closing": {
+      "block_hash": "76ZA6NE6s1MK1tk61djKwXs1kPbRmU4ofVtJfmKPENj1",
+      "block_height": 220581912,
+      "date": "2026-10-18"
+    },
+    "opening": {
+      "block_hash": "ACuCLP9DEHaHn3ET8ohyQCJBfw6gnTLhNeMsjTgD3Lfu",
+      "block_height": 212636216,
+      "date": "2026-08-23"
+    },
+    "states_checked": 6,
+    "wallets_checked": 3
+  },
+  "sources": {
+    "analysis/51_supply_treasury_comparison.py": "f462d4d0b2b93b731f38c275a1e29dc929d960f8529b24f00e7569c7aa576991",
+    "results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json": "de007cb636679904b48394eb6dd2dd482ae76f293a37902ad12f8938e36cfddc",
+    "results/80_three_wallet_native_ledger_and_asset_assessment_2026-08-24_to_2026-10-18.json": "6cbad8621599a6570b0dd97717d8cbee816f73e3277e4842ac33dfd8b22de599"
+  },
+  "status": "VALIDATED_SAME_BLOCK_SCALE_COMPARISON",
+  "three_wallet_group": {
+    "balance_change_near": "956945.107663038969491231387923",
+    "balance_change_yocto": "956945107663038969491231387923",
+    "between_wallet_inflow_near": "502794.000000000000000000000000",
+    "between_wallet_inflow_yocto": "502794000000000000000000000000",
+    "between_wallet_note": "Transfers among the three wallets cancel at group level and are excluded from external net inflow.",
+    "between_wallet_outflow_near": "502794.000000000000000000000000",
+    "between_wallet_outflow_yocto": "502794000000000000000000000000",
+    "between_wallet_transfer_total_near": "502794.000000000000000000000000",
+    "between_wallet_transfers": 2,
+    "closing_balance_near": "3928260.793851419843131184048424",
+    "closing_balance_yocto": "3928260793851419843131184048424",
+    "external_inflow_near": "956945.106578107785216431387924",
+    "external_inflow_yocto": "956945106578107785216431387924",
+    "external_net_inflow_near": "956945.106578107785216431387923",
+    "external_net_inflow_yocto": "956945106578107785216431387923",
+    "external_outflow_near": "0.000000000000000000000001",
+    "external_outflow_yocto": "1",
+    "gross_successful_inflow_near": "1459739.106578107785216431387924",
+    "gross_successful_inflow_yocto": "1459739106578107785216431387924",
+    "gross_successful_outflow_near": "502794.000000000000000000000001",
+    "gross_successful_outflow_yocto": "502794000000000000000000000001",
+    "opening_balance_near": "2971315.686188380873639952660501",
+    "opening_balance_yocto": "2971315686188380873639952660501",
+    "share_of_issuance": {
+      "balance_change": {
+        "against_issuance_lower_bound": {
+          "fraction_exact": "956945107663038969491231387923/4935983979834754311012798611813",
+          "percent_display": "19.3871"
+        },
+        "against_issuance_upper_bound": {
+          "fraction_exact": "956945107663038969491231387923/5016044056691429346915894986517",
+          "percent_display": "19.0777"
+        }
+      },
+      "external_inflow": {
+        "against_issuance_lower_bound": {
+          "fraction_exact": "956945106578107785216431387924/4935983979834754311012798611813",
+          "percent_display": "19.3871"
+        },
+        "against_issuance_upper_bound": {
+          "fraction_exact": "956945106578107785216431387924/5016044056691429346915894986517",
+          "percent_display": "19.0777"
+        }
+      },
+      "external_net_inflow": {
+        "against_issuance_lower_bound": {
+          "fraction_exact": "956945106578107785216431387923/4935983979834754311012798611813",
+          "percent_display": "19.3871"
+        },
+        "against_issuance_upper_bound": {
+          "fraction_exact": "956945106578107785216431387923/5016044056691429346915894986517",
+          "percent_display": "19.0777"
+        }
+      }
+    },
+    "unallocated_stock_flow_difference_near": "0.001084931184274800000000",
+    "unallocated_stock_flow_difference_yocto": "1084931184274800000000"
+  },
+  "unavailable": {
+    "circulating_supply_effect_yocto": null,
+    "complete_treasury_coverage": null,
+    "verified_buybacks_yocto": null,
+    "verified_revenue_yocto": null
+  },
+  "wallets": [
+    {
+      "account_id": "fefundsadmin.sputnik-dao.near",
+      "balance_change_near": "303194.134220968599240887798125",
+      "balance_change_yocto": "303194134220968599240887798125",
+      "between_wallet_inflow_near": "0.000000000000000000000000",
+      "between_wallet_inflow_yocto": "0",
+      "between_wallet_net_near": "0.000000000000000000000000",
+      "between_wallet_net_yocto": "0",
+      "between_wallet_outflow_near": "0.000000000000000000000000",
+      "between_wallet_outflow_yocto": "0",
+      "classification": "UNCLASSIFIED_NATIVE_FLOWS_AND_CUSTODIAL_BALANCE",
+      "closing_balance_near": "1913463.450661649657631982695779",
+      "closing_balance_yocto": "1913463450661649657631982695779",
+      "external_inflow_near": "303194.134220968599240887798125",
+      "external_inflow_yocto": "303194134220968599240887798125",
+      "external_net_inflow_near": "303194.134220968599240887798125",
+      "external_net_inflow_yocto": "303194134220968599240887798125",
+      "external_outflow_near": "0.000000000000000000000000",
+      "external_outflow_yocto": "0",
+      "gross_successful_inflow_near": "303194.134220968599240887798125",
+      "gross_successful_inflow_yocto": "303194134220968599240887798125",
+      "gross_successful_outflow_near": "0.000000000000000000000000",
+      "gross_successful_outflow_yocto": "0",
+      "opening_balance_near": "1610269.316440681058391094897654",
+      "opening_balance_yocto": "1610269316440681058391094897654",
+      "share_of_issuance": {
+        "balance_change": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "303194134220968599240887798125/4935983979834754311012798611813",
+            "percent_display": "6.1425"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "303194134220968599240887798125/5016044056691429346915894986517",
+            "percent_display": "6.0445"
+          }
+        },
+        "external_net_inflow": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "303194134220968599240887798125/4935983979834754311012798611813",
+            "percent_display": "6.1425"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "303194134220968599240887798125/5016044056691429346915894986517",
+            "percent_display": "6.0445"
+          }
+        },
+        "gross_successful_inflow": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "303194134220968599240887798125/4935983979834754311012798611813",
+            "percent_display": "6.1425"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "303194134220968599240887798125/5016044056691429346915894986517",
+            "percent_display": "6.0445"
+          }
+        }
+      },
+      "unallocated_stock_flow_difference_near": "0.000000000000000000000000",
+      "unallocated_stock_flow_difference_yocto": "0"
+    },
+    {
+      "account_id": "1csfundsadmin.sputnik-dao.near",
+      "balance_change_near": "-502528.062634587711999572284820",
+      "balance_change_yocto": "-502528062634587711999572284820",
+      "between_wallet_inflow_near": "0.000000000000000000000000",
+      "between_wallet_inflow_yocto": "0",
+      "between_wallet_net_near": "-502794.000000000000000000000000",
+      "between_wallet_net_yocto": "-502794000000000000000000000000",
+      "between_wallet_outflow_near": "502794.000000000000000000000000",
+      "between_wallet_outflow_yocto": "502794000000000000000000000000",
+      "classification": "UNCLASSIFIED_NATIVE_FLOWS_AND_CUSTODIAL_BALANCE",
+      "closing_balance_near": "270.875891412420848813311023",
+      "closing_balance_yocto": "270875891412420848813311023",
+      "external_inflow_near": "265.936280481103725627715181",
+      "external_inflow_yocto": "265936280481103725627715181",
+      "external_net_inflow_near": "265.936280481103725627715180",
+      "external_net_inflow_yocto": "265936280481103725627715180",
+      "external_outflow_near": "0.000000000000000000000001",
+      "external_outflow_yocto": "1",
+      "gross_successful_inflow_near": "265.936280481103725627715181",
+      "gross_successful_inflow_yocto": "265936280481103725627715181",
+      "gross_successful_outflow_near": "502794.000000000000000000000001",
+      "gross_successful_outflow_yocto": "502794000000000000000000000001",
+      "opening_balance_near": "502798.938526000132848385595843",
+      "opening_balance_yocto": "502798938526000132848385595843",
+      "share_of_issuance": {
+        "balance_change": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "-502528062634587711999572284820/4935983979834754311012798611813",
+            "percent_display": "-10.1809"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "-502528062634587711999572284820/5016044056691429346915894986517",
+            "percent_display": "-10.0184"
+          }
+        },
+        "external_net_inflow": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "265936280481103725627715180/4935983979834754311012798611813",
+            "percent_display": "0.0054"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "265936280481103725627715180/5016044056691429346915894986517",
+            "percent_display": "0.0053"
+          }
+        },
+        "gross_successful_inflow": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "265936280481103725627715181/4935983979834754311012798611813",
+            "percent_display": "0.0054"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "265936280481103725627715181/5016044056691429346915894986517",
+            "percent_display": "0.0053"
+          }
+        }
+      },
+      "unallocated_stock_flow_difference_near": "0.001084931184274800000000",
+      "unallocated_stock_flow_difference_yocto": "1084931184274800000000"
+    },
+    {
+      "account_id": "buybacks.multisignature.near",
+      "balance_change_near": "1156279.036076658082249915874618",
+      "balance_change_yocto": "1156279036076658082249915874618",
+      "between_wallet_inflow_near": "502794.000000000000000000000000",
+      "between_wallet_inflow_yocto": "502794000000000000000000000000",
+      "between_wallet_net_near": "502794.000000000000000000000000",
+      "between_wallet_net_yocto": "502794000000000000000000000000",
+      "between_wallet_outflow_near": "0.000000000000000000000000",
+      "between_wallet_outflow_yocto": "0",
+      "classification": "UNCLASSIFIED_NATIVE_FLOWS_AND_CUSTODIAL_BALANCE",
+      "closing_balance_near": "2014526.467298357764650388041622",
+      "closing_balance_yocto": "2014526467298357764650388041622",
+      "external_inflow_near": "653485.036076658082249915874618",
+      "external_inflow_yocto": "653485036076658082249915874618",
+      "external_net_inflow_near": "653485.036076658082249915874618",
+      "external_net_inflow_yocto": "653485036076658082249915874618",
+      "external_outflow_near": "0.000000000000000000000000",
+      "external_outflow_yocto": "0",
+      "gross_successful_inflow_near": "1156279.036076658082249915874618",
+      "gross_successful_inflow_yocto": "1156279036076658082249915874618",
+      "gross_successful_outflow_near": "0.000000000000000000000000",
+      "gross_successful_outflow_yocto": "0",
+      "opening_balance_near": "858247.431221699682400472167004",
+      "opening_balance_yocto": "858247431221699682400472167004",
+      "share_of_issuance": {
+        "balance_change": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "1156279036076658082249915874618/4935983979834754311012798611813",
+            "percent_display": "23.4255"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "1156279036076658082249915874618/5016044056691429346915894986517",
+            "percent_display": "23.0516"
+          }
+        },
+        "external_net_inflow": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "653485036076658082249915874618/4935983979834754311012798611813",
+            "percent_display": "13.2392"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "653485036076658082249915874618/5016044056691429346915894986517",
+            "percent_display": "13.0279"
+          }
+        },
+        "gross_successful_inflow": {
+          "against_issuance_lower_bound": {
+            "fraction_exact": "1156279036076658082249915874618/4935983979834754311012798611813",
+            "percent_display": "23.4255"
+          },
+          "against_issuance_upper_bound": {
+            "fraction_exact": "1156279036076658082249915874618/5016044056691429346915894986517",
+            "percent_display": "23.0516"
+          }
+        }
+      },
+      "unallocated_stock_flow_difference_near": "0.000000000000000000000000",
+      "unallocated_stock_flow_difference_yocto": "0"
+    }
+  ],
+  "window": "2026-08-24/2026-10-18"
+}

@@ -59,6 +59,11 @@ specific observation to check.
    incompletely attributed, not ruled out. The measured control week lies
    inside its derived range at 99.51% of the ceiling. These are
    protocol-derived bounds, not measured gross burn; subsidies stay unseparated. [Bounds and method](notes/eight_week_issuance_bounds.md) · [Result 107](results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json).
+
+   Over the same two blocks, the three wallets' external net native inflow
+   equals **19.07–19.39% of that issuance**. This is a scale comparison only:
+   the inflows are unclassified, held balances remain in total supply, and
+   three native-layer wallets are not the full treasury system. [Same-block comparison](results/108_supply_treasury_same_block_comparison_2026-08-24_to_2026-10-18.json).
 3. **Mechanisms connected to a testable investment model.** Two selected Sweat
    cases each have **eight successful receipt outcomes**; the jar-deposit case
    nevertheless reports a **rejected booster application**. Other controls retain **six successful wx receipt

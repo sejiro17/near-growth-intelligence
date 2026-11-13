@@ -15,6 +15,7 @@ else:
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT = ROOT / "results/107_eight_week_issuance_bounds_2026-08-24_to_2026-10-18.json"
+COMPARISON = ROOT / "results/108_supply_treasury_same_block_comparison_2026-08-24_to_2026-10-18.json"
 YOCTO = 10**24
 
 
@@ -88,6 +89,62 @@ def economics():
         st.json(total)
         st.download_button("Download eight-week issuance bounds (JSON)", data=ARTIFACT.read_bytes(),
                            file_name=ARTIFACT.name, mime="application/json", key="issuance_bounds_download")
+    treasury_comparison()
+
+
+def comparison_signature():
+    return (str(COMPARISON), COMPARISON.stat().st_mtime_ns, COMPARISON.stat().st_size) if COMPARISON.exists() else None
+
+
+@st.cache_data(max_entries=2, show_spinner=False)
+def load_comparison(source_signature):
+    if source_signature is None:
+        return None
+    data = json.loads(COMPARISON.read_bytes())
+    if not (data["status"] == "VALIDATED_SAME_BLOCK_SCALE_COMPARISON" and all(v is None for v in data["unavailable"].values())):
+        raise ValueError("Result 108 failed its saved invariants")
+    return data
+
+
+def share_range(item, places=2):
+    """Outward-rounded percentage range from the exact fractions (lower rounds down, upper rounds up)."""
+    def scaled(key):
+        n, d = (int(x) for x in item[key]["fraction_exact"].split("/"))
+        return Fraction(n * 100 * 10**places, d)
+    low, high = scaled("against_issuance_upper_bound"), scaled("against_issuance_lower_bound")
+    low, high = min(low, high), max(low, high)
+    def text(value):
+        sign = "-" if value < 0 else ""
+        whole, fraction = divmod(abs(value), 10**places)
+        return f"{sign}{whole}.{fraction:0{places}d}"
+    return f"{text(low.__floor__())}–{text(high.__ceil__())}%"
+
+
+def treasury_comparison():
+    data = load_comparison(comparison_signature())
+    if data is None:
+        return
+    group, blocks = data["three_wallet_group"], data["same_block_reconciliation"]
+    st.markdown("**Same blocks, three wallets · treasury-named balances compared with issuance**")
+    st.write(f"The three-wallet native ledger was measured at the same opening and closing blocks as the issuance bounds "
+             f"({blocks['opening']['block_height']:,} and {blocks['closing']['block_height']:,}). Its external net native inflow of "
+             f"{fmt(group['external_net_inflow_near'])} NEAR equals **{share_range(group['share_of_issuance']['external_net_inflow'])} "
+             f"of eight-week issuance**. Transfers among the three wallets ({fmt(group['between_wallet_transfer_total_near'])} NEAR) cancel and are excluded.")
+    rows = [{"Account": w["account_id"], "Balance change NEAR": fmt(w["balance_change_near"]),
+             "Gross inflow NEAR": fmt(w["gross_successful_inflow_near"]),
+             "External net inflow NEAR": fmt(w["external_net_inflow_near"]),
+             "Between-wallet net NEAR": fmt(w["between_wallet_net_near"]),
+             "External net as share of issuance": share_range(w["share_of_issuance"]["external_net_inflow"])} for w in data["wallets"]]
+    rows.append({"Account": "Three-wallet group", "Balance change NEAR": fmt(group["balance_change_near"]),
+                 "Gross inflow NEAR": fmt(group["gross_successful_inflow_near"]),
+                 "External net inflow NEAR": fmt(group["external_net_inflow_near"]), "Between-wallet net NEAR": "0.00",
+                 "External net as share of issuance": share_range(group["share_of_issuance"]["external_net_inflow"])})
+    presentation.table(pd.DataFrame(rows), hide_index=True, width="stretch",
+                       alt="Three-wallet native balance changes and flows over the same blocks as the issuance bounds, with shares of issuance")
+    st.caption("A scale comparison, not value capture. Inflows are unclassified: none is classified as revenue, a buyback, profit or a holder return. "
+               "Balances held by these accounts remain part of total supply, and nothing here measures circulating supply. "
+               "Three named native-layer wallets are not the complete treasury system; internal Intents balances, other tokens and other accounts are not covered. "
+               "Share ranges divide by the upper and lower issuance bounds. Source: result 108.")
 
 
 def model_context(applied):

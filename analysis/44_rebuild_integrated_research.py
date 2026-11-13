@@ -300,7 +300,23 @@ def issuance_status_lines():
             f"The measured {control['week'].replace('/', '–')} reward minting lies inside its week's bounds.", "",
             "Deliverable 1 remains **Partial**: these are protocol-derived bounds, not measured minting outside the control week, independently measured debit, gross burn or a subsidy split. "
             "Protocol version 86 and the 1/40 inflation parameter are verified at the anchor epochs and the control week, not at every intervening epoch. "
-            "Deliverable 5 gains a measured eight-week net-supply-growth target; fee capture, purchases and destruction remain unavailable.", ""]
+            "Deliverable 5 gains a measured eight-week net-supply-growth target; fee capture, purchases and destruction remain unavailable.", ""] + treasury_status_lines()
+
+
+def treasury_status_lines():
+    comparison = read(108)
+    group = comparison["three_wallet_group"]
+    require(comparison["status"] == "VALIDATED_SAME_BLOCK_SCALE_COMPARISON"
+            and all(v is None for v in comparison["unavailable"].values()), "Result 108 scope changed")
+    share = group["share_of_issuance"]["external_net_inflow"]
+    def outward(key, up):
+        n, d = (int(x) for x in share[key]["fraction_exact"].split("/"))
+        cents = -((-n*10000)//d) if up else (n*10000)//d
+        return f"{cents//100}.{cents%100:02d}"
+    return [f"[Result 108](../results/108_supply_treasury_same_block_comparison_2026-08-24_to_2026-10-18.json) compares the three-wallet native ledger with those bounds at the same two anchor blocks. "
+            f"External net native inflow of {Decimal(group['external_net_inflow_near']):,.2f} NEAR equals "
+            f"{outward('against_issuance_upper_bound', False)}–{outward('against_issuance_lower_bound', True)}% of eight-week issuance (rounded outward). "
+            "Deliverable 2 remains **Partial**: the inflows are unclassified, custodial balances remain in total supply and three native-layer wallets are not the complete treasury system.", ""]
 
 
 def validate_new_evidence():
@@ -327,6 +343,8 @@ def validate_new_evidence():
     checks[path(106)] = jars.c.json_bytes(jars.report())
     issuance = module("50_eight_week_issuance_bounds.py")
     checks[path(107)] = issuance.cap.json_bytes(issuance.validate(issuance.single_capture()))
+    comparison = module("51_supply_treasury_comparison.py")
+    checks[path(108)] = (json.dumps(comparison.report(), ensure_ascii=True, sort_keys=True, indent=2)+"\n").encode()
     for p, raw in checks.items():
         require(p.read_bytes() == raw, f"Generated-file mismatch: {p.name}")
     return len(checks)
