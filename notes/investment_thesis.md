@@ -263,6 +263,29 @@ deletion proceeds, receipt-funding timing or missing coverage may affect balance
 none is assigned as an unexplained balancing amount. Weekly flows are saved;
 weekly opening/closing stocks are unavailable.
 
+**Same-block scale comparison.** These wallet states were recorded at the same
+opening and closing blocks as the eight-week issuance bounds (heights
+212,636,216 and 220,581,912). That makes an exact comparison possible over
+identical boundaries:
+
+| Over the same blocks | NEAR | Share of 4.94–5.02 million NEAR issuance |
+| --- | ---: | ---: |
+| Three-wallet external net native inflow | 956,945.11 | 19.07–19.39% |
+| `buybacks.multisignature.near` balance change | 1,156,279.04 | 23.05–23.43% |
+| of which external net inflow | 653,485.04 | 13.02–13.24% |
+| of which from `1csfundsadmin` (between-wallet) | 502,794.00 | Cancels at group level |
+| `fefundsadmin.sputnik-dao.near` external net inflow | 303,194.13 | 6.04–6.15% |
+
+This compares scale only. It is not value capture or an issuance offset. The
+inflows are unclassified, and balances held by these accounts remain part of
+total supply; circulating-supply effects are unmeasured. Three native-layer
+wallets are not the complete treasury system: internal Intents balances, other
+tokens and other accounts are outside it. Even if every externally received
+NEAR were treated as treasury demand, this measured layer would equal about
+one-fifth of the issuance over the same period; whether any of these balances
+is withheld from the market is unmeasured. Ranges divide by the upper and lower issuance bounds and are
+rounded outward. Source: [result 108](../results/108_supply_treasury_same_block_comparison_2026-08-24_to_2026-10-18.json).
+
 The separate one-day diagnostic found 22 successful native transfers totalling
 8,000.969220749197522847764034 NEAR to fefundsadmin. A bounded trace validates a
 successful signed internal transfer followed by a 1,252.862790024676320487808800

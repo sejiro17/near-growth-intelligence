@@ -29,7 +29,7 @@ class IntegratedReviewTests(unittest.TestCase):
         before = {p: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         result = m.rebuild(check=True)
         self.assertEqual(result["source_requests"], 0)
-        self.assertEqual(result["new_evidence_artifacts_reproduced"], 11)  # includes result 107
+        self.assertEqual(result["new_evidence_artifacts_reproduced"], 12)  # includes results 107 and 108
         self.assertTrue(all(hashlib.sha256(p.read_bytes()).hexdigest() == h for p, h in before.items()))
         visual = ET.fromstring(m.VISUAL.read_bytes())
         self.assertEqual(visual.attrib["role"], "img")
