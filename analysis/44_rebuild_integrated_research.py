@@ -272,7 +272,7 @@ def visual(data):
 
 
 def status_markdown(data):
-    lines = ["# Five-deliverable status", "", "The submission is an intermediate checkpoint. Completion is assessed against the original measurement criteria; bounded cases do not close population or economic accounting gaps.", "",
+    lines = ["# Five-deliverable status", "", "This table records each deliverable's published status against its original measurement criteria; bounded cases do not close population or economic accounting gaps.", "",
              "| Deliverable | Status / completed output | Useful work from saved inputs | Missing source / access dependency | Investment conclusion affected |", "| --- | --- | --- | --- | --- |"]
     for row in data["deliverables"]:
         lines.append(f"| {row['deliverable']} | **{row['status']}**. {row['completed']} | {row['saved_work']} | {row['source_dependency']} | {row['investment_conclusion_affected']} |")
