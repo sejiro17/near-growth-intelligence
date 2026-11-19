@@ -204,11 +204,11 @@ using saved inputs only; publication follows a separate review.
 
 ## Remaining Research Tasks and Completion Criteria
 
-The published version is an intermediate checkpoint. The five original research
-deliverables below remain the objective; a bounded pilot or a documented blocker
-is not a completed full ledger, reconciliation or attribution census. The plan
-distinguishes intermediate measurements from full completion criteria. The
-bounded withdrawal-provenance investigation stays closed.
+The published version reports what the evidence establishes against the five
+original research deliverables below. A bounded pilot or a documented blocker is
+not a completed full ledger, reconciliation or attribution census, so the plan
+distinguishes completed measurements from full completion criteria. The bounded
+withdrawal-provenance investigation stays closed.
 
 Current supply evidence adds a validated 23-epoch walk for 21–27 September,
 exact weekly endpoints and offset reward maps. Result 72 validates the 21 newly
