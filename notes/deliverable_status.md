@@ -1,6 +1,6 @@
 # Five-deliverable status
 
-The submission is an intermediate checkpoint. Completion is assessed against the original measurement criteria; bounded cases do not close population or economic accounting gaps.
+This table records each deliverable's published status against its original measurement criteria; bounded cases do not close population or economic accounting gaps.
 
 | Deliverable | Status / completed output | Useful work from saved inputs | Missing source / access dependency | Investment conclusion affected |
 | --- | --- | --- | --- | --- |
